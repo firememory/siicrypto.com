@@ -1,2 +1,4 @@
-libraries/*
-resources/tmp/*
+.DS_Store
+app/libraries/*
+app/resources/tmp/*
+.*.sw[op]
