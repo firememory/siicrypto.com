@@ -79,18 +79,6 @@ class ExController extends \lithium\action\Controller {
 			$SellIDs = $this->request->data['SellIDs'];
 			$BuyIDs = $this->request->data['BuyIDs'];
 
-			if($SellMultiple=="Y" || $BuyMultiple=="Y"){
-				if($SellMultiple=="Y"){
-					$IDs = $SellIDs;
-				}
-				if($BuyMultiple=="Y"){
-					$IDs = $BuyIDs;
-				}
-				print_r($IDs);
-				exit;
-				$this->redirect($this->request->params);
-				
-			}
 			
 
 			$Action = $this->request->data['Action'];
@@ -235,6 +223,41 @@ class ExController extends \lithium\action\Controller {
 //				 exit;
 			$this->redirect($this->request->params);			// get out of this page and load the page again without POST!			
 			*/
+			
+			
+			if($SellMultiple=="Y" || $BuyMultiple=="Y"){
+				if($SellMultiple=="Y"){
+					$IDs = $SellIDs;
+				}
+				if($BuyMultiple=="Y"){
+					$IDs = $BuyIDs;
+				}
+				print_r($IDs);
+
+				$PendingOrders = Orders::find('all',
+				array(
+					'conditions'=> array(
+						
+						'Action' => $PendingAction,
+						'FirstCurrency' => $FirstCurrency,
+						'SecondCurrency' => $SecondCurrency,
+						'Completed' => 'N',
+						'user_id' => array('$ne' => $user['_id']),
+						'PerPrice' => (float)$PerPrice,
+					),
+					'order'=>array('DateTime'=>'ASC')
+				));
+				
+				
+				exit;
+				
+				$this->redirect($this->request->params);
+				
+				
+				
+			}
+			
+			
 			
 				//Start FOR loop-----------------------------------------------------
 				$PendingOrders = Orders::find('all',
