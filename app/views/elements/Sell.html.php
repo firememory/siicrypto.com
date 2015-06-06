@@ -10,6 +10,8 @@
 <input type="hidden" id="UserName" name="UserName" value="<?=$details['username']?>">
 <input type="hidden" id="SellCommissionAmount" name="SellCommissionAmount" value="0">						
 <input type="hidden" id="SellCommissionCurrency" name="SellCommissionCurrency" value="0">								
+<input type="hidden" id="SellMultiple" name="SellMultiple" value="N">								
+<input type="hidden" id="SellIDs" name="SellIDs" value="">								
 <input type="hidden" id="Action" name="Action" value="Sell">								
 <table class="table table-condensed">
 	<tr>
@@ -22,12 +24,12 @@
 	</tr>
 	<tr>
 		<td>
-		<?=$this->form->field('SellAmount', array('label'=>'Amount '.$first_curr,'class'=>'form-control col-md-1 numbers', 'value'=>0, 'onBlur'=>'$("#SellSubmitButton").attr("disabled", "disabled");','min'=>'0.0001','max'=>'999999','maxlength'=>'10','type'=>'number','step'=>'0.00001')); ?>				
+		<?=$this->form->field('SellAmount', array('label'=>'Amount '.$first_curr,'class'=>'form-control col-md-1 numbers', 'value'=>0, 'onBlur'=>'$("#SellSubmitButton").attr("disabled", "disabled");','min'=>'0.00000001','max'=>'999999','maxlength'=>'10','type'=>'number','step'=>'0.00000001','onChange'=>"$('#SellMultiple').val('N');" )); ?>				
 		</td>
 		<td>
 			<label for="SellPriceper">Price per <?=$first_curr?></label>
 		<div class="input-group">					
-			<input class="col-md-1 form-control numbers" id="SellPriceper" name="SellPriceper" type="number"  onBlur='$("#SellSubmitButton").attr("disabled", "disabled");' min="0.0001" max="999999" maxlength="10" step="0.00001">
+			<input class="col-md-1 form-control numbers" id="SellPriceper" name="SellPriceper" type="number"  onBlur='$("#SellSubmitButton").attr("disabled", "disabled");' min="0.00000001" max="999999" maxlength="10" step="0.00000001" onChange="$('#SellMultiple').val('N');">
 			<span class="input-group-addon"> <strong><?=$second_curr?></strong></span>
 		</div>				
 		</td>				

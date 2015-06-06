@@ -76,7 +76,7 @@ $trades = Trades::find('all',array('limit'=>$howmany,'order'=>array('order'=>1))
 						<?php
 								foreach($Rates['result'] as $rate){
 									if($rate['_id']['FirstCurrency']."/".$rate['_id']['SecondCurrency']==$tradeVF['trade']){
-						?>Min: <?=$rate['min']?>, Max: <?=$rate['max']?>, Last: <?=$rate['last']?><?php
+						?>Min: <?=number_format($rate['min'],4)?>, Max: <?=number_format($rate['max'],4)?><br> Last: <?=number_format($rate['last'],4)?><?php
 									}
 								}
 						?>
@@ -95,7 +95,7 @@ $trades = Trades::find('all',array('limit'=>$howmany,'order'=>array('order'=>1))
 						<?php
 								foreach($Rates['result'] as $rate){
 									if($rate['_id']['FirstCurrency']."/".$rate['_id']['SecondCurrency']==$tradesV['trade']){
-						?>Min: <?=$rate['min']?>, Max: <?=$rate['max']?>, Last: <?=$rate['last']?><?php
+						?>Min: <?=number_format($rate['min'],4)?>, Max: <?=number_format($rate['max'],4)?><br> Last: <?=number_format($rate['last'],4)?><?php
 									}
 								}
 						?>
@@ -115,7 +115,7 @@ $trades = Trades::find('all',array('limit'=>$howmany,'order'=>array('order'=>1))
 						<?php
 								foreach($Rates['result'] as $rate){
 									if($rate['_id']['FirstCurrency']."/".$rate['_id']['SecondCurrency']==$tradeVF['trade']){
-						?>Min: <?=$rate['min']?>, Max: <?=$rate['max']?>, Last: <?=$rate['last']?><?php
+						?>Min: <?=number_format($rate['min'],4)?>, Max: <?=number_format($rate['max'],4)?><br> Last: <?=number_format($rate['last'],4)?><?php
 									}
 								}
 						?>

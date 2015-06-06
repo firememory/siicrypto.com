@@ -64,6 +64,12 @@ function CheckServer(){
 }
 
 function BuyFormCalculate (){
+	Multiple = $('#BuyMultiple').val();
+	if(Multiple=="Y"){
+		if(!confirm("Do you want to execute Multiple orders?")){
+			return;
+		}
+	}
 	BalanceSecond = $('#BalanceSecond').html();
 	FirstCurrency = $('#BuyFirstCurrency').val();
 	SecondCurrency = $('#BuySecondCurrency').val();
@@ -134,6 +140,13 @@ function BuyFormCalculate (){
 	if(parseFloat(GrandTotal)===0){$("#BuySubmitButton").attr("disabled", "disabled");}
 }
 function SellFormCalculate (){
+	Multiple = $('#SellMultiple').val();
+	if(Multiple=="Y"){
+		if(!confirm("Do you want to execute Multiple orders?")){
+			return;
+		}
+	}
+	
 	BalanceFirst = $('#BalanceFirst').html();
 	FirstCurrency = $('#SellFirstCurrency').val();
 	SecondCurrency = $('#SellSecondCurrency').val();
@@ -205,13 +218,19 @@ function SellFormCalculate (){
 	}
 	if(parseFloat(GrandTotal)===0){$("#SellSubmitButton").attr("disabled", "disabled");}
 }
-function SellOrderFill(SellOrderPrice,SellOrderAmount){
+function SellOrderFill(SellOrderPrice,SellOrderAmount,IDs){
+	
+	$("#BuyMultiple").val("Y");
+	$("#BuyIDs").val(IDs);
 	$("#BuyAmount").val(SellOrderAmount)  ;
 	$("#BuyPriceper").val(SellOrderPrice)  ;
 	$("#BuySubmitButton").attr("disabled", "disabled");	
 	$("#BuySubmitButton").attr("class", "btn btn-warning btn-block");				
 }
-function BuyOrderFill(BuyOrderPrice,BuyOrderAmount){
+function BuyOrderFill(BuyOrderPrice,BuyOrderAmount,IDs){
+	
+	$("#SellMultiple").val("Y");
+	$("#SellIDs").val(IDs);
 	$("#SellAmount").val(BuyOrderAmount)  ;
 	$("#SellPriceper").val(BuyOrderPrice)  ;
 	$("#SellSubmitButton").attr("disabled", "disabled");	

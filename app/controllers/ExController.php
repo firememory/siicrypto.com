@@ -74,6 +74,24 @@ class ExController extends \lithium\action\Controller {
 			$commission = Parameters::find('first',
 				array('conditions'=>array('commission'=>true))
 			);
+			$SellMultiple = $this->request->data['SellMultiple'];
+			$BuyMultiple = $this->request->data['BuyMultiple'];
+			$SellIDs = $this->request->data['SellIDs'];
+			$BuyIDs = $this->request->data['BuyIDs'];
+
+			if($SellMultiple=="Y" || $BuyMultiple=="Y"){
+				if($SellMultiple=="Y"){
+					$IDs = $SellIDs;
+				}
+				if($BuyMultiple=="Y"){
+					$IDs = $BuyIDs;
+				}
+				print_r($IDs);
+				exit;
+				$this->redirect($this->request->params);
+				
+			}
+			
 
 			$Action = $this->request->data['Action'];
 			if($Action == "Buy"){
@@ -504,10 +522,11 @@ class ExController extends \lithium\action\Controller {
 			'aggregate' => 'orders',
 			'pipeline' => array( 
 				array( '$project' => array(
-					'_id'=>0,
+					'_id'=>1,
 					'Action' => '$Action',
 					'Amount'=>'$Amount',
 					'user_id' => '$user_id',
+					'username' => '$username',
 					'PerPrice'=>'$PerPrice',
 					'Completed'=>'$Completed',
 					'FirstCurrency'=>'$FirstCurrency',
@@ -521,6 +540,9 @@ class ExController extends \lithium\action\Controller {
 					)),
 				array('$group' => array( '_id' => array(
 						'PerPrice'=>'$PerPrice',
+						'username'=>'$username',												
+						'user_id' => '$user_id',
+						'id'=>'$_id',
 						),
 					'Amount' => array('$sum' => '$Amount'),  
 					'No' => array('$sum'=>1),
@@ -528,6 +550,7 @@ class ExController extends \lithium\action\Controller {
 				array('$sort'=>array(
 					'_id.PerPrice'=>1,
 				)),
+				array('$limit'=>20),
 			)
 		));
 		
@@ -535,10 +558,11 @@ class ExController extends \lithium\action\Controller {
 			'aggregate' => 'orders',
 			'pipeline' => array( 
 				array( '$project' => array(
-					'_id'=>0,
+					'_id'=>1,
 					'Action' => '$Action',
-					'user_id' => '$user_id',					
 					'Amount'=>'$Amount',
+					'user_id' => '$user_id',					
+					'username' => '$username',
 					'PerPrice'=>'$PerPrice',
 					'Completed'=>'$Completed',
 					'FirstCurrency'=>'$FirstCurrency',
@@ -552,6 +576,9 @@ class ExController extends \lithium\action\Controller {
 					)),
 				array('$group' => array( '_id' => array(
 						'PerPrice'=>'$PerPrice',
+						'username'=>'$username',						
+						'user_id' => '$user_id',						
+						'id'=>'$_id',
 						),
 					'Amount' => array('$sum' => '$Amount'),  
 					'No' => array('$sum'=>1),
@@ -559,9 +586,11 @@ class ExController extends \lithium\action\Controller {
 				)),
 				array('$sort'=>array(
 					'_id.PerPrice'=>-1,
-				))
+				)),
+				array('$limit'=>20),
 			)
 		));
+		
 		$YourOrders = Orders::find('all',array(
 			'conditions'=>array(
 				'user_id'=>$id,
