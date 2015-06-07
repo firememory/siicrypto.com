@@ -49,9 +49,9 @@ class Walletxgcnotify extends \lithium\console\Command {
 							'Transfer'=>$comment,
 						);							
 						$t->save($data);
-		
+						$userName = str_replace("SiiCrypto-","",$username);
 						$details = Details::find('first',
-							array('conditions'=>array('username'=> (string) $username))
+							array('conditions'=>array('username'=> (string) $userName))
 						);
 
 									
@@ -62,7 +62,7 @@ class Walletxgcnotify extends \lithium\console\Command {
 						
 							$details = Details::find('all',
 								array(
-										'conditions'=>array('username'=>(string)$username)
+										'conditions'=>array('username'=>(string)$userName)
 									))->save($dataDetails);
 
 						}else{
