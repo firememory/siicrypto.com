@@ -669,6 +669,9 @@ class UsersController extends \lithium\action\Controller {
 					$address = $details['greencoinaddress'][0];
 				}
 			}
+				$identify = new Identification();
+				$result = $identify->set($address);
+			
 			$data = array(
 				'greencoinaddress.0' => $address,
 				$currency.'newaddress'=>'No'
