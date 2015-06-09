@@ -32,14 +32,14 @@ $user = Session::read('member');
 				<tbody>
 					<?php 
 					$BuyOrderAmount = 0;$FillBuyOrderAmount = 0;
-					$ids = '""';
+					$ids = '';
 					foreach($BuyOrders['result'] as $BO){
 						if($user['_id']!=$BO['_id']['user_id']){
 							$FillBuyOrderAmount = $FillBuyOrderAmount + round($BO['Amount'],8);
 							$BuyOrderAmount = $BuyOrderAmount + round($BO['Amount'],8);													
 							$TotalBuyOrderPrice = ($TotalBuyOrderPrice + round($BO['_id']['PerPrice']*$BO['Amount'],8));
 							$BuyOrderPrice = round($TotalBuyOrderPrice/$BuyOrderAmount,8);
-							$ids = $ids .', "'.(string)$BO['_id']['id'].'"';
+							$ids = $ids .','.$BO['_id']['id'].'';
 							
 						}
 					?>

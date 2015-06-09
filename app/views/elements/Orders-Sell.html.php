@@ -1,6 +1,7 @@
 <?php
 use lithium\storage\Session;
 $user = Session::read('member');
+
 ?>
 	<div class="col-md-6">
 		<div class="panel panel-success">
@@ -32,14 +33,14 @@ $user = Session::read('member');
 				<tbody>
 					<?php 
 					$SellOrderAmount = 0; $FillSellOrderAmount =0;
-					$ids = '""';
+					$ids = '';
 					foreach($SellOrders['result'] as $SO){
 						if($user['_id']!=$SO['_id']['user_id']){
 							$FillSellOrderAmount = $FillSellOrderAmount + round($SO['Amount'],8);
 							$SellOrderAmount = $SellOrderAmount + round($SO['Amount'],8);							
 							$TotalSellOrderPrice = $TotalSellOrderPrice + round($SO['Amount']*$SO['_id']['PerPrice'],8);
 							$SellOrderPrice = round($TotalSellOrderPrice/$SellOrderAmount,8);
-							$ids = $ids .', "'.(string)$SO['_id']['id'].'"';
+							$ids = $ids .','.$SO['_id']['id'].'';
 						}
 						
 

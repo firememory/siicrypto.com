@@ -232,29 +232,52 @@ class ExController extends \lithium\action\Controller {
 				if($BuyMultiple=="Y"){
 					$IDs = $BuyIDs;
 				}
-				print_r($IDs);
+				
+				$ids = explode(",",$IDs);
+				
+				foreach ($ids as $id){
+					if($id!=""){
+						$PO = Orders::find('first', array(
+							'conditions' => array('_id' => new MongoID($id))
+						));
+				
+							print_r($PO['user_id']);
+							print_r($PO['username']);
+							
+						$data = array(
+							'Completed' => 'Y',
+							'Transact.id'=> $order_id,
+							'Transact.username' => $user['username'],
+							'Transact.user_id' => $user['_id'],
+							'Transact.DateTime' => new \MongoDate(),
+						);
+						$orders = Orders::find('first',
+							array('conditions'=>array('_id'=>$PO['_id']))
+						)->save($data);
 
-				$PendingOrders = Orders::find('all',
-				array(
-					'conditions'=> array(
+						$orders = Orders::find('first',
+							array('conditions'=>array('_id'=>$PO['_id']))
+						);
 						
-						'Action' => $PendingAction,
-						'FirstCurrency' => $FirstCurrency,
-						'SecondCurrency' => $SecondCurrency,
-						'Completed' => 'N',
-						'user_id' => array('$ne' => $user['_id']),
-						'PerPrice' => (float)$PerPrice,
-					),
-					'order'=>array('DateTime'=>'ASC')
-				));
-				
-				
+						$data = array(
+							'Completed' => 'Y',
+							'Transact.id'=> $PO['_id'],
+							'Transact.username' => $PO['username'],
+							'Transact.user_id' => $PO['user_id'],
+							'Transact.DateTime' => new \MongoDate(),														
+						);
+						$orders = Orders::find('first',
+							array('conditions'=>array('_id'=>$order_id))
+						)->save($data);
+
+						$this->updateBalance($order_id);
+						$this->updateBalance($PO['_id']);
+						$this->SendOrderCompleteEmails($order_id,$user['_id']);
+						$this->SendOrderCompleteEmails($PO['_id'],$PO['user_id']);						
+					}
+				}
 				exit;
-				
 				$this->redirect($this->request->params);
-				
-				
-				
 			}
 			
 			
