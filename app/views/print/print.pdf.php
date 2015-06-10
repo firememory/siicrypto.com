@@ -28,7 +28,7 @@ $pdf->SetFooterMargin(0);
 $pdf->SetAuthor('https://SiiCrypto.com');
 $pdf->SetCreator('support@SiiCrypto.com');
 $pdf->SetSubject('In Bitcoin We Trust, Print ');
-$pdf->SetKeywords('In Bitcoin We Trust, IBWT, Print');
+$pdf->SetKeywords('In Bitcoin We Trust, SiiCrypto.com, Print');
 $pdf->SetTitle('In Bitcoin We Trust, https://SiiCrypto.com');
 
 

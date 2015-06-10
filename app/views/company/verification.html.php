@@ -3,7 +3,7 @@
 
 <p>To become SiiCrypto customer and use our platform and services you only need to register with an email.</p>
 <p>The unbanked and those without a physical address are excluded from the financial system. But most of these individuals have access to a mobile phone, and emails.</p>
-<p>IBWT reserve the right to seek more information to verify a customer's identity, and/or to refuse an account if the customer's identity is not verified to our requirement.</p>
+<p>SiiCrypto.com reserve the right to seek more information to verify a customer's identity, and/or to refuse an account if the customer's identity is not verified to our requirement.</p>
 <p>Your information is subject to our <a href="/company/privacy">Privacy Policy</a>.</p>
 <p>To register an account and submit your verification information please <a href="/users/signup">click here</a>.</p>
 <p>&nbsp;</p>

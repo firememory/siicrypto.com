@@ -1,9 +1,9 @@
 <h2>Sell Shares</h2>
 <div class="col-sm-12 col-md-12">
-<p>You can sell your company shares through IBWT trade platform for BTC</p>
+<p>You can sell your company shares through SiiCrypto.com trade platform for BTC</p>
 <h4>How it works?</h4>
 <ul>
-	<li>Setup you company on IBWT</li>
+	<li>Setup you company on SiiCrypto.com</li>
 	<li>Create profile, pitch</li>
 	<li>Get verified</li>
 	<li>List total shares available</li>

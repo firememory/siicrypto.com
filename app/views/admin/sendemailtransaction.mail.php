@@ -32,5 +32,5 @@
 <?=NOREPLY?></p>
 
 <p>P.S. Please do not reply to this email. </p>
-<p>If you did not initiate this action please contact IBWT as soon as possible via support@ibwt.co.uk or telephone 07914 446125.</p>
+<p>If you did not initiate this action please contact SiiCrypto.com as soon as possible via support@SiiCrypto.com.</p>
 <p>We do not spam. </p>

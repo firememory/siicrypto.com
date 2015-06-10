@@ -38,7 +38,7 @@ If you have no printer (or ran out of ink) please make sure you copy the followi
 	<li>The REFERENCE on your deposit request</li>
 </ul>
 <span>Please address to the company's registered address;</span>
-<ul class="unstyled">	<li>IBWT JD Ltd</li>
+<ul class="unstyled">	<li>SiiCrypto.com JD Ltd</li>
 	<li>31 North Down Crescent</li>
 	<li>Keyham, Plymouth</li>
 	<li>Devon, PL2 2AR</li>
@@ -66,7 +66,7 @@ If you have no printer (or ran out of ink) please make sure you copy the followi
 <ul>
 <li>For <a href="http://www.postoffice.co.uk/postal-orders">Postal Orders</a> please click the following link and follow the instructions carefully. </li>
 <li>We STRONGLY advise you to pay the appropriate coverage, as we cannot be held liable for loss or damage due to Royal Mail if anything occurs.</li>
-<li>Royal Mail is a separate entity than IBWT, we STRONGLY advise customers packaging any deposits securely and safely. Always seek a Royal Mail staff if concerned with their services.</li>
+<li>Royal Mail is a separate entity than SiiCrypto.com, we STRONGLY advise customers packaging any deposits securely and safely. Always seek a Royal Mail staff if concerned with their services.</li>
 <li> Please click - <a href="http://www.royalmail.com/business/help-and-support/what-is-the-best-way-to-send-money-or-jewellery">Best way to send money
  </a>
  </li>
@@ -78,16 +78,16 @@ If you have no printer (or ran out of ink) please make sure you copy the followi
 </ol>
 <blockquote><strong>Withdrawals</strong>
 <ul>
-<li>IBWT Processes withdrawals in the same method, customers choose their withdrawal method (Mail (hard currency) or postal orders) when making a withdrawal. Withdrawal fees are deducted from customers account.</li>
-<li>Please make sure you have enough funds in your IBWT account to cover your appropriate withdrawal fee, if you do not your withdrawal will be declined, and you will have to resubmit a withdrawal request of an appropriate value.</li>
+<li>SiiCrypto.com Processes withdrawals in the same method, customers choose their withdrawal method (Mail (hard currency) or postal orders) when making a withdrawal. Withdrawal fees are deducted from customers account.</li>
+<li>Please make sure you have enough funds in your SiiCrypto.com account to cover your appropriate withdrawal fee, if you do not your withdrawal will be declined, and you will have to resubmit a withdrawal request of an appropriate value.</li>
 </ul>
 </blockquote>
 </div>
 	<div class="col-md-6">
-	<!-- Begin OKPAY Logo --><a HREF="https://www.okpay.com/?rbp=IBWT" target="_blank"><IMG SRC="https://www.okpay.com/img/partners/rbp_banner.gif" BORDER="0" ALT="Sign up for OKPAY and start accepting payments instantly."></a><!-- End OKPAY Logo --><br>
+	<!-- Begin OKPAY Logo --><a HREF="https://www.okpay.com/?rbp=SiiCrypto.com" target="_blank"><IMG SRC="https://www.okpay.com/img/partners/rbp_banner.gif" BORDER="0" ALT="Sign up for OKPAY and start accepting payments instantly."></a><!-- End OKPAY Logo --><br>
 <br>
-<p>	You can fund your IBWT account with bank wire transfers via OKPAY. Please refer to the link above if you do not already have an OKPAY account.</p>
-<p>OKPAY transfer takes the standard 5-7 days (due to the traditional fiat banking system), yet once your OKPAY account is credited, you can instantly credit your IBWT account.</p>
+<p>	You can fund your SiiCrypto.com account with bank wire transfers via OKPAY. Please refer to the link above if you do not already have an OKPAY account.</p>
+<p>OKPAY transfer takes the standard 5-7 days (due to the traditional fiat banking system), yet once your OKPAY account is credited, you can instantly credit your SiiCrypto.com account.</p>
 <p>All deposits via OKPAY can be conducted via sending funds to <strong>deposit@SiiCrypto.com</strong> when you are logged into your OKPAY account.</p>
 <p>For OKPAY deposit & withdrawal fees please see - <a href="https://www.okpay.com/en/services/fees.html" target="_blank">https://www.okpay.com/en/services/fees.html</a></p>
 <h3>Withdraw Direct To Your UK Bank</h3>
@@ -99,10 +99,10 @@ If you have no printer (or ran out of ink) please make sure you copy the followi
 </p>
  
 <p>The withdrawal fee for this service is a flat &pound;2.</p>
-<p>Direct bank deposits are processed within 24 hours of being received, not counting bank holidays, Sundays, or acts beyond IBWT’s control.</p>
+<p>Direct bank deposits are processed within 24 hours of being received, not counting bank holidays, Sundays, or acts beyond SiiCrypto.com’s control.</p>
 <p>Our hard currency withdrawals is limited by our liquidity, please check when making a withdrawal request that our liquidity is within your request range otherwise your withdrawal may be rejected.</p>
 </p>To withdraw hard currency direct to your bank please use the Fiat funding options from either your dashboard or your drop down menu (top right) when logged in. Then change your Withdrawal Method from OKPAY to Bank – Personal.</p>
-<p>Put in the amount requested (IBWT will only process GBP for this type of withdrawal at this time), and click Send email to admin for approval.</p>
+<p>Put in the amount requested (SiiCrypto.com will only process GBP for this type of withdrawal at this time), and click Send email to admin for approval.</p>
 <p>We will then receive your request and process your withdrawal.</p>
 	</div>
 	

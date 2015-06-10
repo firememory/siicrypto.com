@@ -82,7 +82,7 @@ $Comm = Parameters::find('first');
     <li>Fiat Deposits/Withdrawals currently only for UK residents.</li>
 		</ul>
 
-<p>To become an IBWT customer and use our platform and services, you only need the following;
+<p>To become an SiiCrypto.com customer and use our platform and services, you only need the following;
 <ul>
     <li>To trade BTC - registered email.</li>
     <li>To deposit fiat - registered email.</li>

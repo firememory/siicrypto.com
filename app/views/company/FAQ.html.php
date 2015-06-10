@@ -37,7 +37,7 @@ Account name: <strong>silent bob</strong><br>
 Reference number: <strong>15828481</strong><br>
 Amount: <strong>$xxxx</strong><br>
 </ul>  
-<span>When we receive your funds we verify with your deposit request and credit your IBWT account the amount.</span><br>
+<span>When we receive your funds we verify with your deposit request and credit your SiiCrypto.com account the amount.</span><br>
 <br>
 <p><strong>Deposits</strong></p>
 <span>Once fiat amounts are received your account gets credited the same amount, just the same as doing a bank transfer, without the bank.</span><br>
@@ -45,8 +45,8 @@ Amount: <strong>$xxxx</strong><br>
 <p><strong>Withdrawals</strong></p>
 <ul>
 <li>We charge customers the relevant fee that Royal Mail charges to cover the withdrawal amount respectively.</li>
-<li>This charge is made to your IBWT account.</li>
-<li>If you do not have enough to cover the Royal Mail fee in your IBWT account then your withdrawal will not be processed and you will be notified via email.</li>
+<li>This charge is made to your SiiCrypto.com account.</li>
+<li>If you do not have enough to cover the Royal Mail fee in your SiiCrypto.com account then your withdrawal will not be processed and you will be notified via email.</li>
 <li>We store all fiat via safety deposit box services.</li>
 </ul>
 </blockquote>
@@ -70,7 +70,7 @@ Amount: <strong>$xxxx</strong><br>
 
 <li>We also require a level of identification for all customers as per our (link) verification page, and run random security checks on accounts. Any information found to be out of date may result in the account in question to be temporarily suspended until such information is suitably updated.</li>
 
-<li>If you have any issues please contact IBWT at <a href="mailto:support@SiiCrypto.com ">support@SiiCrypto.com</a></li>
+<li>If you have any issues please contact SiiCrypto.com at <a href="mailto:support@SiiCrypto.com ">support@SiiCrypto.com</a></li>
 
 </ul>
 </blockquote>
