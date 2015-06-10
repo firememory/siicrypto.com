@@ -1,5 +1,5 @@
-.DS_Store
-app/libraries/*
 app/resources/tmp/*
+app/config/bootstrap/*
+app/config/bootstrap/libraries.php
 app/webroot/documents/*
-.*.sw[op]
+app/webroot/qrcode/*
