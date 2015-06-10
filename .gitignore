@@ -1,4 +1,5 @@
 .DS_Store
 app/libraries/*
 app/resources/tmp/*
+app/webroot/documents/*
 .*.sw[op]

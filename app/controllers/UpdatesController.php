@@ -107,7 +107,7 @@ class UpdatesController extends \lithium\action\Controller {
 							'year'=>array('$year' => '$TransactDateTime'),
 							'month'=>array('$month' => '$TransactDateTime'),						
 							'day'=>array('$dayOfMonth' => '$TransactDateTime'),												
-							'hour'=>array('$hour' => '$TransactDateTime'),
+//							'hour'=>array('$hour' => '$TransactDateTime'),
 						),
 					'min' => array('$min' => '$PerPrice'), 
 					'max' => array('$max' => '$PerPrice'), 
@@ -116,7 +116,7 @@ class UpdatesController extends \lithium\action\Controller {
 					'_id.year'=>-1,
 					'_id.month'=>-1,
 					'_id.day'=>-1,					
-					'_id.hour'=>-1,					
+//					'_id.hour'=>-1,					
 				)),
 				array('$limit'=>1)
 			)
@@ -178,11 +178,11 @@ class UpdatesController extends \lithium\action\Controller {
 		return $this->render(array('json' => array(
 			'Refresh'=> $Refresh,
 			'URL'=> $URL,
-			'Low'=> $Low,
-			'High' => $High,
-			'Last'=> $LastPrice,			
-			'VolumeFirst'=> number_format($TotalOrders['result'][0]['Amount'],4),
-			'VolumeSecond'=> number_format($TotalOrders['result'][0]['TotalAmount'],0),
+			'Low'=> number_format($Low,5),
+			'High' => number_format($High,5),
+			'Last'=> number_format($LastPrice,5),			
+			'VolumeFirst'=> number_format($TotalOrders['result'][0]['Amount'],5),
+			'VolumeSecond'=> number_format($TotalOrders['result'][0]['TotalAmount'],3),
 			'VolumeFirstUnit'=> $FirstCurrency,			
 			'VolumeSecondUnit'=> $SecondCurrency,
 		)));
