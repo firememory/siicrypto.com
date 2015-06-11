@@ -23,6 +23,7 @@ $tradesVF = Trades::find('all',array(
 ));
 
 $trades = Trades::find('all',array('limit'=>$howmany,'order'=>array('order'=>1)));
+
 		$mongodb = Connections::get('default')->connection;
 		$Rates = Orders::connection()->connection->command(array(
 			'aggregate' => 'orders',
@@ -46,7 +47,7 @@ $trades = Trades::find('all',array('limit'=>$howmany,'order'=>array('order'=>1))
 							'year'=>array('$year' => '$TransactDateTime'),
 							'month'=>array('$month' => '$TransactDateTime'),						
 							'day'=>array('$dayOfMonth' => '$TransactDateTime'),												
-						'hour'=>array('$hour' => '$TransactDateTime'),
+//							'hour'=>array('$hour' => '$TransactDateTime'),
 						),
 					'min' => array('$min' => '$PerPrice'), 
 					'avg' => array('$avg' => '$PerPrice'), 					
@@ -59,7 +60,7 @@ $trades = Trades::find('all',array('limit'=>$howmany,'order'=>array('order'=>1))
 					'_id.day'=>-1,					
 					'_id.hour'=>-1,					
 				)),
-//				array('$limit'=>1)
+				array('$limit'=>count($trades))
 			)
 		));
 
