@@ -61,7 +61,7 @@ if($this->_request->params['controller']!='api'){
 			}
 ?><li>
 <a href="/ex/x/<?=strtolower(str_replace("/","_",$trade['trade']))?>" class="list-group-subitem">
-	<i class="glyphicon glyphicon-caret-right"></i><?=$trade['trade']?> <span class="badge btn-success pull-right"><?=number_format($price,2)?></span>
+	<i class="glyphicon glyphicon-caret-right"></i><?=$trade['trade']?> <span class="badge btn-success pull-right"><?=number_format($price,4)?></span>
 </a>				
 </li>
 <?php
