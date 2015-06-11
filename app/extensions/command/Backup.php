@@ -35,7 +35,7 @@ class Backup extends \lithium\console\Command {
 			"/backup/SIICrypto/transactions.metadata.json",
 			"/backup/SIICrypto/users.bson",
 			"/backup/SIICrypto/users.metadata.json",
-			"/.bitcoin/wallet.dat",
+//			"/.bitcoin/wallet.dat",
 			"/.greencoin/wallet.dat",			
 		);
 //if true, good; if false, zip creation failed
@@ -67,7 +67,7 @@ class Backup extends \lithium\console\Command {
 	
 			$message = Swift_Message::newInstance();
 			$message->setSubject("Data Backup: ".COMPANY_URL);
-			$message->setFrom(array(NOREPLY => 'Data Backup: '.COMPANY_URL));
+			$message->setFrom(array(SUPPORT => 'Data Backup: '.COMPANY_URL));
 			$message->setTo("nilamdoc@gmail.com");
 			$message->addBcc(MAIL_1);
 			$message->addBcc(MAIL_2);			

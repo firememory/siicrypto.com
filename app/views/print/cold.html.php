@@ -17,7 +17,7 @@
 		</tr>
 			<tr>
 				<td>
-					<a href="/vanity/out/ibwt-Print-<?=$data[0]['address']?>.pdf" target="_blank">Your print / cold storage</a>
+					<a href="/vanity/out/Print-<?=$data[0]['address']?>.pdf" target="_blank">Your print / cold storage</a>
 				</td>
 			</tr>
 		</table>

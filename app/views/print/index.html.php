@@ -26,7 +26,7 @@
 <h5>Sample</h5>
 <img src="/img/bitcoin-ibwt.jpg" width="800" style="padding:5px ">
 <h5>Security</h5>
-<p>In Bitcoin We Trust, while generating the print, we do not store any keys on the server, the file is processed in RAM and delivered securely to your email address.</p>
+<p>While generating the print, we do not store any keys on the server, the file is processed in RAM and delivered securely to your email address.</p>
 <h5>Fees</h5>
 <p>This service is free!</p>
 <h5>How to get them</h5>

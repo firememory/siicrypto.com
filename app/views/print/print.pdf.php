@@ -10,7 +10,7 @@ $this->Pdf->setCustomLayout(array(
         list($r, $g, $b) = array(200,200,200);
         $pdf->SetFillColor($r, $g, $b); 
         $pdf->SetTextColor(0 , 0, 0);
-        $pdf->Cell(0,15, 'In Bitcoin We Trust: Paper / Cold Storage', 0,1,'C', 1);
+        $pdf->Cell(0,15, 'Paper / Cold Storage', 0,1,'C', 1);
         $pdf->Ln();
     },
     'footer'=>function() use($pdf){
@@ -28,8 +28,8 @@ $pdf->SetFooterMargin(0);
 $pdf->SetAuthor('https://SiiCrypto.com');
 $pdf->SetCreator('support@SiiCrypto.com');
 $pdf->SetSubject('In Bitcoin We Trust, Print ');
-$pdf->SetKeywords('In Bitcoin We Trust, SiiCrypto.com, Print');
-$pdf->SetTitle('In Bitcoin We Trust, https://SiiCrypto.com');
+$pdf->SetKeywords('SiiCrypto.com, Print');
+$pdf->SetTitle('https://SiiCrypto.com');
 
 
 $pdf->SetAutoPageBreak(true);
@@ -45,7 +45,7 @@ foreach($data as $d){
 				$image = '0';
 		//		print_r($address);
 				$pdf->AddPage('P');
-				$pdf->Image(LITHIUM_APP_PATH.'/webroot/img/bitcoin-ibwt-v.jpg', 30, 10, 143, 267, '', '', '', false, 300, '', false, false, 0);
+				$pdf->Image(LITHIUM_APP_PATH.'/webroot/img/bitcoin-paper-v.jpg', 30, 10, 143, 267, '', '', '', false, 300, '', false, false, 0);
 				
 				$pdf->SetTextColor(0, 0, 0);
 				
