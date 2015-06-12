@@ -30,8 +30,8 @@ class Walletxgcnotify extends \lithium\console\Command {
 						if($Transactions['_id']==""){
 							$t = Transactions::create();
 							$Amount = $Amount;
-							$comment = "Move from User: ".$username."; Address: ".$address."; Amount:".$Amount.";";
-							$transfer = $greencoin->sendfrom($username, GREENCOINX_ADDRESS, (float)$Amount,false,(int)0,$comment);
+							$comment = "Move from User: ".$username."; Address: ".GREENCOINX_ADDRESS."; Amount:".$Amount.";";
+							$transfer = $greencoin->sendfrom($username, GREENCOINX_ADDRESS, (float)$Amount,(int)0,$comment);
 
 							if(isset($transfer['error'])){
 								$error = $transfer['error']; 
