@@ -1595,9 +1595,8 @@ class UsersController extends \lithium\action\Controller {
 		$Transaction = Transactions::find('first', array(
 			'conditions' => array('_id' => new MongoID($ID))
 		));
-
 			if(String::hash($Transaction['_id'])==$TransactionID){
-				$Remove = Transactions::remove(array('_id'=>$ID));
+				$Remove = Transactions::remove(array('_id'=>new MongoID ($ID)));
 			}
 		return $this->redirect('/Users/'.$url.'/'.$currency);
 	}

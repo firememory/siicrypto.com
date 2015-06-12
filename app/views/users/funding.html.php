@@ -83,6 +83,7 @@ function loadDiv()
 	initCanvas(300,200);
 	qrcode.callback = read;
 	qrcode.decode("");
+//	setInterval(function () {captureToCanvas();}, 1000);
 }
 
 function initCanvas(ww,hh)
