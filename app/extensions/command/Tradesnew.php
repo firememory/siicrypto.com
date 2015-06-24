@@ -17,7 +17,7 @@ class Tradesnew extends \lithium\console\Command {
 		
 		foreach ($trades as $trade){
 					$pair = substr($trade['trade'],0,3) ."_" . substr($trade['trade'],4,3);	
-					$amount = $trade['amount']+($this->float_rand(0,1,2)) ;;
+					$amount = $trade['amount']+($this->float_rand(0,1,3)) ;;
 					$price = $trade['Base']+($this->float_rand(0,0.5,4)) ;
 					
 					if(round($this->float_rand(0,1,0),0)!=0){
@@ -43,7 +43,7 @@ class Tradesnew extends \lithium\console\Command {
 						}						
 					}
 
-		$url = "https://siicrypto/API/Trade/".$keyX;
+		$url = "https://siicrypto.com/API/Trade/".$keyX;
 		$fields = array(
 //				'username' => $usernameX,
 				'type'=> $ActionX,
