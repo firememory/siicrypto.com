@@ -45,7 +45,7 @@ class Tradesnew extends \lithium\console\Command {
 
 		$url = "https://siicrypto.com/API/Trade/".$keyX;
 		$fields = array(
-//				'username' => $usernameX,
+				'username' => $usernameX,
 				'type'=> $ActionX,
 				'pair'=>$pair,
 				'amount'=>$amount,
@@ -56,7 +56,9 @@ print_r($pair)		;
 
 		foreach($fields as $key=>$value) { $fields_string .= $key.'='.$value.'&'; }
 		rtrim($fields_string, '&');
-//print_r($fields_string);
+
+print_r("\n");
+print_r($fields_string);
 print_r("\n");
 		$useragent="Fake Mozilla 5.0 ";
 		$ch = curl_init();
@@ -80,7 +82,7 @@ print_r("\n");
 		
 		$url = "https://siicrypto/API/Trade/".$keyY;
 		$fields = array(
-//				'username' => $usernameY,
+				'username' => $usernameY,
 				'type'=> $ActionY,
 				'pair'=>$pair,
 				'amount'=>$amount,
@@ -88,9 +90,13 @@ print_r("\n");
 				'nounce'=>$nounce
 		);
 		print_r($pair)		;
-		print_r("\n")		;
+
 		foreach($fields as $key=>$value) { $fields_string .= $key.'='.$value.'&'; }
 		rtrim($fields_string, '&');
+print_r("\n");
+print_r($fields_string);
+print_r("\n");
+		
 		$useragent="Fake Mozilla 5.0 ";
 		$ch = curl_init();
 
