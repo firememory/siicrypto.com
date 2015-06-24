@@ -56,7 +56,7 @@ if($this->_request->params['controller']!='api'){
 			$price = 0;
 			foreach($Rates['result'] as $rate){
 			 if($rate['_id']['FirstCurrency']==$first_currency && $rate['_id']['SecondCurrency']==$second_currency){
-					$price = $rate['last'];
+					$price = $rate['max'];
 			 }
 			}
 ?><li>
