@@ -688,6 +688,7 @@ array(
 			$details = Details::find('first',array(
 				'conditions'=>array('key'=>$key)
 			));
+			print_r($details['username']);
 			if(count($details)==0){
 				return $this->render(array('json' => array('success'=>0,
 				'now'=>time(),
@@ -775,6 +776,7 @@ array(
 				$details = Details::find('first',
 					array('conditions'=>array('user_id'=>$id))
 				)->save($data);
+				print_r("Buy-Save");
 			}
 
 			if($Action == "Sell"){
@@ -802,6 +804,7 @@ array(
 				$details = Details::find('first',
 					array('conditions'=>array('user_id'=>$id))
 				)->save($data);
+				print_r("Sell-Save");
 			}
 
 			$data = array(
