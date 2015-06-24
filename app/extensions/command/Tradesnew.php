@@ -35,14 +35,19 @@ class Tradesnew extends \lithium\console\Command {
 						$nounce = time();
 						}
 
-					foreach ($details as $detail){
-						if($usernameX==$detail['username']){
-							$keyX = $detail['key'];
-						}
-						if($usernameY==$detail['username']){
-							$keyY = $detail['key'];
-						}						
-					}
+				$details = Details::find('first',array(
+					'conditions'=>array('username'=>'SiiUserA')
+				));
+				if($usernameX==$details['username']){
+					$keyX = $details['key'];
+				}
+				$details = Details::find('first',array(
+					'conditions'=>array('username'=>'SiiUserB')
+				));
+				if($usernameY==$details['username']){
+					$keyY = $details['key'];
+				}					
+					
 
 		$url = "https://siicrypto.com/API/Trade/".$keyX;
 		$fields = array();
