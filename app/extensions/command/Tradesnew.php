@@ -63,6 +63,8 @@ print_r($pair)		;
 print_r("\n");
 print_r($fields_string);
 print_r("\n");
+
+
 		$useragent="Fake Mozilla 5.0 ";
 		$ch = curl_init();
 
@@ -81,7 +83,8 @@ print_r("\n");
 			$result = curl_exec($ch);
 
 			curl_close($ch);
-		
+
+		///////////////////////////////////////////////////////////////////////////////////		
 		$fields = array();
 		$fields_string = "";
 	
@@ -105,8 +108,7 @@ print_r("\n");
 		$useragent="Fake Mozilla 5.0 ";
 		$ch = curl_init();
 
-		//set the url, number of POST vars, POST data
-		
+			//set the url, number of POST vars, POST data
 		curl_setopt($ch, CURLOPT_USERAGENT, $useragent);
 		curl_setopt($ch,CURLOPT_URL, $url);
 		curl_setopt($ch,CURLOPT_POST, count($fields));
@@ -116,9 +118,11 @@ print_r("\n");
   curl_setopt($ch, CURLOPT_VERBOSE, false);
 		curl_setopt($ch,CURLOPT_SSL_VERIFYPEER ,false);
 		curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
-		//execute post
-		$result = curl_exec($ch);
-		curl_close($ch);		
+
+			//execute post
+			$result = curl_exec($ch);
+
+			curl_close($ch);
 				
 		}
 		
