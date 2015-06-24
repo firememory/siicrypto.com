@@ -37,19 +37,19 @@ class Tradesnew extends \lithium\console\Command {
 						$ActionY = "Sell";
 //						$usernameY = "SiiUserB";
 						$nounce = time();
-						$keyToGo = $keyX;
+						
 					}else{
 						$ActionX = "Sell";
 //						$usernameX = "SiiUserB";
 						$ActionY = "Buy";
 //						$usernameY = "SiiUserA";
 						$nounce = time();
-						$keyToGo = $keyY;
+						
 					}
 
 					
 
-		$url = "https://siicrypto.com/API/Trade/".$keyToGo;
+		$url = "https://siicrypto.com/API/Trade/".$keyX;
 		$fields = array();
 		$fields_string = "";
 		$fields = array(
@@ -95,7 +95,7 @@ print_r("\n");
 		$fields = array();
 		$fields_string = "";
 	
-		$url = "https://siicrypto/API/Trade/".$keyToGo;
+		$url = "https://siicrypto/API/Trade/".$keyY;
 		$fields = array(
 //				'username' => $usernameY,
 				'type'=> $ActionY,
