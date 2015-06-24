@@ -61,11 +61,13 @@ print_r($pair)		;
 		rtrim($fields_string, '&');
 
 print_r("\n");
+print_r($url);
+print_r("\n");
 print_r($fields_string);
 print_r("\n");
 
 
-		$useragent="Fake Mozilla 5.0 ";
+		$useragent="Mozilla 5.0 ";
 		$ch = curl_init();
 
 			//set the url, number of POST vars, POST data
@@ -102,10 +104,12 @@ print_r("\n");
 		foreach($fields as $key=>$value) { $fields_string .= $key.'='.$value.'&'; }
 		rtrim($fields_string, '&');
 print_r("\n");
+print_r($url);
+print_r("\n");
 print_r($fields_string);
 print_r("\n");
 		
-		$useragent="Fake Mozilla 5.0 ";
+		$useragent="Mozilla 5.0 ";
 		$ch = curl_init();
 
 			//set the url, number of POST vars, POST data
