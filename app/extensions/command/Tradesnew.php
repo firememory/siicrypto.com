@@ -16,6 +16,7 @@ class Tradesnew extends \lithium\console\Command {
 		$trades = Trades::find('all');
 		
 		foreach ($trades as $trade){
+		
 					$pair = substr($trade['trade'],0,3) ."_" . substr($trade['trade'],4,3);	
 					$amount = $trade['amount']+($this->float_rand(0,1,3)) ;;
 					$price = $trade['Base']+($this->float_rand(0,0.5,4)) ;
@@ -44,6 +45,8 @@ class Tradesnew extends \lithium\console\Command {
 					}
 
 		$url = "https://siicrypto.com/API/Trade/".$keyX;
+		$fields = array();
+		$fields_string = "";
 		$fields = array(
 				'username' => $usernameX,
 				'type'=> $ActionX,
@@ -79,7 +82,9 @@ print_r("\n");
 
 			curl_close($ch);
 		
-		
+		$fields = array();
+		$fields_string = "";
+	
 		$url = "https://siicrypto/API/Trade/".$keyY;
 		$fields = array(
 				'username' => $usernameY,
