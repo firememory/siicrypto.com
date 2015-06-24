@@ -95,7 +95,7 @@ print_r("\n");
 		$fields = array();
 		$fields_string = "";
 	
-		$url = "https://siicrypto/API/Trade/".$keyY;
+		$url = "https://siicrypto.com/API/Trade/".$keyY;
 		$fields = array(
 //				'username' => $usernameY,
 				'type'=> $ActionY,
