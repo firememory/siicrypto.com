@@ -8,12 +8,22 @@ use app\models\Parameters;
 class Tradesnew extends \lithium\console\Command {
 	public function index() {
 
-		$details = Details::find('all',array(
-			'conditions'=>array(
-				'username'=>array('$regex'=>'SiiUser'),
-			)
-		));
-		$trades = Trades::find('all');
+				$usernameX = "SiiUserA";
+				$details = Details::find('first',array(
+					'conditions'=>array('username'=>'SiiUserA')
+				));
+				if($usernameX==$details['username']){
+					$keyX = $details['key'];
+				}
+				$usernameY = "SiiUserB";
+				$details = Details::find('first',array(
+					'conditions'=>array('username'=>'SiiUserB')
+				));
+				if($usernameY==$details['username']){
+					$keyY = $details['key'];
+				}					
+
+				$trades = Trades::find('all');
 		
 		foreach ($trades as $trade){
 		
@@ -23,37 +33,25 @@ class Tradesnew extends \lithium\console\Command {
 					
 					if(round($this->float_rand(0,1,0),0)!=0){
 						$ActionX = "Buy";
-						$usernameX = "SiiUserA";
+//						$usernameX = "SiiUserA";
 						$ActionY = "Sell";
-						$usernameY = "SiiUserB";
+//						$usernameY = "SiiUserB";
 						$nounce = time();
 					}else{
 						$ActionX = "Sell";
-						$usernameX = "SiiUserB";
+//						$usernameX = "SiiUserB";
 						$ActionY = "Buy";
-						$usernameY = "SiiUserA";
+//						$usernameY = "SiiUserA";
 						$nounce = time();
-						}
+					}
 
-				$details = Details::find('first',array(
-					'conditions'=>array('username'=>'SiiUserA')
-				));
-				if($usernameX==$details['username']){
-					$keyX = $details['key'];
-				}
-				$details = Details::find('first',array(
-					'conditions'=>array('username'=>'SiiUserB')
-				));
-				if($usernameY==$details['username']){
-					$keyY = $details['key'];
-				}					
 					
 
 		$url = "https://siicrypto.com/API/Trade/".$keyX;
 		$fields = array();
 		$fields_string = "";
 		$fields = array(
-				'username' => $usernameX,
+//				'username' => $usernameX,
 				'type'=> $ActionX,
 				'pair'=>$pair,
 				'amount'=>$amount,
@@ -97,7 +95,7 @@ print_r("\n");
 	
 		$url = "https://siicrypto/API/Trade/".$keyY;
 		$fields = array(
-				'username' => $usernameY,
+//				'username' => $usernameY,
 				'type'=> $ActionY,
 				'pair'=>$pair,
 				'amount'=>$amount,
