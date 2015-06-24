@@ -819,6 +819,7 @@ array(
 				'username' => $user['username'],
 				'user_id' => (string)$user['_id'],
 			);
+			print_r($data);
 					// Create Order for the user
 			$orders = Orders::create();			
 			$orders->save($data);
