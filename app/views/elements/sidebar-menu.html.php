@@ -45,7 +45,7 @@ $trades = Trades::find('all',array('limit'=>$howmany,'order'=>array('order'=>1))
 				array('$limit'=>count($trades))
 			)
 		));
-print_r($Rates);
+//print_r($Rates);
 $sel_curr = $this->_request->params['args'][0];
 if($this->_request->params['controller']!='api'){
 	$currencies = array();
@@ -56,7 +56,7 @@ if($this->_request->params['controller']!='api'){
 			$price = 0;
 			foreach($Rates['result'] as $rate){
 			 if($rate['_id']['FirstCurrency']==$first_currency && $rate['_id']['SecondCurrency']==$second_currency){
-					$price = $rate['max'];
+					$price = $rate['last'];
 			 }
 			}
 ?><li>
