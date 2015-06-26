@@ -42,7 +42,7 @@ $trades = Trades::find('all',array('limit'=>$howmany,'order'=>array('order'=>1))
 					'_id.day'=>-1,					
 					'_id.hour'=>-1,					
 				)),
-//				array('$limit'=>1)
+				array('$limit'=>count($trades))
 			)
 		));
 print_r($Rates);
