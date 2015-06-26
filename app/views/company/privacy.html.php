@@ -55,8 +55,6 @@ Sensitive and private data exchange between the Site and its Users happens over 
 <p><strong>Contacting us</strong>
 
 <blockquote>If you have any questions about this Privacy Policy, the practices of this site, or your dealings with this site, please contact us at:
-<address><strong>Sabrina Investments Inc (SiiCrypto.com)</strong><br>
-<a href="https://siicrypto.com">https://SiiCrypto.com/</a><br>
 <abbr title="Email">E:</abbr> <a href="mailto:support@siicrypto.com">support@siicrypto.com</a><br>
 </address>
 </blockquote>

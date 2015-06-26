@@ -12,6 +12,7 @@
 
 ?>
 <!DOCTYPE html>
+<?php $user = Session::read('member'); print_r($user);?>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -78,8 +79,15 @@ $ex = Session::read('ex');
 							<li class="active"><a href="#"> <i class="glyphicon glyphicon-th-list"></i> Trades</a></li>
 							<?php echo $this->_render('element', 'sidebar-menu');?>		
 							<li class="active"><a href="/users/settings"> <i class="fa fa-gears"></i> Settings</a></li>
-							<li class="active"><a href="/ex/dashboard"> <i class="fa fa-dashboard"></i> Dashboard</a></li>						
+							<li class="active"><a href="/ex/dashboard"> <i class="fa fa-dashboard"></i> Dashboard</a></li>
+							<li class="active"><a href="/company/funding"> <i class="fa fa-dollar"></i> Funding</a></li>
 						</ul>
+						<?php if($user==""){ ?>
+						<ul class="nav nav-sidebar">
+						<li class="active"><a href="/users/signup">Open an account</a></li>
+						<li><a href="/users/signup">Register&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+						</ul>
+						<?php }?>
 					</div> <!-- sidebar-->
 			<?php }?>
 				<?php if(strtolower($this->_request->controller)=='admin'){ ?>

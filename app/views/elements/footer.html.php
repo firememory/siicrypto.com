@@ -1,9 +1,10 @@
 <div class="row container" style="width:100%;padding:10px">
  <p>&nbsp;</p><hr class="half-rule"><p>&nbsp;</p>
-	<h4 class="nav navbar-nav">Copyright &copy; Sabrina Investments Inc. All rights reserved.</h4>
+	<h4 class="nav navbar-nav"><small style="font-size:11px;">Copyright &copy; Sabrina Investments Inc. All rights reserved.</small></h4>
 </div>
 <div class="row container"  style="width:100%;font-size:11px;border-top:1px solid gray;border-bottom:double">
 	<ul class="nav navbar-nav" >
+		<li><a href="/">Home</a></li>		
 		<li><a href="/company/contact">Contact</a></li>		
 		<li><a href="/company/aboutus">About</a></li>	
 		<li><a href="/company/riskmanagement">Risk</a></li>				
@@ -14,7 +15,7 @@
 </div>
 <div class="row container">
 	<p>
-		SiiCrypto is a name of <strong>Sabrina Investments Inc.</strong>
+		<small style="font-size:11px;">SiiCrypto is a business name of <strong>Sabrina Investments Inc.</strong></small>
 	</p>
 </div>
 <script>

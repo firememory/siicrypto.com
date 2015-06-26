@@ -72,29 +72,28 @@ $Comm = Parameters::find('first');
 				<h3 class="panel-title">Advantages</h3>
 			</div>
 		</div>
-		<h3>Sabrina Investments Inc. siiCrypto.com</h3>
+		<h3>Sabrina Investments Inc. SiiCrypto.com</h3>
 		<ul>
 			<li>Fees are <strong><?=$Comm['value']?></strong>% per transaction.</li>
-    	<li>Cold Storage, SSL and 256bit encryption.</li>
-    <li>2FA login and coin withdrawal, with optional 3FA login.</li>
-    <li>Deposits & Withdrawals immune to banking interference.</li>
+    	<li>Crypto coins stored on Cold Storage, SSL and 256bit encryption.</li>
+    <li>Two Factor Authentication(2FA) login and coin withdrawal, with optional (3FA) login.</li>
     <li>Exchange available to all internationally and nationally.</li>
-    <li>Fiat Deposits/Withdrawals currently only for UK residents.</li>
+
 		</ul>
 
 <p>To become an SiiCrypto.com customer and use our platform and services, you only need the following;
 <ul>
-    <li>To trade BTC - registered email.</li>
-    <li>To deposit fiat - registered email.</li>
+    <li>To trade with BTC/XGC - registered & verified email.</li>
+    <li>To deposit fiat currency - registered & verified email.</li>
     <li>To withdraw fiat - verified proof of address.</li>
-    <li>To deposit/withdraw fiat over &pound;10,000 a day - valid government photo ID.</li>
+
 </ul>
 </p>
-<p>Please make sure you check - <a href="/files/Withdrawal%20Verification.pdf" target="_blank">7 Easy Verifcation Steps</a> 
+
 <p>For further details on verification, deposits and withdrawals, please check.
 <ul>
     <li><a href="/company/verification">Verification</a></li>
-    <li><a href="/company/funding">Funding</a></li>
+
 </ul>		
 </p>
 Any issues please contact us at <a href="mailto:support@siiCrypto.com">support@siiCrypto.com</a>

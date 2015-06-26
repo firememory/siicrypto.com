@@ -70,7 +70,8 @@ foreach($trades as $tr){
 				<li><a href="/logout"><i class="fa fa-power-off"></i> Logout</a></li>
 			</ul>
 			<?php }else{?>
-			<li><a href="/login">Login / Register &nbsp;&nbsp;&nbsp;</a></li>
+			<li><a href="/login">Login</a></li>
+			<li><a href="/users/signup">Register&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
 			<?php }?>				
 		</ul>
 </div> <!-- navbar-collapse -->
