@@ -45,7 +45,7 @@ $trades = Trades::find('all',array('limit'=>$howmany,'order'=>array('order'=>1))
 //				array('$limit'=>1)
 			)
 		));
-//print_r($Rates);
+print_r($Rates);
 $sel_curr = $this->_request->params['args'][0];
 if($this->_request->params['controller']!='api'){
 	$currencies = array();
