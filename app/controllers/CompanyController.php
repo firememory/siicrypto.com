@@ -38,6 +38,16 @@ class CompanyController extends \lithium\action\Controller {
 		$description = $page['description'];
 		return compact('title','keywords','description');
 	}
+	public function howitworks() {
+		$page = Pages::find('first',array(
+			'conditions'=>array('pagename'=>'company/howitworks')
+		));
+
+		$title = $page['title'];
+		$keywords = $page['keywords'];
+		$description = $page['description'];
+		return compact('title','keywords','description');
+	}
 	public function contact() {
 		$page = Pages::find('first',array(
 			'conditions'=>array('pagename'=>'company/contact')
@@ -88,6 +98,16 @@ class CompanyController extends \lithium\action\Controller {
 		$description = $page['description'];
 		return compact('title','keywords','description');
 	}
+	public function security(){
+		$page = Pages::find('first',array(
+			'conditions'=>array('pagename'=>'company/security')
+		));
+
+		$title = $page['title'];
+		$keywords = $page['keywords'];
+		$description = $page['description'];
+		return compact('title','keywords','description');
+	}	
 	public function resources(){
 		$page = Pages::find('first',array(
 			'conditions'=>array('pagename'=>'company/resources')

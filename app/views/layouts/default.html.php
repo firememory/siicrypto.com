@@ -12,7 +12,7 @@
 
 ?>
 <!DOCTYPE html>
-<?php $user = Session::read('member'); print_r($user);?>
+<?php $user = Session::read('member'); ?>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -84,8 +84,7 @@ $ex = Session::read('ex');
 						</ul>
 						<?php if($user==""){ ?>
 						<ul class="nav nav-sidebar">
-						<li class="active"><a href="/users/signup">Open an account</a></li>
-						<li><a href="/users/signup">Register&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+						<li class="active"><a href="/users/signup">Register & Open an account</a></li>
 						</ul>
 						<?php }?>
 					</div> <!-- sidebar-->

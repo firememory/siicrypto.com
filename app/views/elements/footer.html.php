@@ -7,6 +7,8 @@
 		<li><a href="/">Home</a></li>		
 		<li><a href="/company/contact">Contact</a></li>		
 		<li><a href="/company/aboutus">About</a></li>	
+		<li><a href="/company/howitworks">How it works</a></li>	
+		<li><a href="/company/security">Security</a></li>	
 		<li><a href="/company/riskmanagement">Risk</a></li>				
 		<li><a href="/company/verification">Verification</a></li>						
 		<li><a href="/company/privacy">Privacy</a></li>		
