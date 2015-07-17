@@ -17,6 +17,7 @@
 <h4>DEFINITIONS</h4>
 
 <p><strong>Platform</strong>: means the software, technical and organisational structure managed by SiiCrypto located at the <a href="https://siicrypto.com/">https://siicrypto.com/</a> address.</p>
+<p><strong>GreenCoinX(s)</strong>: means the Peer-to-Peer digital transfer value asset (as described at <a href="https://greencoinx.com/" target="_blank">https://greencoinx.com/</a>).</p>
 
 <p><strong>Bitcoin(s)</strong>: means the Peer-to-Peer digital transfer value asset (as described at <a href="https://bitcoin.org/en/" target="_blank">https://bitcoin.org/en/</a>).</p>
 <p><strong>Crypto-Currency(s)</strong>:means the digital value assets GreenCoinX and Bitcoin.</p>
@@ -57,11 +58,11 @@
 <p>Upon matching of the offers of Buyer and Seller, SiiCrypto has the sole authority to permit the transfer of the amount corresponding to the Transaction Price minus the Commission from the Buyer&#039;s Account to the Seller.</p>
 <p>Customers may at any time transfer any amount of Crypto-currencys to any other Customer.</p>
 <p>Customers can not transfer Fiat.</p>
-<p>Customers are solely responsible for ensuring that any Receiver of their Crypto-currencys shall be a valid and legal transaction not infringing any UK or International laws and regulations.</p>
+<p>Customers are solely responsible for ensuring that any Receiver of their Crypto-currencys shall be a valid and legal transaction.</p>
 <p>The responsibility of SiiCrypto is limited to providing the service to ensure the transference of the Crypto-currencys.</p>
 </li>
 <li><strong>DEPOSITS &amp; WITHDRAWALS</strong>
-<p>Customers agree to submit a deposit request before transferring any funds to their SiiCrypto account. And Customers agree to abide by the limits set by SiiCrypto in deposit.</p>
+<p>Customers agree to submit a deposit request before transferring any funds to their SiiCrypto account. Customers agree to abide by the limits set by SiiCrypto in deposit.</p>
 <p>Customers agree to submit a withdrawal request and to wait for their withdrawal request to be confirmed by SiiCrypto.
 
 </li>
