@@ -241,8 +241,8 @@ class ExController extends \lithium\action\Controller {
 							'conditions' => array('_id' => new MongoID($id))
 						));
 				
-							print_r($PO['user_id']);
-							print_r($PO['username']);
+//							print_r($PO['user_id']);
+//							print_r($PO['username']);
 							
 						$data = array(
 							'Completed' => 'Y',
@@ -276,7 +276,7 @@ class ExController extends \lithium\action\Controller {
 						$this->SendOrderCompleteEmails($PO['_id'],$PO['user_id']);						
 					}
 				}
-				exit;
+				
 				$this->redirect($this->request->params);
 			}
 			
