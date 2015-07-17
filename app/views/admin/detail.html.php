@@ -1,4 +1,7 @@
-<?php use lithium\util\String;?>
+<?php 
+use lithium\util\String;
+use app\models\Trades;
+?>
 <table class="table table-condensed table-bordered table-hover" >
 	<thead>
 	<tr>
