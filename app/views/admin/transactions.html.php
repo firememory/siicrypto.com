@@ -68,7 +68,7 @@ foreach ($Details	as $tx){?>
 				<input type="hidden" name="id" id="id" value="<?=$tx['_id']?>">
 				<input type="hidden" name="Currency" id="Currency" value="<?=$tx['Currency']?>">				
 				<br>
-				<input type="submit" value="Deposit to ibwt" class="btn btn-primary tooltip-y" rel="tooltip-x" data-placement="top" title="Approve this transaction">
+				<input type="submit" value="Deposit to site" class="btn btn-primary tooltip-y" rel="tooltip-x" data-placement="top" title="Approve this transaction">
 			</form>
 			
 			</td>
