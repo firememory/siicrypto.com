@@ -13,8 +13,7 @@
 	</div>
 	<div id="Adminbar" class="btn-group btn-group-xs"> 
 		<a type="button" class="btn btn-default" href="/Admin/bitcointransaction">BTC</a>
-		<a type="button" class="btn btn-default" href="/Admin/litecointransaction">LTC</a>
-		<a type="button" class="btn btn-default" href="/Admin/greencointransaction">XGC</a>
+				<a type="button" class="btn btn-default" href="/Admin/greencointransaction">XGC</a>
 	</div>
 	<div id="Adminbar" class="btn-group btn-group-xs"> 	
 		<a type="button" class="btn btn-default" href="/Admin/orders">Orders</a>						
