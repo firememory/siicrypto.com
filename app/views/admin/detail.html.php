@@ -24,7 +24,7 @@
 <?php  }?>
 	<tr>
 		<th style="text-align:center ">BTC</th>
-		<th style="text-align:center ">LTC</th>		
+		<th style="text-align:center ">XGC</th>		
 		<th style="text-align:center ">USD</th>
 		<th style="text-align:center ">GBP</th>
 		<th style="text-align:center ">EUR</th>
@@ -33,7 +33,7 @@
 <?php foreach($details as $dt){?>
 	<tr>
 		<td style="text-align:center "><?=number_format($dt['balance.BTC'],8)?></td>
-		<td style="text-align:center "><?=number_format($dt['balance.LTC'],8)?></td>		
+		<td style="text-align:center "><?=number_format($dt['balance.XGC'],8)?></td>		
 		<td style="text-align:center "><?=number_format($dt['balance.USD'],4)?></td>
 		<td style="text-align:center "><?=number_format($dt['balance.GBP'],4)?></td>
 		<td style="text-align:center "><?=number_format($dt['balance.EUR'],4)?></td>
@@ -142,20 +142,20 @@ $Amount = 0;
 	<div class="span4">
 		<div class="navbar">
 			<div class="navbar-inner">
-			<a class="brand" href="#">Transactions in LTC </a>
+			<a class="brand" href="#">Transactions in XGC </a>
 			</div>
 			<table class="table table-condensed table-bordered table-hover"  style="font-size:11px">
 			<thead>
 				<tr>
 					<th>Date</th>
-					<th>Amount LTC</th>
+					<th>Amount XGC</th>
 					<th>Status</th>
 					<th>Paid</th>
 				</tr>
 			</thead>
 			<tbody>
 			<?php $Amount = 0;
-			foreach ($transactionsLTC as $tx){?>
+			foreach ($transactionsXGC as $tx){?>
 			<tr <?php ?> style="background-color:#669933 "></tr>
 				<td><?=gmdate('Y-M-d H:i:s',$tx['DateTime']->sec)?></td>
 				<td style="text-align:right "><?=number_format($tx['Amount'],8)?></td>
@@ -290,7 +290,7 @@ foreach ($Fiattransactions as $tx){?>
 				<tr>
 					<th>Summary</th>
 					<th>BTC</th>
-					<th>LTC</th>					
+					<th>XGC</th>					
 					<th>USD</th>
 					<th>EUR</th>
 					<th>GBP</th>
