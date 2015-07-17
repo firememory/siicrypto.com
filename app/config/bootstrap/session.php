@@ -17,7 +17,7 @@ use lithium\security\Auth;
 
 $name = basename(LITHIUM_APP_PATH);
 Session::config(array(
-    'default' => array('adapter' => 'Php')
+	'default' => array('adapter' => 'Php', 'session.name' => $name)
 ));
 
 

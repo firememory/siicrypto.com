@@ -5,7 +5,7 @@
 <blockquote>
  <ol class="home-bullets"><h4>Here is why:</h4>
 				<li><h5>Secure cold wallet to hold crypto currencies</h5>
-								<p>Your crypto currencies are stored in the cold wallet until they are needed for a transaction.
+								<p>Your crypto currencies are stored in a cold wallet until they are needed for a transaction.
 Our hot wallets are not accessible from the front-end servers</p>
 					</li>
 
@@ -14,7 +14,7 @@ Our hot wallets are not accessible from the front-end servers</p>
 				</li>
 					<li><h5>Advanced account protection</h5>
 <ul><h5>We offer two options to secure your account:</h5> <li>Two-factor authentication (2FA) token and Email/Voice authentication to validate your withdrawals.</li>
-<li>We have advanced verification tool to try and detect if your account is compromised</li>
+<li>We have advanced verification tools to try and detect if your account is compromised</li>
 </ul>
 					</li>
 
@@ -23,7 +23,7 @@ Our hot wallets are not accessible from the front-end servers</p>
 </li>
 
 <li><h5>Duplication of backup data automatically</h5>
-<p>As soon as a new backup is ready (database, log files,...), it is sent to others servers in several physical locations.</p>
+<p>As soon as a new backup is ready (database, log files,...), it is sent to other servers in several physical locations.</p>
 </li>
 </ol>
 </blockquote>

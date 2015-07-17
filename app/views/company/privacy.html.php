@@ -34,14 +34,10 @@ We may use the email address to send User information and updates pertaining to 
 <p><strong>How we protect your information</strong>
 <blockquote>
 We adopt appropriate data collection, storage and processing practices and security measures to protect against unauthorized access, alteration, disclosure or destruction of your personal information, username, password, transaction information and data stored on our Site.<br><br>
-Sensitive and private data exchange between the Site and its Users happens over a SSL secured communication channel and is encrypted and protected with digital signatures. Our Site is also in compliance with PCI vulnerability standards and we are registered with ICO and adhere to their practices in order to create as secure of an environment as possible for Users.</blockquote></p>
+Sensitive and private data exchange between the Site and its Users happens over a SSL secured communication channel and is encrypted and protected with digital signatures.</blockquote></p>
 
 <p><strong>Sharing your personal information</strong>
-<blockquote>We do not sell, trade, or rent Users personal identification information to others. We may share generic aggregated demographic information not linked to any personal identification information regarding visitors and users with our business partners, trusted affiliates and advertisers for the purposes outlined above.</blockquote>
-</p>
-
-<p><strong>Third party websites</strong>
-<blockquote>Users may find advertising or other content on our Site that link to the sites and services of our partners, suppliers, advertisers, sponsors, licensor and other third parties. We do not control the content or links that appear on these sites and are not responsible for the practices employed by websites linked to or from our Site. In addition, these sites or services, including their content and links, may be constantly changing. These sites and services may have their own privacy policies and customer service policies. Browsing and interaction on any other website, including websites which have a link to our Site, is subject to that website&#039;s own terms and policies.</blockquote>
+<blockquote>We do not sell, trade, or rent Users personal identification information to others.</blockquote>
 </p>
 
 <p><strong>Changes to this privacy policy</strong>
