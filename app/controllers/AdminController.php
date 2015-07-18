@@ -14,6 +14,7 @@ use app\models\Pages;
 use app\models\Requests;
 use app\models\Logins;
 use app\controllers\ExController;
+use app\extensions\action\Functions;
 use lithium\data\Connections;
 use app\extensions\action\Pagination;
 use lithium\util\String;
