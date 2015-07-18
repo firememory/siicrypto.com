@@ -291,7 +291,7 @@ foreach ($Fiattransactions as $tx){?>
 			
 			
 			
-					<table class="table table-condensed table-bordered table-hover">
+		<table class="table table-condensed table-bordered table-hover">
 			<thead>
 				<tr>
 					<th  class="headTable">Currency</th>

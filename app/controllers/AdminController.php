@@ -13,6 +13,7 @@ use app\models\Orders;
 use app\models\Pages;
 use app\models\Requests;
 use app\models\Logins;
+use app\controllers\ExController;
 use lithium\data\Connections;
 use app\extensions\action\Pagination;
 use lithium\util\String;
@@ -467,7 +468,7 @@ $description = "Admin Approve documents ";
 
 		$Fiattransactions = Transactions::find('all',array(
 			'conditions'=>array(
-				'Currency'=>array('$nin'=>array('BTC','LTC')),
+				'Currency'=>array('$nin'=>array('BTC','XGC')),
 				'Approved'=>'No',
 				'Added'=>true
 			),
@@ -501,7 +502,7 @@ $description = "Admin Approve documents ";
 				)),
 				array('$match'=>array(
 					'username'=>$ft['username'],					
-					'Currency'=>array('$nin'=>array('BTC','LTC')),
+					'Currency'=>array('$nin'=>array('BTC','XGC')),
 					'Approved'=>'Yes',
 					'Added'=>(boolean)true
 					)),
@@ -526,7 +527,7 @@ $description = "Admin Approve documents ";
 				)),
 				array('$match'=>array(
 					'username'=>$ft['username'],					
-					'Currency'=>array('$nin'=>array('BTC','LTC')),
+					'Currency'=>array('$nin'=>array('BTC','XGC')),
 					'Approved'=>'Yes',
 					'Added'=>(boolean)false
 					)),
@@ -1225,17 +1226,17 @@ $description = "Admin panel for bitcoin transaction";
 				),
 			'order' => array('DateTime'=>'DESC')				
 			));
-		$transactionsLTC = Transactions::find('all',array(
+		$transactionsXGC = Transactions::find('all',array(
 				'conditions'=>array(
 					'username'=>$username,
-					'Currency'=>'LTC'					
+					'Currency'=>'XGC'					
 				),
 			'order' => array('DateTime'=>'DESC')				
 			));
 		$Fiattransactions = Transactions::find('all',array(
 			'conditions'=>array(
 			'username'=>$username,
-			'Currency'=>array('$nin'=>array('BTC','LTC'))
+			'Currency'=>array('$nin'=>array('BTC','XGC'))
 			),
 			'order'=>array('DateTime'=>-1)
 		));
@@ -1245,11 +1246,18 @@ $description = "Admin panel for bitcoin transaction";
 				'username'=>$username
 			)
 		));
+		$userdetail = Details::find('first',array(
+			'conditions'=>array(
+				'username'=>$username
+			)
+		));
+		$id = $userdetail['user_id'];
 			$user = Users::find('all',array(
 			'conditions'=>array(
 			'username'=>$username
 			)
 		));
+		
 		$logins = Logins::find('first',array(
 			'conditions'=>array(
 			'username'=>$username
@@ -1279,8 +1287,29 @@ $description = "Admin panel for bitcoin transaction";
 $keywords = "Admin, Detail user";
 $description = "Admin Panel for user";
 
+$trades = Trades::find('all');
+$ex = new ExController();
+		$YourOrders = array();
+		foreach($trades as $t){
+			$YourOrders['Buy'] = $ex->YourOrders($id,'Buy',substr($t['trade'],0,3),substr($t['trade'],4,3));
+			$YourOrders['Sell'] = $ex->YourOrders($id,'Sell',substr($t['trade'],0,3),substr($t['trade'],4,3));			
+			$YourCompleteOrders['Buy'] = $ex->YourCompleteOrders($id,'Buy',substr($t['trade'],0,3),substr($t['trade'],4,3));
+			$YourCompleteOrders['Sell'] = $ex->YourCompleteOrders($id,'Sell',substr($t['trade'],0,3),substr($t['trade'],4,3));			
+		}
+		$Commissions = $ex->TotalCommissions($id);
+		$CompletedCommissions = $ex->CompletedTotalCommissions($id);		
+		$RequestFriends = $ex->RequestFriend($id);
+		$UsersRegistered = Details::count();
+		$functions = new Functions();
+		$OnlineUsers = 	$functions->OnlineUsers();
+		foreach($trades as $t){
+			$TotalOrders['Buy'] = $ex->TotalOrders($id,'Buy',substr($t['trade'],0,3),substr($t['trade'],4,3));
+			$TotalOrders['Sell'] = $ex->TotalOrders($id,'Sell',substr($t['trade'],0,3),substr($t['trade'],4,3));			
+			$TotalCompleteOrders['Buy'] = $ex->TotalCompleteOrders($id,'Buy',substr($t['trade'],0,3),substr($t['trade'],4,3));
+			$TotalCompleteOrders['Sell'] = $ex->TotalCompleteOrders($id,'Sell',substr($t['trade'],0,3),substr($t['trade'],4,3));						
+		}
 		
-			return compact('title','transactions','transactionsLTC','details','user','UserOrders','Fiattransactions','UserCompleteOrders','title','keywords','description','logins','loginCount');
+			return compact('title','transactions','transactionsXGC','details','user','UserOrders','Fiattransactions','UserCompleteOrders','title','keywords','description','logins','loginCount','YourOrders','YourCompleteOrders','Commissions','CompletedCommissions','TotalOrders','TotalCompleteOrders');
 	}
 	public function bankapprove($username = null){
 	if($this->__init()==false){$this->redirect('ex::dashboard');	}	
@@ -1371,8 +1400,8 @@ $description = "Admin Panel for user";
 				if($UR['_id']['CommissionCurrency']=='BTC'){
 					$new[$urDate]['BTC'] = $UR['CommissionAmount'];
 				}
-				if($UR['_id']['CommissionCurrency']=='LTC'){
-					$new[$urDate]['LTC'] = $UR['CommissionAmount'];
+				if($UR['_id']['CommissionCurrency']=='XGC'){
+					$new[$urDate]['XGC'] = $UR['CommissionAmount'];
 				}
 				if($UR['_id']['CommissionCurrency']=='GBP'){
 					$new[$urDate]['GBP'] = $UR['CommissionAmount'];				
@@ -1432,7 +1461,7 @@ $description = "Admin panel for bitcoin transactions";
 		
 		$transactions = Transactions::find('all',array(
 			'conditions'=>array(
-				'Currency'=>'LTC',
+				'Currency'=>'XGC',
 				'DateTime'=> array( '$gte' => $StartDate, '$lte' => $EndDate ) ,			
 				),
 			'order'=>array('DateTime'=>-1)
@@ -1634,22 +1663,22 @@ $description = "Admin panel for Orders";
 		));
 		$details = Details::find('all',array(
 			'conditions'=>array('lastconnected.loc'=>array('$exists'=>true)),
-			'fields'=>array('lastconnected.loc','lastconnected.ISO','balance.BTC','balance.LTC','balance.USD','balance.EUR','balance.GBP'),
+			'fields'=>array('lastconnected.loc','lastconnected.ISO','balance.BTC','balance.XGC','balance.USD','balance.EUR','balance.GBP'),
 			'sort'=>array('lastconnected.ISO'=>'ASC')
 		));
 		$balance = array();
 		$coun = "{";
 		foreach($IPDetails['result'] as $IP){
-				$BTC = 0; $LTC = 0; $GBP = 0; $USD = 0; $EUR = 0;
+				$BTC = 0; $XGC = 0; $GBP = 0; $USD = 0; $EUR = 0;
 				foreach($details as $dd){
 					if($IP['_id']['iso']==$dd['lastconnected']['ISO']){
 						$BTC = $BTC + $dd['balance']['BTC'];
-						$LTC = $LTC + $dd['balance']['LTC'];
+						$XGC = $XGC + $dd['balance']['XGC'];
 						$GBP = $GBP + $dd['balance']['GBP'];
 						$USD = $USD + $dd['balance']['USD'];
 						$EUR = $EUR + $dd['balance']['EUR'];																								
 					}
-				$balance[$IP['_id']['iso']] = " BTC: ".number_format($BTC,3)." LTC: ".number_format($LTC,3)." GBP: ".number_format($GBP,3)." USD: ".number_format($USD,3)." EUR: ".number_format($EUR,3);
+				$balance[$IP['_id']['iso']] = " BTC: ".number_format($BTC,3)." XGC: ".number_format($XGC,3)." GBP: ".number_format($GBP,3)." USD: ".number_format($USD,3)." EUR: ".number_format($EUR,3);
 				}
 
 			if($IP["_id"]["iso"]!=""){
