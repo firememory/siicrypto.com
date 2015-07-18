@@ -403,10 +403,11 @@ foreach($CompletedCommissions['result'] as $C){
 					<?php foreach($currencies as $currency){
 						if(in_array($currency,$virtuals)){
 						$variablename = $currency."Comm";
+						
 						?>
-					<td style="text-align:right "><?=number_format($details['balance.'.$currency]+$Buy[$currency]-$$variablename,8)?></td>
+					<td style="text-align:right "><?=number_format($details['balance.'.$currency]+$Buy[$currency]-$$variablename,8)?><?=print_r($variablename)?></td>
 					<?php }else{?>
-					<td style="text-align:right "><?=number_format($details['balance.'.$currency]+$SellWith[$currency]-$$variablename,4)?></td>					
+					<td style="text-align:right "><?=number_format($details['balance.'.$currency]+$SellWith[$currency]-$$variablename,4)?><?=print_r($variablename)?></td>					
 					<?php }
 					}?>					
 				</tr>
