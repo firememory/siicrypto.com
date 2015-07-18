@@ -1,6 +1,14 @@
 <?php 
 use lithium\util\String;
 use app\models\Trades;
+$virtuals = array('BTC');
+$virtualcurrencies = Trades::find('all',array(
+	'conditions'=>array('SecondType'=>'Virtual')
+));
+foreach($virtualcurrencies as $VC){
+	array_push($virtuals,substr($VC['trade'],4,3));
+}
+
 ?>
 <table class="table table-condensed table-bordered table-hover" >
 	<thead>
@@ -407,7 +415,7 @@ foreach($CompletedCommissions['result'] as $C){
 						?>
 					<td style="text-align:right "><?=number_format($details['balance.'.$currency]+$Buy[$currency]-$$variablename,8)?><?=print_r($variablename)?><?=print_r($currency)?></td>
 					<?php }else{?>
-					<td style="text-align:right "><?=number_format($details['balance.'.$currency]+$SellWith[$currency]-$$variablename,4)?><?=print_r($variablename)?></td>					
+					<td style="text-align:right "><?=number_format($details['balance.'.$currency]+$SellWith[$currency]-$$variablename,4)?><?=print_r($variablename)?><?=print_r($currency)?></td>					
 					<?php }
 					}?>					
 				</tr>
