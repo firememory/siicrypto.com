@@ -44,7 +44,7 @@ class SessionsController extends \lithium\action\Controller {
 					exit;
 				}
 				
-				if($details["EmailPasswordSecurity"]==="true"){
+				if($details["EmailPasswordSecurity"]==="true" || $details["EmailPasswordSecurity"]===null){
 					if($details['oneCode']===$this->request->data['loginpassword']){
 						$data = array(
 							'oneCodeused'=>'Yes',
