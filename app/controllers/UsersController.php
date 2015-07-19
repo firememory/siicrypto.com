@@ -57,7 +57,7 @@ class UsersController extends \lithium\action\Controller {
 				'key'=>$ga->createSecret(64),
 				'secret'=>$ga->createSecret(64),
 				'Friend'=>array(),
-				'EmailPasswordSecurity' = true,
+				'EmailPasswordSecurity' => true,
 //				'bitcoinaddress.0'=>$bitcoinaddress,
 				'balance.BTC' => (float)0,
 //				'balance.LTC' => (float)0,				
