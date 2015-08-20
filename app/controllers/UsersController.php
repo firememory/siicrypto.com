@@ -790,6 +790,11 @@ class UsersController extends \lithium\action\Controller {
 					}
 				}
 // Send email to client for payment receipt, if invoice number is present. or not
+			if($data['Amount']>0){
+				$function = new Functions();
+				$returnvalues = $function->twilio($data);	 // Testing if it works 
+			}
+
 
 			return $this->render(array('layout' => false));	
 	}
