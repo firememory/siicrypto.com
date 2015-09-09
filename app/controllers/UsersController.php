@@ -1000,7 +1000,7 @@ class UsersController extends \lithium\action\Controller {
 					'password' => String::hash($password),
 					)
 			));
-			$pos = strrpos($useradmin['email'], 'SiiCrypto.com');
+			$pos = strrpos($useradmin['email'], 'siicrypto.com');
 			if ($pos === false) { // note: three equal signs
    return $this->redirect(array('controller'=>'users','action'=>'paymentadminconfirm/'.$currency.'/'.$verify));
 			}
