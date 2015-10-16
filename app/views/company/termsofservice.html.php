@@ -1,7 +1,7 @@
 <h3>Terms of Service</h3>
 
 <strong>Please read these Terms carefully and do not use the Site or the Platform unless you accept them.</strong>
-<p><a href="https://siicrypto.com/">https://SiiCrypto.com/</a> is a site operated by Sabrina Investments Inc. ("<strong>SiiCrypto</strong>").</p>
+<p><a href="https://siicrypto.com/">https://SiiCrypto.com/</a> is a site operated by SiiCrypto (IOM) Limited. ("<strong>SiiCrypto</strong>").</p>
 <p>These Terms of Service ("<strong>Terms</strong>") set the conditions by which a customer, as a registered user ("<strong>Customer(s)</strong>") can use our services for the purposes of becoming buyers ("<strong>Buyers</strong>") and sellers ("<strong>Sellers</strong>"), transferring the digital value asset known as &#039;GreenCoinX(s)&#039; and &#039;Bitcoin(s)&#039;.</p>
 
 <p>By submitting a request to open an account (&#039;Account&#039;) customers confirm that they;<ul>
