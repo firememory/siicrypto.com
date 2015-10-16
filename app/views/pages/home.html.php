@@ -71,7 +71,7 @@ $trades = Trades::find('all',array('limit'=>$howmany,'order'=>array('order'=>1))
 		<?php foreach($tradesVF as $tradeVF){
 					if(substr($tradeVF['trade'],0,3)==$second_currency){
 			?>
-				<div class="col-xs-6 col-sm-4  placeholder">
+				<div class="col-xs-6 col-sm-6  placeholder">
 						<a href="/ex/x/<?=strtolower(str_replace("/","_",$tradeVF['trade']))?>"><img src="/img/<?=strtolower(str_replace("/","_",$tradeVF['trade']))?>.png" class="img-responsive" alt="Generic placeholder thumbnail">
 						<h4><?=$tradeVF['trade']?></h4>
 						<?php
@@ -88,9 +88,9 @@ $trades = Trades::find('all',array('limit'=>$howmany,'order'=>array('order'=>1))
 		</div>
 
 		<div class="row placeholders">
-				<div class="col-xs-6 col-sm-4  placeholder">
+				<div class="col-xs-6 col-sm-12  placeholder">
 				</div>
-				<div class="col-xs-6 col-sm-4  placeholder">
+				<div class="col-xs-6 col-sm-12  placeholder">
 						<a href="/ex/x/<?=strtolower(str_replace("/","_",$tradesV['trade']))?>"><img src="/img/<?=strtolower(str_replace("/","_",$tradesV['trade']))?>.png" class="img-responsive" alt="Generic placeholder thumbnail">
 						<h4><?=$tradesV['trade']?></h4>
 						<?php
@@ -103,14 +103,14 @@ $trades = Trades::find('all',array('limit'=>$howmany,'order'=>array('order'=>1))
 						
 						</a>
 				</div>
-				<div class="col-xs-6 col-sm-4  placeholder">
+				<div class="col-xs-6 col-sm-12  placeholder">
 				</div>
 		</div>
 		<div class="row placeholders">
 		<?php foreach($tradesVF as $tradeVF){
 					if(substr($tradeVF['trade'],0,3)==$first_currency){
 			?>
-				<div class="col-xs-6 col-sm-4  placeholder">
+				<div class="col-xs-6 col-sm-6  placeholder">
 						<a href="/ex/x/<?=strtolower(str_replace("/","_",$tradeVF['trade']))?>"><img src="/img/<?=strtolower(str_replace("/","_",$tradeVF['trade']))?>.png" class="img-responsive" alt="Generic placeholder thumbnail">
 						<h4><?=$tradeVF['trade']?></h4>
 						<?php
