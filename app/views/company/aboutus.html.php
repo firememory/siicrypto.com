@@ -1,6 +1,6 @@
 <h2>About Us </h2>
 <p>SiiCrypto is a crypto currency exchange based in Isle of Man. It has strong and experienced management, headed up by Danny Wettreich, an experienced merchant banker, as Chairman, Alan Molloy, previously managing director of international operations at Duncan Lawrie a UK bank, as Vice Chairman, Sabrina Schmitz as CEO, and Nilam Doctor as Chief Technical Officer. </p>
-<p>We are crypto currency enthusiasts who seek to provide a solid crypto/fiat currency exchange site. We have been inspired to provide this service by the launch of GreenCoinX (XGC) the world’s first identifiable crypto currency, which we believe will lead to worldwide acceptance of crypto currency. We provide the services of exchanging, buying and selling GreenCoinX or for Euro (EUR), US Dollar (USD), and Canadian Dollar (CAD) as well as Bitcoin (XBT).</p>
+<p>We are crypto currency enthusiasts who seek to provide a solid crypto/fiat currency exchange site. We have been inspired to provide this service by the launch of GreenCoinX (XGC) the world’s first identifiable crypto currency, which we believe will lead to worldwide acceptance of crypto currency. We provide the services of exchanging, buying and selling GreenCoinX or for Euro (EUR), Sterling (GBP), US Dollar (USD), and Canadian Dollar (CAD) as well as Bitcoin (XBT).</p>
 
 <h4>SiiCrypto is a REALLY safe crypto currency exchange.</h4>
 <ul>
@@ -13,7 +13,7 @@
 <ol>
 <li>It means that clients know that their money cannot be affected by circumstances that may impact SiiCrypto, as no client funds are held by SiiCrypto.</li>
 <li>It means that owners of Bitcoin cannot hide their identity when they deposit Bitcoin with SiiCrypto.</li>
-</li>It means that no KYC and AML procedures can be bypassed as funds can only be used for trading on the SiiCrypto exchange or refunding back to clients.</li>
+<li>It means that no KYC and AML procedures can be bypassed as funds can only be used for trading on the SiiCrypto exchange or refunding back to clients.</li>
 <li>It means that governments and banks should have no concerns that “bad actors” can hide their activities if they use the SiiCrypto exchange for transactions.</li>
 <li>It means that SiiCrypto’s only source of revenue is a small commission for facilitating trading crypto currency. Unlike many other crypto currency exchanges, SiiCrypto does not use client assets for its own benefit.</li>
 </ol>
