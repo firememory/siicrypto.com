@@ -127,7 +127,10 @@ $trades = Trades::find('all',array('limit'=>$howmany,'order'=>array('order'=>1))
 					<?php }}?>
 		</div>
 
-		<h2 style="text-align:center">EXCHANGE GREENCOINX FOR EURO, STERLING, US DOLLAR, CANADIAN DOLLAR OR BITCOIN</h2>
+		<h2 style="text-align:center">EXCHANGE GREENCOINX FOR EURO, STERLING, US DOLLAR, CANADIAN DOLLAR OR BITCOIN
+		<span style="color:green">WITH NO COMMISSION CHARGES</span>
+		</h2>
+		
 		<p style="text-align:center;font-size:18px"><strong>SiiCrypto – a crypto currency exchange specializing in GreenCoinX the world’s first identifiable crypto currency</strong></p>
 		</div>
 	<div class="col-xs-12 col-sm-4">
