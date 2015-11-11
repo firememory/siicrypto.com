@@ -1489,9 +1489,10 @@ $description = "Admin panel for Litecoin transactions";
 		$Orders = Orders::find('all',array(
 			'conditions'=>array(
 				'DateTime'=> array( '$gte' => $StartDate, '$lte' => $EndDate ) ,			
-				'username'=> 'grucgeo'
+//				'username'=> 'grucgeo'
 				),
-			'order'=>array('DateTime'=>-1)
+			'order'=>array('DateTime'=>-1),
+			'limit'=>1000
 		));
 $title = "Orders";
 $keywords = "Orders";
