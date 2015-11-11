@@ -1787,7 +1787,8 @@ $description = "Admin panel for Litecoin transactions";
 				$balanceFirst = 'balance.'.$Orders['FirstCurrency'];
 				$balanceSecond = 'balance.'.$Orders['SecondCurrency'];
 				$data = array(
-					$balanceSecond => (float)($details[$balanceSecond] + $Orders['PerPrice']*$Orders['Amount'])
+					$balanceSecond => (float)($details[$balanceSecond] + $Orders['PerPrice']*$Orders['Amount']),
+					$balanceFirst =>	(float)($details[$balanceFirst] - $Orders['Amount'])
 				);
 /*				print_r($Orders['username']);
 				print_r($details[$balanceSecond]);
@@ -1803,7 +1804,8 @@ $description = "Admin panel for Litecoin transactions";
 					'conditions' => array('user_id'=>(string)$Orders['Transact']['user_id'])
 				));
 				$data = array(
-					$balanceFirst => (float)($fromUser[$balanceFirst] + (float)$Orders['Amount'])
+					$balanceFirst => (float)($fromUser[$balanceFirst] + (float)$Orders['Amount']),
+					$balanceSecond => (float) ($fromUser[$balanceSecond] - $Orders['PerPrice']*$Orders['Amount']),
 				);
 /*				print_r($Orders['Transact']['username']);
 				print_r($fromUser[$balanceFirst]);
@@ -1820,7 +1822,8 @@ $description = "Admin panel for Litecoin transactions";
 				$balanceFirst = 'balance.'.$Orders['FirstCurrency'];
 				$balanceSecond = 'balance.'.$Orders['SecondCurrency'];
 				$data = array(
-					$balanceFirst => (float)($details[$balanceFirst] + (float)$Orders['Amount'])
+					$balanceFirst => (float)($details[$balanceFirst] + (float)$Orders['Amount']),
+					$balanceSecond => (float)($details[$balanceSecond] - $Orders['PerPrice']*$Orders['Amount'])
 				);
 /*				print_r($Orders['username']);
 				print_r($details[$balanceFirst]);
@@ -1837,7 +1840,8 @@ $description = "Admin panel for Litecoin transactions";
 					'conditions' => array('user_id'=>(string)$Orders['Transact']['user_id'])
 				));
 				$data = array(
-					$balanceSecond => (float)($fromUser[$balanceSecond] + $Orders['PerPrice']*$Orders['Amount'])
+					$balanceSecond => (float)($fromUser[$balanceSecond] + $Orders['PerPrice']*$Orders['Amount']),
+					$balanceFirst => (float)($fromUser[$balanceFirst] - (float)$Orders['Amount'])
 				);
 				
 /*				print_r($Orders['Transact']['username']);
