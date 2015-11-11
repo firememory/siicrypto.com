@@ -1489,13 +1489,13 @@ $description = "Admin panel for Litecoin transactions";
 		$Orders = Orders::find('all',array(
 			'conditions'=>array(
 				'DateTime'=> array( '$gte' => $StartDate, '$lte' => $EndDate ) ,			
+				'username'=> 'grucgeo'
 				),
 			'order'=>array('DateTime'=>-1)
 		));
 $title = "Orders";
 $keywords = "Orders";
 $description = "Admin panel for Orders";
-		
 
 		return compact(	'Orders','StartDate','EndDate','title','keywords','description','Commission')	;
 	
