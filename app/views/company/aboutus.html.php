@@ -15,10 +15,10 @@
 <li>It means that owners of Bitcoin cannot hide their identity when they deposit Bitcoin with SiiCrypto.</li>
 <li>It means that no KYC and AML procedures can be bypassed as funds can only be used for trading on the SiiCrypto exchange or refunding back to clients.</li>
 <li>It means that governments and banks should have no concerns that “bad actors” can hide their activities if they use the SiiCrypto exchange for transactions.</li>
-<li>It means that SiiCrypto’s only source of revenue is a small commission for facilitating trading crypto currency. Unlike many other crypto currency exchanges, SiiCrypto does not use client assets for its own benefit.</li>
+<li>It means that, unlike many other crypto currency exchanges, SiiCrypto cannot use client assets for its own benefit.</li>
 </ol>
 <hr>
-<p>The transformative nature of cryptocurrency and its underlying technology has now entered a new phase with the advent of GreenCoinX the identifiable crypto currency. We invite you to trade with us.</p>
+<h3>The transformative nature of cryptocurrency and its underlying technology has now entered a new phase with the advent of GreenCoinX the identifiable crypto currency. We invite you to trade with us.</h3>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p><small>Notice: Crypto currency trading can be considered a high-risk activity, where prices are volatile, and can swing significantly from day to day. All trading decisions should be made independently by the user. SiiCrypto is not responsible for the trading decisions of users. The crypto currency market is new and unproven and may not grow. Currently, there is relatively small use of crypto currency in the retail and commercial marketplace in comparison to relatively large use by speculators.  In order to participate in the trading of crypto currency, users should be capable of evaluating the merits and risks of crypto currency trading and be able to bear the economic risk of potential losses. No material at this site should be considered as an offer by SiiCrypto to sell or a solicitation by SiiCrypto of any offer to buy crypto currencies.</small></p>
