@@ -74,28 +74,15 @@ $Comm = Parameters::find('first');
 		</div>
 		<h3>Sabrina Investments Inc. SiiCrypto.com</h3>
 		<ul>
-			<li>Fees are <strong><?=$Comm['value']?></strong>% per transaction.</li>
-    	<li>Crypto coins stored on Cold Storage, SSL and 256bit encryption.</li>
-    <li>Two Factor Authentication(2FA) login and coin withdrawal, with optional (3FA) login.</li>
-    <li>Exchange available to all internationally and nationally.</li>
-
+<li>SiiCrypto first time users need to open an online GreenCoinX wallet at <a href="https://xgcwallet.org" target="_blank">www.xgcwallet.org</a>.</li>
+<li>Users will complete an online “Know Your Client” verification process which only takes a few minutes.</li>
+<li>The promise of crypto currency was always the fast and inexpensive transfer of funds worldwide, while bypassing the banking system.</li>
+<li>Until GreenCoinX this has been impeded by identity concerns. Now GreenCoinX has made this promise a reality by its KYC capability.</li>
+<li>All fiat funds are held by third party fiduciary trust company</li>
 		</ul>
 
-<p>To become an SiiCrypto.com customer and use our platform and services, you only need the following;
-<ul>
-    <li>To trade with BTC/XGC - registered & verified email.</li>
-    <li>To deposit fiat currency - registered & verified email.</li>
-    <li>To withdraw fiat - verified proof of address.</li>
 
-</ul>
-</p>
-
-<p>For further details on verification, deposits and withdrawals, please check.
-<ul>
-    <li><a href="/company/verification">Verification</a></li>
-
-</ul>		
-</p>
+<p>
 Any issues please contact us at <a href="mailto:support@siiCrypto.com">support@siiCrypto.com</a>
 </p>
 		</div>

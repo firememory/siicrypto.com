@@ -88,6 +88,7 @@ $ex = Session::read('ex');
 						</ul>
 						<?php }?>
 					</div> <!-- sidebar-->
+					
 			<?php }?>
 				<?php if(strtolower($this->_request->controller)=='admin'){ ?>
 					<div class="col-md-12 main">				

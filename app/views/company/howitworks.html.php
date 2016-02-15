@@ -3,10 +3,10 @@
 <blockquote>
 <p>
 <ol>
-<li>To buy or sell GreenCoinX , you have to first have a GreenCoinX wallet. Go to www.GreenCoinX.com to open your wallet.</li>
-
-<li>To fund your SiiCrypto exchange wallet go to the REGISTER page and open an account.</li>
-<li>Sign in to your account using 2FA.</li>
+<li>First time users need to open a GreenCoinX wallet at <a href="https://xgcwallet.org" target="_blank">www.xgcwallet.org</a>.</li>
+<li>Upon receipt of your unique KYC number, open a SiiCrypto account.</li>
+<li>To fund your SiiCrypto exchange wallet go to the REGISTER page and open an account, with your KYC number.</li>
+<li>Sign in to your account using 2FA (Two Factor Authorization) .</li>
 <li>Fund your SiiCrypto account <ul>
 	<li>send GreenCoinX to your account at the master SiiCrypto GreenCoinX wallet through the page <a href="/users/funding/XGC">Funding/XGC</a>, or</li>
 
@@ -14,7 +14,7 @@
 
  <li>send fiat currency to your account at the master SiiCrypto bank account via  a bank wire (details of which are given on our funding fiat page for each currency <a href="/users/funding_fiat/USD">USD</a>, <a href="/users/funding_fiat/CAD">CAD</a>, <a href="/users/funding_fiat/EUR">EUR</a> and <a href="/users/funding_fiat/GBP">GBP</a>).</li>
 									</ul>
-<li>To execute a transaction go to the Trades page and choose the type of order you wish to place. When executed your exchange wallet will be updated.</li>
+<li>To execute a transaction go to the Trades page and choose the type of order you wish to place. When executed your SiiCrypto account will be updated.</li>
 <li>To request a withdrawal of fiat currency go to funding fiat page for each currency <a href="/users/funding_fiat/USD">USD</a>, <a href="/users/funding_fiat/CAD">CAD</a>, <a href="/users/funding_fiat/EUR">EUR</a> and <a href="/users/funding_fiat/GBP">GBP</a>.</li>
 
 <li>Withdraw from your SiiCrypto account <ul><li>withdraw GreenCoinX from your account to your GreenCoinX wallet through the page <a href="/users/funding/XGC">Funding/XGC</a>, or</li>
@@ -28,6 +28,6 @@
 </blockquote>
 
 
-Note: FEES are 0.1% per transaction. Wire transfers in or out of your fiat currency account are 45 EUR per wire transfer.
+Note: WE CHARGE NO COMMISSION FOR TRADES. Administration fees, to cover the cost of the fiduciary trust where client funds are held, are 0.2% or 1/5th of one percent per transaction. Wire transfers in or out of your fiat currency account. Inbound Wire 25 Euro and Outbound Wire minimum 50 Euro or 0.10% with a maximum of Euro 500.
 
 </div>

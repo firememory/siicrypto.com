@@ -60,14 +60,14 @@
 	
 		<div style="padding-top:0;" class="panel-body">
 		<h3 style="margin-top:0;">Sign up</h3>
-		Don't have an account. <a href="/users/signup" >Register</a><br>
+		To open an account, first open a GreenCoinX wallet at <a href="https://xgcwallet.org" target="_blank">www.xgcwallet.org</a>, obtain your unique KYC identification number and then  <a href="/users/signup">Register</a><br>
 		Please read the <a href="/company/termsofservice">terms of service</a> page before you sign up.<br>
 		<h3>Security</h3>
 		We use <strong>Two Factor Authentication</strong> for your account to login to <?=COMPANY_URL?>.<br>
 		We use <strong>Time-based One-time Password Algorithm (TOTP)</strong> for login, withdrawal/deposits and settings.<br>
 		Optional Google Authenticator can be activated via settings.<br>
-Customers must password verify coin withdrawal.<br>
-All coin withdrawals are admin approved for extra security.<br>
+Customers must password verify XGC or BTC withdrawal.<br>
+All XGC or BTC withdrawals are approved by SiiCrypto for extra security.<br>
 		<p><h3>TOTP Project and downloads</h3>
 			<ul>
 			<li><a href="http://code.google.com/p/google-authenticator/" target="_blank">Google Authenticator</a></li>
