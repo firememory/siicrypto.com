@@ -200,57 +200,6 @@ class UsersController extends \lithium\action\Controller {
 		}
 	return $this->redirect('Users::settings');		
 	}
-	public function okpaysave(){
-		$title = "OkPay";
-		$verification = sha1($this->request->data['email']);
-		$user = Session::read('default');
-		if ($user==""){		return $this->redirect('/login');}
-		$id = $user['_id'];
-		if ($this->request->data) {
-			$data = array(
-				"okpay.email" => $this->request->data['email'],
-				"okpay.verified" =>	 "No",				
-				"okpay.verify"=>$verification,
-			);
-			
-			
-			$details = Details::find('all',
-				array('conditions'=>array('user_id'=> (string) $id))
-			)->save($data);
-
-		$view  = new View(array(
-			'loader' => 'File',
-			'renderer' => 'File',
-			'paths' => array(
-				'template' => '{:library}/views/{:controller}/{:template}.{:type}.php'
-			)
-		));
-		$email = $user['email'];
-			$body = $view->render(
-				'template',
-				compact('data'),
-				array(
-					'controller' => 'users',
-					'template'=>'okpay',
-					'type' => 'mail',
-					'layout' => false
-				)
-			);
-
-			$transport = Swift_MailTransport::newInstance();
-			$mailer = Swift_Mailer::newInstance($transport);
-	
-			$message = Swift_Message::newInstance();
-			$message->setSubject("Verify OKPAY email ".COMPANY_URL);
-			$message->setFrom(array(NOREPLY => 'Verify OKPAY email '.COMPANY_URL));
-			$message->setTo($email);
-			$message->setBody($body,'text/html');
-			$mailer->send($message);
-
-		}
-	return $this->redirect('Users::settings');
-	}
-
 
 	public function settings($option=null){
 		
@@ -753,7 +702,7 @@ class UsersController extends \lithium\action\Controller {
 		$input_transaction_hash = $_GET['input_transaction_hash'];
 		$input_address = $_GET['input_address'];
 		$value_in_satoshi = $_GET['value'];
-		$value_in_btc = $value_in_satoshi / 100000000;	
+		$value_in_btc = $value_in_satoshi ;// 100000000;	
 		$details = Details::find('first',
 			array(
 					'conditions'=>array(
@@ -778,7 +727,7 @@ class UsersController extends \lithium\action\Controller {
 						);							
 						$tx->save($data);
 						$dataDetails = array(
-							'balance.BTC' => (float)number_format((float)$details['balance.BTC'] + (float)$value_in_btc,8),
+							'balance.BTC' => (float)number_format((float)$details['balance.BTC'] + (float)$value_in_btc,0),
 						);
 						$details = Details::find('all',
 							array(

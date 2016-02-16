@@ -11,4 +11,7 @@
 <li>No account limits
 </ul>
 </blockquote>
+ <h4 style="color:green; text-transform: uppercase;">All client fiat funds are held in an escrow account supervised by ILS World via their Swiss subsidiary ILS Switzerland. ILS Switzerland offers fiduciary services from one of the world’s safest and most stable jurisdictions. The ILS World office in Geneva has built up a high level team of lawyers and trust professionals and is the primary ILS World centre of expertise for the provision of services to private clients. The provision by ILS of its independent impartial fiduciary services to the SiiCrypto client funds account ensures that client funds can only be accessed for client trading activities.</h4>
+
+ 
 <p>Any concerns can be directed to the Risk Management Officer via support@siicrypto.com.</p>
