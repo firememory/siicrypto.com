@@ -186,7 +186,7 @@ function initCanvas(ww,hh)
 									<td><?=$currencyName?> - <?=$currency?> balance</td>
 								</tr>
 								<tr>
-									<td><strong><?=number_format($details['balance.'.$currency]/10000000,8)?> <?=$currency?></strong><br><br></td>
+									<td><strong><?=number_format($details['balance.'.$currency]/100000000,8)?> <?=$currency?></strong><br><br></td>
 								</tr>
 								<tr>
 									<td style="height:280px ">

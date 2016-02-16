@@ -22,7 +22,7 @@ class Walletxgcnotify extends \lithium\console\Command {
 				
 					$username = $greencoin->getaccount($address);
 				
-					$Amount = (float)$out['value'] * 100000000;
+					$Amount = (int)$out['value'] * 100000000;
 					if($greencoin->getaccount($address)!=""){
 						$Transactions = Transactions::find('first',array(
 							'conditions'=>array('TransactionHash' => $s)
@@ -31,7 +31,7 @@ class Walletxgcnotify extends \lithium\console\Command {
 							$t = Transactions::create();
 							$Amount = $Amount;
 							$comment = "Move from User: ".$username."; Address: ".GREENCOINX_ADDRESS."; Amount:".$Amount.";";
-							$transfer = $greencoin->sendfrom($username, GREENCOINX_ADDRESS, (float)$Amount,(int)0,$comment);
+							$transfer = $greencoin->sendfrom($username, GREENCOINX_ADDRESS, (float)$Amount/100000000,(int)0,$comment);
 
 							if(isset($transfer['error'])){
 								$error = $transfer['error']; 
