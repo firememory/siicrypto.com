@@ -211,9 +211,9 @@ foreach($CompletedCommissions['result'] as $C){
 					<?php foreach($currencies as $currency){
 							if(in_array($currency,$virtuals)){
 					?>
-					<td style="text-align:right"><?=number_format($details['balance.'.$currency]/100000000+$Sell[$currency],8)?></td>					
+					<td style="text-align:right"><?=number_format($details['balance.'.$currency]+$Sell[$currency],8)?></td>					
 					<?php }else{?>
-					<td style="text-align:right"><?=number_format($details['balance.'.$currency]/100000000+$Sell[$currency],4)?></td>										
+					<td style="text-align:right"><?=number_format($details['balance.'.$currency]+$Sell[$currency],4)?></td>										
 					<?php }}?>					
 				</tr>
 				<tr>
@@ -222,9 +222,9 @@ foreach($CompletedCommissions['result'] as $C){
 					<?php foreach($currencies as $currency){
 						if(in_array($currency,$virtuals)){
 					?>
-						<td style="text-align:right "><?=number_format($details['balance.'.$currency]/100000000,8)?></td>
+						<td style="text-align:right "><?=number_format($details['balance.'.$currency],8)?></td>
 					<?php }else{?>
-						<td style="text-align:right "><?=number_format($details['balance.'.$currency]/100000000,4)?></td>					
+						<td style="text-align:right "><?=number_format($details['balance.'.$currency],4)?></td>					
 					<?php }}?>					
 				</tr>
 				<tr>
@@ -232,9 +232,9 @@ foreach($CompletedCommissions['result'] as $C){
 					<?php foreach($currencies as $currency){
 						if(in_array($currency,$virtuals)){
 						?>
-					<td style="text-align:right ">+<?=number_format($Buy[$currency]/100000000,8)?></td>
+					<td style="text-align:right ">+<?=number_format($Buy[$currency],8)?></td>
 					<?php }else{?>
-					<td style="text-align:right ">-<?=number_format($BuyWith[$currency]/100000000,4)?></td>										
+					<td style="text-align:right ">-<?=number_format($BuyWith[$currency],4)?></td>										
 					<?php }
 					}?>					
 				</tr>
@@ -243,9 +243,9 @@ foreach($CompletedCommissions['result'] as $C){
 					<?php foreach($currencies as $currency){
 						if(in_array($currency,$virtuals)){
 						?>
-					<td style="text-align:right ">-<?=number_format($Sell[$currency]/100000000,8)?></td>
+					<td style="text-align:right ">-<?=number_format($Sell[$currency],8)?></td>
 					<?php }else{?>
-					<td style="text-align:right ">+<?=number_format($SellWith[$currency]/100000000,4)?></td>										
+					<td style="text-align:right ">+<?=number_format($SellWith[$currency],4)?></td>										
 					<?php }
 					}?>					
 				</tr>
@@ -255,9 +255,9 @@ foreach($CompletedCommissions['result'] as $C){
 						if(in_array($currency,$virtuals)){
 						$variablename = $currency."Comm";
 						?>
-					<td style="text-align:right "><?=number_format($details['balance.'.$currency]/100000000+$Buy[$currency]-$$variablename,8)?></td>
+					<td style="text-align:right "><?=number_format($details['balance.'.$currency]+$Buy[$currency]-$$variablename,8)?></td>
 					<?php }else{?>
-					<td style="text-align:right "><?=number_format($details['balance.'.$currency]/100000000+$SellWith[$currency]-$$variablename,4)?></td>					
+					<td style="text-align:right "><?=number_format($details['balance.'.$currency]+$SellWith[$currency]-$$variablename,4)?></td>					
 					<?php }
 					}?>					
 				</tr>
@@ -268,9 +268,9 @@ foreach($CompletedCommissions['result'] as $C){
 						$variablename = $currency."Comm";
 						if(in_array($currency,$virtuals)){
 						?>
-					<td style="text-align:right "><?=number_format($$variablename/100000000,8)?></td>
+					<td style="text-align:right "><?=number_format($$variablename,8)?></td>
 					<?php }else{?>
-					<td style="text-align:right "><?=number_format($$variablename/100000000,4)?></td>					
+					<td style="text-align:right "><?=number_format($$variablename,4)?></td>					
 					<?php }}?>					
 				</tr>
 				<tr>
@@ -278,9 +278,9 @@ foreach($CompletedCommissions['result'] as $C){
 					<?php foreach($currencies as $currency){
 						if(in_array($currency,$virtuals)){
 						?>
-					<td style="text-align:right "><?=number_format($ComBuy[$currency]/100000000,8)?></td>
+					<td style="text-align:right "><?=number_format($ComBuy[$currency],8)?></td>
 					<?php }else{?>
-					<td style="text-align:right "><?=number_format($ComBuyWith[$currency]/100000000,4)?></td>										
+					<td style="text-align:right "><?=number_format($ComBuyWith[$currency],4)?></td>										
 					<?php }
 					}?>					
 				</tr>
@@ -289,9 +289,9 @@ foreach($CompletedCommissions['result'] as $C){
 					<?php foreach($currencies as $currency){
 						if(in_array($currency,$virtuals)){
 						?>
-					<td style="text-align:right "><?=number_format($ComSell[$currency]/100000000,8)?></td>
+					<td style="text-align:right "><?=number_format($ComSell[$currency],8)?></td>
 					<?php }else{?>
-					<td style="text-align:right "><?=number_format($ComSellWith[$currency]/100000000,4)?></td>										
+					<td style="text-align:right "><?=number_format($ComSellWith[$currency],4)?></td>										
 					<?php }
 					}?>					
 				</tr>
@@ -301,9 +301,9 @@ foreach($CompletedCommissions['result'] as $C){
 							$variablename = "Completed".$currency."Comm";
 							if(in_array($currency,$virtuals)){
 						?>
-					<td style="text-align:right "><?=number_format($$variablename/100000000,8)?></td>
+					<td style="text-align:right "><?=number_format($$variablename,8)?></td>
 					<?php }else{?>					
-					<td style="text-align:right "><?=number_format($$variablename/100000000,4)?></td>					
+					<td style="text-align:right "><?=number_format($$variablename,4)?></td>					
 					<?php }}?>										
 				</tr>
 			</tbody>
