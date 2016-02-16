@@ -165,7 +165,25 @@ function initCanvas(ww,hh)
 					
 					</div>
 				</div>				
-			
+			<?php if($currency=="MSC"){?>
+			Use MasterCoin client to send your MasterCoins to the above address using:
+			<code>send_MP(senderaddress, <?=$address?>,<br>
+			1, amount);</code><br>
+			Where 1 is MasterCoin propertyID as<br>
+			<code>{<br>
+    "name" : "MasterCoin",<br>
+    "category" : "N/A",<br>
+    "subcategory" : "N/A",<br>
+    "data" : "***data***",<br>
+    "url" : "www.mastercoin.org",<br>
+    "divisible" : true,<br>
+    "issuer" : "1EXoDusjGwvnjZUyKkxZ4UHEf77z6A5S4P",<br>
+    "creationtxid" : "0000000000000000000000000000000000000000000000000000000000000000",<br>
+    "fixedissuance" : false,<br>
+    "totaltokens" : 0.00000000<br>
+}<br>
+</code>
+			<?php }?>
 			</div>		
 			
 			
@@ -186,7 +204,7 @@ function initCanvas(ww,hh)
 									<td><?=$currencyName?> - <?=$currency?> balance</td>
 								</tr>
 								<tr>
-									<td><strong><?=number_format($details['balance.'.$currency]/10000000,8)?> <?=$currency?></strong><br><br></td>
+									<td><strong><?=number_format($details['balance.'.$currency],8)?> <?=$currency?></strong><br><br></td>
 								</tr>
 								<tr>
 									<td style="height:280px ">
