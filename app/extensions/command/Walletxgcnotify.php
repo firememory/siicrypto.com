@@ -22,7 +22,7 @@ class Walletxgcnotify extends \lithium\console\Command {
 				
 					$username = $greencoin->getaccount($address);
 				
-					$Amount = (float)$out['value'] * 100000000;
+					$Amount = (float)$out['value'];
 					if($greencoin->getaccount($address)!=""){
 						$Transactions = Transactions::find('first',array(
 							'conditions'=>array('TransactionHash' => $s)
