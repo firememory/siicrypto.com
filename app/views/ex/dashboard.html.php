@@ -114,13 +114,13 @@ foreach($trades as $tr){
 	$currencies = array_unique($currencies);
 	$VirtualCurr = array_unique($VirtualCurr);
 	$FiatCurr = array_unique($FiatCurr);
-	foreach($VirtualCurr as $currency){
-		echo '<td><a href="/users/funding/'.$currency.'" class="btn btn-primary btn-sm btn-block"> '.$currency.' </a></td>';
-	}
+	foreach($VirtualCurr as $currency){ ?>
+		<td><a href="/users/funding/<?=$currency?>" class="btn btn-primary btn-sm btn-block"> <?=$currency?> </a></td>
+	<?php }
 	if($all){
-		foreach($FiatCurr as $currency){
-			echo '<td><a href="/users/funding_fiat/'.$currency.'" class="btn btn-primary btn-sm btn-block"> '.$currency.' </a></td>';
-		}
+		foreach($FiatCurr as $currency){ ?>
+			<td><a href="/users/funding_fiat/<?=$currency?>" class="btn btn-primary btn-sm btn-block"> <?=$currency?> </a></td>';
+		<?php }
 	} //if all
 ?>
 </tr></table>
