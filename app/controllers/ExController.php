@@ -61,6 +61,7 @@ class ExController extends \lithium\action\Controller {
 		);
 		// if trade order is submitted by post ----------------
 		if(($this->request->data)){
+			if(stristr( $_SERVER['HTTP_REFERER'],COMPANY_URL)===FALSE){return $this->redirect('/login');exit;}
 			$data = array(
 			'page.refresh' => true
 			);
@@ -109,7 +110,7 @@ class ExController extends \lithium\action\Controller {
 				
 				$CommissionAmount = $Amount * $commission['value'] / 100 ;
 				
-				$NewBalanceAmount = round($BalanceAmount - ($Amount * $PerPrice),8);
+				$NewBalanceAmount = round($BalanceAmount / 100000000 - ($Amount * $PerPrice),8) * 100000000; //Change 
 				$Currency = 'balance.'.$SecondCurrency;
 				// Update balance of user with NewBalance Amount
 				$data = array(
@@ -143,7 +144,7 @@ class ExController extends \lithium\action\Controller {
 				$PerPrice = $this->request->data['SellPriceper'];				
 				$BalanceAmount = $details['balance'][$FirstCurrency];
 				$CommissionAmount = $Amount * $PerPrice * $commission['value'] / 100;
-				$NewBalanceAmount = round($BalanceAmount - ($Amount),8);
+				$NewBalanceAmount = round($BalanceAmount / 100000000 - ($Amount),8) * 100000000; //Change
 				$Currency = 'balance.'.$FirstCurrency;
 				// Update balance of user with NewBalance Amount				
 				$data = array(
@@ -160,7 +161,7 @@ class ExController extends \lithium\action\Controller {
 				'CommissionPercent' => (float)($Commission),
 				'Commission.Amount' => (float)($CommissionAmount),
 				'Commission.Currency' => $CommissionCurrency,				
-				'Amount' => (float)($Amount),
+				'Amount' => (int)($Amount) ,
 				'PerPrice' => (float)($PerPrice),
 				'DateTime' => new \MongoDate(),
 				'Completed' => 'N',
@@ -1008,7 +1009,7 @@ $description = "Dashboard for trading platform for bitcoin exchange in United Ki
 			print_r("Amount".$Amount."<br>");
  */				
 				$data = array(
-					$balance => (float)$details[$balance] + (float)$Amount,
+					$balance => ((float)$details[$balance] / 100000000 + (float)$Amount)*100000000,
 				);
 //			print_r($data);			
 				$details = Details::find('all', array(
@@ -1032,7 +1033,7 @@ $description = "Dashboard for trading platform for bitcoin exchange in United Ki
  */
 				
 				$data = array(
-					$balance => (float)$details[$balance] + (float)$Amount,
+					$balance => ((float)$details[$balance]/100000000 + (float)$Amount)*100000000,
 				);
 //			print_r($data);
 
