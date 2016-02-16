@@ -16,7 +16,7 @@
 <table class="table table-condensed">
 	<tr>
 		<td width="50%">Your balance:<br>
-		<span id="BalanceFirst"><?=$BalanceFirst/100000000?></span> <?=$first_curr?>
+		<span id="BalanceFirst"><?=$BalanceFirst?></span> <?=$first_curr?>
 		</td>
 		<td>Highest Bid Price<br>
 		<span id="HighestBidPrice">0</span> <?=$second_curr?>
