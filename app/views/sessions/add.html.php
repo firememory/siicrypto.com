@@ -77,3 +77,4 @@ All XGC or BTC withdrawals are approved by SiiCrypto for extra security.<br>
 		</p>
 	</div>
 </div>
+</div>

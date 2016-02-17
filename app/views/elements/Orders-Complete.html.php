@@ -15,7 +15,7 @@
 				<tbody>
 				<?php $i = 0;foreach($YourCompleteOrders as $YO){ 
 				if($i==20){break;}else{$i++;}?>
-					<tr style="cursor:pointer ;background-color:<?php if($YO['Action']=="Sell"){echo "#FF99FF";}else{echo "#99FF99";}?>"
+					<tr style="cursor:pointer;background-color:<?php if($YO['Action']=="Sell"){echo '#FF99FF';}else{echo '#99FF99';}?>"
 					class=" tooltip-x" rel="tooltip-x" data-placement="top" title="<?=$YO['Action']?> <?=number_format($YO['Amount'],3)?> at 
 					<?=number_format($YO['PerPrice'],8)?> on <?=gmdate('Y-m-d H:i:s',$YO['DateTime']->sec)?>">
 						<td style="text-align:left">
