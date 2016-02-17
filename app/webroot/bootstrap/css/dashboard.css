@@ -7,7 +7,11 @@ body {
   padding-top: 50px;
 }
 
-
+.btn{
+letter-spacing: 2px;
+border: 1px solid gray;
+border-radius: 6px;
+}
 /*
  * Global add-ons
  */

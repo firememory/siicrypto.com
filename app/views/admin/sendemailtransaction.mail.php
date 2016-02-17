@@ -4,14 +4,31 @@
 <h4>Hi <?=$user['firstname']?>,</h4>
 <p>Your deposit has been approved by <?=COMPANY_URL?>. Please make a deposit now as per the details below. We will credit your account at <?=COMPANY_URL?> when your wire transfer has cleared.</p>
 <p>We always recommend taking a screenshot/scanned receipt of your deposit, which can be sent to support@<?=COMPANY_URL?> if any issues arise.</p>
+
+	<h4>To send Fiat (paper/cash currency) you wire transfer funds as follows</h4>
+
+	 <h3>EURO OR US DOLLARS</h3>
+			<p><strong>Commerzbank A.G</strong><br>
+			Kaiserplatz 60261, Frankfurt am-Main, Germany<br>
+			SWIFT:COBADEFF<br></p>
+			
+<p>For the Benefit of: National Bank of Vanuatu<br>
+	Account No: 400870818200<br>
+	SWIFT:NBOVVUVU<br></p>
+
+<p>For the Further Benefit of : Vantu Bank<br>
+Vantu House, 133 Santina Parade, Elluk, Port Vila, Vanuatu<br>
+Account No: 0117982004<br></p>
+
+<p>For Benefit of Account Name and No:<br>
+ILS/SiiCrypto:  ____________________<br>
+Reference:<br>
+
+
 <table>
 		<tr>
-			<td>Sort code: </td>
-			<td>08-71-99</td>	
-		</tr>
-		<tr>
-			<td>Account number:</td>
-			<td>59044675</td>
+			<td>UserName:</td>
+			<td><strong><?=$Transactions['username']?></strong></td>
 		</tr>
 		<tr>
 			<td>Reference:</td>
@@ -26,6 +43,12 @@
 			<td><?=$Transactions['Currency']?></td>
 		</tr>		
 </table>
+
+<blockquote><strong>Deposit and Withdrawal fees</strong></p>
+<ul>Bank charges are as following:
+<li>Inbound Wire 25 Euro and Outbound Wire minimum 50 Euro or 0.10% with a maximum of Euro 500.</li>
+</ul>
+</blockquote>
 
 
 <p>Thanks,<br>

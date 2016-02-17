@@ -31,6 +31,7 @@ class UsersController extends \lithium\action\Controller {
 	public function signup() {	
 	
 		if($this->request->data) {	
+		
       $Users = Users::create($this->request->data);
       $saved = $Users->save();
 			if($saved==true){
@@ -52,19 +53,19 @@ class UsersController extends \lithium\action\Controller {
 				'user_id'=>(string)$Users->_id,
 				'username'=>(string)$Users->username,
 				'email.verify' => $verification,
+				'kyc_id'=>$this->request->data['kyc_id'],
 				'mobile.verified' => "No",				
 				'mobile.number' => "",								
 				'key'=>$ga->createSecret(64),
 				'secret'=>$ga->createSecret(64),
 				'Friend'=>array(),
 				'EmailPasswordSecurity' => true,
-//				'bitcoinaddress.0'=>$bitcoinaddress,
 				'balance.BTC' => (float)0,
-//				'balance.LTC' => (float)0,				
 				'balance.XGC' => (float)0,								
 				'balance.USD' => (float)0,				
 				'balance.EUR' => (float)0,
 				'balance.CAD' => (float)0,				
+				'balance.GBP' => (float)0,								
 			);
 			Details::create()->save($data);
 

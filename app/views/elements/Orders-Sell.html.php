@@ -7,7 +7,7 @@ $user = Session::read('member');
 		<div class="panel panel-success">
 			<div class="panel panel-heading">
 			<h2 class="panel-title"  style="font-weight:bold" href="#">Orders:
-			Sell <?=$first_curr?> &gt; <?=$second_curr?> <small><span class="pull-right">* - [Self] <?=$user['username']?></span></small></h2>
+			Sell <?=$first_curr?> &gt; <?=$second_curr?>   <span class="pull-right">Total: <?=count($SellOrders['result'])?></span></h2>
 <?php  foreach($TotalSellOrders['result'] as $TSO){
 	$SellAmount = $TSO['Amount'];
 	$SellTotalAmount = $TSO['TotalAmount'];
@@ -34,7 +34,9 @@ $user = Session::read('member');
 					<?php 
 					$SellOrderAmount = 0; $FillSellOrderAmount =0;
 					$ids = '';
+					$i = 0;
 					foreach($SellOrders['result'] as $SO){
+						if($i==20){break;}else{$i++;}
 						if($user['_id']!=$SO['_id']['user_id']){
 							$FillSellOrderAmount = $FillSellOrderAmount + round($SO['Amount'],8);
 							$SellOrderAmount = $SellOrderAmount + round($SO['Amount'],8);							
@@ -52,6 +54,7 @@ $user = Session::read('member');
 						<td style="text-align:right"><?=number_format(round($SO['Amount']*$SO['_id']['PerPrice'],8),8)?></td>
 					</tr>
 					<?php }?>
+					<tr><td colspan="4"><small><span><small>Displaying only last: <?=$i?></small></span><span class="pull-right">* - [Self] <?=$user['username']?></span></small></td></tr>
 				</tbody>
 			</table>
 		</div>

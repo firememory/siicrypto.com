@@ -406,12 +406,13 @@ $description = "Admin panel for approval";
 		$details = Details::find('first',
 			array('conditions'=>array('user_id'=>$id))
 		);
+		//print_r(str_replace("@","",strstr($user['email'],"@")));
 		if(str_replace("@","",strstr($user['email'],"@"))==COMPANY_URL 
 			&& $details['email.verified']=="Yes"
 			&& $details['TOTP.Validate'] == 1
 			&& $details['TOTP.Login'] == 1
 			&& ( 
-				 MAIL_1==$user['email'] 
+				  MAIL_1==$user['email'] 
 			|| MAIL_2==$user['email'] 
 			|| MAIL_3==$user['email'] 	
 			|| MAIL_4==$user['email'] 	

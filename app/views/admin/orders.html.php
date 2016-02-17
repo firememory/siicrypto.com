@@ -40,7 +40,7 @@ $EndDate=gmdate('Y-m-d',$EndDate->sec);
 	foreach($Orders as $od){?>
 	<tr>
 		<td>
-		<a href="/Admin/RemoveCompletedOrder/<?=$od['_id']?>"><i class="glyphicon glyphicon-remove"></i></a>
+		<a href="/Admin/RemoveCompletedOrder/<?=$od['_id']?>"><i class="fa fa-times fa-2x"></i></a>
 		<?=gmdate('Y-M-d H:i:s',$od['DateTime']->sec)?></td>
 		<td><?=$od['Action']?> <?=$od['FirstCurrency']?>/<?=$od['SecondCurrency']?></td>
 		<td><?=number_format($od['Amount'],8)?></td>

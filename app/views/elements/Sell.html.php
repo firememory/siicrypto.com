@@ -16,10 +16,13 @@
 <table class="table table-condensed">
 	<tr>
 		<td width="50%">Your balance:<br>
-		<span id="BalanceFirst"><?=$BalanceFirst?></span> <?=$first_curr?>
+		<span id="BalanceFirst" style="display:none"><?=number_format($BalanceFirst,8)?></span>
+		<span id="BalanceFirstDisplay">
+		<strong><?=substr(number_format($BalanceFirst,8),0,-6)?></strong><small style="color:gray"><?=substr(number_format($BalanceFirst,8),-6)?></small>
+		</span> <strong><?=$first_curr?></strong>
 		</td>
 		<td>Highest Bid Price<br>
-		<span id="HighestBidPrice">0</span> <?=$second_curr?>
+		<strong><span id="HighestBidPrice">0</span> <?=$second_curr?></strong>
 		</td>
 	</tr>
 	<tr>

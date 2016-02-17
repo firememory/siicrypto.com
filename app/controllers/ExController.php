@@ -596,7 +596,7 @@ class ExController extends \lithium\action\Controller {
 				array('$sort'=>array(
 					'_id.PerPrice'=>1,
 				)),
-				array('$limit'=>20),
+//				array('$limit'=>20),
 			)
 		));
 		
@@ -633,7 +633,7 @@ class ExController extends \lithium\action\Controller {
 				array('$sort'=>array(
 					'_id.PerPrice'=>-1,
 				)),
-				array('$limit'=>20),
+//				array('$limit'=>20),
 			)
 		));
 		
@@ -1570,6 +1570,31 @@ $graph->legend->SetFrameWeight(1);
 		return false;
 	}
 
-	
+		public function getKYC(){
+		$kyc = $this->request->query['kyc'];
+		
+			$opts = array(
+			  'http'=> array(
+					'method'=> "GET",
+					'user_agent'=> "MozillaXYZ/1.0"));
+			$context = stream_context_create($opts);
+			
+		$json = file_get_contents('https://kycglobal.net/kyc/info/'.$kyc, false, $context);
+		
+		$details = json_decode($json);
+		if($details->percent>80){
+				return $this->render(array('json' => array(
+				'success'=>1,
+				'email'=>$details->email,
+				'name'=>$details->details->Name->first . " ".$details->details->Name->last ,
+				'phone'=>$details->details->Mobile,
+				'score'=>$details->score,
+				'percent'=>$details->percent
+				)));
+		}else{
+				return $this->render(array('json' => array(
+				'success'=>0)));
+		}
+	}
 }
 ?>

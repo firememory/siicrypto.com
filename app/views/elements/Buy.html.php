@@ -16,10 +16,13 @@
 <table class="table table-condensed " >
 	<tr>
 		<td width="50%">Your balance:<br>
-		<span id="BalanceSecond"><?=$BalanceSecond?></span> <?=$second_curr?>
+		<span id="BalanceSecond" style="display:none"><?=number_format($BalanceSecond,8)?></span>
+		<span id="BalanceSecondDisplay">
+		<strong><?=substr(number_format($BalanceSecond,8),0,-6)?></strong><small style="color:gray"><?=substr(number_format($BalanceSecond,8),-6)?></small>
+		</span> <strong><?=$second_curr?></strong>
 		</td>
 		<td>Lowest Ask Price<br>
-		<span id="LowestAskPrice">0</span> <?=$second_curr?>
+		<strong><span id="LowestAskPrice">0</span> <?=$second_curr?></strong>
 		</td>
 	</tr>
 	<tr>

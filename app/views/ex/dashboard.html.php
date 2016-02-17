@@ -12,9 +12,10 @@ foreach($virtualcurrencies as $VC){
 <div class="panel panel-default">
  
     <h3 class="titleHeader">Dashboard: <?=$user['firstname']?> <?=$user['lastname']?></h3>
-	    <a href="/users/transactions"  style="padding-right:10px;" class="floatRight">Transactions</a>
-		<a href="/users/settings" class="floatRight"  style="padding-right:10px;" >Settings</a>
-		<a href="/print/" class="floatRight">Print / Cold Storage</a>
+				
+	 <a href="/users/transactions"  style="margin-left:30px;" class="btn btn-success">Transactions</a>
+		<a href="/users/settings" class="btn btn-success"  style="margin-left:10px;" >Settings</a>
+		<a href="/print/"  class="btn btn-success"  style="margin-left:10px;" >Print / Cold Storage</a>
   <div class="panel-body">
 		<div class="row">
 		<!--Options-->
@@ -114,13 +115,14 @@ foreach($trades as $tr){
 	$currencies = array_unique($currencies);
 	$VirtualCurr = array_unique($VirtualCurr);
 	$FiatCurr = array_unique($FiatCurr);
-	foreach($VirtualCurr as $currency){
-		echo '<td><a href="/users/funding/'.$currency.'" class="btn btn-primary btn-sm btn-block"> '.$currency.' </a></td>';
-	}
+	foreach($VirtualCurr as $currency){ ?>
+				<div class="col-md-2" style="text-align:center"><a href="/users/funding/<?=$currency?>" class="btn btn-success btn-block"> <?=$currency?> </a><strong><?=substr(number_format($details['balance'][$currency],8),0,-6)?></strong><small><?=substr(number_format($details['balance'][$currency],8),-6)?></small></div>
+	<?php }
 	if($all){
-		foreach($FiatCurr as $currency){
-			echo '<td><a href="/users/funding_fiat/'.$currency.'" class="btn btn-primary btn-sm btn-block"> '.$currency.' </a></td>';
-		}
+		foreach($FiatCurr as $currency){ ?>
+	<div class="col-md-2"  style="text-align:center"><a href="/users/funding_fiat/<?=$currency?>" class="btn btn-primary btn-block"> <?=$currency?> </a><strong><?=substr(number_format($details['balance'][$currency],4),0,-2)?></strong></div>
+
+<?php	}
 	} //if all
 ?>
 </tr></table>

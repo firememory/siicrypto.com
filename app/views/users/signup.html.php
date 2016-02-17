@@ -12,6 +12,24 @@ $Comm = Parameters::find('first');
 			</div>
 		</div>
 		<?=$this->form->create($Users,array('class'=>'form-group has-error')); ?>
+		<div class="row" id="KYC-Check">
+			<div class="col-sm-10 col-sm-offset-1">
+				<div class="form-group">
+				<label for="kyc_id"><strong>KYC ID: Know your customer</strong></label>
+		<?=$this->form->field('kyc_id', array('label'=>'','placeholder'=>'13JH-98UH76JK', 'class'=>'form-control' )); ?>
+
+				</div>
+			</div>
+			<div class="col-sm-10 col-sm-offset-1" >
+					<input type="button" class="btn btn-success btn-block" onclick="checkkyc();"  id="GetKYC" value="Check KYC Info" />
+			</div>
+			<div class="col-sm-10 col-sm-offset-1">
+					KYC ID is mandatory for <?=COMPANY_URL?>. To get your KYC ID visit <a href="https://kycglobal.net" target="_blank">KYCGlobal.net</a>
+					<br><span id="kyc_result" style="display:none;color:green">Your KYC is approved</span>
+			</div>
+	</div>	
+<br>
+
 			<div class="form-group has-error">			
 				<div class="input-group">
 					<span class="input-group-addon">
@@ -63,7 +81,8 @@ $Comm = Parameters::find('first');
 				</div>
 			</div>				
 		<?php // echo $this->recaptcha->challenge();?>
-		<?=$this->form->submit('Sign up' ,array('class'=>'btn btn-primary btn-block')); ?>
+		<input type="submit" id="RegisterMe" disabled="disabled" class="btn btn-primary btn-block" value="Register">
+		<br><span id="ERROR" style="display:none;color:red">.</span>
 		<?=$this->form->end(); ?>
 	</div>
 	<div class="col-sm-9 col-sm-offset-3 col-md-6  col-md-offset-1 well" >

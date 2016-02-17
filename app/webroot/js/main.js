@@ -1,6 +1,6 @@
 // JS Document
 function UpdateDetails(ex){
-	var delay = 10000;
+	var delay = 60000;
 	var now, before = new Date();
 	GetDetails(ex,delay/1000);
 	setInterval(function() {
@@ -544,3 +544,28 @@ function validateEmail(email) {
     var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(email);
 } 
+	function checkkyc(){
+		var kyc = $("#KycId").val();
+		$.getJSON('/ex/getKYC/',{
+			  kyc:kyc
+			  },
+		function(ReturnValues){
+			if(ReturnValues['success']==1){
+				$("#email").val(ReturnValues["email"]);
+//				$("#phone").val(ReturnValues["phone"]);
+				$('#RegisterMe').removeAttr("disabled");		
+				$('#kyc_id').attr("disabled","disabled");		
+				$('#kyc_result').show();		
+				$('#kyc_result').html("Your KYC is approved");
+				$('#Email').val(ReturnValues['email']);
+				$('#kyc_result').css('color', 'green');
+			}else{
+				$("#email").val("");
+				$("#phone").val("");
+				$('#RegisterMe').attr("disabled","disabled");		
+				$('#kyc_result').show();
+				$('#kyc_result').html("Your KYC is NOT approved");
+				$('#kyc_result').css('color', 'red');
+			}
+		});
+	}
