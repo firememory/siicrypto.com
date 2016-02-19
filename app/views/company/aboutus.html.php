@@ -1,5 +1,5 @@
 <h2>About Us </h2>
-<p>SiiCrypto is a crypto currency exchange. It has strong and experienced management, headed up by Danny Wettreich, an experienced merchant banker, as Chairman, Alan Molloy, previously managing director of international operations at Duncan Lawrie a UK bank, as Vice Chairman, Sabrina Schmitz as CEO, and Nilam Doctor as Chief Technical Officer. </p>
+<p>SiiCrypto is a crypto currency exchange facilitating trading in GreenCoinX the world’s first crypto currency that requires user identification. It has strong and experienced management, headed up by Danny Wettreich, an experienced merchant banker, as Chairman, Sabrina Schmitz, a former commercial banker as CEO, and Nilam Doctor, an experienced crypto currency technologist, as Chief Technical Officer.</p>
 <p>We are crypto currency enthusiasts who seek to provide a solid crypto/fiat currency exchange site. We have been inspired to provide this service by the launch of GreenCoinX (XGC) the world’s first identifiable crypto currency, which we believe will lead to worldwide acceptance of crypto currency. We provide the services of exchanging, buying and selling GreenCoinX or for Euro (EUR), Sterling (GBP), US Dollar (USD), and Canadian Dollar (CAD) as well as Bitcoin (XBT).</p>
 
 <h4>SiiCrypto is a REALLY safe crypto currency exchange.</h4>
