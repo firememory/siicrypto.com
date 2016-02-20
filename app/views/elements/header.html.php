@@ -22,6 +22,16 @@ use app\extensions\action\Functions;
 <?php }?>				
 	<ul class="nav navbar-nav navbar-right">
 		<?php if($user!=""){ ?>
+					<li style="font-size:13px;"><a href="/company/contact">Contact</a></li>		
+					<li style="font-size:13px;"><a href="/company/aboutus">About</a></li>	
+					<li style="font-size:13px;"><a href="/company/howitworks">How it works</a></li>	
+					<li style="font-size:13px;"><a href="/company/security">Security</a></li>	
+					<li style="font-size:13px;"><a href="/company/riskmanagement">Risk</a></li>				
+					<li style="font-size:13px;"><a href="/company/verification">Verification</a></li>						
+					<li style="font-size:13px;"><a href="/company/privacy">Privacy</a></li>		
+					<li style="font-size:13px;"><a href="/company/termsofservice">Terms</a></li>				
+			
+
 			<li ><a href='#' class='dropdown-toggle' data-toggle='dropdown' >
 			<?=$user['username']?> <i class='glyphicon glyphicon-chevron-down'></i>&nbsp;&nbsp;&nbsp;
 			</a>
@@ -70,7 +80,7 @@ foreach($trades as $tr){
 				<li><a href="/logout"><i class="fa fa-power-off"></i> Logout</a></li>
 			</ul>
 			<?php }else{?>
-			<?php if(strtolower($this->_request->controller)=='sessions' || strtolower($this->_request->action)=='signup'){ ?>
+
 					<li style="font-size:13px;"><a href="/company/contact">Contact</a></li>		
 					<li style="font-size:13px;"><a href="/company/aboutus">About</a></li>	
 					<li style="font-size:13px;"><a href="/company/howitworks">How it works</a></li>	
@@ -80,7 +90,7 @@ foreach($trades as $tr){
 					<li style="font-size:13px;"><a href="/company/privacy">Privacy</a></li>		
 					<li style="font-size:13px;"><a href="/company/termsofservice">Terms</a></li>				
 			
-			<?php } ?>
+
 			<li><a href="/login">Login</a></li>
 			<li><a href="/users/signup">Register&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
 			<?php }?>				

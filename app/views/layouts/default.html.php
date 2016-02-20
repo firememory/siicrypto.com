@@ -106,10 +106,8 @@ $ex = Session::read('ex');
 				<?php }?>
 				
 				<?php echo $this->content(); ?>
-					<div class="footer">
-					<?php if(strtolower($this->_request->controller)!='sessions' && strtolower($this->_request->action)!='signup'){ ?>
-						<?php echo $this->_render('element', 'footer');?>	
-					<?php } ?>
+					<div class="footer" style="border-bottom:double">
+							<?php // echo $this->_render('element', 'footer');?>	
 					</div>	<!-- footer -->
 				</div> <!-- main -->					
 			</div> <!-- row-->
