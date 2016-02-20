@@ -74,14 +74,14 @@ $trades = Trades::find('all',array('limit'=>$howmany,'order'=>array('order'=>1))
 				<div class="col-xs-3 col-sm-3  placeholder">
 						<a href="/ex/x/<?=strtolower(str_replace("/","_",$tradeVF['trade']))?>"><img src="/img/<?=strtolower(str_replace("/","_",$tradeVF['trade']))?>.png" class="img-responsive" alt="Generic placeholder thumbnail">
 						<h4><?=$tradeVF['trade']?></h4>
-						<?php
+						<small><?php
 								foreach($Rates['result'] as $rate){
 									if($rate['_id']['FirstCurrency']."/".$rate['_id']['SecondCurrency']==$tradeVF['trade']){
-						?>Min: <?=number_format($rate['min'],4)?>, Max: <?=number_format($rate['max'],4)?><br> Last: <?=number_format($rate['last'],4)?><?php
+						?>Min: <?=number_format($rate['min'],4)?><br> Max: <?=number_format($rate['max'],4)?><br> Last: <?=number_format($rate['last'],4)?><?php
 									}
 								}
 						?>
-						
+						</small>
 						</a>
 				</div>
 					<?php }}?>
@@ -93,15 +93,16 @@ $trades = Trades::find('all',array('limit'=>$howmany,'order'=>array('order'=>1))
 				<div class="col-xs-6 col-sm-12  placeholder">
 						<a href="/ex/x/<?=strtolower(str_replace("/","_",$tradesV['trade']))?>"><img src="/img/<?=strtolower(str_replace("/","_",$tradesV['trade']))?>.png" class="img-responsive" alt="Generic placeholder thumbnail">
 						<h4><?=$tradesV['trade']?></h4>
+						<small>
 						<?php
 								foreach($Rates['result'] as $rate){
 		//							print_r($rate);
 									if($rate['_id']['FirstCurrency']."/".$rate['_id']['SecondCurrency']==$tradesV['trade']){
-						?>Min: <?=number_format($rate['min'],4)?>, Max: <?=number_format($rate['max'],4)?><br> Last: <?=number_format($rate['last'],4)?><?php
+						?>Min: <?=number_format($rate['min'],4)?><br> Max: <?=number_format($rate['max'],4)?><br> Last: <?=number_format($rate['last'],4)?><?php
 									}
 								}
 						?>
-						
+						</small>
 						</a>
 				</div>
 				<div class="col-xs-6 col-sm-12  placeholder">
@@ -114,16 +115,16 @@ $trades = Trades::find('all',array('limit'=>$howmany,'order'=>array('order'=>1))
 				<div class="col-xs-4 col-sm-4  placeholder">
 						<a href="/ex/x/<?=strtolower(str_replace("/","_",$tradeVF['trade']))?>"><img src="/img/<?=strtolower(str_replace("/","_",$tradeVF['trade']))?>.png" class="img-responsive" alt="Generic placeholder thumbnail">
 						<h4><?=$tradeVF['trade']?></h4>
+						<small>
 						<?php
 								foreach($Rates['result'] as $rate){
 									if($rate['_id']['FirstCurrency']."/".$rate['_id']['SecondCurrency']==$tradeVF['trade']){
-						?>Min: <?=number_format($rate['min'],4)?>, Max: <?=number_format($rate['max'],4)?><br> Last: <?=number_format($rate['last'],4)?><?php
+						?>Min: <?=number_format($rate['min'],4)?><br> Max: <?=number_format($rate['max'],4)?><br> Last: <?=number_format($rate['last'],4)?><?php
 									}
 								}
 						?>
-						
-						
-						</a>
+						</small>
+					</a>
 				</div>
 					<?php }}?>
 		</div>
