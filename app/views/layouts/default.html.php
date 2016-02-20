@@ -89,9 +89,9 @@ $ex = Session::read('ex');
 						<?php }?>
 <p>SiiCrypto first time users need to open an online GreenCoinX wallet at <a href="https://xgcwallet.org" target="_blank">www.xgcwallet.org</a></p>
 
-<p>Users will complete an online "<a href="https://kycglobal.net" target="_blank">Know Your Client</a>" verification process which only takes a few minutes.</p>
+<p>Users will complete an online "Know Your Client" verification process which only takes a few minutes.</p>
 
-<p>All fiat funds are held by third party fiduciary trust company.</p>
+<p><strong>All fiat funds are held by third party fiduciary trust company.</strong></p>
 
 <p>The promise of crypto currency was always the fast and inexpensive transfer of funds worldwide, while bypassing the banking system.Until GreenCoinX this has been impeded by identity concerns. Now GreenCoinX has made this promise a reality by its KYC capability.</p>
 
@@ -104,9 +104,12 @@ $ex = Session::read('ex');
 				<?php }else{?>
 					<div class="col-sm-8 col-sm-offset-4 col-md-9 col-md-offset-3 main">
 				<?php }?>
+				
 				<?php echo $this->content(); ?>
 					<div class="footer">
+					<?php if(strtolower($this->_request->controller)!='sessions' && strtolower($this->_request->action)!='signup'){ ?>
 						<?php echo $this->_render('element', 'footer');?>	
+					<?php } ?>
 					</div>	<!-- footer -->
 				</div> <!-- main -->					
 			</div> <!-- row-->

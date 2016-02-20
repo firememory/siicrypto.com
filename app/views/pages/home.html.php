@@ -46,7 +46,7 @@ $trades = Trades::find('all',array('limit'=>$howmany,'order'=>array('order'=>1))
 							'SecondCurrency'=>'$SecondCurrency',	
 							'year'=>array('$year' => '$TransactDateTime'),
 							'month'=>array('$month' => '$TransactDateTime'),						
-							'day'=>array('$dayOfMonth' => '$TransactDateTime'),												
+//							'day'=>array('$dayOfMonth' => '$TransactDateTime'),												
 //							'hour'=>array('$hour' => '$TransactDateTime'),
 						),
 					'min' => array('$min' => '$PerPrice'), 
@@ -71,7 +71,7 @@ $trades = Trades::find('all',array('limit'=>$howmany,'order'=>array('order'=>1))
 		<?php foreach($tradesVF as $tradeVF){
 					if(substr($tradeVF['trade'],0,3)==$second_currency){
 			?>
-				<div class="col-xs-6 col-sm-6  placeholder">
+				<div class="col-xs-3 col-sm-3  placeholder">
 						<a href="/ex/x/<?=strtolower(str_replace("/","_",$tradeVF['trade']))?>"><img src="/img/<?=strtolower(str_replace("/","_",$tradeVF['trade']))?>.png" class="img-responsive" alt="Generic placeholder thumbnail">
 						<h4><?=$tradeVF['trade']?></h4>
 						<?php
@@ -95,6 +95,7 @@ $trades = Trades::find('all',array('limit'=>$howmany,'order'=>array('order'=>1))
 						<h4><?=$tradesV['trade']?></h4>
 						<?php
 								foreach($Rates['result'] as $rate){
+		//							print_r($rate);
 									if($rate['_id']['FirstCurrency']."/".$rate['_id']['SecondCurrency']==$tradesV['trade']){
 						?>Min: <?=number_format($rate['min'],4)?>, Max: <?=number_format($rate['max'],4)?><br> Last: <?=number_format($rate['last'],4)?><?php
 									}
@@ -110,7 +111,7 @@ $trades = Trades::find('all',array('limit'=>$howmany,'order'=>array('order'=>1))
 		<?php foreach($tradesVF as $tradeVF){
 					if(substr($tradeVF['trade'],0,3)==$first_currency){
 			?>
-				<div class="col-xs-6 col-sm-6  placeholder">
+				<div class="col-xs-4 col-sm-4  placeholder">
 						<a href="/ex/x/<?=strtolower(str_replace("/","_",$tradeVF['trade']))?>"><img src="/img/<?=strtolower(str_replace("/","_",$tradeVF['trade']))?>.png" class="img-responsive" alt="Generic placeholder thumbnail">
 						<h4><?=$tradeVF['trade']?></h4>
 						<?php
@@ -126,8 +127,7 @@ $trades = Trades::find('all',array('limit'=>$howmany,'order'=>array('order'=>1))
 				</div>
 					<?php }}?>
 		</div>
-
-		<h2 style="text-align:center"><p> THE SAFE AND SECURE CRYPTO CURRENCY EXCHANGE  WITH</p><p> <span style="color:green"> NO COMMISSION CHARGES</span></p>
+		<h2 style="text-align:center;margin-top:-10px"><p> THE SAFE AND SECURE CRYPTO CURRENCY EXCHANGE  WITH</p><p> <span style="color:green"> NO COMMISSION CHARGES</span></p>
 
 <p>BUY/SELL <span style="color:green">GREENCOINX</span> FOR EURO, STERLING, US DOLLAR, CANADIAN DOLLAR OR BITCOIN</p>
 		

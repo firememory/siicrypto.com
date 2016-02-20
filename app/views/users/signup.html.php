@@ -91,7 +91,7 @@ $Comm = Parameters::find('first');
 				<h3 class="panel-title">How to Register</h3>
 			</div>
 		</div>
-		 <p>To Register, first obtain a "<a href="https://kycglobal.net" target="_blank">Know Your Client</a>" or KYC number by opening a GreenCoinX online wallet. Click on this link to start the process and open a wallet <a href="https://xgcwallet.org" target="_blank">www.xgcwallet.org</a>.</p><p> When your wallet is opened you will receive a KYC unique number.  Insert that number in the KYC ID box on this page and then click Validate KYC Info. You will then be validated as having completed the KYC process and can proceed to open a SiiCrypto account.</p>
+		 <p>To Register, first obtain a "Know Your Client" or KYC number by opening a GreenCoinX online wallet. Click on this link to start the process and open a wallet <a href="https://xgcwallet.org" target="_blank">www.xgcwallet.org</a>.</p><p> When your wallet is opened you will receive a KYC unique number.  Insert that number in the KYC ID box on this page and then click Validate KYC Info. You will then be validated as having completed the KYC process and can proceed to open a SiiCrypto account.</p>
 
 <p>Insert your name and then a UserName for trading purposes. Your user name should be only characters and numbers with no spaces. Insert your email address and create a Password. Then Click the Register button to complete the SiiCrypto account opening process.</p>
 <p>
