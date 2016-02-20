@@ -1,6 +1,6 @@
 <h3>Funding</h3>
 <div class="row">
-	<div class="col-md-8">
+	<div class="col-md-12">
 	<h4>To send Fiat (paper/cash currency) you wire transfer funds as follows</h4>
 
 	 <h3>EURO OR US DOLLARS</h3>
@@ -16,12 +16,9 @@
 Vantu House, 133 Santina Parade, Elluk, Port Vila, Vanuatu<br>
 Account No: 0117982004<br></p>
 
-<p>For Benefit of Account Name and No:<br>
-ILS/SiiCrypto:  ____________________<br>
-Reference:<br>
-Client Name: _______________________<br>
-Client UserName: ___________________<br>
-Reference No: ______________________</p>
+<p>Account Name: ILS/SiiCrypto<br>
+Reference: Client Name____________Client No_________________Reference No__________________</p>
+
 
  
 

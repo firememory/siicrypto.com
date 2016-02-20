@@ -74,7 +74,7 @@ $ex = Session::read('ex');
     <div class="container-fluid">
       <div class="row">
 			<?php if(strtolower($this->_request->controller)!='admin'){ ?>
-						<div class="col-sm-3 col-md-2 sidebar">
+						<div class="col-sm-4 col-md-3 sidebar">
 						<ul class="nav nav-sidebar">
 							<li class="active"><a href="#"> <i class="glyphicon glyphicon-th-list"></i> Trades</a></li>
 							<?php echo $this->_render('element', 'sidebar-menu');?>		
@@ -87,6 +87,14 @@ $ex = Session::read('ex');
 						<li class="active"><a href="/users/signup">Register & Open an account</a></li>
 						</ul>
 						<?php }?>
+<p>SiiCrypto first time users need to open an online GreenCoinX wallet at <a href="https://xgcwallet.org" target="_blank">www.xgcwallet.org</a></p>
+
+<p>Users will complete an online "<a href="https://kycglobal.net" target="_blank">Know Your Client</a>" verification process which only takes a few minutes.</p>
+
+<p>All fiat funds are held by third party fiduciary trust company.</p>
+
+<p>The promise of crypto currency was always the fast and inexpensive transfer of funds worldwide, while bypassing the banking system.Until GreenCoinX this has been impeded by identity concerns. Now GreenCoinX has made this promise a reality by its KYC capability.</p>
+
 					</div> <!-- sidebar-->
 					
 			<?php }?>
@@ -94,7 +102,7 @@ $ex = Session::read('ex');
 					<div class="col-md-12 main">				
 					<?php echo $this->_render('element', 'admin');?>
 				<?php }else{?>
-					<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+					<div class="col-sm-8 col-sm-offset-4 col-md-9 col-md-offset-3 main">
 				<?php }?>
 				<?php echo $this->content(); ?>
 					<div class="footer">
@@ -102,7 +110,9 @@ $ex = Session::read('ex');
 					</div>	<!-- footer -->
 				</div> <!-- main -->					
 			</div> <!-- row-->
+			
 		</div> <!-- container-fluid -->
+		
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->

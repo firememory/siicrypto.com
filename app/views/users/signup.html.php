@@ -21,10 +21,10 @@ $Comm = Parameters::find('first');
 				</div>
 			</div>
 			<div class="col-sm-10 col-sm-offset-1" >
-					<input type="button" class="btn btn-success btn-block" onclick="checkkyc();"  id="GetKYC" value="Check KYC Info" />
+					<input type="button" class="btn btn-success btn-block" onclick="checkkyc();"  id="GetKYC" value="Verify KYC Info" />
 			</div>
 			<div class="col-sm-10 col-sm-offset-1">
-					KYC ID is mandatory for <?=COMPANY_URL?>. To get your KYC ID visit <a href="https://kycglobal.net" target="_blank">KYCGlobal.net</a>
+					
 					<br><span id="kyc_result" style="display:none;color:green">Your KYC is approved</span>
 			</div>
 	</div>	
@@ -88,21 +88,14 @@ $Comm = Parameters::find('first');
 	<div class="col-sm-9 col-sm-offset-3 col-md-6  col-md-offset-1 well" >
 		<div class="panel panel-success">
 			<div class="panel-heading">
-				<h3 class="panel-title">Advantages</h3>
+				<h3 class="panel-title">How to Register</h3>
 			</div>
 		</div>
-		<h3>Sabrina Investments Inc. SiiCrypto.com</h3>
-		<ul>
-<li>SiiCrypto first time users need to open an online GreenCoinX wallet at <a href="https://xgcwallet.org" target="_blank">www.xgcwallet.org</a>.</li>
-<li>Users will complete an online “Know Your Client” verification process which only takes a few minutes.</li>
-<li>The promise of crypto currency was always the fast and inexpensive transfer of funds worldwide, while bypassing the banking system.</li>
-<li>Until GreenCoinX this has been impeded by identity concerns. Now GreenCoinX has made this promise a reality by its KYC capability.</li>
-<li>All fiat funds are held by third party fiduciary trust company</li>
-		</ul>
+		 <p>To Register, first obtain a "<a href="https://kycglobal.net" target="_blank">Know Your Client</a>" or KYC number by opening a GreenCoinX online wallet. Click on this link to start the process and open a wallet <a href="https://xgcwallet.org" target="_blank">www.xgcwallet.org</a>.</p><p> When your wallet is opened you will receive a KYC unique number.  Insert that number in the KYC ID box on this page and then click Validate KYC Info. You will then be validated as having completed the KYC process and can proceed to open a SiiCrypto account.</p>
 
-
+<p>Insert your name and then a UserName for trading purposes. Your user name should be only characters and numbers with no spaces. Insert your email address and create a Password. Then Click the Register button to complete the SiiCrypto account opening process.</p>
 <p>
-Any issues please contact us at <a href="mailto:support@siiCrypto.com">support@siiCrypto.com</a>
+Any issues please contact us at <a href="mailto:support@SiiCrypto.com">support@SiiCrypto.com</a>
 </p>
 		</div>
 	</div>

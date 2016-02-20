@@ -127,9 +127,9 @@ $trades = Trades::find('all',array('limit'=>$howmany,'order'=>array('order'=>1))
 					<?php }}?>
 		</div>
 
-		<h2 style="text-align:center"> THE SAFE AND SECURE CRYPTO CURRENCY EXCHANGE  WITH <span style="color:green"> NO COMMISSION CHARGES</span>
+		<h2 style="text-align:center"><p> THE SAFE AND SECURE CRYPTO CURRENCY EXCHANGE  WITH</p><p> <span style="color:green"> NO COMMISSION CHARGES</span></p>
 
-<p>BUY/SELL GREENCOINX FOR EURO, STERLING, US DOLLAR, CANADIAN DOLLAR OR BITCOIN</p>
+<p>BUY/SELL <span style="color:green">GREENCOINX</span> FOR EURO, STERLING, US DOLLAR, CANADIAN DOLLAR OR BITCOIN</p>
 		
 		</h2>
 		
