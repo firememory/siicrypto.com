@@ -3,7 +3,7 @@
 <p>We aim to be a leading example of best practices and provide a secure and safe environment for you to transact with crypto currency. Our procedures seek to provide a secure exchange environment to protect the user.</p>
 <p>SiiCrypto Customers can process bank wires fund to their SiiCrypto account.</p>
 <blockquote>
-<ul class="home-bullets">
+<ul>
 <li>Deposit or withdraw GreenCoinX (XGC) or Bitcoin (BTC)</li>
 <li>Deposit or withdraw fiat currencies</li>
 <li>All fiat funds are held by third party fiduciary trust company</li>

@@ -4,17 +4,17 @@
 	<h4 class="nav navbar-nav"><small style="font-size:11px;">Copyright &copy; Sabrina Investments Inc. All rights reserved.</small></h4>
 </div>
 -->
-<div class="row container-fluid"  style="font-size:11px;border-top:1px solid gray;border-bottom:double">
+<div class="row container-fluid"  style="border-top:1px solid gray;border-bottom:double">
 	<ul class="nav navbar-nav" >
-		<li><a href="/">Home</a></li>		
-		<li><a href="/company/contact">Contact</a></li>		
-		<li><a href="/company/aboutus">About</a></li>	
-		<li><a href="/company/howitworks">How it works</a></li>	
-		<li><a href="/company/security">Security</a></li>	
-		<li><a href="/company/riskmanagement">Risk Management</a></li>				
-		<li><a href="/company/verification">Verification</a></li>						
-		<li><a href="/company/privacy">Privacy</a></li>		
-		<li><a href="/company/termsofservice">Terms of Service</a></li>				
+		<li style="font-size:12px;"><a href="/">Home</a></li>		
+		<li style="font-size:12px;"><a href="/company/contact">Contact</a></li>		
+		<li style="font-size:12px;"><a href="/company/aboutus">About</a></li>	
+		<li style="font-size:12px;"><a href="/company/howitworks">How it works</a></li>	
+		<li style="font-size:12px;"><a href="/company/security">Security</a></li>	
+		<li style="font-size:12px;"><a href="/company/riskmanagement">Risk Management</a></li>				
+		<li style="font-size:12px;"><a href="/company/verification">Verification</a></li>						
+		<li style="font-size:12px;"><a href="/company/privacy">Privacy</a></li>		
+		<li style="font-size:12px;"><a href="/company/termsofservice">Terms of Service</a></li>				
 	</ul>
 </div>
 <div class="row container-fluid">

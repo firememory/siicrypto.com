@@ -9,6 +9,9 @@ body {
 		font-size:16px;
 }
 
+li {
+font-size:16px;
+}
 .btn{
 letter-spacing: .225em;
 border: 1px solid gray;
@@ -111,7 +114,6 @@ border-radius: 6px;
 }
 .half-rule{width:100px;margin:40px auto}
 blockquote {
-	font-size:12px;
 	border-bottom:1px solid gray;
 }
 a:hover{text-decoration:none}
