@@ -66,7 +66,7 @@ $trades = Trades::find('all',array('limit'=>$howmany,'order'=>array('order'=>1))
 
 
 ?>
-<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-1 main">
+<div class="main">
 		<div class="row placeholders">
 		<?php foreach($tradesVF as $tradeVF){
 					if(substr($tradeVF['trade'],0,3)==$second_currency){
@@ -86,7 +86,6 @@ $trades = Trades::find('all',array('limit'=>$howmany,'order'=>array('order'=>1))
 				</div>
 					<?php }}?>
 		</div>
-
 		<div class="row placeholders">
 				<div class="col-xs-6 col-sm-12  placeholder">
 				</div>
@@ -128,6 +127,8 @@ $trades = Trades::find('all',array('limit'=>$howmany,'order'=>array('order'=>1))
 				</div>
 					<?php }}?>
 		</div>
+	</div>
+	<div class="main">
 		<h2 style="text-align:center;margin-top:-10px"><p> THE SAFE AND SECURE CRYPTO CURRENCY EXCHANGE  WITH</p><p> <span style="color:green"> NO COMMISSION CHARGES</span></p>
 
 <p>BUY/SELL <span style="color:green">GREENCOINX</span> FOR EURO, STERLING, US DOLLAR, CANADIAN DOLLAR OR BITCOIN</p>
@@ -135,9 +136,9 @@ $trades = Trades::find('all',array('limit'=>$howmany,'order'=>array('order'=>1))
 		</h2>
 		
 		<p style="text-align:center;font-size:18px"><strong>SiiCrypto facilitates trading in GreenCoinX the world’s first crypto currency that requires user identification</strong></p>
-		</div>
-	<div class="col-xs-12 col-sm-4">
+</div>
+<div class="col-xs-12 col-sm-4">
 		<!-- <a class="twitter-timeline"  href="https://twitter.com/SIICrypto"  data-widget-id="aaaaaaaaaaaaaaaaaaaa">Tweets by @SIICrypto</a> -->
-		</div>
-	
+</div>
+
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
