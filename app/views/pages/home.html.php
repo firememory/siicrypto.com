@@ -66,7 +66,15 @@ $trades = Trades::find('all',array('limit'=>$howmany,'order'=>array('order'=>1))
 
 
 ?>
-<div class="main">
+	<div class="main">
+		<h2 style="text-align:center;margin-top:-10px"><p> THE SAFE AND SECURE CRYPTO CURRENCY EXCHANGE  WITH</p><p> <span style="color:green"> NO COMMISSION CHARGES</span></p>
+
+<p>BUY/SELL <span style="color:green">GREENCOINX</span> FOR EURO, STERLING, US DOLLAR, CANADIAN DOLLAR OR BITCOIN</p>
+		
+		</h2>
+		
+		<p style="text-align:center;font-size:18px"><strong>SiiCrypto facilitates trading in GreenCoinX the world’s first crypto currency that requires user identification</strong></p>
+</div><div class="main">
 		<div class="row placeholders">
 		<?php foreach($tradesVF as $tradeVF){
 					if(substr($tradeVF['trade'],0,3)==$second_currency){
@@ -128,15 +136,7 @@ $trades = Trades::find('all',array('limit'=>$howmany,'order'=>array('order'=>1))
 					<?php }}?>
 		</div>
 	</div>
-	<div class="main">
-		<h2 style="text-align:center;margin-top:-10px"><p> THE SAFE AND SECURE CRYPTO CURRENCY EXCHANGE  WITH</p><p> <span style="color:green"> NO COMMISSION CHARGES</span></p>
 
-<p>BUY/SELL <span style="color:green">GREENCOINX</span> FOR EURO, STERLING, US DOLLAR, CANADIAN DOLLAR OR BITCOIN</p>
-		
-		</h2>
-		
-		<p style="text-align:center;font-size:18px"><strong>SiiCrypto facilitates trading in GreenCoinX the world’s first crypto currency that requires user identification</strong></p>
-</div>
 <div class="col-xs-12 col-sm-4">
 		<!-- <a class="twitter-timeline"  href="https://twitter.com/SIICrypto"  data-widget-id="aaaaaaaaaaaaaaaaaaaa">Tweets by @SIICrypto</a> -->
 </div>
