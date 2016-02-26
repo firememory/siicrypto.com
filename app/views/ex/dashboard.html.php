@@ -9,6 +9,14 @@ foreach($virtualcurrencies as $VC){
 	array_push($virtuals,substr($VC['trade'],4,3));
 }
 ?>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Panel title</h3>
+  </div>
+  <div class="panel-body">
+    Panel content
+  </div>
+</div>
 <div class="panel panel-default" style="padding:10px">
  
  <h3 class="titleHeader">Dashboard: <?=$user['firstname']?> <?=$user['lastname']?></h3>
@@ -59,7 +67,7 @@ foreach($virtualcurrencies as $VC){
 					<?php }
 					foreach($FiatCurr as $currency){?>
 					<th class="headTable" style="text-align:center">
-					<a href="/users/funding_fiat/<?=$currency?>" class="btn btn-success">
+					<a href="/users/funding_fiat/<?=$currency?>" class="btn btn-primary">
 					<?=$currency?>
 					</a>
 					</th>
