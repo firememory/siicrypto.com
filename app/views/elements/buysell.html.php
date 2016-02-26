@@ -26,6 +26,9 @@ if (is_null($BalanceSecond)){$BalanceSecond = 0;}
 		<a class="pull-right "><i class="fa fa-spinner fa-spin"></i> <span id="Timer"></span></a>
 	</div>
 	</div>
+	<div class="col-md-12 alert-danger alert">
+		<a href="#" class="" data-toggle="modal" data-target="#myModal" >Help - Information on how to trade</a>
+	</div>
 </div>
 	<?php } ?>
 
@@ -147,4 +150,21 @@ if (is_null($BalanceSecond)){$BalanceSecond = 0;}
 			'sel_curr' => $sel_curr,
 		));
 ?>
+</div>
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">How to trade</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
 </div>
