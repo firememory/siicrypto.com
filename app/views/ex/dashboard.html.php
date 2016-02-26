@@ -9,13 +9,10 @@ foreach($virtualcurrencies as $VC){
 	array_push($virtuals,substr($VC['trade'],4,3));
 }
 ?>
-<div class="panel panel-default">
+<div class="panel panel-default" style="padding:10px">
  
-    <h3 class="titleHeader">Dashboard: <?=$user['firstname']?> <?=$user['lastname']?></h3>
+ <h3 class="titleHeader">Dashboard: <?=$user['firstname']?> <?=$user['lastname']?></h3>
 				
-	 <a href="/users/transactions"  style="margin-left:30px;" class="btn btn-success">Transactions</a>
-		<a href="/users/settings" class="btn btn-success"  style="margin-left:10px;" >Settings</a>
-		<a href="/print/"  class="btn btn-success"  style="margin-left:10px;" >Print / Cold Storage</a>
   <div class="panel-body">
 		<div class="row">
 		<!--Options-->
