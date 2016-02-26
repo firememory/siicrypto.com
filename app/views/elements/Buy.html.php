@@ -18,7 +18,7 @@
 		<td width="50%">Your balance:<br>
 		<span id="BalanceSecond" style="display:none"><?=$BalanceSecond?></span>
 		<span id="BalanceSecondDisplay">
-		<strong><?=substr(($BalanceSecond),0,-6)?></strong><small style="color:gray"><?=substr(($BalanceSecond,8),-6)?></small>
+		<strong><?=substr(number_format($BalanceSecond,8),0,-6)?></strong><small style="color:gray"><?=substr(($BalanceSecond,8),-6)?></small>
 		</span> <strong><?=$second_curr?></strong>
 		</td>
 		<td>Lowest Ask Price<br>
