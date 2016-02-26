@@ -15,79 +15,6 @@ foreach($virtualcurrencies as $VC){
 				
   <div class="panel-body">
 		<div class="row">
-		<!--Options-->
-			<div class="col-md-12">
-				<div class="panel panel-success">
-					
-						<h3 class="globalHead">Your status</h3>
-					
-					<div class="panel-body">
-					<table class="table">
-
-		<tr>
-<?php	
-
-		$all = true;
-/*			foreach($alldocuments as $key=>$val){						
-			if($val!='Yes'){
-			$all = false;
-			break;
-			}
-		}
-*/
-
-		?>
-		<td colspan="5"><h3 class="globalHead">Deposit / Withdraw Your Account</h3>
-		<table class="table"><tr>
-<?php 
-$trades = Trades::find('all');
-$currencies = array();
-$VirtualCurr = array(); $FiatCurr = array();
-foreach($trades as $tr){
-	$first_curr = substr($tr['trade'],0,3);
-	array_push($currencies,$first_curr);
-	$second_curr = substr($tr['trade'],4,3);
-	array_push($currencies,$second_curr);
-
-		if($tr['FirstType']=='Virtual'){
-			array_push($VirtualCurr,$first_curr);
-			}else{
-			array_push($VirtualCurr,$first_curr);
-		}
-		if($tr['SecondType']=='Virtual'){
-			array_push($VirtualCurr,$second_curr);
-			}else{
-			array_push($FiatCurr,$second_curr);
-		}
-	
-	
-	
-}	//for
-	$currencies = array_unique($currencies);
-	$VirtualCurr = array_unique($VirtualCurr);
-	$FiatCurr = array_unique($FiatCurr);
-	foreach($VirtualCurr as $currency){ ?>
-				<div class="col-md-2" style="text-align:center"><a href="/users/funding/<?=$currency?>" class="btn btn-success btn-block"> <?=$currency?> </a><strong><?=substr(number_format($details['balance'][$currency],8),0,-6)?></strong><small><?=substr(number_format($details['balance'][$currency],8),-6)?></small></div>
-	<?php }
-	if($all){
-		foreach($FiatCurr as $currency){ ?>
-	<div class="col-md-2"  style="text-align:center"><a href="/users/funding_fiat/<?=$currency?>" class="btn btn-primary btn-block"> <?=$currency?> </a><strong><?=substr(number_format($details['balance'][$currency],4),0,-2)?></strong></div>
-
-<?php	}
-	} //if all
-?>
-</tr></table>
-</td>
-</tr>
-<tr>
-		
-	</tr>
-
-		</table>
-					</div>
-				</div>
-			</div>
-		<!-- Options -->
 		<!--Summary-->
 			<div class="col-md-12">
 				<div class="panel panel-success">
@@ -101,17 +28,42 @@ foreach($trades as $tr){
 					<th  class="headTable">Currency</th>
 					<?php 
 					$currencies = array();
+					$VirtualCurr = array(); $FiatCurr = array();
 					$trades = Trades::find('all');					
 					foreach($trades as $tr){
 						$currency = substr($tr['trade'],0,3);
 						array_push($currencies,$currency);
 						$currency = substr($tr['trade'],4,3);
 						array_push($currencies,$currency);
+							if($tr['FirstType']=='Virtual'){
+								array_push($VirtualCurr,$first_curr);
+								}else{
+								array_push($VirtualCurr,$first_curr);
+							}
+							if($tr['SecondType']=='Virtual'){
+								array_push($VirtualCurr,$second_curr);
+								}else{
+								array_push($FiatCurr,$second_curr);
+							}
 					 }	//for
-					$currencies = array_unique($currencies);
-					foreach($currencies as $currency){?>
-					<th class="headTable" style="text-align:center"><?=$currency?></th>
-					<?php }?>
+						$currencies = array_unique($currencies);
+						$VirtualCurr = array_unique($VirtualCurr);
+						$FiatCurr = array_unique($FiatCurr);
+					
+					foreach($VirtualCurr as $currency){?>
+					<th class="headTable" style="text-align:center">
+					<a href="/users/funding/<?=$currency?>" class="btn btn-success">
+					<?=$currency?>
+					</a>
+					</th>
+					<?php }
+					foreach($FiatCurr as $currency){?>
+					<th class="headTable" style="text-align:center">
+					<a href="/users/funding_fiat/<?=$currency?>" class="btn btn-success">
+					<?=$currency?>
+					</a>
+					</th>
+					<?php }?>					
 				</tr>
 			</thead>
 <?php 
