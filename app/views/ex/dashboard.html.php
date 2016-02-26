@@ -26,53 +26,7 @@ foreach($virtualcurrencies as $VC){
 					
 					<div class="panel-body">
 					<table class="table">
-						<tr>
-							<td width="20%">
-<!-- Email start-->					
-					<?php 
-					if($details['email.verified']=='Yes'){
-					?><a href="#" class="btn btn-success   btn-sm btn-block" rel="tooltip-x" data-placement="top" title="Completed!"><i class="glyphicon glyphicon-ok "></i> Email</a><?php }else{
-					?><a href="/users/email/" class="btn btn-warning   btn-sm btn-block " rel="tooltip-x" data-placement="top" title="Compulsary to transact!"><i class="glyphicon glyphicon-remove"></i> Email</a><?php }
-					?>
-						</td>
-<!-- Email end-->										
-						<?php 
-						$alldocuments = array();
-						$i=0;		
-						foreach($settings['documents'] as $documents){
-							if($documents['required']==true){
-									if($documents['alias']==""){
-										$name = $documents['name'];
-									}else{
-										$name = $documents['alias'];
-									}
-								if(strlen($details[$documents['id'].'.verified'])==0){
-										$alldocuments[$documents['id']]="No";
-						?>
-					<td width="20%"><a href="/users/settings/<?=$documents['id']?>" class="btn   btn-sm btn-block btn-warning" rel="tooltip-x" data-placement="top" title="Compulsary to transact!"><i class="glyphicon glyphicon-remove"></i> <?=$name?></a></td>
-					<?php }elseif($details[$documents['id'].'.verified']=='No'){
-							$alldocuments[$documents['id']]="Pending";
-					?>
-	<td width="20%"><a href="#" class="btn btn-danger   btn-sm btn-block -x" rel="tooltip-x" data-placement="top" title="Pending verification!"><i class="glyphicon glyphicon-edit"></i> <?=$name?></a></td>
-					<?php }else{
-						$alldocuments[$documents['id']]="Yes";
-					?>
-					<td width="20%"><a href="#" class="btn btn-success   btn-sm btn-block" rel="tooltip-x" data-placement="top" title="Completed!"><i class="glyphicon-ok glyphicon"></i> <?=$name?></a></td>
-	<?php }
-			}
-			$i++;
-		}
-?>
-<!-- Mobile start-->			
-				<td width="20%">
-					<?php 
-					if($details['mobile.verified']=='Yes'){
-					?><a href="#" class="btn btn-success   btn-sm btn-block " rel="tooltip-x" data-placement="top" title="Completed!"><i class="glyphicon glyphicon-ok"></i> Mobile/Phone</a><?php }else{
-					?><a href="/users/mobile/" class="btn  btn-sm btn-block btn-warning " rel="tooltip-x" data-placement="top" title="Optional!"><i class="glyphicon glyphicon-remove"></i> Mobile/Phone</a><?php }
-					?>
-					</td>
-<!-- Mobile end-->															
-		</tr>
+
 		<tr>
 <?php	
 
@@ -86,7 +40,7 @@ foreach($virtualcurrencies as $VC){
 */
 
 		?>
-		<td colspan="5"><h3 class="globalHead">Fund Your Account</h3>
+		<td colspan="5"><h3 class="globalHead">Deposit / Withdraw Your Account</h3>
 		<table class="table"><tr>
 <?php 
 $trades = Trades::find('all');
