@@ -16,7 +16,7 @@
 <table class="table table-condensed">
 	<tr>
 		<td width="50%">Your balance:<br>
-		<span id="BalanceFirst" style="display:none"><?=number_format($BalanceFirst,8)?></span>
+		<span id="BalanceFirst" style="display:none"><?=$BalanceFirst?></span>
 		<span id="BalanceFirstDisplay">
 		<strong><?=substr(number_format($BalanceFirst,8),0,-6)?></strong><small style="color:gray"><?=substr(number_format($BalanceFirst,8),-6)?></small>
 		</span> <strong><?=$first_curr?></strong>
@@ -49,7 +49,7 @@
 		<td colspan="2" style="height:50px "><span id="SellSummary">Summary of your order</span></td>
 	</tr>
 	<tr>
-		<td><input type="button" onClick="SellFormCalculate()" class="btn btn-coool  btn-block" value="Calculate"></td>
+		<td><input type="button" onClick="SellFormCalculate()" class="btn btn-coool  btn-block" value="Verify"></td>
 		<td><input type="submit" id="SellSubmitButton" class="btn btn-primary btn-block" disabled="disabled" value="Submit" onClick='$("#SellSubmitButton").attr("disabled", "disabled");$("#SellForm").submit();'></td>
 	</tr>
 </table>

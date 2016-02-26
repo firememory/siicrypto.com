@@ -16,9 +16,9 @@
 <table class="table table-condensed " >
 	<tr>
 		<td width="50%">Your balance:<br>
-		<span id="BalanceSecond" style="display:none"><?=number_format($BalanceSecond,8)?></span>
+		<span id="BalanceSecond" style="display:none"><?=$BalanceSecond?></span>
 		<span id="BalanceSecondDisplay">
-		<strong><?=substr(number_format($BalanceSecond,8),0,-6)?></strong><small style="color:gray"><?=substr(number_format($BalanceSecond,8),-6)?></small>
+		<strong><?=substr(($BalanceSecond),0,-6)?></strong><small style="color:gray"><?=substr(($BalanceSecond,8),-6)?></small>
 		</span> <strong><?=$second_curr?></strong>
 		</td>
 		<td>Lowest Ask Price<br>
@@ -49,7 +49,7 @@
 		<td colspan="2"  style="height:50px "><span id="BuySummary">Summary of your order</span></td>
 	</tr>
 	<tr>
-		<td><input type="button" onClick="BuyFormCalculate()" class="btn btn-coool btn-block" value="Calculate"></td>
+		<td><input type="button" onClick="BuyFormCalculate()" class="btn btn-coool btn-block" value="Verify"></td>
 		<td><input type="submit" id="BuySubmitButton" class="btn btn-primary btn-block" disabled="disabled" value="Submit" onClick='$("#BuySubmitButton").attr("disabled", "disabled");$("#BuyForm").submit();'></td>
 	</tr>
 </table>
