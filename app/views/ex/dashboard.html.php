@@ -8,29 +8,14 @@ $virtualcurrencies = Trades::find('all',array(
 foreach($virtualcurrencies as $VC){
 	array_push($virtuals,substr($VC['trade'],4,3));
 }
+
 ?>
 <div class="panel panel-default">
   <div class="panel-heading">
-    <h3 class="panel-title">Panel title</h3>
+    <h3 class="panel-title">Dashboard: <?=$user['firstname']?> <?=$user['lastname']?></h3>
   </div>
   <div class="panel-body">
-    Panel content
-  </div>
-</div>
-<div class="panel panel-default" style="padding:10px">
- 
- <h3 class="titleHeader">Dashboard: <?=$user['firstname']?> <?=$user['lastname']?></h3>
-				
-  <div class="panel-body">
-		<div class="row">
-		<!--Summary-->
-			<div class="col-md-12">
-				<div class="panel panel-success">
-				
-					<h3 class="globalHead">Summary of accounts</h3>
-					
-					<div class="panel-body">
-		<table class="table table-condensed table-bordered table-hover">
+<table class="table table-condensed table-bordered table-hover">
 			<thead>
 				<tr>
 					<th  class="headTable">Currency</th>
@@ -221,17 +206,7 @@ foreach($CompletedCommissions['result'] as $C){
 				</tr>
 			</tbody>
 		</table>
-					</div>
-				</div>
-			</div>		
-		<!--Summary-->
-		<!-- final summary-->
-			<div class="col-md-12">
-				<div class="panel panel-success">
-					<div class="panel-heading">
-						<h3 class="panel-title">Users: <?=$UsersRegistered?> / Online: <?=$OnlineUsers?></h3>
-					</div>
-					<div class="panel-body">
+		<h3 class="panel-title">Users: <?=$UsersRegistered?> / Online: <?=$OnlineUsers?></h3>
 		<table class="table table-condensed table-bordered table-hover">
 				<tr>
 					<th>Status</th>
@@ -293,38 +268,11 @@ foreach($CompletedCommissions['result'] as $C){
 					</div>
 				</div>
 			</div>		
-		<!-- final summary-->		
-<?php 
-if($settings['friends']['allow']==true){
-?>
-		<!-- Friends-->
-			<div class="col-md-12">
-				<div class="panel panel-success">
-					<div class="panel-heading">
-						<h3 class="panel-title">Users you transacted with:<small> You can get alerts when a user places an order</small></h3>
-					</div>
-					<div class="panel-body">
-			<?php foreach($RequestFriends['result'] as $RF){
-			$friend = array();
-			if($details['Friend']!=""){
-				foreach($details['Friend'] as $f){
-					array_push($friend, $f);
-				}
-			}
-			if(!in_array($RF['_id']['TransactUsercode'],$friend,TRUE)){
-			  ?><a href="/<?=$locale?>/ex/AddFriend/<?=String::hash($RF['_id']['TransactUser_id'])?>/<?=$RF['_id']['TransactUser_id']?>/<?=$RF['_id']['TransactUsercode']?>"
-				class=" tooltip-x label label-success" rel="tooltip-x" data-placement="top" title="Add to receive alerts from <?=$RF['_id']['TransactUsercode']?>"
-				style="font-weight:bold "><i class="glyphicon glyphicon-plus"></i> <?=$RF['_id']['TransactUsercode']?></a>
-			<?php }else{?>
-			<a  href="/<?=$locale?>/ex/RemoveFriend/<?=String::hash($RF['_id']['TransactUser_id'])?>/<?=$RF['_id']['TransactUser_id']?>/<?=$RF['_id']['TransactUsercode']?>" class="tooltip-x label label-warning" rel="tooltip-x" data-placement="top" title="Already a friend <?=$RF['_id']['TransactUsercode']?> Remove!">
-<i class="glyphicon glyphicon-minus"></i>			<?=$RF['_id']['TransactUsercode']?></a>
-			<?php }?>
-			<?php }?>
-					</div>
-				</div>
-			</div>		
-		<!-- Friends-->		
-<?php }?>
-		</div>
-	</div>
+		<!--Summary-->
+		<!-- final summary-->
+		
+		
+		
+		
+  </div>
 </div>
