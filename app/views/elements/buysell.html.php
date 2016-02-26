@@ -160,7 +160,10 @@ if (is_null($BalanceSecond)){$BalanceSecond = 0;}
         <h4 class="modal-title" id="myModalLabel">How to trade</h4>
       </div>
       <div class="modal-body">
-        ...
+        <h3>Buy <?=$first_curr?> with <?=$second_curr?></h3>
+								<p>Enter Amount: The amount you enter should be less than your balance of <?=$second_curr?></p>
+								<h3>Sell <?=$first_curr?> get <?=$second_curr?></h3>
+								<p>Enter Amount: The amount you enter should be less than your balance <?=$first_curr?></p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
