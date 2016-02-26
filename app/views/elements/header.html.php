@@ -72,11 +72,6 @@ foreach($trades as $tr){
 	}
 
 ?>
-				<li class="divider"></li>								
-				<li><a href="/users/transactions"><i class="fa fa-tasks"></i> Transactions</a></li>							
-				<li class="divider"></li>
-				<li><a href="/print/"><i class="fa fa-print"></i> Print / Cold Storage</a></li>											
-				<li class="divider"></li>												
 				<li><a href="/logout"><i class="fa fa-power-off"></i> Logout</a></li>
 			</ul>
 			<?php }else{?>
