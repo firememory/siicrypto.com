@@ -49,7 +49,7 @@
 		<td colspan="2" style="height:50px "><span id="SellSummary">Summary of your order</span></td>
 	</tr>
 	<tr>
-		<td><input type="button" onClick="SellFormCalculate()" class="btn btn-coool  btn-block" value="Verify"></td>
+		<td><input type="button" onClick="SellFormCalculate()" class="btn btn-coool  btn-block" value="Estimate"></td>
 		<td><input type="submit" id="SellSubmitButton" class="btn btn-primary btn-block" disabled="disabled" value="Submit" onClick='$("#SellSubmitButton").attr("disabled", "disabled");$("#SellForm").submit();'></td>
 	</tr>
 </table>
