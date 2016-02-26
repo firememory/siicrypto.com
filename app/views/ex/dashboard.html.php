@@ -33,17 +33,17 @@ foreach($virtualcurrencies as $VC){
 					foreach($trades as $tr){
 						$currency = substr($tr['trade'],0,3);
 						array_push($currencies,$currency);
+							if($tr['FirstType']=='Virtual'){
+								array_push($VirtualCurr,$currency);
+								}else{
+								array_push($VirtualCurr,$currency);
+							}
 						$currency = substr($tr['trade'],4,3);
 						array_push($currencies,$currency);
-							if($tr['FirstType']=='Virtual'){
-								array_push($VirtualCurr,$first_curr);
-								}else{
-								array_push($VirtualCurr,$first_curr);
-							}
 							if($tr['SecondType']=='Virtual'){
-								array_push($VirtualCurr,$second_curr);
+								array_push($VirtualCurr,$currency);
 								}else{
-								array_push($FiatCurr,$second_curr);
+								array_push($FiatCurr,$currency);
 							}
 					 }	//for
 						$currencies = array_unique($currencies);
