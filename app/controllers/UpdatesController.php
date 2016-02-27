@@ -295,7 +295,7 @@ class UpdatesController extends \lithium\action\Controller {
 	public function Orders($FirstCurrency="BTC",$SecondCurrency="USD"){
 	$user = Session::read('member');
 	$OrderFunctions = new OrderFunctions();
-	$TotalSellOrders = $OrderFunctions->TotalSellOrders($FirstCurrency,$SecondCurrency);
+	$TotalSellOrders = $OrderFunctions->FillTotalSellOrders($FirstCurrency,$SecondCurrency);
 //	print_r($TotalSellOrders);
 	$TotalBuyOrders =  $OrderFunctions->TotalBuyOrders ($FirstCurrency,$SecondCurrency);
 //	print_r($TotalBuyOrders);
