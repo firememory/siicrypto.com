@@ -12,6 +12,36 @@ class OrderFunctions extends \lithium\action\Controller {
 		$TotalSellOrders = Orders::connection()->connection->command(array());
 	}
 	public function TotalSellOrders($first_curr="BTC",$second_curr="USD"){
+		$TotalSellOrders = Orders::connection()->connection->command(array(
+			'aggregate' => 'orders',
+			'pipeline' => array( 
+				array( '$project' => array(
+					'_id'=>0,
+					'Action' => '$Action',
+					'Amount'=>'$Amount',
+					'Completed'=>'$Completed',					
+					'FirstCurrency'=>'$FirstCurrency',
+					'SecondCurrency'=>'$SecondCurrency',	
+					'TotalAmount' => array('$multiply' => array('$Amount','$PerPrice')),
+				)),
+				array('$match'=>array(
+					'Action'=>'Sell',
+					'Completed'=>'N',					
+					'FirstCurrency' => $first_curr,
+					'SecondCurrency' => $second_curr,					
+					)),
+				array('$group' => array( '_id' => array(),
+					'Amount' => array('$sum' => '$Amount'), 
+					'TotalAmount' => array('$sum' => '$TotalAmount'), 
+				)),
+				array('$sort'=>array(
+					'PerPrice'=>1,
+				))
+			)
+		));
+		return $TotalSellOrders;
+	}
+		public function FillTotalSellOrders($first_curr="BTC",$second_curr="USD"){
 		$TotalSellOrders = Orders::connection()->command(array(
 			'aggregate' => 'orders',
 			'pipeline' => array( 
@@ -41,6 +71,7 @@ class OrderFunctions extends \lithium\action\Controller {
 		));
 		return $TotalSellOrders;
 	}
+
 	public function TotalBuyOrders($first_curr="BTC",$second_curr="USD"){
 		$TotalBuyOrders = Orders::connection()->connection->command(array(
 			'aggregate' => 'orders',

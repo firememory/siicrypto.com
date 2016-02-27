@@ -1,16 +1,18 @@
-<div style="background-color:#eeeeee;height:50px;padding-left:20px;padding-top:10px">
-	<img src="https://<?=COMPANY_URL?>/img/<?=COMPANY_URL?>.gif" alt="<?=COMPANY_URL?>">
+<div style="background-color:#000;height:50px;padding-left:20px;padding-top:10px">
+	<img src="https://<?=COMPANY_URL?>/img/logo.png" alt="<?=COMPANY_URL?>">
 </div>
 <h4>Hi <?=$user['username']?>,</h4>
 <p>Your order is placed at <?=COMPANY_URL?>.</p>
-<table border="1">
+<table border="1" >
 	<tr>
+		<td>Order ID</td>
 		<td>Action</td>
 		<td>Amount</td>
 		<td>Price</td>
 		<td>Total Amount</td>
 	</tr>
 	<tr>
+		<td><?=$order['_id']?></td>
 		<?php if($order['Action']=="Buy"){?>
 		<td><?=$order['Action']?> <?=$order['FirstCurrency']?> with <?=$order['SecondCurrency']?></td>
 		<?php }else{?>
