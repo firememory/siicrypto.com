@@ -221,7 +221,7 @@ foreach($CompletedCommissions['result'] as $C){
 				if(count($TotalOrders['Buy']['result'])>0){
 					foreach ($TotalOrders['Buy']['result'] as $r){ ?>
 					<tr>
-						<td><?=$r['_id']['Action']?> <?=$r['_id']['FirstCurrency']?> with <?=$r['_id']['SecondCurrency']?></td>
+						<th><a href="/ex/x/<?=$r['_id']['FirstCurrency']?>_<?=$r['_id']['SecondCurrency']?>"><?=$r['_id']['Action']?> <?=$r['_id']['FirstCurrency']?> with <?=$r['_id']['SecondCurrency']?></a></th>
 						<td style="text-align:right "><?=number_format($r['Amount'],8)?></td>
 						<td style="text-align:right "><?=number_format($r['TotalAmount'],8)?></td>						
 						<td style="text-align:right "><?=number_format($r['TotalAmount']/$r['Amount'],8)?></td>												
@@ -232,7 +232,7 @@ foreach($CompletedCommissions['result'] as $C){
 				if(count($TotalOrders['Sell']['result'])>0){
 					foreach ($TotalOrders['Sell']['result'] as $r){ ?>
 					<tr>
-						<td><?=$r['_id']['Action']?> <?=$r['_id']['FirstCurrency']?> with <?=$r['_id']['SecondCurrency']?></td>
+						<th><a href="/ex/x/<?=$r['_id']['FirstCurrency']?>_<?=$r['_id']['SecondCurrency']?>"><?=$r['_id']['Action']?> <?=$r['_id']['FirstCurrency']?> with <?=$r['_id']['SecondCurrency']?></a></th>
 						<td style="text-align:right "><?=number_format($r['Amount'],8)?></td>
 						<td style="text-align:right "><?=number_format($r['TotalAmount'],8)?></td>						
 						<td style="text-align:right "><?=number_format($r['TotalAmount']/$r['Amount'],8)?></td>																		
@@ -246,7 +246,7 @@ foreach($CompletedCommissions['result'] as $C){
 				if(count($TotalCompleteOrders['Buy']['result'])>0){
 					foreach ($TotalCompleteOrders['Buy']['result'] as $r){ ?>
 					<tr>
-						<th><?=$r['_id']['Action']?> <?=$r['_id']['FirstCurrency']?> with <?=$r['_id']['SecondCurrency']?></th>
+						<th><a href="/ex/x/<?=$r['_id']['FirstCurrency']?>_<?=$r['_id']['SecondCurrency']?>"><?=$r['_id']['Action']?> <?=$r['_id']['FirstCurrency']?> with <?=$r['_id']['SecondCurrency']?></a></th>
 						<th style="text-align:right "><?=number_format($r['Amount'],8)?></th>
 						<th style="text-align:right "><?=number_format($r['TotalAmount'],8)?></th>						
 						<td style="text-align:right "><?=number_format($r['TotalAmount']/$r['Amount'],8)?></td>																		
@@ -257,7 +257,7 @@ foreach($CompletedCommissions['result'] as $C){
 				if(count($TotalCompleteOrders['Sell']['result'])>0){
 				foreach ($TotalCompleteOrders['Sell']['result'] as $r){ ?>
 					<tr>
-						<th><?=$r['_id']['Action']?> <?=$r['_id']['FirstCurrency']?> with <?=$r['_id']['SecondCurrency']?></th>
+						<th><a href="/ex/x/<?=$r['_id']['FirstCurrency']?>_<?=$r['_id']['SecondCurrency']?>"><?=$r['_id']['Action']?> <?=$r['_id']['FirstCurrency']?> with <?=$r['_id']['SecondCurrency']?></a></th>
 						<th style="text-align:right "><?=number_format($r['Amount'],8)?></th>
 						<th style="text-align:right "><?=number_format($r['TotalAmount'],8)?></th>						
 						<td style="text-align:right "><?=number_format($r['TotalAmount']/$r['Amount'],8)?></td>																		
@@ -270,9 +270,5 @@ foreach($CompletedCommissions['result'] as $C){
 			</div>		
 		<!--Summary-->
 		<!-- final summary-->
-		
-		
-		
-		
   </div>
 </div>

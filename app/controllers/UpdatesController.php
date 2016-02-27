@@ -187,7 +187,7 @@ class UpdatesController extends \lithium\action\Controller {
 			'High' => number_format($High,5),
 			'Last'=> number_format($LastPrice,5),			
 			'VolumeFirst'=> number_format($TotalOrders['result'][0]['Amount'],5),
-			'VolumeSecond'=> number_format($TotalOrders['result'][0]['TotalAmount'],3),
+			'VolumeSecond'=> number_format($TotalOrders['result'][0]['TotalAmount'],5),
 			'VolumeFirstUnit'=> $FirstCurrency,			
 			'VolumeSecondUnit'=> $SecondCurrency,
 		)));

@@ -26,10 +26,11 @@ class Userbalance extends \lithium\console\Command {
 		foreach($orders as $order){
 			array_push($users,$order['username']);
 		}
+		print_r($users);
 		$users = array_unique($users);
 		print_r($users);
 		$details = Details::find('all',array(
-			'conditions'=>array('username'=>array('$in'=>$users))
+			'conditions'=>array('username'=>array('$in'=>array_values($users)))
 		));
 		
 		foreach($details as $detail){
@@ -39,7 +40,7 @@ class Userbalance extends \lithium\console\Command {
 				'username'=>$detail['username'],
 				'balance'=>$detail['balance'],
 			);
-			
+				
 				$Balances = Balances::create($data);
 				$saved = $Balances->save();
 

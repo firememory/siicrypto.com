@@ -12,7 +12,7 @@ class OrderFunctions extends \lithium\action\Controller {
 		$TotalSellOrders = Orders::connection()->connection->command(array());
 	}
 	public function TotalSellOrders($first_curr="BTC",$second_curr="USD"){
-		$TotalSellOrders = Orders::connection()->connection->command(array(
+		$TotalSellOrders = Orders::connection()->command(array(
 			'aggregate' => 'orders',
 			'pipeline' => array( 
 				array( '$project' => array(
