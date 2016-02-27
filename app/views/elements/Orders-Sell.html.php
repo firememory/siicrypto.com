@@ -7,7 +7,7 @@ $user = Session::read('member');
 		<div class="panel panel-success">
 			<div class="panel panel-heading">
 			<h2 class="panel-title"  style="font-weight:bold" href="#">Orders:
-			Sell <?=$first_curr?> &gt; <?=$second_curr?>   <span class="pull-right">Total: <?=count($SellOrders['result'])?></span></h2>
+			Sell <?=$first_curr?> &gt; <?=$second_curr?>   <span class="pull-right" id="SellSpanTotal">Total: <?=count($SellOrders['result'])?></span></h2>
 <?php  foreach($TotalSellOrders['result'] as $TSO){
 	$SellAmount = $TSO['Amount'];
 	$SellTotalAmount = $TSO['TotalAmount'];
@@ -42,7 +42,7 @@ $user = Session::read('member');
 							$SellOrderAmount = $SellOrderAmount + round($SO['Amount'],8);							
 							$TotalSellOrderPrice = $TotalSellOrderPrice + round($SO['Amount']*$SO['_id']['PerPrice'],8);
 							$SellOrderPrice = round($TotalSellOrderPrice/$SellOrderAmount,8);
-							$ids = $ids .','.$SO['_id']['id'].'';
+							$ids = $ids .','.(string)$SO['_id']['_id']->{'$id'}.'';
 						}
 						
 

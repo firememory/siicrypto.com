@@ -1,6 +1,6 @@
 // JS Document
 function UpdateDetails(ex){
-	var delay = 60000;
+	var delay = 20000;
 	var now, before = new Date();
 	GetDetails(ex,delay/1000);
 	setInterval(function() {
@@ -23,11 +23,19 @@ function GetDetails(ex,counter){
 	user_id = $("#User_ID").html();
 	if(ex=="/EX/DASHBOARD"){ex = "BTC/GBP";}
 	CheckServer();
+							
 	$.getJSON('/Updates/Rates/'+ex,
 		function(ReturnValues){
 			if(ReturnValues['Refresh']=="Yes"){
+							$('#BuyOrders').html("<div style='text-align:center'><br><i class='fa fa-spinner fa-spin fa-2x'></i><br>Updating...<br></div>");
+							$('#SellOrders').html("<div style='text-align:center'><br><i class='fa fa-spinner fa-spin fa-2x'></i><br>Updating...<br></div>");
+							$('#YourCompleteOrders').html("<div style='text-align:center'><br><i class='fa fa-spinner fa-spin fa-2x'></i><br>Updating...<br></div>");
+							$('#YourOrders').html("<div style='text-align:center'><br><i class='fa fa-spinner fa-spin fa-2x'></i><br>Updating...<br></div>");
+							
 					$.getJSON('/Updates/Orders/'+ex,
 						function(Orders){
+							$('#BuySpanTotal').html('Total: '+Orders['BuySpanTotal']);
+							$('#SellSpanTotal').html('Total: '+Orders['SellSpanTotal']);
 							$('#BuyOrders').html(Orders['BuyOrdersHTML']);
 							$('#SellOrders').html(Orders['SellOrdersHTML']);							
 					});

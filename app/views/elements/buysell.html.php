@@ -161,9 +161,27 @@ if (is_null($BalanceSecond)){$BalanceSecond = 0;}
       </div>
       <div class="modal-body">
         <h3>Buy <?=$first_curr?> with <?=$second_curr?></h3>
-								<p>Enter Amount: The amount you enter should be less than your balance of <?=$second_curr?></p>
+								<ul>
+									<li>Enter Amount <?=$first_curr?>: The amount you enter should be less than your balance of <?=$$second_curr?> <?=$second_curr?></li>
+									<li>Enter Price per <?=$first_curr?></li>
+									<li>Click Estimate</li>
+									<li>Submit</li>
+								</ul>
 								<h3>Sell <?=$first_curr?> get <?=$second_curr?></h3>
-								<p>Enter Amount: The amount you enter should be less than your balance <?=$first_curr?></p>
+								<ul>
+									<li>Enter Amount <?=$second_curr?>: The amount you enter should be less than your balance of <?=$$first_curr?> <?=$first_curr?></li>
+									<li>Enter Price per <?=$second_curr?></li>
+									<li>Click Estimate</li>
+									<li>Submit</li>
+								</ul>
+								<h3>Executing Multiple Orders</h3>
+								<ul>
+									<strong>Buy <?=$first_curr?> with <?=$second_curr?></strong>
+									<li>Select the row from <strong>Orders: Sell <?=$first_curr?> > <?=$second_curr?></strong>, click on it, will fill in <strong>Buy <?=$first_curr?> with <?=$second_curr?></strong> </li>
+									<strong>Sell <?=$first_curr?> get <?=$second_curr?></strong>
+									<li>Select the row from <strong>Orders: Buy <?=$first_curr?> < <?=$second_curr?></strong>, click on it, will fill in <strong>Sell <?=$first_curr?> get <?=$second_curr?></strong> </li>
+									
+								</ul>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

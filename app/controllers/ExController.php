@@ -25,6 +25,7 @@ use lithium\util\String;
 use lithium\security\Auth;
 use lithium\storage\Session;
 use app\extensions\action\Functions;
+use app\extensions\action\OrderFunctions;
 use app\controllers\UpdatesController;
 use \lithium\template\View;
 use \Swift_MailTransport;
@@ -115,7 +116,7 @@ class ExController extends \lithium\action\Controller {
 				$data = array(
 					'balance.'.$SecondCurrency => (float)($NewBalanceAmount),
 				);
-				$details = Details::find('first',
+				$details = Details::find('all',
 					array('conditions'=>array('user_id'=>$id))
 				)->save($data);
 			}
@@ -149,7 +150,7 @@ class ExController extends \lithium\action\Controller {
 				$data = array(
 					'balance.'.$FirstCurrency => (float)($NewBalanceAmount),
 				);
-				$details = Details::find('first',
+				$details = Details::find('all',
 					array('conditions'=>array('user_id'=>$id))
 				)->save($data);
 			}
@@ -251,7 +252,7 @@ class ExController extends \lithium\action\Controller {
 							'Transact.user_id' => $user['_id'],
 							'Transact.DateTime' => new \MongoDate(),
 						);
-						$orders = Orders::find('first',
+						$orders = Orders::find('all',
 							array('conditions'=>array('_id'=>$PO['_id']))
 						)->save($data);
 
@@ -266,7 +267,7 @@ class ExController extends \lithium\action\Controller {
 							'Transact.user_id' => $PO['user_id'],
 							'Transact.DateTime' => new \MongoDate(),														
 						);
-						$orders = Orders::find('first',
+						$orders = Orders::find('all',
 							array('conditions'=>array('_id'=>$order_id))
 						)->save($data);
 
@@ -305,7 +306,7 @@ class ExController extends \lithium\action\Controller {
 							'Transact.user_id' => $user['_id'],
 							'Transact.DateTime' => new \MongoDate(),
 						);
-						$orders = Orders::find('first',
+						$orders = Orders::find('all',
 							array('conditions'=>array('_id'=>$PO['_id']))
 						)->save($data);
 
@@ -320,7 +321,7 @@ class ExController extends \lithium\action\Controller {
 							'Transact.user_id' => $PO['user_id'],
 							'Transact.DateTime' => new \MongoDate(),														
 						);
-						$orders = Orders::find('first',
+						$orders = Orders::find('all',
 							array('conditions'=>array('_id'=>$order_id))
 						)->save($data);
 
@@ -355,7 +356,7 @@ class ExController extends \lithium\action\Controller {
 							'Transact.DateTime' => new \MongoDate(),														
 							'Order'=>'P>C: Update Previous Commission and Amount and Complete Order'							
 						);
-						$orders = Orders::find('first',
+						$orders = Orders::find('all',
 							array('conditions'=>array('_id'=>$PO['_id']))
 						)->save($data);
 
@@ -396,7 +397,7 @@ class ExController extends \lithium\action\Controller {
 							'Transact.DateTime' => new \MongoDate(),														
 							'Order'=>'P>C: Update current order no change in commission or amount'							
 						);
-						$orders = Orders::find('first',
+						$orders = Orders::find('all',
 							array('conditions'=>array('_id'=>$order_id))
 						)->save($data);
 
@@ -437,7 +438,7 @@ class ExController extends \lithium\action\Controller {
 							'Transact.DateTime' => new \MongoDate(),														
 							'Order'=>'P<C: Update Previous Record'
 						);
-						$orders = Orders::find('first',
+						$orders = Orders::find('all',
 							array('conditions'=>array('_id'=>$PO['_id']))
 						)->save($data);
 
@@ -458,7 +459,7 @@ class ExController extends \lithium\action\Controller {
 							'Transact.DateTime' => new \MongoDate(),														
 							'Order'=>'P<C: Update current record'							
 						);
-						$orders = Orders::find('first',
+						$orders = Orders::find('all',
 							array('conditions'=>array('_id'=>$order_id))
 						)->save($data);
 
@@ -508,154 +509,14 @@ class ExController extends \lithium\action\Controller {
 		);
 		
 		$mongodb = Connections::get('default')->connection;
-		$TotalSellOrders = Orders::connection()->connection->command(array(
-			'aggregate' => 'orders',
-			'pipeline' => array( 
-				array( '$project' => array(
-					'_id'=>0,
-					'Action' => '$Action',
-					'Amount'=>'$Amount',
-					'Completed'=>'$Completed',					
-					'FirstCurrency'=>'$FirstCurrency',
-					'SecondCurrency'=>'$SecondCurrency',	
-					'TotalAmount' => array('$multiply' => array('$Amount','$PerPrice')),
-				)),
-				array('$match'=>array(
-					'Action'=>'Sell',
-					'Completed'=>'N',					
-					'FirstCurrency' => $first_curr,
-					'SecondCurrency' => $second_curr,					
-					)),
-				array('$group' => array( '_id' => array(),
-					'Amount' => array('$sum' => '$Amount'), 
-					'TotalAmount' => array('$sum' => '$TotalAmount'), 
-				)),
-				array('$sort'=>array(
-					'PerPrice'=>1,
-				))
-			)
-		));
-
-		$TotalBuyOrders = Orders::connection()->connection->command(array(
-			'aggregate' => 'orders',
-			'pipeline' => array( 
-				array( '$project' => array(
-					'_id'=>0,
-					'Action' => '$Action',
-					'Amount'=>'$Amount',
-					'Completed'=>'$Completed',
-					'FirstCurrency'=>'$FirstCurrency',
-					'SecondCurrency'=>'$SecondCurrency',					
-					'TotalAmount' => array('$multiply' => array('$Amount','$PerPrice')),					
-				)),
-				array('$match'=>array(
-					'Action'=>'Buy',
-					'Completed'=>'N',										
-					'FirstCurrency' => $first_curr,
-					'SecondCurrency' => $second_curr,					
-					)),
-				array('$group' => array( '_id' => array(),
-					'Amount' => array('$sum' => '$Amount'),  
-					'TotalAmount' => array('$sum' => '$TotalAmount'), 					
-				)),
-				array('$sort'=>array(
-					'PerPrice'=>1,
-				))
-			)
-		));
-
-		$SellOrders = Orders::connection()->connection->command(array(
-			'aggregate' => 'orders',
-			'pipeline' => array( 
-				array( '$project' => array(
-					'_id'=>1,
-					'Action' => '$Action',
-					'Amount'=>'$Amount',
-					'user_id' => '$user_id',
-					'username' => '$username',
-					'PerPrice'=>'$PerPrice',
-					'Completed'=>'$Completed',
-					'FirstCurrency'=>'$FirstCurrency',
-					'SecondCurrency'=>'$SecondCurrency',					
-				)),
-				array('$match'=>array(
-					'Action'=>'Sell',
-					'Completed'=>'N',										
-					'FirstCurrency' => $first_curr,
-					'SecondCurrency' => $second_curr,					
-					)),
-				array('$group' => array( '_id' => array(
-						'PerPrice'=>'$PerPrice',
-						'username'=>'$username',												
-						'user_id' => '$user_id',
-						'id'=>'$_id',
-						),
-					'Amount' => array('$sum' => '$Amount'),  
-					'No' => array('$sum'=>1),
-				)),
-				array('$sort'=>array(
-					'_id.PerPrice'=>1,
-				)),
-//				array('$limit'=>20),
-			)
-		));
+		$OrderFunctions = new OrderFunctions();
+		$TotalSellOrders = $OrderFunctions->TotalSellOrders($first_curr,$second_curr);
+		$TotalBuyOrders = $OrderFunctions->TotalBuyOrders($first_curr,$second_curr);
+		$SellOrders = $OrderFunctions->SellOrders($first_curr,$second_curr);
+		$BuyOrders = $OrderFunctions->BuyOrders($first_curr,$second_curr);
+		$YourOrders = $OrderFunctions->ExYourOrders($first_curr,$second_curr,$id);
+		$YourCompleteOrders = $OrderFunctions->ExYourCompleteOrders($first_curr,$second_curr,$id);
 		
-		$BuyOrders = Orders::connection()->connection->command(array(
-			'aggregate' => 'orders',
-			'pipeline' => array( 
-				array( '$project' => array(
-					'_id'=>1,
-					'Action' => '$Action',
-					'Amount'=>'$Amount',
-					'user_id' => '$user_id',					
-					'username' => '$username',
-					'PerPrice'=>'$PerPrice',
-					'Completed'=>'$Completed',
-					'FirstCurrency'=>'$FirstCurrency',
-					'SecondCurrency'=>'$SecondCurrency',					
-				)),
-				array('$match'=>array(
-					'Action'=>'Buy',
-					'Completed'=>'N',
-					'FirstCurrency' => $first_curr,
-					'SecondCurrency' => $second_curr,					
-					)),
-				array('$group' => array( '_id' => array(
-						'PerPrice'=>'$PerPrice',
-						'username'=>'$username',						
-						'user_id' => '$user_id',						
-						'id'=>'$_id',
-						),
-					'Amount' => array('$sum' => '$Amount'),  
-					'No' => array('$sum'=>1),
-
-				)),
-				array('$sort'=>array(
-					'_id.PerPrice'=>-1,
-				)),
-//				array('$limit'=>20),
-			)
-		));
-		
-		$YourOrders = Orders::find('all',array(
-			'conditions'=>array(
-				'user_id'=>$id,
-				'Completed'=>'N',
-				'FirstCurrency' => $first_curr,
-				'SecondCurrency' => $second_curr,					
-
-				),
-			'order' => array('DateTime'=>-1)
-		));
-		$YourCompleteOrders = Orders::find('all',array(
-			'conditions'=>array(
-				'user_id'=>$id,
-				'Completed'=>'Y',
-				'FirstCurrency' => $first_curr,
-				'SecondCurrency' => $second_curr,					
-				),
-			'order' => array('DateTime'=>-1)
-		));
 		$page = Pages::find('first',array(
 			'conditions'=>array('pagename'=>'ex/x/'.$currency)
 		));
@@ -1092,7 +953,7 @@ $description = "Dashboard for trading platform for bitcoin exchange in United Ki
 			array_push($addfriend,$username);
 			$data = array('Friend'=>$addfriend);
 //			print_r($data);
-			$details = Details::find('first',
+			$details = Details::find('all',
 				array('conditions'=>array('user_id'=>$id))
 			)->save($data);
 		}
@@ -1118,7 +979,7 @@ $description = "Dashboard for trading platform for bitcoin exchange in United Ki
 			}
 			$data = array('Friend'=>$addfriend);
 //			print_r($data);
-			$details = Details::find('first',
+			$details = Details::find('all',
 				array('conditions'=>array('user_id'=>$id))
 			)->save($data);
 		}
@@ -1596,5 +1457,7 @@ $graph->legend->SetFrameWeight(1);
 				'success'=>0)));
 		}
 	}
+	
+	
 }
 ?>
