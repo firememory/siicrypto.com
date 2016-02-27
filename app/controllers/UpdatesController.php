@@ -295,6 +295,7 @@ class UpdatesController extends \lithium\action\Controller {
 	public function Orders($FirstCurrency="BTC",$SecondCurrency="USD"){
 	$user = Session::read('member');
 	$OrderFunctions = new OrderFunctions();
+	$aa = $OrderFunctions->index();
 	$TotalSellOrders = $OrderFunctions->FillTotalSellOrders($FirstCurrency,$SecondCurrency);
 //	print_r($TotalSellOrders);
 	$TotalBuyOrders =  $OrderFunctions->TotalBuyOrders ($FirstCurrency,$SecondCurrency);
@@ -338,7 +339,7 @@ foreach($TotalSellOrders['result'] as $TSO){
 	$SellAmount = $TSO['Amount'];
 	$SellTotalAmount = $TSO['TotalAmount'];
 }
-$SellOrdersHTML = '<table class="table table-condensed table-bordered table-hover" style="font-size:12px "><thead><tr><th style="text-align:center " rowspan="2">#</th><th style="text-align:center " >Price</th><th style="text-align:center " >'.$FirstCurrency.'</th><th style="text-align:center " >'.$SEcondCurrency.'</th></tr><tr><th style="text-align:center " >Total &raquo;</th><th style="text-align:right " >'.number_format($SellAmount,8).'</th><th style="text-align:right " >'.number_format($SellTotalAmount,8).'</th></tr></thead><tbody>';
+$SellOrdersHTML = '<table class="table table-condensed table-bordered table-hover" style="font-size:12px "><thead><tr><th style="text-align:center " rowspan="2">#</th><th style="text-align:center " >Price</th><th style="text-align:center " >'.$FirstCurrency.'</th><th style="text-align:center " >'.$SecondCurrency.'</th></tr><tr><th style="text-align:center " >Total &raquo;</th><th style="text-align:right " >'.number_format($SellAmount,8).'</th><th style="text-align:right " >'.number_format($SellTotalAmount,8).'</th></tr></thead><tbody>';
 					$ids = '';$i = 0;
 					$SellOrderAmount = 0; $FillSellOrderAmount =0;
 					foreach($SellOrders['result'] as $SO){
@@ -367,10 +368,10 @@ $SellOrdersHTML = '<table class="table table-condensed table-bordered table-hove
 
 		$SellOrdersHTML = $SellOrdersHTML .	'			</tbody></table>'			;
 		return $this->render(array('json' => array(
-			'BuyOrdersHTML'=> $BuyOrdersHTML,
 			'SellOrdersHTML'=> $SellOrdersHTML,
-			'BuySpanTotal'=>count($BuyOrders['result']),
+			'BuyOrdersHTML'=> $BuyOrdersHTML,
 			'SellSpanTotal'=>count($SellOrders['result']),
+			'BuySpanTotal'=>count($BuyOrders['result']),
 		)));
 	}
 

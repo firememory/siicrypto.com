@@ -4,12 +4,13 @@ namespace app\extensions\action;
 use app\models\Users;
 use app\models\Details;
 use app\models\Orders;
-//use lithium\data\Connections;
+use lithium\data\Connections;
 use MongoDB;
 
 class OrderFunctions extends \lithium\action\Controller {
 	public function index(){
-		$TotalSellOrders = Orders::connection()->connection->command(array());
+		$TotalSellOrders = Orders::connection()->command(array());
+		return true;
 	}
 	public function TotalSellOrders($first_curr="BTC",$second_curr="USD"){
 		$TotalSellOrders = Orders::connection()->connection->command(array(
@@ -30,7 +31,7 @@ class OrderFunctions extends \lithium\action\Controller {
 					'FirstCurrency' => $first_curr,
 					'SecondCurrency' => $second_curr,					
 					)),
-				array('$group' => array( '_id' => array(),
+				array('$group' => array('_id'=>array('_id'=>'$_id',),
 					'Amount' => array('$sum' => '$Amount'), 
 					'TotalAmount' => array('$sum' => '$TotalAmount'), 
 				)),
@@ -42,27 +43,27 @@ class OrderFunctions extends \lithium\action\Controller {
 		return $TotalSellOrders;
 	}
 		public function FillTotalSellOrders($first_curr="BTC",$second_curr="USD"){
-		$TotalSellOrders = Orders::connection()->command(array(
+		$TotalSellOrders = Orders::connection()->connection->command(array(
 			'aggregate' => 'orders',
 			'pipeline' => array( 
 				array( '$project' => array(
 					'_id'=>0,
 					'Action' => '$Action',
 					'Amount'=>'$Amount',
-					'Completed'=>'$Completed',					
+					'Completed'=>'$Completed',
 					'FirstCurrency'=>'$FirstCurrency',
-					'SecondCurrency'=>'$SecondCurrency',	
-					'TotalAmount' => array('$multiply' => array('$Amount','$PerPrice')),
+					'SecondCurrency'=>'$SecondCurrency',					
+					'TotalAmount' => array('$multiply' => array('$Amount','$PerPrice')),					
 				)),
 				array('$match'=>array(
 					'Action'=>'Sell',
-					'Completed'=>'N',					
+					'Completed'=>'N',										
 					'FirstCurrency' => $first_curr,
 					'SecondCurrency' => $second_curr,					
 					)),
-				array('$group' => array( '_id' => array(),
-					'Amount' => array('$sum' => '$Amount'), 
-					'TotalAmount' => array('$sum' => '$TotalAmount'), 
+				array('$group' => array('_id'=>array('_id'=>'$_id',),
+					'Amount' => array('$sum' => '$Amount'),  
+					'TotalAmount' => array('$sum' => '$TotalAmount'), 					
 				)),
 				array('$sort'=>array(
 					'PerPrice'=>1,
@@ -91,7 +92,7 @@ class OrderFunctions extends \lithium\action\Controller {
 					'FirstCurrency' => $first_curr,
 					'SecondCurrency' => $second_curr,					
 					)),
-				array('$group' => array( '_id' => array(),
+				array('$group' => array('_id'=>array('_id'=>'$_id',),
 					'Amount' => array('$sum' => '$Amount'),  
 					'TotalAmount' => array('$sum' => '$TotalAmount'), 					
 				)),
