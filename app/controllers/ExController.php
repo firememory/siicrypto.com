@@ -235,16 +235,17 @@ class ExController extends \lithium\action\Controller {
 				}
 				
 				$ids = explode(",",$IDs);
-				
+
 				foreach ($ids as $id){
 					if($id!=""){
 						$PO = Orders::find('first', array(
-							'conditions' => array('_id' => new MongoID($id))
+							'conditions' => array('_id' => (string)($id))
 						));
-				
+//							print_r($id);
 //							print_r($PO['user_id']);
 //							print_r($PO['username']);
-							
+//							print_r($PO['_id']);
+								
 						$data = array(
 							'Completed' => 'Y',
 							'Transact.id'=> $order_id,
@@ -253,11 +254,11 @@ class ExController extends \lithium\action\Controller {
 							'Transact.DateTime' => new \MongoDate(),
 						);
 						$orders = Orders::find('all',
-							array('conditions'=>array('_id'=>$PO['_id']))
+							array('conditions'=>array('_id'=>(string)$PO['_id']))
 						)->save($data);
 
 						$orders = Orders::find('first',
-							array('conditions'=>array('_id'=>$PO['_id']))
+							array('conditions'=>array('_id'=>(string)$PO['_id']))
 						);
 						
 						$data = array(
@@ -268,7 +269,7 @@ class ExController extends \lithium\action\Controller {
 							'Transact.DateTime' => new \MongoDate(),														
 						);
 						$orders = Orders::find('all',
-							array('conditions'=>array('_id'=>$order_id))
+							array('conditions'=>array('_id'=>(string)$order_id))
 						)->save($data);
 
 						$this->updateBalance($order_id);
@@ -277,7 +278,7 @@ class ExController extends \lithium\action\Controller {
 						$this->SendOrderCompleteEmails($PO['_id'],$PO['user_id']);						
 					}
 				}
-				
+		
 				$this->redirect($this->request->params);
 			}
 			
@@ -510,6 +511,7 @@ class ExController extends \lithium\action\Controller {
 		
 		$mongodb = Connections::get('default')->connection;
 		$OrderFunctions = new OrderFunctions();
+		
 		$TotalSellOrders = $OrderFunctions->TotalSellOrders($first_curr,$second_curr);
 		$TotalBuyOrders = $OrderFunctions->TotalBuyOrders($first_curr,$second_curr);
 		$SellOrders = $OrderFunctions->SellOrders($first_curr,$second_curr);

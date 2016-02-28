@@ -1,6 +1,6 @@
 // JS Document
 function UpdateDetails(ex){
-	var delay = 20000;
+	var delay = 30000;
 	var now, before = new Date();
 	GetDetails(ex,delay/1000);
 	setInterval(function() {

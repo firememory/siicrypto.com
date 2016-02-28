@@ -6,7 +6,7 @@ $user = Session::read('member');
 	<div class="col-md-6">
 		<div class="panel panel-success">
 			<div class="panel panel-heading">
-			<h2 class="panel-title"  style="font-weight:bold" href="#">Orders:
+			<h2 class="panel-title"  style="font-weight:bold" href="#">All Orders:
 			Sell <?=$first_curr?> &gt; <?=$second_curr?>   <span class="pull-right" id="SellSpanTotal">Total: <?=count($SellOrders['result'])?></span></h2>
 <?php  foreach($TotalSellOrders['result'] as $TSO){
 	$SellAmount = $TSO['Amount'];

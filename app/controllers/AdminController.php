@@ -1852,7 +1852,8 @@ $description = "Admin panel for Litecoin transactions";
 		*/		
 				$details = Details::find('all', array(
 					'conditions' => array(
-						'user_id'=>$Orders['Transact']['user_id'], 'username'=>$Orders['Transact']['username']
+						'user_id'=>$Orders['Transact']['user_id'],
+						'username'=>$Orders['Transact']['username']
 						)
 				))->save($data);
 				

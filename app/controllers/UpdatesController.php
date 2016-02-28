@@ -296,7 +296,7 @@ class UpdatesController extends \lithium\action\Controller {
 	$user = Session::read('member');
 	$OrderFunctions = new OrderFunctions();
 	$aa = $OrderFunctions->index();
-	$TotalSellOrders = $OrderFunctions->FillTotalSellOrders($FirstCurrency,$SecondCurrency);
+	$TotalSellOrders = $OrderFunctions->TotalSellOrders($FirstCurrency,$SecondCurrency);
 //	print_r($TotalSellOrders);
 	$TotalBuyOrders =  $OrderFunctions->TotalBuyOrders ($FirstCurrency,$SecondCurrency);
 //	print_r($TotalBuyOrders);
@@ -319,7 +319,7 @@ $BuyOrdersHTML = '<table class="table table-condensed table-bordered table-hover
 								$BuyOrderAmount = $BuyOrderAmount + round($BO['Amount'],8);													
 								$TotalBuyOrderPrice = ($TotalBuyOrderPrice + round($BO['_id']['PerPrice']*$BO['Amount'],8));
 								$BuyOrderPrice = round($TotalBuyOrderPrice/$BuyOrderAmount,8);
-								$ids = $ids .','.$BO['_id']['user_id'].'';
+								$ids = $ids .','.(string)$BO['_id']['_id']->{'$id'}.'';
 							}
 							$BuyOrdersHTML = $BuyOrdersHTML . '<tr onClick="BuyOrderFill('.$BuyOrderPrice.','.$BuyOrderAmount.',\''.$ids.'\');" style="cursor:pointer;';
 							if($user['_id']==$BO['_id']['user_id']){
@@ -349,7 +349,7 @@ $SellOrdersHTML = '<table class="table table-condensed table-bordered table-hove
 							$SellOrderAmount = $SellOrderAmount + round($SO['Amount'],8);							
 							$TotalSellOrderPrice = $TotalSellOrderPrice + round($SO['Amount']*$SO['_id']['PerPrice'],8);
 							$SellOrderPrice = round($TotalSellOrderPrice/$SellOrderAmount,8);
-							$ids = $ids .','.$SO['_id']['user_id'].'';
+							$ids = $ids .','.(string)$SO['_id']['_id']->{'$id'}.'';
 						}
 						$SellOrdersHTML = $SellOrdersHTML .	'<tr onClick="SellOrderFill('.$SellOrderPrice.','.$SellOrderAmount.',\''.$ids.'\');" style="cursor:pointer;';
 							if($user['_id']==$SO['_id']['user_id']){

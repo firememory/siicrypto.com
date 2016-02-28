@@ -4,7 +4,7 @@ use lithium\util\String;
 		<div class="col-md-6">
 			<div class="panel panel-success">
 				<div class="panel-heading">
-				<h2 class="panel-title"  style="font-weight:bold" >Pending Orders <span class="pull-right">Total: <?=count($YourOrders)?></span></h2>
+				<h2 class="panel-title"  style="font-weight:bold" >My pending orders <span class="pull-right">Total: <?=count($YourOrders)?></span></h2>
 				</div>
 			<div id="YourOrders" style="overflow:auto;" class="fade in">			
 			<table class="table table-condensed table-bordered table-hover" style="font-size:12px">
