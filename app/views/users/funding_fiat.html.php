@@ -1,23 +1,25 @@
 <style>
 .Address_success{background-color: #9FFF9F;font-weight:bold}
+
 </style>
 <?php // echo $this->_render('element', 'funding_fiat_header');?>
 
-<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-  <div class="panel panel-success">
-    <div class="panel-heading" role="tab" id="headingOne">
-      <h4 class="panel-title">
-        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-<strong>Deposit <?=$currencyName?> - <?=$currency?></strong>
-        </a>
-      </h4>
-    </div>
-    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-      <div class="panel-body">
-						<div style="padding:10px"><blockquote><small><strong>Note:</strong> Vantu Bank’s customer service may contact you to authenticate your expected payment. Please make sure the contact details below are valid. If Vantu Bank needs to reach you and is unable to do so within 48 hours your funds may be put on hold. The purpose for the wire must be made clear in order to prevent delays.</small></blockquote></div>
+
+
+<h2 id=tabs-examples>Deposit / Withdraw <?=$currency?></h2> 
+	
+		<div class="" data-example-id=togglable-tabs> 
+			<ul id=myTabs class="nav nav-tabs nav-justified" role=tablist> 
+				<li role=presentation class="active"><a href=#home id=home-tab role=tab data-toggle=tab aria-controls=home aria-expanded=true style="font-weight:bold;color:#5cb85c">Deposit <?=$currency?></a></strong</li> 
+				<li role=presentation><a href=#profile role=tab id=profile-tab data-toggle=tab aria-controls=profile  style="font-weight:bold;color:#d9534f;">Withdraw <?=$currency?></a></li>
+			</ul>
+			<div id=myTabContent class="tab-content"  > 
+			<div role=tabpanel class="tab-pane fade in active  tab-content-deposit" id=home aria-labelledby=home-tab> 
+			<!-- //////////////////////////////////////////////////////////////////////////////////////-->
+			<div style=""><blockquote><small><strong>Note:</strong> Vantu Bank’s customer service may contact you to authenticate your expected payment. Please make sure the contact details below are valid. If Vantu Bank needs to reach you and is unable to do so within 48 hours your funds may be put on hold. The purpose for the wire must be made clear in order to prevent delays.</small></blockquote></div>
 						<h2>Declaration of Source of Funds (DSF)</h2>
 						<form method="POST" action="/users/deposit" class="form">
-						<table class="table table-condensed table-bordered table-hover">
+						<table class="table table-condensed table-bordered table-hover" >
 						<tr>
 							<th width="50%">FULL NAME OF YOUR ACCOUNT AT VANTU BANK</th>
 							<td>ILS FIDUCIARIES (SWITZERLAND) SARL</td>
@@ -220,23 +222,16 @@
 						</tr>
 					</table>
 				</form>
-      </div>
-    </div>
-  </div>
-  <div class="panel panel-danger">
-    <div class="panel-heading" role="tab" id="headingTwo">
-      <h4 class="panel-title">
-        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          <strong>Withdraw <?=$currencyName?> - <?=$currency?></strong>
-        </a>
-      </h4>
-    </div>
-    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-      <div class="panel-body">
+			<!-- //////////////////////////////////////////////////////////////////////////////////////-->
+			</div>
+			<div role=tabpanel class="tab-pane fade  tab-content-withdrawal" id=profile aria-labelledby=profile-tab style="padding:10px" > 
+				<!-- //////////////////////////////////////////////////////////////////////////////////////-->
+				Withdraw
+					<!-- //////////////////////////////////////////////////////////////////////////////////////-->
+			</div> 
+ </div> 
+	
+	</div>
 
-					
-						
-      </div>
-    </div>
-  </div>
-</div>
+
+

@@ -128,3 +128,21 @@ a:hover{text-decoration:none}
 	border-bottom:1px solid black;
 	padding-left:10px
 }
+
+.tab-content-deposit{
+				background-color:#fff;
+    color:#000;
+				padding:20px;
+				border-left:1px solid #ddd;
+				border-right:1px solid #ddd;
+				border-bottom:1px solid #ddd;
+}
+.tab-content-withdrawal{
+				background-color:#fff;
+    color:#000;
+    padding:20px;
+				border-left:1px solid #ddd;
+				border-right:1px solid #ddd;
+				border-bottom:1px solid #ddd;
+				
+}

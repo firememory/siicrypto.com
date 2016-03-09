@@ -690,12 +690,12 @@ class UsersController extends \lithium\action\Controller {
 			$my_address = BITCOIN_ADDRESS;			
 			$my_xpub = BITCOIN_XPUB;
 			$my_api = BITCOIN_API;
-			$callback_url = 'https://'.COMPANY_URL.'/users/receipt/?userid='.$userid.'&secret='.$secret;
+			$callback_url = 'https://'.COMPANY_DOMAIN.'/users/receipt/?userid='.$userid.'&secret='.$secret;
 			$root_url = 'https://api.blockchain.info/v2/receive';
 			$parameters = 'xpub=' .$my_xpub. '&callback=' .urlencode($callback_url). '&key=' .$my_api;
 
 			
-//			print_r($parameters);
+			
 			ini_set('allow_url_fopen',1);
 			$response = file_get_contents($root_url . '?' . $parameters);
 			$object = json_decode($response);

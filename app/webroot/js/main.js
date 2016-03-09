@@ -83,8 +83,8 @@ function BuyFormCalculate (){
 	SecondCurrency = $('#BuySecondCurrency').val();
 	BuyAmount = $('#BuyAmount').val();
 	BuyPriceper = $('#BuyPriceper').val();
-	if(BuyAmount=="" || BuyAmount<=0.25){
-			$("#BuySummary").html("Amount less than 0.25!");
+	if(BuyAmount=="" || BuyAmount<=0){
+			$("#BuySummary").html("Amount less than 0 (ZERO)!");
 			$("#BuySubmitButton").attr("disabled", "disabled");
 			$("#BuySubmitButton").attr("class", "btn btn-warning btn-block");
 		return false;
@@ -164,8 +164,8 @@ function SellFormCalculate (){
 	SecondCurrency = $('#SellSecondCurrency').val();
 	SellAmount = $('#SellAmount').val();
 	SellPriceper = $('#SellPriceper').val();
-	if(SellAmount=="" || SellAmount<=0.25){
-		$("#SellSummary").html("Amount less than 0.25!");
+	if(SellAmount=="" || SellAmount<=0){
+		$("#SellSummary").html("Amount less than 0 (ZERO)!");
 		$("#SellSubmitButton").attr("disabled", "disabled");
 		$("#SellSubmitButton").attr("class", "btn btn-warning btn-block");		
 		return false;
