@@ -10,8 +10,12 @@ use app\models\Settings;
 use app\models\File;
 use lithium\data\Connections;
 use app\extensions\action\Coinprism;
+use app\extensions\action\MultiSig;
 use app\extensions\action\Greencoin;
 use app\extensions\action\Identification;
+use app\extensions\action\Functions;
+use app\extensions\action\Uuid;
+use app\extensions\action\CoinAddress;
 use lithium\security\Auth;
 use lithium\storage\Session;
 use app\extensions\action\GoogleAuthenticator;
@@ -47,8 +51,37 @@ class UsersController extends \lithium\action\Controller {
 			
 //			$oauth = new OAuth2();
 //			$key_secret = $oauth->request_token();
+			$uuid = new Uuid();
 			$ga = new GoogleAuthenticator();
+			// coin for creating new multisig address
+			$coin = new Greencoin('http://'.GREENCOIN_WALLET_SERVER.':'.GREENCOIN_WALLET_PORT,GREENCOIN_WALLET_USERNAME,GREENCOIN_WALLET_PASSWORD);
 			
+			$coinX0 = CoinAddress::bitcoin();  
+			$coinX1 = CoinAddress::bitcoin();  
+			$coinX2 = CoinAddress::bitcoin();  
+
+			$coinB0 = CoinAddress::bitcoin();  
+			$coinB1 = CoinAddress::bitcoin();  
+			$coinB2 = CoinAddress::bitcoin();  
+
+			
+//				print 'public (base58): ' . $coin['public'] . "\n";
+//				print 'public (Hex)   : ' . $coin['public_hex'] . "\n";
+//				print 'private (WIF)  : ' . $coin['private'] . "\n";
+//				print 'private (Hex)  : ' . $coin['private_hex'] . "\n"; 
+		$publickeys = array(
+			$coinX0['public_hex'],
+			$coinX1['public_hex'],
+			$coinX2['public_hex'],
+		);
+		$security = (int)2;
+		$createMultiSigXGC	= $coin->createmultisig($security,$publickeys);
+		$publickeys = array(
+			$coinB0['public_hex'],
+			$coinB1['public_hex'],
+			$coinB2['public_hex'],
+		);		
+		$createMultiSigBTC	= $coin->createmultisig($security,$publickeys);		
 			$data = array(
 				'user_id'=>(string)$Users->_id,
 				'username'=>(string)$Users->username,
@@ -65,7 +98,42 @@ class UsersController extends \lithium\action\Controller {
 				'balance.USD' => (float)0,				
 				'balance.EUR' => (float)0,
 				'balance.CAD' => (float)0,				
-				'balance.GBP' => (float)0,								
+				'balance.GBP' => (float)0,
+				'walletid'=>$uuid->v4(),
+				'coin.XGC.0.public' => $coinX0['public'],
+				'coin.XGC.1.public' => $coinX1['public'],
+				'coin.XGC.2.public' => $coinX2['public'],
+				'coin.XGC.0.private' => $coinX0['private'],
+				'coin.XGC.1.private' => $coinX1['private'],
+				'coin.XGC.2.private' => $coinX2['private'],
+				'coin.XGC.0.public_hex' => $coinX0['public_hex'],
+				'coin.XGC.1.public_hex' => $coinX1['public_hex'],
+				'coin.XGC.2.public_hex' => $coinX2['public_hex'],
+				'coin.XGC.0.private_hex' => $coinX0['private_hex'],
+				'coin.XGC.1.private_hex' => $coinX1['private_hex'],
+				'coin.XGC.2.private_hex' => $coinX2['private_hex'],
+				
+				'addresses.XGC.0.msx'=>$createMultiSigXGC,
+				'addresses.XGC.0.balance'=>0,
+				'addresses.XGC.0.transactions'=>'N',
+				'addresses.XGC.0.numbers'=>array(0,1,2),
+				'coin.BTC.0.public' => $coinB0['public'],
+				'coin.BTC.1.public' => $coinB1['public'],
+				'coin.BTC.2.public' => $coinB2['public'],
+				'coin.BTC.0.private' => $coinB0['private'],
+				'coin.BTC.1.private' => $coinB1['private'],
+				'coin.BTC.2.private' => $coinB2['private'],
+				'coin.BTC.0.public_hex' => $coinB0['public_hex'],
+				'coin.BTC.1.public_hex' => $coinB1['public_hex'],
+				'coin.BTC.2.public_hex' => $coinB2['public_hex'],
+				'coin.BTC.0.private_hex' => $coinB0['private_hex'],
+				'coin.BTC.1.private_hex' => $coinB1['private_hex'],
+				'coin.BTC.2.private_hex' => $coinB2['private_hex'],
+				
+				'addresses.BTC.0.msx'=>$createMultiSigBTC,
+				'addresses.BTC.0.balance'=>0,
+				'addresses.BTC.0.transactions'=>'N',
+				'addresses.BTC.0.numbers'=>array(0,1,2),
 			);
 			Details::create()->save($data);
 
@@ -579,9 +647,9 @@ class UsersController extends \lithium\action\Controller {
 	}
 	
 	public function funding($currency=null){
-				$currency = strtoupper($currency);
-				$title = "Funding ".$currency;
-
+			$currency = strtoupper($currency);
+			$title = "Funding ".$currency;
+			$coin = new Greencoin('http://'.GREENCOIN_WALLET_SERVER.':'.GREENCOIN_WALLET_PORT,GREENCOIN_WALLET_USERNAME,GREENCOIN_WALLET_PASSWORD);
 		$user = Session::read('default');
 		if ($user==""){		return $this->redirect('/login');}
 		$id = $user['_id'];
@@ -592,22 +660,50 @@ class UsersController extends \lithium\action\Controller {
 		$secret = $details['secret'];
 		$userid = $details['user_id'];
 		///////////////////// Change of code required when Virtual Currency added
-		switch($currency){
+		// find the last address and check balance is 0 && NO Transactions
+		
+		$k = 0;
+		foreach($details['addresses'][$currency] as $addresses){
+			if($addresses['balance']==0 && $addresses['transactions']=="N"){
+				$address = $addresses['msx']['address'];
+					$data = array(
+						'addresses.'.$currency.'.'.$k.'.checkbalance' => 'Y',
+					);
+					$conditions = array('user_id'=> (string) $id);
+					Details::update($data,$conditions);
+				break;
+			}
+			$k++;
+		}
+		// create new multisig address
+		if($address==""){
+			$multisig = new MultiSig();
+			$address = $multisig->createNew($id,$currency);
+		}
+		// End of /////////////////// Change of code required when Virtual Currency added		
+		// create a simple process for restore coins to wallets. 
+		// BTC = blockchain.info/
+		// XGC = localhost wallet
+				switch($currency){
 			case "BTC":
 			$currencyName = "Bitcoin";
 			$my_address = BITCOIN_ADDRESS;			
+			$my_xpub = BITCOIN_XPUB;
+			$my_api = BITCOIN_API;
 			$callback_url = 'https://'.COMPANY_URL.'/users/receipt/?userid='.$userid.'&secret='.$secret;
-			$root_url = 'https://blockchain.info/api/receive';
-			$parameters = 'method=create&address=' . $my_address .'&shared=false&callback='. urlencode($callback_url);
+			$root_url = 'https://api.blockchain.info/v2/receive';
+			$parameters = 'xpub=' .$my_xpub. '&callback=' .urlencode($callback_url). '&key=' .$my_api;
+
+			
+//			print_r($parameters);
 			ini_set('allow_url_fopen',1);
 			$response = file_get_contents($root_url . '?' . $parameters);
 			$object = json_decode($response);
-			$address = $object->input_address;
+			$address = $object->address;
 			if($address==""){
 				$address = (string)$details['bitcoinaddress'][0];
 			}
 			break;
-
 			case "XGC":
 			$currencyName = "Greencoin";			
 			$greencoin = new Greencoin('http://'.GREENCOIN_WALLET_SERVER.':'.GREENCOIN_WALLET_PORT,GREENCOIN_WALLET_USERNAME,GREENCOIN_WALLET_PASSWORD);
@@ -632,11 +728,12 @@ class UsersController extends \lithium\action\Controller {
 				'conditions'=>array('username'=>$user['username'])
 			))->save($data);
 			break;
-
 		}
 		// End of /////////////////// Change of code required when Virtual Currency added		
 
-
+		
+		
+		
 		$paytxfee = Parameters::find('first');
 		$txfee = $paytxfee['paytxfee'];
 		$transactions = Transactions::find('first',array(
@@ -710,6 +807,13 @@ class UsersController extends \lithium\action\Controller {
 						'user_id'=>$userid,
 						'secret'=>$secret)
 				));
+			$user = Users::find('first',array(
+				'conditions'=>array(
+						'_id'=>$userid,
+						'username'=>$details['username']
+				)
+			));
+			$email = $user['email'];
 				if(count($details)!=0){
 
 				$Transactions = Transactions::find('first',array(
@@ -730,7 +834,7 @@ class UsersController extends \lithium\action\Controller {
 						$dataDetails = array(
 							'balance.BTC' => (float)number_format((float)$details['balance.BTC'] + (float)$value_in_btc,0),
 						);
-						$details = Details::find('all',
+						Details::find('all',
 							array(
 							'conditions'=>array(
 								'user_id'=>$userid,
@@ -739,13 +843,25 @@ class UsersController extends \lithium\action\Controller {
 						))->save($dataDetails);
 					}
 				}
+				
 // Send email to client for payment receipt, if invoice number is present. or not
+					/////////////////////////////////Email//////////////////////////////////////////////////
+					$emaildata = array(
+						'email'=>$email,
+						'transactions'=>$data
+					);
+						$function = new Functions();
+						$compact = array('data'=>$emaildata);
+						$from = array(NOREPLY => "noreply@".COMPANY_URL);
+						$email = $email;
+						$function->sendEmailTo($email,$compact,'ex','transactionReceived',"SiiCrypto.com - Received coins",$from,'','','',null);
+					/////////////////////////////////Email//////////////////////////////////////////////////				
+
+// email send function	
 			if($data['Amount']>0){
 				$function = new Functions();
 				$returnvalues = $function->twilio($data);	 // Testing if it works 
 			}
-
-
 			return $this->render(array('layout' => false));	
 	}
 	public function paymentconfirm($currency=null,$id = null){
@@ -1328,20 +1444,18 @@ class UsersController extends \lithium\action\Controller {
 	
 	public function deposit(){
 		$title = "Deposit";
-	
 		$user = Session::read('default');
 		if ($user==""){return $this->redirect('/login');exit;}
-		
 		$id = $user['_id'];
-
+		if(stristr( $_SERVER['HTTP_REFERER'],COMPANY_URL)===FALSE){return $this->redirect('/login');exit;}
 		$details = Details::find('first',
 			array('conditions'=>array('user_id'=> (string) $id))
 		);
 		if($this->request->data){
-			$amountFiat = $this->request->data['AmountFiat'];
-			$Currency = $this->request->data['Currency']; 
+			$amountFiat = $this->request->data['amountFiat'];
+			$Currency = $this->request->data['currency']; 
 			$Reference = $this->request->data['Reference']; 		
-			$DepositMethod = $this->request->data['DepositMethod'];
+			
 			$data = array(
 					'DateTime' => new \MongoDate(),
 					'username' => $details['username'],
@@ -1349,44 +1463,64 @@ class UsersController extends \lithium\action\Controller {
 					'Currency'=> $Currency,					
 					'Added'=>true,
 					'Reference'=>$Reference,
-					'DepositMethod'=>$DepositMethod,				
+					'data' => $this->request->data,
 					'Approved'=>'No'
 			);
 			$tx = Transactions::create();
 			$tx->save($data);
 
-			$view  = new View(array(
-				'loader' => 'File',
-				'renderer' => 'File',
-				'paths' => array(
-					'template' => '{:library}/views/{:controller}/{:template}.{:type}.php'
-				)
-			));
-			$body = $view->render(
-				'template',
-				compact('details','data','user'),
+			// Create PDF file
+				$view  = new View(array(
+						'paths' => array(
+							'template' => '{:library}/views/{:controller}/{:template}.{:type}.php',
+							'layout'   => '{:library}/views/layouts/{:layout}.{:type}.php',
+					)
+				));
+
+			echo $view->render(
+				'all',
+				compact('data'),
 				array(
-					'controller' => 'users',
-					'template'=>'deposit',
-					'type' => 'mail',
-					'layout' => false
+				'controller' => 'users',
+				'template'=>'printDeposit',
+				'type' => 'pdf',
+				'layout' =>'printDeposit'
 				)
 			);	
-			$transport = Swift_MailTransport::newInstance();
-			$mailer = Swift_Mailer::newInstance($transport);
-			$message = Swift_Message::newInstance();
-			$message->setSubject("Deposit to ".COMPANY_URL);
-			$message->setFrom(array(NOREPLY => 'Deposit to '.COMPANY_URL));
-			$message->setTo($user['email']);
-			$message->addBcc(MAIL_1);
-			$message->addBcc(MAIL_2);			
-			$message->addBcc(MAIL_3);		
-			$message->setBody($body,'text/html');
-			$mailer->send($message);
+
+
 		}
 			return compact('title','details','data','user');			
 	}
-	
+
+	public function sendDeposit($Reference = null){
+		$user = Session::read('default');
+		if ($user==""){return $this->redirect('/login');exit;}
+		$id = $user['_id'];
+		$email = $user['email'];
+		if ($Reference==null){return $this->redirect('/login');exit;}
+		$transaction = Transactions::find('first',array(
+			'conditions'=>array(
+				'Reference'=>$Reference,
+				'username'=>$user['username']
+				)
+		));
+					// ------------------
+								/////////////////////////////////Email//////////////////////////////////////////////////
+					$emaildata = array(
+						'data'=>$transaction
+					);
+						$function = new Functions();
+						$compact = array('data'=>$emaildata);
+						$from = array(NOREPLY => "noreply@".COMPANY_URL);
+						$email = $email;
+						$attach = VANITY_OUTPUT_DIR."SiiCrypto-".$Reference.".pdf";
+						$function->sendEmailTo($email,$compact,'users','deposit',"SiiCrypto.com - Deposit Request",$from,MAIL_1,MAIL_2,MAIL_3,$attach);
+						////////////////////////////////////////////////////////////////////////////////////////////
+
+			return $this->redirect('ex::dashboard');
+		
+	}
 	public function withdraw(){
 		$title = "Withdraw";
 	

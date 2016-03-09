@@ -53,7 +53,30 @@ class Walletxgcnotify extends \lithium\console\Command {
 						$details = Details::find('first',
 							array('conditions'=>array('username'=> (string) $userName))
 						);
+						$user = Users::find('first',array(
+							'conditions'=>array(
+								'_id'=>$userid,
+								'username'=>$details['username']
+							)
+						));
+						$email = $user['email'];
 
+// Send email to client for payment receipt, if invoice number is present. or not
+					/////////////////////////////////Email//////////////////////////////////////////////////
+					$emaildata = array(
+						'email'=>$email,
+						'transactions'=>$data
+					);
+						$function = new Functions();
+						$compact = array('data'=>$emaildata);
+						$from = array(NOREPLY => "noreply@".COMPANY_URL);
+						$email = $email;
+						$function->sendEmailTo($email,$compact,'ex','transactionXGCReceived',"SiiCrypto.com - Received coins",$from,'','','',null);
+					/////////////////////////////////Email//////////////////////////////////////////////////				
+
+// email send function	
+						
+						
 									
 						$dataDetails = array(
 								'balance.XGC' => (float)((float)$details['balance.XGC'] + (float)$Amount),

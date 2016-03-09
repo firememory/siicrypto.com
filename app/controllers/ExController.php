@@ -24,6 +24,7 @@ use \DateScaleUtils;
 use lithium\util\String;
 use lithium\security\Auth;
 use lithium\storage\Session;
+use app\extensions\action\MultiSig;
 use app\extensions\action\Functions;
 use app\extensions\action\OrderFunctions;
 use app\controllers\UpdatesController;
@@ -60,8 +61,21 @@ class ExController extends \lithium\action\Controller {
 		$details = Details::find('first',
 			array('conditions'=>array('user_id'=>$id))
 		);
+		foreach($details['addresses'][$first_curr] as $check){
+			if($check['checkbalance']=='Y'){
+					$multiSig = new MultiSig();
+					$multiSig->UpdateBalance($first_curr,$id);
+			}
+		}
+		foreach($details['addresses'][$second_curr] as $check){
+			if($check['checkbalance']=='Y'){
+					$multiSig = new MultiSig();
+					$multiSig->UpdateBalance($second_curr,$id);
+			}
+		}
 		// if trade order is submitted by post ----------------
 		if(($this->request->data)){
+				if(stristr( $_SERVER['HTTP_REFERER'],COMPANY_URL)===FALSE){return $this->redirect('/login');exit;}
 			$data = array(
 			'page.refresh' => true
 			);
@@ -116,7 +130,7 @@ class ExController extends \lithium\action\Controller {
 				$data = array(
 					'balance.'.$SecondCurrency => (float)($NewBalanceAmount),
 				);
-				$details = Details::find('all',
+				Details::find('all',
 					array('conditions'=>array('user_id'=>$id))
 				)->save($data);
 			}
@@ -150,7 +164,7 @@ class ExController extends \lithium\action\Controller {
 				$data = array(
 					'balance.'.$FirstCurrency => (float)($NewBalanceAmount),
 				);
-				$details = Details::find('all',
+				Details::find('all',
 					array('conditions'=>array('user_id'=>$id))
 				)->save($data);
 			}
@@ -161,6 +175,8 @@ class ExController extends \lithium\action\Controller {
 				'CommissionPercent' => (float)($Commission),
 				'Commission.Amount' => (float)($CommissionAmount),
 				'Commission.Currency' => $CommissionCurrency,				
+				'OpeningBalance.'.$FirstCurrency => $details['balance'][$FirstCurrency],
+				'OpeningBalance.'.$SecondCurrency => $details['balance'][$SecondCurrency],
 				'Amount' => (float)($Amount),
 				'PerPrice' => (float)($PerPrice),
 				'DateTime' => new \MongoDate(),
@@ -378,6 +394,9 @@ class ExController extends \lithium\action\Controller {
 							'Commission.Amount' => (float)($PrevCommAmount),
 							'Commission.Currency' => $PrevCommCurr,				
 /////////////////////////////////////////////////////////////////////////////////////////////							
+				'OpeningBalance.'.$PO['FirstCurrency'] => $PO['OpeningBalance'][$PO['FirstCurrency']],
+				'OpeningBalance.'.$PO['SecondCurrency'] => $PO['OpeningBalance'][$PO['SecondCurrency']],
+
 							'PerPrice' => (float)($PO['PerPrice']),
 							'DateTime' => $PO['DateTime'],
 							'Completed' => 'N',
@@ -542,7 +561,9 @@ class ExController extends \lithium\action\Controller {
 		$details = Details::find('first',
 			array('conditions'=>array('user_id'=>$id))
 		);
-
+		
+		
+		
 		$trades = Trades::find('all');
 		$YourOrders = array();
 		foreach($trades as $t){
@@ -565,7 +586,7 @@ class ExController extends \lithium\action\Controller {
 		}
 		$title = "Dashboard";
 		$keywords = "Dashboard, trading platform, bitcoin exchange, we trust, United Kingdom, UK";
-$description = "Dashboard for trading platform for bitcoin exchange in United Kingdom, UK";
+		$description = "Dashboard for trading platform for bitcoin exchange in United Kingdom, UK";
 		$settings = Settings::find('first');
 		return compact('title','details','YourOrders','Commissions','CompletedCommissions','YourCompleteOrders','RequestFriends','UsersRegistered','OnlineUsers','TotalOrders','TotalCompleteOrders','keywords','description','settings','user');
 	}
@@ -857,7 +878,7 @@ $description = "Dashboard for trading platform for bitcoin exchange in United Ki
 					)
 			))->save($data);
 			
- 			if($Action=="Buy"){
+ 		if($Action=="Buy"){
 				$Amount = (float)$Orders['Amount'];			
 				$balance = 'balance.'.$Orders['FirstCurrency'];
 				$details = Details::find('first', array(
@@ -905,6 +926,9 @@ $description = "Dashboard for trading platform for bitcoin exchange in United Ki
 						)
 				))->save($data);
 			}
+			
+			$multiSig = new MultiSig();
+			$multiSig->transferMultiSig($id);
  	}
 	public function RequestFriend($id){
 	$mongodb = Connections::get('default')->connection;
@@ -1460,6 +1484,13 @@ $graph->legend->SetFrameWeight(1);
 		}
 	}
 	
-	
+	public function Transfer($order_id){
+		$multiSig = new MultiSig();
+		$multiSig->transferMultiSig($order_id);
+		
+		return $this->render(array('json' => array(
+				'success'=>0,
+		)));
+	}
 }
 ?>

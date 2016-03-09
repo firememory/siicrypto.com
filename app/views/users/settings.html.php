@@ -561,6 +561,7 @@ Only required if you wish to withdraw hard currency.
 		</div>
   </div>
 <!--------- Bank ----------->
+<!--
 <?php
 foreach ($settings['documents'] as $document){
 	if($document['required']){
@@ -601,7 +602,7 @@ foreach ($settings['documents'] as $document){
 <?php }
 		}
 }?>
-
+-->
 <!--------- Security ----------->
   <div class="panel panel-default">
     <div class="panel-heading"  style="background-color:#D5E2C5">

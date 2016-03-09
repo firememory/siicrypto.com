@@ -1,0 +1,59 @@
+Balance			Transactions	CheckBalance
+	00000000		N						Y 			Waiting for receive of funds - check balance - NO New Address created
+	00000000 	Y						N				Transaction processed added to balance
+	>0000000		N						N				Funds are received and processed - balance is added, waiting for order / withdrawal
+	>0000000		Y						N				It should not happen - Balance should be ZERO
+
+
+validateaddress 3FmDincfEaFDshrc1Lh3R5WVrDT2WtWLKM
+
+getrawtransaction 93c6644281d977f2d5193b3393e72964df2268eefda2c6f4af7e3df25d547d02
+
+decoderawtransaction 01000000015e9574699b8c900023f7fee1bf228fef664a3dee06c1edd6cdc386ccd82aaf1b000000006b483045022100c2b22e2bf95f9483f6b1387979e76dd01bac58a197d6c9d45d03f2dc8ec2737a0220712f432ee26d1a01324ea288eac7522b73c5b2f2971d7baeb6babb8e59c4b847012103c204b555e2bddc5656c0ff811d529e1e84627b62be72d0556dc3a300081b02ccffffffff02ece47301000000001976a914ff57cedf43c58b2f609a6e4ed0e811a25848b71c88ac00e1f5050000000017a9149a5d45d073466053d611138e4c09dec553f273c78700000000
+
+{
+"txid" : "93c6644281d977f2d5193b3393e72964df2268eefda2c6f4af7e3df25d547d02",
+"version" : 1,
+"locktime" : 0,
+"vin" : [
+
+{
+"txid" : "1baf2ad8cc86c3cdd6edc106ee3d4a66ef8f22bfe1fef72300908c9b6974955e",
+"vout" : 0,
+"address" : "1Bd5mphcShoU6XfZfQnvzcEMU5ptFb2YkB",
+"scriptSig" : {
+"asm" : "3045022100c2b22e2bf95f9483f6b1387979e76dd01bac58a197d6c9d45d03f2dc8ec2737a0220712f432ee26d1a01324ea288eac7522b73c5b2f2971d7baeb6babb8e59c4b84701 03c204b555e2bddc5656c0ff811d529e1e84627b62be72d0556dc3a300081b02cc",
+"hex" : "483045022100c2b22e2bf95f9483f6b1387979e76dd01bac58a197d6c9d45d03f2dc8ec2737a0220712f432ee26d1a01324ea288eac7522b73c5b2f2971d7baeb6babb8e59c4b847012103c204b555e2bddc5656c0ff811d529e1e84627b62be72d0556dc3a300081b02cc"
+},
+"sequence" : 4294967295
+}
+],
+"vout" : [
+{
+"value" : 0.24372460,
+"n" : 0,
+"scriptPubKey" : {
+"asm" : "OP_DUP OP_HASH160 ff57cedf43c58b2f609a6e4ed0e811a25848b71c OP_EQUALVERIFY OP_CHECKSIG",
+"hex" : "76a914ff57cedf43c58b2f609a6e4ed0e811a25848b71c88ac",
+"reqSigs" : 1,
+"type" : "pubkeyhash",
+"addresses" : [
+"1QH8VvwsLWHcoUEtTK9NvPjYwzvYeAmhbM"
+]
+}
+},
+{
+"value" : 1.00000000,
+"n" : 1,
+"scriptPubKey" : {
+"asm" : "OP_HASH160 9a5d45d073466053d611138e4c09dec553f273c7 OP_EQUAL",
+"hex" : "a9149a5d45d073466053d611138e4c09dec553f273c787",
+"reqSigs" : 1,
+"type" : "scripthash",
+"addresses" : [
+"3FmDincfEaFDshrc1Lh3R5WVrDT2WtWLKM"
+]
+}
+}
+]
+}

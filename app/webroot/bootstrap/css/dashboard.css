@@ -117,3 +117,14 @@ blockquote {
 	border-bottom:1px solid gray;
 }
 a:hover{text-decoration:none}
+.comingsoon{
+	padding:10px;
+}
+.comingsoon h3{
+	background-color:gray;
+	padding:10px
+}
+.comingsoon p{
+	border-bottom:1px solid black;
+	padding-left:10px
+}

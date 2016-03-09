@@ -135,19 +135,29 @@ function initCanvas(ww,hh)
 
 </script>
 
-<div class="panel panel-default">
-  <div class="panel-heading">
-    <h3 class="panel-title">Funding <?=$currencyName?> - <?=$currency?> - Deposit / Withdrawal</h3>
-  </div>
-  <div class="panel-body">
-		<div class="row">
-		<!-- Deposit -->
-			<div class="col-md-6">
-				<div class="panel panel-info">
-					<div class="panel-heading">
-						<h3 class="panel-title">Deposit <?=$currencyName?> - <?=$currency?></h3>
-					</div>
-					<div class="panel-body">
+
+
+
+
+
+
+
+
+
+
+
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-success">
+    <div class="panel-heading" role="tab" id="headingOne">
+      <h4 class="panel-title">
+        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+<strong>Deposit <?=$currencyName?> - <?=$currency?></strong>
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+
 							<table class="table table-condensed table-bordered table-hover">
 								<tr style="background-color:#CFFDB9">
 									<td><?=$currencyName?> - <?=$currency?> Address</td>
@@ -162,40 +172,22 @@ function initCanvas(ww,hh)
 									</td>
 								</tr>
 							</table>
-					
-					</div>
-				</div>				
-			<?php if($currency=="MSC"){?>
-			Use MasterCoin client to send your MasterCoins to the above address using:
-			<code>send_MP(senderaddress, <?=$address?>,<br>
-			1, amount);</code><br>
-			Where 1 is MasterCoin propertyID as<br>
-			<code>{<br>
-    "name" : "MasterCoin",<br>
-    "category" : "N/A",<br>
-    "subcategory" : "N/A",<br>
-    "data" : "***data***",<br>
-    "url" : "www.mastercoin.org",<br>
-    "divisible" : true,<br>
-    "issuer" : "1EXoDusjGwvnjZUyKkxZ4UHEf77z6A5S4P",<br>
-    "creationtxid" : "0000000000000000000000000000000000000000000000000000000000000000",<br>
-    "fixedissuance" : false,<br>
-    "totaltokens" : 0.00000000<br>
-}<br>
-</code>
-			<?php }?>
-			</div>		
-			
-			
-		<!-- Deposit -->
-		<!-- Withdraw -->
-			<div class="col-md-6">
-				<div class="panel panel-info">
-					<div class="panel-heading">
-						<h3 class="panel-title">Withdraw <?=$currencyName?> - <?=$currency?></h3>
-					</div>
-					<div class="panel-body">
-					
+ 
+
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-danger">
+    <div class="panel-heading" role="tab" id="headingTwo">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          <strong>Withdraw <?=$currencyName?> - <?=$currency?></strong>
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+      <div class="panel-body">
+
 					<?php 
 					if(count($transactions)==0){
 					?>
@@ -285,13 +277,10 @@ function initCanvas(ww,hh)
 								</tr>
 							</table>
 							<?php }?>
-					</div>
-				</div>				
-				
-
-				
-			</div>		
-		<!-- Withdraw -->					
-		</div>
+						
+						
+						
+      </div>
+    </div>
   </div>
-  </div>
+</div>

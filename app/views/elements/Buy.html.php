@@ -27,7 +27,7 @@
 	</tr>
 	<tr>
 		<td>
-		<?=$this->form->field('BuyAmount', array('label'=>'Amount '.$first_curr,'class'=>'col-md-1 form-control numbers', 'value'=>0, 'onBlur'=>'$("#BuySubmitButton").attr("disabled", "disabled");','min'=>'0.00000001','max'=>'999999','maxlength'=>'10','type'=>'number','step'=>"0.00000001","onChange"=>"$('#BuyMultiple').val('N');" )); ?>				
+		<?=$this->form->field('BuyAmount', array('label'=>'Amount '.$first_curr,'class'=>'col-md-1 form-control numbers', 'value'=>0, 'onBlur'=>'$("#BuySubmitButton").attr("disabled", "disabled");','min'=>'.25','max'=>'999999','maxlength'=>'10','type'=>'number','step'=>"0.00000001","onChange"=>"$('#BuyMultiple').val('N');" )); ?>				
 		</td>
 		<td>
 			<label for="BuyPriceper">Price per <?=$first_curr?></label>

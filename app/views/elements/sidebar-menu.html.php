@@ -1,3 +1,4 @@
+
 <?php 
 use app\models\Trades;
 use app\models\Orders;
@@ -68,3 +69,11 @@ if($this->_request->params['controller']!='api'){
 		}
 }
 ?>
+<!--
+<div class="comingsoon"><h3>Coming soon...</h3>
+<p><img src="/img/Dollar.png"> USD</p>
+<p><img src="/img/Euro.png"> EUR</p>
+<p><img src="/img/Pound.png"> GBP</p>
+<p><img src="/img/CDollar.png"> CAD</p>
+</div>
+-->

@@ -83,8 +83,8 @@ function BuyFormCalculate (){
 	SecondCurrency = $('#BuySecondCurrency').val();
 	BuyAmount = $('#BuyAmount').val();
 	BuyPriceper = $('#BuyPriceper').val();
-	if(BuyAmount=="" || BuyAmount<=0){
-			$("#BuySummary").html("Amount less than Zero!");
+	if(BuyAmount=="" || BuyAmount<=0.25){
+			$("#BuySummary").html("Amount less than 0.25!");
 			$("#BuySubmitButton").attr("disabled", "disabled");
 			$("#BuySubmitButton").attr("class", "btn btn-warning btn-block");
 		return false;
@@ -109,22 +109,22 @@ function BuyFormCalculate (){
 	}
 
 	TotalValue = BuyAmount * BuyPriceper;
-	TotalValue = TotalValue.toFixed(6);
-	$("#BuyTotal").html(TotalValue);
+	TotalValue = TotalValue.toFixed(8);
+	
 	
 	$.getJSON('/Updates/Commission/',
 		function(ReturnValues){
 			$("#BuyCommission").val(ReturnValues['Commission']);			
 			Commission = $('#BuyCommission').val();
 			Fees = BuyAmount * Commission / 100;
-			Fees = Fees.toFixed(5);
+			Fees = Fees.toFixed(8);
 			if(Fees<=0){return false;}
 			$("#BuyFee").html(Fees);	
 			$('#BuyCommissionAmount').val(Fees);
 			$('#BuyCommissionCurrency').val(FirstCurrency);			
-		}
-	);
-	GrandTotal = TotalValue;
+			$("#BuyTotal").html(TotalValue);
+			
+		GrandTotal = TotalValue;
 	if(GrandTotal==0){
 		BuySummary = "Amount cannot be Zero";
 		$("#BuySummary").html(BuySummary);
@@ -132,9 +132,10 @@ function BuyFormCalculate (){
 		$("#BuySubmitButton").attr("class", "btn btn-warning btn-block");
 		return false;
 	}
-	if(parseFloat(BalanceSecond) <= parseFloat(GrandTotal)){
+
+	if(parseFloat(BalanceSecond) < parseFloat(GrandTotal)){
 		Excess = parseFloat(GrandTotal) - parseFloat(BalanceSecond);
-		Excess = Excess.toFixed(5)		
+		Excess = Excess.toFixed(8);
 		BuySummary = "The transaction amount exceeds the balance by " + Excess + " " + SecondCurrency;
 		$("#BuySummary").html(BuySummary);
 		$("#BuySubmitButton").attr("disabled", "disabled");
@@ -146,6 +147,9 @@ function BuyFormCalculate (){
 		$("#BuySubmitButton").attr("class", "btn btn-success btn-block");		
 	}
 	if(parseFloat(GrandTotal)===0){$("#BuySubmitButton").attr("disabled", "disabled");}
+
+		}
+	);
 }
 function SellFormCalculate (){
 	Multiple = $('#SellMultiple').val();
@@ -160,8 +164,8 @@ function SellFormCalculate (){
 	SecondCurrency = $('#SellSecondCurrency').val();
 	SellAmount = $('#SellAmount').val();
 	SellPriceper = $('#SellPriceper').val();
-	if(SellAmount=="" || SellAmount<=0){
-		$("#SellSummary").html("Amount less than Zero!");
+	if(SellAmount=="" || SellAmount<=0.25){
+		$("#SellSummary").html("Amount less than 0.25!");
 		$("#SellSubmitButton").attr("disabled", "disabled");
 		$("#SellSubmitButton").attr("class", "btn btn-warning btn-block");		
 		return false;
@@ -186,8 +190,8 @@ function SellFormCalculate (){
 	}
 
 	TotalValue = SellAmount * SellPriceper;
-	TotalValue = TotalValue.toFixed(6);
-	$("#SellTotal").html(TotalValue);
+	TotalValue = TotalValue.toFixed(8);
+	
 	
 	$.getJSON('/Updates/Commission/',
 		function(ReturnValues){
@@ -195,13 +199,11 @@ function SellFormCalculate (){
 			Commission = $('#SellCommission').val();;	
 			Fees = TotalValue * Commission / 100;
 			if(Fees<=0){return false;}
-			Fees = Fees.toFixed(5);
+			Fees = Fees.toFixed(8);
 			$("#SellFee").html(Fees);	
 			$('#SellCommissionAmount').val(Fees);
 			$('#SellCommissionCurrency').val(SecondCurrency);						
-		}
-	);
-
+			$("#SellTotal").html(TotalValue);
 	GrandTotal = SellAmount;
 	if(SellAmount==0){
 	SellSummary = "Amount cannot be Zero";
@@ -210,10 +212,9 @@ function SellFormCalculate (){
 		$("#SellSubmitButton").attr("class", "btn btn-warning btn-block");		
 		return false;
 	}
-
 	if(parseFloat(BalanceFirst) < parseFloat(GrandTotal)){
 		Excess =  parseFloat(GrandTotal) - parseFloat(BalanceFirst)  ;
-		Excess = Excess.toFixed(5)
+		Excess = Excess.toFixed(8)
 		SellSummary = "The transaction amount exceeds the balance by " + Excess + " " + FirstCurrency;
 		$("#SellSummary").html(SellSummary);
 		$("#SellSubmitButton").attr("disabled", "disabled");
@@ -225,6 +226,10 @@ function SellFormCalculate (){
 		$("#SellSubmitButton").attr("class", "btn btn-success btn-block");				
 	}
 	if(parseFloat(GrandTotal)===0){$("#SellSubmitButton").attr("disabled", "disabled");}
+			
+		}
+	);
+
 }
 function SellOrderFill(SellOrderPrice,SellOrderAmount,IDs){
 	
@@ -577,3 +582,15 @@ function validateEmail(email) {
 			}
 		});
 	}
+	
+function CheckDepositForm(){
+	
+	if($("#attached").is(':checked')==true && $("#agree").is(':checked')==true && $("#correct").is(':checked')==true ){
+		$("#DepositSubmit").removeAttr("disabled");
+		$("#AlertSelect").hide();
+	}else{
+		$("#AlertSelect").show();
+		$('#DepositSubmit').attr("disabled","disabled");		
+	}
+	
+}

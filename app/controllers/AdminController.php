@@ -1789,48 +1789,13 @@ $description = "Admin panel for Litecoin transactions";
 				$balanceFirst = 'balance.'.$Orders['FirstCurrency'];
 				$balanceSecond = 'balance.'.$Orders['SecondCurrency'];
 				$data = array(
-					$balanceSecond => (float)($details[$balanceSecond] + $Orders['PerPrice']*$Orders['Amount']),
-					$balanceFirst =>	(float)($details[$balanceFirst] - $Orders['Amount'])
+					$balanceSecond => (float)($details[$balanceSecond] + $Orders['PerPrice']*$Orders['Amount'] ), 
+					$balanceFirst =>	(float)($details[$balanceFirst] - $Orders['Amount'] + $Orders['Commission']['Amount']) 
 				);
-/*				print_r($Orders['username']);
+				/*	print_r($Orders['username']);
 				print_r($details[$balanceSecond]);
 				print_r($data);
 				*/
-				$details = Details::find('all', array(
-					'conditions' => array(
-						'user_id'=>$Orders['user_id'], 'username'=>$Orders['username']
-						)
-				))->save($data);
-				
-				$fromUser = Details::find('first', array(
-					'conditions' => array('user_id'=>(string)$Orders['Transact']['user_id'])
-				));
-				$data = array(
-					$balanceFirst => (float)($fromUser[$balanceFirst] + (float)$Orders['Amount']),
-					$balanceSecond => (float) ($fromUser[$balanceSecond] - $Orders['PerPrice']*$Orders['Amount']),
-				);
-/*				print_r($Orders['Transact']['username']);
-				print_r($fromUser[$balanceFirst]);
-				print_r($data);
-		*/		
-				$details = Details::find('all', array(
-					'conditions' => array(
-						'user_id'=>$Orders['Transact']['user_id'], 'username'=>$Orders['Transact']['username']
-						)
-				))->save($data);
-				
-			}
-			if($Orders['Action']=='Sell'){
-				$balanceFirst = 'balance.'.$Orders['FirstCurrency'];
-				$balanceSecond = 'balance.'.$Orders['SecondCurrency'];
-				$data = array(
-					$balanceFirst => (float)($details[$balanceFirst] + (float)$Orders['Amount']),
-					$balanceSecond => (float)($details[$balanceSecond] - $Orders['PerPrice']*$Orders['Amount'])
-				);
-/*				print_r($Orders['username']);
-				print_r($details[$balanceFirst]);
-				print_r($data);
-		*/		
 				$details = Details::find('all', array(
 					'conditions' => array(
 						'user_id'=>$Orders['user_id'], 
@@ -1842,14 +1807,51 @@ $description = "Admin panel for Litecoin transactions";
 					'conditions' => array('user_id'=>(string)$Orders['Transact']['user_id'])
 				));
 				$data = array(
-					$balanceSecond => (float)($fromUser[$balanceSecond] + $Orders['PerPrice']*$Orders['Amount']),
-					$balanceFirst => (float)($fromUser[$balanceFirst] - (float)$Orders['Amount'])
+					$balanceFirst => (float)($fromUser[$balanceFirst] + (float)$Orders['Amount'] ), 
+					$balanceSecond => (float) ($fromUser[$balanceSecond] - $Orders['PerPrice']*$Orders['Amount'] + round($Orders['PerPrice']*$Orders['Amount']* $Orders['CommissionPercent']/100,8)) ,  
+				);
+				/*	print_r($Orders['Transact']['username']);
+				print_r($fromUser[$balanceFirst]);
+				print_r($data);
+				*/		
+				$details = Details::find('all', array(
+					'conditions' => array(
+						'user_id'=>$Orders['Transact']['user_id'], 
+						'username'=>$Orders['Transact']['username']
+						)
+				))->save($data);
+				
+			}
+			if($Orders['Action']=='Sell'){
+				$balanceFirst = 'balance.'.$Orders['FirstCurrency'];
+				$balanceSecond = 'balance.'.$Orders['SecondCurrency'];
+				$data = array(
+					$balanceFirst => (float)($details[$balanceFirst] + (float)$Orders['Amount'] ),
+					$balanceSecond => (float)($details[$balanceSecond] - $Orders['PerPrice']*$Orders['Amount'] + round($Orders['PerPrice']*$Orders['Amount']*$Orders['CommissionPercent']/100,8) ),
+				);
+				/*				print_r($Orders['username']);
+				print_r($details[$balanceFirst]);
+				print_r($data);
+				*/		
+				$details = Details::find('all', array(
+					'conditions' => array(
+						'user_id'=>$Orders['user_id'], 
+						'username'=>$Orders['username']
+						)
+				))->save($data);
+				
+				$fromUser = Details::find('first', array(
+					'conditions' => array('user_id'=>(string)$Orders['Transact']['user_id'])
+				));
+				$data = array(
+					$balanceSecond => (float)($fromUser[$balanceSecond] + $Orders['PerPrice']*$Orders['Amount'] ),
+					$balanceFirst => (float)($fromUser[$balanceFirst] - (float)$Orders['Amount'] + round($Orders['Amount']* $Orders['CommissionPercent']/100,8) ),
 				);
 				
-/*				print_r($Orders['Transact']['username']);
+				/*				print_r($Orders['Transact']['username']);
 				print_r($fromUser[$balanceSecond]);
 				print_r($data);
-		*/		
+				*/		
 				$details = Details::find('all', array(
 					'conditions' => array(
 						'user_id'=>$Orders['Transact']['user_id'],

@@ -25,12 +25,10 @@ use app\extensions\action\Functions;
 					<li style="font-size:13px;"><a href="/company/contact">Contact</a></li>		
 					<li style="font-size:13px;"><a href="/company/aboutus">About</a></li>	
 					<li style="font-size:13px;"><a href="/company/howitworks">How it works</a></li>	
-					<li style="font-size:13px;"><a href="/company/security">Security</a></li>	
-					<li style="font-size:13px;"><a href="/company/riskmanagement">Risk</a></li>				
+					<li style="font-size:13px;"><a href="/company/security">Security & Risk</a></li>	
 					<li style="font-size:13px;"><a href="/company/verification">Verification</a></li>						
-					<li style="font-size:13px;"><a href="/company/privacy">Privacy</a></li>		
-					<li style="font-size:13px;"><a href="/company/termsofservice">Terms</a></li>				
-			
+					<li style="font-size:13px;"><a href="/company/privacy">Privacy & Terms</a></li>		
+					<li style="font-size:13px;"><a href="/company/press">Press</a></li>		
 
 			<li ><a href='#' class='dropdown-toggle' data-toggle='dropdown' >
 			<?=$user['username']?> <i class='glyphicon glyphicon-chevron-down'></i>&nbsp;&nbsp;&nbsp;
@@ -79,12 +77,10 @@ foreach($trades as $tr){
 					<li style="font-size:13px;"><a href="/company/contact">Contact</a></li>		
 					<li style="font-size:13px;"><a href="/company/aboutus">About</a></li>	
 					<li style="font-size:13px;"><a href="/company/howitworks">How it works</a></li>	
-					<li style="font-size:13px;"><a href="/company/security">Security</a></li>	
-					<li style="font-size:13px;"><a href="/company/riskmanagement">Risk</a></li>				
+					<li style="font-size:13px;"><a href="/company/security">Security & Risk</a></li>	
 					<li style="font-size:13px;"><a href="/company/verification">Verification</a></li>						
-					<li style="font-size:13px;"><a href="/company/privacy">Privacy</a></li>		
-					<li style="font-size:13px;"><a href="/company/termsofservice">Terms</a></li>				
-			
+					<li style="font-size:13px;"><a href="/company/privacy">Privacy & Terms</a></li>		
+					<li style="font-size:13px;"><a href="/company/press">Press</a></li>		
 
 			<li><a href="/login">Login</a></li>
 			<li><a href="/users/signup">Register&nbsp;&nbsp;&nbsp;&nbsp;</a></li>

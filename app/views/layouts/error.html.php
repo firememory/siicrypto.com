@@ -1,2 +1,2 @@
-<?php  // echo $this->content(); ?>
+<?php   echo $this->content(); ?>
 Error in URL... 

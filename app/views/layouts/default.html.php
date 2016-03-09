@@ -80,7 +80,7 @@ $ex = Session::read('ex');
 							<?php echo $this->_render('element', 'sidebar-menu');?>		
 							<li class="active"><a href="/users/settings"> <i class="fa fa-gears"></i> Settings</a></li>
 							<li class="active"><a href="/ex/dashboard"> <i class="fa fa-dashboard"></i> Dashboard</a></li>
-							<li class="active"><a href="/company/funding"> <i class="fa fa-dollar"></i> Funding</a></li>
+<!--							<li class="active"><a href="/company/funding"> <i class="fa fa-dollar"></i> Funding</a></li>-->
 						</ul>
 						<?php if($user==""){ ?>
 						<ul class="nav nav-sidebar">
@@ -91,7 +91,7 @@ $ex = Session::read('ex');
 
 <p>Users will complete an online "Know Your Client" verification process which only takes a few minutes.</p>
 
-<p><strong>All fiat funds are held by third party fiduciary trust company.</strong></p>
+<p><strong>All fiat funds are held by ILS Fiduciaries (Switzerland) Sarl the Swiss branch of ILS World, a global provider of independent fiduciary services.</strong></p>
 
 <p>The promise of crypto currency was always the fast and inexpensive transfer of funds worldwide, while bypassing the banking system.Until GreenCoinX this has been impeded by identity concerns. Now GreenCoinX has made this promise a reality by its KYC capability.</p>
 
@@ -107,6 +107,7 @@ $ex = Session::read('ex');
 				
 				<?php echo $this->content(); ?>
 					<div class="footer" style="border-bottom:double">
+							<?php echo $this->_render('element', 'localbitcoins');?>	
 							<?php // echo $this->_render('element', 'footer');?>	
 					</div>	<!-- footer -->
 				</div> <!-- main -->					
