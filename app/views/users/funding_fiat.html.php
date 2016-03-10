@@ -1,3 +1,9 @@
+<?php
+use lithium\util\String;
+use app\extensions\action\Functions;
+
+$function = new Functions();
+?>
 <style>
 .Address_success{background-color: #9FFF9F;font-weight:bold}
 
@@ -13,20 +19,25 @@
 				<li role=presentation class="active"><a href=#home id=home-tab role=tab data-toggle=tab aria-controls=home aria-expanded=true style="font-weight:bold;color:#5cb85c">Deposit <?=$currency?></a></strong</li> 
 				<li role=presentation><a href=#profile role=tab id=profile-tab data-toggle=tab aria-controls=profile  style="font-weight:bold;color:#d9534f;">Withdraw <?=$currency?></a></li>
 			</ul>
+
 			<div id=myTabContent class="tab-content"  > 
+			
 			<div role=tabpanel class="tab-pane fade in active  tab-content-deposit" id=home aria-labelledby=home-tab> 
 			<!-- //////////////////////////////////////////////////////////////////////////////////////-->
+			<?php 
+			if(count($depositRequest)==0){
+			?>
 			<div style=""><blockquote><small><strong>Note:</strong> Vantu Bank’s customer service may contact you to authenticate your expected payment. Please make sure the contact details below are valid. If Vantu Bank needs to reach you and is unable to do so within 48 hours your funds may be put on hold. The purpose for the wire must be made clear in order to prevent delays.</small></blockquote></div>
 						<h2>Declaration of Source of Funds (DSF)</h2>
 						<form method="POST" action="/users/deposit" class="form">
-						<table class="table table-condensed table-bordered table-hover" >
+							<table class="table table-condensed table-bordered table-hover" >
 						<tr>
 							<th width="50%">FULL NAME OF YOUR ACCOUNT AT VANTU BANK</th>
 							<td>ILS FIDUCIARIES (SWITZERLAND) SARL</td>
 						</tr>
 						<tr>
 							<th>FULL ACCOUNT NUMBER OF YOUR ACCOUNT</th>
-							<td>100-070378-<strong><?php
+							<td><?=$currency?>-100-070378-<strong><?php
 								switch ($currency){
 										case "USD":
 										print_r("1");break;
@@ -56,8 +67,6 @@
 							<th>YOUR CITY, STATE, ZIP Code, COUNTRY</th>
 							<td><input type="text" name="addressDetail" id="addressDetail" class="form-control"></td>
 						</tr>
-
-
 						<tr>
 							<th>YOUR EMAIL ADDRESS</th>
 							<td><input type="text" class="form-control" name="emailShow" id="emailShow" value="<?=$user['email']?>" disabled>
@@ -104,12 +113,10 @@
 								</select>
 							</td>
 						</tr>
-						
 						<?php $Reference = substr($details['username'],0,10).rand(10000,99999);?>
-					<tr>
+						<tr>
 					<th colspan="2" style="background-color:#CAFFFF">DETAILS OF YOUR INWARD WIRE PAYMENT</th>
 					</tr>
-				
 						<tr>
 							<th>REFERENCE (<small>Quote this reference number in your deposit</small>)</th>
 							<td>
@@ -221,9 +228,171 @@
 							<td><input type="submit" value="Submit" class="btn btn-primary" disabled name="DepositSubmit" id="DepositSubmit"></td>
 						</tr>
 					</table>
-				</form>
+						</form>
 			<!-- //////////////////////////////////////////////////////////////////////////////////////-->
+			<?php }else{?>
+			<div style=""><blockquote><small><strong>Note:</strong> Vantu Bank’s customer service may contact you to authenticate your expected payment. Please make sure the contact details below are valid. If Vantu Bank needs to reach you and is unable to do so within 48 hours your funds may be put on hold. The purpose for the wire must be made clear in order to prevent delays.</small></blockquote></div>
+			<?php if($fileupload=="NO"){?>
+			<div class="alert alert-danger" role="alert">File not uploaded... Not sent to ILS/Vantu Bank</div>
+			<?php }?>
+			<?php if($fileupload=="YES"){?>
+			<div class="alert alert-success" role="alert">File uploaded... Sent to ILS/Vantu Bank</div>
+			<?php }?>
+			<h2>Deposit request: (DSF)</h2>
+			<div>
+						<table class="table table-condensed table-bordered table-hover" >
+						<tr>
+							<th width="50%">YOUR FULL NAME</th>
+							<td><?=$depositRequest['data']['fullName']?></td>
+						</tr>
+						<tr>
+							<th>YOUR TELEPHONE NUMBER</th>
+							<td><?=$depositRequest['data']['telephone']?></td>
+						</tr>
+						<tr>
+							<th>REFERENCE (<small>Quote this reference number in your deposit</small>)</th>
+							<td><strong><?=$depositRequest['data']['Reference']?></strong></td>
+						</tr>
+						<tr>
+							<th>CURRENCY</th>
+							<td><?=$depositRequest['data']['currency']?></td>
+						</tr>
+						<tr>
+							<th>AMOUNT</th>
+							<td><?=$depositRequest['data']['amountFiat']?></td>
+						</tr>
+						<tr>
+							<th colspan="2" style="background-color:#CAFFFF">ORIGINAL SENDING BANK</th>
+						</tr>
+						<tr>
+							<th>Bank Name</th>
+							<td><?=$depositRequest['data']['bankName']?></td>
+						</tr>
+						<tr>
+							<th>Bank Address</th>
+							<td><?=$depositRequest['data']['bankAddress']?></td>
+						</tr>
+						<tr>
+							<th>SWIFT Code</th>
+							<td><?=$depositRequest['data']['swiftCode']?></td>
+						</tr>
+				<?php if($depositRequest['SenttoBank']!="Yes"){?>
+						<tr>
+							<th>UPLOAD SIGNED:<br>Declaration of Source of Funds (DSF)
+								<p>If you want to modify the DSF, please <a href="/users/deleteDepositRequest/<?=$depositRequest['data']['Reference']?>/<?=String::hash($depositRequest['_id'])?>/<?=$depositRequest['data']['currency']?>">Delete this request</a> and create a new DSF.</p>
+							</th>
+							<td>
+								<?=$this->form->create("", array('type' => 'file', 'action'=>'uploadDepositPDF/')); ?>
+								<div id="DepositSelect" type="file">Select SiiCrypto-<?=$depositRequest['data']['Reference']?>.pdf file...</div>
+								<input id="DepositInput"  class="hideMe" style="display:none" name="DepositInput" type="file"></input>
+								<input type="hidden" name="currency" value="<?=$depositRequest['data']['currency']?>">
+								<input type="hidden" name="SelectedSourceFile" id="SelectedSourceFile" value="">
+								<div id="SelectedFile">No file selected...</div>
+								<br>
+								<?=$this->form->field('Reference',array('type'=>'hidden','value'=>$depositRequest['data']['Reference'])); ?>
+								<?=$this->form->submit('Save',array('class'=>'btn btn-primary','id'=>'SaveButton','disabled'=>'disabled')); ?>
+								<br><strong>Only PDF file:<br>SiiCrypto-<?=$depositRequest['data']['Reference']?>.pdf </strong>
+								<?=$this->form->end(); ?>
+							</td>
+						</tr>
+				<?php }else{?>
+				<tr>
+							<th colspan="2" style="background-color:#CAFFFF">RECEIVING BANK</th>
+				</tr>
+				<tr>
+					<th>BANK NAME</th>
+					<th>Commerzbank A.G</th>
+				</tr>
+				<tr>
+					<th>BANK ADDRESS</th>
+					<th>Kaiserplatz 60261, Frankfurt am-Main, Germany</th>
+				</tr>
+				<tr>
+					<th>SWIFT CODE</th>
+					<th>COBADEFF</th>
+				</tr>
+				<tr>
+					<th>For the Benefit of</th>
+					<th>National Bank of Vanuatu</th>
+				</tr>
+				<tr>
+					<th>Account No</th>
+					<th>400870818200</th>
+				</tr>
+				<tr>
+					<th>SWIFT CODE</th>
+					<th>NBOVVUVU</th>
+				</tr>
+				<tr>
+					<th>For the Further Benefit of</th>
+					<th>Vantu Bank</th>
+				</tr>
+				<tr>
+					<th>Bank Address</th>
+					<th>Vantu House, 133 Santina Parade, Elluk, Port Vila, Vanuatu</th>
+				</tr>				
+				<tr>
+					<th>Account No</th>
+					<th>0117982004</th>
+				</tr>
+				<tr>
+					<th>Vantu Account Name</th>
+					<th>ILS Fiduciaries (Switzerland) Sarl</th>
+				</tr>
+				<tr>
+					<th>Vantu Account No</th>
+							<td><strong><?=$currency?>-100-070378-<?php
+								switch ($currency){
+										case "USD":
+										print_r("1");break;
+										case "EUR":
+										print_r("2");break;
+										case "GBP":
+										print_r("3");break;
+										case "CAD":
+										print_r("4");break;										
+								}
+							?></strong>
+						</td>
+				</tr>
+				<tr>
+					<th colspan="2" style="background-color:#CAFFFF">REFERENCE</th>
+				</tr>
+				<tr>
+					<th>SiiCrypto Client Name</th>
+					<th><?=$depositRequest['data']['fullName']?></th>
+				</tr>
+				<tr>
+					<th>SiiCrypto Client Reference No (DFS)</th>
+					<th><?=$depositRequest['data']['Reference']?></th>
+				</tr>
+				<tr>
+					<th>CURRENCY</th>
+					<th><?=$depositRequest['data']['currency']?></th>
+				</tr>
+				<tr>
+					<th>AMOUNT</th>
+					<th><?=$depositRequest['data']['amountFiat']?></th>
+				</tr>
+				<tr>
+					<th>AMOUNT WORDS</th>
+					<th><?=$depositRequest['data']['currency']?> <?=strtoupper($function->number_to_words($depositRequest['data']['amountFiat']))?> ONLY</th>
+				</tr>
+				<tr>
+					<td colspan=2>
+					<div style=""><blockquote><small><strong>Note:</strong> After you send the funds to Vantu Bank, wait for 3 to 7 working days for the funds to be credited to your SiiCrypto Account.</small></blockquote>
+					
+				<p>If you are not able to send the funds through your bank it is advisable to delete this request. please <a href="/users/deleteDepositRequest/<?=$depositRequest['data']['Reference']?>/<?=String::hash($depositRequest['_id'])?>/<?=$depositRequest['data']['currency']?>">Delete this request</a> and create a new DSF.</p>
+					</div>
+					</td>
+				</tr>
+				<?php }?>
+			</table>
 			</div>
+			<?php }?>
+			
+			</div>			
+			
 			<div role=tabpanel class="tab-pane fade  tab-content-withdrawal" id=profile aria-labelledby=profile-tab style="padding:10px" > 
 				<!-- //////////////////////////////////////////////////////////////////////////////////////-->
 				<div style=""><blockquote><small><strong>Note:</strong> Withdrawal from your account will be processed by Admin SiiCrypto and will be instructed to Vantu Bank. The bank will process the funds within 2 to 3 working day. The actual time depends on the routing of your bank.</small></blockquote></div>
@@ -236,7 +405,7 @@
 						</tr>
 						<tr>
 							<th>ACCOUNT NUMBER OF YOUR ACCOUNT</th>
-							<td>100-070378-<strong><?php
+							<td><?=$currency?>-100-070378-<strong><?php
 								switch ($currency){
 										case "USD":
 										print_r("1");break;
@@ -260,11 +429,9 @@
 							<td><input type="submit" value="Submit" class="btn btn-primary" disabled name="WithdrawSubmit" id="WithdrawSubmit"></td>
 						</tr>
 						</table>
+						</form>
 					<!-- //////////////////////////////////////////////////////////////////////////////////////-->
 			</div> 
- </div> 
-	
+ 
 	</div>
-
-
-
+	</div>

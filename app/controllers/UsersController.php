@@ -746,9 +746,9 @@ class UsersController extends \lithium\action\Controller {
 		));
 			return compact('details','address','txfee','title','transactions','user','currency','currencyName')	;
 	}
-	public function funding_fiat($currency=null){
+	public function funding_fiat($currency='USD',$fileupload=null){
 				$title = "Funding Fiat";
-
+		$currency = strtoupper($currency);
 		$user = Session::read('default');
 		if ($user==""){		return $this->redirect('/login');}
 		$id = $user['_id'];
@@ -756,41 +756,86 @@ class UsersController extends \lithium\action\Controller {
 		$details = Details::find('first',
 			array('conditions'=>array('user_id'=> (string) $id))
 		);
-		$transactions = Transactions::find('all',array(
+		$depositRequest = Transactions::find('first',array(
 				'conditions'=>array(
 				'username'=>$user['username'],
-				'Added'=>false,
-				'Approved'=>'No'
+				'Added'=>true,
+				'Approved'=>'No',
+				'Currency'=>$currency
 				)
 		));
 		$settings = Settings::find('first');		
-			return compact('details','title','transactions','user','settings','currency')	;
+			return compact('details','title','depositRequest','user','settings','currency','fileupload')	;
 	}
-	public function funding_ltc(){
-				$title = "Funding LTC";
-
+	public function deleteDepositRequest($Reference=null,$id=null,$currency="USD"){
 		$user = Session::read('default');
 		if ($user==""){		return $this->redirect('/login');}
-		$id = $user['_id'];
-		
-		$details = Details::find('first',
-			array('conditions'=>array('user_id'=> (string) $id))
-		);
-
-		
-		$secret = $details['secret'];
-		$userid = $details['user_id'];		
-		$paytxfee = Parameters::find('first');
-		$txfee = $paytxfee['payltctxfee'];
-		$transactions = Transactions::find('first',array(
-				'conditions'=>array(
-				'username'=>$user['username'],
-				'Added'=>false,
-				'Paid'=>'No',
-				'Currency'=>'LTC'
-				)
+		$user_id = $user['_id'];
+		$Transaction = Transactions::find('first',array(
+			'conditions'=>array(
+					'Reference' => $Reference,
+			)
 		));
-			return compact('details','address','txfee','title','transactions','user')	;
+		if(String::hash($Transaction['_id'])==$id){
+			$Remove = Transactions::remove(array('_id'=>(string)$Transaction['_id']));
+		}
+		return $this->redirect('/users/funding_fiat/'.$currency);
+	}
+	public function uploadDepositPDF(){
+		$user = Session::read('default');
+		if ($user==""){		return $this->redirect('/login');}
+		$user_id = $user['_id'];
+		$uploadOk = 1;
+		$currency = strtoupper($this->request->data['currency']);
+		
+		$Transaction = Transactions::find('first',array(
+			'conditions'=>array(
+				'username'=>$user['username'],
+				'Added'=>true,
+				'Approved'=>'No',
+				'Currency'=>$currency
+			)
+		));
+		$data = array(
+			'data'=>$Transaction
+		);
+		
+		if("SiiCrypto-".$Transaction['Reference'].".pdf" !=  $this->request->data['DepositInput']['name']) {
+			$uploadOk = 0;
+			return $this->redirect('/users/funding_fiat/'.$currency.'/NO');		
+		}
+		if($uploadOk=1){
+			$uploads_dir = VANITY_OUTPUT_DIR;
+					$tmp_name = $_FILES["DepositInput"]["tmp_name"];
+					$name = $_FILES["DepositInput"]["name"];
+					move_uploaded_file($tmp_name, $uploads_dir.$name);
+  }
+
+// Send email to client for payment receipt, if invoice number is present. or not
+					/////////////////////////////////Email//////////////////////////////////////////////////
+					$emaildata = array(
+						'email'=>MAIL_1,
+						'data'=>$Transaction
+					);
+						$function = new Functions();
+						$compact = array('data'=>$emaildata);
+						$from = array(NOREPLY => "noreply@".COMPANY_URL);
+						$email = MAIL_1;
+						$attach = VANITY_OUTPUT_DIR.$name;
+						$function->sendEmailTo($email,$compact,'users','sendDepositEmailBank',"SiiCrypto.com - DFS form",$from,"",MAIL_VANTU,MAIL_ILS,$attach);
+					/////////////////////////////////Email//////////////////////////////////////////////////				
+			$data = array(
+				'SenttoBank' => "Yes"
+			);
+			$conditions = array(
+				'Reference'=>$Transaction['Reference'],
+				'_id'=>$Transaction['_id']
+			);
+			Transactions::update($data,$conditions);
+			
+// email send function	
+			return $this->redirect('/users/funding_fiat/'.$currency.'/YES');		
+		
 	}
 	public function receipt(){
 		$secret = $_GET['secret'];;
@@ -1517,7 +1562,7 @@ class UsersController extends \lithium\action\Controller {
 						$attach = VANITY_OUTPUT_DIR."SiiCrypto-".$Reference.".pdf";
 						$function->sendEmailTo($email,$compact,'users','deposit',"SiiCrypto.com - Deposit Request",$from,MAIL_1,MAIL_2,MAIL_3,$attach);
 						////////////////////////////////////////////////////////////////////////////////////////////
-
+						unlink($attach);
 			return $this->redirect('ex::dashboard');
 		
 	}

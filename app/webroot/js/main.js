@@ -594,3 +594,12 @@ function CheckDepositForm(){
 	}
 	
 }
+
+$("#DepositSelect").click(function() {
+	$("#DepositInput").trigger("click");
+    $('#DepositInput').change(function() {
+       $("#SelectedFile").html($("#DepositInput").val());
+							$("#SelectedSourceFile").val($("#DepositInput").val());
+							$("#SaveButton").removeAttr("disabled");
+    });
+});

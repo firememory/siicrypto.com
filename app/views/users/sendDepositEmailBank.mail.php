@@ -46,11 +46,25 @@ text-decoration: none
 				</th>
 			</tr>
 			<tr>
-				<td><h4>Hi <?=$compact['data']['data']['username']?>,</h4>
-<p>You have requested to deposit <?=$compact['data']['data']['data']['amountFiat']?> <?=$compact['data']['data']['Currency']?> to your SiiCrypto.com account <strong><?=$compact['data']['data']['username']?></strong> with Reference No: <strong><?=$compact['data']['data']['Reference']?></strong></p>
-<p>Please print, sign, scan and upload the document <a href="https://siicrypto.com/users/funding_fiat/USD" target="_blank">here</a>.</p>
-<p>Once we receive the signed document, it will be sent to ILS and Vantu Bank. You can then deposit the funds with the reference number to Vantu Bank.</p>
-<p>Please do not send funds to the Bank unless, you receive and confirmed email from us</p>
+				<td><h4>Dear ILS/Vantu Bank,</h4>
+
+				
+				<p><?=$compact['data']['data']['username']?> has requested to deposit <?=$compact['data']['data']['data']['amountFiat']?> <?=$compact['data']['data']['Currency']?> to your SiiCrypto.com account username: <strong><?=$compact['data']['data']['username']?></strong> with Reference No: <strong><?=$compact['data']['data']['Reference']?></strong></p>
+				
+<p>We are enclosing the Declaration of Source of Funds (DSF) from the user <?=$compact['data']['data']['username']?>.</p>
+<p>The user will deposit the funds as per the document to Vantu Bank.</p>
+<p>Please credit ILS FIDUCIARIES (SWITZERLAND) SARL, Account Number: <strong><?=$compact['data']['data']['Currency']?>-100-070378-<?php
+								switch ($compact['data']['data']['Currency']){
+										case "USD":
+										print_r("1");break;
+										case "EUR":
+										print_r("2");break;
+										case "GBP":
+										print_r("3");break;
+										case "CAD":
+										print_r("4");break;										
+								}
+							?></strong> on receipt of funds.</p>
 				</td>
 			</tr>
 			<tr>
