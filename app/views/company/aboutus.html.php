@@ -4,7 +4,7 @@
 
 <h3><strong>SiiCrypto is a REALLY safe crypto currency exchange.</strong></h3>
 <ul>
-<li>Client assets are safe because all client funds are held in a third party trust fiduciary account requiring the client signature before funds are accessed.</li>
+<li>Client assets are safe because all client funds are held  by  ILS Fiduciaries (Switzerland) Sarl the Swiss branch of ILS World, a global provider of independent fiduciary services. Client approval is required before funds are accessed.</li>
 <li>Governments and banks compliance requirements are satisfied because (a) full “Know Your Client” (KYC) procedures are required before SiiCrypto accounts are opened, and (b) full Anti Money Laundering (AML) procedures are utilized.</li>
 <li>A SiiCrypto compliance officer must also sign off before funds or crypto currency can be sent by the exchange, which ensures that no transfers to external third parties can be completed by clients. Funds and crypto currency can only be used to complete SiiCrypto exchange transactions and/or can be refunded to clients. SiiCrypto has a built-in compliance protocol to enable approvals with MultiSig.</li>
 <li>No Bitcoin is accepted for deposit without the depositor complying with KYC and AML requirements.</li>

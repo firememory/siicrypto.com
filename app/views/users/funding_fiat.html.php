@@ -45,7 +45,7 @@
 							<td><input type="text" name="fullName" id="fullName" class="form-control"></td>
 						</tr>
 						<tr>
-							<th>YOUR TELEPHONE NAME</th>
+							<th>YOUR TELEPHONE NUMBER</th>
 							<td><input type="text" name="telephone" id="telephone" class="form-control"></td>
 						</tr>
 						<tr>
@@ -226,7 +226,40 @@
 			</div>
 			<div role=tabpanel class="tab-pane fade  tab-content-withdrawal" id=profile aria-labelledby=profile-tab style="padding:10px" > 
 				<!-- //////////////////////////////////////////////////////////////////////////////////////-->
-				Withdraw
+				<div style=""><blockquote><small><strong>Note:</strong> Withdrawal from your account will be processed by Admin SiiCrypto and will be instructed to Vantu Bank. The bank will process the funds within 2 to 3 working day. The actual time depends on the routing of your bank.</small></blockquote></div>
+						<h2>Withdrawal Request</h2>
+						<form method="POST" action="/users/withdraw" class="form">
+						<table class="table table-condensed table-bordered table-hover" >
+						<tr>
+							<th width="50%">VANTU BANK's ACCOUNT</th>
+							<td>ILS FIDUCIARIES (SWITZERLAND) SARL</td>
+						</tr>
+						<tr>
+							<th>ACCOUNT NUMBER OF YOUR ACCOUNT</th>
+							<td>100-070378-<strong><?php
+								switch ($currency){
+										case "USD":
+										print_r("1");break;
+										case "EUR":
+										print_r("2");break;
+										case "GBP":
+										print_r("3");break;
+										case "CAD":
+										print_r("4");break;										
+								}
+							?></strong>
+							</td>
+						</tr>
+						<tr>
+							<th>ACCOUNT BALANCE</th>
+							<td><?=number_format($details['balance'][$currency],2)?> <?=$currency?></td>
+						</tr>
+						
+						<tr>
+							<td>Date: <?=gmdate('Y-M-d H:i:s',time())?></td>
+							<td><input type="submit" value="Submit" class="btn btn-primary" disabled name="WithdrawSubmit" id="WithdrawSubmit"></td>
+						</tr>
+						</table>
 					<!-- //////////////////////////////////////////////////////////////////////////////////////-->
 			</div> 
  </div> 

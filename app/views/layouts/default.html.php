@@ -78,9 +78,10 @@ $ex = Session::read('ex');
 						<ul class="nav nav-sidebar">
 							<li class="active"><a href="#"> <i class="glyphicon glyphicon-th-list"></i> Trades</a></li>
 							<?php echo $this->_render('element', 'sidebar-menu');?>		
+							<?php if($user!=""){?>
 							<li class="active"><a href="/users/settings"> <i class="fa fa-gears"></i> Settings</a></li>
 							<li class="active"><a href="/ex/dashboard"> <i class="fa fa-dashboard"></i> Dashboard</a></li>
-<!--							<li class="active"><a href="/company/funding"> <i class="fa fa-dollar"></i> Funding</a></li>-->
+							<?php }?>
 						</ul>
 						<?php if($user==""){ ?>
 						<ul class="nav nav-sidebar">

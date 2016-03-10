@@ -234,12 +234,15 @@ For "Other", please be specific.</p>';
 									<div><small>
 				<p>I/We have attached full supporting documentation for this transaction (e.g. an invoice, a bill, a contract, agreement or similar document).</p>
 				<p>I/We understand that under the requirements of Vanuatu\'s Anti-Money Laundering & Counter-Terrorism Financing Act No. 13 of 2014, Regulations made thereunder and Vantu Bank\'s and National Bank of Vanuatu\'s respective AML/CTF Compliance Manuals as currently in force, your policy may require both banks to be satisfied as to the source of this payment before accepting any inward wire transfer and that my/our transfer(s) may be held pending or returned in the absence of such confirmation. This payment does not originate from any sanctioned or prohibited country or related sanctioned program.</p>
-				<p>I/We declare that the above information is true and correct.</small></div></p>';
+				<p>I/We declare that the above information is true and correct.</p></small></div>';
 				
 				$html = $html . 'Date: '.gmdate('Y-M-d H:i:s',time());
-				$html = $html . '<div style="text-align:right;margin-bottom:250px"><u>'.$data['data']['fullName'].'</u><br>
-				Account Holder\'s Name
+				$html = $html . '<div style="text-align:right;"><u>'.$data['data']['fullName'].'</u><br>
+				Account Holder\'s Name<br></div>
+				<span><small>By typing in your name and then clicking the send button below you agree that this electronic signature confirms that you have adopted the contents of this electronic message and that the person(s) who have completed this Declaration of Source of Funds form is/are the person(s) who wrote it and that the sender of the form is the person(s) described herein.</small></span>
+				<div style="padding-left:100px;text-align:right;margin-bottom:10px">
 				</div>';
+				$html = $html . '<p></p>';
 				$html = $html . '<div style="text-align:right;margin-bottom:220px"><u>'.$data['data']['fullName'].'</u><br>
 				Account Holder\'s Signature / Corporate Stamp
 				</div>';

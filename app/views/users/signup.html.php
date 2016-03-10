@@ -83,6 +83,7 @@ $Comm = Parameters::find('first');
 		<?php // echo $this->recaptcha->challenge();?>
 		<input type="submit" id="RegisterMe" disabled="disabled" class="btn btn-primary btn-block" value="Register">
 		<br><span id="ERROR" style="display:none;color:red">.</span>
+		<p>Already have an account. <br><a href="/login">Click here to login</a></p>
 		<?=$this->form->end(); ?>
 	</div>
 	<div class="col-sm-9 col-sm-offset-3 col-md-6  col-md-offset-1 well" >

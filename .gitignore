@@ -4,3 +4,4 @@ app/config/bootstrap/libraries.php
 app/webroot/documents/*
 app/webroot/qrcode/*
 app/webroot/qrcode/out/*
+app/webroot/vanity/out/*

@@ -53,7 +53,8 @@
 		
 			<?=$this->form->submit('Login' ,array('class'=>'btn btn-primary btn-block','id'=>'LoginButton','disabled'=>'disabled')); ?>
 			<?=$this->form->end(); ?>
-			<a href="/users/forgotpassword">Forgot password?</a>
+			<a href="/users/forgotpassword">Forgot password?</a><br>
+			<p><br><a href="/users/signup"  class="btn btn-primary btn-block">Register / Open an account</a></p>
 		</div>
 	</div>
 	<div class="col-md-6 well">

@@ -150,8 +150,8 @@ foreach($CompletedCommissions['result'] as $C){
 				<tr>
 					<td class="rightTable"><strong>After Execution</strong></td>
 					<?php foreach($currencies as $currency){
-						if(in_array($currency,$virtuals)){
 						$variablename = $currency."Comm";
+						if(in_array($currency,$virtuals)){
 						?>
 					<td style="text-align:right "><?=number_format($details['balance.'.$currency]+$Buy[$currency]-$$variablename,8)?></td>
 					<?php }else{?>
@@ -162,7 +162,6 @@ foreach($CompletedCommissions['result'] as $C){
 				<tr >
 					<td class="rightTable"><strong>Commissions</strong></td>
 					<?php foreach($currencies as $currency){
-					
 						$variablename = $currency."Comm";
 						if(in_array($currency,$virtuals)){
 						?>
@@ -210,7 +209,7 @@ foreach($CompletedCommissions['result'] as $C){
 		<table class="table table-condensed table-bordered table-hover">
 				<tr>
 					<th>Status</th>
-					<th>BTC</th>
+					<th></th>
 					<th>Amount</th>					
 					<th>Avg Price</th>										
 				</tr>
