@@ -74,7 +74,7 @@ $ex = Session::read('ex');
     <div class="container-fluid">
       <div class="row">
 			<?php if(strtolower($this->_request->controller)!='admin'){ ?>
-						<div class="col-sm-4 col-md-2 sidebar">
+						<div class="col-sm-4 col-md-3 sidebar">
 						<ul class="nav nav-sidebar">
 							<li class="active"><a href="#"> <i class="glyphicon glyphicon-th-list"></i> Trades</a></li>
 							<?php echo $this->_render('element', 'sidebar-menu');?>		
@@ -102,7 +102,7 @@ $ex = Session::read('ex');
 					<div class="col-md-12 main">				
 					<?php echo $this->_render('element', 'admin');?>
 				<?php }else{?>
-					<div class="col-sm-8 col-sm-offset-4 col-md-10 col-md-offset-2 main">
+					<div class="col-sm-8 col-sm-offset-4 col-md-9 col-md-offset-3 main">
 				<?php }?>
 				
 				<?php echo $this->content(); ?>
