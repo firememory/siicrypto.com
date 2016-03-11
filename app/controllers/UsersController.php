@@ -1596,37 +1596,25 @@ class UsersController extends \lithium\action\Controller {
 		$details = Details::find('first',
 			array('conditions'=>array('user_id'=> (string) $id))
 		);
-
+	if(stristr( $_SERVER['HTTP_REFERER'],COMPANY_URL)===FALSE){return $this->redirect('/login');exit;}
 		if($this->request->data){
-			$AccountName = $this->request->data['AccountName'];
-			$SortCode = $this->request->data['SortCode'];
-			$AccountNumber = $this->request->data['AccountNumber'];		
-			$AccountNameBuss = $this->request->data['AccountNameBuss'];
-			$SortCodeBuss = $this->request->data['SortCodeBuss'];
-			$AccountNumberBuss = $this->request->data['AccountNumberv'];		
-			$CompanyNameBuss = $this->request->data['CompanyNameBuss'];		
-			$CompanyNumberBuss = $this->request->data['CompanyNumberBuss'];				
-			$PostalName = $this->request->data['PostalName'];		
-			$PostalStreet = $this->request->data['PostalStreet'];		
-			$PostalCity = $this->request->data['PostalCity'];		
-			$PostalAddress = $this->request->data['PostalAddress'];		
-			$PostalZip = $this->request->data['PostalZip'];		
-			$PostalCountry = $this->request->data['PostalCountry'];		
-			$WithdrawalMethod = $this->request->data['WithdrawalMethod'];
-			$WithdrawalCharges = $this->request->data['WithdrawalCharges'];		
-			$amountFiat = $this->request->data['WithdrawAmountFiat'];
-			$Currency = $this->request->data['WithdrawCurrency']; 
-			$Reference = $this->request->data['WithdrawReference']; 		
-			$okpayEmail = $this->request->data['okpay_email']; 				
+			
+			$withdrawReference = $this->request->data['withdrawReference'];
+			$withdrawCurrency = $this->request->data['withdrawCurrency'];
+			$withdrawAmount = $this->request->data['withdrawAmount'];
+			$withdrawName = $this->request->data['withdrawName'];		
+			$withdrawBankName = $this->request->data['withdrawBankName'];
+			$withdrawBankAddress = $this->request->data['withdrawBankAddress'];
+			$withdrawSwiftCode = $this->request->data['withdrawSwiftCode'];		
 			$data = array(
 					'DateTime' => new \MongoDate(),
 					'username' => $details['username'],
-					'Amount'=> (float)$amountFiat,
-					'Currency' => $Currency,					
+					'Amount'=> (float)$withdrawAmount,
+					'Currency' => $withdrawCurrency,					
 					'Added'=>false,
-					'Reference'=>$Reference,
-					'AccountName'=>$AccountName,
-					'SortCode'=>$SortCode,
+					'Reference'=>$withdrawReference,
+					'AccountName'=>$withdrawName,
+					'SortCode'=>$withdrawSwiftCode,
 					'AccountNumber'=>$AccountNumber,
 					'AccountNameBuss'=>$AccountNameBuss,
 					'SortCodeBuss'=>$SortCodeBuss,

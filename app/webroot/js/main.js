@@ -592,8 +592,26 @@ function CheckDepositForm(){
 		$("#AlertSelect").show();
 		$('#DepositSubmit').attr("disabled","disabled");		
 	}
-	
 }
+
+function CheckWithdrawForm(){
+	$("#AlertWithdrawSelect").show();
+	if($("#withdrawAmount").val()<=0){return false;}
+	if($("#withdrawName").val()==""){return false;}
+	if($("#withdrawBankName").val()==""){return false;}
+	if($("#withdrawAccountNumber").val()==""){return false;}
+	if($("#withdrawBankAddress").val()==""){return false;}
+	if($("#withdrawSwiftCode").val()==""){return false;}
+	
+	if($("#withdrawAgree").is(':checked')){
+		$("#WithdrawSubmit").removeAttr("disabled");
+		$("#AlertWithdrawSelect").hide();
+	}else{
+		$("#AlertWithdrawSelect").show();
+		$('#WithdrawSubmit').attr("disabled","disabled");		
+	}
+}
+
 
 $("#DepositSelect").click(function() {
 	$("#DepositInput").trigger("click");

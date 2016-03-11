@@ -399,6 +399,7 @@ $function = new Functions();
 			
 			<div role=tabpanel class="tab-pane fade  tab-content-withdrawal" id=profile aria-labelledby=profile-tab style="padding:10px" > 
 				<!-- //////////////////////////////////////////////////////////////////////////////////////-->
+				<?php $Reference = substr($details['username'],0,10).rand(10000,99999);?>
 				<div style=""><blockquote><small><strong>Note:</strong> Withdrawal from your account will be processed by Admin SiiCrypto and will be instructed to Vantu Bank. The bank will process the funds within 2 to 3 working day. The actual time depends on the routing of your bank.</small></blockquote></div>
 						<h2>Withdrawal Request</h2>
 						<form method="POST" action="/users/withdraw" class="form">
@@ -424,10 +425,58 @@ $function = new Functions();
 							</td>
 						</tr>
 						<tr>
+							<th>REFERENCE NO</th>
+							<th><?=$Reference?>
+							<input type="hidden" id="withdrawReference" name="withdrawReference" value="<?=$Reference?>"  class="form-control">
+							<input type="hidden" id="withdrawCurrency" name="withdrawCurrency" value="<?=$currency?>"  class="form-control">
+							</th>
+						</tr>
+						<tr>
 							<th>ACCOUNT BALANCE</th>
 							<td><?=number_format($details['balance'][$currency],2)?> <?=$currency?></td>
 						</tr>
-						
+						<tr>
+							<th>WITHDRAWAL AMOUNT</th>
+							<td>
+							<div class="input-group">
+								<input type="number" class="form-control" min="10" max="<?=$details['balance'][$currency]?>" value="" step="10" id="withdrawAmount" name="withdrawAmount">
+								<div class="input-group-addon"><?=$currency?></div>
+							</div>
+							</td>
+						</tr>
+						<tr>
+							<th colspan="2" style="background-color:#CAFFFF">RECEIVING ACCOUNT DETAILS</th>
+						</tr>
+						<tr>
+							<th>FULL NAME</th>
+							<td><input type="text" class="form-control" value="" onblur="this.value=this.value.toUpperCase();" id="withdrawName" name="withdrawName"></td>
+						</tr>
+						<tr>
+							<th>ACCOUNT NUMBER</th>
+							<td><input type="text" class="form-control" value="" onblur="this.value=this.value.toUpperCase();" id="withdrawAccountNumber" name="withdrawAccountNumber"></td>
+						</tr>						
+						<tr>
+							<th>BANK NAME</th>
+							<td><input type="text" class="form-control" value="" onblur="this.value=this.value.toUpperCase();" id="withdrawBankName" name="withdrawBankName"></td>
+						</tr>
+						<tr>
+							<th>BANK ADDRESS</th>
+							<td><input type="text" class="form-control" value="" onblur="this.value=this.value.toUpperCase();" id="withdrawBankAddress" name="withdrawBankAddress"></td>
+						</tr>
+						<tr>
+							<th>BANK SWIFT CODE</th>
+							<td><input type="text" class="form-control" value="" onblur="this.value=this.value.toUpperCase();" id="withdrawSwiftCode" name="withdrawSwiftCode"></td>
+						</tr>
+						<tr>
+							<td colspan="2">
+							<ol>
+								<li><input type="checkbox"  name="withdrawAgree" id="withdrawAgree" onclick="CheckWithdrawForm();"> 
+								I/We confirm that this withdrwal will be transmitted to my own account only. I/We understand that under the requirements of Vanuatu’s Anti-Money Laundering & Counter-Terrorism Financing Act No. 13 of 2014, Regulations made thereunder and Vantu Bank’s and National Bank of Vanuatu’s respective AML/CTF Compliance Manuals as currently in force, your policy may require both banks to be satisfied as to the source of this payment before accepting any outward wire transfer and that my/our transfer(s) may be held pending or returned in the absence of such confirmation.</li>
+							</ol>
+							<div class="alert alert-danger" id="AlertWithdrawSelect" style="display:none">Fill all details and then check the above</div>
+							</td>
+							
+						</tr>
 						<tr>
 							<td>Date: <?=gmdate('Y-M-d H:i:s',time())?></td>
 							<td><input type="submit" value="Submit" class="btn btn-primary" disabled name="WithdrawSubmit" id="WithdrawSubmit"></td>
