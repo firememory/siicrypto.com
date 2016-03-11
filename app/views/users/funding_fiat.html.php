@@ -473,7 +473,7 @@ $function = new Functions();
 								<li><input type="checkbox"  name="withdrawAgree" id="withdrawAgree" onclick="CheckWithdrawForm();"> 
 								I/We confirm that this withdrwal will be transmitted to my own account only. I/We understand that under the requirements of Vanuatu’s Anti-Money Laundering & Counter-Terrorism Financing Act No. 13 of 2014, Regulations made thereunder and Vantu Bank’s and National Bank of Vanuatu’s respective AML/CTF Compliance Manuals as currently in force, your policy may require both banks to be satisfied as to the source of this payment before accepting any outward wire transfer and that my/our transfer(s) may be held pending or returned in the absence of such confirmation.</li>
 							</ol>
-							<div class="alert alert-danger" id="AlertWithdrawSelect" style="display:none">Fill all details and then check the above</div>
+							<div class="alert alert-danger" id="AlertWithdrawSelect" style="display:none">Fill all details and then check the above checkbox</div>
 							</td>
 							
 						</tr>

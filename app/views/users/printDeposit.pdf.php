@@ -243,8 +243,8 @@ For "Other", please be specific.</p>';
 				<div style="padding-left:100px;text-align:right;margin-bottom:10px">
 				</div>';
 				$html = $html . '<p></p>';
-				$html = $html . '<div style="text-align:right;margin-bottom:220px"><u>'.$data['data']['fullName'].'</u><br>
-				Account Holder\'s Signature / Corporate Stamp
+				$html = $html . '<div style="text-align:right;margin-bottom:220px">Please sign here:______________________________________________<br><u>'.$data['data']['fullName'].'</u><br>
+				Account Holder\'s Signature
 				</div>';
 				$html = $html .'IP: '. $_SERVER['REMOTE_ADDR'];
 				$pdf->writeHTML($html, true, 0, true, 0);

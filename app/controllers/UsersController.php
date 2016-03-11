@@ -1592,7 +1592,7 @@ class UsersController extends \lithium\action\Controller {
 
 		if ($user==""){		return $this->redirect('/login');}
 		$id = $user['_id'];
-
+		$email = $user['email'];
 		$details = Details::find('first',
 			array('conditions'=>array('user_id'=> (string) $id))
 		);
@@ -1603,6 +1603,7 @@ class UsersController extends \lithium\action\Controller {
 			$withdrawCurrency = $this->request->data['withdrawCurrency'];
 			$withdrawAmount = $this->request->data['withdrawAmount'];
 			$withdrawName = $this->request->data['withdrawName'];		
+			$withdrawAccountNumber = $this->request->data['withdrawAccountNumber'];		
 			$withdrawBankName = $this->request->data['withdrawBankName'];
 			$withdrawBankAddress = $this->request->data['withdrawBankAddress'];
 			$withdrawSwiftCode = $this->request->data['withdrawSwiftCode'];		
@@ -1613,62 +1614,30 @@ class UsersController extends \lithium\action\Controller {
 					'Currency' => $withdrawCurrency,					
 					'Added'=>false,
 					'Reference'=>$withdrawReference,
-					'AccountName'=>$withdrawName,
-					'SortCode'=>$withdrawSwiftCode,
-					'AccountNumber'=>$AccountNumber,
-					'AccountNameBuss'=>$AccountNameBuss,
-					'SortCodeBuss'=>$SortCodeBuss,
-					'AccountNumberBuss'=>$AccountNumberBuss,
-					'CompanyNumberBuss'=>$CompanyNumberBuss,				
-					'CompanyNameBuss'=>$CompanyNameBuss,								
-					'WithdrawalMethod' => $WithdrawalMethod,
-					'WithdrawalCharges' => $WithdrawalCharges,
-					'okpayEmail' => $okpayEmail,				
-					'Postal'=>array(
-						'Name' => $PostalName,
-						'Address' => $PostalAddress,					
-						'Street' => $PostalStreet,					
-						'City' => $PostalCity,					
-						'Zip' => $PostalZip,					
-						'Country' => $PostalCountry,					
-					),
-					'Approved'=>'No'
-			);
+					'Approved'=>'No',
+					'data'=>array(
+						'AccountName'=>$withdrawName,
+						'AccountNumber'=>$withdrawAccountNumber,
+						'BankName'=>$withdrawBankName,
+						'SortCode'=>$withdrawSwiftCode,
+						'BankAddress'=>$withdrawBankAddress,
+						)
+					);
 			$tx = Transactions::create();
 			$tx->save($data);
+					// ------------------
+								/////////////////////////////////Email//////////////////////////////////////////////////
+					$emaildata = array(
+						'data'=>$transaction
+					);
+						$function = new Functions();
+						$compact = array('data'=>$emaildata);
+						$from = array(NOREPLY => "noreply@".COMPANY_URL);
+						$email = $email;
+						$attach = VANITY_OUTPUT_DIR."SiiCrypto-".$Reference.".pdf";
+						$function->sendEmailTo($email,$compact,'users','withdraw',"SiiCrypto.com - Withdraw Request",$from,MAIL_1,MAIL_2,MAIL_3,$attach);
+						////////////////////////////////////////////////////////////////////////////////////////////
 
-			$view  = new View(array(
-				'loader' => 'File',
-				'renderer' => 'File',
-				'paths' => array(
-					'template' => '{:library}/views/{:controller}/{:template}.{:type}.php'
-				)
-			));
-			$body = $view->render(
-				'template',
-				compact('details','data','user'),
-				array(
-					'controller' => 'users',
-					'template'=>'withdraw',
-					'type' => 'mail',
-					'layout' => false
-				)
-			);	
-
-			$transport = Swift_MailTransport::newInstance();
-			$mailer = Swift_Mailer::newInstance($transport);
-
-			$message = Swift_Message::newInstance();
-			$message->setSubject("Withdraw from ".COMPANY_URL);
-			$message->setFrom(array(NOREPLY => 'Withdraw from '.COMPANY_URL));
-			$message->setTo($user['email']);
-			$message->addBcc(MAIL_1);
-			$message->addBcc(MAIL_2);			
-			$message->addBcc(MAIL_3);		
-
-			$message->setBody($body,'text/html');
-			
-			$mailer->send($message);
 		}
 		return compact('title','details','data','user');			
 	
