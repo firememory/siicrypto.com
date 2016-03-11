@@ -282,19 +282,21 @@ $function = new Functions();
 						</tr>
 				<?php if($depositRequest['SenttoBank']!="Yes"){?>
 						<tr>
-							<th>UPLOAD SIGNED:<br>Declaration of Source of Funds (DSF)
+							<th>UPLOAD YOUR SIGNED DSF HERE:<br>Only upload a PDF file.
 								<p>If you want to modify the DSF, please <a href="/users/deleteDepositRequest/<?=$depositRequest['data']['Reference']?>/<?=String::hash($depositRequest['_id'])?>/<?=$depositRequest['data']['currency']?>">Delete this request</a> and create a new DSF.</p>
 							</th>
 							<td>
 								<?=$this->form->create("", array('type' => 'file', 'action'=>'uploadDepositPDF/')); ?>
-								<div id="DepositSelect" type="file">Select SiiCrypto-<?=$depositRequest['data']['Reference']?>.pdf file...</div>
+								<div id="DepositSelect" type="file">Select SiiCrypto-<?=$depositRequest['data']['Reference']?>.pdf file...</div><br>
+								<small>CLICK ON THIS LINK TO LOCATE YOUR DSF FILE AND THEN UPLOAD</small>
 								<input id="DepositInput"  class="hideMe" style="display:none" name="DepositInput" type="file"></input>
+								<input type="hidden" name="fileToUpload" id="fileToUpload" value="SiiCrypto-<?=$depositRequest['data']['Reference']?>.pdf">
 								<input type="hidden" name="currency" value="<?=$depositRequest['data']['currency']?>">
 								<input type="hidden" name="SelectedSourceFile" id="SelectedSourceFile" value="">
 								<div id="SelectedFile">No file selected...</div>
 								<br>
 								<?=$this->form->field('Reference',array('type'=>'hidden','value'=>$depositRequest['data']['Reference'])); ?>
-								<?=$this->form->submit('Save',array('class'=>'btn btn-primary','id'=>'SaveButton','disabled'=>'disabled')); ?>
+								<?=$this->form->submit('UPLOAD',array('class'=>'btn btn-primary','id'=>'SaveButton','disabled'=>'disabled')); ?>
 								<br><strong>Only PDF file:<br>SiiCrypto-<?=$depositRequest['data']['Reference']?>.pdf </strong>
 								<?=$this->form->end(); ?>
 							</td>

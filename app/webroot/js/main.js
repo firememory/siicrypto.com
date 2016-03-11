@@ -618,6 +618,8 @@ $("#DepositSelect").click(function() {
     $('#DepositInput').change(function() {
        $("#SelectedFile").html($("#DepositInput").val());
 							$("#SelectedSourceFile").val($("#DepositInput").val());
-							$("#SaveButton").removeAttr("disabled");
+							if($("#DepositInput").val()==$("#fileToUpload").val()){
+								$("#SaveButton").removeAttr("disabled");
+							}
     });
 });
