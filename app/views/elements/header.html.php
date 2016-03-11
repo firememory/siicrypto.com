@@ -34,7 +34,7 @@ use app\extensions\action\Functions;
 			<?=$user['username']?> <i class='glyphicon glyphicon-chevron-down'></i>&nbsp;&nbsp;&nbsp;
 			</a>
 			<ul class="dropdown-menu">
-				<li><a href="/users/settings"><i class="fa fa-gears"></i> Settings</a></li>			
+				<li><a href="/users/settings"><i class="fa fa-gears"></i> Your Account</a></li>			
 				<li><a href="/ex/dashboard"><i class="fa fa-dashboard"></i> Dashboard</a></li>
 				<li class="divider"></li>				
 <?php 

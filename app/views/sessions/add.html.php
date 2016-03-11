@@ -36,7 +36,7 @@
 					<?=$this->form->field('loginpassword', array('type' => 'password', 'label'=>'','class'=>'span1','maxlength'=>'6', 'placeholder'=>'123456','class'=>'form-control')); ?>
 					</div>		
 				</div>		
-				<small>Please check your registered email in 5 seconds. You will receive "<strong>Login Email Password</strong>" use it in the box below.</small>
+				<small>Please check your registered email in 5 seconds. You will receive "<strong>Login Email Password</strong>" (check your junk folder). Insert code in the box above and then click on Login.</small>
 			</div>		
 
 			<div style="display:none" id="TOTPPassword" class="alert alert-danger">

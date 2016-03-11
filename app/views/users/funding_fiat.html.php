@@ -12,7 +12,11 @@ $function = new Functions();
 
 
 
-<h2 id=tabs-examples>Deposit / Withdraw <?=$currency?></h2> 
+<h2 id=tabs-examples>Deposit / Withdraw <?=$currency?>
+<?php if($currency=="CAD" || $currency=="GBP"){?>
+<br><small>(<?=$currency?> Deposits will be coming soon. Thank you for your patience while our bank resolves this issue)</small>
+<?php }?>
+</h2> 
 	
 		<div class="" data-example-id=togglable-tabs> 
 			<ul id=myTabs class="nav nav-tabs nav-justified" role=tablist> 
@@ -27,7 +31,7 @@ $function = new Functions();
 			<?php 
 			if(count($depositRequest)==0){
 			?>
-			<div style=""><blockquote><small><strong>Note:</strong> Vantu Bank’s customer service may contact you to authenticate your expected payment. Please make sure the contact details below are valid. If Vantu Bank needs to reach you and is unable to do so within 48 hours your funds may be put on hold. The purpose for the wire must be made clear in order to prevent delays.</small></blockquote></div>
+			<div style=""><blockquote><small><strong>Note:</strong> Vantu Bank’s customer service may contact you to authenticate your expected payment. Please make sure the contact details below are valid. If Vantu Bank needs to reach you and is unable to do so within 48 hours your funds may be put on hold. The information you provide must be clear in order to prevent delays.</small></blockquote></div>
 						<h2>Declaration of Source of Funds (DSF)</h2>
 						<form method="POST" action="/users/deposit" class="form">
 							<table class="table table-condensed table-bordered table-hover" >
@@ -37,7 +41,7 @@ $function = new Functions();
 						</tr>
 						<tr>
 							<th>FULL ACCOUNT NUMBER OF YOUR ACCOUNT</th>
-							<td><?=$currency?>-100-070378-<strong><?php
+							<td><?=$currency?>-100-070378-<?php
 								switch ($currency){
 										case "USD":
 										print_r("1");break;
@@ -48,7 +52,7 @@ $function = new Functions();
 										case "CAD":
 										print_r("4");break;										
 								}
-							?></strong>
+							?>
 							</td>
 						</tr>
 						<tr>
@@ -64,7 +68,7 @@ $function = new Functions();
 							<td><input type="text" name="address" id="address" class="form-control"></td>
 						</tr>
 						<tr>
-							<th>YOUR CITY, STATE, ZIP Code, COUNTRY</th>
+							<th>YOUR CITY, STATE, ZIP CODE, COUNTRY</th>
 							<td><input type="text" name="addressDetail" id="addressDetail" class="form-control"></td>
 						</tr>
 						<tr>
@@ -184,7 +188,7 @@ $function = new Functions();
 							<td colspan="2">
 								<table class="table">
 									<tr>
-										<th colspan="2">DETAILS OF BUSINESS PAYMENT</th>
+										<th colspan="2">DETAILS OF BUSINESS PAYMENT<br><small> (Only complete this section if you have checked the Business box above)</small></th>
 									</tr>
 									<tr>
 										<td width="50%">WHAT IS THE PRINCIPAL BUSINESS ACTIVITY OF THE ORIGINATING PARTY?</td>
@@ -405,7 +409,7 @@ $function = new Functions();
 						</tr>
 						<tr>
 							<th>ACCOUNT NUMBER OF YOUR ACCOUNT</th>
-							<td><?=$currency?>-100-070378-<strong><?php
+							<td><?=$currency?>-100-070378-<?php
 								switch ($currency){
 										case "USD":
 										print_r("1");break;
@@ -416,7 +420,7 @@ $function = new Functions();
 										case "CAD":
 										print_r("4");break;										
 								}
-							?></strong>
+							?>
 							</td>
 						</tr>
 						<tr>

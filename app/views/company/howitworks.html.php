@@ -8,20 +8,20 @@
 <li>To fund your SiiCrypto exchange wallet go to the REGISTER page and open an account, with your KYC number.</li>
 <li>Sign in to your account using 2FA (Two Factor Authorization) .</li>
 <li>Fund your SiiCrypto account <ul>
-	<li>send GreenCoinX to your account at the master SiiCrypto GreenCoinX wallet through the page <a href="/users/funding/XGC">Funding/XGC</a>, or</li>
+	<li>send GreenCoinX to your account at the master SiiCrypto GreenCoinX wallet through the page <a href="/users/funding/XGC">Funding/XGC</a>,  by clicking on XGC on the Dashboard or</li>
 
- <li>send Bitcoin to your account at the master SiiCrypto Bitcoin wallet through the page <a href="/users/funding/BTC">Funding/BTC</a>, or</li>
+ <li>send Bitcoin to your account at the master SiiCrypto Bitcoin wallet through the page <a href="/users/funding/BTC">Funding/BTC</a>,  by clicking on XGC on the Dashboard or</li>
 
  <li>send fiat currency to your account at the master SiiCrypto bank account via  a bank wire (details of which are given on our funding fiat page for each currency <a href="/users/funding_fiat/USD">USD</a>, <a href="/users/funding_fiat/CAD">CAD</a>, <a href="/users/funding_fiat/EUR">EUR</a> and <a href="/users/funding_fiat/GBP">GBP</a>).</li>
 									</ul>
-<li>To execute a transaction go to the Trades page and choose the type of order you wish to place. When executed your SiiCrypto account will be updated.</li>
-<li>To request a withdrawal of fiat currency go to funding fiat page for each currency <a href="/users/funding_fiat/USD">USD</a>, <a href="/users/funding_fiat/CAD">CAD</a>, <a href="/users/funding_fiat/EUR">EUR</a> and <a href="/users/funding_fiat/GBP">GBP</a>.</li>
+<li>To execute a transaction go to the Dashboard page and choose the type of order you wish to place. When executed your SiiCrypto account will be updated.</li>
+<li>To request a withdrawal of fiat currency go to funding fiat page for each currency <a href="/users/funding_fiat/USD">USD</a>, <a href="/users/funding_fiat/CAD">CAD</a>, <a href="/users/funding_fiat/EUR">EUR</a> and <a href="/users/funding_fiat/GBP">GBP</a>, by clicking on the currency you require.</li>
 
-<li>Withdraw from your SiiCrypto account <ul><li>withdraw GreenCoinX from your account to your GreenCoinX wallet through the page <a href="/users/funding/XGC">Funding/XGC</a>, or</li>
+<li>Withdraw from your SiiCrypto account <ul><li>withdraw GreenCoinX from your account to your GreenCoinX wallet through the page <a href="/users/funding/XGC">Funding/XGC</a>, by clicking on XGC on the Dashboard or</li>
 
-         <li>withdraw Bitcoin from your account to your Bitcoin wallet through the page <a href="/users/funding/BTC">Funding/BTC</a>, or</li>
+         <li>withdraw Bitcoin from your account to your Bitcoin wallet through the page <a href="/users/funding/BTC">Funding/BTC</a>, by clicking on BTC on the Dashboard or</li>
 
-         <li>withdraw fiat currency from your account (details of which are given on our funding fiat page for each currency <a href="/users/funding_fiat/USD">USD</a>, <a href="/users/funding_fiat/CAD">CAD</a>, <a href="/users/funding_fiat/EUR">EUR</a> and <a href="/users/funding_fiat/GBP">GBP</a>).</li>
+         <li>withdraw fiat currency from your account by clicking on the currency your require on the Dashboard.</li>
 									</ul>
 </ol>
 

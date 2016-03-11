@@ -1,7 +1,7 @@
 <?php
 use li3_qrcode\extensions\action\QRcode;
 ?>
-<br><h4>Settings: <?=$user['firstname']." ".$user['lastname'];?></h4>
+<br><h4>Your Account: <?=$user['firstname']." ".$user['lastname'];?></h4>
 
 <div class="panel-group" id="accordion">
 <?php

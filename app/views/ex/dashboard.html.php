@@ -18,7 +18,7 @@ foreach($virtualcurrencies as $VC){
 <table class="table table-condensed table-bordered table-hover">
 			<thead>
 				<tr>
-					<th  class="headTable">Currency</th>
+					<th  class="headTable">Currency <br><small>Click to Fund account</small></th>
 					<?php 
 					$currencies = array();
 					$VirtualCurr = array(); $FiatCurr = array();
@@ -205,7 +205,7 @@ foreach($CompletedCommissions['result'] as $C){
 				</tr>
 			</tbody>
 		</table>
-		<h3 class="panel-title">Users: <?=$UsersRegistered?> / Online: <?=$OnlineUsers?></h3>
+<!--		<h3 class="panel-title">Users: <?=$UsersRegistered?> / Online: <?=$OnlineUsers?></h3> -->
 		<table class="table table-condensed table-bordered table-hover">
 				<tr>
 					<th>Status</th>
