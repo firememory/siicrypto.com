@@ -45,15 +45,19 @@ foreach($virtualcurrencies as $VC){
 					
 					foreach($VirtualCurr as $currency){?>
 					<th class="headTable" style="text-align:center">
-					<a href="/users/funding/<?=$currency?>" class="btn btn-success">
+					<a href="/users/funding/<?=$currency?>" class="btn btn-success btn-block" >
+					<i class="fa fa-arrow-left"></i>
 					<?=$currency?>
+					<i class="fa fa-arrow-right"></i>
 					</a>
 					</th>
 					<?php }
 					foreach($FiatCurr as $currency){?>
 					<th class="headTable" style="text-align:center">
 					<a href="/users/funding_fiat/<?=$currency?>" class="btn btn-primary">
+					<i class="fa fa-arrow-left"></i>
 					<?=$currency?>
+					<i class="fa fa-arrow-right"></i>
 					</a>
 					</th>
 					<?php }?>					
