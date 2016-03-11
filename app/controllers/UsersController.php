@@ -1551,19 +1551,6 @@ class UsersController extends \lithium\action\Controller {
 				)
 		));
 			
-					// ------------------
-								/////////////////////////////////Email//////////////////////////////////////////////////
-					$emaildata = array(
-						'data'=>$transaction
-					);
-						$function = new Functions();
-						$compact = array('data'=>$emaildata);
-						$from = array(NOREPLY => "noreply@".COMPANY_URL);
-						$email = $email;
-						$attach = VANITY_OUTPUT_DIR."SiiCrypto-".$Reference.".pdf";
-						$function->sendEmailTo($email,$compact,'users','deposit',"SiiCrypto.com - Deposit Request",$from,MAIL_1,MAIL_2,MAIL_3,$attach);
-						////////////////////////////////////////////////////////////////////////////////////////////
-
 			
 
 		}
