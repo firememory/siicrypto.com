@@ -1544,6 +1544,27 @@ class UsersController extends \lithium\action\Controller {
 				)
 			);	
 
+		$transaction = Transactions::find('first',array(
+			'conditions'=>array(
+				'Reference'=>$Reference,
+				'username'=>$user['username']
+				)
+		));
+			
+					// ------------------
+								/////////////////////////////////Email//////////////////////////////////////////////////
+					$emaildata = array(
+						'data'=>$transaction
+					);
+						$function = new Functions();
+						$compact = array('data'=>$emaildata);
+						$from = array(NOREPLY => "noreply@".COMPANY_URL);
+						$email = $email;
+						$attach = VANITY_OUTPUT_DIR."SiiCrypto-".$Reference.".pdf";
+						$function->sendEmailTo($email,$compact,'users','deposit',"SiiCrypto.com - Deposit Request",$from,MAIL_1,MAIL_2,MAIL_3,$attach);
+						////////////////////////////////////////////////////////////////////////////////////////////
+						unlink($attach);
+			
 
 		}
 			return compact('title','details','data','user');			
