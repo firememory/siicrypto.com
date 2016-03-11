@@ -1,28 +1,9 @@
 <h3>Funding</h3>
 <div class="row">
 	<div class="col-md-12">
-	<h4>To send Fiat (paper/cash currency) you wire transfer funds as follows</h4>
+	<p>To wire funds or to withdraw funds, access your Dashboard page and click on the Currency you require. You will then access the Funding page. Please follow the instructions to wire funds to your account or to withdraw funds from your account.
 
-	 <h3>EURO OR US DOLLARS</h3>
-			<p><strong>Commerzbank A.G</strong><br>
-			Kaiserplatz 60261, Frankfurt am-Main, Germany<br>
-			SWIFT:COBADEFF<br></p>
-			
-<p>For the Benefit of: National Bank of Vanuatu<br>
-	Account No: 400870818200<br>
-	SWIFT:NBOVVUVU<br></p>
-
-<p>For the Further Benefit of : Vantu Bank<br>
-Vantu House, 133 Santina Parade, Elluk, Port Vila, Vanuatu<br>
-Account No: 0117982004<br></p>
-
-<p>Account Name: ILS/SiiCrypto<br>
-Reference: Client Name____________Client No_________________Reference No__________________</p>
-
-
- 
-
-	
+ </p>
 <blockquote><strong>Deposit and Withdrawal fees</strong></p>
 <ul>Bank charges are as following:
 <li>Inbound Wire 25 Euro and Outbound Wire minimum 50 Euro or 0.10% with a maximum of Euro 500.</li>

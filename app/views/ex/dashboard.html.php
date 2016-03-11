@@ -18,7 +18,7 @@ foreach($virtualcurrencies as $VC){
 <table class="table table-condensed table-bordered table-hover">
 			<thead>
 				<tr>
-					<th  class="headTable">Currency <br><small>Click to Fund account</small></th>
+					<th  class="headTable">Currency <br><small></small></th>
 					<?php 
 					$currencies = array();
 					$VirtualCurr = array(); $FiatCurr = array();
@@ -46,21 +46,24 @@ foreach($virtualcurrencies as $VC){
 					foreach($VirtualCurr as $currency){?>
 					<th class="headTable" style="text-align:center">
 					<a href="/users/funding/<?=$currency?>" class="btn btn-success btn-block" >
-					<i class="fa fa-arrow-left"></i>
+<!--					<i class="fa fa-arrow-left"></i> -->
 					<?=$currency?>
-					<i class="fa fa-arrow-right"></i>
+<!--					<i class="fa fa-arrow-right"></i> -->
 					</a>
 					</th>
 					<?php }
 					foreach($FiatCurr as $currency){?>
 					<th class="headTable" style="text-align:center">
-					<a href="/users/funding_fiat/<?=$currency?>" class="btn btn-primary">
-					<i class="fa fa-arrow-left"></i>
+					<a href="/users/funding_fiat/<?=$currency?>" class="btn btn-primary btn-block">
+<!--					<i class="fa fa-arrow-left"></i> -->
 					<?=$currency?>
-					<i class="fa fa-arrow-right"></i>
+<!--					<i class="fa fa-arrow-right"></i> -->
 					</a>
 					</th>
 					<?php }?>					
+				</tr>
+				<tr>
+					<th colspan="7" style="text-align:center">(Click on a currency to Deposit or Withdraw )</th>
 				</tr>
 			</thead>
 <?php 
