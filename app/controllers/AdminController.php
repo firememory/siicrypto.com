@@ -407,7 +407,7 @@ $description = "Admin panel for approval";
 			array('conditions'=>array('user_id'=>$id))
 		);
 		//print_r(str_replace("@","",strstr($user['email'],"@")));
-		if(str_replace("@","",strstr($user['email'],"@"))==COMPANY_URL 
+		if(str_replace("@","",strstr($user['email'],"@"))==COMPANY_DOMAIN
 			&& $details['email.verified']=="Yes"
 			&& $details['TOTP.Validate'] == 1
 			&& $details['TOTP.Login'] == 1
@@ -585,6 +585,7 @@ $description = "Admin Approve documents ";
 			$Details[$i]['DateTime'] = $ft['DateTime'];	
 			$Details[$i]['username'] = $ft['username'];				
 			$Details[$i]['Reference'] = $ft['Reference'];	
+			$Details[$i]['SenttoBank'] = $ft['SenttoBank'];	
 			$Details[$i]['Amount'] = $ft['Amount'];	
 			$Details[$i]['Currency'] = $ft['Currency'];	
 			$Details[$i]['Added'] = $ft['Added'];													

@@ -88,14 +88,12 @@ $ex = Session::read('ex');
 						<li class="active"><a href="/users/signup">Register & Open an account</a></li>
 						</ul>
 						<?php }?>
+<small style="letter-spacing: 0px;">
 <p>SiiCrypto first time users need to open an online GreenCoinX wallet at <a href="https://xgcwallet.org" target="_blank">www.xgcwallet.org</a></p>
-
 <p>Users will complete an online "Know Your Client" verification process which only takes a few minutes.</p>
-
 <p><strong>All fiat funds are held by ILS Fiduciaries (Switzerland) Sarl the Swiss branch of ILS World, a global provider of independent fiduciary services.</strong></p>
-
 <p>The promise of crypto currency was always the fast and inexpensive transfer of funds worldwide, while bypassing the banking system.Until GreenCoinX this has been impeded by identity concerns. Now GreenCoinX has made this promise a reality by its KYC capability.</p>
-
+</small>
 					</div> <!-- sidebar-->
 					
 			<?php }?>

@@ -20,39 +20,28 @@ foreach ($Details	as $tx){?>
 		<tr <?php if(($i%2)==0){?>style="background-color:#999"<?php }else{?>style="background-color:#ddd"<?php }?>>
 			<td><?=gmdate('Y-M-d H:i:s',$tx['DateTime']->sec)?></td>
 			<td><a href="/Admin/detail/<?=$tx['username']?>" target="_blank"><?=$tx['username']?></a><br>
-				<span class="label
-				<?php if($tx['BankVerified']=="No"){echo " label-important ";}else{echo " label-success ";} ?>
-				">Bank Verified: <?=$tx['BankVerified']?></span><br>
-				<span class="label
-				<?php if($tx['GovtVerified']=="No"){echo " label-important ";}else{echo " label-success ";} ?>
-				">Government: <?=$tx['GovtVerified']?></span><br>
-				<span class="label
-				<?php if($tx['UtilityVerified']=="No"){echo " label-important ";}else{echo " label-success ";} ?>
-				">Proof of Address: <?=$tx['UtilityVerified']?></span>
 
 
 			</td>
 			<td><?=$tx['Reference']?></td>
 			<td style="text-align:right "><?=number_format($tx['Amount'],2)?><br>
-						<span class="label label-success">Deposits:<br>
-						<?=number_format($tx['Funds']['USD'],2)?> USD<br>
-						<?=number_format($tx['Funds']['CAD'],2)?> CAD<br>						
-						<?=number_format($tx['Funds']['EUR'],2)?> EUR<br>
-						<?=number_format($tx['Funds']['GBP'],2)?> GBP
-						</span>
+						<div class="alert alert-success" style="padding:5px"><small>Deposits:<br>
+<?=number_format($tx['Funds']['USD'],2)?> USD<br>
+<?=number_format($tx['Funds']['CAD'],2)?> CAD<br>						
+<?=number_format($tx['Funds']['EUR'],2)?> EUR<br>
+<?=number_format($tx['Funds']['GBP'],2)?> GBP</small></div>
 			</td>
 			<td style="text-align:right "><?=$tx['Currency']?><br>
-						<span class="label label-warning">Withdrawals:<br>
+						<div class="alert alert-warning" style="padding:5px"><small>Withdrawals:<br>
 						<?=number_format($tx['FundsOut']['USD'],2)?> USD<br>
 						<?=number_format($tx['FundsOut']['CAD'],2)?> CAD<br>						
 						<?=number_format($tx['FundsOut']['EUR'],2)?> EUR<br>
-						<?=number_format($tx['FundsOut']['GBP'],2)?> GBP
-						</span>
+						<?=number_format($tx['FundsOut']['GBP'],2)?> GBP</small>
+						</div>
 			</td>			
 			<td><?php if($tx['Added']==true){echo "Deposit";}else{echo "Withdraw";}?></td>
-			<td style="text-align:center"><?=$tx['Approved']?></td>			
+			<td style="text-align:center"><?=$tx['Approved']?><br>Sent to Bank: <?=$tx['SenttoBank']?></td>			
 			<td>
-			<a href="/admin/sendemailtransaction/<?=$tx['_id']?>" class="tooltip-y " rel="tooltip-x" data-placement="top" title="Send customer an email to deposit funds in our bank">Send Approval</a><br>
 			
 			<a href="/admin/deletetransaction/<?=$tx['_id']?>" class="tooltip-y" rel="tooltip-x" data-placement="top" title="Cannot be recovered">Delete</a>
 			<a href="/admin/rejecttransaction/<?=$tx['_id']?>/D1"  class="tooltip-y" rel="tooltip-x" data-placement="top" title="User will be sent an email about rejection, cannot be recovered">Reject ></a><br>

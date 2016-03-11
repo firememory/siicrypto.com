@@ -832,6 +832,17 @@ class UsersController extends \lithium\action\Controller {
 				'_id'=>$Transaction['_id']
 			);
 			Transactions::update($data,$conditions);
+					/////////////////////////////////Email//////////////////////////////////////////////////
+					$emaildata = array(
+						'email'=>$user['email'],
+						'data'=>$Transaction
+					);
+						$function = new Functions();
+						$compact = array('data'=>$emaildata);
+						$from = array(NOREPLY => "noreply@".COMPANY_URL);
+						$email = $user['email'];
+						$function->sendEmailTo($email,$compact,'users','sendDepositEmailUser',"SiiCrypto.com - DFS Submitted ",$from,"","","",null);
+					/////////////////////////////////Email//////////////////////////////////////////////////				
 			
 // email send function	
 			return $this->redirect('/users/funding_fiat/'.$currency.'/YES');		
