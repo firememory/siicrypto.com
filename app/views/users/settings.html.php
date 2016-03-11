@@ -608,13 +608,14 @@ foreach ($settings['documents'] as $document){
     <div class="panel-heading"  style="background-color:#D5E2C5">
       <h4 class="panel-title">
         <a data-toggle="collapse" data-parent="#accordion" href="#collapseSecurity">
-					Security
+					TOTP Security
         </a>
       </h4>
     </div>
     <div id="collapseSecurity" class="panel-collapse <?php if($option=="security"){?><?php }else{?>collapse<?php }?>">
       <div class="panel-body">
-				<h3>Security</h3>
+				<h3>TOTP Security</h3>
+				<h4>This is not required, but is recommended to enhance your security </h4>
 			<table class="table">
 				<tr>
 					<td>Enable Email Login Password security 
@@ -631,7 +632,7 @@ foreach ($settings['documents'] as $document){
 			<tr>
 				<td colspan="2">
 					Security keys are used for withdrawals and deposits to your account with <?=COMPANY_URL?>. <br>
-					Download / Install the app from <a href="http://code.google.com/p/google-authenticator/" target="_blank">Google Authenticator</a><br>
+					To use TOTP Security you will need to Download and Install the app from this link <a href="http://code.google.com/p/google-authenticator/" target="_blank">Google Authenticator</a><br>
 					Scan the QR code and enter a (Time based One Time Password) to enable security on withdrawals / deposits and password recovery.
 					<div class="alert">
 					<button type="button" class="close" data-dismiss="alert">&times;</button>

@@ -49,7 +49,13 @@ text-decoration: none
 				<td><h4>Hi <?=$compact['data']['data']['username']?>,</h4>
 <p>You have requested to deposit <?=$compact['data']['data']['data']['amountFiat']?> <?=$compact['data']['data']['Currency']?> to your SiiCrypto.com account <strong><?=$compact['data']['data']['username']?></strong> with Reference No: <strong><?=$compact['data']['data']['Reference']?></strong></p>
 
-<p>Your Declaration of Source of Funds (“DSF”) is attached to this email. Please print it out, sign it, and scan it. You can then upload the signed DSF to this link <a href="https://siicrypto.com/users/funding_fiat/<?=$compact['data']['data']['Currency']?>" target="_blank">UPLOAD DSF HERE</a>.</p>
+<p>Your Declaration of Source of Funds (“DSF”) is attached to this email. Please print it out, sign it, and scan it. 
+<p>If the browser you used to connect to SiiCrypto is your primary browser then you can upload the signed DSF to this link <a href="https://siicrypto.com/users/funding_fiat/<?=$compact['data']['data']['Currency']?>" target="_blank">UPLOAD DSF HERE</a>.</p>
+<p>If your primary browser is not the browser you used to connect to SiiCrypto, then copy this <br>
+https://siicrypto.com/users/funding_fiat/<?=$compact['data']['data']['Currency']?><br>
+and paste it into the browser you are using.</p>
+
+
 <p>Once we receive the signed DSF, it will be sent to ILS Fiduciaries (Switzerland) Sarl and Vantu Bank. You can then wire transfer the funds using reference number quoted above.</p>
 <p>Please do not wire the funds until you receive an email confirmation from us.</p>
 				</td>
