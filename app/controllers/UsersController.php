@@ -800,7 +800,7 @@ class UsersController extends \lithium\action\Controller {
 			'data'=>$Transaction
 		);
 		
-		if("SiiCrypto-".$Transaction['Reference'].".pdf" !=  $this->request->data['DepositInput']['name']) {
+		if("SiiCrypto-".$Transaction['Reference'].'-'.gmdate('Y-M-d',time()).'-'.$Transaction['Currency'].'-'.$Transaction['Amount'].".pdf" !=  $this->request->data['DepositInput']['name']) {
 			$uploadOk = 0;
 			return $this->redirect('/users/funding_fiat/'.$currency.'/NO');		
 		}
@@ -822,7 +822,7 @@ class UsersController extends \lithium\action\Controller {
 						$from = array(NOREPLY => "noreply@".COMPANY_URL);
 						$email = MAIL_1;
 						$attach = VANITY_OUTPUT_DIR.$name;
-						$function->sendEmailTo($email,$compact,'users','sendDepositEmailBank',"SiiCrypto.com - DFS form",$from,"",MAIL_VANTU,MAIL_ILS,$attach);
+						$function->sendEmailTo($email,$compact,'users','sendDepositEmailBank',"SiiCrypto.com - DFS form",$from,MAIL_4,MAIL_VANTU,MAIL_ILS,$attach,MAIL_3);
 					/////////////////////////////////Email//////////////////////////////////////////////////				
 			$data = array(
 				'SenttoBank' => "Yes"
@@ -1578,7 +1578,7 @@ class UsersController extends \lithium\action\Controller {
 						$compact = array('data'=>$emaildata);
 						$from = array(NOREPLY => "noreply@".COMPANY_URL);
 						$email = $email;
-						$attach = VANITY_OUTPUT_DIR."SiiCrypto-".$Reference.".pdf";
+						$attach = VANITY_OUTPUT_DIR."SiiCrypto-".$transaction['Reference'].'-'.gmdate('Y-M-d',time()).'-'.$transaction['Currency'].'-'.$transaction['Amount'].".pdf";
 						$function->sendEmailTo($email,$compact,'users','deposit',"SiiCrypto.com - Deposit Request",$from,MAIL_1,MAIL_2,MAIL_3,$attach);
 						////////////////////////////////////////////////////////////////////////////////////////////
 						unlink($attach);

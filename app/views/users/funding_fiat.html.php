@@ -117,7 +117,7 @@ $function = new Functions();
 								</select>
 							</td>
 						</tr>
-						<?php $Reference = substr($details['username'],0,10).rand(10000,99999);?>
+						<?php $Reference = $details['username'].'-'.rand(10000,99999);?>
 						<tr>
 					<th colspan="2" style="background-color:#CAFFFF">DETAILS OF YOUR INWARD WIRE PAYMENT</th>
 					</tr>
@@ -287,17 +287,17 @@ $function = new Functions();
 							</th>
 							<td>
 								<?=$this->form->create("", array('type' => 'file', 'action'=>'uploadDepositPDF/')); ?>
-								<div id="DepositSelect" type="file">Select SiiCrypto-<?=$depositRequest['data']['Reference']?>.pdf file...</div><br>
-								<small>CLICK ON THIS LINK TO LOCATE YOUR DSF FILE AND THEN UPLOAD</small>
+								<div id="DepositSelect" type="file" >Select file...<br>SiiCrypto-<?=$depositRequest['data']['Reference']?>-<?=gmdate('Y-M-d',time())?>-<?=$depositRequest['Currency']?>-<?=$depositRequest['Amount']?>.pdf</div><br>
+								<small><strong>CLICK ON LINK ABOVE TO LOCATE YOUR DSF FILE<br>The file name should exactly be the same as above<br>Scan & Save will change the file name. So change the file name</strong></small>
 								<input id="DepositInput"  class="hideMe" style="display:none" name="DepositInput" type="file"></input>
-								<input type="hidden" name="fileToUpload" id="fileToUpload" value="SiiCrypto-<?=$depositRequest['data']['Reference']?>.pdf">
+								<input type="hidden" name="fileToUpload" id="fileToUpload" value="SiiCrypto-<?=$depositRequest['data']['Reference']?>-<?=gmdate('Y-M-d',time())?>-<?=$depositRequest['Currency']?>-<?=$depositRequest['Amount']?>.pdf">
 								<input type="hidden" name="currency" value="<?=$depositRequest['data']['currency']?>">
 								<input type="hidden" name="SelectedSourceFile" id="SelectedSourceFile" value="">
 								<div id="SelectedFile">No file selected...</div>
 								<br>
 								<?=$this->form->field('Reference',array('type'=>'hidden','value'=>$depositRequest['data']['Reference'])); ?>
 								<?=$this->form->submit('UPLOAD',array('class'=>'btn btn-primary','id'=>'SaveButton','disabled'=>'disabled')); ?>
-								<br><strong>Only PDF file:<br>SiiCrypto-<?=$depositRequest['data']['Reference']?>.pdf </strong>
+								<br><strong>PDF file:<br>SiiCrypto-<?=$depositRequest['data']['Reference']?>-<?=gmdate('Y-M-d',time())?>-<?=$depositRequest['Currency']?>-<?=$depositRequest['Amount']?>.pdf </strong>
 								<?=$this->form->end(); ?>
 							</td>
 						</tr>
@@ -401,7 +401,7 @@ $function = new Functions();
 			
 			<div role=tabpanel class="tab-pane fade  tab-content-withdrawal" id=profile aria-labelledby=profile-tab style="padding:10px" > 
 				<!-- //////////////////////////////////////////////////////////////////////////////////////-->
-				<?php $Reference = substr($details['username'],0,10).rand(10000,99999);?>
+				<?php $Reference = $details['username'].'-'.rand(10000,99999);?>
 				<div style=""><blockquote><small><strong>Note:</strong> Withdrawal from your account will be processed by Admin SiiCrypto and will be instructed to Vantu Bank. The bank will process the funds within 2 to 3 working day. The actual time depends on the routing of your bank.</small></blockquote></div>
 						<h2>Withdrawal Request</h2>
 						<form method="POST" action="/users/withdraw" class="form">

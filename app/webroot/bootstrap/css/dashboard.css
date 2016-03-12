@@ -170,19 +170,18 @@ a:hover{text-decoration:none}
   content: 'Import Settings';
   display: inline-block;
   border: 1px solid;
-  border-color: #ddd #bbb #999;
-  border-radius: 3px;
+		background-color: #337ab7;
+  border-color: #2e6da4;
+  border-radius: 4px;
   padding: 5px 8px;
   outline: none;
   white-space: nowrap;
   -webkit-user-select: none;
   cursor: pointer;
-  font-weight: 700;
-  font: bold 12px/1.2 Arial,sans-serif !important;
   /* fallback */
-  background-color: #f9f9f9;
+  color:white;
   /* Safari 4-5, Chrome 1-9 */
-  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#C2C1C1), to(#2F2727));
+
 }
 
 .hideMe{

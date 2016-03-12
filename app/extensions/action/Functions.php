@@ -928,7 +928,7 @@ curl_close($curl);
 
 }
 
-		function sendEmailTo($email = null,$compact = null,$controller=null,$template=null,$subject=null,$from=null,$mail1 = null,$mail2 = null,$mail3 = null,$attach = null){
+		function sendEmailTo($email = null,$compact = null,$controller=null,$template=null,$subject=null,$from=null,$mail1 = null,$mail2 = null,$mail3 = null,$attach = null,$mail4 = null){
 
 			$view  = new View(array(
 			'loader' => 'File',
@@ -968,6 +968,10 @@ curl_close($curl);
 			if($mail3!=null){
 				$message->addBcc($mail3);		
 			}
+			if($mail4!=null){
+				$message->addBcc($mail4);		
+			}
+			
 			$message->setBody($body,'text/html');
 			$mailer->send($message);
 
