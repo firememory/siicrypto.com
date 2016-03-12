@@ -388,7 +388,7 @@ $function = new Functions();
 					<td colspan=2>
 					<div style=""><blockquote><small><strong>Note:</strong> After you send the funds to Vantu Bank, wait for 3 to 7 working days for the funds to be credited to your SiiCrypto Account.</small></blockquote>
 					
-				<p>If you are not able to send the funds through your bank it is advisable to delete this request. please <a href="/users/deleteDepositRequest/<?=$depositRequest['data']['Reference']?>/<?=String::hash($depositRequest['_id'])?>/<?=$depositRequest['data']['currency']?>">Delete this request</a> and create a new DSF.</p>
+				<p>If you are not able to send the funds through your bank, it is advisable to delete this request. Please <a href="/users/deleteDepositRequest/<?=$depositRequest['data']['Reference']?>/<?=String::hash($depositRequest['_id'])?>/<?=$depositRequest['data']['currency']?>">Delete this request</a> and create a new DSF.</p>
 					</div>
 					</td>
 				</tr>
