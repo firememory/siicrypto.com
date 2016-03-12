@@ -800,7 +800,7 @@ class UsersController extends \lithium\action\Controller {
 			'data'=>$Transaction
 		);
 		
-		if("SiiCrypto-".$Transaction['Reference'].'-'.gmdate('Y-M-d',time()).'-'.$Transaction['Currency'].'-'.$Transaction['Amount'].".pdf" !=  $this->request->data['DepositInput']['name']) {
+		if($this->request->data['DepositInput']['name']=="") {
 			$uploadOk = 0;
 			return $this->redirect('/users/funding_fiat/'.$currency.'/NO');		
 		}
