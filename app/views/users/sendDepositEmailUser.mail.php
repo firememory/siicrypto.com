@@ -46,75 +46,53 @@ text-decoration: none
 	<div>
 		<table style="width:95%;	align:auto;	margin:auto;	border:0px;	background-color:white;">
 			<tr>
-				<th style="	padding: 20px 0 20px 0;	background-color:#ddd; font-size:24px">Deposit <?=$compact['data']['data']['Amount']?> <?=$compact['data']['data']['Currency']?>
+				<th style="	padding: 20px 0 20px 0;	background-color:#ddd; font-size:24px">Your wire request has been approved in the amount of <?=$compact['data']['data']['Amount']?> <?=$compact['data']['data']['Currency']?>
 				</th>
 			</tr>
 			<tr>
 				<td><h4>Dear <?=$compact['data']['data']['username']?>,</h4>
-				<p>You have requested to deposit <?=$compact['data']['data']['data']['amountFiat']?> <?=$compact['data']['data']['Currency']?> to your SiiCrypto.com account username: <strong><?=$compact['data']['data']['username']?></strong> with Reference No: <strong><?=$compact['data']['data']['Reference']?></strong></p>
+				<p>You have requested to wire transfer <?=$compact['data']['data']['data']['amountFiat']?> <?=$compact['data']['data']['Currency']?> to your SiiCrypto.com account username: <strong><?=$compact['data']['data']['username']?></strong> with Reference No: <strong><?=$compact['data']['data']['Reference']?></strong></p>
 				
-<p>Please deposit / wire to ILS FIDUCIARIES (SWITZERLAND) SARL, Account Number: <strong><?=$compact['data']['data']['Currency']?>-100-070378-<?php
-								switch ($compact['data']['data']['Currency']){
-										case "USD":
-										print_r("1");break;
-										case "EUR":
-										print_r("2");break;
-										case "GBP":
-										print_r("3");break;
-										case "CAD":
-										print_r("4");break;										
-								}
-							?></strong> the funds.</p>
+				<p>You may now instruct your bank to wire your funds to ILS FIDUCIARIES (SWITZERLAND) SARL. Your detailed wire instructions are given below. Please use the information below to send a wire transfer to fund your SiiCrypto account. You can print out this form and give it to your bank, or use this information to complete your bank’s standard wire instruction form</p>
 				</td>
 			</tr>
 			</table>
 			<table style="width:95%;	align:auto;	margin:auto;	border:0px;	background-color:white;text-align:left">			
 				<tr>
-							<th colspan="2" style="background-color:#CAFFFF">RECEIVING BANK</th>
+							<th colspan="2" style="background-color:#CAFFFF">PLEASE WIRE THE FOLLOWING FUNDS USING THE WIRE INSTRUCTIONS BELOW:</th>
 				</tr>
 				<tr>
-					<th>BANK NAME</th>
-					<th>Commerzbank A.G</th>
+					<th colspan="2" >BANK NAME: Commerzbank A.G</th>
 				</tr>
 				<tr>
-					<th>BANK ADDRESS</th>
-					<th>Kaiserplatz 60261, Frankfurt am-Main, Germany</th>
+					<th colspan="2" >BANK ADDRESS: Kaiserplatz 60261, Frankfurt am-Main, Germany</th>
 				</tr>
 				<tr>
-					<th>SWIFT CODE</th>
-					<th>COBADEFF</th>
+					<th colspan="2" >SWIFT CODE: COBADEFF</th>
 				</tr>
 				<tr>
-					<th>For the Benefit of</th>
-					<th>National Bank of Vanuatu</th>
+					<th colspan="2" >For the Benefit of: National Bank of Vanuatu</th>
 				</tr>
 				<tr>
-					<th>Account No</th>
-					<th>400870818200</th>
+					<th colspan="2" >Account No: 400870818200</th>
 				</tr>
 				<tr>
-					<th>SWIFT CODE</th>
-					<th>NBOVVUVU</th>
+					<th colspan="2" >SWIFT CODE: NBOVVUVU</th>
 				</tr>
 				<tr>
-					<th>For the Further Benefit of</th>
-					<th>Vantu Bank</th>
+					<th colspan="2" >For the Further Benefit of: Vantu Bank</th>
 				</tr>
 				<tr>
-					<th>Bank Address</th>
-					<th>Vantu House, 133 Santina Parade, Elluk, Port Vila, Vanuatu</th>
+					<th colspan="2" >Bank Address: Vantu House, 133 Santina Parade, Elluk, Port Vila, Vanuatu</th>
 				</tr>				
 				<tr>
-					<th>Account No</th>
-					<th>0117982004</th>
+					<th colspan="2" >Account No: 0117982004</th>
 				</tr>
 				<tr>
-					<th>Vantu Account Name</th>
-					<th>ILS Fiduciaries (Switzerland) Sarl</th>
+					<th colspan="2" >Vantu Account Name: ILS Fiduciaries (Switzerland) Sarl</th>
 				</tr>
 				<tr>
-					<th>Vantu Account No</th>
-							<td><strong><?=$compact['data']['data']['Currency']?>-100-070378-<?php
+					<th colspan="2" >Vantu Account No: <strong><?=$compact['data']['data']['Currency']?>-100-070378-<?php
 								switch ($compact['data']['data']['Currency']){
 										case "USD":
 										print_r("1");break;
@@ -132,24 +110,10 @@ text-decoration: none
 					<th colspan="2" style="background-color:#CAFFFF">REFERENCE</th>
 				</tr>
 				<tr>
-					<th>SiiCrypto Client Name</th>
-					<th><?=$compact['data']['data']['data']['fullName']?></th>
+					<th colspan="2" >SiiCrypto Client Name: <?=$compact['data']['data']['data']['fullName']?></th>
 				</tr>
 				<tr>
-					<th>SiiCrypto Client Reference No (DFS)</th>
-					<th><?=$compact['data']['data']['data']['Reference']?></th>
-				</tr>
-				<tr>
-					<th>CURRENCY</th>
-					<th><?=$compact['data']['data']['data']['currency']?></th>
-				</tr>
-				<tr>
-					<th>AMOUNT</th>
-					<th><?=$compact['data']['data']['data']['amountFiat']?></th>
-				</tr>
-				<tr>
-					<th>AMOUNT WORDS</th>
-					<th><?=$compact['data']['data']['data']['currency']?> <?=strtoupper($function->number_to_words($compact['data']['data']['data']['amountFiat']))?> ONLY</th>
+					<th colspan="2" >SiiCrypto Client Reference No: <?=$compact['data']['data']['data']['Reference']?></th>
 				</tr>
 				<tr>
 					<td colspan=2>

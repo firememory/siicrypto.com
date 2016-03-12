@@ -36,11 +36,11 @@ $function = new Functions();
 						<form method="POST" action="/users/deposit" class="form">
 							<table class="table table-condensed table-bordered table-hover" >
 						<tr>
-							<th width="50%">FULL NAME OF YOUR ACCOUNT AT VANTU BANK</th>
+							<th width="50%">FULL NAME OF YOUR ACCOUNT AT VANTU BANK:</th>
 							<td>ILS FIDUCIARIES (SWITZERLAND) SARL</td>
 						</tr>
 						<tr>
-							<th>FULL ACCOUNT NUMBER OF YOUR ACCOUNT</th>
+							<th>FULL ACCOUNT NUMBER OF YOUR ACCOUNT:</th>
 							<td><?=$currency?>-100-070378-<?php
 								switch ($currency){
 										case "USD":
@@ -56,28 +56,28 @@ $function = new Functions();
 							</td>
 						</tr>
 						<tr>
-							<th>YOUR FULL NAME</th>
+							<th>YOUR FULL NAME:</th>
 							<td><input type="text" name="fullName" id="fullName" class="form-control"></td>
 						</tr>
 						<tr>
-							<th>YOUR TELEPHONE NUMBER</th>
+							<th>YOUR TELEPHONE NUMBER:</th>
 							<td><input type="text" name="telephone" id="telephone" class="form-control"></td>
 						</tr>
 						<tr>
-							<th>YOUR FULL PHYSICAL OR STREET ADDRESS <br>(<small>a PO Box number alone is not accepted</small>)</th>
+							<th>YOUR FULL PHYSICAL OR STREET ADDRESS: <br>(<small>a PO Box number alone is not accepted</small>)</th>
 							<td><input type="text" name="address" id="address" class="form-control"></td>
 						</tr>
 						<tr>
-							<th>YOUR CITY, STATE, ZIP CODE, COUNTRY</th>
+							<th>YOUR CITY, STATE, ZIP CODE, COUNTRY:</th>
 							<td><input type="text" name="addressDetail" id="addressDetail" class="form-control"></td>
 						</tr>
 						<tr>
-							<th>YOUR EMAIL ADDRESS</th>
+							<th>YOUR EMAIL ADDRESS:</th>
 							<td><input type="text" class="form-control" name="emailShow" id="emailShow" value="<?=$user['email']?>" disabled>
 							<input type="hidden" class="form-control" name="email" id="email" value="<?=$user['email']?>"></td>
 						</tr>
 						<tr>
-							<th>YOUR TYPE OF OCCUPATION/BUSINESS</th>
+							<th>YOUR TYPE OF OCCUPATION/BUSINESS:</th>
 							<td>
 								<select class="form-control" name="occupation" id="occupation">
 									<option>-- Select --</option>
@@ -122,21 +122,21 @@ $function = new Functions();
 					<th colspan="2" style="background-color:#CAFFFF">DETAILS OF YOUR INWARD WIRE PAYMENT</th>
 					</tr>
 						<tr>
-							<th>REFERENCE (<small>Quote this reference number in your deposit</small>)</th>
+							<th>REFERENCE: (<small>Quote this reference number in your deposit</small>)</th>
 							<td>
 								<input type="text" id="ReferenceShow" name="ReferenceShow" value="<?=$Reference?>" disabled  class="form-control">
 								<input type="hidden" id="Reference" name="Reference" value="<?=$Reference?>"  class="form-control">
 							</td>
 						</tr>
 						<tr>
-							<th>CURRENCY</th>
+							<th>CURRENCY:</th>
 							<td>
 								<input type="text" id="currencyShow" name="currencyShow" value="<?=$currency?>" disabled  class="form-control">
 								<input type="hidden" id="currency" name="currency" value="<?=$currency?>"  class="form-control">
 							</td>
 						</tr>
 						<tr>
-							<th>AMOUNT</th>
+							<th>AMOUNT:</th>
 							<td>
 								<input type="text" id="amountFiat" name="amountFiat" value="" class="form-control">
 							</td>
@@ -145,15 +145,15 @@ $function = new Functions();
 							<th colspan="2" style="background-color:#CAFFFF">ORIGINAL SENDING BANK</th>
 						</tr>
 						<tr>
-							<th>Bank Name</th>
+							<th>Bank Name:</th>
 							<td><input type="text" class="form-control" name="bankName" id="bankName"></td>
 						</tr>
 						<tr>
-							<th>Bank Address</th>
+							<th>Bank Address:</th>
 							<td><input type="text" class="form-control" name="bankAddress" id="bankAddress"></td>
 						</tr>
 						<tr>
-							<th>SWIFT Code</th>
+							<th>SWIFT Code:</th>
 							<td><input type="text" class="form-control" name="swiftCode" id="swiftCode"></td>
 						</tr>
 						<tr>
@@ -238,46 +238,45 @@ $function = new Functions();
 			<div style=""><blockquote><small><strong>Note:</strong> Vantu Bank’s customer service may contact you to authenticate your expected payment. Please make sure the contact details below are valid. If Vantu Bank needs to reach you and is unable to do so within 48 hours your funds may be put on hold. The purpose for the wire must be made clear in order to prevent delays.</small></blockquote></div>
 			<?php if($fileupload=="NO"){?>
 			<div class="alert alert-danger" role="alert">File not uploaded... Not sent to ILS/Vantu Bank</div>
+			<h2>Deposit request: (DSF)</h2>
 			<?php }?>
 			<?php if($fileupload=="YES"){?>
 			<div class="alert alert-success" role="alert">File uploaded... Sent to ILS/Vantu Bank</div>
+			<h2>WIRE TRANSFER INSTRUCTIONS TO BE GIVEN TO YOUR BANK</h2>
+			<p>Please use the information below to send a wire transfer to fund your SiiCrypto account. You can print out this form and give it to your bank, or use this information to complete your bank’s standard wire instruction form. These instructions have also been sent to your email address.</p>
 			<?php }?>
-			<h2>Deposit request: (DSF)</h2>
+			
 			<div>
 						<table class="table table-condensed table-bordered table-hover" >
 						<tr>
-							<th width="50%">YOUR FULL NAME</th>
+							<th width="50%">YOUR FULL NAME:</th>
 							<td><?=$depositRequest['data']['fullName']?></td>
 						</tr>
 						<tr>
-							<th>YOUR TELEPHONE NUMBER</th>
+							<th>YOUR TELEPHONE NUMBER:</th>
 							<td><?=$depositRequest['data']['telephone']?></td>
 						</tr>
 						<tr>
-							<th>REFERENCE (<small>Quote this reference number in your deposit</small>)</th>
-							<td><strong><?=$depositRequest['data']['Reference']?></strong></td>
-						</tr>
-						<tr>
-							<th>CURRENCY</th>
+							<th>CURRENCY:</th>
 							<td><?=$depositRequest['data']['currency']?></td>
 						</tr>
 						<tr>
-							<th>AMOUNT</th>
+							<th>AMOUNT:</th>
 							<td><?=$depositRequest['data']['amountFiat']?></td>
 						</tr>
 						<tr>
-							<th colspan="2" style="background-color:#CAFFFF">ORIGINAL SENDING BANK</th>
+							<th colspan="2" style="background-color:#CAFFFF">ORIGINAL SENDING BANK:</th>
 						</tr>
 						<tr>
-							<th>Bank Name</th>
+							<th>Bank Name:</th>
 							<td><?=$depositRequest['data']['bankName']?></td>
 						</tr>
 						<tr>
-							<th>Bank Address</th>
+							<th>Bank Address:</th>
 							<td><?=$depositRequest['data']['bankAddress']?></td>
 						</tr>
 						<tr>
-							<th>SWIFT Code</th>
+							<th>SWIFT Code:</th>
 							<td><?=$depositRequest['data']['swiftCode']?></td>
 						</tr>
 				<?php if($depositRequest['SenttoBank']!="Yes"){?>
@@ -288,7 +287,7 @@ $function = new Functions();
 							<td>
 								<?=$this->form->create("", array('type' => 'file', 'action'=>'uploadDepositPDF/')); ?>
 								<div id="DepositSelect" type="file" >Select file...<br>SiiCrypto-<?=$depositRequest['data']['Reference']?>-<?=gmdate('Y-M-d',time())?>-<?=$depositRequest['Currency']?>-<?=$depositRequest['Amount']?>.pdf</div><br>
-								<small><strong>CLICK ON LINK ABOVE TO LOCATE YOUR DSF FILE<br>The file name should exactly be the same as above<br>Scan & Save will change the file name. So change the file name</strong></small>
+								<small><strong>CLICK ON LINK ABOVE TO LOCATE YOUR DSF FILE</small>
 								<input id="DepositInput"  class="hideMe" style="display:none" name="DepositInput" type="file"></input>
 								<input type="hidden" name="fileToUpload" id="fileToUpload" value="SiiCrypto-<?=$depositRequest['data']['Reference']?>-<?=gmdate('Y-M-d',time())?>-<?=$depositRequest['Currency']?>-<?=$depositRequest['Amount']?>.pdf">
 								<input type="hidden" name="currency" value="<?=$depositRequest['data']['currency']?>">
@@ -306,47 +305,47 @@ $function = new Functions();
 							<th colspan="2" style="background-color:#CAFFFF">RECEIVING BANK</th>
 				</tr>
 				<tr>
-					<th>BANK NAME</th>
+					<th>BANK NAME:</th>
 					<th>Commerzbank A.G</th>
 				</tr>
 				<tr>
-					<th>BANK ADDRESS</th>
+					<th>BANK ADDRESS:</th>
 					<th>Kaiserplatz 60261, Frankfurt am-Main, Germany</th>
 				</tr>
 				<tr>
-					<th>SWIFT CODE</th>
+					<th>SWIFT CODE:</th>
 					<th>COBADEFF</th>
 				</tr>
 				<tr>
-					<th>For the Benefit of</th>
+					<th>For the Benefit of:</th>
 					<th>National Bank of Vanuatu</th>
 				</tr>
 				<tr>
-					<th>Account No</th>
+					<th>Account No:</th>
 					<th>400870818200</th>
 				</tr>
 				<tr>
-					<th>SWIFT CODE</th>
+					<th>SWIFT CODE:</th>
 					<th>NBOVVUVU</th>
 				</tr>
 				<tr>
-					<th>For the Further Benefit of</th>
+					<th>For the Further Benefit of:</th>
 					<th>Vantu Bank</th>
 				</tr>
 				<tr>
-					<th>Bank Address</th>
+					<th>Bank Address:</th>
 					<th>Vantu House, 133 Santina Parade, Elluk, Port Vila, Vanuatu</th>
 				</tr>				
 				<tr>
-					<th>Account No</th>
+					<th>Account No:</th>
 					<th>0117982004</th>
 				</tr>
 				<tr>
-					<th>Vantu Account Name</th>
+					<th>Vantu Account Name:</th>
 					<th>ILS Fiduciaries (Switzerland) Sarl</th>
 				</tr>
 				<tr>
-					<th>Vantu Account No</th>
+					<th>Vantu Account No:</th>
 							<td><strong><?=$currency?>-100-070378-<?php
 								switch ($currency){
 										case "USD":
@@ -365,30 +364,18 @@ $function = new Functions();
 					<th colspan="2" style="background-color:#CAFFFF">REFERENCE</th>
 				</tr>
 				<tr>
-					<th>SiiCrypto Client Name</th>
+					<th>SiiCrypto Client Name:</th>
 					<th><?=$depositRequest['data']['fullName']?></th>
 				</tr>
 				<tr>
-					<th>SiiCrypto Client Reference No (DFS)</th>
+					<th>SiiCrypto Client Reference No:</th>
 					<th><?=$depositRequest['data']['Reference']?></th>
 				</tr>
 				<tr>
-					<th>CURRENCY</th>
-					<th><?=$depositRequest['data']['currency']?></th>
-				</tr>
-				<tr>
-					<th>AMOUNT</th>
-					<th><?=$depositRequest['data']['amountFiat']?></th>
-				</tr>
-				<tr>
-					<th>AMOUNT WORDS</th>
-					<th><?=$depositRequest['data']['currency']?> <?=strtoupper($function->number_to_words($depositRequest['data']['amountFiat']))?> ONLY</th>
-				</tr>
-				<tr>
 					<td colspan=2>
-					<div style=""><blockquote><small><strong>Note:</strong> After you send the funds to Vantu Bank, wait for 3 to 7 working days for the funds to be credited to your SiiCrypto Account.</small></blockquote>
+					<div style=""><blockquote><small><strong>Note:</strong> After you send the funds to Vantu Bank, wait for 3 to 7 working days for the funds to be credited to your SiiCrypto Account. This wire request will remain open until your funds have been received. In the event that funds are not received then you will need to delete the request and the DSF before you can make a new wire transfer. </small></blockquote>
 					
-				<p>If you are not able to send the funds through your bank, it is advisable to delete this request. Please <a href="/users/deleteDepositRequest/<?=$depositRequest['data']['Reference']?>/<?=String::hash($depositRequest['_id'])?>/<?=$depositRequest['data']['currency']?>">Delete this request</a> and create a new DSF.</p>
+				<p>Please <a href="/users/deleteDepositRequest/<?=$depositRequest['data']['Reference']?>/<?=String::hash($depositRequest['_id'])?>/<?=$depositRequest['data']['currency']?>">delete this request</a> and create a new DSF.</p>
 					</div>
 					</td>
 				</tr>
@@ -402,16 +389,16 @@ $function = new Functions();
 			<div role=tabpanel class="tab-pane fade  tab-content-withdrawal" id=profile aria-labelledby=profile-tab style="padding:10px" > 
 				<!-- //////////////////////////////////////////////////////////////////////////////////////-->
 				<?php $Reference = $details['username'].'-'.rand(10000,99999);?>
-				<div style=""><blockquote><small><strong>Note:</strong> Withdrawal from your account will be processed by Admin SiiCrypto and will be instructed to Vantu Bank. The bank will process the funds within 2 to 3 working day. The actual time depends on the routing of your bank.</small></blockquote></div>
+				<div style=""><blockquote><small><strong>To withdraw funds for your account, please complete the below Withdrawal Request. SiiCrypto will process your request and email you a confirmation. Wiring to your bank may take a few days depending on your bank routing instruction.</small></blockquote></div>
 						<h2>Withdrawal Request</h2>
 						<form method="POST" action="/users/withdraw" class="form">
 						<table class="table table-condensed table-bordered table-hover" >
 						<tr>
-							<th width="50%">VANTU BANK's ACCOUNT</th>
+							<th width="50%">VANTU BANK's ACCOUNT NAME:</th>
 							<td>ILS FIDUCIARIES (SWITZERLAND) SARL</td>
 						</tr>
 						<tr>
-							<th>ACCOUNT NUMBER OF YOUR ACCOUNT</th>
+							<th>ACCOUNT NUMBER:</th>
 							<td><?=$currency?>-100-070378-<?php
 								switch ($currency){
 										case "USD":
@@ -427,18 +414,18 @@ $function = new Functions();
 							</td>
 						</tr>
 						<tr>
-							<th>REFERENCE NO</th>
+							<th>SIICRYPTO REFERENCE NO:</th>
 							<th><?=$Reference?>
 							<input type="hidden" id="withdrawReference" name="withdrawReference" value="<?=$Reference?>"  class="form-control">
 							<input type="hidden" id="withdrawCurrency" name="withdrawCurrency" value="<?=$currency?>"  class="form-control">
 							</th>
 						</tr>
 						<tr>
-							<th>ACCOUNT BALANCE</th>
+							<th>YOUR SIICRYPTO ACCOUNT BALANCE:<br><small>(Withdrawal  Request should not exceed this amount)</small></th>
 							<td><?=number_format($details['balance'][$currency],2)?> <?=$currency?></td>
 						</tr>
 						<tr>
-							<th>WITHDRAWAL AMOUNT</th>
+							<th>WITHDRAWAL AMOUNT TO BE WIRED:</th>
 							<td>
 							<div class="input-group">
 								<input type="number" class="form-control" min="10" max="<?=$details['balance'][$currency]?>" value="" step="10" id="withdrawAmount" name="withdrawAmount">
@@ -447,33 +434,33 @@ $function = new Functions();
 							</td>
 						</tr>
 						<tr>
-							<th colspan="2" style="background-color:#CAFFFF">RECEIVING ACCOUNT DETAILS</th>
+							<th colspan="2" style="background-color:#CAFFFF">SIICRYPTO CLIENT’S RECEIVING BANK ACCOUNT DETAILS</th>
 						</tr>
 						<tr>
-							<th>FULL NAME</th>
+							<th>SIICRYPTO CLIENT FULL NAME:</th>
 							<td><input type="text" class="form-control" value="" onblur="this.value=this.value.toUpperCase();" id="withdrawName" name="withdrawName"></td>
 						</tr>
 						<tr>
-							<th>ACCOUNT NUMBER</th>
+							<th>BANK ACCOUNT NUMBER:</th>
 							<td><input type="text" class="form-control" value="" onblur="this.value=this.value.toUpperCase();" id="withdrawAccountNumber" name="withdrawAccountNumber"></td>
 						</tr>						
 						<tr>
-							<th>BANK NAME</th>
+							<th>BANK NAME:</th>
 							<td><input type="text" class="form-control" value="" onblur="this.value=this.value.toUpperCase();" id="withdrawBankName" name="withdrawBankName"></td>
 						</tr>
 						<tr>
-							<th>BANK ADDRESS</th>
+							<th>BANK ADDRESS:</th>
 							<td><input type="text" class="form-control" value="" onblur="this.value=this.value.toUpperCase();" id="withdrawBankAddress" name="withdrawBankAddress"></td>
 						</tr>
 						<tr>
-							<th>BANK SWIFT CODE</th>
+							<th>BANK SWIFT CODE:</th>
 							<td><input type="text" class="form-control" value="" onblur="this.value=this.value.toUpperCase();" id="withdrawSwiftCode" name="withdrawSwiftCode"></td>
 						</tr>
 						<tr>
 							<td colspan="2">
 							<ol>
 								<li><input type="checkbox"  name="withdrawAgree" id="withdrawAgree" onclick="CheckWithdrawForm();"> 
-								I/We confirm that this withdrwal will be transmitted to my own account only. I/We understand that under the requirements of Vanuatu’s Anti-Money Laundering & Counter-Terrorism Financing Act No. 13 of 2014, Regulations made thereunder and Vantu Bank’s and National Bank of Vanuatu’s respective AML/CTF Compliance Manuals as currently in force, your policy may require both banks to be satisfied as to the source of this payment before accepting any outward wire transfer and that my/our transfer(s) may be held pending or returned in the absence of such confirmation.</li>
+								I/We confirm that the funds requested to be withdrawn from my SiiCrypto account  will only be transmitted to my/our own bank account. I/We understand that under the requirements of Vanuatu’s Anti-Money Laundering & Counter-Terrorism Financing Act No. 13 of 2014, Regulations made thereunder and Vantu Bank’s and National Bank of Vanuatu’s respective AML/CTF Compliance Manuals as currently in force, your policy may require both banks to be satisfied as to the source of this payment before accepting any outward wire transfer and that my/our transfer(s) may be held pending or returned in the absence of such confirmation.</li>
 							</ol>
 							<div class="alert alert-danger" id="AlertWithdrawSelect" style="display:none">Fill all details and then check the above checkbox</div>
 							</td>
