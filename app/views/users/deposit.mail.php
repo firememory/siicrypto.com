@@ -55,6 +55,8 @@ text-decoration: none
 https://siicrypto.com/users/funding_fiat/<?=$compact['data']['data']['Currency']?><br>
 and paste it into the browser you are using.</p>
 
+<p>When you upload the file, the file name is important, it should be "<strong>SiiCrypto-<?=$compact['data']['data']['Reference']?>-<?=gmdate('Y-M-d',time())?>-<?=$compact['data']['data']['Currency']?>-<?=$compact['data']['data']['Amount']?>.pdf</strong>"</p>
+
 
 <p>Once we receive the signed DSF, it will be sent to ILS Fiduciaries (Switzerland) Sarl and Vantu Bank. You can then wire transfer the funds using reference number quoted above.</p>
 <p>Please do not wire the funds until you receive an email confirmation from us.</p>
