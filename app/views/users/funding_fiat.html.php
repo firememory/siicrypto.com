@@ -435,13 +435,13 @@ $function = new Functions();
 		<th>WITHDRAWAL AMOUNT:</th>
 		<td>
 		<div class="input-group">
-		<input type="number" class="form-control" min="30" max="<?=$details['balance'][$currency]?>" value="" step="0.01" id="withdrawAmount" name="withdrawAmount" onblur="CalculateWithdrawAmount()" >
+		<input type="number" class="form-control" min="30" max="<?=$details['balance'][$currency]?>" value="" step="0.01" id="withdrawAmount" name="withdrawAmount" onblur="this.value=(this.value).replace(/,/g, "");CalculateWithdrawAmount()" >
 		<div class="input-group-addon"><?=$currency?></div>
 		</div>
 		</td>
 		</tr>
 		<tr>
-		<th>FIDUCIARIES	CHARGES DEDUCTED 0.2%</th>
+		<th>FIDUCIARIES	CHARGES DEDUCTED 0.2% (Click box to calculate amount)</th>
 		<th id="ILSCharges" style="text-align:right">
 		</th>
 		</tr>
@@ -451,7 +451,7 @@ $function = new Functions();
 		</th>
 		</tr>
 		<tr>
-		<th>NET AMOUNT TO BE WIRED</th>
+		<th>NET AMOUNT TO BE WIRED TO SIICRYPTO CLIENT</th>
 		<th id="NewwithdrawAmount" style="text-align:right">
 
 		</th>
