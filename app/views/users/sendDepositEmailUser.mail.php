@@ -107,19 +107,11 @@ text-decoration: none
 						</td>
 				</tr>
 				<tr>
-					<th colspan="2" style="background-color:#CAFFFF">REFERENCE</th>
-				</tr>
-				<tr>
-					<th colspan="2" >SiiCrypto Client Name: <?=$compact['data']['data']['data']['fullName']?></th>
-				</tr>
-				<tr>
-					<th colspan="2" >SiiCrypto Client Reference No: <?=$compact['data']['data']['data']['Reference']?></th>
+					<th colspan="2" style="background-color:#CAFFFF">REFERENCE: SiiCrypto Client Name: <?=$compact['data']['data']['data']['fullName']?> SiiCrypto Client Reference No: <?=$compact['data']['data']['data']['Reference']?></th>
 				</tr>
 				<tr>
 					<td colspan=2>
 					<div style=""><small><strong>Note:</strong> After you send the funds to Vantu Bank, wait for 3 to 7 working days for the funds to be credited to your SiiCrypto Account.</small>
-
-
 			<tr>
 				<td colspan=2>IP: <?=$_SERVER['REMOTE_ADDR'];?><br>
 <?=$tor?>

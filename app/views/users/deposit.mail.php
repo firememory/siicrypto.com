@@ -51,9 +51,9 @@ text-decoration: none
 
 <p>Your Declaration of Source of Funds (“DSF”) is attached to this email. Please print it out, sign it, and scan it. 
 <p>If the browser you used to connect to SiiCrypto is your primary browser then you can upload the signed DSF to this link <a href="https://siicrypto.com/users/funding_fiat/<?=$compact['data']['data']['Currency']?>" target="_blank">UPLOAD DSF HERE</a>.</p>
-<p>If your primary browser is not the browser you used to connect to SiiCrypto, then copy this <br>
+<p>If your primary browser is not the browser you used to connect to SiiCrypto, then copy this link<br>
 https://siicrypto.com/users/funding_fiat/<?=$compact['data']['data']['Currency']?><br>
-and paste it into the browser you are using.</p>
+and paste it into the browser you are using.  You do not need to close down your open SiiCrypto webpage before pasting this link into your browser.</p>
 
 <p>If your SiiCrypto webpage has been open for longer than twenty minutes you will been auto logged out and you will need to login again.</p>
 

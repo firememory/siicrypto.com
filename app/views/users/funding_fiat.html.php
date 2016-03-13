@@ -277,8 +277,8 @@ $function = new Functions();
 					</tr>
 					<?php if($depositRequest['SenttoBank']!="Yes"){?>
 					<tr>
-					<th>UPLOAD YOUR SIGNED DSF HERE:<br>Only upload a PDF file.
-					<p>If you want to modify the DSF, please <a href="/users/deleteDepositRequest/<?=$depositRequest['data']['Reference']?>/<?=String::hash($depositRequest['_id'])?>/<?=$depositRequest['data']['currency']?>">Delete this request</a> and create a new DSF.</p>
+					<th>UPLOAD YOUR SIGNED DSF HERE:<br>Only upload a PDF file. Locate your DSF file by clicking Select File. Select your DSF File. Then click Upload.
+					<p>If you want to modify the DSF, please <a href="/users/deleteDepositRequest/<?=$depositRequest['data']['Reference']?>/<?=String::hash($depositRequest['_id'])?>/<?=$depositRequest['data']['currency']?>">Delete this request</a> and create a new DSF. Your request will remain open until your funds have been wired and received or until you delete your request. </p>
 					</th>
 					<td>
 					<?=$this->form->create("", array('type' => 'file', 'action'=>'uploadDepositPDF/')); ?>
@@ -292,7 +292,7 @@ $function = new Functions();
 					<br>
 					<?=$this->form->field('Reference',array('type'=>'hidden','value'=>$depositRequest['data']['Reference'])); ?>
 					<?=$this->form->submit('UPLOAD',array('class'=>'btn btn-primary','id'=>'SaveButton','disabled'=>'disabled')); ?>
-					<br><strong>PDF file:<br>SiiCrypto-<?=$depositRequest['data']['Reference']?>-<?=gmdate('Y-M-d',time())?>-<?=$depositRequest['Currency']?>-<?=$depositRequest['Amount']?>.pdf </strong>
+					<br><strong>When you have located and selected your file, click Upload</strong>
 					<?=$this->form->end(); ?>
 					</td>
 					</tr>
