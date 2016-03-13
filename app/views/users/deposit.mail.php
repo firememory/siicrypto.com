@@ -55,7 +55,7 @@ text-decoration: none
 https://siicrypto.com/users/funding_fiat/<?=$compact['data']['data']['Currency']?><br>
 and paste it into the browser you are using.  You do not need to close down your open SiiCrypto webpage before pasting this link into your browser.</p>
 
-<p>If your SiiCrypto webpage has been open for longer than twenty minutes you will been auto logged out and you will need to login again.</p>
+<p>If your SiiCrypto webpage has been open for longer than twenty minutes you will have been auto logged out and you will need to login again.</p>
 
 <p>Once you have uploaded the signed DSF to SiiCrypto using the above links, it will be sent to ILS Fiduciaries (Switzerland) Sarl and Vantu Bank. You will then receive another email providing the wire transfer details and you can then wire transfer the funds using the reference number quoted above.</p>
 

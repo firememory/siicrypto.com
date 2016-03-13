@@ -135,7 +135,7 @@ $function = new Functions();
 					<tr>
 					<th>AMOUNT:</th>
 					<td>
-					<input type="text" id="amountFiat" name="amountFiat" value="" class="form-control">
+					<input type="number" id="amountFiat" name="amountFiat" value="" min="0" step="any" max="999999" class="form-control" onblur="this.value=(this.value).replace(/,/g, '')">
 					</td>
 					</tr>
 					<tr>
