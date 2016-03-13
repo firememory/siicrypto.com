@@ -18,7 +18,8 @@ class SessionsController extends \lithium\action\Controller {
 			$noauth = false;
 			//perform the authentication check and redirect on success
 			
-			Session::delete('default');				
+			Session::delete('default');		
+			Session::delete('member');			
 			$response = file_get_contents("http://ipinfo.io/{$_SERVER['REMOTE_ADDR']}");
 			$IPResponse = json_decode($response);
 			if($IPResponse->tor) {

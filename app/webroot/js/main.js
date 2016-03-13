@@ -610,6 +610,8 @@ function CheckWithdrawForm(){
 		$("#AlertWithdrawSelect").show();
 		$('#WithdrawSubmit').attr("disabled","disabled");		
 	}
+	
+	CalculateWithdrawAmount();
 }
 
 
@@ -623,18 +625,35 @@ $("#DepositSelect").click(function() {
 			
     });
 });
-function CalculateWithdrawAmount(value,currency,max){
-	if(value>max){value=max;}
-	if(value<30){value=30;}
-	if(value>max){$("#withdrawAmount").val(0);return false;}
+function CalculateWithdrawAmount(){
+	var currency = $("#withdrawCurrency").val();
+	var max = parseFloat($("#maxWithdraw").val());
+	var value = parseFloat($("#withdrawAmount").val());
+	
 	var num = value * 0.2 / 100;
+	var VantuMin = parseFloat($("#withdrawVantuChargesMin").val());
+	var VantuMax = parseFloat($("#withdrawVantuChargesMax").val());
+	var VantuPercent = parseFloat($("#withdrawVantuChargesPercent").val());
+
+	if(value>max){value=max;}
+	if(value>max){$("#withdrawAmount").val(max);return false;}
+	if(value<VantuMin){value=VantuMin+5.16;}
+	
+	var VantuCharges = 0;
+	VantuCharges = value * VantuPercent / 100;
+	if (VantuCharges < VantuMin){VantuCharges = VantuMin;}
+	if (VantuCharges > VantuMax){VantuCharges = VantuMax;}
+	VantuCharges = (Math.round(VantuCharges * 100) / 100).toFixed(2);
 	var ILS = (Math.round(num * 100) / 100).toFixed(2);
+	
 	$("#ILSCharges").html(ILS + " " + currency);
 	$("#withdrawILSCharges").val(ILS);
-	$("#NewwithdrawAmount").html((value - ILS - 25).toFixed(2) + " " + currency);
-	$("#netWithdrawAmount").val((value - ILS - 25).toFixed(2));
+	$("#NewwithdrawAmount").html((value - ILS - VantuCharges).toFixed(2) + " " + currency);
+	$("#netWithdrawAmount").val((value - ILS - VantuCharges).toFixed(2));
+	$("#VantuCharges").html(VantuCharges  + " " + currency);
 	$("#withdrawAmount").val(value);
 }
+
 $("#WithdrawSelect").click(function() {
 	$("#WithdrawInput").trigger("click");
     $('#WithdrawInput').change(function() {

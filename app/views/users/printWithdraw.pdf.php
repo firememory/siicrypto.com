@@ -42,20 +42,20 @@ $pdf->SetAutoPageBreak(true);
 				$pdf->writeHTML($html, true, 0, true, 0);
 				$pdf->SetTextColor(0, 0, 0);
 				$pdf->SetXY(20,25,false);
-				$html = "<div style='text-align:center'>Withdrawal wire instructions submitted via email for outward wire payment.<br> Reference No: ".$data['Reference']."</div>";
-				$html = $html . "<div><small>Instructions: Please fully complete and sign this form before sending this form to ILS FIDUCIARIES (SWITZERLAND) SARL / Vantu Bank. <br></small></div>";
+				$html = "<div style='text-align:center'>Withdrawal wire instructions Form to be signed and submitted by uploading to SiiCrypto for outward wire payment.<br> Reference No: ".$data['Reference']."</div>";
+				$html = $html . "<div><small>Instructions: Please fully complete and sign this form before uploading. <br></small></div>";
 			
 				$html = $html . '<table border="1" cellspacing="0" cellpadding="2" style="border:1px solid black" >
 						<tr>
-							<th colspan="2" style="text-align:center;background-color:#CAFFFF">DETAILS OF YOUR ACCOUNT AT VANTU BANK LTD.</th>
+							<th colspan="2" style="text-align:center;background-color:#CAFFFF">DETAILS OF YOUR ACCOUNT</th>
 						</tr>
 						<tr>
-							<th width="50%"><small>FULL NAME OF YOUR ACCOUNT AT VANTU BANK</small></th>
+							<th width="50%"><small>BANK ACCOUNT NAME:</small></th>
 							<td><small>ILS FIDUCIARIES (SWITZERLAND) SARL</small></td>
 						</tr>
 						<tr>
-							<th><small>FULL ACCOUNT NUMBER OF YOUR ACCOUNT</small></th>
-							<td>100-070378-<strong>';
+							<th><small>BANK ACCOUNT NUMBER:</small></th>
+							<td>100-070378-';
 								switch ($data['Currency']){
 										case "USD":
 										$html = $html. "1"; break;
@@ -66,10 +66,10 @@ $pdf->SetAutoPageBreak(true);
 										case "CAD":
 										$html = $html. "4"; break;
 								}
-				$html = $html.'</strong>
+				$html = $html.'
 							</td>
 						</tr><tr>
-							<th><small>YOUR FULL NAME</small></th>
+							<th><small>YOUR FULL NAME:</small></th>
 							<td>';
 				$html = $html.$data['data']['AccountName'];
 				$html = $html.'</td>
@@ -87,7 +87,7 @@ $pdf->SetAutoPageBreak(true);
 				$html = $html.'</td>
 						</tr>
 						<tr>
-							<th colspan="2" style="text-align:center;background-color:#CAFFFF">DETAILS OF YOUR OUTWARD WIRE PAYMENT</th>
+							<th colspan="2" style="text-align:center;background-color:#CAFFFF">AMOUNT OF YOUR OUTWARD WIRE PAYMENT</th>
 						</tr>
 						<tr>
 							<th><small>CURRENCY</small></th>
@@ -96,35 +96,35 @@ $pdf->SetAutoPageBreak(true);
 				$html = $html.'</td>
 						</tr>
 						<tr>
-							<th><small>AMOUNT</small></th>
+							<th><small>NET AMOUNT TO BE WIRED:</small></th>
 							<td>';
 				$html = $html.number_format($data['netAmount'],2);
 				$html = $html.'</td>
 						</tr>
 						<tr>
-							<th><small>AMOUNT (Words)</small></th>
+							<th><small>AMOUNT: (Words)</small></th>
 							<td>';
 				$Amount = ucwords($function->number_to_words($data['netAmount']))." ".$data['Currency']. " ONLY";				
 				$html = $html.$Amount;
 				$html = $html.'</td>
 						</tr>
 						<tr>
-							<th><small>VANTU BANK CHARGES</small></th>
+							<th><small>VANTU BANK CHARGES DEDUCTED:</small></th>
 							<td>';
 				$html = $html.number_format($data['VantuCharges'],2);
 				$html = $html.'</td>
 						</tr>
 						<tr>
-							<th><small>ISL CHARGES</small></th>
+							<th><small>FIDUCIARY COST DEDUCTED</small></th>
 							<td>';
 				$html = $html.number_format($data['ILSCharges'],2);
 				$html = $html.'</td>
 						</tr>						
 						<tr>
-							<th colspan="2" style="text-align:center;background-color:#CAFFFF">DETAILS OF THE OUTWARD WIRE PAYMENT</th>
+							<th colspan="2" style="text-align:center;background-color:#CAFFFF">DETAILS OF THE RECEIVING BANK FOR WIRE PAYMENT</th>
 						</tr>
 						<tr>
-							<th><small>FULL NAME OF ORIGINATING PARTY</small></th>
+							<th><small>FULL NAME OF RECEIVING PARTY</small></th>
 							<td>';
 				$html = $html.$data['data']['AccountName'];							
 				$html = $html.'</td>

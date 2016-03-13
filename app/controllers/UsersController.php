@@ -747,7 +747,7 @@ class UsersController extends \lithium\action\Controller {
 			return compact('details','address','txfee','title','transactions','user','currency','currencyName')	;
 	}
 	public function funding_fiat($currency='USD',$fileupload=null){
-				$title = "Funding Fiat";
+		$title = "Funding Fiat";
 		$currency = strtoupper($currency);
 		$user = Session::read('default');
 		if ($user==""){		return $this->redirect('/login');}
@@ -774,7 +774,8 @@ class UsersController extends \lithium\action\Controller {
 				)
 		));
 		$settings = Settings::find('first');		
-			return compact('details','title','depositRequest','withdrawRequest','user','settings','currency','fileupload')	;
+		$parameters = Parameters::find('first');
+			return compact('details','title','depositRequest','withdrawRequest','user','settings','currency','fileupload','parameters')	;
 	}
 	public function deleteDepositRequest($Reference=null,$id=null,$currency="USD"){
 		$user = Session::read('default');

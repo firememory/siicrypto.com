@@ -393,15 +393,18 @@ $function = new Functions();
 	
 	<form method="POST" action="/users/withdraw" class="form">
 	<input type="hidden" id="withdrawILSCharges" name="withdrawILSCharges" value="0"  class="form-control">
-	<input type="hidden" id="withdrawVantuCharges" name="withdrawVantuCharges" value="25"  class="form-control">
+	<input type="hidden" id="withdrawVantuChargesMin" name="withdrawVantuChargesMin" value="<?=$parameters['withdrawal'][$currency]['min']?>"  class="form-control">
+	<input type="hidden" id="withdrawVantuChargesMax" name="withdrawVantuChargesMax" value="<?=$parameters['withdrawal'][$currency]['max']?>"  class="form-control">
+	<input type="hidden" id="withdrawVantuCharges" name="withdrawVantuCharges" value="<?=$parameters['withdrawal'][$currency]['min']?>"  class="form-control">
+	<input type="hidden" id="withdrawVantuChargesPercent" name="withdrawVantuChargesPercent" value="<?=$parameters['withdrawal'][$currency]['percent']?>"  class="form-control">
 	<input type="hidden" id="netWithdrawAmount" name="netWithdrawAmount" value="0"  class="form-control">
 		<table class="table table-condensed table-bordered table-hover" >
 		<tr>
-		<th style="width:50%">VANTU BANK's ACCOUNT NAME:</th>
+		<th style="width:50%">BANK ACCOUNT NAME:</th>
 		<td>ILS FIDUCIARIES (SWITZERLAND) SARL</td>
 		</tr>
 		<tr>
-		<th>ACCOUNT NUMBER:</th>
+		<th>BANK ACCOUNT NUMBER:</th>
 		<td><?=$currency?>-100-070378-<?php
 		switch ($currency){
 		case "USD":
@@ -421,33 +424,34 @@ $function = new Functions();
 		<th><?=$Reference?>
 		<input type="hidden" id="withdrawReference" name="withdrawReference" value="<?=$Reference?>"  class="form-control">
 		<input type="hidden" id="withdrawCurrency" name="withdrawCurrency" value="<?=$currency?>"  class="form-control">
+		<input type="hidden" id="maxWithdraw" name="maxWithdraw" value="<?=$details['balance'][$currency]?>"  class="form-control">
 		</th>
 		</tr>
 		<tr>
-		<th>YOUR SIICRYPTO ACCOUNT BALANCE:<br><small>(Withdrawal  Request should not exceed this amount)</small></th>
+		<th>YOUR SIICRYPTO ACCOUNT BALANCE:<br><small>(Withdrawal Request should not exceed this amount)</small></th>
 		<td><?=number_format($details['balance'][$currency],2)?> <?=$currency?></td>
 		</tr>
 		<tr>
 		<th>WITHDRAWAL AMOUNT:</th>
 		<td>
 		<div class="input-group">
-		<input type="number" class="form-control" min="30" max="<?=$details['balance'][$currency]?>" value="" step="0.01" id="withdrawAmount" name="withdrawAmount" onblur="CalculateWithdrawAmount(this.value,'<?=$currency?>',<?=$details['balance'][$currency]?>)" >
+		<input type="number" class="form-control" min="30" max="<?=$details['balance'][$currency]?>" value="" step="0.01" id="withdrawAmount" name="withdrawAmount" onblur="CalculateWithdrawAmount()" >
 		<div class="input-group-addon"><?=$currency?></div>
 		</div>
 		</td>
 		</tr>
 		<tr>
-		<th>ILS	FIDUCIARIES	CHARGES 0.2%</th>
+		<th>FIDUCIARIES	CHARGES DEDUCTED 0.2%</th>
 		<th id="ILSCharges" style="text-align:right">
 		</th>
 		</tr>
 		<tr>
-		<th>VANTU BANK TRANSFER	CHARGES</th>
-		<th id="VantuCharges" style="text-align:right">25.00 <?=$currency?>
+		<th>VANTU BANK CHARGES DEDUCTED:</th>
+		<th id="VantuCharges" style="text-align:right"><?=$parameters['withdrawal'][$currency]['min']?> <?=$currency?>
 		</th>
 		</tr>
 		<tr>
-		<th>WITHDRAWAL AMOUNT TO BE WIRED</th>
+		<th>NET AMOUNT TO BE WIRED</th>
 		<th id="NewwithdrawAmount" style="text-align:right">
 
 		</th>
@@ -498,7 +502,7 @@ $function = new Functions();
 	</div>
 	<?php if($fileupload=="NO"){?>
 	<div class="alert alert-danger" role="alert">File not uploaded... Not sent to ILS/Vantu Bank</div>
-	<h2>Withdrawal Request Form: (DSF)</h2>
+	<h2>Withdrawal Request Form: (WRF)</h2>
 	<?php }?>
 	<?php if($fileupload=="YES"){?>
 	<div class="alert alert-success" role="alert">File uploaded... Sent to Admin for approval</div>

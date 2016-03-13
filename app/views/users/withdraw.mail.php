@@ -47,9 +47,11 @@ text-decoration: none
 			</tr>
 			<tr>
 				<td><h4>Hi <?=$compact['data']['data']['username']?>,</h4>
-<p>You have requested to withdraw <?=$compact['data']['data']['Amount']?> <?=$compact['data']['data']['Currency']?> to your SiiCrypto.com account <strong><?=$compact['data']['data']['username']?></strong> with Reference No: <strong><?=$compact['data']['data']['Reference']?></strong></p>
-<p>Please print, sign, scan and upload the document <a href="https://siicrypto.com/users/funding_fiat/USD" target="_blank">here</a>.</p>
-<p>Once we receive the signed document, it will be sent to ILS and Vantu Bank. You can then deposit the funds with the reference number to Vantu Bank.</p>
+<p>You have requested to withdraw <?=$compact['data']['data']['Amount']?> <?=$compact['data']['data']['Currency']?> from your SiiCrypto.com account <strong><?=$compact['data']['data']['username']?></strong> with Reference No: <strong><?=$compact['data']['data']['Reference']?></strong></p>
+<p>Your SiiCrypto Withdrawal Form is attached to this email. Please print it out, sign it, and scan it. If the browser you used to connect to SiiCrypto is your primary browser then you can upload the document <a href="https://siicrypto.com/users/funding_fiat/<?=$compact['data']['data']['Currency']?>" target="_blank">here</a>.</p>
+<p>If your primary browser is not the browser you used to connect to SiiCrypto, then copy this link https://siicrypto.com/users/funding_fiat/<?=$compact['data']['data']['Currency']?> and paste it into the browser you are using. You do not need to close down your open SiiCrypto webpage before pasting this link into your browser. If your SiiCrypto webpage has been open for longer than twenty minutes you will been auto logged out and you will need to login again.</p>
+
+<p>Once we receive the signed SiiCrypto Withdrawal Form your instructions will be processed .</p>
 				</td>
 			</tr>
 			<tr>
