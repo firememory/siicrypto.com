@@ -65,8 +65,8 @@
 		Please read the <a href="/company/termsofservice">terms of service</a> page before you sign up.<br>
 		<h3>Security</h3>
 		We use <strong>Two Factor Authentication</strong> for your account to login to <?=COMPANY_URL?>.<br>
-		We use <strong>Time-based One-time Password Algorithm (TOTP)</strong> for login, withdrawal/deposits and settings.<br>
-		Optional Google Authenticator can be activated via settings.<br>
+		We also offer you the option of using <strong>Time-based One-time Password Algorithm (TOTP)</strong> for login, withdrawal/deposits and settings. This is an option and not a requirement. If you decide to use Google Authenticator TOTP you will enjoy even stronger security capability. <br>
+		Optional Google Authenticator can be activated via the TOTP links below.<br>
 Customers must password verify XGC or BTC withdrawal.<br>
 All XGC or BTC withdrawals are approved by SiiCrypto for extra security.<br>
 		<p><h3>TOTP Project and downloads</h3>
