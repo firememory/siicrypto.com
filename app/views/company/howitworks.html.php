@@ -21,7 +21,7 @@
 
          <li>withdraw Bitcoin from your account to your Bitcoin wallet through the page <a href="/users/funding/BTC">Funding/BTC</a>, by clicking on BTC on the Dashboard or</li>
 
-         <li>withdraw fiat currency from your account by clicking on the currency your require on the Dashboard.</li>
+         <li>withdraw fiat currency from your account by clicking on the currency you require on the Dashboard.</li>
 									</ul>
 </ol>
 
