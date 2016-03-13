@@ -623,3 +623,25 @@ $("#DepositSelect").click(function() {
 			
     });
 });
+function CalculateWithdrawAmount(value,currency,max){
+	if(value>max){value=max;}
+	if(value<30){value=30;}
+	if(value>max){$("#withdrawAmount").val(0);return false;}
+	var num = value * 0.2 / 100;
+	var ILS = (Math.round(num * 100) / 100).toFixed(2);
+	$("#ILSCharges").html(ILS + " " + currency);
+	$("#withdrawILSCharges").val(ILS);
+	$("#NewwithdrawAmount").html((value - ILS - 25).toFixed(2) + " " + currency);
+	$("#netWithdrawAmount").val((value - ILS - 25).toFixed(2));
+	$("#withdrawAmount").val(value);
+}
+$("#WithdrawSelect").click(function() {
+	$("#WithdrawInput").trigger("click");
+    $('#WithdrawInput').change(function() {
+       $("#SelectedWithdrawFile").html($("#WithdrawInput").val());
+							$("#SelectedSourceFileWithdraw").val($("#WithdrawInput").val());
+			
+								$("#SaveWithdrawButton").removeAttr("disabled");
+			
+    });
+});

@@ -34,13 +34,13 @@ $pdf->SetTitle('SiiCrypto - '.$data['Reference']);
 
 $pdf->SetAutoPageBreak(true);
 				$Reference = $data['Reference'];
-				$btcword = ucwords($function->number_to_words($value))." BTC";
+				
 				$pdf->AddPage('P');
 				$pdf->Image(LITHIUM_APP_PATH.'/webroot/img/vantuBank.png', 10, 17, 0, 0, '', '', '', false, 100, '', false, false, 0);
 				$pdf->SetTextColor(0, 0, 0);
 				$pdf->SetXY(20,55,false);
 				$html = "<div style='text-align:center'>Declaration of Source of Funds (DSF) submitted via email for inward wire payment.<br> Reference No: ".$data['Reference']."</div>";
-				$html = $html . "<div><small>Instructions: Please fully complete and sign this form before wiring your funds. <br>When you click the 'Submit' button below a copy will be sent to Vantu Bank immediately.</small></div>";
+				$html = $html . "<div><small>Instructions: Please fully complete and sign this form before wiring your funds. </small></div>";
 				
 				$html = $html . "<div><small>Note: Vantu Bank's customer service may contact you to authenticate your expected payment. Please make sure the contact details below are valid. If Vantu Bank needs to reach you and is unable to do so within 48 hours your funds may be put on hold. The purpose for the wire must be made clear in order to prevent delays.</small></div>";
 				

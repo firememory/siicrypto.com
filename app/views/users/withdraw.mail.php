@@ -47,11 +47,9 @@ text-decoration: none
 			</tr>
 			<tr>
 				<td><h4>Hi <?=$compact['data']['data']['username']?>,</h4>
-<p>You have requested to withdraw <?=$compact['data']['data']['data']['amountFiat']?> <?=$compact['data']['data']['Currency']?> to your SiiCrypto.com account <strong><?=$compact['data']['data']['username']?></strong> with Reference No: <strong><?=$compact['data']['data']['Reference']?></strong></p>
+<p>You have requested to withdraw <?=$compact['data']['data']['Amount']?> <?=$compact['data']['data']['Currency']?> to your SiiCrypto.com account <strong><?=$compact['data']['data']['username']?></strong> with Reference No: <strong><?=$compact['data']['data']['Reference']?></strong></p>
 <p>Please print, sign, scan and upload the document <a href="https://siicrypto.com/users/funding_fiat/USD" target="_blank">here</a>.</p>
 <p>Once we receive the signed document, it will be sent to ILS and Vantu Bank. You can then deposit the funds with the reference number to Vantu Bank.</p>
-<p>Please do not send funds to the Bank unless, you receive and confirmed email from us</p>
-<p>SiiCrypto confirms receipt of your Declaration of Source of Funds. Your document is being processed and you will receive a further email shortly.</p>
 				</td>
 			</tr>
 			<tr>

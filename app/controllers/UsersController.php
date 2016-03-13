@@ -764,8 +764,17 @@ class UsersController extends \lithium\action\Controller {
 				'Currency'=>$currency
 				)
 		));
+		
+		$withdrawRequest = Transactions::find('first',array(
+				'conditions'=>array(
+				'username'=>$user['username'],
+				'Added'=>false,
+				'Approved'=>'No',
+				'Currency'=>$currency
+				)
+		));
 		$settings = Settings::find('first');		
-			return compact('details','title','depositRequest','user','settings','currency','fileupload')	;
+			return compact('details','title','depositRequest','withdrawRequest','user','settings','currency','fileupload')	;
 	}
 	public function deleteDepositRequest($Reference=null,$id=null,$currency="USD"){
 		$user = Session::read('default');
@@ -777,10 +786,46 @@ class UsersController extends \lithium\action\Controller {
 			)
 		));
 		if(String::hash($Transaction['_id'])==$id){
-			$Remove = Transactions::remove(array('_id'=>(string)$Transaction['_id']));
+			$Remove = Transactions::remove(array(
+				'_id'=>(string)$Transaction['_id'],
+				'Approved'=>'No'
+				));
 		}
 		return $this->redirect('/users/funding_fiat/'.$currency);
 	}
+	public function deleteWithdrawRequest($Reference=null,$id=null,$currency="USD"){
+		$user = Session::read('default');
+		if ($user==""){		return $this->redirect('/login');}
+		$user_id = $user['_id'];
+		$details = Details::find('first', array(
+			'conditions' => array(
+				'user_id'=>(string)$user_id, 
+				)
+		));
+		
+		$Transaction = Transactions::find('first',array(
+			'conditions'=>array(
+					'Reference' => $Reference,
+					'Uploaded' => null,
+					'SenttoBank' => null
+			)
+		));
+		if(count($Transaction)>0){
+			$balance = 'balance.'.$Transaction['Currency'];
+				$data = array(
+					$balance => (float)$details[$balance] + (float)$Transaction['Amount'],
+				);
+				$details = Details::find('all', array(
+					'conditions' => array(
+						'user_id'=>(string)$user_id, 
+						)
+				))->save($data);
+			if(String::hash($Transaction['_id'])==$id){
+				$Remove = Transactions::remove(array('_id'=>(string)$Transaction['_id']));
+			}
+		}
+		return $this->redirect('/users/funding_fiat/'.$currency);
+	}	
 	public function uploadDepositPDF(){
 		$user = Session::read('default');
 		if ($user==""){		return $this->redirect('/login');}
@@ -848,6 +893,59 @@ class UsersController extends \lithium\action\Controller {
 			return $this->redirect('/users/funding_fiat/'.$currency.'/YES');		
 		
 	}
+	
+		public function uploadWithdrawPDF(){
+		$user = Session::read('default');
+		if ($user==""){		return $this->redirect('/login');}
+		$user_id = $user['_id'];
+		$uploadOk = 1;
+		$currency = strtoupper($this->request->data['withdrawCurrency']);
+		
+		$Transaction = Transactions::find('first',array(
+			'conditions'=>array(
+				'username'=>$user['username'],
+				'Added'=>false,
+				'Approved'=>'No',
+				'Currency'=>$currency
+			)
+		));
+		$data = array(
+			'data'=>$Transaction
+		);
+		
+		if($this->request->data['WithdrawInput']['name']=="") {
+			$uploadOk = 0;
+			return $this->redirect('/users/funding_fiat/'.$currency.'/NO');		
+		}
+		if($uploadOk=1){
+			$uploads_dir = VANITY_OUTPUT_DIR;
+					$tmp_name = $_FILES["WithdrawInput"]["tmp_name"];
+					$name = "SiiCrypto-Withdraw-".$Transaction['Reference'].'-'.gmdate('Y-M-d',time()).'-'.$Transaction['Currency'].'-'.$Transaction['Amount'].".pdf";
+					move_uploaded_file($tmp_name, $uploads_dir.$name);
+  }
+
+			$data = array(
+				'SenttoBank' => "No",
+				'Uploaded'=>'Yes'
+			);
+			$conditions = array(
+				'Reference'=>$Transaction['Reference'],
+				'_id'=>$Transaction['_id']
+			);
+			Transactions::update($data,$conditions);
+			return $this->redirect('/users/funding_fiat/'.$currency.'/YES');		
+		
+	}
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	public function receipt(){
 		$secret = $_GET['secret'];;
 		$userid = $_GET['userid']; //invoice_id is past back to the callback URL
@@ -1544,14 +1642,6 @@ class UsersController extends \lithium\action\Controller {
 				)
 			);	
 
-		$transaction = Transactions::find('first',array(
-			'conditions'=>array(
-				'Reference'=>$Reference,
-				'username'=>$user['username']
-				)
-		));
-			
-			
 
 		}
 			return compact('title','details','data','user');			
@@ -1566,7 +1656,9 @@ class UsersController extends \lithium\action\Controller {
 		$transaction = Transactions::find('first',array(
 			'conditions'=>array(
 				'Reference'=>$Reference,
-				'username'=>$user['username']
+				'username'=>$user['username'],
+				'Added'=>true,
+				'Approved'=>'No'				
 				)
 		));
 					// ------------------
@@ -1585,6 +1677,38 @@ class UsersController extends \lithium\action\Controller {
 			return $this->redirect('ex::dashboard');
 		
 	}
+	
+	public function sendWithdraw($Reference = null){
+		$user = Session::read('default');
+		if ($user==""){return $this->redirect('/login');exit;}
+		$id = $user['_id'];
+		$email = $user['email'];
+		if ($Reference==null){return $this->redirect('/login');exit;}
+		$transaction = Transactions::find('first',array(
+			'conditions'=>array(
+				'Reference'=>$Reference,
+				'username'=>$user['username'],
+				'Added'=>false,
+				'Approved'=>'No'
+				)
+		));
+					// ------------------
+								/////////////////////////////////Email//////////////////////////////////////////////////
+					$emaildata = array(
+						'data'=>$transaction
+					);
+						$function = new Functions();
+						$compact = array('data'=>$emaildata);
+						$from = array(NOREPLY => "noreply@".COMPANY_URL);
+						$email = $email;
+						$attach = VANITY_OUTPUT_DIR."SiiCrypto-Withdraw-".$transaction['Reference'].'-'.gmdate('Y-M-d',time()).'-'.$transaction['Currency'].'-'.$transaction['Amount'].".pdf";
+						$function->sendEmailTo($email,$compact,'users','withdraw',"SiiCrypto.com - Withdraw Request",$from,MAIL_1,MAIL_2,MAIL_3,$attach);
+						////////////////////////////////////////////////////////////////////////////////////////////
+						unlink($attach);
+			return $this->redirect('ex::dashboard');
+		
+	}
+	
 	public function withdraw(){
 		$title = "Withdraw";
 	
@@ -1596,48 +1720,76 @@ class UsersController extends \lithium\action\Controller {
 		$details = Details::find('first',
 			array('conditions'=>array('user_id'=> (string) $id))
 		);
-	if(stristr( $_SERVER['HTTP_REFERER'],COMPANY_URL)===FALSE){return $this->redirect('/login');exit;}
+		if(stristr( $_SERVER['HTTP_REFERER'],COMPANY_URL)===FALSE){return $this->redirect('/login');exit;}
 		if($this->request->data){
-			
+			$withdrawAmount = $this->request->data['withdrawAmount'];
+			if($withdrawAmount<=0){
+				return $this->redirect('/users/funding_fiat/'.$currency.'/NO');		
+			}
 			$withdrawReference = $this->request->data['withdrawReference'];
 			$withdrawCurrency = $this->request->data['withdrawCurrency'];
-			$withdrawAmount = $this->request->data['withdrawAmount'];
 			$withdrawName = $this->request->data['withdrawName'];		
+			$withdrawILSCharges = $this->request->data['withdrawILSCharges'];		
+			$withdrawVantuCharges = $this->request->data['withdrawVantuCharges'];		
+			$withdrawNetAmount = $this->request->data['netWithdrawAmount'];		
 			$withdrawAccountNumber = $this->request->data['withdrawAccountNumber'];		
 			$withdrawBankName = $this->request->data['withdrawBankName'];
 			$withdrawBankAddress = $this->request->data['withdrawBankAddress'];
 			$withdrawSwiftCode = $this->request->data['withdrawSwiftCode'];		
+			$balance = 'balance.'.$withdrawCurrency;
+			$data = array(
+				$balance => (float)$details[$balance] - (float)$withdrawAmount,
+			);
+			Details::find('all', array(
+				'conditions' => array(
+					'user_id'=>(string) $id, 
+					)
+			))->save($data);
+			
 			$data = array(
 					'DateTime' => new \MongoDate(),
 					'username' => $details['username'],
 					'Amount'=> (float)$withdrawAmount,
+					'ILSCharges' => $withdrawILSCharges,
+					'VantuCharges' => $withdrawVantuCharges,
+					'netAmount' => $withdrawNetAmount,
 					'Currency' => $withdrawCurrency,					
 					'Added'=>false,
 					'Reference'=>$withdrawReference,
 					'Approved'=>'No',
 					'data'=>array(
+						'email'=>$email,
+						'Reference'=>$withdrawReference,
 						'AccountName'=>$withdrawName,
 						'AccountNumber'=>$withdrawAccountNumber,
 						'BankName'=>$withdrawBankName,
-						'SortCode'=>$withdrawSwiftCode,
+						'SwiftCode'=>$withdrawSwiftCode,
 						'BankAddress'=>$withdrawBankAddress,
 						)
 					);
 			$tx = Transactions::create();
 			$tx->save($data);
-					// ------------------
-								/////////////////////////////////Email//////////////////////////////////////////////////
-					$emaildata = array(
-						'data'=>$transaction
-					);
-						$function = new Functions();
-						$compact = array('data'=>$emaildata);
-						$from = array(NOREPLY => "noreply@".COMPANY_URL);
-						$email = $email;
-						$attach = VANITY_OUTPUT_DIR."SiiCrypto-".$Reference.".pdf";
-						$function->sendEmailTo($email,$compact,'users','withdraw',"SiiCrypto.com - Withdraw Request",$from,MAIL_1,MAIL_2,MAIL_3,$attach);
-						////////////////////////////////////////////////////////////////////////////////////////////
+			
 
+			
+			// Create PDF file
+				$view  = new View(array(
+						'paths' => array(
+							'template' => '{:library}/views/{:controller}/{:template}.{:type}.php',
+							'layout'   => '{:library}/views/layouts/{:layout}.{:type}.php',
+					)
+				));
+
+			echo $view->render(
+				'all',
+				compact('data'),
+				array(
+				'controller' => 'users',
+				'template'=>'printWithdraw',
+				'type' => 'pdf',
+				'layout' =>'printWithdraw'
+				)
+			);	
 		}
 		return compact('title','details','data','user');			
 	

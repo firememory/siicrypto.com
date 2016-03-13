@@ -183,6 +183,24 @@ a:hover{text-decoration:none}
   /* Safari 4-5, Chrome 1-9 */
 
 }
+#WithdrawSelect {
+  margin: 0em 0em 0em .2em;
+  content: 'Import Settings';
+  display: inline-block;
+  border: 1px solid;
+		background-color: #337ab7;
+  border-color: #2e6da4;
+  border-radius: 4px;
+  padding: 5px 8px;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  /* fallback */
+  color:white;
+  /* Safari 4-5, Chrome 1-9 */
+
+}
 
 .hideMe{
 	display: none;

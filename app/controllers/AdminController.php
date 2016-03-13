@@ -1876,3 +1876,33 @@ $description = "Admin panel for Litecoin transactions";
 
 }
 ?>
+
+
+
+// Send email to client for payment receipt, if invoice number is present. or not
+					/////////////////////////////////Email//////////////////////////////////////////////////
+					$emaildata = array(
+						'email'=>MAIL_1,
+						'data'=>$Transaction
+					);
+						$function = new Functions();
+						$compact = array('data'=>$emaildata);
+						$from = array(NOREPLY => "noreply@".COMPANY_URL);
+						$email = MAIL_1;
+						$attach = VANITY_OUTPUT_DIR.$name;
+						$function->sendEmailTo($email,$compact,'users','sendDepositEmailBank',"SiiCrypto.com - DFS form",$from,MAIL_4,MAIL_VANTU,MAIL_ILS,$attach,MAIL_3);
+					/////////////////////////////////Email//////////////////////////////////////////////////				
+					/////////////////////////////////Email//////////////////////////////////////////////////
+					$emaildata = array(
+						'email'=>$user['email'],
+						'data'=>$Transaction
+					);
+						$function = new Functions();
+						$compact = array('data'=>$emaildata);
+						$from = array(NOREPLY => "noreply@".COMPANY_URL);
+						$email = $user['email'];
+						$function->sendEmailTo($email,$compact,'users','sendDepositEmailUser',"SiiCrypto.com - DFS Submitted ",$from,"","","",null);
+					/////////////////////////////////Email//////////////////////////////////////////////////				
+			
+// email send function	
+					
