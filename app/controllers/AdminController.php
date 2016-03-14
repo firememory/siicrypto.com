@@ -613,7 +613,7 @@ $description = "Admin panel for transactions";
 
 		return compact('Details','reasons','title','keywords','description');
 	}
-	public function withdrawals(){
+	public function withdrawals($msg = null){
 		if($this->__init()==false){$this->redirect('ex::dashboard');	}
 		$Fiattransactions = Transactions::find('all',array(
 			'conditions'=>array(
@@ -645,9 +645,13 @@ $description = "Admin panel for transactions";
 			$Details[$i]['TranDate'] = $ft['DateTime'];						
 			$Details[$i]['Reference'] = $ft['Reference'];									
 			$Details[$i]['Amount'] = $ft['Amount'];									
+			$Details[$i]['netAmount'] = $ft['netAmount'];
 			$Details[$i]['Currency'] = $ft['Currency'];									
 			$Details[$i]['Added'] = (string)$ft['Added'];												
 			$Details[$i]['Approved'] = $ft['Approved'];									
+			$Details[$i]['Uploaded'] = $ft['Uploaded'];												
+			$Details[$i]['DateTime'] = $ft['DateTime'];												
+			$Details[$i]['SenttoBank'] = $ft['SenttoBank'];												
 			$Details[$i]['WithdrawalMethod'] = $ft['WithdrawalMethod'];
 			$Details[$i]['WithdrawalCharges'] = $ft['WithdrawalCharges'];
 			$Details[$i]['_id'] = $ft['_id'];							
@@ -671,7 +675,7 @@ $keywords = "Withdrawals, admin";
 $description = "Admin panel for withdrawal";
 
 
-		return compact('Fiattransactions','Details','reasons','title','keywords','description');
+		return compact('Fiattransactions','Details','reasons','title','keywords','description','msg');
 	}
 	
 	
@@ -1874,35 +1878,65 @@ $description = "Admin panel for Litecoin transactions";
 		$this->redirect(array('controller'=>'Admin','action'=>"orders"));		
 	}
 
-}
-?>
-
-
-
-// Send email to client for payment receipt, if invoice number is present. or not
-					/////////////////////////////////Email//////////////////////////////////////////////////
+	function sendtoILS($Reference=null){
+				if($this->__init()==false){			$this->redirect('ex::dashboard');	}	
+				$tx = Transactions::find('first',array(
+					'conditions'=>array(
+						'Reference'=>$Reference
+					)
+				));
+				
+			// Create PDF file
+				$view  = new View(array(
+						'paths' => array(
+							'template' => '{:library}/views/{:controller}/{:template}.{:type}.php',
+							'layout'   => '{:library}/views/layouts/{:layout}.{:type}.php',
+					)
+				));
+			$data = array('data'=>$tx);	
+			
+			
+			echo $view->render(
+				'all',
+				compact('data'),
+				array(
+				'controller' => 'users',
+				'template'=>'WithdrawILS',
+				'type' => 'pdf',
+				'layout' =>'WithdrawILS'
+				)
+			);	
+			
+						/////////////////////////////////Email//////////////////////////////////////////////////
 					$emaildata = array(
 						'email'=>MAIL_1,
-						'data'=>$Transaction
+						'data'=>$tx
 					);
+					
 						$function = new Functions();
 						$compact = array('data'=>$emaildata);
 						$from = array(NOREPLY => "noreply@".COMPANY_URL);
 						$email = MAIL_1;
+						$name = "SiiCrypto-Withdraw-ILS-VANTU-".$data['data']['Reference'].'-'.gmdate('Y-M-d',$data['data']['DateTime']->sec).'-'.$data['data']['Currency'].'-'.$data['data']['netAmount'].".pdf";
 						$attach = VANITY_OUTPUT_DIR.$name;
-						$function->sendEmailTo($email,$compact,'users','sendDepositEmailBank',"SiiCrypto.com - DFS form",$from,MAIL_4,MAIL_VANTU,MAIL_ILS,$attach,MAIL_3);
+						$function->sendEmailTo($email,$compact,'users','sendWithdrawEmailBank',"SiiCrypto.com - Withdrawal Request",$from,MAIL_4,"",MAIL_ILS,$attach,MAIL_3);
 					/////////////////////////////////Email//////////////////////////////////////////////////				
-					/////////////////////////////////Email//////////////////////////////////////////////////
-					$emaildata = array(
-						'email'=>$user['email'],
-						'data'=>$Transaction
-					);
-						$function = new Functions();
-						$compact = array('data'=>$emaildata);
-						$from = array(NOREPLY => "noreply@".COMPANY_URL);
-						$email = $user['email'];
-						$function->sendEmailTo($email,$compact,'users','sendDepositEmailUser',"SiiCrypto.com - DFS Submitted ",$from,"","","",null);
-					/////////////////////////////////Email//////////////////////////////////////////////////				
-			
-// email send function	
 					
+					
+					$data = array(
+						"SenttoBank"=>"Yes"
+					);
+				$conditions = array(
+				'Reference'=>$tx['Reference'],
+				'_id'=>$tx['_id']
+				);
+			Transactions::update($data,$conditions);	
+			
+		
+				$this->redirect('/Admin/withdrawals/Yes');		
+				
+			
+		
+	}
+}
+?>

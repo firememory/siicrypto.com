@@ -7,7 +7,7 @@ class Identification extends \lithium\action\Controller {
 	public function set($address=null)
 	{
 	if ( $address == "" ){return;}
-	$secret = CRYPTO_SECRET;
+	$secret = SIICRYPTO_SECRET;
 			$opts = array(
 			  'http'=> array(
 					'method'=> "GET",

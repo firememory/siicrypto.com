@@ -853,7 +853,7 @@ class UsersController extends \lithium\action\Controller {
 		if($uploadOk=1){
 			$uploads_dir = VANITY_OUTPUT_DIR;
 					$tmp_name = $_FILES["DepositInput"]["tmp_name"];
-					$name = "SiiCrypto-".$Transaction['Reference'].'-'.gmdate('Y-M-d',time()).'-'.$Transaction['Currency'].'-'.$Transaction['Amount'].".pdf";
+					$name = "SiiCrypto-".$Transaction['Reference'].'-'.gmdate('Y-M-d',$Transaction['DateTime']->sec).'-'.$Transaction['Currency'].'-'.$Transaction['Amount'].".pdf";
 					move_uploaded_file($tmp_name, $uploads_dir.$name);
   }
 
@@ -921,7 +921,7 @@ class UsersController extends \lithium\action\Controller {
 		if($uploadOk=1){
 			$uploads_dir = VANITY_OUTPUT_DIR;
 					$tmp_name = $_FILES["WithdrawInput"]["tmp_name"];
-					$name = "SiiCrypto-Withdraw-".$Transaction['Reference'].'-'.gmdate('Y-M-d',time()).'-'.$Transaction['Currency'].'-'.$Transaction['Amount'].".pdf";
+					$name = "SiiCrypto-Withdraw-".$Transaction['Reference'].'-'.gmdate('Y-M-d',$Transaction['DateTime']->sec).'-'.$Transaction['Currency'].'-'.$Transaction['netAmount'].".pdf";
 					move_uploaded_file($tmp_name, $uploads_dir.$name);
   }
 
