@@ -2038,11 +2038,27 @@ class UsersController extends \lithium\action\Controller {
 		if($Reference==null){return $this->render(array('json' => array('success'=>0)));}
 		if($UserAdmin==null){return $this->render(array('json' => array('success'=>0)));}		
 		if($UserAdmin==null){return $this->render(array('json' => array('success'=>0)));}		
+		$transaction = Transactions::find('first',array(
+			'conditions'=>array('Reference'=>$Reference)
+		));		
+		
+		
 		$User = explode(",",$UserAdmin);
 		$ga = new GoogleAuthenticator();
 		$checkResult = $ga->verifyCode($User[1], $oneCode, 2); // 2 = 2*30sec clock tolerance
 		if (!$checkResult) {
 			return $this->render(array('json' => array('success'=>0)));
+		}else{
+			if($transaction['Admin']==null){
+					$data = array('Admin'=>$UserAdmin,'Status'=>"Approved",'DateTime'=>new \MongoDate());
+				}else{
+					$data = array_push($transaction['Admin'],array('Admin'=>$UserAdmin,'Status'=>"Approved",'DateTime'=>new \MongoDate()));	
+			}
+
+			$conditions = array('Reference'=>$Reference);
+			Transactions::update($data,$conditions);
+			print_r($conditions);
+			print_r($data);
 		}
 		return $this->render(array('json' => array(
 			'success'=>1,
