@@ -47,7 +47,7 @@ $pdf->SetAutoPageBreak(true);
 				<h4>For the attention of The Manager, Vantu Bank</h4>
 				<h5>Please be advised of our instructions to wire transfer the following amount to the SiiCrypto client stated below:</h5>
 				<br> Reference No: ".$data['data']['Reference']."</div>";
-				$html = $html . "<div><small>Instructions: Please fully complete and sign this form before uploading. <br></small></div>";
+				$html = $html . "<div><small>Instructions: Please sign this form before uploading. <br></small></div>";
 			
 				$html = $html . '<table border="1" cellspacing="0" cellpadding="2" style="border:1px solid black" >
 						<tr>
@@ -59,7 +59,7 @@ $pdf->SetAutoPageBreak(true);
 						</tr>
 						<tr>
 							<th><small>VANTU BANK ACCOUNT NUMBER:</small></th>
-							<td>100-070378-';
+							<td>'.$data['data']['Currency'].'-100-070378-';
 								switch ($data['data']['Currency']){
 										case "USD":
 										$html = $html. "1"; break;
@@ -73,7 +73,7 @@ $pdf->SetAutoPageBreak(true);
 					$html = $html.	'</td>
 						</tr>
 						<tr>
-							<th colspan="2" style="text-align:center;background-color:#CAFFFF">AMOUNT OF YOUR OUTWARD WIRE PAYMENT</th>
+							<th colspan="2" style="text-align:center;background-color:#CAFFFF">AMOUNT OF OUTWARD WIRE PAYMENT</th>
 						</tr>
 						<tr>
 							<th><small>CURRENCY</small></th>
@@ -139,7 +139,7 @@ $pdf->SetAutoPageBreak(true);
 				Authorised Signature
 				<p>&nbsp;</p>
 				____________________________________________<br>
-				Authorised Signature<br>
+				Authorised Signature<br><br>
 				Please email this signed SiiCrypto Outgoing Wire Form to Vantu Bank email account admin@vantubank.com with a copy to gideon@vantubank.com
 				</div>';
 				$html = $html . '<p></p>';

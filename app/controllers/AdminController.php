@@ -1919,7 +1919,7 @@ $description = "Admin panel for Litecoin transactions";
 						$email = MAIL_1;
 						$name = "SiiCrypto-Withdraw-ILS-VANTU-".$data['data']['Reference'].'-'.gmdate('Y-M-d',$data['data']['DateTime']->sec).'-'.$data['data']['Currency'].'-'.$data['data']['netAmount'].".pdf";
 						$attach = VANITY_OUTPUT_DIR.$name;
-						$function->sendEmailTo($email,$compact,'users','sendWithdrawEmailBank',"SiiCrypto.com - Withdrawal Request",$from,MAIL_4,"",MAIL_ILS,$attach,MAIL_3);
+						$function->sendEmailTo($email,$compact,'users','sendWithdrawEmailBank',"SiiCrypto.com - Withdrawal Request",$from,MAIL_4,"",MAIL_ILS1,$attach,MAIL_ILS2);
 					/////////////////////////////////Email//////////////////////////////////////////////////				
 					
 					

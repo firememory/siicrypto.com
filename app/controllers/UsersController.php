@@ -868,7 +868,7 @@ class UsersController extends \lithium\action\Controller {
 						$from = array(NOREPLY => "noreply@".COMPANY_URL);
 						$email = MAIL_1;
 						$attach = VANITY_OUTPUT_DIR.$name;
-						$function->sendEmailTo($email,$compact,'users','sendDepositEmailBank',"SiiCrypto.com - DFS form",$from,MAIL_4,MAIL_VANTU,MAIL_ILS,$attach,MAIL_3);
+						$function->sendEmailTo($email,$compact,'users','sendDepositEmailBank',"SiiCrypto.com - DFS form",$from,MAIL_4,MAIL_VANTU,MAIL_ILS1,$attach,MAIL_3,MAIL_ILS2);
 					/////////////////////////////////Email//////////////////////////////////////////////////				
 			$data = array(
 				'SenttoBank' => "Yes"
@@ -934,17 +934,37 @@ class UsersController extends \lithium\action\Controller {
 				'_id'=>$Transaction['_id']
 			);
 			Transactions::update($data,$conditions);
+			
+			$Transaction = Transactions::find('first',array(
+				'conditions'=>array(
+					'username'=>$user['username'],
+					'Added'=>false,
+					'Approved'=>'No',
+					'Currency'=>$currency
+				)
+			));
+			
+// Send email to client for payment receipt, if invoice number is present. or not
+					/////////////////////////////////Email//////////////////////////////////////////////////
+					$emaildata = array(
+						'email'=>MAIL_NILAM,
+						'transactions'=>$Transaction
+					);
+						$function = new Functions();
+						$compact = array('data'=>$emaildata);
+						$from = array(NOREPLY => "noreply@".COMPANY_URL);
+						$email = MAIL_NILAM;
+						$function->sendEmailTo($email,$compact,'users','withdrawUploaded',"SiiCrypto.com - Withdrawal Request Uploaded",$from,MAIL_DANNY,MAIL_SABRINA,'',null);
+					/////////////////////////////////Email//////////////////////////////////////////////////				
+
+// email send function	
+			
+			
 			return $this->redirect('/users/funding_fiat/'.$currency.'/YES');		
 		
 	}
 
-	
-	
-	
-	
-	
-	
-	
+
 	
 	
 	public function receipt(){
@@ -1982,6 +2002,62 @@ class UsersController extends \lithium\action\Controller {
 		$details = Details::update($data,$conditions);
 		
 		return $this->render(array('json' => array("Updated"=>$value)));
+	}
+	
+	public function confirmUpload($Reference = null){
+		$this->_render['layout'] = 'mobile';
+		$transaction = Transactions::find('first',array(
+			'conditions'=>array('Reference'=>$Reference)
+		));
+		
+		return compact('transaction');
+	}
+	
+	public function CallAdmin($Reference=null,$UserAdmin=null){
+		if($Reference==null){return $this->render(array('json' => array('success'=>0)));}
+		if($UserAdmin==null){return $this->render(array('json' => array('success'=>0)));}
+		$User = explode(",",$UserAdmin);
+		$ga = new GoogleAuthenticator();
+		$oneCode = $ga->getCode($User[1]);
+		echo "Checking Code '$oneCode' and Secret '$secret':\n";
+		
+		$checkResult = $ga->verifyCode($User[1], $oneCode, 2); // 2 = 2*30sec clock tolerance
+		
+		
+		$function = new Functions();
+		$data = array(
+			'Admin' => $User,
+		);
+//		$returnvalues = $function->twilioTOTP($data);	 // Testing if it works 
+			return $this->render(array('json' => array(
+				'success'=>1,
+			)));
+
+	}
+	public function ConfirmAdmin($Reference=null,$UserAdmin=null,$oneCode = null){
+		if($Reference==null){return $this->render(array('json' => array('success'=>0)));}
+		if($UserAdmin==null){return $this->render(array('json' => array('success'=>0)));}		
+		if($UserAdmin==null){return $this->render(array('json' => array('success'=>0)));}		
+		$User = explode(",",$UserAdmin);
+		$ga = new GoogleAuthenticator();
+		$checkResult = $ga->verifyCode($User[1], $oneCode, 2); // 2 = 2*30sec clock tolerance
+		if (!$checkResult) {
+			return $this->render(array('json' => array('success'=>0)));
+		}
+		return $this->render(array('json' => array(
+			'success'=>1,
+		)));
+
+	}
+	public function RejectAdmin($Reference=null,$UserAdmin=null){
+		if($Reference==null){return $this->render(array('json' => array('success'=>0)));}
+		if($UserAdmin==null){return $this->render(array('json' => array('success'=>0)));}		
+		$User = explode(",",$UserAdmin);
+		return $this->render(array('json' => array(
+			'success'=>1,
+		)));
+
+		
 	}
 }
 ?>

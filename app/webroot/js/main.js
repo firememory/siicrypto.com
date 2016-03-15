@@ -664,3 +664,73 @@ $("#WithdrawSelect").click(function() {
 			
     });
 });
+
+function CallAdmin(){
+	var Reference = $("#Reference").html();
+	var AdminUser = $("#AdminUser").val();
+	if(AdminUser==""){return false;}
+	$.getJSON('/Users/CallAdmin/'+Reference+'/'+AdminUser,
+		function(ReturnValues){
+			if(ReturnValues){
+				if(ReturnValues['success']==1){
+					$("#alert-danger").hide();
+					$("#alert-success").html('Calling...  +' + AdminUser);
+					$("#alert-success").show();
+				}
+				if(ReturnValues['success']==0){
+					$("#alert-danger").show();
+					$("#alert-danger").html('Error!');					
+					$("#alert-success").hide();
+					
+				}				
+			}			
+		}
+	);
+}
+function ConfirmAdmin(){
+	var Reference = $("#Reference").html();
+	var AdminUser = $("#AdminUser").val();
+	var AdminTOTP = $("#AdminTOTP").val();
+	if(AdminUser==""){return false;}
+	$.getJSON('/Users/ConfirmAdmin/'+Reference+'/'+AdminUser+'/'+AdminTOTP,
+		function(ReturnValues){
+			if(ReturnValues){
+				if(ReturnValues['success']==1){
+					$("#alert-danger").hide();
+					$("#alert-success").html('Confirmed!');
+					$("#alert-success").show();
+					
+				}
+				if(ReturnValues['success']==0){
+					$("#alert-danger").show();
+					$("#alert-danger").html('NOT CONFIRMED! Error!');
+					$("#alert-success").hide();
+					
+				}
+			}			
+		}
+	);	
+}
+function RejectAdmin(){
+	var Reference = $("#Reference").html();
+	var AdminUser = $("#AdminUser").val();
+	if(AdminUser==""){return false;}
+		$.getJSON('/Users/RejectAdmin/'+Reference+'/'+AdminUser,
+		function(ReturnValues){
+			if(ReturnValues){
+				if(ReturnValues['success']==1){
+					$("#alert-danger").hide();
+					$("#alert-success").html('Rejected!');
+					$("#alert-success").show();
+					
+				}
+				if(ReturnValues['success']==0){
+					$("#alert-danger").show();
+					$("#alert-danger").html('Error!');					
+					$("#alert-success").hide();
+					
+				}				
+			}			
+		}
+	);
+}

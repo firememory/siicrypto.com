@@ -572,19 +572,26 @@ $function = new Functions();
 			</tr>
 			<?php }?>
 			<?php if($withdrawRequest['SenttoBank']=="Yes"){?>
-			
 			<tr>
 			<td colspan="2">
 			<div class="alert alert-success">Withdrawal Request form is uploaded, approved by Admin and sent to ILS Fiduciaries (SRAL) and Vantu bank for wire transfer of funds</div>
 			</td>
 			</tr>
-			<?php }else{?>
+			<?php }elseif($withdrawRequest['Uploaded']=="No"){
+				?>
 			<tr>
 			<td colspan="2">
-			<div class="alert alert-danger">Withdrawal Request form is uploaded, waiting for Admin for Approval.</div>
+			<div class="alert alert-danger">Withdrawal Request form, we are waiting for you to upload the signed document.</div>
 			</td>
 			</tr>
-			<?php }?>
+				<?php }else{?>
+			<tr>
+				<td colspan="2">
+					<div class="alert alert-danger">Withdrawal Request form, Uploaded. Waiting for Admin to Approve.</div>
+				</td>
+			</tr>
+
+			<?php	}?>
 		</table>
 			<!-- Table -->				
 	</div> 
