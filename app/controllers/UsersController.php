@@ -2017,7 +2017,7 @@ class UsersController extends \lithium\action\Controller {
 		$User = explode(",",$UserAdmin);
 		$ga = new GoogleAuthenticator();
 		$oneCode = $ga->getCode($User[1]);
-		echo "Checking Code '$oneCode' and Secret '$secret':\n";
+//		echo "Checking Code '$oneCode' and Secret '$secret':\n";
 		
 		$checkResult = $ga->verifyCode($User[1], $oneCode, 2); // 2 = 2*30sec clock tolerance
 		
@@ -2025,8 +2025,10 @@ class UsersController extends \lithium\action\Controller {
 		$function = new Functions();
 		$data = array(
 			'Admin' => $User,
+			'oneCode'=>$oneCode
 		);
-//		$returnvalues = $function->twilioTOTP($data);	 // Testing if it works 
+//		print_r($data);
+		$returnvalues = $function->twilioTOTP($data);	 // Testing if it works 
 			return $this->render(array('json' => array(
 				'success'=>1,
 			)));

@@ -1492,5 +1492,57 @@ $graph->legend->SetFrameWeight(1);
 				'success'=>0,
 		)));
 	}
+	
+		public function say($username=null,$amount=null){
+		
+		$layout = false;
+		$view  = new View(array(
+		'paths' => array(
+			'template' => '{:library}/views/{:controller}/{:template}.{:type}.php',
+			'layout'   => '{:library}/views/layouts/{:layout}.{:type}.php',
+			)
+			));
+			$data = $username . " deposited " . $amount . " bitcoins.";
+		echo $view->render(
+		'all',
+		compact('data'),
+		array(
+			'controller' => 'ex',
+			'template'=>'say',
+			'type' => 'xml',
+			'layout' =>'default'
+			)
+		);	
+		return $this->render(array('layout' => false));
+	}
+
+
+	public function saythis($code=null){
+		$newcode = '';
+		for($i=0;$i<=strlen($code);$i++){
+			$newcode = $newcode . substr($code,$i,1).',,,,,';
+		}
+
+		$layout = false;
+		$view  = new View(array(
+		'paths' => array(
+			'template' => '{:library}/views/{:controller}/{:template}.{:type}.php',
+			'layout'   => '{:library}/views/layouts/{:layout}.{:type}.php',
+			)
+			));
+			
+		echo $view->render(
+		'all',
+		compact('newcode'),
+		array(
+			'controller' => 'ex',
+			'template'=>'saythis',
+			'type' => 'xml',
+			'layout' =>'default'
+			)
+		);	
+		return $this->render(array('layout' => false));
+	}
+
 }
 ?>
