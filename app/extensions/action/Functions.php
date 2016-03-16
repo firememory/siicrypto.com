@@ -1001,8 +1001,6 @@ $fields = array(
 		);
 		
 $post = http_build_query($fields);
-print_r($data);
-print_r($post);
 $curl = curl_init($url);
 // Set some options - we are passing in a useragent too here
 curl_setopt($curl,	CURLOPT_POST, true);
