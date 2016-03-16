@@ -2017,7 +2017,7 @@ class UsersController extends \lithium\action\Controller {
 		$User = explode(",",$UserAdmin);
 		$ga = new GoogleAuthenticator();
 		$oneCode = $ga->getCode($User[1]);
-//		echo "Checking Code '$oneCode' and Secret '$secret':\n";
+		echo "Checking Code '$oneCode' \n";
 		
 		$checkResult = $ga->verifyCode($User[1], $oneCode, 2); // 2 = 2*30sec clock tolerance
 		
