@@ -1878,65 +1878,6 @@ $description = "Admin panel for Litecoin transactions";
 		$this->redirect(array('controller'=>'Admin','action'=>"orders"));		
 	}
 
-	function sendtoILS($Reference=null){
-				if($this->__init()==false){			$this->redirect('ex::dashboard');	}	
-				$tx = Transactions::find('first',array(
-					'conditions'=>array(
-						'Reference'=>$Reference
-					)
-				));
-				
-			// Create PDF file
-				$view  = new View(array(
-						'paths' => array(
-							'template' => '{:library}/views/{:controller}/{:template}.{:type}.php',
-							'layout'   => '{:library}/views/layouts/{:layout}.{:type}.php',
-					)
-				));
-			$data = array('data'=>$tx);	
-			
-			
-			echo $view->render(
-				'all',
-				compact('data'),
-				array(
-				'controller' => 'users',
-				'template'=>'WithdrawILS',
-				'type' => 'pdf',
-				'layout' =>'WithdrawILS'
-				)
-			);	
-			
-						/////////////////////////////////Email//////////////////////////////////////////////////
-					$emaildata = array(
-						'email'=>MAIL_1,
-						'data'=>$tx
-					);
-					
-						$function = new Functions();
-						$compact = array('data'=>$emaildata);
-						$from = array(NOREPLY => "noreply@".COMPANY_URL);
-						$email = MAIL_1;
-						$name = "SiiCrypto-Withdraw-ILS-VANTU-".$data['data']['Reference'].'-'.gmdate('Y-M-d',$data['data']['DateTime']->sec).'-'.$data['data']['Currency'].'-'.$data['data']['netAmount'].".pdf";
-						$attach = VANITY_OUTPUT_DIR.$name;
-						$function->sendEmailTo($email,$compact,'users','sendWithdrawEmailBank',"SiiCrypto.com - Withdrawal Request",$from,MAIL_4,"",MAIL_ILS1,$attach,MAIL_ILS2);
-					/////////////////////////////////Email//////////////////////////////////////////////////				
-					
-					
-					$data = array(
-						"SenttoBank"=>"Yes"
-					);
-				$conditions = array(
-				'Reference'=>$tx['Reference'],
-				'_id'=>$tx['_id']
-				);
-			Transactions::update($data,$conditions);	
-			
-		
-				$this->redirect('/Admin/withdrawals/Yes');		
-				
-			
-		
-	}
+	
 }
 ?>

@@ -5,8 +5,11 @@ $function = new Functions();
 ini_set('memory_limit', '-1');
 
 $pdf =& $this->Pdf;
+
 $this->Pdf->setCustomLayout(array(
     'header'=>function() use($pdf){
+								$img_file = LITHIUM_APP_PATH.'/webroot/img/siicrypto.watermark.png';
+								$pdf->Image($img_file, 0, 0, 210, 297, '', '', '', false, 300, '', false, false, 0);
         list($r, $g, $b) = array(200,200,200);
         $pdf->SetFillColor($r, $g, $b); 
         $pdf->SetTextColor(0 , 0, 0);
@@ -19,7 +22,8 @@ $this->Pdf->setCustomLayout(array(
         $pdf->SetTextColor(0, 0, 0); 
         $pdf->SetFont(PDF_FONT_NAME_MAIN,'', 8); 
         $pdf->Cell(0,8, $footertext,'T',1,'C');
-    }
+    },
+				
 
 ));
 $pdf->SetFont('helvetica');
@@ -36,11 +40,15 @@ $pdf->SetAutoPageBreak(true);
 				$Reference = $data['Reference'];
 				
 				$pdf->AddPage('P');
+				
+				
 				$html = '<div style="text-align:center;background-color:black;padding:10px">
 													<img src="/app/webroot/img/logo.png" border="0" height="30px" width="200px"/>
 												</div>';
 				$pdf->writeHTML($html, true, 0, true, 0);
-				$pdf->SetTextColor(0, 0, 0);
+
+
+				
 				$pdf->SetXY(20,25,false);
 				$html = "<div style='text-align:center'>
 				<h3>SiiCrypto Outgoing Wire re ILS Fiduciaries (Switzerland) Sarl bank account </h3>

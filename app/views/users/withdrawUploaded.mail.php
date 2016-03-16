@@ -47,6 +47,16 @@ User: <?=$compact['data']['transactions']['username']?> has requested to withdra
 
 <p>Please click on the <a href="https://<?=COMPANY_URL?>/users/confirmUpload/<?=$compact['data']['transactions']['Reference']?>">link</a> to confirm signature and send to ILS.</p>
 
+<table border=0 cellspacing=0 cellpadding=4>
+	<?php foreach($compact['data']['transactions']['Admin'] as $Admin){?>
+	<tr>
+		<td><?=$Admin['UserName']?></td>
+		<td><?=$Admin['Status']?></td>
+		<td><?=gmdate('Y-M-d H:i:s',$Admin['DateTime']->sec)?></td>
+	</tr>
+	<?php }?>
+</table>
+
 <p>Thanks,<br>
 <?=NOREPLY?></p>
 	</div>

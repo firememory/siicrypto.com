@@ -857,7 +857,7 @@ class UsersController extends \lithium\action\Controller {
 					move_uploaded_file($tmp_name, $uploads_dir.$name);
   }
 
-// Send email to client for payment receipt, if invoice number is present. or not
+
 					/////////////////////////////////Email//////////////////////////////////////////////////
 					$emaildata = array(
 						'email'=>MAIL_1,
@@ -1342,9 +1342,7 @@ class UsersController extends \lithium\action\Controller {
 				
 		///////////////////// Change of code required when Virtual Currency added				
 				switch($currency){
-					case "LTC":
-						$coin = new Litecoin('http://'.LITECOIN_WALLET_SERVER.':'.LITECOIN_WALLET_PORT,LITECOIN_WALLET_USERNAME,LITECOIN_WALLET_PASSWORD);
-					break;
+				
 
 					case "XGC":
 						$coin = new Greencoin('http://'.GREENCOIN_WALLET_SERVER.':'.GREENCOIN_WALLET_PORT,GREENCOIN_WALLET_USERNAME,GREENCOIN_WALLET_PASSWORD);
@@ -1356,7 +1354,7 @@ class UsersController extends \lithium\action\Controller {
 				
 			$comment = "User: ".$details['username']."; Address: ".$address."; Amount:".$amount.";";
 			
-			if($currency=='LTC' || $currency=='XGC'){
+			if($currency=='XGC'){
 				if((float)$details['balance.'.$currency]>=(float)$amount){
 					$settxfee = $coin->settxfee($fee);
 					$txid = $coin->sendfrom('NilamDoctor', $address, (float)$amount,(int)1,$comment);
@@ -2037,43 +2035,164 @@ class UsersController extends \lithium\action\Controller {
 	public function ConfirmAdmin($Reference=null,$UserAdmin=null,$oneCode = null){
 		if($Reference==null){return $this->render(array('json' => array('success'=>0)));}
 		if($UserAdmin==null){return $this->render(array('json' => array('success'=>0)));}		
-		if($UserAdmin==null){return $this->render(array('json' => array('success'=>0)));}		
+		if($oneCode==null){return $this->render(array('json' => array('success'=>0)));}		
 		$transaction = Transactions::find('first',array(
 			'conditions'=>array('Reference'=>$Reference)
 		));		
 		
+		$User = explode(",",$UserAdmin);
+		$ga = new GoogleAuthenticator();
+		$checkResult = $ga->verifyCode($User[1], $oneCode, 2); // 2 = 2*30sec clock tolerance
+		if (!$checkResult){
+			return $this->render(array('json' => array('success'=>0)));
+		}else{
+			if($transaction['Admin']==null){
+				$i = 0;
+					$data = array(
+						'Admin.'.$i.'.UserName'=>$UserAdmin,
+						'Admin.'.$i.'.Status'=>'Approved',
+						'Admin.'.$i.'.DateTime'=>new \MongoDate()
+					);
+			}else{
+				foreach ($transaction['Admin'] as $Admin){
+					if($Admin['UserName']!=$UserAdmin){
+						$i = count($transaction['Admin']);
+						$data = array(
+							'Admin.'.$i.'.UserName'=>$UserAdmin,
+							'Admin.'.$i.'.Status'=>'Approved',
+							'Admin.'.$i.'.DateTime'=>new \MongoDate()
+						);
+						break;
+					}
+				}
+			}
+			$conditions = array('Reference'=>$Reference);
+			Transactions::update($data,$conditions);
+			
+		}
+		$this->SendAdminConfirmEmail($Reference);
+		return $this->render(array('json' => array(
+			'success'=>1,
+		)));
+	}
+	public function RejectAdmin($Reference=null,$UserAdmin=null,$oneCode=null){
+		if($Reference==null){return $this->render(array('json' => array('success'=>0)));}
+		if($UserAdmin==null){return $this->render(array('json' => array('success'=>0)));}		
+		if($oneCode==null){return $this->render(array('json' => array('success'=>0)));}		
+		$transaction = Transactions::find('first',array(
+			'conditions'=>array('Reference'=>$Reference)
+		));		
 		
 		$User = explode(",",$UserAdmin);
 		$ga = new GoogleAuthenticator();
 		$checkResult = $ga->verifyCode($User[1], $oneCode, 2); // 2 = 2*30sec clock tolerance
-		if (!$checkResult) {
+		if (!$checkResult){
 			return $this->render(array('json' => array('success'=>0)));
 		}else{
 			if($transaction['Admin']==null){
-					$data = array('Admin'=>$UserAdmin,'Status'=>"Approved",'DateTime'=>new \MongoDate());
-				}else{
-					$data = array_push($transaction['Admin'],array('Admin'=>$UserAdmin,'Status'=>"Approved",'DateTime'=>new \MongoDate()));	
+				$i = 0;
+					$data = array(
+						'Admin.'.$i.'.UserName'=>$UserAdmin,
+						'Admin.'.$i.'.Status'=>'Rejected',
+						'Admin.'.$i.'.DateTime'=>new \MongoDate()
+					);
+			}else{
+				foreach ($transaction['Admin'] as $Admin){
+					if($Admin['UserName']!=$UserAdmin){
+						$i = count($transaction['Admin']);
+						$data = array(
+							'Admin.'.$i.'.UserName'=>$UserAdmin,
+							'Admin.'.$i.'.Status'=>'Rejected',
+							'Admin.'.$i.'.DateTime'=>new \MongoDate()
+						);
+						break;
+					}
+				}
 			}
-
 			$conditions = array('Reference'=>$Reference);
 			Transactions::update($data,$conditions);
-			print_r($conditions);
-			print_r($data);
 		}
+		$this->SendAdminConfirmEmail($Reference);
 		return $this->render(array('json' => array(
 			'success'=>1,
 		)));
-
 	}
-	public function RejectAdmin($Reference=null,$UserAdmin=null){
-		if($Reference==null){return $this->render(array('json' => array('success'=>0)));}
-		if($UserAdmin==null){return $this->render(array('json' => array('success'=>0)));}		
-		$User = explode(",",$UserAdmin);
+	public function SendAdminConfirmEmail($Reference){
+		$Transaction = Transactions::find('first',array(
+			'conditions'=>array('Reference'=>$Reference)
+		));		
+/////////////////////////////////Email//////////////////////////////////////////////////
+					$emaildata = array(
+						'email'=>MAIL_NILAM,
+						'transactions'=>$Transaction
+					);
+						$function = new Functions();
+						$compact = array('data'=>$emaildata);
+						$from = array(NOREPLY => "noreply@".COMPANY_URL);
+						$email = MAIL_NILAM;
+						$function->sendEmailTo($email,$compact,'users','withdrawUploaded',"SiiCrypto.com - Withdrawal Request Uploaded",$from,MAIL_DANNY,MAIL_SABRINA,'',null);
+/////////////////////////////////Email//////////////////////////////////////////////////
+	}
+	
+	
+	public function SendtoILS($Reference=null, $AdminUser = null){
+				$tx = Transactions::find('first',array(
+					'conditions'=>array(
+						'Reference'=>$Reference
+					)
+				));
+				
+			// Create PDF file
+				$view  = new View(array(
+						'paths' => array(
+							'template' => '{:library}/views/{:controller}/{:template}.{:type}.php',
+							'layout'   => '{:library}/views/layouts/{:layout}.{:type}.php',
+					)
+				));
+			$data = array('data'=>$tx);	
+		
+			echo $view->render(
+				'all',
+				compact('data'),
+				array(
+				'controller' => 'users',
+				'template'=>'WithdrawILS',
+				'type' => 'pdf',
+				'layout' =>'WithdrawILS'
+				)
+			);	
+			
+						/////////////////////////////////Email//////////////////////////////////////////////////
+					$emaildata = array(
+						'email'=>MAIL_1,
+						'data'=>$tx
+					);
+					
+						$function = new Functions();
+						$compact = array('data'=>$emaildata);
+						$from = array(NOREPLY => "noreply@".COMPANY_URL);
+						$email = MAIL_1;
+						$name = "SiiCrypto-Withdraw-ILS-VANTU-".$data['data']['Reference'].'-'.gmdate('Y-M-d',$data['data']['DateTime']->sec).'-'.$data['data']['Currency'].'-'.$data['data']['netAmount'].".pdf";
+						$attach = VANITY_OUTPUT_DIR.$name;
+						$function->sendEmailTo($email,$compact,'users','sendWithdrawEmailBank',"SiiCrypto.com - Withdrawal Request",$from,MAIL_NILAM,MAIL_DANNY,MAIL_ILS1,$attach,MAIL_ILS2);
+					/////////////////////////////////Email//////////////////////////////////////////////////				
+					
+					
+					$data = array(
+						"SenttoBank"=>"Yes",
+						"SentByAdmin"=>$AdminUser
+					);
+				$conditions = array(
+				'Reference'=>$tx['Reference'],
+				'_id'=>$tx['_id']
+				);
+			Transactions::update($data,$conditions);	
 		return $this->render(array('json' => array(
 			'success'=>1,
 		)));
-
+			
 		
 	}
+	
 }
 ?>

@@ -699,7 +699,8 @@ function ConfirmAdmin(){
 					$("#alert-danger").hide();
 					$("#alert-success").html('Confirmed!');
 					$("#alert-success").show();
-					
+					alert("Confirmed!");
+					window.location.assign("/users/confirmUpload/"+Reference);								
 				}
 				if(ReturnValues['success']==0){
 					$("#alert-danger").show();
@@ -714,14 +715,17 @@ function ConfirmAdmin(){
 function RejectAdmin(){
 	var Reference = $("#Reference").html();
 	var AdminUser = $("#AdminUser").val();
+	var AdminTOTP = $("#AdminTOTP").val();
 	if(AdminUser==""){return false;}
-		$.getJSON('/Users/RejectAdmin/'+Reference+'/'+AdminUser,
+		$.getJSON('/Users/RejectAdmin/'+Reference+'/'+AdminUser+'/'+AdminTOTP,
 		function(ReturnValues){
 			if(ReturnValues){
 				if(ReturnValues['success']==1){
 					$("#alert-danger").hide();
 					$("#alert-success").html('Rejected!');
 					$("#alert-success").show();
+					alert("Rejected!");
+					window.location.assign("/users/confirmUpload/"+Reference);								
 					
 				}
 				if(ReturnValues['success']==0){
@@ -733,4 +737,37 @@ function RejectAdmin(){
 			}			
 		}
 	);
+}
+function SendtoILS(){
+	var Reference = $("#Reference").html();
+	var AdminUser = $("#FinalApprover").html();
+	if(AdminUser==""){return false;}
+	$.getJSON('/Users/SendtoILS/'+Reference+'/'+AdminUser,
+		function(ReturnValues){
+			if(ReturnValues){
+				if(ReturnValues['success']==1){
+					alert("Sent to ILS!");
+					window.location.assign("/users/confirmUpload/"+Reference);								
+				}
+				if(ReturnValues['success']==0){
+				}
+			}
+		}
+	);
+}
+function SendtoUser(){
+	var Reference = $("#Reference").html();
+	var AdminUser = $("#FinalApprover").html();	
+	if(AdminUser==""){return false;}
+	$.getJSON('/Users/SendtoUser/'+Reference+'/'+AdminUser,
+		function(ReturnValues){
+			if(ReturnValues){
+				if(ReturnValues['success']==1){
+				}
+				if(ReturnValues['success']==0){
+				}
+			}
+		}
+	);
+	
 }

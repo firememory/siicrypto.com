@@ -28,8 +28,6 @@ foreach ($Details as $tx){?>
 			<td style="text-align:center"><?=$tx['Approved']?>
 			<br>Uploaded:<?=$tx['Uploaded']?><br>
 			<a href="/vanity/out/SiiCrypto-Withdraw-<?=$tx['Reference']?>-<?=gmdate('Y-M-d',$tx['DateTime']->sec)?>-<?=$tx['Currency']?>-<?=$tx['netAmount']?>.pdf" target="_blank" class="btn btn-primary" >View</a><br>
-			<a href="/Admin/sendtoILS/<?=$tx['Reference']?>" class="btn btn-primary">Send to ILS</a>
-			<div class="alert alert-success"><?=$tx['SenttoBank']?></div>
 			</td>			
 			<td colspan="2">
 			Action->
