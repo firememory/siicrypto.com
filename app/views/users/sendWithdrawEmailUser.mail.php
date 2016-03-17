@@ -42,29 +42,15 @@ text-decoration: none
 	<div>
 		<table style="width:95%;	align:auto;	margin:auto;	border:0px;	background-color:white;">
 			<tr>
-				<th style="	padding: 20px 0 20px 0;	background-color:#ddd; font-size:24px">SiiCrypto Outgoing Wire Request to Vantu Bank in the amount of <?=$compact['data']['data']['netAmount']?> <?=$compact['data']['data']['Currency']?>
+				<th style="	padding: 20px 0 20px 0;	background-color:#ddd; font-size:24px">SiiCrypto Outgoing Wire Reference: <?=$compact['data']['data']['Reference']?> amount <?=$compact['data']['data']['netAmount']?> <?=$compact['data']['data']['Currency']?>
 				</th>
 			</tr>
 			<tr>
-				<td><h4>Attention The Manager, ILS Fiduciaries (Switzerland) Sarl,</h4>
+				<td><h4>Attention <?=$compact['data']['data']['username']?>,</h4>
 
 				
-				<p>Please be advised that a SiiCrypto Client has requested a wire transfer to be made to the clients bank account. We have confirmed that such wire transfer is valid and correct. We hereby attach wire transfer instructions for your signature and onward transmission to Vantu Bank. The amount to be wired is <?=$compact['data']['data']['netAmount']?> <?=$compact['data']['data']['Currency']?> from <strong>ILS FIDUCIARIES (SWITZERLAND) SARL</strong> account  with Reference No: <strong><?=$compact['data']['data']['Reference']?></strong></p>
+				<p>Please be advised that a SiiCrypto has REJECTED the wire transfer of <?=$compact['data']['data']['netAmount']?> <?=$compact['data']['data']['Currency']?> with Reference No: <strong><?=$compact['data']['data']['Reference']?></strong></p>
 				
-
-<p>Please debit ILS FIDUCIARIES (SWITZERLAND) SARL, Account Number: <strong><?=$compact['data']['data']['Currency']?>-100-070378-<?php
-								switch ($compact['data']['data']['Currency']){
-										case "USD":
-										print_r("1");break;
-										case "EUR":
-										print_r("2");break;
-										case "GBP":
-										print_r("3");break;
-										case "CAD":
-										print_r("4");break;										
-								}
-							?></strong>.</p>
-							<p>Please email the signed SiiCrypto Outgoing Wire Form to Vantu Bank email account admin@vantubank.com with a copy to gideon@vantubank.com</p>
 				</td>
 			</tr>
 			<tr>

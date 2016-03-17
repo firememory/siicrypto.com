@@ -770,6 +770,7 @@ class UsersController extends \lithium\action\Controller {
 				'username'=>$user['username'],
 				'Added'=>false,
 				'Approved'=>'No',
+				'Status'=>null,
 				'Currency'=>$currency
 				)
 		));
@@ -907,7 +908,9 @@ class UsersController extends \lithium\action\Controller {
 				'username'=>$user['username'],
 				'Added'=>false,
 				'Approved'=>'No',
-				'Currency'=>$currency
+				'Currency'=>$currency,
+				'Status' => null,
+				'SentByAdmin' => null
 			)
 		));
 		$data = array(
@@ -940,7 +943,10 @@ class UsersController extends \lithium\action\Controller {
 					'username'=>$user['username'],
 					'Added'=>false,
 					'Approved'=>'No',
-					'Currency'=>$currency
+					'Currency'=>$currency,
+					'Status' => null,
+					'SentByAdmin' => null
+
 				)
 			));
 			
@@ -2007,7 +2013,6 @@ class UsersController extends \lithium\action\Controller {
 		$transaction = Transactions::find('first',array(
 			'conditions'=>array('Reference'=>$Reference)
 		));
-		
 		return compact('transaction');
 	}
 	
@@ -2028,7 +2033,7 @@ class UsersController extends \lithium\action\Controller {
 			'oneCode'=>$oneCode
 		);
 //		print_r($data);
-		$returnvalues = $function->twilioTOTP($data);	 // Testing if it works 
+//		$returnvalues = $function->twilioTOTP($data);	 // Testing if it works 
 			return $this->render(array('json' => array(
 				'success'=>1,
 			)));
@@ -2188,13 +2193,69 @@ class UsersController extends \lithium\action\Controller {
 				'Reference'=>$tx['Reference'],
 				'_id'=>$tx['_id']
 				);
-			Transactions::update($data,$conditions);	
+				Transactions::update($data,$conditions);	
 		return $this->render(array('json' => array(
 			'success'=>1,
 		)));
 			
 		
 	}
-	
+		public function SendtoUser($Reference=null, $AdminUser = null){
+			$tx = Transactions::find('first',array(
+					'conditions'=>array(
+						'Reference'=>$Reference
+					)
+				));
+				$user = Users::find('first',array(
+					'conditions'=>array(
+						'username'=>$tx['username']
+					)
+				));
+				$detail = Details::find('first',array(
+					'conditions'=>array(
+						'username'=>$tx['username'],
+						'user_id'=>(string)$user['_id']
+					)
+				));
+				
+				$balance = 'balance.'.$tx['Currency'];
+					$data = array(
+						$balance => (float)$detail[$balance] + $tx['Amount'],
+					);
+					$details = Details::find('all', array(
+						'conditions' => array(
+							'user_id'=>(string)$user['_id'], 
+							)
+					))->save($data);
+				
+				
+					$emaildata = array(
+						'email'=>$user['email'],
+						'data'=>$tx
+					);
+						$function = new Functions();
+						$compact = array('data'=>$emaildata);
+						$from = array(NOREPLY => "noreply@".COMPANY_URL);
+						$email = $user['email'];
+						$function->sendEmailTo($email,$compact,'users','sendWithdrawEmailUser',"SiiCrypto.com - Withdrawal Request",$from,MAIL_NILAM,MAIL_DANNY,null,null);
+					/////////////////////////////////Email//////////////////////////////////////////////////				
+
+					$data = array(
+						"SenttoUser"=>"Yes",
+						"Status"=>"Rejected",
+						"SentByAdmin"=>$AdminUser
+					);
+				$conditions = array(
+				'Reference'=>$tx['Reference'],
+				'_id'=>$tx['_id']
+				);
+			Transactions::update($data,$conditions);	
+
+
+					return $this->render(array('json' => array(
+					'success'=>1,
+					)));
+			
+		}
 }
 ?>

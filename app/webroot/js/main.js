@@ -763,6 +763,8 @@ function SendtoUser(){
 		function(ReturnValues){
 			if(ReturnValues){
 				if(ReturnValues['success']==1){
+					alert("Rejection information sent to user!");
+					window.location.assign("/users/confirmUpload/"+Reference);													
 				}
 				if(ReturnValues['success']==0){
 				}

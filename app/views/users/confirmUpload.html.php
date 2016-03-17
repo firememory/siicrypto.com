@@ -50,7 +50,7 @@ margin-bottom:5px;
 				<?php }	?>
 				</div>
 				<?php if($Approved<2){?>
-				<?php if($Rejected<2){?>
+				<?php if($Rejected<1){?>
 				<div class="row divBox" >
 						<div class="col-md-6 shade divSingle"><h4><strong>Select Admin:</strong></h4></div>
 						<div class="col-md-6 divDouble">
@@ -82,7 +82,7 @@ margin-bottom:5px;
 				<?php }?>
 				
 				<?php if($Approved<2){?>
-				<?php if($Rejected<2){?>
+				<?php if($Rejected<1){?>
 				<div class="row " >
 						<div class="col-md-6 divDouble"><a href="#" class="btn btn-primary btn-block" onclick="CallAdmin()">Call Admin</a></strong></h4></div>
 				</div>						
@@ -104,17 +104,21 @@ margin-bottom:5px;
 				
 				</div>
 			<?php }?>
-				<?php if($Rejected==2){?>
+				<?php if($Rejected==1){?>
+					<?php if($transaction['Status']=="Rejected"){?>
 				<div class="row " >
-				<div class="col-md-12 divSingle" id="FinalApprover"><?=str_replace('%20',' ',$Admin['UserName'])?></div>
-				<a href="#" class="btn btn-danger btn-block" onclick="SendtoUser()">Inform User: Rejection</a>
-				
+					<div class="col-md-12 divSingle">Sent to User <?=$transaction['SenttoUser']?> by <?=str_replace('%20', ' ',$transaction['SentByAdmin'])?> Status: <?=$transaction['Status']?>
 				</div>
+				<?php }else{?>			
+				<div class="row " >
+					<div class="col-md-12 " id="FinalApprover"><?=str_replace('%20',' ',$Admin['UserName'])?></div>
+					<div class="col-md-12 " ><a href="#" class="btn btn-danger btn-block" onclick="SendtoUser()">Inform User: Rejection</a></div>
+				</div>
+				<?php }?>			
 			<?php }?>			
 			<?php }else{?>
 				<div class="row " >
 				<div class="col-md-12 divSingle">Sent to ILS <?=$transaction['SenttoBank']?> by <?=str_replace('%20', ' ',$transaction['SentByAdmin'])?>
-				
 				</div>
 				</div>
 			<?php }?>			

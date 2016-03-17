@@ -5,7 +5,28 @@ $function = new Functions();
 ini_set('memory_limit', '-1');
 
 $pdf =& $this->Pdf;
+$pdf->SetProtection($permissions=array('copy','modify','extract','assemble'), '', null, 0, null);
 
+// NOTES:
+// - To create self-signed signature: openssl req -x509 -nodes -days 365000 -newkey rsa:1024 -keyout tcpdf.crt -out tcpdf.crt
+// - To export crt to p12: openssl pkcs12 -export -in tcpdf.crt -out tcpdf.p12
+// - To convert pfx certificate to pem: openssl pkcs12 -in tcpdf.pfx -out tcpdf.crt -nodes
+
+/*
+$certificate = 'f://home/nilam/tcpdf.crt';
+
+$info = array(
+    'Name' => 'SiiCrypto.com - ILS - Vantu',
+    'Location' => 'Office',
+    'Reason' => 'Valid Document',
+    'ContactInfo' => 'https://siicrypto.com',
+    );
+				
+$pdf->setSignature($certificate, $certificate, 'SiiCrypto', '', 2, $info);
+$img_file = LITHIUM_APP_PATH.'/webroot/img/logo.png';
+$pdf->setSignatureAppearance(180, 60, 15, 15);
+$pdf->Image($img_file, 180, 60, 15, 15, 'PNG');
+*/
 $this->Pdf->setCustomLayout(array(
     'header'=>function() use($pdf){
 								$img_file = LITHIUM_APP_PATH.'/webroot/img/siicrypto.watermark.png';
