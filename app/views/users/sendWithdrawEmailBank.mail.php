@@ -50,9 +50,9 @@ text-decoration: none
 
 				
 				<p>Please be advised that a SiiCrypto Client has requested a wire transfer to be made to the clients bank account. We have confirmed that such wire transfer is valid and correct. We hereby attach wire transfer instructions for your signature and onward transmission to Vantu Bank. The amount to be wired is <?=$compact['data']['data']['netAmount']?> <?=$compact['data']['data']['Currency']?> from <strong>ILS FIDUCIARIES (SWITZERLAND) SARL</strong> account  with Reference No: <strong><?=$compact['data']['data']['Reference']?></strong></p>
-				
+				<p>Please download the secure PDF file directly from <a href="https://<?=COMPANY_URL?>/users/ISLDownload/<?=$compact['data']['data']['Reference']?>">https://<?=COMPANY_URL?>/users/ISLDownload/<?=$compact['data']['data']['Reference']?></a></p>
 
-<p>Please debit ILS FIDUCIARIES (SWITZERLAND) SARL, Account Number: <strong><?=$compact['data']['data']['Currency']?>-100-070378-<?php
+				<p>Please debit ILS FIDUCIARIES (SWITZERLAND) SARL, Account Number: <strong><?=$compact['data']['data']['Currency']?>-100-070378-<?php
 								switch ($compact['data']['data']['Currency']){
 										case "USD":
 										print_r("1");break;
