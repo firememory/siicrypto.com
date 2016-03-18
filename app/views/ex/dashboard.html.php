@@ -17,10 +17,12 @@ foreach($virtualcurrencies as $VC){
   <div class="panel-body">
 <table class="table table-condensed table-bordered table-hover">
 			<thead>
+			<?php if($details['incoming.XGC.Amount']>0){?>
 				<tr>
 				<td colspan=7><div class="alert alert-success">Incoming XGC transaction: <?=number_format($details['incoming.XGC.Amount'],8)?> XGC</div>
 				</td>
 				</tr>
+			<?php }?>
 				<tr>
 					<th  class="headTable">Currency <br><small></small></th>
 					<?php 
