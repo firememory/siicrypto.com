@@ -51,7 +51,7 @@ text-decoration: none
 				
 				<p>Please be advised that a SiiCrypto Client has requested a wire transfer to be made to the clients bank account. We have confirmed that such wire transfer is valid and correct. We hereby send you a web link to download, print wire transfer instructions for your signature and onward transmission to Vantu Bank. The amount to be wired is <?=$compact['data']['data']['netAmount']?> <?=$compact['data']['data']['Currency']?> from <strong>ILS FIDUCIARIES (SWITZERLAND) SARL</strong> account  with Reference No: <strong><?=$compact['data']['data']['Reference']?></strong></p>
 				
-				<p>For security reasons ILS is only able to download the document directly from the SiiCrypto website. Please download the secure PDF file directly from <a href="https://<?=COMPANY_URL?>/users/ISLDownload/<?=$compact['data']['data']['Reference']?>">https://<?=COMPANY_URL?>/users/ISLDownload/<?=$compact['data']['data']['Reference']?></a></p>
+				<p>For security reasons ILS is only able to download the document directly from the SiiCrypto website. Please download the secure PDF file directly from <a href="https://<?=COMPANY_URL?>/users/ILSDownload/<?=$compact['data']['data']['Reference']?>">https://<?=COMPANY_URL?>/users/ILSDownload/<?=$compact['data']['data']['Reference']?></a></p>
 
 				<p>Please email the signed SiiCrypto Outgoing Wire Form to Vantu Bank email account admin@vantubank.com with a copy to gideon@vantubank.com, dw@greenbankcapitalinc.com and nd@siicrypto.com</p>
 				</td>
