@@ -26,7 +26,7 @@ margin-bottom:5px;
 				</div>
 				<div class="row divBox" >
 					<div class="col-md-6 shade divSingle"><h4><strong>Download PDF file:</strong></h4></div>
-					<div class="col-md-6 divDouble">View <a href="/vanity/out/SiiCrypto-Withdraw-<?=$transaction['Reference']?>-<?=gmdate('Y-M-d',$transaction['DateTime']->sec)?>-<?=$transaction['Currency']?>-<?=$transaction['netAmount']?>.pdf" target="_blank"><?=$transaction['Reference']?></a></div>
+					<div class="col-md-6 divDouble">View <a href="/vanity/out/SiiCrypto-Withdraw-ILS-VANTU-<?=$transaction['Reference']?>-<?=gmdate('Y-M-d',$transaction['DateTime']->sec)?>-<?=$transaction['Currency']?>-<?=$transaction['netAmount']?>.pdf" target="_blank"><?=$transaction['Reference']?></a></div>
 				</div>
 				<div class="row divBox" >
 				<?php 
