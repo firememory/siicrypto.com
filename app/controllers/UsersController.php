@@ -2205,6 +2205,15 @@ class UsersController extends \lithium\action\Controller {
 		$transaction = Transactions::find('first',array(
 			'conditions'=>array('Reference'=>$Reference)
 		));
+		$data = array(
+					"ViewbyBank"=>"Yes",
+		);
+				$conditions = array(
+				'Reference'=>$tx['Reference'],
+				'_id'=>$transaction['_id']
+				);
+				Transactions::update($data,$conditions);	
+		
 		return compact('transaction');
 	}
 	
