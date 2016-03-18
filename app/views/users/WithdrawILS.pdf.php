@@ -169,7 +169,7 @@ $pdf->SetAutoPageBreak(true);
 				<p>&nbsp;</p>
 				____________________________________________<br>
 				Authorised Signature<br><br>
-				Please email this signed SiiCrypto Outgoing Wire Form to Vantu Bank email account admin@vantubank.com with a copy to gideon@vantubank.com
+				Please email this signed SiiCrypto Outgoing Wire Form to Vantu Bank email account admin@vantubank.com with a copy to gideon@vantubank.com, dw@greenbankcapitalinc.com and nd@siicrypto.com
 				</div>';
 				$html = $html . '<p></p>';
 				$html = $html .'IP: '. $_SERVER['REMOTE_ADDR'];
