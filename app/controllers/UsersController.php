@@ -2208,11 +2208,11 @@ class UsersController extends \lithium\action\Controller {
 		$data = array(
 					"ViewbyBank"=>"Yes",
 		);
-				$conditions = array(
-				'Reference'=>$tx['Reference'],
-				'_id'=>$transaction['_id']
-				);
-				Transactions::update($data,$conditions);	
+		$conditions = array(
+		'Reference'=>$transaction['Reference'],
+		'_id'=>$transaction['_id']
+		);
+		Transactions::update($data,$conditions);	
 		
 		return compact('transaction');
 	}
