@@ -18,6 +18,10 @@ foreach($virtualcurrencies as $VC){
 <table class="table table-condensed table-bordered table-hover">
 			<thead>
 				<tr>
+				<td colspan=7><div class="alert alert-success">Incoming XGC transaction: <?=number_format($details['incoming.XGC.Amount'],8)?> XGC</div>
+				</td>
+				</tr>
+				<tr>
 					<th  class="headTable">Currency <br><small></small></th>
 					<?php 
 					$currencies = array();

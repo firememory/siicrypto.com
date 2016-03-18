@@ -17,6 +17,7 @@ use \Swift_MailTransport;
 use \Swift_Mailer;
 use \Swift_Message;
 use \Swift_Attachment;
+use \Swift_Validate;
 
 class Functions extends \lithium\action\Controller {
 
@@ -948,6 +949,8 @@ curl_close($curl);
 				)
 			);
 
+					//print_r(($from));
+				
 			$transport = Swift_MailTransport::newInstance();
 			$mailer = Swift_Mailer::newInstance($transport);
 	

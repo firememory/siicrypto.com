@@ -585,8 +585,8 @@ class ExController extends \lithium\action\Controller {
 			$TotalCompleteOrders['Sell'] = $this->TotalCompleteOrders($id,'Sell',substr($t['trade'],0,3),substr($t['trade'],4,3));						
 		}
 		$title = "Dashboard";
-		$keywords = "Dashboard, trading platform, bitcoin exchange, we trust, United Kingdom, UK";
-		$description = "Dashboard for trading platform for bitcoin exchange in United Kingdom, UK";
+		$keywords = "Dashboard, trading platform, bitcoin exchange, ";
+		$description = "Dashboard for trading platform for bitcoin exchange";
 		$settings = Settings::find('first');
 		return compact('title','details','YourOrders','Commissions','CompletedCommissions','YourCompleteOrders','RequestFriends','UsersRegistered','OnlineUsers','TotalOrders','TotalCompleteOrders','keywords','description','settings','user');
 	}

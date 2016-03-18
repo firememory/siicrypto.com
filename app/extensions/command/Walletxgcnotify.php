@@ -3,8 +3,9 @@ namespace app\extensions\command;
 
 use app\models\Transactions;
 use app\models\Details;
+use app\models\Users;
 use app\models\Parameters;
-
+use app\extensions\action\Functions;
 
 use app\extensions\action\Greencoin;
 
@@ -15,13 +16,14 @@ class Walletxgcnotify extends \lithium\console\Command {
 			$txfee = $paytxfee['payxgctxfee'];
 // print_r($s);
 		$getrawtransaction = $greencoin->getrawtransaction($s);
+//		print_r($getrawtransaction);
 		$decoderawtransaction = $greencoin->decoderawtransaction($getrawtransaction);		
 
 			foreach($decoderawtransaction['vout'] as $out){
 				foreach($out['scriptPubKey']['addresses'] as $address){
 				
 					$username = $greencoin->getaccount($address);
-				print_r($username);
+//				print_r($address);
 					$Amount = (float)$out['value'];
 					if($greencoin->getaccount($address)!=""){
 						$Transactions = Transactions::find('first',array(
@@ -31,8 +33,8 @@ class Walletxgcnotify extends \lithium\console\Command {
 							$t = Transactions::create();
 							$Amount = $Amount;
 							$comment = "Move from User: ".$username."; Address: ".GREENCOINX_ADDRESS."; Amount:".$Amount.";";
-							$transfer = $greencoin->sendfrom($username, GREENCOINX_ADDRESS, (float)$Amount,(int)0,$comment);
-
+							$transfer = $greencoin->sendfrom($username, GREENCOINX_ADDRESS, (float)$Amount, true, (int)0,$comment);
+							
 							if(isset($transfer['error'])){
 								$error = $transfer['error']; 
 							}else{
@@ -47,6 +49,7 @@ class Walletxgcnotify extends \lithium\console\Command {
 							'Amount'=> $Amount,
 							'Added'=>true,
 							'Transfer'=>$comment,
+							'transaction' => $transfer
 						);							
 						$t->save($data);
 						$userName = str_replace("SiiCrypto-","",$username);
@@ -69,20 +72,20 @@ class Walletxgcnotify extends \lithium\console\Command {
 					);
 						$function = new Functions();
 						$compact = array('data'=>$emaildata);
-						$from = array(NOREPLY => "noreply@".COMPANY_URL);
+						$from = array(NOREPLY => "noreply@siicrypto.com");
 						$email = $email;
-						$function->sendEmailTo($email,$compact,'ex','transactionXGCReceived',"SiiCrypto.com - Received coins",$from,'','','',null);
+						$function->sendEmailTo($email,$compact,'users','transactionXGCReceived',"SiiCrypto.com - Received coins",$from,'','','',null);
 					/////////////////////////////////Email//////////////////////////////////////////////////				
 
 // email send function	
-						
-						
-									
+
 						$dataDetails = array(
-								'balance.XGC' => (float)((float)$details['balance.XGC'] + (float)$Amount),
+								'incoming.XGC.Amount' => (float)$Amount,
+								'incoming.XGC.tx'=> $s,
+								'incoming.XGC.Address'=>$address,
 								'XGCnewaddress'=>'Yes'						
 							);
-						
+//						print_r($dataDetails);
 							$details = Details::find('all',
 								array(
 										'conditions'=>array('username'=>(string)$userName)
