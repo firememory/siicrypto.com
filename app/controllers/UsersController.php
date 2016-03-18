@@ -2200,7 +2200,7 @@ class UsersController extends \lithium\action\Controller {
 			
 		
 	}
-	public function ISLDownload($Reference = null){
+	public function ILSDownload($Reference = null){
 		$this->_render['layout'] = 'mobile';
 		$transaction = Transactions::find('first',array(
 			'conditions'=>array('Reference'=>$Reference)
