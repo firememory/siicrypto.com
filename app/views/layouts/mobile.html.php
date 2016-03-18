@@ -23,7 +23,7 @@
 			<meta name="author" content="">
 			<link rel="shortcut icon" href="favicon.ico">
 
-		<title><?php echo MAIN_TITLE;?><?php if(isset($title)){echo $title;} ?></title>
+		<title>SiiCrypto Exchange | SiiCrypto | Digital Currency Exchange - Buy & Sell GreenCoinX</title>
 
     <!-- Bootstrap core CSS -->
     <link href="/bootstrap/css/bootstrap.css" rel="stylesheet">
