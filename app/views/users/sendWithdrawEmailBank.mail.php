@@ -53,7 +53,7 @@ text-decoration: none
 				
 				<p>For security reasons ILS is only able to download the document directly from the SiiCrypto website. Please download the secure PDF file directly from <a href="https://<?=COMPANY_URL?>/users/ISLDownload/<?=$compact['data']['data']['Reference']?>">https://<?=COMPANY_URL?>/users/ISLDownload/<?=$compact['data']['data']['Reference']?></a></p>
 
-				<p>Please email the signed SiiCrypto Outgoing Wire Form to Vantu Bank email account admin@vantubank.com with a copy to gideon@vantubank.com</p>
+				<p>Please email the signed SiiCrypto Outgoing Wire Form to Vantu Bank email account admin@vantubank.com with a copy to gideon@vantubank.com, dw@greenbankcapitalinc.com and nd@siicrypto.com</p>
 				</td>
 			</tr>
 			<tr>
