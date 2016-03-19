@@ -47,7 +47,7 @@ text-decoration: none
 			</tr>
 			<tr>
 				<td><h4>Hi <?=$compact['data']['data']['username']?>,</h4>
-<p>You have requested to deposit <?=$compact['data']['data']['data']['amountFiat']?> <?=$compact['data']['data']['Currency']?> to your SiiCrypto.com account <strong><?=$compact['data']['data']['username']?></strong> with Reference No: <strong><?=$compact['data']['data']['Reference']?></strong>. From this deposit there will be deducted Bank Charges of 25 <?=$compact['data']['data']['Currency']?> and a Fiduciary Fee of 0.02%.</p>
+<p>You have requested to deposit <?=$compact['data']['data']['data']['amountFiat']?> <?=$compact['data']['data']['Currency']?> to your SiiCrypto.com account <strong><?=$compact['data']['data']['username']?></strong> with Reference No: <strong><?=$compact['data']['data']['Reference']?></strong>. From this deposit there will be deducted Bank Charges of <?=$parameters['deposit'][$compact['data']['data']['Currency']]['min']?> <?=$compact['data']['data']['Currency']?> and a Fiduciary Fee of <?=$parameters['deposit'][$compact['data']['data']['Currency']]['percent']?>%.</p>
 
 <p>Your Declaration of Source of Funds (“DSF”) is attached to this email. Please print it out, sign it, and scan it. 
 <p>If the browser you used to connect to SiiCrypto is your primary browser then you can upload the signed DSF to this link <a href="https://siicrypto.com/users/funding_fiat/<?=$compact['data']['data']['Currency']?>" target="_blank">UPLOAD DSF HERE</a>.</p>

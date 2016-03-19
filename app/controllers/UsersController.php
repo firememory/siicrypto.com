@@ -1667,9 +1667,8 @@ class UsersController extends \lithium\action\Controller {
 				)
 			);	
 
-
 		}
-			return compact('title','details','data','user');			
+			return compact('title','details','data','user','parameters');			
 	}
 
 	public function sendDeposit($Reference = null){

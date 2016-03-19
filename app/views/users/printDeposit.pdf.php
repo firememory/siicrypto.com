@@ -239,7 +239,7 @@ For "Other", please be specific.</p>';
 				$html = $html . 'Date: '.gmdate('Y-M-d H:i:s',time());
 				$html = $html . '<div style="text-align:right;"><u>'.$data['data']['fullName'].'</u><br>
 				Account Holder\'s Name<br></div>
-				<span><small>By typing in your name and then clicking the send button below you agree that this electronic signature confirms that you have adopted the contents of this electronic message and that the person(s) who have completed this Declaration of Source of Funds form is/are the person(s) who wrote it and that the sender of the form is the person(s) described herein.</small></span>
+				<span><small>By signing below you agree that this signature confirms that you have adopted the contents of this message and that the person(s) who have completed this Declaration of Source of Funds form is/are the person(s) who wrote it and that the sender of the form is the person(s) described herein.</small></span>
 				<div style="padding-left:100px;text-align:right;margin-bottom:10px">
 				</div>';
 				$html = $html . '<p></p>';
