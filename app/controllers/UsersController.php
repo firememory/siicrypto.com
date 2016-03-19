@@ -1668,6 +1668,7 @@ class UsersController extends \lithium\action\Controller {
 			);	
 
 		}
+		$parameters = Parameters::find("first");
 			return compact('title','details','data','user','parameters');			
 	}
 
