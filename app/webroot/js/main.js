@@ -426,11 +426,7 @@ function CheckCurrencyPayment(currency){
 					address = "<a href='http://blockchain.info/address/"+ address +"' target='_blank'>"+ address +"</a> <i class='glyphicon glyphicon-ok'></i>";
 						break;
 					case "XGC":
-					address = "<a href='http://greencoin.io/blockchain/address/"+ address +"' target='_blank'>"+ address +"</a> <i class='glyphicon glyphicon-ok'></i>";
-
-						break;
-					case "LTC":
-					address = "<a href='http://ltc.block-explorer.com/address/"+ address +"' target='_blank'>"+ address +"</a> <i class='glyphicon glyphicon-ok'></i>";
+					address = "<a href='http://blockchain.xgcwallet.org:3001/address/"+ address +"' target='_blank'>"+ address +"</a> <i class='glyphicon glyphicon-ok'></i>";
 						break;
 					default:
 					address = address +" <i class='glyphicon glyphicon-remove'></i>";					
