@@ -18,7 +18,7 @@ margin-bottom:5px;
 </style><div class="col-md-6 col-md-offset-3">
 		<div style="padding:10px">
 			<h3>THIS IS THE SECURE SIICRYPTO LINK FROM WHICH ILS CAN DOWNLOAD THE WIRE REQUEST FOR SIGNATURE BY ILS</h3>
-			<h3>Withdrawal Request by by SiiCrypto client <?=$transaction['username']?> <br>Amount: <?=$transaction['netAmount']?> <?=$transaction['Currency']?></h3>
+			<h3>Withdrawal Request by SiiCrypto client <?=$transaction['username']?> <br>Amount: <?=$transaction['netAmount']?> <?=$transaction['Currency']?></h3>
 		</div>
 		<div>
 				<div class="row divBox" >
