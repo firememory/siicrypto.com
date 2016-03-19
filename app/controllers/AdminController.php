@@ -609,9 +609,9 @@ $description = "Admin Approve documents ";
 		$title = "Transactions";
 $keywords = "Transactions";
 $description = "Admin panel for transactions";
+	$parameters = Parameters::find("first");
 
-
-		return compact('Details','reasons','title','keywords','description');
+		return compact('Details','reasons','title','keywords','description','parameters');
 	}
 	public function withdrawals($msg = null){
 		if($this->__init()==false){$this->redirect('ex::dashboard');	}

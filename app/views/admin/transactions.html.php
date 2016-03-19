@@ -51,9 +51,11 @@ foreach ($Details	as $tx){?>
 				<option value="<?=$reason['code']?>"><?=$reason['reason']?></option>
 			<?php }?>
 			</select><br>
-			
+			<?php
+			$Amount = round($tx['Amount'] - $parameters['deposit'][$tx['Currency']]['min'] - $tx['Amount']*$parameters['deposit'][$tx['Currency']]['percent']/100);
+			?>
 			<form action="/admin/approvetransaction" method="post" class="form form-horizontal">
-				<input type="text" name="Amount" id="Amount" value="<?=$tx['Amount']?>" max="<?=$tx['Amount']?>" min="1" class="col-md-2 form-control tooltip-y" rel="tooltip-x" data-placement="top" title="Only numbers no comma ">
+				<input type="text" name="Amount" id="Amount" value="<?=$Amount?>" max="<?=$Amount?>" min="1" class="col-md-2 form-control tooltip-y" rel="tooltip-x" data-placement="top" title="Only numbers no comma ">
 				<input type="hidden" name="id" id="id" value="<?=$tx['_id']?>">
 				<input type="hidden" name="Currency" id="Currency" value="<?=$tx['Currency']?>">				
 				<br>
