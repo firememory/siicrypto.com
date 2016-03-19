@@ -1686,10 +1686,12 @@ class UsersController extends \lithium\action\Controller {
 				'Approved'=>'No'				
 				)
 		));
+		$parameters = Parameters::find("first");
 					// ------------------
 								/////////////////////////////////Email//////////////////////////////////////////////////
 					$emaildata = array(
-						'data'=>$transaction
+						'data'=>$transaction,
+						'parameters'=>$parameters
 					);
 						$function = new Functions();
 						$compact = array('data'=>$emaildata);
