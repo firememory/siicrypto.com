@@ -705,7 +705,7 @@ class UsersController extends \lithium\action\Controller {
 			}
 			break;
 			case "XGC":
-			$currencyName = "Greencoin";			
+			$currencyName = "GreenCoinX";			
 			$greencoin = new Greencoin('http://'.GREENCOIN_WALLET_SERVER.':'.GREENCOIN_WALLET_PORT,GREENCOIN_WALLET_USERNAME,GREENCOIN_WALLET_PASSWORD);
 				
 			if($details[$currency.'newaddress']=="" || $details[$currency.'newaddress']=="Yes"){
@@ -2035,7 +2035,7 @@ class UsersController extends \lithium\action\Controller {
 			'oneCode'=>$oneCode
 		);
 //		print_r($data);
-//		$returnvalues = $function->twilioTOTP($data);	 // Testing if it works 
+		$returnvalues = $function->twilioTOTP($data);	 // Testing if it works 
 			return $this->render(array('json' => array(
 				'success'=>1,
 			)));
