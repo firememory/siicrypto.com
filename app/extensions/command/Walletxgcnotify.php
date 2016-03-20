@@ -25,6 +25,8 @@ class Walletxgcnotify extends \lithium\console\Command {
 					$username = $greencoin->getaccount($address);
 				print_r($address);
 					$Amount = (float)$out['value'];
+					print_r($Amount);
+					print_r($username);
 					if($greencoin->getaccount($address)!=""){
 						$Transactions = Transactions::find('first',array(
 							'conditions'=>array('TransactionHash' => $s)
