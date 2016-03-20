@@ -14,20 +14,20 @@ class Walletxgcnotify extends \lithium\console\Command {
 			$greencoin = new Greencoin('http://'.GREENCOIN_WALLET_SERVER.':'.GREENCOIN_WALLET_PORT,GREENCOIN_WALLET_USERNAME,GREENCOIN_WALLET_PASSWORD);
 			$paytxfee = Parameters::find('first');
 			$txfee = $paytxfee['payxgctxfee'];
- print_r($s);
+ //print_r($s);
 		$getrawtransaction = $greencoin->getrawtransaction($s);
-		print_r($getrawtransaction);
+//		print_r($getrawtransaction);
 		$decoderawtransaction = $greencoin->decoderawtransaction($getrawtransaction);		
 
 			foreach($decoderawtransaction['vout'] as $out){
 				foreach($out['scriptPubKey']['addresses'] as $address){
 				
 					$username = $greencoin->getaccount($address);
-				print_r($address);
+//				print_r($address);
 					$Amount = (float)$out['value'];
-					print_r($Amount);
+//					print_r($Amount);
 					print_r($username);
-					if($greencoin->getaccount($address)!=""){
+					if($username!=""){
 						$Transactions = Transactions::find('first',array(
 							'conditions'=>array('TransactionHash' => $s)
 						));
