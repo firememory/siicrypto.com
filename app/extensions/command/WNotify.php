@@ -17,8 +17,8 @@ class WNotify extends \lithium\console\Command {
 							$t->save($data);
 
 				
-				}
-			}
+				
+			
 		}
 } 
 ?>
