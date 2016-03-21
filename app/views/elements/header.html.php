@@ -7,7 +7,7 @@ use app\extensions\action\Functions;
 	$response = file_get_contents("http://ipinfo.io/".$_SERVER['REMOTE_ADDR']);
 	print_r($response);
 	$IPResponse = json_decode($response);
-	Session::write('IPDETAILS',$IPResponse->ip." ".$IPResponse->city." ".$IPResponse->country);
+	Session::write('IPDETAILS',$IPResponse->ip." ".$IPResponse->region." ".$IPResponse->city." ".$IPResponse->country);
 
 
 ?>
