@@ -1,4 +1,5 @@
 <?php
+use lithium\storage\Session;
 			$opts = array(
 			  'http'=> array(
 					'method'=> "GET",
@@ -9,8 +10,8 @@
 //			print_r($jdec);
 			$rate = $jdec->{'USD'}->{'avg_24h'};
 //			print_r($jdec->{'USD'}->{'avg_24h'});
-	
 ?>
 <div class="row container-fluid">
-<small style="font-size:9px"><?=$rate?></small>
+<small style="font-size:9px">
+<?php print_r(Session::read("IPDETAILS"))?> - <?=$rate?></small>
 </div>

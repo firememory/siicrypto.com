@@ -10,7 +10,15 @@ use app\extensions\action\Functions;
 use app\extensions\action\Greencoin;
 
 class Walletxgcnotify extends \lithium\console\Command {
-    public function index($s=null) {
+ public function index($s=null) {
+		$Transactions = Transactions::find('first',array(
+			'conditions'=>array('TransactionHash' => $s)
+		));
+		if($Transactions['_id']!=""){
+				exit;
+		}
+		
+		
 			$greencoin = new Greencoin('http://'.GREENCOIN_WALLET_SERVER.':'.GREENCOIN_WALLET_PORT,GREENCOIN_WALLET_USERNAME,GREENCOIN_WALLET_PASSWORD);
 			$paytxfee = Parameters::find('first');
 			$txfee = $paytxfee['payxgctxfee'];

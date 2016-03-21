@@ -2,6 +2,14 @@
 use app\models\Trades;
 use lithium\storage\Session;
 use app\extensions\action\Functions;
+
+if(Session::read('IPDETAILS')===''){
+	$response = file_get_contents("http://ipinfo.io/".$_SERVER['REMOTE_ADDR']);
+	print_r($response);
+	$IPResponse = json_decode($response);
+	Session::write('IPDETAILS',$IPResponse->ip." ".$IPResponse->city." ".$IPResponse->country);
+}
+
 ?>
 <?php $user = Session::read('member'); ?>
 <div class="navbar-header">
@@ -89,3 +97,12 @@ foreach($trades as $tr){
 			<?php }?>				
 		</ul>
 </div> <!-- navbar-collapse -->
+
+
+
+
+
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+<?php print_r(Session::read('IPDETAILS'))?>
+</button>
+<!-- Modal on default page-->
