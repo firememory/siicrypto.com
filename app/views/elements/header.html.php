@@ -3,12 +3,12 @@ use app\models\Trades;
 use lithium\storage\Session;
 use app\extensions\action\Functions;
 
-if(Session::read('IPDETAILS')===''){
+
 	$response = file_get_contents("http://ipinfo.io/".$_SERVER['REMOTE_ADDR']);
 	print_r($response);
 	$IPResponse = json_decode($response);
 	Session::write('IPDETAILS',$IPResponse->ip." ".$IPResponse->city." ".$IPResponse->country);
-}
+
 
 ?>
 <?php $user = Session::read('member'); ?>

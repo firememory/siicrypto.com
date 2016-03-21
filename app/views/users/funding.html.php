@@ -187,7 +187,8 @@ function initCanvas(ww,hh)
     </div>
     <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
       <div class="panel-body">
-
+<p>Enter the amount of XGC you are withdrawing and then click Calculate<br>
+If an X appears next to the XGC Address in the Send To box then the address you are using is not a valid address</p>
 					<?php 
 					if(count($transactions)==0){
 					?>
