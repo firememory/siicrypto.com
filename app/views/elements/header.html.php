@@ -117,9 +117,7 @@ foreach($trades as $tr){
 			<li><a href="/login">Login</a></li>
 			<li><a href="/users/signup">Register&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
 			<?php }else{?>				
-<li><a data-toggle="modal" data-target="#myModal">
-<?php print_r(Session::read('IPDETAILS'))?>
-</a>			</li>
+<li><a data-toggle="modal" data-target="#myModal">		Warning!  </a></li>
 			<?php }?>			
 			<?php }?>				
 		</ul>
