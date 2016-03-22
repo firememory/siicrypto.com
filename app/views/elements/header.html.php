@@ -92,7 +92,7 @@ foreach($trades as $tr){
 			<li><a href="/login">Login</a></li>
 			<li><a href="/users/signup">Register&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
 			<?php }else{?>				
-<li><a data-toggle="modal" data-target="#myModal"><?=$GLOBALS['userCountry']?>-<?=$GLOBALS['userState']?>	Warning!  &nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+<li><a data-toggle="modal" data-target="#myModal"><?=$GLOBALS['userCountry']?> Warning!  &nbsp;&nbsp;&nbsp;&nbsp;</a></li>
 			<?php }?>			
 			<?php }?>				
 		</ul>
