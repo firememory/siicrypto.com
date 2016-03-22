@@ -144,11 +144,11 @@ $(function() {
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Warning</h4>
+        <h4 class="modal-title" id="myModalLabel"><?=$GLOBALS['userCountry']?>-<?=$GLOBALS['userState']?> Warning</h4>
       </div>
       <div class="modal-body">
-							<p class="alert alert-danger">Please note due to regulatory issues some residents of certain USA states are excluded.</p>
-							<p class="alert alert-danger">We regret we are unable to accept your application at this time due to USA state regulatory issues.</p>
+							<p class="alert alert-danger">Please note due to regulatory issues some residents of certain <?=$GLOBALS['userCountry']?>-<?=$GLOBALS['userState']?> states are excluded.</p>
+							<p class="alert alert-danger">We regret we are unable to accept your application at this time due to <?=$GLOBALS['userCountry']?>-<?=$GLOBALS['userState']?> state regulatory issues.</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
