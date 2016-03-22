@@ -10,13 +10,13 @@ use app\models\Countries;
 	$GLOBALS['cannotRegister'] = "false";
 	$GLOBALS['userCountry'] = $IPResponse->country;
 	$GLOBALS['userState'] = $IPResponse->region;
-	var_dump($cannotRegister,$userCountry,$userState);
+//	var_dump($cannotRegister,$userCountry,$userState);
 	$banned = Countries::find('first',array(
 		'conditions'=>array(
 				'ISO'=>$IPResponse->country,
 		)
 	));
-	var_dump($banned['ISO']);
+//	var_dump($banned['ISO']);
 	if(count($banned)>0){
 		$GLOBALS['cannotRegister'] = "true";
 		$userCountry = $banned['ISO'];
@@ -28,7 +28,7 @@ use app\models\Countries;
 						'State'=>$IPResponse->region
 				)
 			));
-			var_dump($bannedRegion['State']);
+//			var_dump($bannedRegion['State']);
 			if(count($bannedRegion)>0){
 					$GLOBALS['cannotRegister'] = "true";
 			}else{
