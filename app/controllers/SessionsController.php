@@ -14,7 +14,7 @@ use app\extensions\action\GoogleAuthenticator;
 class SessionsController extends \lithium\action\Controller {
 
     public function add() {
-					if($cannotRegister==true){
+					if($GLOBALS['cannotRegister']=="true"){
 						return $this->redirect('/');
 					}
 					

@@ -87,7 +87,8 @@ foreach($trades as $tr){
 					<li style="font-size:13px;"><a href="/company/verification">Verification</a></li>						
 					<li style="font-size:13px;"><a href="/company/privacy">Privacy & Terms</a></li>		
 					<li style="font-size:13px;"><a href="/company/press">Press</a></li>		
-			<?php var_dump($cannotRegister,$userCountry,$userState);if($cannotRegister=="false"){?>
+			<?php var_dump($GLOBALS['cannotRegister'],$GLOBALS['userCountry'],$GLOBALS['userState']);
+			if($GLOBALS['cannotRegister']=="false"){?>
 			<li><a href="/login">Login</a></li>
 			<li><a href="/users/signup">Register&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
 			<?php }else{?>				

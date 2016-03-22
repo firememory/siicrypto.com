@@ -18,7 +18,7 @@ use app\models\Countries;
 	));
 	var_dump($banned['ISO']);
 	if(count($banned)>0){
-		$cannotRegister = "true";
+		$GLOBALS['cannotRegister'] = "true";
 		$userCountry = $banned['ISO'];
 		$userState = $IPResponse->region;
 		if($banned['ISO']=='US'){
@@ -30,9 +30,9 @@ use app\models\Countries;
 			));
 			var_dump($bannedRegion['State']);
 			if(count($bannedRegion)>0){
-					$cannotRegister = "true";
+					$GLOBALS['cannotRegister'] = "true";
 			}else{
-					$cannotRegister = "false";
+					$GLOBALS['cannotRegister'] = "false";
 			}
 		}
 		
