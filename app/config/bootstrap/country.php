@@ -7,7 +7,7 @@ use app\models\Countries;
 	print_r($IPResponse);
 	global $cannotRegister, $userCountry, $userState;
 	
-	$cannotRegister = "false";
+	$GLOBALS['cannotRegister'] = "false";
 	$GLOBALS['userCountry'] = $IPResponse->country;
 	$GLOBALS['userState'] = $IPResponse->region;
 	var_dump($cannotRegister,$userCountry,$userState);
