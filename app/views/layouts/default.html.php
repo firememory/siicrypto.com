@@ -84,13 +84,13 @@ $ex = Session::read('ex');
 							<?php }?>
 						</ul>
 						<?php if($user==""){ ?>
-						<?php if(CANNOTREGISTER==false){?>
+						<?php if($CANNOTREGISTER=="false"){?>
 						<ul class="nav nav-sidebar">
 						<li class="active"><a href="/users/signup">Register & Open an account</a></li>
 						</ul>
 						<?php }else{?>				
 						<ul class="nav nav-sidebar">
-							<li class="active"><a data-toggle="modal" data-target="#myModal"><?=USERCOUNTRY?>-<?=USERSTATE?>		Warning!  &nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+							<li class="active"><a data-toggle="modal" data-target="#myModal"><?=$USERCOUNTRY?>-<?=$USERSTATE?>	Warning!  &nbsp;&nbsp;&nbsp;&nbsp;</a></li>
 							</ul>
 						<?php }?>			
 						<?php }?>
