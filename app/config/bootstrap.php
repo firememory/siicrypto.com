@@ -82,4 +82,6 @@ if (PHP_SAPI === 'cli') {
 	require __DIR__ . '/bootstrap/console.php';
 }
 
+ require __DIR__ . '/bootstrap/country.php';
+
 ?>

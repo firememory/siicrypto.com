@@ -84,9 +84,15 @@ $ex = Session::read('ex');
 							<?php }?>
 						</ul>
 						<?php if($user==""){ ?>
+						<?php if(CANNOTREGISTER==false){?>
 						<ul class="nav nav-sidebar">
 						<li class="active"><a href="/users/signup">Register & Open an account</a></li>
 						</ul>
+						<?php }else{?>				
+						<ul class="nav nav-sidebar">
+							<li class="active"><a data-toggle="modal" data-target="#myModal">		Warning!  &nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+							</ul>
+						<?php }?>			
 						<?php }?>
 <small style="letter-spacing: 0px;">
 <p>SiiCrypto first time users need to open an online GreenCoinX wallet at <a href="https://xgcwallet.org" target="_blank">www.xgcwallet.org</a></p>
@@ -136,24 +142,14 @@ $(function() {
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+        <h4 class="modal-title" id="myModalLabel">Warning</h4>
       </div>
       <div class="modal-body">
-Please note due to regulatory issues some residents of certain USA states are excluded.
-
- 
-
-Rejection email will say…
-
- 
-
-We regret we are unable to accept your application at this time due to USA state regulatory issues.
-
-         ...
+							<p class="alert alert-danger">Please note due to regulatory issues some residents of certain USA states are excluded.</p>
+							<p class="alert alert-danger">We regret we are unable to accept your application at this time due to USA state regulatory issues.</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
       </div>
     </div>
   </div>

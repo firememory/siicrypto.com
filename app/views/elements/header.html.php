@@ -2,35 +2,9 @@
 use app\models\Trades;
 use lithium\storage\Session;
 use app\extensions\action\Functions;
-use app\models\Countries;
 
-	$response = file_get_contents("http://ipinfo.io/".$_SERVER['REMOTE_ADDR']);
-	
-	$IPResponse = json_decode($response);
-	
-	$cannotRegister = false;
-	$banned = Countries::find('first',array(
-		'conditions'=>array(
-				'ISO'=>$IPResponse->country,
-		)
-	));
-	if(count($banned)>0){
-		$cannotRegister = true;
-		if($banned['ISO']=='US'){
-			$bannedRegion = Countries::find('first',array(
-				'conditions'=>array(
-						'ISO'=>$IPResponse->country,
-						'State'=>$IPResponse->region
-				)
-			));
-			if(count($bannedRegion)>0){
-				$cannotRegister = true;
-			}else{
-				$cannotRegister = false;
-			}
-		}
-		
-	}
+
+
 
 ?>
 <?php $user = Session::read('member'); ?>
@@ -113,11 +87,11 @@ foreach($trades as $tr){
 					<li style="font-size:13px;"><a href="/company/verification">Verification</a></li>						
 					<li style="font-size:13px;"><a href="/company/privacy">Privacy & Terms</a></li>		
 					<li style="font-size:13px;"><a href="/company/press">Press</a></li>		
-			<?php if($cannotRegister==false){?>
+			<?php if(CANNOTREGISTER==false){?>
 			<li><a href="/login">Login</a></li>
 			<li><a href="/users/signup">Register&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
 			<?php }else{?>				
-<li><a data-toggle="modal" data-target="#myModal">		Warning!  </a></li>
+<li><a data-toggle="modal" data-target="#myModal">		Warning!  &nbsp;&nbsp;&nbsp;&nbsp;</a></li>
 			<?php }?>			
 			<?php }?>				
 		</ul>

@@ -14,6 +14,11 @@ use app\extensions\action\GoogleAuthenticator;
 class SessionsController extends \lithium\action\Controller {
 
     public function add() {
+					if(CANNOTREGISTER==true){
+						return $this->redirect('/');
+					}
+					
+					
 		   //assume there's no problem with authentication
 			$noauth = false;
 			//perform the authentication check and redirect on success
