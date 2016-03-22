@@ -4,17 +4,18 @@ use app\models\Countries;
 	$response = file_get_contents("http://ipinfo.io/".$_SERVER['REMOTE_ADDR']);
 	
 	$IPResponse = json_decode($response);
-	
+	print_r($IPResponse);
 	global $cannotRegister, $userCountry, $userState;
 	$cannotRegister = "false";
 	$userCountry = $IPResponse->country;
 	$userState = $IPResponse->region;
+	var_dump($cannotRegister.$userCountry,$userState);
 	$banned = Countries::find('first',array(
 		'conditions'=>array(
 				'ISO'=>$IPResponse->country,
 		)
 	));
-	
+	var_dump($banned['ISO']);
 	if(count($banned)>0){
 		$cannotRegister = "true";
 		$userCountry = $banned['ISO'];
@@ -26,6 +27,7 @@ use app\models\Countries;
 						'State'=>$IPResponse->region
 				)
 			));
+			var_dump($bannedRegion['State']);
 			if(count($bannedRegion)>0){
 					$cannotRegister = "true";
 			}else{

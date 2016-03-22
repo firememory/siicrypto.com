@@ -84,7 +84,7 @@ $ex = Session::read('ex');
 							<?php }?>
 						</ul>
 						<?php if($user==""){ ?>
-						<?php if($cannotRegister=="false"){?>
+						<?php var_dump($cannotRegister.$userCountry,$userState);if($cannotRegister=="false"){?>
 						<ul class="nav nav-sidebar">
 						<li class="active"><a href="/users/signup">Register & Open an account</a></li>
 						</ul>
