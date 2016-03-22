@@ -4,7 +4,7 @@ use app\models\Countries;
 	$response = file_get_contents("http://ipinfo.io/".$_SERVER['REMOTE_ADDR']);
 	
 	$IPResponse = json_decode($response);
-	print_r($IPResponse);
+//	print_r($IPResponse);
 	global $cannotRegister, $userCountry, $userState;
 	
 	$GLOBALS['cannotRegister'] = "false";
