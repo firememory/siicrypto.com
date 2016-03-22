@@ -139,8 +139,17 @@ $(function() {
         <h4 class="modal-title" id="myModalLabel"><?=$GLOBALS['userCountry']?>-<?=$GLOBALS['userState']?> Warning</h4>
       </div>
       <div class="modal-body">
-							<p class="alert alert-danger">Please note due to regulatory issues some residents of certain <?=$GLOBALS['userCountry']?>-<?=$GLOBALS['userState']?> states are excluded.</p>
-							<p class="alert alert-danger">We regret we are unable to accept your application at this time due to <?=$GLOBALS['userCountry']?>-<?=$GLOBALS['userState']?> state regulatory issues.</p>
+						<?php if ($GLOBALS['userCountry']=="US"){?>
+						<h3>TRADING INFORMATION - USA <?=$GLOBALS['userState']?></h3>
+								<p class="alert alert-danger">>We regret to advise you that due to regulatory issues residents of some USA states are unable to trade on SiiCrypto at this time.
+								Your state requires additional licensing which we intend to complete as soon as possible. We will inform you when this licensing issue has been resolved. Thank you for your patience.
+								</p>
+						<?php }else{ ?>
+						<h3>TRADING INFORMATION - NON USA <?=$GLOBALS['userCountry']?></h3>
+							<p class="alert alert-danger">We regret to advise you that due to regulatory issues residents of some countries are excluded from trading on SiiCrypto at this time.
+							Your country requires additional licensing which we intend to complete as soon as possible, or it has been excluded for other regulatory reasons.
+								We will inform you when this issue has been resolved. Thank you for your patience.</p>
+						<?php }?>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
