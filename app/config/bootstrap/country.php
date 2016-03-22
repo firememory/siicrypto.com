@@ -6,10 +6,11 @@ use app\models\Countries;
 	$IPResponse = json_decode($response);
 	print_r($IPResponse);
 	global $cannotRegister, $userCountry, $userState;
+	
 	$cannotRegister = "false";
-	$userCountry = $IPResponse->country;
-	$userState = $IPResponse->region;
-	var_dump($cannotRegister.$userCountry,$userState);
+	$GLOBALS['userCountry'] = $IPResponse->country;
+	$GLOBALS['userState'] = $IPResponse->region;
+	var_dump($cannotRegister,$userCountry,$userState);
 	$banned = Countries::find('first',array(
 		'conditions'=>array(
 				'ISO'=>$IPResponse->country,
