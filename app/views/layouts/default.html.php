@@ -141,13 +141,13 @@ $(function() {
       <div class="modal-body">
 						<?php if ($GLOBALS['userCountry']=="US"){?>
 						<h3>TRADING INFORMATION - USA <?=$GLOBALS['userState']?></h3>
-								<p class="alert alert-danger">>We regret to advise you that due to regulatory issues residents of some USA states are unable to trade on SiiCrypto at this time.
-								Your state requires additional licensing which we intend to complete as soon as possible. We will inform you when this licensing issue has been resolved. Thank you for your patience.
+								<p class="alert alert-danger">We regret to advise you that due to regulatory issues residents of some USA states are unable to trade on SiiCrypto at this time.<br><br>
+								Your state requires additional licensing which we intend to complete as soon as possible.<br><br> We will inform you when this licensing issue has been resolved. Thank you for your patience.
 								</p>
 						<?php }else{ ?>
 						<h3>TRADING INFORMATION - NON USA <?=$GLOBALS['userCountry']?></h3>
-							<p class="alert alert-danger">We regret to advise you that due to regulatory issues residents of some countries are excluded from trading on SiiCrypto at this time.
-							Your country requires additional licensing which we intend to complete as soon as possible, or it has been excluded for other regulatory reasons.
+							<p class="alert alert-danger">We regret to advise you that due to regulatory issues residents of some countries are excluded from trading on SiiCrypto at this time.<br><br>
+							Your country requires additional licensing which we intend to complete as soon as possible, or it has been excluded for other regulatory reasons.<br><br>
 								We will inform you when this issue has been resolved. Thank you for your patience.</p>
 						<?php }?>
       </div>
