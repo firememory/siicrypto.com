@@ -5,9 +5,10 @@ use app\models\Countries;
 	
 	$IPResponse = json_decode($response);
 	
-	global $CANNOTREGISTER = "false";
-	global $USERCOUNTRY = "";
-	global $USERSTATE = "";
+	global $CANNOTREGISTER, $USERCOUNTRY, $USERSTATE;
+	$CANNOTREGISTER = "false";
+	 $USERCOUNTRY = "";
+	 $USERSTATE = "";
 	$banned = Countries::find('first',array(
 		'conditions'=>array(
 				'ISO'=>$IPResponse->country,
