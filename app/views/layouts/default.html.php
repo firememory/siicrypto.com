@@ -90,7 +90,7 @@ $ex = Session::read('ex');
 						</ul>
 						<?php }else{?>				
 						<ul class="nav nav-sidebar">
-							<li class="active"><a data-toggle="modal" data-target="#myModal">		Warning!  &nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+							<li class="active"><a data-toggle="modal" data-target="#myModal"><?=USERCOUNTRY?>-<?=USERSTATE?>		Warning!  &nbsp;&nbsp;&nbsp;&nbsp;</a></li>
 							</ul>
 						<?php }?>			
 						<?php }?>
