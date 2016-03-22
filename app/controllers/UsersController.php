@@ -33,7 +33,7 @@ class UsersController extends \lithium\action\Controller {
 	public function index(){
 	}
 	public function signup() {	
-					if(CANNOTREGISTER=="true"){
+					if($cannotRegister=="true"){
 						return $this->redirect('/');
 					}
 	

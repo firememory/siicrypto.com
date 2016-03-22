@@ -5,10 +5,10 @@ use app\models\Countries;
 	
 	$IPResponse = json_decode($response);
 	
-	global $CANNOTREGISTER, $USERCOUNTRY, $USERSTATE;
-	$CANNOTREGISTER = "false";
-	 $USERCOUNTRY = "";
-	 $USERSTATE = "";
+	global $cannotRegister, $userCountry, $userState;
+	$cannotRegister = "false";
+	$userCountry = $IPResponse->country;
+	$userState = $IPResponse->region;
 	$banned = Countries::find('first',array(
 		'conditions'=>array(
 				'ISO'=>$IPResponse->country,
@@ -16,9 +16,9 @@ use app\models\Countries;
 	));
 	
 	if(count($banned)>0){
-		$CANNOTREGISTER = "true";
-		$USERCOUNTRY = $banned['ISO'];
-		$USERSTATE = $IPResponse->region;
+		$cannotRegister = "true";
+		$userCountry = $banned['ISO'];
+		$userState = $IPResponse->region;
 		if($banned['ISO']=='US'){
 			$bannedRegion = Countries::find('first',array(
 				'conditions'=>array(
@@ -27,9 +27,9 @@ use app\models\Countries;
 				)
 			));
 			if(count($bannedRegion)>0){
-					$CANNOTREGISTER = "true";
+					$cannotRegister = "true";
 			}else{
-					$CANNOTREGISTER = "false";
+					$cannotRegister = "false";
 			}
 		}
 		
