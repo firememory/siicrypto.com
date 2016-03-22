@@ -87,11 +87,11 @@ foreach($trades as $tr){
 					<li style="font-size:13px;"><a href="/company/verification">Verification</a></li>						
 					<li style="font-size:13px;"><a href="/company/privacy">Privacy & Terms</a></li>		
 					<li style="font-size:13px;"><a href="/company/press">Press</a></li>		
-			<?php if(CANNOTREGISTER==false){?>
+			<?php if(CANNOTREGISTER=="false"){?>
 			<li><a href="/login">Login</a></li>
 			<li><a href="/users/signup">Register&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
 			<?php }else{?>				
-<li><a data-toggle="modal" data-target="#myModal">		Warning!  &nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+<li><a data-toggle="modal" data-target="#myModal"><?=USERCOUNTRY?>-<?=USERSTATE?>	Warning!  &nbsp;&nbsp;&nbsp;&nbsp;</a></li>
 			<?php }?>			
 			<?php }?>				
 		</ul>
