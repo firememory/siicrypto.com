@@ -84,17 +84,9 @@ $ex = Session::read('ex');
 							<?php }?>
 						</ul>
 						<?php if($user==""){ ?>
-			<?php // var_dump($GLOBALS['cannotRegister'],$GLOBALS['userCountry'],$GLOBALS['userState']);
-			if($GLOBALS['cannotRegister']=="false"){?>
-
 						<ul class="nav nav-sidebar">
 						<li class="active"><a href="/users/signup">Register & Open an account</a></li>
 						</ul>
-						<?php }else{?>				
-						<ul class="nav nav-sidebar">
-							<li class="active"><a data-toggle="modal" data-target="#myModal"><?=$GLOBALS['userCountry']?>-<?=$GLOBALS['userState']?>	Warning!  &nbsp;&nbsp;&nbsp;&nbsp;</a></li>
-							</ul>
-						<?php }?>			
 						<?php }?>
 <small style="letter-spacing: 0px;">
 <p>SiiCrypto first time users need to open an online GreenCoinX wallet at <a href="https://xgcwallet.org" target="_blank">www.xgcwallet.org</a></p>
