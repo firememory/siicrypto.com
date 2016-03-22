@@ -51,7 +51,13 @@ foreach($virtualcurrencies as $VC){
 					
 					foreach($VirtualCurr as $currency){?>
 					<th class="headTable" style="text-align:center">
-					<a href="/users/funding/<?=$currency?>" class="btn btn-success btn-block" >
+					<?php if($GLOBALS['cannotRegister']=="false"){?>
+					<a href="/users/funding/<?=$currency?>" class="btn btn-success btn-block">
+					<?php }else{?>				
+					<a href="#" class="btn btn-success btn-block" data-toggle="modal" data-target="#myModal">
+					<?php }?>			
+					
+					<a href="/users/funding/<?=$currency?>" class="btn btn-success btn-block" data-toggle="modal" data-target="#myModal">
 <!--					<i class="fa fa-arrow-left"></i> -->
 					<?=$currency?>
 <!--					<i class="fa fa-arrow-right"></i> -->
@@ -60,7 +66,11 @@ foreach($virtualcurrencies as $VC){
 					<?php }
 					foreach($FiatCurr as $currency){?>
 					<th class="headTable" style="text-align:center">
+					<?php if($GLOBALS['cannotRegister']=="false"){?>
 					<a href="/users/funding_fiat/<?=$currency?>" class="btn btn-primary btn-block">
+					<?php }else{?>				
+					<a href="#" class="btn btn-success btn-block" data-toggle="modal" data-target="#myModal">
+					<?php }?>			
 <!--					<i class="fa fa-arrow-left"></i> -->
 					<?=$currency?>
 <!--					<i class="fa fa-arrow-right"></i> -->
