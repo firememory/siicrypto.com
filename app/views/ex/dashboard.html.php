@@ -56,8 +56,6 @@ foreach($virtualcurrencies as $VC){
 					<?php }else{?>				
 					<a href="#" class="btn btn-success btn-block" data-toggle="modal" data-target="#myModal">
 					<?php }?>			
-					
-					<a href="/users/funding/<?=$currency?>" class="btn btn-success btn-block" data-toggle="modal" data-target="#myModal">
 <!--					<i class="fa fa-arrow-left"></i> -->
 					<?=$currency?>
 <!--					<i class="fa fa-arrow-right"></i> -->

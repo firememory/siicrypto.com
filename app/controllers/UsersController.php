@@ -648,6 +648,10 @@ class UsersController extends \lithium\action\Controller {
 	}
 	
 	public function funding($currency=null){
+					if($GLOBALS['cannotRegister']=="true"){
+						return $this->redirect('ex::dashboard');
+					}
+
 			$currency = strtoupper($currency);
 			$title = "Funding ".$currency;
 			$coin = new Greencoin('http://'.GREENCOIN_WALLET_SERVER.':'.GREENCOIN_WALLET_PORT,GREENCOIN_WALLET_USERNAME,GREENCOIN_WALLET_PASSWORD);
@@ -748,6 +752,11 @@ class UsersController extends \lithium\action\Controller {
 			return compact('details','address','txfee','title','transactions','user','currency','currencyName')	;
 	}
 	public function funding_fiat($currency='USD',$fileupload=null){
+					if($GLOBALS['cannotRegister']=="true"){
+						return $this->redirect('ex::dashboard');
+					}
+
+		
 		$title = "Funding Fiat";
 		$currency = strtoupper($currency);
 		$user = Session::read('default');
