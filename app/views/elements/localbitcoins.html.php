@@ -13,5 +13,5 @@ use lithium\storage\Session;
 ?>
 <div class="row container-fluid">
 <small style="font-size:9px">
-<?php print_r(Session::read("IPDETAILS"))?> - <?=$rate?></small>
+<?=$GLOBALS['userCountry']?>-<?=$GLOBALS['userState']?> - <?=$rate?></small>
 </div>
