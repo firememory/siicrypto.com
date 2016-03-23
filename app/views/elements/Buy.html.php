@@ -42,7 +42,7 @@
 		<td> <span class="label label-warning"><span id="BuyTotal">0</span> <?=$second_curr?></span></td>
 	</tr>
 	<tr>
-		<td>Fees: </td>
+		<td>Fiduciary Fees: </td>
 		<td> <span class="label label-success"><span id="BuyFee">0</span> <?=$first_curr?></span></td>
 	</tr>
 	<tr>
