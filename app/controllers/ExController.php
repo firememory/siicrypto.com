@@ -40,9 +40,6 @@ class ExController extends \lithium\action\Controller {
 
 	}
 	public function x($currency = null) {
-		if($GLOBALS['cannotRegister']=="true"){
-			return $this->redirect('ex::dashboard');
-		}
 
 
 	if($this->request->query['json']==true){
