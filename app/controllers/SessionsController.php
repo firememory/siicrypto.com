@@ -22,14 +22,14 @@ class SessionsController extends \lithium\action\Controller {
 			
 			Session::delete('default');		
 			Session::delete('member');			
-						$opts = array(
+			
+			$opts = array(
 			  'http'=> array(
 					'method'=> "GET",
 					'user_agent'=> "MozillaXYZ/1.0"));
 			$context = stream_context_create($opts);
 			
-			$response = file_get_contents("http://ipinfo.io/{$_SERVER['REMOTE_ADDR']}", false, $context);
-			print_r($response);
+			$response = file_get_contents("http://ipinfo.io/{$_SERVER['REMOTE_ADDR']}/json", false, $context);
 			
 			$IPResponse = json_decode($response);
 			if($IPResponse->tor) {
