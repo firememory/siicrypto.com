@@ -30,7 +30,7 @@ class SessionsController extends \lithium\action\Controller {
 			$context = stream_context_create($opts);
 			
 			$response = file_get_contents("http://ipinfo.io/{$_SERVER['REMOTE_ADDR']}/json", false, $context);
-			
+			print_r($response);
 			$IPResponse = json_decode($response);
 			print_r($IPResponse);
 			if($IPResponse->tor) {
