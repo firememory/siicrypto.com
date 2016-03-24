@@ -34,7 +34,7 @@ class SessionsController extends \lithium\action\Controller {
 //			$response = file_get_contents("http://ip-api.com/json/107.6.11.112",false, $context);
 //			print_r($response);
 			$IPResponse = json_decode($response);
-			print_r($IPResponse);
+//			print_r($IPResponse);
 			if($IPResponse->tor) {
 		    // Display error message or something
 					Auth::clear('member');
@@ -63,12 +63,13 @@ class SessionsController extends \lithium\action\Controller {
 						$data = array(
 							'oneCodeused'=>'Yes',
 							'lastconnected'=>array(									
-								'IP' => $IPResponse->ip,
+								'IP' => $IPResponse->query,
 								'ISO'=> $IPResponse->countryCode,
+								'country'=> $IPResponse->country,
 								'hostname'=> $IPResponse->as,
 								'city'=> $IPResponse->city,
-								'region'=> $IPResponse->region,									
-								'regionName'=> $IPResponse->regionName,									
+								'region'=> $IPResponse->regionName,									
+								'regionName'=> $IPResponse->region,									
 								'lat'=> $IPResponse->lat,
 								'lon'=> $IPResponse->lon,
 								'org'=> $IPResponse->isp,									
@@ -106,15 +107,17 @@ class SessionsController extends \lithium\action\Controller {
 
 								$data = array(
 									'username' => $user['username'],
-									'IP' => $IPResponse->ip,
-									'ISO'=> $IPResponse->country,
-
-									'hostname'=> $IPResponse->hostname,
-									'city'=> $IPResponse->city,
-									'region'=> $IPResponse->region,									
-									'loc'=> $IPResponse->loc,
-									'org'=> $IPResponse->org,									
-									'postal'=> $IPResponse->postal,									
+								'IP' => $IPResponse->query,
+								'ISO'=> $IPResponse->countryCode,
+								'country'=> $IPResponse->country,
+								'hostname'=> $IPResponse->as,
+								'city'=> $IPResponse->city,
+								'region'=> $IPResponse->regionName,									
+								'regionName'=> $IPResponse->region,									
+								'lat'=> $IPResponse->lat,
+								'lon'=> $IPResponse->lon,
+								'org'=> $IPResponse->isp,									
+								'postal'=> $IPResponse->zip,									
 									'DateTime' => new \MongoDate(),
 								);
 								Logins::create()->save($data);
@@ -135,15 +138,17 @@ class SessionsController extends \lithium\action\Controller {
 
 								$data = array(
 									'username' => $user['username'],
-									'IP' => $IPResponse->ip,
-									'ISO'=> $IPResponse->country,
-
-									'hostname'=> $IPResponse->hostname,
-									'city'=> $IPResponse->city,
-									'region'=> $IPResponse->region,									
-									'loc'=> $IPResponse->loc,
-									'org'=> $IPResponse->org,									
-									'postal'=> $IPResponse->postal,									
+								'IP' => $IPResponse->query,
+								'ISO'=> $IPResponse->countryCode,
+								'country'=> $IPResponse->country,
+								'hostname'=> $IPResponse->as,
+								'city'=> $IPResponse->city,
+								'region'=> $IPResponse->regionName,									
+								'regionName'=> $IPResponse->region,									
+								'lat'=> $IPResponse->lat,
+								'lon'=> $IPResponse->lon,
+								'org'=> $IPResponse->isp,									
+								'postal'=> $IPResponse->zip,									
 									'DateTime' => new \MongoDate(),
 								);
 								Logins::create()->save($data);
@@ -160,14 +165,17 @@ class SessionsController extends \lithium\action\Controller {
 					$data = array(
 							'oneCodeused'=>'Yes',
 							'lastconnected'=>array(									
-								'IP' => $IPResponse->ip,
-								'ISO'=> $IPResponse->country,
-								'hostname'=> $IPResponse->hostname,
+								'IP' => $IPResponse->query,
+								'ISO'=> $IPResponse->countryCode,
+								'country'=> $IPResponse->country,
+								'hostname'=> $IPResponse->as,
 								'city'=> $IPResponse->city,
-								'region'=> $IPResponse->region,									
-								'loc'=> $IPResponse->loc,
-								'org'=> $IPResponse->org,									
-								'postal'=> $IPResponse->postal,									
+								'region'=> $IPResponse->regionName,									
+								'regionName'=> $IPResponse->region,									
+								'lat'=> $IPResponse->lat,
+								'lon'=> $IPResponse->lon,
+								'org'=> $IPResponse->isp,									
+								'postal'=> $IPResponse->zip,									
 								'DateTime' => new \MongoDate(),
 							)
 						);
@@ -191,15 +199,17 @@ class SessionsController extends \lithium\action\Controller {
 
 								$data = array(
 									'username' => $user['username'],
-									'IP' => $IPResponse->ip,
-									'ISO'=> $IPResponse->country,
-
-									'hostname'=> $IPResponse->hostname,
-									'city'=> $IPResponse->city,
-									'region'=> $IPResponse->region,									
-									'loc'=> $IPResponse->loc,
-									'org'=> $IPResponse->org,									
-									'postal'=> $IPResponse->postal,									
+								'IP' => $IPResponse->query,
+								'ISO'=> $IPResponse->countryCode,
+								'country'=> $IPResponse->country,
+								'hostname'=> $IPResponse->as,
+								'city'=> $IPResponse->city,
+								'region'=> $IPResponse->regionName,									
+								'regionName'=> $IPResponse->region,									
+								'lat'=> $IPResponse->lat,
+								'lon'=> $IPResponse->lon,
+								'org'=> $IPResponse->isp,									
+								'postal'=> $IPResponse->zip,									
 									'DateTime' => new \MongoDate(),
 								);
 								Logins::create()->save($data);

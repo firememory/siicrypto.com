@@ -8,7 +8,7 @@ $detail = Details::find('first',array(
 	'conditions'=>array('username'=>$user['username'])
 ));
 
-	
+	print_r($user);
 	
 //	$IPResponse = json_decode($response);
 //	print_r($IPResponse);
