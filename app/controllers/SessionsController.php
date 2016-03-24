@@ -23,6 +23,8 @@ class SessionsController extends \lithium\action\Controller {
 			Session::delete('default');		
 			Session::delete('member');			
 			$response = file_get_contents("http://ipinfo.io/{$_SERVER['REMOTE_ADDR']}");
+			print_r($response);
+			exit;
 			$IPResponse = json_decode($response);
 			if($IPResponse->tor) {
 		    // Display error message or something
