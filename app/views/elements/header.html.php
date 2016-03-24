@@ -2,10 +2,6 @@
 use app\models\Trades;
 use lithium\storage\Session;
 use app\extensions\action\Functions;
-
-
-
-
 ?>
 <?php $user = Session::read('member'); ?>
 <div class="navbar-header">

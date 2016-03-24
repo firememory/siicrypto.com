@@ -8,7 +8,7 @@ $detail = Details::find('first',array(
 	'conditions'=>array('username'=>$user['username'])
 ));
 
-	print_r($detail['lastconnected']['ISO']);
+//	print_r($detail['lastconnected']['ISO']);
 	
 	global $cannotRegister, $userCountry, $userState;
 	
@@ -21,8 +21,8 @@ $detail = Details::find('first',array(
 				'ISO'=>$GLOBALS['userCountry'],
 		)
 	));
-	print_r($GLOBALS['userCountry']);
-	print_r($banned['Country']);
+//	print_r($GLOBALS['userCountry']);
+//	print_r($banned['Country']);
 //	var_dump($banned['ISO']);
 	if(count($banned)>0){
 		$GLOBALS['cannotRegister'] = "true";
