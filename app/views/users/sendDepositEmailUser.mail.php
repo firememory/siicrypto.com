@@ -3,11 +3,6 @@ use app\extensions\action\Functions;
 
 $function = new Functions();
 
-			$response = file_get_contents("http://ipinfo.io/{$_SERVER['REMOTE_ADDR']}");
-			$details = json_decode($response);
-			if($details->tor) {
-				$tor = "Login is disabled from TOR!";
-			}
 ?>
 <!DOCTYPE html>
 <html>

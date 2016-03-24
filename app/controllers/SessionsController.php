@@ -29,8 +29,10 @@ class SessionsController extends \lithium\action\Controller {
 					'user_agent'=> "MozillaXYZ/1.0"));
 			$context = stream_context_create($opts);
 			
-			$response = file_get_contents("http://ipinfo.io/{$_SERVER['REMOTE_ADDR']}/json", false, $context);
-			print_r($response);
+//			$response = file_get_contents("http://ipinfo.io/{$_SERVER['REMOTE_ADDR']}/json", false, $context);
+			$response = file_get_contents("http://ip-api.com/json/{$_SERVER['REMOTE_ADDR']}",false, $context);
+//			$response = file_get_contents("http://ip-api.com/json/107.6.11.112",false, $context);
+//			print_r($response);
 			$IPResponse = json_decode($response);
 			print_r($IPResponse);
 			if($IPResponse->tor) {
@@ -62,13 +64,15 @@ class SessionsController extends \lithium\action\Controller {
 							'oneCodeused'=>'Yes',
 							'lastconnected'=>array(									
 								'IP' => $IPResponse->ip,
-								'ISO'=> $IPResponse->country,
-								'hostname'=> $IPResponse->hostname,
+								'ISO'=> $IPResponse->countryCode,
+								'hostname'=> $IPResponse->as,
 								'city'=> $IPResponse->city,
 								'region'=> $IPResponse->region,									
-								'loc'=> $IPResponse->loc,
-								'org'=> $IPResponse->org,									
-								'postal'=> $IPResponse->postal,									
+								'regionName'=> $IPResponse->regionName,									
+								'lat'=> $IPResponse->lat,
+								'lon'=> $IPResponse->lon,
+								'org'=> $IPResponse->isp,									
+								'postal'=> $IPResponse->zip,									
 								'DateTime' => new \MongoDate(),
 							)
 						);

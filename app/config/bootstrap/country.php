@@ -1,15 +1,22 @@
 <?php
 use app\models\Countries;
+use app\models\Details;
+use lithium\storage\Session;
 
-	$response = file_get_contents("http://ipinfo.io/".$_SERVER['REMOTE_ADDR']);
+$user = Session::read('default');
+$detail = Details::find('first',array(
+	'conditions'=>array('username'=>$user['username'])
+));
+
 	
-	$IPResponse = json_decode($response);
+	
+//	$IPResponse = json_decode($response);
 //	print_r($IPResponse);
 	global $cannotRegister, $userCountry, $userState;
 	
 	$GLOBALS['cannotRegister'] = "false";
-	$GLOBALS['userCountry'] = $IPResponse->country;
-	$GLOBALS['userState'] = $IPResponse->region;
+	$GLOBALS['userCountry'] = $detail['lastconnected']['ISO'];
+	$GLOBALS['userState'] = $detail['lastconnected']['region'];
 //	var_dump($cannotRegister,$userCountry,$userState);
 	$banned = Countries::find('first',array(
 		'conditions'=>array(
