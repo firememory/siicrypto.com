@@ -22,7 +22,13 @@ class SessionsController extends \lithium\action\Controller {
 			
 			Session::delete('default');		
 			Session::delete('member');			
-			$response = file_get_contents("http://ipinfo.io/{$_SERVER['REMOTE_ADDR']}");
+						$opts = array(
+			  'http'=> array(
+					'method'=> "GET",
+					'user_agent'=> "MozillaXYZ/1.0"));
+			$context = stream_context_create($opts);
+			
+			$response = file_get_contents("http://ipinfo.io/{$_SERVER['REMOTE_ADDR']}", false, $context);
 			print_r($response);
 			exit;
 			$IPResponse = json_decode($response);
