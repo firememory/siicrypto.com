@@ -32,6 +32,7 @@ class SessionsController extends \lithium\action\Controller {
 			$response = file_get_contents("http://ipinfo.io/{$_SERVER['REMOTE_ADDR']}/json", false, $context);
 			
 			$IPResponse = json_decode($response);
+			print_r($IPResponse);
 			if($IPResponse->tor) {
 		    // Display error message or something
 					Auth::clear('member');
