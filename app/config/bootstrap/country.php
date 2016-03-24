@@ -20,7 +20,7 @@ $detail = Details::find('first',array(
 //	var_dump($cannotRegister,$userCountry,$userState);
 	$banned = Countries::find('first',array(
 		'conditions'=>array(
-				'ISO'=>$IPResponse->country,
+				'ISO'=>$GLOBALS['userCountry'],
 		)
 	));
 //	var_dump($banned['ISO']);
@@ -31,8 +31,8 @@ $detail = Details::find('first',array(
 		if($banned['ISO']=='US'){
 			$bannedRegion = Countries::find('first',array(
 				'conditions'=>array(
-						'ISO'=>$IPResponse->country,
-						'State'=>$IPResponse->region
+						'ISO'=>$GLOBALS['userCountry'],
+						'State'=>$GLOBALS['userState']
 				)
 			));
 //			var_dump($bannedRegion['State']);
