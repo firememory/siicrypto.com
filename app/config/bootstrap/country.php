@@ -10,8 +10,6 @@ $detail = Details::find('first',array(
 
 	print_r($detail['lastconnected']['ISO']);
 	
-//	$IPResponse = json_decode($response);
-//	print_r($IPResponse);
 	global $cannotRegister, $userCountry, $userState;
 	
 	$GLOBALS['cannotRegister'] = "false";
@@ -23,11 +21,13 @@ $detail = Details::find('first',array(
 				'ISO'=>$GLOBALS['userCountry'],
 		)
 	));
+	print_r($GLOBALS['userCountry']);
+	print_r($banned['Country']);
 //	var_dump($banned['ISO']);
 	if(count($banned)>0){
 		$GLOBALS['cannotRegister'] = "true";
 		$userCountry = $banned['ISO'];
-		$userState = $IPResponse->region;
+		$userState = $GLOBALS['userState'];
 		if($banned['ISO']=='US'){
 			$bannedRegion = Countries::find('first',array(
 				'conditions'=>array(
