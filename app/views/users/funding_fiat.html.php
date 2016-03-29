@@ -38,7 +38,7 @@ $function = new Functions();
 					</tr>
 					<tr>
 					<th>FULL ACCOUNT NUMBER OF YOUR ACCOUNT:</th>
-					<td><?=$currency?>-100-070378-<?php
+					<td>ACC <?=$currency?>-100-070378-<?php
 					switch ($currency){
 					case "USD":
 					print_r("1");break;
@@ -404,7 +404,7 @@ $function = new Functions();
 		</tr>
 		<tr>
 		<th>BANK ACCOUNT NUMBER:</th>
-		<td><?=$currency?>-100-070378-<?php
+		<td>ACC <?=$currency?>-100-070378-<?php
 		switch ($currency){
 		case "USD":
 		print_r("1");break;

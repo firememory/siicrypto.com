@@ -54,7 +54,7 @@ $pdf->SetAutoPageBreak(true);
 						</tr>
 						<tr>
 							<th><small>FULL ACCOUNT NUMBER OF YOUR ACCOUNT</small></th>
-							<td>100-070378-<strong>';
+							<td>ACC '.$data['Currency'].'-100-070378-<strong>';
 								switch ($data['Currency']){
 										case "USD":
 										$html = $html. "1"; break;

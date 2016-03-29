@@ -88,7 +88,7 @@ $pdf->SetAutoPageBreak(true);
 						</tr>
 						<tr>
 							<th><small>VANTU BANK ACCOUNT NUMBER:</small></th>
-							<td>'.$data['data']['Currency'].'-100-070378-';
+							<td>ACC '.$data['data']['Currency'].'-100-070378-';
 								switch ($data['data']['Currency']){
 										case "USD":
 										$html = $html. "1"; break;

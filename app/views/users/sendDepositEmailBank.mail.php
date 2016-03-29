@@ -46,7 +46,7 @@ text-decoration: none
 				
 <p>We are enclosing the Declaration of Source of Funds (DSF) from the user <?=$compact['data']['data']['username']?>.</p>
 <p>The user will deposit the funds as per the document to Vantu Bank.</p>
-<p>Please credit ILS FIDUCIARIES (SWITZERLAND) SARL, Account Number: <strong><?=$compact['data']['data']['Currency']?>-100-070378-<?php
+<p>Please credit ILS FIDUCIARIES (SWITZERLAND) SARL, Account Number: <strong>ACC <?=$compact['data']['data']['Currency']?>-100-070378-<?php
 								switch ($compact['data']['data']['Currency']){
 										case "USD":
 										print_r("1");break;
