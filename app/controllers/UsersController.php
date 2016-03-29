@@ -4,6 +4,7 @@ namespace app\controllers;
 use app\extensions\action\OAuth2;
 use app\models\Users;
 use app\models\Details;
+use app\models\Banks;
 use app\models\Transactions;
 use app\models\Parameters;
 use app\models\Settings;
@@ -766,6 +767,11 @@ class UsersController extends \lithium\action\Controller {
 		$details = Details::find('first',
 			array('conditions'=>array('user_id'=> (string) $id))
 		);
+		
+		$bank = Banks::find('first',array(
+			'conditions'=>array('Currency'=>$currency)
+		));
+
 		$depositRequest = Transactions::find('first',array(
 				'conditions'=>array(
 				'username'=>$user['username'],
@@ -786,7 +792,7 @@ class UsersController extends \lithium\action\Controller {
 		));
 		$settings = Settings::find('first');		
 		$parameters = Parameters::find('first');
-			return compact('details','title','depositRequest','withdrawRequest','user','settings','currency','fileupload','parameters')	;
+			return compact('details','title','depositRequest','withdrawRequest','user','settings','currency','fileupload','parameters','bank')	;
 	}
 	public function deleteDepositRequest($Reference=null,$id=null,$currency="USD"){
 		$user = Session::read('default');
@@ -889,10 +895,14 @@ class UsersController extends \lithium\action\Controller {
 				'_id'=>$Transaction['_id']
 			);
 			Transactions::update($data,$conditions);
+			$bank = Banks::find('first',array(
+				'conditions'=>array('Currency'=>$currency)
+			));
 					/////////////////////////////////Email//////////////////////////////////////////////////
 					$emaildata = array(
 						'email'=>$user['email'],
-						'data'=>$Transaction
+						'data'=>$Transaction,
+						'bank'=>$bank
 					);
 						$function = new Functions();
 						$compact = array('data'=>$emaildata);

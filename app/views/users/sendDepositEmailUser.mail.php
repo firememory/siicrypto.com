@@ -57,48 +57,43 @@ text-decoration: none
 							<th colspan="2" style="background-color:#CAFFFF">PLEASE WIRE THE FOLLOWING FUNDS USING THE WIRE INSTRUCTIONS BELOW:</th>
 				</tr>
 				<tr>
-					<th colspan="2" >BANK NAME: Commerzbank A.G</th>
+					<th colspan="2" >BANK NAME: <?=$compact['data']['bank']['Bank Name']?></th>
 				</tr>
 				<tr>
-					<th colspan="2" >BANK ADDRESS: Kaiserplatz 60261, Frankfurt am-Main, Germany</th>
+					<th colspan="2" >BANK ADDRESS: <?=$compact['data']['bank']['Bank Address']?></th>
 				</tr>
 				<tr>
-					<th colspan="2" >SWIFT CODE: COBADEFF</th>
+					<th colspan="2" >SWIFT CODE: <?=$compact['data']['bank']['Bank SWIFT Code']?></th>
 				</tr>
 				<tr>
-					<th colspan="2" >For the Benefit of: National Bank of Vanuatu</th>
+					<th colspan="2" >Intermediary Bank: <?=$compact['data']['bank']['Intermediary Bank']?></th>
 				</tr>
 				<tr>
-					<th colspan="2" >Account No: 400870818200</th>
+					<th colspan="2" >Intermediary Bank SWIFT Code: <?=$compact['data']['bank']['Intermediary Bank SWIFT Code']?></th>
 				</tr>
 				<tr>
-					<th colspan="2" >SWIFT CODE: NBOVVUVU</th>
+					<th colspan="2" >For the Benefit of: <?=$compact['data']['bank']['For the Benefit of']?></th>
 				</tr>
 				<tr>
-					<th colspan="2" >For the Further Benefit of: Vantu Bank</th>
+					<th colspan="2" >Account No: <?=$compact['data']['bank']['Account No']?></th>
 				</tr>
 				<tr>
-					<th colspan="2" >Bank Address: Vantu House, 133 Santina Parade, Elluk, Port Vila, Vanuatu</th>
+					<th colspan="2" >SWIFT CODE: <?=$compact['data']['bank']['SWIFT Code']?></th>
+				</tr>
+				<tr>
+					<th colspan="2" >For the Further Benefit of: <?=$compact['data']['bank']['For the Further Benefit of']?></th>
+				</tr>
+				<tr>
+					<th colspan="2" >Bank Address: <?=$compact['data']['bank']['Further Bank Address']?></th>
 				</tr>				
 				<tr>
-					<th colspan="2" >Account No: 0117982004</th>
+					<th colspan="2" >Account No: <?=$compact['data']['bank']['Further Account No']?></th>
 				</tr>
 				<tr>
-					<th colspan="2" >Vantu Account Name: ILS Fiduciaries (Switzerland) Sarl</th>
+					<th colspan="2" >Vantu Account Name: <?=$compact['data']['bank']['Vantu Account Name']?></th>
 				</tr>
 				<tr>
-					<th colspan="2" >Vantu Account No: <strong><?=$compact['data']['data']['Currency']?>-100-070378-<?php
-								switch ($compact['data']['data']['Currency']){
-										case "USD":
-										print_r("1");break;
-										case "EUR":
-										print_r("2");break;
-										case "GBP":
-										print_r("3");break;
-										case "CAD":
-										print_r("4");break;										
-								}
-							?></strong>
+					<th colspan="2" >Vantu Account No: <strong><?=$compact['data']['bank']['Vantu Account No']?></strong>
 						</td>
 				</tr>
 				<tr>

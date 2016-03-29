@@ -24,7 +24,7 @@ class Walletxgcnotify extends \lithium\console\Command {
 			$txfee = $paytxfee['payxgctxfee'];
  //print_r($s);
 		$getrawtransaction = $greencoin->getrawtransaction($s);
-//		print_r($getrawtransaction);
+	//		print_r($getrawtransaction);
 		$decoderawtransaction = $greencoin->decoderawtransaction($getrawtransaction);		
 
 			foreach($decoderawtransaction['vout'] as $out){

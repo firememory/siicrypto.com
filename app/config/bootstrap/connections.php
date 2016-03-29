@@ -42,13 +42,26 @@ use lithium\data\Connections;
  	'host' => array(CONNECTION,
 		),
 //	'replicaSet' => true,
- 	'database' => CONNECTION_DB,
+ 'database' => CONNECTION_DB,
 	'login' => CONNECTION_USER,
 	'password' => CONNECTION_PASS,	
 //	'setSlaveOkay' => true,
 //	'readPreference' => Mongo::RP_NEAREST	
  ));
 
+ Connections::add('Countries_DB', array(
+ 	'type' => CONNECTIONCOUNTRY_TYPE,
+ 	'host' => array(CONNECTIONCOUNTRY,
+		),
+//	'replicaSet' => true,
+ 'database' => CONNECTIONCOUNTRY_DB,
+	'login' => CONNECTIONCOUNTRY_USER,
+	'password' => CONNECTIONCOUNTRY_PASS,	
+//	'setSlaveOkay' => true,
+//	'readPreference' => Mongo::RP_NEAREST	
+ ));
+
+	
 /**
  * Uncomment this configuration to use CouchDB as your default database.
  */

@@ -7,18 +7,25 @@
 
 	<h4>To send Fiat (paper/cash currency) you wire transfer funds as follows</h4>
 
-	 <h3>EURO OR US DOLLARS</h3>
-			<p><strong>Commerzbank A.G</strong><br>
-			Kaiserplatz 60261, Frankfurt am-Main, Germany<br>
-			SWIFT:COBADEFF<br></p>
+	 <h3><?=$Transactions['Currency']?></h3>
+			<p><strong><?=$bank['Bank Name']?></strong><br>
+			<?=$bank['Bank Address']?><br>
+			SWIFT:<?=$bank['Bank SWIFT Code']?><br></p>
 			
-<p>For the Benefit of: National Bank of Vanuatu<br>
-	Account No: 400870818200<br>
-	SWIFT:NBOVVUVU<br></p>
+			<p>Intermediary Bank: <?=$bank['Intermediary Bank']?><br>
+			Intermediary Bank SWIFT Code: <?=$bank['Intermediary Bank SWIFT Code']?>
 
-<p>For the Further Benefit of : Vantu Bank<br>
-Vantu House, 133 Santina Parade, Elluk, Port Vila, Vanuatu<br>
-Account No: 0117982004<br></p>
+			<p>For the Benefit of: <?=$bank['For the Benefit of']?><br>
+	Account No: <?=$bank['Account No']?><br>
+	SWIFT: <?=$bank['SWIFT Code']?><br></p>
+
+<p>For the Further Benefit of : <?=$bank['For the Further Benefit of']?><br>
+<?=$bank['Further Bank Address']?><br>
+Account No: <?=$bank['Further Account No']?><br></p>
+
+<p>Vantu Account Name: <?=$bank['Vantu Account Name']?><br>
+Account No: <?=$bank['Vantu Account No']?>
+
 
 <p>For Benefit of Account Name and No:<br>
 ILS/SiiCrypto:  ____________________<br>

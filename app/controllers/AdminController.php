@@ -3,6 +3,7 @@ namespace app\controllers;
 use lithium\storage\Session;
 use app\models\Users;
 use app\models\Details;
+use app\models\Banks;
 use app\models\Transactions;
 use app\models\Parameters;
 use app\models\Reasons;
@@ -861,6 +862,11 @@ $description = "Admin panel for withdrawal";
 					'_id'=>$id
 				)
 			));
+			
+			$bank = Banks::find('first',array(
+				'conditions'=>array('Currency'=>$Transactions['Currency'])
+			));
+
 		$details = Details::find('first',array(
 			'conditions'=>array(
 				'username'=>$Transactions['username']
@@ -879,7 +885,7 @@ $description = "Admin panel for withdrawal";
 		));
 		$body = $view->render(
 			'template',
-			compact('Transactions','details','user'),
+			compact('Transactions','details','user','bank'),
 			array(
 				'controller' => 'admin',
 				'template'=>'sendemailtransaction',

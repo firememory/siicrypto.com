@@ -1,0 +1,42 @@
+BANK NAME: Commerzbank A.G
+BANK ADDRESS: Kaiserplatz 60261, Frankfurt am-Main, Germany
+SWIFT CODE: COBADEFF
+For the Benefit of Intermediary Bank : 
+SWIFT CODE: 
+For the Benefit of: National Bank of Vanuatu
+Account No: 400870818200
+SWIFT CODE: NBOVVUVU
+For the Further Benefit of: Vantu Bank
+Bank Address: Vantu House, 133 Santina Parade, Elluk, Port Vila, Vanuatu
+Account No: 0117982001
+Vantu Account Name: ILS Fiduciaries (Switzerland) Sarl
+Vantu Account No: ACC USD-100-070378-1
+
+BANK NAME: Deutsche Bank AG
+BANK ADDRESS: Frankfurt, Germany
+SWIFT CODE: DEUTDEFF
+For the Benefit of Intermediary Bank : National Australia Bank
+SWIFT CODE: NATAAU3303T/DE54500700100950395410
+For the Benefit of: National Bank of Vanuatu
+Account No: NBOVUEUR85
+SWIFT CODE: NBOVVUVU
+For the Further Benefit of: Vantu Bank
+Bank Address: Vantu House, 133 Santina Parade, Elluk, Port Vila, Vanuatu
+Account No: 0117982004
+Vantu Account Name: ILS Fiduciaries (Switzerland) Sarl
+Vantu Account No: ACC EUR-100-070378-2
+
+BANK NAME: Royal Bank of Scotland
+BANK ADDRESS: London, UK
+SWIFT CODE:  RBOSGB2L
+For the Benefit of Intermediary Bank : National Australia Bank
+SWIFT CODE: NATAAU3303T/GB81RBOS16003412231081
+For the Benefit of: National Bank of Vanuatu
+Account No: NBOVUGBP85
+SWIFT CODE: NBOVVUVU
+For the Further Benefit of: Vantu Bank
+Bank Address: Vantu House, 133 Santina Parade, Elluk, Port Vila, Vanuatu
+Account No: 0117982003
+Vantu Account Name: ILS Fiduciaries (Switzerland) Sarl
+Vantu Account No: ACC GBP-100-070378-3 
+

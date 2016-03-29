@@ -302,58 +302,57 @@ $function = new Functions();
 					</tr>
 					<tr>
 					<th>BANK NAME:</th>
-					<th>Commerzbank A.G</th>
+					<th><?=$bank['Bank Name']?></th>
 					</tr>
 					<tr>
 					<th>BANK ADDRESS:</th>
-					<th>Kaiserplatz 60261, Frankfurt am-Main, Germany</th>
+					<th><?=$bank['Bank Address']?></th>
 					</tr>
 					<tr>
 					<th>SWIFT CODE:</th>
-					<th>COBADEFF</th>
+					<th><?=$bank['Bank SWIFT Code']?></th>
 					</tr>
 					<tr>
+					<th>Intermediary Bank:</th>
+					<th><?=$bank['Intermediary Bank']?></th>
+					</tr>
+					<tr>
+					<th>Intermediary Bank SWIFT Code:</th>
+					<th><?=$bank['Intermediary Bank SWIFT Code']?></th>
+					</tr>
+
+
+					<tr>
 					<th>For the Benefit of:</th>
-					<th>National Bank of Vanuatu</th>
+					<th><?=$bank['For the Benefit of']?></th>
 					</tr>
 					<tr>
 					<th>Account No:</th>
-					<th>400870818200</th>
+					<th><?=$bank['Account No']?></th>
 					</tr>
 					<tr>
 					<th>SWIFT CODE:</th>
-					<th>NBOVVUVU</th>
+					<th><?=$bank['SWIFT Code']?></th>
 					</tr>
 					<tr>
 					<th>For the Further Benefit of:</th>
-					<th>Vantu Bank</th>
+					<th><?=$bank['For the Further Benefit of']?></th>
 					</tr>
 					<tr>
 					<th>Bank Address:</th>
-					<th>Vantu House, 133 Santina Parade, Elluk, Port Vila, Vanuatu</th>
+					<th><?=$bank['Further Bank Address']?></th>
 					</tr>				
 					<tr>
 					<th>Account No:</th>
-					<th>0117982004</th>
+					<th><?=$bank['Further Account No']?></th>
 					</tr>
 					<tr>
 					<th>Vantu Account Name:</th>
-					<th>ILS Fiduciaries (Switzerland) Sarl</th>
+					<th><?=$bank['Vantu Account Name']?></th>
 					</tr>
 					<tr>
 					<th>Vantu Account No:</th>
-					<td><strong><?=$currency?>-100-070378-<?php
-					switch ($currency){
-					case "USD":
-					print_r("1");break;
-					case "EUR":
-					print_r("2");break;
-					case "GBP":
-					print_r("3");break;
-					case "CAD":
-					print_r("4");break;										
-					}
-					?></strong>
+					<td><strong><?=$bank['Vantu Account No']?></strong>
 					</td>
 					</tr>
 					<tr>
