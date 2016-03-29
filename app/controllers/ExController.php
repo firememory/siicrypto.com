@@ -61,16 +61,20 @@ class ExController extends \lithium\action\Controller {
 		$details = Details::find('first',
 			array('conditions'=>array('user_id'=>$id))
 		);
-		foreach($details['addresses'][$first_curr] as $check){
-			if($check['checkbalance']=='Y'){
-					$multiSig = new MultiSig();
-					$multiSig->UpdateBalance($first_curr,$id);
+		if(count($details['addresses'][$first_curr])>0){
+			foreach($details['addresses'][$first_curr] as $check){
+				if($check['checkbalance']=='Y'){
+						$multiSig = new MultiSig();
+						$multiSig->UpdateBalance($first_curr,$id);
+				}
 			}
 		}
-		foreach($details['addresses'][$second_curr] as $check){
-			if($check['checkbalance']=='Y'){
-					$multiSig = new MultiSig();
-					$multiSig->UpdateBalance($second_curr,$id);
+		if(count($details['addresses'][$second_curr])>0){
+			foreach($details['addresses'][$second_curr] as $check){
+				if($check['checkbalance']=='Y'){
+						$multiSig = new MultiSig();
+						$multiSig->UpdateBalance($second_curr,$id);
+				}
 			}
 		}
 		// if trade order is submitted by post ----------------
