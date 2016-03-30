@@ -1,4 +1,5 @@
 <?php
+/*
 use lithium\storage\Session;
 			$opts = array(
 			  'http'=> array(
@@ -10,12 +11,12 @@ use lithium\storage\Session;
 //			print_r($jdec);
 			$rate = $jdec->{'USD'}->{'avg_24h'};
 //			print_r($jdec->{'USD'}->{'avg_24h'});
+*/
 ?>
 <div class="row container-fluid">
 <small style="font-size:9px">
-<?=$GLOBALS['userCountry']?>-<?=$GLOBALS['userState']?> - <?=$rate?></small>
+<?=$GLOBALS['userCountry']?>-<?=$GLOBALS['userState']?></small>
 </div>
-
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
