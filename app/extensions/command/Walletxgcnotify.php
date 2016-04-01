@@ -92,7 +92,7 @@ class Walletxgcnotify extends \lithium\console\Command {
 // email send function	
 
 						$dataDetails = array(
-								'incoming.XGC.'.$incoming.'.Amount' => (float)$Amount,
+								'incoming.XGC.'.$incoming.'.Amount' => $Amount,
 								'incoming.XGC.'.$incoming.'.tx'=> $s,
 								'incoming.XGC.'.$incoming.'.Address'=>$address,
 								'XGCnewaddress'=>'Yes'						

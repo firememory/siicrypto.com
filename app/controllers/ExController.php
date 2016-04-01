@@ -1498,8 +1498,8 @@ $graph->legend->SetFrameWeight(1);
 	}
 	
 		public function say($username=null,$amount=null,$currency=null){
-		if($currency=="BTC"){$currencyname=" Bitcoins."}
-		if($currency=="XGC"){$currencyname=" GreenCoins."}
+		if(strtoupper($currency)=="BTC"){$currencyname=" Bitcoins.";}
+		if(strtoupper($currency)=="XGC"){$currencyname=" GreenCoins.";}
 		$layout = false;
 		$view  = new View(array(
 		'paths' => array(
