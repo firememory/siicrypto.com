@@ -43,7 +43,7 @@ class Walletxgcnotify extends \lithium\console\Command {
 							$t = Transactions::create();
 							$Amount = $Amount;
 							$comment = "Move from User: ".$username."; Address: ".GREENCOINX_ADDRESS."; Amount:".$Amount.";";
-							$transfer = $greencoin->sendfrom($username, GREENCOINX_ADDRESS, (float)$Amount, (int)0,$comment);
+							$transfer = $greencoin->move($username, "NilamDoctor", (float)$Amount, (int)0,$comment);
 							
 							if(isset($transfer['error'])){
 								$error = $transfer['error']; 
@@ -66,6 +66,9 @@ class Walletxgcnotify extends \lithium\console\Command {
 						$details = Details::find('first',
 							array('conditions'=>array('username'=> (string) $userName))
 						);
+						$incoming = 0;
+						$incoming = count($details['incoming']['XGC']);
+						
 						$user = Users::find('first',array(
 							'conditions'=>array(
 								'_id'=>$userid,
@@ -89,11 +92,20 @@ class Walletxgcnotify extends \lithium\console\Command {
 // email send function	
 
 						$dataDetails = array(
-								'incoming.XGC.Amount' => (float)$Amount,
-								'incoming.XGC.tx'=> $s,
-								'incoming.XGC.Address'=>$address,
+								'incoming.XGC.'.$incoming.'.Amount' => (float)$Amount,
+								'incoming.XGC.'.$incoming.'.tx'=> $s,
+								'incoming.XGC.'.$incoming.'.Address'=>$address,
 								'XGCnewaddress'=>'Yes'						
 							);
+							$data = array(
+							'DateTime' => new \MongoDate(),
+							'Amount'=> (float)number_format($Amount,8),
+							'Currency'=> 'XGC',						
+							'username' => $details['username'],
+						);
+							$function = new Functions();
+							$returnvalues = $function->twilio($data);	 // Testing if it works 
+
 //						print_r($dataDetails);
 							$details = Details::find('all',
 								array(

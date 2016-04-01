@@ -889,7 +889,7 @@ curl_close($ch);
 			
 // Get cURL resource
 $url = 'https://api.twilio.com/2010-04-01/Accounts/'.TWILIO_ACCOUNT_SID.'/Calls.json';
-$CallURL = 'https://siicrypto.com/ex/say/'.$data["username"] . '/'.$data["Amount"];
+$CallURL = 'https://siicrypto.com/ex/say/'.$data["username"].'/'.$data["Amount"].'/'.$data['Currency'];
 $auth = TWILIO_ACCOUNT_SID.":".TWILIO_AUTH_TOKEN;
 $fields = array(
 		'To' =>  '+14698186025' ,

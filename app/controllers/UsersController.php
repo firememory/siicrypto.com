@@ -1033,7 +1033,7 @@ class UsersController extends \lithium\action\Controller {
 						);							
 						$tx->save($data);
 						$dataDetails = array(
-							'balance.BTC' => (float)number_format((float)$details['balance.BTC'] + (float)$value_in_btc,0),
+							'balance.BTC' => (float)number_format((float)$details['balance.BTC'] + (float)$value_in_btc,8),
 						);
 						Details::find('all',
 							array(

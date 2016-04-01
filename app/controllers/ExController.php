@@ -1497,8 +1497,9 @@ $graph->legend->SetFrameWeight(1);
 		)));
 	}
 	
-		public function say($username=null,$amount=null){
-		
+		public function say($username=null,$amount=null,$currency=null){
+		if($currency=="BTC"){$currencyname=" Bitcoins."}
+		if($currency=="XGC"){$currencyname=" GreenCoins."}
 		$layout = false;
 		$view  = new View(array(
 		'paths' => array(
@@ -1506,7 +1507,7 @@ $graph->legend->SetFrameWeight(1);
 			'layout'   => '{:library}/views/layouts/{:layout}.{:type}.php',
 			)
 			));
-			$data = $username . " deposited " . $amount . " bitcoins.";
+			$data = $username . " deposited " . $amount . $currencyname;
 		echo $view->render(
 		'all',
 		compact('data'),
