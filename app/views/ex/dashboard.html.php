@@ -8,7 +8,7 @@ $virtualcurrencies = Trades::find('all',array(
 foreach($virtualcurrencies as $VC){
 	array_push($virtuals,substr($VC['trade'],4,3));
 }
-
+$GLOBALS['cannotRegister'] = "true";
 ?>
 <div class="panel panel-default">
   <div class="panel-heading">
