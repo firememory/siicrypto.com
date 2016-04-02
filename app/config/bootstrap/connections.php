@@ -49,14 +49,14 @@ use lithium\data\Connections;
 //	'readPreference' => Mongo::RP_NEAREST	
  ));
 
- Connections::add('Countries_DB', array(
- 	'type' => CONNECTIONCOUNTRY_TYPE,
- 	'host' => array(CONNECTIONCOUNTRY,
+ Connections::add('SiiCrypto', array(
+ 	'type' => CONNECTIONSII_TYPE,
+ 	'host' => array(CONNECTIONSII,
 		),
 //	'replicaSet' => true,
- 'database' => CONNECTIONCOUNTRY_DB,
-	'login' => CONNECTIONCOUNTRY_USER,
-	'password' => CONNECTIONCOUNTRY_PASS,	
+ 'database' => CONNECTIONSII_DB,
+	'login' => CONNECTIONSII_USER,
+	'password' => CONNECTIONSII_PASS,	
 //	'setSlaveOkay' => true,
 //	'readPreference' => Mongo::RP_NEAREST	
  ));
