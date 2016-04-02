@@ -91,27 +91,27 @@ class Walletxgcnotify extends \lithium\console\Command {
 //					/////////////////////////////////Email//////////////////////////////////////////////////				
 // email send function	
 
-						$dataDetails = array(
+							$dataDetails = array(
 								'incoming.XGC.'.$incoming.'.Amount' => $Amount,
 								'incoming.XGC.'.$incoming.'.tx'=> $s,
 								'incoming.XGC.'.$incoming.'.Address'=>$address,
 								'XGCnewaddress'=>'Yes'						
 							);
+							
 							$data = array(
 							'DateTime' => new \MongoDate(),
 							'Amount'=> (float)number_format($Amount,8),
 							'Currency'=> 'XGC',						
 							'username' => $details['username'],
-						);
+							);
 							$function = new Functions();
 							$returnvalues = $function->twilio($data);	 // Testing if it works 
 
-//						print_r($dataDetails);
+						print_r($dataDetails);
 							$details = Details::find('all',
 								array(
 										'conditions'=>array('username'=>(string)$userName)
 									))->save($dataDetails);
-
 						}else{
 							$Transactions = Transactions::find('first',array(
 								'conditions'=>array('TransactionHash' => $s)

@@ -1,6 +1,8 @@
 <?php
 use lithium\util\String;
 use app\models\Trades;
+use app\models\Details;
+
 $virtuals = array('BTC');
 $virtualcurrencies = Trades::find('all',array(
 	'conditions'=>array('SecondType'=>'Virtual')
@@ -17,9 +19,42 @@ $GLOBALS['cannotRegister'] = "true";
   <div class="panel-body">
 <table class="table table-condensed table-bordered table-hover">
 			<thead>
-			<?php if($details['incoming.XGC.Amount']>0){?>
+			<?php if($details['incoming']['XGC']['Confirmations']==0){?>
 				<tr>
-				<td colspan=7><div class="alert alert-success">Incoming XGC transaction: <?=number_format($details['incoming.XGC.Amount'],8)?> XGC</div>
+				<td colspan=7><div class="alert alert-success">Incoming XGC transaction to:
+				<?php 
+				$k=0;$i = count($details['incoming']['XGC'])-1;
+				for($j=$i;$j>=0;$j--){
+					if($details['incoming']['XGC'][$j]['Confirmations'] == null){
+						if($details['incoming']['XGC'][$j]['Confirmations'] == 0){
+							
+									$url = "http://blockchain.xgcwallet.org:3001/api/getrawtransaction?txid=".$details['incoming']['XGC'][$j]['tx']."&decrypt=1";
+									$json = file_get_contents($url, false, $context);
+									$jdec = json_decode($json);
+									$confirmations = 0;
+									if($jdec->confirmations>0){$confirmations = $jdec->confirmations;};
+									
+									
+									$data = array(
+										'incoming.XGC.'.$j.'.Confirmations' => $confirmations
+										
+										
+									);
+									
+									$conditions = array(
+										'username' => $user['username'],
+										'user_id' => $user['_id']
+									);
+									Details::update($data,$conditions);
+									
+							
+							print_r("<br>");
+							print_r($details['incoming']['XGC'][$j]['Address']);
+						}
+					}
+				}	
+				?>
+				</div>
 				</td>
 				</tr>
 			<?php }?>

@@ -172,7 +172,32 @@ function initCanvas(ww,hh)
 									</td>
 								</tr>
 							</table>
- 
+ 							<table class="table table-condensed table-bordered table-hover">
+								<tr style="background-color:#CFFDB9"><td>Previous Receiving Addresses</td></tr>
+								<?php 
+						if($currency=="XGC"){
+								$opts = array(
+										'http'=> array(
+										'method'=> "GET",
+										'user_agent'=> "MozillaXYZ/1.0"));
+								$context = stream_context_create($opts);
+								$k=0;$i = count($details['incoming'][$currency])-1;for($j=$i;$j>=0;$j--){?>
+								<tr>
+									<td><?=$details['incoming'][$currency][$j]['Address']?>
+									<?php $url = "http://blockchain.xgcwallet.org:3001/api/getrawtransaction?txid=".$details['incoming'][$currency][$j]['tx']."&decrypt=1";
+									$json = file_get_contents($url, false, $context);
+									$jdec = json_decode($json);
+									$confirmations = 0;
+									if($jdec->confirmations>0){$confirmations = $jdec->confirmations;};
+									print_r( " (".$confirmations." - confirmations) ");
+									?>
+									</td>
+								</tr>
+								
+								<?php $k++;if($k==3){break;}}
+						}
+								?>
+								</table>
 
       </div>
     </div>
