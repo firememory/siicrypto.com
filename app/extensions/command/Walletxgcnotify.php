@@ -11,6 +11,11 @@ use app\extensions\action\Greencoin;
 
 class Walletxgcnotify extends \lithium\console\Command {
  public function index($s=null) {
+		
+		Transactions::meta('connection', 'SiiCrypto');			
+		Details::meta('connection', 'SiiCrypto');			
+		Users::meta('connection', 'SiiCrypto');
+		
 		$Transactions = Transactions::find('first',array(
 			'conditions'=>array('TransactionHash' => $s)
 		));
