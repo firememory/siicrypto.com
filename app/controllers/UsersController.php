@@ -13,6 +13,7 @@ use lithium\data\Connections;
 use app\extensions\action\Coinprism;
 use app\extensions\action\MultiSig;
 use app\extensions\action\Greencoin;
+use app\extensions\action\Bitcoin;
 use app\extensions\action\Identification;
 use app\extensions\action\Functions;
 use app\extensions\action\Uuid;
