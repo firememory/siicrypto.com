@@ -16,12 +16,14 @@ class Check extends \lithium\console\Command {
 			$getinfo = $bitcoin->getinfo();
 //			print_r($getinfo);
 			
-			$address = $greencoin->getnewaddress("SiiCrypto-".$user['username']);			
-			if($address['error']){
+			$address = $greencoin->getnewaddress("SiiCrypto-");			
+			if(is_array($address['error'])){
 				print_r($address);
-				$address = $greencoin->getnewaddress("SiiCrypto-".$user['username']);
+				$address = $greencoin->getnewaddress("SiiCrypto-");
 			}
 			print_r($address);
+			
+			
 			Details::meta('connection', 'SiiCrypto');			
 			$detail = Details::count();
 			print_r($detail."\n");
