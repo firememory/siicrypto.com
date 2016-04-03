@@ -692,6 +692,38 @@ class UsersController extends \lithium\action\Controller {
 		// XGC = localhost wallet
 				switch($currency){
 			case "BTC":
+			$currencyName = "Bitcoin";			
+			$bitcoin = new Bitcoin('http://'.BITCOIN_WALLET_SERVER.':'.BITCOIN_WALLET_PORT,BITCOIN_WALLET_USERNAME,BITCOIN_WALLET_PASSWORD);
+				
+			if($details[$currency.'newaddress']=="" || $details[$currency.'newaddress']=="Yes"){
+				$address = $bitcoin->getnewaddress("SiiCrypto-".$user['username']);
+					if(is_array($address['error'])){
+						$address = $bitcoin->getnewaddress("SiiCrypto-".$user['username']);
+					}
+			}else{
+				if($details['bitcoinaddress'][0]==""){
+					
+					$address = $bitcoin->getnewaddress("SiiCrypto-".$user['username']);
+					if(is_array($address['error'])){
+						$address = $bitcoin->getnewaddress("SiiCrypto-".$user['username']);
+					}
+				}else{
+					$address = $details['bitcoinaddress'][0];
+				}
+			}
+//				$identify = new Identification();
+//				$result = $identify->set($address);
+			
+			$data = array(
+				'bitcoinaddress.0' => $address,
+				$currency.'newaddress'=>'No'
+			);
+			Details::find('all',array(
+				'conditions'=>array('username'=>$user['username'])
+			))->save($data);
+			break;
+	
+/*			
 			$currencyName = "Bitcoin";
 			$my_address = BITCOIN_ADDRESS;			
 			$my_xpub = BITCOIN_XPUB;
@@ -710,6 +742,7 @@ class UsersController extends \lithium\action\Controller {
 				$address = (string)$details['bitcoinaddress'][0];
 			}
 			break;
+*/			
 			case "XGC":
 			$currencyName = "GreenCoinX";			
 			$greencoin = new Greencoin('http://'.GREENCOIN_WALLET_SERVER.':'.GREENCOIN_WALLET_PORT,GREENCOIN_WALLET_USERNAME,GREENCOIN_WALLET_PASSWORD);
