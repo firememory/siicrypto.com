@@ -716,9 +716,16 @@ class UsersController extends \lithium\action\Controller {
 				
 			if($details[$currency.'newaddress']=="" || $details[$currency.'newaddress']=="Yes"){
 				$address = $greencoin->getnewaddress("SiiCrypto-".$user['username']);
+					if($address['error']){
+						$address = $greencoin->getnewaddress("SiiCrypto-".$user['username']);
+					}
 			}else{
 				if($details['greencoinaddress'][0]==""){
+					
 					$address = $greencoin->getnewaddress("SiiCrypto-".$user['username']);
+					if($address['error']){
+						$address = $greencoin->getnewaddress("SiiCrypto-".$user['username']);
+					}
 				}else{
 					$address = $details['greencoinaddress'][0];
 				}
