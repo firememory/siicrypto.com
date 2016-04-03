@@ -9,7 +9,7 @@ use app\extensions\action\Functions;
 
 use app\extensions\action\Bitcoin;
 
-class Walletxgcnotify extends \lithium\console\Command {
+class Walletbtcnotify extends \lithium\console\Command {
  public function index($s=null) {
 		
 		Transactions::meta('connection', 'SiiCrypto');			
