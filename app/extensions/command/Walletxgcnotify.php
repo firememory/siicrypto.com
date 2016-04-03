@@ -31,7 +31,7 @@ class Walletxgcnotify extends \lithium\console\Command {
 		$getrawtransaction = $greencoin->getrawtransaction($s);
 	//		print_r($getrawtransaction);
 		$decoderawtransaction = $greencoin->decoderawtransaction($getrawtransaction);		
-
+		if(count($decoderawtransaction['vout'])>0){
 			foreach($decoderawtransaction['vout'] as $out){
 				foreach($out['scriptPubKey']['addresses'] as $address){
 				
@@ -107,7 +107,7 @@ class Walletxgcnotify extends \lithium\console\Command {
 							'DateTime' => new \MongoDate(),
 							'Amount'=> (float)number_format($Amount,8),
 							'Currency'=> 'XGC',						
-							'username' => $details['username'],
+							'username' => $username,
 							);
 							$function = new Functions();
 							$returnvalues = $function->twilio($data);	 // Testing if it works 
@@ -124,6 +124,7 @@ class Walletxgcnotify extends \lithium\console\Command {
 						}
 					}
 				}
+			}
 			}
 		}
 } 
