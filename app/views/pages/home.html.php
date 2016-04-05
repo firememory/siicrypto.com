@@ -83,6 +83,9 @@ $trades = Trades::find('all',array('limit'=>$howmany,'order'=>array('order'=>1))
 						<a href="/ex/x/<?=strtolower(str_replace("/","_",$tradeVF['trade']))?>"><img src="/img/<?=strtolower(str_replace("/","_",$tradeVF['trade']))?>.png" class="img-responsive" alt="Generic placeholder thumbnail">
 						<h4><?=$tradeVF['trade']?></h4>
 						<small>-<?php
+						print_r($rate['_id']['FirstCurrency']);
+						print_r($rate['_id']['SecondCurrency']);
+						print_r($tradeVF['trade']);
 								foreach($Rates['result'] as $rate){
 									if($rate['_id']['FirstCurrency']."/".$rate['_id']['SecondCurrency']==$tradeVF['trade']){
 						?>Min: <?=number_format($rate['min'],4)?><br> Max: <?=number_format($rate['max'],4)?><br> Last: <?=number_format($rate['last'],4)?><?php
