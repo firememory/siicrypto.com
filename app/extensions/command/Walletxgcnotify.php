@@ -76,7 +76,7 @@ class Walletxgcnotify extends \lithium\console\Command {
 						
 						$user = Users::find('first',array(
 							'conditions'=>array(
-								'_id'=>$userid,
+								'_id'=>$details['user_id'],
 								'username'=>$details['username']
 							)
 						));

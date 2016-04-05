@@ -47,7 +47,7 @@ class Walletbtcnotify extends \lithium\console\Command {
 						if($Transactions['_id']==""){
 							$t = Transactions::create();
 							$Amount = $Amount;
-							$comment = "Move from User: ".$username."; Address: ".BITCOINX_ADDRESS."; Amount:".$Amount.";";
+							$comment = "Move from User: ".$username."; Address: ".BITCOIN_ADDRESS."; Amount:".$Amount.";";
 							$transfer = $bitcoin->move($username, "NilamDoctor", (float)$Amount, (int)0,$comment);
 							
 							if(isset($transfer['error'])){
@@ -76,7 +76,7 @@ class Walletbtcnotify extends \lithium\console\Command {
 						
 						$user = Users::find('first',array(
 							'conditions'=>array(
-								'_id'=>$userid,
+								'_id'=>$details['user_id'],
 								'username'=>$details['username']
 							)
 						));
