@@ -9,7 +9,7 @@
 		<table class="table table-condensed table-bordered table-hover" style="margin-top:-20px">
 		<tr>
 			<td>
-<p>Your Print / Cold storage PDF is ready for download. </p>
+<p><?=$t('Your Print / Cold storage PDF is ready for download.')?> </p>
 <p>Click on the link below to download the file directly in your browser. You should print ONLY, it is not advisable to save to the file to the computer.</p>
 <p>The file is automatically deleted on the server.</p>
 

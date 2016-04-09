@@ -112,7 +112,7 @@ class Walletxgcnotify extends \lithium\console\Command {
 							$function = new Functions();
 							$returnvalues = $function->twilio($data);	 // Testing if it works 
 
-						print_r($dataDetails);
+//						print_r($dataDetails);
 							$details = Details::find('all',
 								array(
 										'conditions'=>array('username'=>(string)$userName)

@@ -1,0 +1,21 @@
+#: F:\Apache\www\TBG\siicrypto.com\app\views\print\cold.html.php:6
+msgid "Print / Cold storage"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\print\cold.html.php:12
+msgid "Your Print / Cold storage PDF is ready for download."
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\print\index.html.php:1
+msgid "Print / Cold Storage"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\print\index.html.php:7
+msgid ""
+": As this is an offline virtual currency, it is very safe from the hackers "
+"of the internet world."
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\print\index.html.php:11
+msgid "Denominations"
+msgstr ""

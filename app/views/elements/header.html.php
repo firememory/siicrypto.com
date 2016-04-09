@@ -3,6 +3,13 @@ use app\models\Trades;
 use lithium\storage\Session;
 use app\extensions\action\Functions;
 ?>
+<?php use lithium\core\Environment; 
+if(substr(Environment::get('locale'),0,2)=="en"){$locale = "en";}else{$locale = Environment::get('locale');}
+//if(strlen($locale>2)){$locale='en';}
+// print_r(Environment::get('locale'));
+// print_r($locale);
+?>
+
 <?php $user = Session::read('member'); ?>
 <div class="navbar-header">
 	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -11,7 +18,7 @@ use app\extensions\action\Functions;
 		<span class="icon-bar"></span>
 		<span class="icon-bar"></span>
 	</button>
-	<a class="navbar-brand" href="/"><img src="/img/logo.png" alt="SiiCrypto.com" title="SII Crypto"></a>
+	<a class="navbar-brand" href="/<?=$locale?>/"><img src="/img/logo.png" alt="SiiCrypto.com" title="SII Crypto"></a>
 </div> <!-- navbar-header-->
 <div class="navbar-collapse collapse">
 	<?php 
@@ -22,21 +29,21 @@ use app\extensions\action\Functions;
 <?php }?>				
 	<ul class="nav navbar-nav navbar-right">
 		<?php if($user!=""){ ?>
-					<li style="font-size:13px;"><a href="/company/contact">Contact</a></li>		
-					<li style="font-size:13px;"><a href="/company/aboutus">About</a></li>	
-					<li style="font-size:13px;"><a href="/company/howitworks">How it works</a></li>	
-					<li style="font-size:13px;"><a href="/company/funding">Funding</a></li>						
-					<li style="font-size:13px;"><a href="/company/security">Security & Risk</a></li>	
-					<li style="font-size:13px;"><a href="/company/verification">Verification</a></li>						
-					<li style="font-size:13px;"><a href="/company/privacy">Privacy & Terms</a></li>		
-					<li style="font-size:13px;"><a href="/company/press">Press</a></li>		
+					<li style="font-size:13px;"><a href="/<?=$locale?>/company/contact">Contact</a></li>		
+					<li style="font-size:13px;"><a href="/<?=$locale?>/company/aboutus">About</a></li>	
+					<li style="font-size:13px;"><a href="/<?=$locale?>/company/howitworks">How it works</a></li>	
+					<li style="font-size:13px;"><a href="/<?=$locale?>/company/funding">Funding</a></li>						
+					<li style="font-size:13px;"><a href="/<?=$locale?>/company/security">Security & Risk</a></li>	
+					<li style="font-size:13px;"><a href="/<?=$locale?>/company/verification">Verification</a></li>						
+					<li style="font-size:13px;"><a href="/<?=$locale?>/company/privacy">Privacy & Terms</a></li>		
+					<li style="font-size:13px;"><a href="/<?=$locale?>/company/press">Press</a></li>		
 
 			<li ><a href='#' class='dropdown-toggle' data-toggle='dropdown' >
 			<?=$user['username']?> <i class='glyphicon glyphicon-chevron-down'></i>&nbsp;&nbsp;&nbsp;
 			</a>
 			<ul class="dropdown-menu">
-				<li><a href="/users/settings"><i class="fa fa-gears"></i> Your Account</a></li>			
-				<li><a href="/ex/dashboard"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+				<li><a href="/<?=$locale?>/users/settings"><i class="fa fa-gears"></i> Your Account</a></li>			
+				<li><a href="/<?=$locale?>/ex/dashboard"><i class="fa fa-dashboard"></i> Dashboard</a></li>
 				<li class="divider"></li>				
 <?php 
 $trades = Trades::find('all');
@@ -64,10 +71,10 @@ foreach($trades as $tr){
 	$VirtualCurr = array_unique($VirtualCurr);
 	$FiatCurr = array_unique($FiatCurr);
 	foreach($VirtualCurr as $currency){
-		echo '<li><a href="/users/funding/'.$currency.'"><i class="fa fa-exchange"></i> Funding '.$currency.'</a></li>';
+		echo '<li><a href="/'.$locale.'/users/funding/'.$currency.'"><i class="fa fa-exchange"></i> Funding '.$currency.'</a></li>';
 	}
 	foreach($FiatCurr as $currency){
-		echo '<li><a href="/users/funding_fiat/'.$currency.'"><i class="fa fa-exchange"></i> Funding '.$currency.'</a></li>';
+		echo '<li><a href="/'.$locale.'/users/funding_fiat/'.$currency.'"><i class="fa fa-exchange"></i> Funding '.$currency.'</a></li>';
 	}
 
 ?>
@@ -75,16 +82,16 @@ foreach($trades as $tr){
 			</ul>
 			<?php }else{?>
 
-					<li style="font-size:13px;"><a href="/company/contact">Contact</a></li>		
-					<li style="font-size:13px;"><a href="/company/aboutus">About</a></li>	
-					<li style="font-size:13px;"><a href="/company/howitworks">How it works</a></li>	
-					<li style="font-size:13px;"><a href="/company/funding">Funding</a></li>						
-					<li style="font-size:13px;"><a href="/company/security">Security & Risk</a></li>	
-					<li style="font-size:13px;"><a href="/company/verification">Verification</a></li>						
-					<li style="font-size:13px;"><a href="/company/privacy">Privacy & Terms</a></li>		
-					<li style="font-size:13px;"><a href="/company/press">Press</a></li>		
-			<li><a href="/login">Login</a></li>
-			<li><a href="/users/signup">Register&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+					<li style="font-size:13px;"><a href="/<?=$locale?>/company/contact">Contact</a></li>		
+					<li style="font-size:13px;"><a href="/<?=$locale?>/company/aboutus">About</a></li>	
+					<li style="font-size:13px;"><a href="/<?=$locale?>/company/howitworks">How it works</a></li>	
+					<li style="font-size:13px;"><a href="/<?=$locale?>/company/funding">Funding</a></li>						
+					<li style="font-size:13px;"><a href="/<?=$locale?>/company/security">Security & Risk</a></li>	
+					<li style="font-size:13px;"><a href="/<?=$locale?>/company/verification">Verification</a></li>						
+					<li style="font-size:13px;"><a href="/<?=$locale?>/company/privacy">Privacy & Terms</a></li>		
+					<li style="font-size:13px;"><a href="/<?=$locale?>/company/press">Press</a></li>		
+			<li><a href="/<?=$locale?>/login">Login</a></li>
+			<li><a href="/<?=$locale?>/users/signup">Register&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
 			<?php }?>				
 		</ul>
 </div> <!-- navbar-collapse -->

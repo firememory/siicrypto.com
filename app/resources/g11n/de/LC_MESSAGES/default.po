@@ -1,0 +1,39 @@
+# This file is distributed under the same license as the PACKAGE package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2016-04-09 08:32+0530\n"
+"Last-Translator: \n"
+"Language-Team: EMAIL@ADDRESS\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.8.7\n"
+"Language: de\n"
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\print\cold.html.php:6
+msgid "Print / Cold storage"
+msgstr "Druck / kalte Lagerung"
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\print\cold.html.php:12
+msgid "Your Print / Cold storage PDF is ready for download."
+msgstr "Druckauftrags / Kühlhaus PDF steht zum Download bereit."
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\print\index.html.php:1
+msgid "Print / Cold Storage"
+msgstr "Druck / kalte Lagerung"
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\print\index.html.php:7
+msgid ""
+": As this is an offline virtual currency, it is very safe from the hackers "
+"of the internet world."
+msgstr ""
+": Da dies ein offline virtuelle Währung ist, ist es sehr sicher vor Hackern "
+"der Internet-Welt."
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\print\index.html.php:11
+msgid "Denominations"
+msgstr "Stückelung"

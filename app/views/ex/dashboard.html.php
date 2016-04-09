@@ -19,45 +19,87 @@ $GLOBALS['cannotRegister'] = "true";  // temporary to disable going to funding p
   <div class="panel-body">
 <table class="table table-condensed table-bordered table-hover">
 			<thead>
-			<?php if($details['incoming']['XGC']['Confirmations']==0){?>
 				<tr>
-				<td colspan=7><div class="alert alert-success">Incoming XGC transaction to:
+				<td colspan=7><div class="alert alert-success">
+				<?php 
+				$k=0;$i = count($details['incoming']['BTC'])-1;
+				for($j=$i;$j>=0;$j--){
+					if($details['incoming']['BTC'][$j]['Confirmations'] == null){
+						if($details['incoming']['BTC'][$j]['Confirmations'] == 0){
+									$url = "http://blockchain.info/tx/".$details['incoming']['BTC'][$j]['tx']."?format=json";
+									$json = file_get_contents($url, false, $context);
+									$jdec = json_decode($json);
+									$confirmations = 0;
+									if($jdec->block_height>0){
+										$confirmations = $jdec->block_height;
+										foreach($jdec->out as $k => $v){
+//											print_r($v->addr );
+//											print_r($details['incoming']['BTC'][$j]['Address']);
+											if($v->addr==$details['incoming']['BTC'][$j]['Address']){
+												$data = array(
+													'incoming.BTC.'.$j.'.Confirmations' => $confirmations,
+													'balance.BTC' => $details['balance']['BTC'] + (float)round($v->value/100000000,8),
+													'incoming.BTC.'.$j.'.Confirmed' => 'Yes'
+												);
+												$conditions = array(
+													'username' => $user['username'],
+													'user_id' => $user['_id']
+												);
+//												print_r($conditions);
+												$saved = Details::update($data,$conditions);
+//												print_r($data);
+//												print_r($saved);
+											}
+										}
+									}
+							print_r("Incoming BTC transaction to:<br>");
+							print_r($details['incoming']['BTC'][$j]['Address']);
+						}
+					}
+				}
+				?>
+				
 				<?php 
 				$k=0;$i = count($details['incoming']['XGC'])-1;
 				for($j=$i;$j>=0;$j--){
 					if($details['incoming']['XGC'][$j]['Confirmations'] == null){
 						if($details['incoming']['XGC'][$j]['Confirmations'] == 0){
-							
 									$url = "http://blockchain.xgcwallet.org:3001/api/getrawtransaction?txid=".$details['incoming']['XGC'][$j]['tx']."&decrypt=1";
 									$json = file_get_contents($url, false, $context);
 									$jdec = json_decode($json);
 									$confirmations = 0;
-									if($jdec->confirmations>0){$confirmations = $jdec->confirmations;};
-									
-									
-									$data = array(
-										'incoming.XGC.'.$j.'.Confirmations' => $confirmations
-										
-										
-									);
-									
-									$conditions = array(
-										'username' => $user['username'],
-										'user_id' => $user['_id']
-									);
-									Details::update($data,$conditions);
-									
-							
-							print_r("<br>");
+									if($jdec->confirmations>0){
+										$confirmations = $jdec->confirmations;
+										foreach($jdec->vout as $k => $v){
+//											print_r($v->scriptPubKey->addresses );
+//											print_r($details['incoming']['XGC'][$j]['Address']);
+											if($v->scriptPubKey->addresses[0]==$details['incoming']['XGC'][$j]['Address']){
+												$data = array(
+													'incoming.XGC.'.$j.'.Confirmations' => $confirmations,
+													'balance.XGC' => $details['balance']['XGC'] + (float)$v->value,
+													'incoming.XGC.'.$j.'.Confirmed' => 'Yes'
+												);
+												$conditions = array(
+													'username' => $user['username'],
+													'user_id' => $user['_id']
+												);
+//												print_r($conditions);
+												$saved = Details::update($data,$conditions);
+//												print_r($data);
+//												print_r($saved);
+											}
+										}
+									}
+							print_r("Incoming XGC transaction to:<br>");
 							print_r($details['incoming']['XGC'][$j]['Address']);
 						}
 					}
-				}	
+				}
 				?>
 				</div>
 				</td>
 				</tr>
-			<?php }?>
+			
 				<tr>
 					<th  class="headTable">Currency <br><small></small></th>
 					<?php 
