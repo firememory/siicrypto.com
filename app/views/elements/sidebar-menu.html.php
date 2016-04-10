@@ -1,4 +1,9 @@
-
+<?php use lithium\core\Environment; 
+if(substr(Environment::get('locale'),0,2)=="en"){$locale = "en";}else{$locale = Environment::get('locale');}
+//if(strlen($locale>2)){$locale='en';}
+// print_r(Environment::get('locale'));
+// print_r($locale);
+?>
 <?php 
 use app\models\Trades;
 use app\models\Orders;
@@ -61,7 +66,7 @@ if($this->_request->params['controller']!='api'){
 			 }
 			}
 ?><li>
-<a href="/ex/x/<?=strtolower(str_replace("/","_",$trade['trade']))?>" class="list-group-subitem">
+<a href="/<?=$locale?>/ex/x/<?=strtolower(str_replace("/","_",$trade['trade']))?>" class="list-group-subitem">
 	<i class="glyphicon glyphicon-caret-right"></i><?=$trade['trade']?> <span class="badge btn-success pull-right"><?=number_format($price,4)?></span>
 </a>				
 </li>

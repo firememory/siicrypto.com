@@ -1,3 +1,9 @@
+<?php use lithium\core\Environment; 
+if(substr(Environment::get('locale'),0,2)=="en"){$locale = "en";}else{$locale = Environment::get('locale');}
+//if(strlen($locale>2)){$locale='en';}
+// print_r(Environment::get('locale'));
+// print_r($locale);
+?>
 <?php
  use lithium\storage\Session;
  use app\models\Pages;
@@ -76,24 +82,31 @@ $ex = Session::read('ex');
 			<?php if(strtolower($this->_request->controller)!='admin'){ ?>
 						<div class="col-sm-4 col-md-3 sidebar">
 						<ul class="nav nav-sidebar">
-							<li class="active"><a href="#"> <i class="glyphicon glyphicon-th-list"></i> Trades</a></li>
+							<li>
+								<div style="padding-left:20px;padding-bottom:10px">
+									<a href="#" onclick="ChangeLanguage('en','<?=$_SERVER['REQUEST_URI']?>');"><img src="/img/Flags/gb.gif" height="25" alt="English" text="English"></a>
+									<a href="#" onclick="ChangeLanguage('de','<?=$_SERVER['REQUEST_URI']?>');"><img src="/img/Flags/de.gif" height="25" alt="German" text="German"></a>
+								</div>
+							</li>
+							
+							<li class="active"><a href="#"> <i class="glyphicon glyphicon-th-list"></i> <?=$t('Trades')?></a></li>
 							<?php echo $this->_render('element', 'sidebar-menu');?>		
 							<?php if($user!=""){?>
-							<li class="active"><a href="/users/settings"> <i class="fa fa-gears"></i> Your Account</a></li>
-							<li class="active"><a href="/ex/dashboard"> <i class="fa fa-dashboard"></i> Dashboard</a></li>
+							<li class="active"><a href="/<?=$locale?>/users/settings"> <i class="fa fa-gears"></i> <?=$t('Your Account')?></a></li>
+							<li class="active"><a href="/<?=$locale?>/ex/dashboard"> <i class="fa fa-dashboard"></i> <?=$t('Dashboard')?></a></li>
 							<?php }?>
 						</ul>
 						<?php if($user==""){ ?>
 						<ul class="nav nav-sidebar">
-						<li class="active"><a href="/users/signup">Register & Open an account</a></li>
+						<li class="active"><a href="/<?=$locale?>/users/signup"><?=$t('Register & Open an account')?></a></li>
 						</ul>
 						<?php }?>
 <small style="letter-spacing: 0px;">
-<p>SiiCrypto first time users need to open an online GreenCoinX wallet at <a href="https://xgcwallet.org" target="_blank">www.xgcwallet.org</a></p>
-<p>Users will complete an online "Know Your Client" verification process which only takes a few minutes.</p>
-<p><strong>SiiCrypto clients fiat funds are held by ILS Fiduciaries (Switzerland) Sarl the Swiss branch of ILS World, a global provider of independent fiduciary services.</strong></p>
-<p><strong>SiiCrypto clients GreenCoinX and Bitcoin cannot be accessed without client approval.</strong></p>
-<p>The promise of crypto currency was always the fast and inexpensive transfer of funds worldwide, while bypassing the banking system.Until GreenCoinX this has been impeded by identity concerns. Now GreenCoinX has made this promise a reality by its KYC capability.</p>
+<p><?=$t('SiiCrypto first time users need to open an online GreenCoinX wallet at')?> <a href="https://xgcwallet.org" target="_blank">www.xgcwallet.org</a></p>
+<p><?=$t('Users will complete an online "Know Your Client" verification process which only takes a few minutes.')?></p>
+<p><strong><?=$t('SiiCrypto clients fiat funds are held by ILS Fiduciaries (Switzerland) Sarl the Swiss branch of ILS World, a global provider of independent fiduciary services.')?></strong></p>
+<p><strong><?=$t('SiiCrypto clients GreenCoinX and Bitcoin cannot be accessed without client approval.')?></strong></p>
+<p><?=$t('The promise of crypto currency was always the fast and inexpensive transfer of funds worldwide, while bypassing the banking system.Until GreenCoinX this has been impeded by identity concerns. Now GreenCoinX has made this promise a reality by its KYC capability.')?></p>
 </small>
 					</div> <!-- sidebar-->
 					
@@ -136,23 +149,23 @@ $(function() {
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel"><?=$GLOBALS['userCountry']?>-<?=$GLOBALS['userState']?> Warning</h4>
+        <h4 class="modal-title" id="myModalLabel"><?=$GLOBALS['userCountry']?>-<?=$GLOBALS['userState']?> <?=$t('Warning')?></h4>
       </div>
       <div class="modal-body">
 						<?php if ($GLOBALS['userCountry']=="US"){?>
-						<h3>TRADING INFORMATION - USA <?=$GLOBALS['userState']?></h3>
-								<p class="alert alert-danger">We regret to advise you that due to regulatory issues residents of some USA states are unable to trade on SiiCrypto at this time.<br><br>
-								Your state requires additional licensing which we intend to complete as soon as possible.<br><br> We will inform you when this licensing issue has been resolved. Thank you for your patience.
+						<h3><?=$t('TRADING INFORMATION - USA')?> <?=$GLOBALS['userState']?></h3>
+								<p class="alert alert-danger"><?=$t('We regret to advise you that due to regulatory issues residents of some USA states are unable to trade on SiiCrypto at this time.')?><br><br>
+								<?=$t('Your state requires additional licensing which we intend to complete as soon as possible.<br><br> We will inform you when this licensing issue has been resolved. Thank you for your patience.')?>
 								</p>
 						<?php }else{ ?>
-						<h3>TRADING INFORMATION - NON USA <?=$GLOBALS['userCountry']?></h3>
-							<p class="alert alert-danger">We regret to advise you that due to regulatory issues residents of some countries are excluded from trading on SiiCrypto at this time.<br><br>
-							Your country requires additional licensing which we intend to complete as soon as possible, or it has been excluded for other regulatory reasons.<br><br>
-								We will inform you when this issue has been resolved. Thank you for your patience.</p>
+						<h3><?=$t('TRADING INFORMATION - NON USA')?> <?=$GLOBALS['userCountry']?></h3>
+							<p class="alert alert-danger"><?=$t('We regret to advise you that due to regulatory issues residents of some countries are excluded from trading on SiiCrypto at this time.')?><br><br>
+							<?=$t('Your country requires additional licensing which we intend to complete as soon as possible, or it has been excluded for other regulatory reasons.')?><br><br>
+								<?=$t('We will inform you when this issue has been resolved. Thank you for your patience.')?></p>
 						<?php }?>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal"><?=$t('Close')?></button>
       </div>
     </div>
   </div>

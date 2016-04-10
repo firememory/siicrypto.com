@@ -12,6 +12,78 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
+#: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:92
+msgid "Trades"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:95
+msgid "Your Account"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:96
+msgid "Dashboard"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:101
+msgid "Register & Open an account"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:105
+msgid "SiiCrypto first time users need to open an online GreenCoinX wallet at"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:106
+msgid "Users will complete an online \"Know Your Client\" verification process which only takes a few minutes."
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:107
+msgid "SiiCrypto clients fiat funds are held by ILS Fiduciaries (Switzerland) Sarl the Swiss branch of ILS World, a global provider of independent fiduciary services."
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:108
+msgid "SiiCrypto clients GreenCoinX and Bitcoin cannot be accessed without client approval."
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:109
+msgid "The promise of crypto currency was always the fast and inexpensive transfer of funds worldwide, while bypassing the banking system.Until GreenCoinX this has been impeded by identity concerns. Now GreenCoinX has made this promise a reality by its KYC capability."
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:152
+msgid "Warning"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:156
+msgid "TRADING INFORMATION - USA"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:157
+msgid "We regret to advise you that due to regulatory issues residents of some USA states are unable to trade on SiiCrypto at this time."
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:158
+msgid "Your state requires additional licensing which we intend to complete as soon as possible.<br><br> We will inform you when this licensing issue has been resolved. Thank you for your patience."
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:161
+msgid "TRADING INFORMATION - NON USA"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:162
+msgid "We regret to advise you that due to regulatory issues residents of some countries are excluded from trading on SiiCrypto at this time."
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:163
+msgid "Your country requires additional licensing which we intend to complete as soon as possible, or it has been excluded for other regulatory reasons."
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:164
+msgid "We will inform you when this issue has been resolved. Thank you for your patience."
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:168
+msgid "Close"
+msgstr ""
+
 #: F:\Apache\www\TBG\siicrypto.com\app\views\print\cold.html.php:6
 msgid "Print / Cold storage"
 msgstr ""

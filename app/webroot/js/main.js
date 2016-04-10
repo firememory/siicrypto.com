@@ -1,4 +1,5 @@
 // JS Document
+var locale = 'en';
 function UpdateDetails(ex){
 	var delay = 30000;
 	var now, before = new Date();
@@ -768,4 +769,14 @@ function SendtoUser(){
 		}
 	);
 	
+}
+function ChangeLanguage(local,uri){
+	locale = local;
+	var nexturi = "";
+	if(uri.substr(0,3)=='/de' || uri.substr(0,3)=='/en'){
+			nexturi = '/'+local+(uri.substr(3));
+	}else{
+			nexturi = '/'+local+uri;
+	}
+	window.location.assign(nexturi);
 }

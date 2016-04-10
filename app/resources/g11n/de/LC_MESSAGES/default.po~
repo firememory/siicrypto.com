@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2016-04-09 08:12+0530\n"
+"PO-Revision-Date: 2016-04-10 22:02+0530\n"
 "Last-Translator: \n"
 "Language-Team: EMAIL@ADDRESS\n"
 "MIME-Version: 1.0\n"
@@ -13,6 +13,69 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 1.8.7\n"
 "Language: de\n"
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:92
+msgid "Trades"
+msgstr "Handel"
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:95
+msgid "Your Account"
+msgstr "Dein Benutzerkonto"
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:96
+msgid "Dashboard"
+msgstr "Startseite"
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:101
+msgid "Register & Open an account"
+msgstr "Registrierung & Kontoeröffnung"
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:105
+msgid "SiiCrypto first time users need to open an online GreenCoinX wallet at"
+msgstr ""
+"Erstnutzer von SiiCrypto benötigen ein GreenCoinX “Online-Wallet”. Dieses "
+"kann auf gratis eröffnet werden."
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:106
+msgid ""
+"Users will complete an online \"Know Your Client\" verification process "
+"which only takes a few minutes."
+msgstr ""
+"Benutzer absolvieren einen “Know Your Client” Verifikationsprozess der nur "
+"einige Minuten dauert."
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:107
+msgid ""
+"SiiCrypto clients fiat funds are held by ILS Fiduciaries (Switzerland) Sarl "
+"the Swiss branch of ILS World, a global provider of independent fiduciary "
+"services."
+msgstr ""
+"Siicryptos Fiat Kundengelder werden von einem unabhängigen dritten, ILS "
+"Fiduciaries Sarl,\n"
+"die Schweizer Filiale von ILS World, einem Globalen Treuhanddienstleister "
+"gehalten."
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:108
+msgid ""
+"SiiCrypto clients GreenCoinX and Bitcoin cannot be accessed without client "
+"approval."
+msgstr ""
+"SiiCryptos Kunden-GreencoinX oder Bitcoin können ohne Kundenzustimmung "
+"nicht\n"
+"bewegt werden."
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:109
+msgid ""
+"The promise of crypto currency was always the fast and inexpensive transfer "
+"of funds worldwide, while bypassing the banking system.Until GreenCoinX this "
+"has been impeded by identity concerns. Now GreenCoinX has made this promise "
+"a reality by its KYC capability."
+msgstr ""
+"Das Versprechen von Kryptowährungen war schon immer ein schneller und "
+"kostengünstiger Werttransfer weltweit wobei das Bankensystem umgangen wird. "
+"Bisher wurde dies durch fehlenden Identitätsnachweis behindert. GreenCoinX "
+"macht dieses Versprechen nun zur Realität durch ihre angepasste “KYC” "
+"Fähigkeit."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\print\cold.html.php:6
 msgid "Print / Cold storage"
@@ -33,3 +96,7 @@ msgid ""
 msgstr ""
 ": Da dies ein offline virtuelle Währung ist, ist es sehr sicher vor Hackern "
 "der Internet-Welt."
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\print\index.html.php:11
+msgid "Denominations"
+msgstr "Stückelung"

@@ -8,7 +8,22 @@ class Translation extends \lithium\console\Command {
     protected $_languages = array('de','fr');
  
     /**
-     * Generate a language files for each translation
+     * 1. Extract all translated strings from the codebase
+					*    If you modify any text in the site, please follow Extract, Create and Compile
+     */
+    public function extract() {
+							$command = 'del "F:\Apache\www\TBG\siicrypto.com\app\resources\tmp\cache\templates\*.*"';
+							passthru($command);
+        $data = Catalog::read('code', 'messageTemplate', 'root', array(
+            'lossy' => false
+        ));
+        $scope = 'default';
+        return Catalog::write('default', 'messageTemplate', 'root', $data, compact('scope'));
+    }
+
+    /**
+     * 2. Generate a language files for each translation
+					*    Will update the translation file, send / edit with POEdit
 					*/
     public function create() {
         foreach ($this->_languages as $locale) {
@@ -20,7 +35,7 @@ class Translation extends \lithium\console\Command {
     }
  
     /**
-     * Compile a binary for each translation file
+     * 3. Compile a binary for each translation file
      */
     public function compile() {
         foreach ($this->_languages as $locale) {
@@ -30,15 +45,5 @@ class Translation extends \lithium\console\Command {
         }
     }
  
-    /**
-     * Extract all translated strings from the codebase
-     */
-    public function extract() {
-        $data = Catalog::read('code', 'messageTemplate', 'root', array(
-            'lossy' => false
-        ));
-        $scope = 'default';
-        return Catalog::write('default', 'messageTemplate', 'root', $data, compact('scope'));
-    }
 }
 ?>
