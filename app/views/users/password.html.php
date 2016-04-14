@@ -1,2 +1,2 @@
-<h4>Password change:</h4>
+<h4><?=$t('Password change')?>:</h4>
 <?=$msg?>

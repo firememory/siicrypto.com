@@ -1,4 +1,9 @@
-<?php
+<?php use lithium\core\Environment; 
+if(substr(Environment::get('locale'),0,2)=="en"){$locale = "en";}else{$locale = Environment::get('locale');}
+//if(strlen($locale>2)){$locale='en';}
+// print_r(Environment::get('locale'));
+// print_r($locale);
+?><?php
 use lithium\util\String;
 use li3_qrcode\extensions\action\QRcode;
 	$qrcode = new QRcode();
@@ -151,7 +156,7 @@ function initCanvas(ww,hh)
     <div class="panel-heading" role="tab" id="headingOne">
       <h4 class="panel-title">
         <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-<strong>Deposit <?=$currencyName?> - <?=$currency?></strong>
+<strong><?=$t('Deposit')?> <?=$currencyName?> - <?=$currency?></strong>
         </a>
       </h4>
     </div>
@@ -160,10 +165,10 @@ function initCanvas(ww,hh)
 
 							<table class="table table-condensed table-bordered table-hover">
 								<tr style="background-color:#CFFDB9">
-									<td><?=$currencyName?> - <?=$currency?> Address</td>
+									<td><?=$currencyName?> - <?=$currency?> <?=$t('Address')?></td>
 								</tr>
 								<tr>
-									<td>To add <?=$currencyName?> please send payment to: <strong><?=$address?></strong></td>
+									<td><?=$t('To add')?> <?=$currencyName?> <?=$t('please send payment to')?>: <strong><?=$address?></strong></td>
 								</tr>
 								<tr>
 								<?php	$qrcode->png($address, QR_OUTPUT_DIR.$address.'.png', 'H', 7, 2);?>
@@ -173,7 +178,7 @@ function initCanvas(ww,hh)
 								</tr>
 							</table>
  							<table class="table table-condensed table-bordered table-hover">
-								<tr style="background-color:#CFFDB9"><td>Previous Receiving Addresses</td></tr>
+								<tr style="background-color:#CFFDB9"><td><?=$t('Previous Receiving Addresses')?></td></tr>
 								<?php 
 						if($currency=="XGC"){
 								$opts = array(
@@ -206,35 +211,35 @@ function initCanvas(ww,hh)
     <div class="panel-heading" role="tab" id="headingTwo">
       <h4 class="panel-title">
         <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          <strong>Withdraw <?=$currencyName?> - <?=$currency?></strong>
+          <strong><?=$t('Withdraw')?> <?=$currencyName?> - <?=$currency?></strong>
         </a>
       </h4>
     </div>
     <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
       <div class="panel-body">
-<p>Enter the amount of XGC you are withdrawing and then click Calculate<br>
-If an X appears next to the XGC Address in the Send To box then the address you are using is not a valid address</p>
+<p><?=$t('Enter the amount of XGC you are withdrawing and then click Calculate')?><br>
+<?=$t('If an X appears next to the XGC Address in the Send To box then the address you are using is not a valid address')?></p>
 					<?php 
 					if(count($transactions)==0){
 					?>
 							<table class="table table-condensed table-bordered table-hover">
 								<tr style="background-color: #FEECE0">
-									<td><?=$currencyName?> - <?=$currency?> balance</td>
+									<td><?=$currencyName?> - <?=$currency?> <?=$t('balance')?></td>
 								</tr>
 								<tr>
 									<td><strong><?=number_format($details['balance.'.$currency],8)?> <?=$currency?></strong><br><br></td>
 								</tr>
 								<tr>
 									<td style="height:280px ">
-										<form action="/users/paymentverify/<?=$currency?>" method="post">
+										<form action="/<?=$locale?>/users/paymentverify/<?=$currency?>" method="post">
 
-										<label for="currencyaddress"><?=$currencyName?> - <?=$currency?> Address</label>
+										<label for="currencyaddress"><?=$currencyName?> - <?=$currency?> <?=$t('Address')?></label>
 									<div class="input-group">										
 				<input type="text" name="currencyaddress" id="currencyaddress" placeholder="15AXfnf7hshkwgzA8UKvSyjpQdtz34H9LE" class="form-control" title="To Address" data-content="This is the <?=$currencyName?> - <?=$currency?> Address of the recipient." value="" onblur="currencyAddress('<?=$currency?>');"/>
 									<span class="input-group-addon"><a href="#" onclick="loadDiv();"><i class="glyphicon glyphicon-qrcode tooltip-x" rel="tooltip-x" data-placement="top" title="Scan using your webcam"></i></a></span></div>
 
 
-									<small class="help-block">Enter The <?=$currencyName?> - <?=$currency?> Address of the Recipient</small>
+									<small class="help-block"><?=$t('Enter The')?> <?=$currencyName?> - <?=$currency?> <?=$t('Address of the Recipient')?></small>
 				
 									<div id="currencyAddressWindow" style="display:none;border:1px solid gray;padding:2px;width:304px;text-align:center ">
 									<object  id="iembedflash" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0" width="300" height="200">
@@ -243,7 +248,7 @@ If an X appears next to the XGC Address in the Send To box then the address you 
 									<param name="allowScriptAccess" value="always" />
 									<embed  allowScriptAccess="always"  id="embedflash" src="/js/qrcode/camcanvas.swf" quality="high" width="300" height="200" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" mayscript="true"  />
 									</object><br>
-									<a onclick="captureToCanvas();" class="btn btn-primary">Capture</a>
+									<a onclick="captureToCanvas();" class="btn btn-primary"><?=$t('Capture')?></a>
 									<canvas id="qr-canvas" width="300" height="200" style="display:none"></canvas>
 									</div>
 				
@@ -251,7 +256,7 @@ If an X appears next to the XGC Address in the Send To box then the address you 
 									$max = (float)$details['balance.'.$currency];
 									?>
 											<?=$this->form->field('amount', array('label'=>'Amount', 'placeholder'=>'0.0', 'class'=>'form-control', 'max'=>$max,'min'=>'0.0','onFocus'=>'SuccessButtonDisable();','maxlength'=>10,'type'=>'number','step'=>'0.00000001')); ?>
-											<div id="AmountError" style="display:none " class="alert alert-danger">Amount incorrect!</div>
+											<div id="AmountError" style="display:none " class="alert alert-danger"><?=$t('Amount incorrect')?>!</div>
 											<input type="hidden" id="maxValue" value="<?=$max?>" name="maxValue">
 											<input type="hidden" id="txFee" value="<?=$txfee?>" name="txFee">							<br>
 											<input type="hidden" id="TransferAmount" value="0" name="TransferAmount" onFocus="SuccessButtonDisable()">											
@@ -260,26 +265,26 @@ If an X appears next to the XGC Address in the Send To box then the address you 
 											<div id="SendCalculations">
 												<table class="table table-condensed table-bordered table-hover">
 													<tr>
-														<th width="30%">Send to:</th>
+														<th width="30%"><?=$t('Send to')?>:</th>
 														<td id="Send<?=$currency?>Address"></td>
 													</tr>
 													<tr>
-														<th>Total Amount:</th>
+														<th><?=$t('Total Amount')?>:</th>
 														<td id="Send<?=$currency?>Amount"></td>
 													</tr>
 													<tr>
-														<th>Transaction Fees:<br>
-														<small>to miners</small></th>
+														<th><?=$t('Transaction Fees')?>:<br>
+														<small><?=$t('to miners')?></small></th>
 														<td id="Send<?=$currency?>Fees"></td>
 													</tr>
 													<tr>
-														<th>Amount You Receive:</th>
+														<th><?=$t('Amount You Receive')?>:</th>
 														<th id="Send<?=$currency?>Total"></th>
 													</tr>
 												</table>
 											</div>
-											<input type="button" value="Calculate" class="btn btn-primary" onclick="return CheckCurrencyPayment('<?=$currency?>');">
-											<input type="submit" value="Send" class="btn btn-success" onclick="return CheckCurrencyPayment('<?=$currency?>');" disabled="disabled" id="Send<?=$currency?>SuccessButton"> 
+											<input type="button" value="<?=$t('Calculate')?>" class="btn btn-primary" onclick="return CheckCurrencyPayment('<?=$currency?>');">
+											<input type="submit" value="<?=$t('Send')?>" class="btn btn-success" onclick="return CheckCurrencyPayment('<?=$currency?>');" disabled="disabled" id="Send<?=$currency?>SuccessButton"> 
 											
 										</form>
 									</td>
@@ -288,17 +293,17 @@ If an X appears next to the XGC Address in the Send To box then the address you 
 							<?php }else{?>
 							<table class="table table-condensed table-bordered table-hover">
 								<tr style="background-color:#CFFDB9">
-									<td>Withdrawal request</td>
+									<td><?=$t('Withdrawal request')?></td>
 								</tr>
 								<tr>
 									<td style="height:305px ">
-									You have already made a withdrawal request for <strong><?=number_format($transactions['Amount'],8)?> <?=$transactions['Currency']?></strong> . Please check your email and complete the request. If you want to cancel the request, please send an email to <a href="mailto:support@SiiCrypto.com" >support@SiiCrypto.com</a>
-									If your want to delete this request yourself, you can click on the link below:
+									<?=$t('You have already made a withdrawal request for')?> <strong><?=number_format($transactions['Amount'],8)?> <?=$transactions['Currency']?></strong>. <?=$t('Please check your email and complete the request. If you want to cancel the request, please send an email to')?> <a href="mailto:support@SiiCrypto.com" >support@SiiCrypto.com</a>
+									<?=$t('If your want to delete this request yourself, you can click on the link below')?>:
 									</td>
 								</tr>
 								<tr>
 									<td>
-										<strong><a href="/Users/removetransaction/<?=String::hash($transactions['_id'])?>/<?=$transactions['_id']?>/funding/<?=$transactions['Currency']?>">REMOVE <i class="fa fa-remove"></i> <?=number_format($transactions['Amount'],8)?> <?=$transactions['Currency']?></a></strong>
+										<strong><a href="/<?=$locale?>/Users/removetransaction/<?=String::hash($transactions['_id'])?>/<?=$transactions['_id']?>/funding/<?=$transactions['Currency']?>"><?=$t('REMOVE')?> <i class="fa fa-remove"></i> <?=number_format($transactions['Amount'],8)?> <?=$transactions['Currency']?></a></strong>
 									</td>
 								</tr>
 							</table>

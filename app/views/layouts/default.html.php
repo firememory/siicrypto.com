@@ -83,9 +83,12 @@ $ex = Session::read('ex');
 						<div class="col-sm-4 col-md-3 sidebar">
 						<ul class="nav nav-sidebar">
 							<li>
-								<div style="padding-left:20px;padding-bottom:10px">
-									<a href="#" onclick="ChangeLanguage('en','<?=$_SERVER['REQUEST_URI']?>');"><img src="/img/Flags/gb.gif" height="25" alt="English" text="English"></a>
-									<a href="#" onclick="ChangeLanguage('de','<?=$_SERVER['REQUEST_URI']?>');"><img src="/img/Flags/de.gif" height="25" alt="German" text="German"></a>
+								<div style="padding-bottom:10px;font-size:15px;text-align:center">
+									<a href="#" onclick="ChangeLanguage('en','<?=$_SERVER['REQUEST_URI']?>');" style="border-bottom:double"><small>English</small></a>
+<!--									<a href="#" onclick="ChangeLanguage('de','<?=$_SERVER['REQUEST_URI']?>');" style="border-bottom:double"><small>Deutsch</small></a>
+					<a href="#" onclick="ChangeLanguage('es','<?=$_SERVER['REQUEST_URI']?>');" style="border-bottom:double"><small>Español</small></a>
+									<a href="#" onclick="ChangeLanguage('hi','<?=$_SERVER['REQUEST_URI']?>');" style="border-bottom:double"><small>हिन्दी</small></a>
+-->									
 								</div>
 							</li>
 							

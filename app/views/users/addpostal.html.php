@@ -1,15 +1,20 @@
-<div class="panel panel-primary">
+<?php use lithium\core\Environment; 
+if(substr(Environment::get('locale'),0,2)=="en"){$locale = "en";}else{$locale = Environment::get('locale');}
+//if(strlen($locale>2)){$locale='en';}
+// print_r(Environment::get('locale'));
+// print_r($locale);
+?><div class="panel panel-primary">
 	<div class="panel-heading">
-		<h3 class="panel-title">Add/Edit Postal Details:</h3>
+		<h3 class="panel-title"><?=$t('Add/Edit Postal Details')?>:</h3>
 	</div>
 	<div class="panel-body">
 	<div class="row container" >
 	<div class="col-md-5">
-	<p>This address may be used when you withdraw funds.</p>
+	<p><?=$t('This address may be used when you withdraw funds.')?></p>
 <?php
 foreach($details as  $d){
 ?>
-<?=$this->form->create('',array('url'=>'/users/addpostaldetails')); ?>
+<?=$this->form->create('',array('url'=>'/'.$locale.'/users/addpostaldetails')); ?>
 <?=$this->form->field('Name', array('label'=>'1. Name','placeholder'=>'Name','value'=>$d['postal']['Name'],'class'=>'form-control')); ?>
 <?=$this->form->field('Address', array('label'=>'2. Address','placeholder'=>'Address','value'=>$d['postal']['Address'],'class'=>'form-control' )); ?>
 <?=$this->form->field('Street', array('label'=>'3. Street','placeholder'=>'Street','value'=>$d['postal']['Street'],'class'=>'form-control' )); ?>

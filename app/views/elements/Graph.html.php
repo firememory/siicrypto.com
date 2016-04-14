@@ -1,7 +1,7 @@
 <div class="col-md-12" id="Graph" style="text-align:center;display:none" >
 		<div class="panel panel-default">
 			<div class="panel panel-heading">
-				<h2 class="panel-title" style="cursor:pointer;font-weight:bold" onclick="document.getElementById('Graph').style.display='none';">Graph
+				<h2 class="panel-title" style="cursor:pointer;font-weight:bold" onclick="document.getElementById('Graph').style.display='none';"><?=$t('Graph')?>
 					<i class="glyphicon glyphicon-remove"></i>
 				</h2>
 			</div>

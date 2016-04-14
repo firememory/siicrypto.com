@@ -1,7 +1,12 @@
-	<div class="col-md-6">
+<?php use lithium\core\Environment; 
+if(substr(Environment::get('locale'),0,2)=="en"){$locale = "en";}else{$locale = Environment::get('locale');}
+//if(strlen($locale>2)){$locale='en';}
+// print_r(Environment::get('locale'));
+// print_r($locale);
+?><div class="col-md-6">
 		<div class="panel panel-info" style="min-height:350px ">
 			<div class="panel-heading">
-			<h2 class="panel-title"  style="cursor:pointer;font-weight:bold" onclick="document.getElementById('Graph').style.display='block';">No funds in <?=$first_curr?> / Verification 
+			<h2 class="panel-title"  style="cursor:pointer;font-weight:bold" onclick="document.getElementById('Graph').style.display='block';"><?=$t('No funds in')?> <?=$first_curr?> / <?=$t('Verification')?> 
 <i class="glyphicon glyphicon-indent-left"></i></h2>
 			</div>
 <table class="table table-condensed" height:"334px">
@@ -10,7 +15,7 @@
 	?>
 	<tr>
 		<td colspan="2">
-			You should verify:
+			<?=$t('You should verify')?>:
 		</td>
 	</tr>
 		<?php 
@@ -78,18 +83,18 @@
 			}
 		?>
 	<tr>
-		<td colspan="2">If all the above are verified, add Virtual or Fiat currency through the link below:	</td>
+		<td colspan="2"><?=$t('If all the above are verified, add Virtual or Fiat currency through the link below')?>:	</td>
 	</tr>
 	<tr>
 <?php foreach($VirtualCurr as $VC)	{?>
-		<td><a href="/users/funding/<?=strtolower($VC)?>" class="btn btn-primary">Funding <?=$VC?></a></td>
+		<td><a href="/users/funding/<?=strtolower($VC)?>" class="btn btn-primary"><?=$t('Funding')?> <?=$VC?></a></td>
 <?php }?>		
 	</tr>
 	<tr>
 <?php 		if($all){
 
 if(count($FiatCurr)!=0)	{?>
-		<td colspan="2"><a href="/users/funding_fiat/<?=$FiatCurr[0]?>" class="btn btn-primary">Funding <?=$FiatCurr[0]?></a></td>	
+		<td colspan="2"><a href="/users/funding_fiat/<?=$FiatCurr[0]?>" class="btn btn-primary"><?=$t('Funding')?> <?=$FiatCurr[0]?></a></td>	
 <?php }?>		
 	</tr>
 <?php }?>	

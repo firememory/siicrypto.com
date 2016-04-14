@@ -16,6 +16,7 @@ use app\extensions\action\Greencoin;
 use app\extensions\action\Bitcoin;
 use app\extensions\action\Identification;
 use app\extensions\action\Functions;
+use lithium\core\Environment; 
 use app\extensions\action\Uuid;
 use app\extensions\action\CoinAddress;
 use lithium\security\Auth;
@@ -31,6 +32,9 @@ use \Swift_Message;
 use \Swift_Attachment;
 
 class UsersController extends \lithium\action\Controller {
+
+
+
 
 	public function index(){
 	}
@@ -595,7 +599,8 @@ class UsersController extends \lithium\action\Controller {
 		return compact('details','title');
 	}
 	public function changepassword($key=null){
-		if($key==null){	return $this->redirect('login');}
+		if(substr(Environment::get('locale'),0,2)=="en"){$locale = "en";}else{$locale = Environment::get('locale');}
+		if($key==null){	return $this->redirect("/".$locale.'/login');}
 		return compact('key');
 	}
 		public function password(){
@@ -845,12 +850,14 @@ class UsersController extends \lithium\action\Controller {
 			)
 		));
 		if(String::hash($Transaction['_id'])==$id){
+			
 			$Remove = Transactions::remove(array(
 				'_id'=>(string)$Transaction['_id'],
 				'Approved'=>'No'
 				));
-		}
-		return $this->redirect('/users/funding_fiat/'.$currency);
+	}
+	if(substr(Environment::get('locale'),0,2)=="en"){$locale = "en";}else{$locale = Environment::get('locale');}
+		return $this->redirect('/'.$locale.'/users/funding_fiat/'.$currency);
 	}
 	public function deleteWithdrawRequest($Reference=null,$id=null,$currency="USD"){
 		$user = Session::read('default');
@@ -1716,10 +1723,11 @@ class UsersController extends \lithium\action\Controller {
 							'layout'   => '{:library}/views/layouts/{:layout}.{:type}.php',
 					)
 				));
-
+				
+			if(substr(Environment::get('locale'),0,2)=="en"){$locale = "en";}else{$locale = Environment::get('locale');}
 			echo $view->render(
 				'all',
-				compact('data'),
+				compact('data','locale'),
 				array(
 				'controller' => 'users',
 				'template'=>'printDeposit',

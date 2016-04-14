@@ -1,17 +1,23 @@
+<?php use lithium\core\Environment; 
+if(substr(Environment::get('locale'),0,2)=="en"){$locale = "en";}else{$locale = Environment::get('locale');}
+//if(strlen($locale>2)){$locale='en';}
+// print_r(Environment::get('locale'));
+// print_r($locale);
+?>
 <br>
 <div class="panel panel-primary">
 	<div class="panel-heading">
-		<h3 class="panel-title">Add / Edit Bank</h3>
+		<h3 class="panel-title"><?=$t('Add / Edit Bank')?></h3>
 	</div>
 	<div class="panel-body">
 
 <div class="row container" >
 	<div class="col-md-6">
-<p>This will un-set 'verified' status, you will have to verify the bank again.</p>
+<p><?=$t('This will un-set "verified" status, you will have to verify the bank again.')?></p>
 <?php
 foreach($details as  $d){
 ?>
-<?=$this->form->create('',array('url'=>'/users/addbankdetails','class'=>'')); ?>
+<?=$this->form->create('',array('url'=>'/'.$locale.'/users/addbankdetails','class'=>'')); ?>
 <?=$this->form->field('accountname', array('label'=>'1. Account holder(s) name','placeholder'=>'Account name','value'=>$d['bank']['accountname'],'class'=>'form-control')); ?>
 <?=$this->form->field('sortcode', array('label'=>'2. Sort code / MICR','placeholder'=>'Sort code','value'=>$d['bank']['sortcode'],'class'=>'form-control' )); ?>
 <?=$this->form->field('accountnumber', array('label'=>'3. Account number','placeholder'=>'Account number','value'=>$d['bank']['accountnumber'],'class'=>'form-control' )); ?>

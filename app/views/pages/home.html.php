@@ -67,13 +67,13 @@ $trades = Trades::find('all',array('limit'=>$howmany,'order'=>array('order'=>1))
 
 ?>
 	<div class="main">
-		<h2 style="text-align:center;margin-top:-10px"><p> THE SAFE AND SECURE CRYPTO CURRENCY EXCHANGE  WITH</p><p> <span style="color:green"> NO COMMISSION CHARGES</span></p>
+		<h2 style="text-align:center;margin-top:-10px"><p><?=$t('THE SAFE AND SECURE CRYPTO CURRENCY EXCHANGE WITH')?></p><p> <span style="color:green"> <?=$t('NO COMMISSION CHARGES')?></span></p>
 
-<p>BUY/SELL <span style="color:green">GREENCOINX</span> FOR EURO, STERLING, US DOLLAR, CANADIAN DOLLAR OR BITCOIN</p>
+<p><?=$t('BUY/SELL')?> <span style="color:green"><?=$t('GREENCOINX')?></span> <?=$t('FOR EURO, STERLING, US DOLLAR, CANADIAN DOLLAR OR BITCOIN')?></p>
 		
 		</h2>
 		
-		<p style="text-align:center;font-size:18px"><strong>SiiCrypto facilitates trading in GreenCoinX the world’s first crypto currency that requires user identification</strong></p>
+		<p style="text-align:center;font-size:18px"><strong><?=$t('SiiCrypto facilitates trading in GreenCoinX the world\'s first crypto currency that requires user identification')?></strong></p>
 </div><div class="main">
 		<div class="row placeholders">
 		<?php foreach($tradesVF as $tradeVF){
@@ -85,7 +85,7 @@ $trades = Trades::find('all',array('limit'=>$howmany,'order'=>array('order'=>1))
 						<small><?php
 								foreach($Rates['result'] as $rate){
 									if($rate['_id']['FirstCurrency']."/".$rate['_id']['SecondCurrency']==$tradeVF['trade']){
-						?>Min: <?=number_format($rate['min'],4)?><br> Max: <?=number_format($rate['max'],4)?><br> Last: <?=number_format($rate['last'],4)?><?php
+						?><?=$t('Min')?>: <?=number_format($rate['min'],4)?><br> <?=$t('Max')?>: <?=number_format($rate['max'],4)?><br> <?=$t('Last')?>: <?=number_format($rate['last'],4)?><?php
 									}
 								}
 						?>
@@ -105,7 +105,7 @@ $trades = Trades::find('all',array('limit'=>$howmany,'order'=>array('order'=>1))
 								foreach($Rates['result'] as $rate){
 		//							print_r($rate);
 									if($rate['_id']['FirstCurrency']."/".$rate['_id']['SecondCurrency']==$tradesV['trade']){
-						?>Min: <?=number_format($rate['min'],4)?><br> Max: <?=number_format($rate['max'],4)?><br> Last: <?=number_format($rate['last'],4)?><?php
+						?><?=$t('Min')?>: <?=number_format($rate['min'],4)?><br> <?=$t('Max')?>: <?=number_format($rate['max'],4)?><br> <?=$t('Last')?>: <?=number_format($rate['last'],4)?><?php
 									}
 								}
 						?>
@@ -126,7 +126,7 @@ $trades = Trades::find('all',array('limit'=>$howmany,'order'=>array('order'=>1))
 						<?php
 								foreach($Rates['result'] as $rate){
 									if($rate['_id']['FirstCurrency']."/".$rate['_id']['SecondCurrency']==$tradeVF['trade']){
-						?>Min: <?=number_format($rate['min'],4)?><br> Max: <?=number_format($rate['max'],4)?><br> Last: <?=number_format($rate['last'],4)?><?php
+						?><?=$t('Min')?>: <?=number_format($rate['min'],4)?><br> <?=$t('Max')?>: <?=number_format($rate['max'],4)?><br> <?=$t('Last')?>: <?=number_format($rate['last'],4)?><?php
 									}
 								}
 						?>

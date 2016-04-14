@@ -1,4 +1,10 @@
-<!DOCTYPE html>
+<?php
+use lithium\g11n\Message;
+extract(Message::aliases());
+use lithium\core\Environment; 
+if(substr(Environment::get('locale'),0,2)=="en"){$locale = "en";}else{$locale = Environment::get('locale');}
+
+?><!DOCTYPE html>
 <html>
 <head>
 <title><?=COMPANY_NAME?></title>
@@ -34,38 +40,38 @@ text-decoration: none
 	<div>
 		<table style="width:95%;	align:auto;	margin:auto;	border:0px;	background-color:white;">
 			<tr>
-				<th style="	padding: 20px 0 20px 0;	background-color:#ddd; font-size:24px">Confirm Your Email address
+				<th style="	padding: 20px 0 20px 0;	background-color:#ddd; font-size:24px"><?=$t('Confirm Your Email address')?>
 				</th>
 			</tr>
 			<tr>
-				<td><h4>Hi <?=$name?>,</h4>
-<p>Please confirm your email address associated at <?=COMPANY_URL?> by clicking the following link:</p>
-<p><a href="https://<?=$_SERVER['HTTP_HOST'];?>/users/confirm/<?=$email?>/<?=$verification?>">
-https://<?=$_SERVER['HTTP_HOST'];?>/users/confirm/<?=$email?>/<?=$verification?></a></p>
-<p>Or use this confirmation code: <?=$verification?> for your email address: <?=$email?> on the page 
-https://<?=$_SERVER['HTTP_HOST'];?>/users/email</p>
+				<td><h4><?=$t('Hi')?> <?=$name?>,</h4>
+<p><?=$t('Please confirm your email address associated at')?> <?=COMPANY_URL?> <?=$t('by clicking the following link')?>:</p>
+<p><a href="https://<?=$_SERVER['HTTP_HOST'];?>/<?=$locale?>/users/confirm/<?=$email?>/<?=$verification?>">
+https://<?=$_SERVER['HTTP_HOST'];?>/<?=$locale?>/users/confirm/<?=$email?>/<?=$verification?></a></p>
+<p><?=$t('Or use this confirmation code')?>: <?=$verification?> <?=$t('for your email address')?>: <?=$email?> <?=$t('on the page')?>
+https://<?=$_SERVER['HTTP_HOST'];?>/<?=$locale?>/users/email</p>
 				</td>
 			</tr>
 			<tr>
 				<td>IP: <?=$_SERVER['REMOTE_ADDR'];?><br>
 <?=$tor?>
-Date and time: <?=gmdate('Y-m-d H:i:s',time())?>
+<?=$t('Date and time')?>: <?=gmdate('Y-m-d H:i:s',time())?>
 </p></td>
 			</tr>
 			<tr>
 			<td>
-			Thanks,<br><?=NOREPLY?>
+			<?=$t('Thanks')?>,<br><?=NOREPLY?>
 			</td>
 			</tr>
 		</table>
 	</div>
-	<p>SiiCrypto is a REALLY safe crypto currency exchange.</p>
+	<p><?=$t('SiiCrypto is a REALLY safe crypto currency exchange.')?></p>
 	<p><a href="https://greencoinx.com">GreenCoinX.com</a> - <a href="https://xgcwallet.org">XGCWallet.org</a> - <a href="https://KYCGlobal.net">KYCGlobal.net</a></p>
 	<div style="padding:30px;font-size:10px">
-	<p>Please do not reply to this email. </p>
-	<p>This email was sent to you as you tried to register on <?=COMPANY_URL?> with the email address. 
-	If you did not register, then you can delete this email.</p>
-<p>We do not spam. </p>
+	<p><?=$t('Please do not reply to this email.')?> </p>
+	<p><?=$t('This email was sent to you as you tried to register on')?> <?=COMPANY_URL?> <?=$t('with the email address. ')?>
+	<?=$t('If you did not register, then you can delete this email.')?></p>
+<p><?=$t('We do not spam.')?> </p>
 	</div>
 </div>
 </body>

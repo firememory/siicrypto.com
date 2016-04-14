@@ -1,4 +1,7 @@
-<style>
+<?php
+use lithium\g11n\Message;
+extract(Message::aliases());
+?><style>
 .divBox{ 
 border-radius: .5rem;
 border:1px solid #ccc;

@@ -1,3 +1,7 @@
+<?php
+use lithium\g11n\Message;
+extract(Message::aliases());
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -34,38 +38,38 @@ text-decoration: none
 	<div>
 		<table style="width:95%;	align:auto;	margin:auto;	border:0px;	background-color:white;">
 			<tr>
-				<th style="	padding: 20px 0 20px 0;	background-color:#ddd; font-size:24px">Login Email Password
+				<th style="	padding: 20px 0 20px 0;	background-color:#ddd; font-size:24px"><?=$t('Login Email Password')?>
 				</th>
 			</tr>
 			<tr>
-				<td><p>Use this "<strong>Login Email Password</strong>" to sign in to <?=$COMPANY_URL?></p>
-<p>Login: <?=$username?><br>
-Login Email Password: <strong style="font-size:24px;font-weight:bold "><?=$oneCode?></strong><br></p>
+				<td><p><?=$t('Use this')?> "<strong><?=$t('Login Email Password')?></strong>" <?=$t('to sign in to')?> <?=$COMPANY_URL?></p>
+<p><?=$t('Login')?>: <?=$username?><br>
+<?=$t('Login Email Password')?>: <strong style="font-size:24px;font-weight:bold "><?=$oneCode?></strong><br></p>
 </td>
 			</tr>
 			<tr>
 				<td>IP: <?=$_SERVER['REMOTE_ADDR'];?><br>
 <?=$tor?>
-Date and time: <?=gmdate('Y-m-d H:i:s',time())?>
+<?=$t('Date and time')?>: <?=gmdate('Y-m-d H:i:s',time())?>
 </p></td>
 			</tr>
 			<tr>
 			<td>
-			Thanks,<br>
+			<?=$t('Thanks')?>,<br>
 			<?=NOREPLY?>
 
 			</td>
 			</tr>
 		</table>
 	</div>
-	<p>SiiCrypto is a REALLY safe crypto currency exchange.</p>
+	<p><?=$t('SiiCrypto is a REALLY safe crypto currency exchange.')?></p>
 	<p><a href="https://greencoinx.com">GreenCoinX.com</a> - <a href="https://xgcwallet.org">XGCWallet.org</a> - <a href="https://KYCGlobal.net">KYCGlobal.net</a></p>
 	
 	<div style="padding:30px;font-size:10px">
-	<p>Please do not reply to this email. </p>
-	<p>This email was sent to you as you tried to register on <?=COMPANY_URL?> with the email address. 
-	If you did not register, then you can delete this email.</p>
-<p>We do not spam. </p>
+	<p><?=$t('Please do not reply to this email.')?> </p>
+	<p><?=$t('This email was sent to you as you tried to register on')?> <?=COMPANY_URL?> <?=$t('with the email address. ')?>
+	<?=$t('If you did not register, then you can delete this email.')?></p>
+<p><?=$t('We do not spam.')?></p>
 	</div>
 </div>
 </body>

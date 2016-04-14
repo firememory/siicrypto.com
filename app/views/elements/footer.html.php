@@ -6,15 +6,15 @@
 -->
 <div class="row container-fluid"  style="border-top:1px solid gray;border-bottom:double">
 	<ul class="nav navbar-nav" >
-		<li style="font-size:12px;"><a href="/">Home</a></li>		
-		<li style="font-size:12px;"><a href="/company/contact">Contact</a></li>		
-		<li style="font-size:12px;"><a href="/company/aboutus">About</a></li>	
-		<li style="font-size:12px;"><a href="/company/howitworks">How it works</a></li>	
-		<li style="font-size:12px;"><a href="/company/security">Security</a></li>	
-		<li style="font-size:12px;"><a href="/company/riskmanagement">Risk Management</a></li>				
-		<li style="font-size:12px;"><a href="/company/verification">Verification</a></li>						
-		<li style="font-size:12px;"><a href="/company/privacy">Privacy</a></li>		
-		<li style="font-size:12px;"><a href="/company/termsofservice">Terms of Service</a></li>				
+		<li style="font-size:12px;"><a href="/<?=$locale?>/"><?=$t('Home')?></a></li>		
+		<li style="font-size:12px;"><a href="/<?=$locale?>/company/contact"><?=$t('Contact')?></a></li>		
+		<li style="font-size:12px;"><a href="/<?=$locale?>/company/aboutus"><?=$t('About')?></a></li>	
+		<li style="font-size:12px;"><a href="/<?=$locale?>/company/howitworks"><?=$t('How it works')?></a></li>	
+		<li style="font-size:12px;"><a href="/<?=$locale?>/company/security"><?=$t('Security')?></a></li>	
+		<li style="font-size:12px;"><a href="/<?=$locale?>/company/riskmanagement"><?=$t('Risk Management')?></a></li>				
+		<li style="font-size:12px;"><a href="/<?=$locale?>/company/verification"><?=$t('Verification')?></a></li>						
+		<li style="font-size:12px;"><a href="/<?=$locale?>/company/privacy"><?=$t('Privacy')?></a></li>		
+		<li style="font-size:12px;"><a href="/<?=$locale?>/company/termsofservice"><?=$t('Terms of Service')?></a></li>				
 	</ul>
 </div>
 <div class="row container-fluid">

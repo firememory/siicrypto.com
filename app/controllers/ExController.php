@@ -1473,7 +1473,7 @@ $graph->legend->SetFrameWeight(1);
 		$json = file_get_contents('https://kycglobal.net/kyc/info/'.$kyc, false, $context);
 		
 		$details = json_decode($json);
-		if($details->percent>80){
+		if($details->percent>60){
 				return $this->render(array('json' => array(
 				'success'=>1,
 				'email'=>$details->email,

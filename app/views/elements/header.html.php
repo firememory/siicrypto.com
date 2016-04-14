@@ -13,7 +13,7 @@ if(substr(Environment::get('locale'),0,2)=="en"){$locale = "en";}else{$locale = 
 <?php $user = Session::read('member'); ?>
 <div class="navbar-header">
 	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-		<span class="sr-only">Toggle navigation</span>
+		<span class="sr-only"><?=$t('Toggle navigation')?></span>
 		<span class="icon-bar"></span>
 		<span class="icon-bar"></span>
 		<span class="icon-bar"></span>
@@ -29,21 +29,21 @@ if(substr(Environment::get('locale'),0,2)=="en"){$locale = "en";}else{$locale = 
 <?php }?>				
 	<ul class="nav navbar-nav navbar-right">
 		<?php if($user!=""){ ?>
-					<li style="font-size:13px;"><a href="/<?=$locale?>/company/contact">Contact</a></li>		
-					<li style="font-size:13px;"><a href="/<?=$locale?>/company/aboutus">About</a></li>	
-					<li style="font-size:13px;"><a href="/<?=$locale?>/company/howitworks">How it works</a></li>	
-					<li style="font-size:13px;"><a href="/<?=$locale?>/company/funding">Funding</a></li>						
-					<li style="font-size:13px;"><a href="/<?=$locale?>/company/security">Security & Risk</a></li>	
-					<li style="font-size:13px;"><a href="/<?=$locale?>/company/verification">Verification</a></li>						
-					<li style="font-size:13px;"><a href="/<?=$locale?>/company/privacy">Privacy & Terms</a></li>		
-					<li style="font-size:13px;"><a href="/<?=$locale?>/company/press">Press</a></li>		
+
+					<li style="font-size:13px;"><a href="/<?=$locale?>/company/aboutus"><?=$t('About')?></a></li>	
+					<li style="font-size:13px;"><a href="/<?=$locale?>/company/howitworks"><?=$t('How it works')?></a></li>	
+<!--					<li style="font-size:13px;"><a href="/<?=$locale?>/company/funding"><?=$t('Funding')?></a></li>						-->
+					<li style="font-size:13px;"><a href="/<?=$locale?>/company/security"><?=$t('Security & Risk')?></a></li>	
+					<li style="font-size:13px;"><a href="/<?=$locale?>/company/verification"><?=$t('Verification')?></a></li>						
+					<li style="font-size:13px;"><a href="/<?=$locale?>/company/privacy"><?=$t('Privacy & Terms')?></a></li>		
+					<li style="font-size:13px;"><a href="/<?=$locale?>/company/press"><?=$t('Press')?></a></li>		
 
 			<li ><a href='#' class='dropdown-toggle' data-toggle='dropdown' >
 			<?=$user['username']?> <i class='glyphicon glyphicon-chevron-down'></i>&nbsp;&nbsp;&nbsp;
 			</a>
 			<ul class="dropdown-menu">
-				<li><a href="/<?=$locale?>/users/settings"><i class="fa fa-gears"></i> Your Account</a></li>			
-				<li><a href="/<?=$locale?>/ex/dashboard"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+				<li><a href="/<?=$locale?>/users/settings"><i class="fa fa-gears"></i> <?=$t('Your Account')?></a></li>			
+				<li><a href="/<?=$locale?>/ex/dashboard"><i class="fa fa-dashboard"></i> <?=$t('Dashboard')?></a></li>
 				<li class="divider"></li>				
 <?php 
 $trades = Trades::find('all');
@@ -78,27 +78,21 @@ foreach($trades as $tr){
 	}
 
 ?>
-				<li><a href="/logout"><i class="fa fa-power-off"></i> Logout</a></li>
+				<li><a href="/logout"><i class="fa fa-power-off"></i> <?=$t('Logout')?></a></li>
 			</ul>
 			<?php }else{?>
 
-					<li style="font-size:13px;"><a href="/<?=$locale?>/company/contact">Contact</a></li>		
-					<li style="font-size:13px;"><a href="/<?=$locale?>/company/aboutus">About</a></li>	
-					<li style="font-size:13px;"><a href="/<?=$locale?>/company/howitworks">How it works</a></li>	
-					<li style="font-size:13px;"><a href="/<?=$locale?>/company/funding">Funding</a></li>						
-					<li style="font-size:13px;"><a href="/<?=$locale?>/company/security">Security & Risk</a></li>	
-					<li style="font-size:13px;"><a href="/<?=$locale?>/company/verification">Verification</a></li>						
-					<li style="font-size:13px;"><a href="/<?=$locale?>/company/privacy">Privacy & Terms</a></li>		
-					<li style="font-size:13px;"><a href="/<?=$locale?>/company/press">Press</a></li>		
-			<li><a href="/<?=$locale?>/login">Login</a></li>
-			<li><a href="/<?=$locale?>/users/signup">Register&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+
+					<li style="font-size:13px;"><a href="/<?=$locale?>/company/aboutus"><?=$t('About')?></a></li>	
+					<li style="font-size:13px;"><a href="/<?=$locale?>/company/howitworks"><?=$t('How it works')?></a></li>	
+<!--					<li style="font-size:13px;"><a href="/<?=$locale?>/company/funding"><?=$t('Funding')?></a></li>						-->
+					<li style="font-size:13px;"><a href="/<?=$locale?>/company/security"><?=$t('Security & Risk')?></a></li>	
+					<li style="font-size:13px;"><a href="/<?=$locale?>/company/verification"><?=$t('Verification')?></a></li>						
+					<li style="font-size:13px;"><a href="/<?=$locale?>/company/privacy"><?=$t('Privacy & Terms')?></a></li>		
+					<li style="font-size:13px;"><a href="/<?=$locale?>/company/press"><?=$t('Press')?></a></li>		
+			<li><a href="/<?=$locale?>/login"><?=$t('Login')?></a></li>
+			<li><a href="/<?=$locale?>/users/signup"><?=$t('Register')?>&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
 			<?php }?>				
 		</ul>
 </div> <!-- navbar-collapse -->
-
-
-
-
-
-
 <!-- Modal on default page-->

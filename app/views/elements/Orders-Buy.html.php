@@ -5,8 +5,8 @@ $user = Session::read('member');
 	<div class="col-md-6">
 		<div class="panel panel-success">
 			<div class="panel panel-heading">
-			<h2 class="panel-title"  style="font-weight:bold" href="#">All Orders:
-			 Buy <?=$first_curr?> &lt; <?=$second_curr?>  <span class="pull-right" id="BuySpanTotal">Total: <?=count($BuyOrders['result'])?></span></h2>
+			<h2 class="panel-title"  style="font-weight:bold" href="#"><?=$t('All Orders')?>:
+			 <?=$t('Buy')?> <?=$first_curr?> &lt; <?=$second_curr?>  <span class="pull-right" id="BuySpanTotal"><?=$t('Total')?>: <?=count($BuyOrders['result'])?></span></h2>
 <?php  foreach($TotalBuyOrders['result'] as $TBO){
 	$BuyAmount = $TBO['Amount'];
 	$BuyTotalAmount = $TBO['TotalAmount'];
@@ -19,12 +19,12 @@ $user = Session::read('member');
 				<thead>
 					<tr>
 					<th style="text-align:center " rowspan="2">#</th>										
-					<th style="text-align:center ">Price</th>
+					<th style="text-align:center "><?=$t('Price')?></th>
 					<th style="text-align:center "><?=$first_curr?></th>
 					<th style="text-align:center "><?=$second_curr?></th>					
 					</tr>
 					<tr>
-					<th style="text-align:center " >Total &raquo;</th>
+					<th style="text-align:center " ><?=$t('Total')?> &raquo;</th>
 					<th style="text-align:right " ><?=number_format($BuyAmount,8)?></th>
 					<th style="text-align:right " ><?=number_format($BuyTotalAmount,8)?></th>
 					</tr>
@@ -54,7 +54,7 @@ $user = Session::read('member');
 					</tr>
 					<?php 
 					}?>
-					<tr><td colspan="4"><small><span><small>Displaying only last: <?=$i?></small></span><span class="pull-right">* - [Self] <?=$user['username']?></span></small></td></tr>
+					<tr><td colspan="4"><small><span><small><?=$t('Displaying only last')?>: <?=$i?></small></span><span class="pull-right">* - [<?=$t('Self')?>] <?=$user['username']?></span></small></td></tr>
 				</tbody>
 			</table>
 		</div>	

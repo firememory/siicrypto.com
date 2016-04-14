@@ -1,18 +1,22 @@
-<br>
-
+<?php use lithium\core\Environment; 
+if(substr(Environment::get('locale'),0,2)=="en"){$locale = "en";}else{$locale = Environment::get('locale');}
+//if(strlen($locale>2)){$locale='en';}
+// print_r(Environment::get('locale'));
+// print_r($locale);
+?><br>
 <div class="panel panel-primary">
 	<div class="panel-heading">
-		<h3 class="panel-title">Add / Edit Business Bank</h3>
+		<h3 class="panel-title"><?=$t('Add / Edit Business Bank')?></h3>
 	</div>
 	<div class="panel-body">
 
 <div class="row container">
 	<div class="col-md-4">
-<p>This will un-set 'verified' status, you will have to verify the bank again.</p>
+<p><?=$t('This will un-set "verified" status, you will have to verify the bank again.')?></p>
 <?php
 foreach($details as  $d){
 ?>
-<?=$this->form->create('',array('url'=>'/users/addbankBussdetails')); ?>
+<?=$this->form->create('',array('url'=>'/'.$locale.'/users/addbankBussdetails')); ?>
 <?=$this->form->field('accountname', array('label'=>'1. Account name','placeholder'=>'Account name','value'=>$d['bankBuss']['accountname'],'class'=>'form-control')); ?>
 <?=$this->form->field('companyname', array('label'=>'1a. Company name','placeholder'=>'Company name','value'=>$d['bankBuss']['companyname'],'class'=>'form-control')); ?>
 <?=$this->form->field('companynumber', array('label'=>'1b. Company number','placeholder'=>'Company number','value'=>$d['bankBuss']['companynumber'],'class'=>'form-control')); ?>

@@ -1,5 +1,12 @@
 // JS Document
-var locale = 'en';
+var locale = '';
+var uri = window.location.pathname.substr(1);
+if(uri.substr(1,2)=='de' || uri.substr(1,2)=='en' || uri.substr(1,2)=='es' || uri.substr(1,2)=='hi'){
+		locale = '/'+uri.substr(0,2);
+}else{
+		locale = '/en';
+}
+
 function UpdateDetails(ex){
 	var delay = 30000;
 	var now, before = new Date();
@@ -25,7 +32,7 @@ function GetDetails(ex,counter){
 	if(ex=="/EX/DASHBOARD"){ex = "BTC/GBP";}
 	CheckServer();
 							
-	$.getJSON('/Updates/Rates/'+ex,
+	$.getJSON(locale+'/Updates/Rates/'+ex,
 		function(ReturnValues){
 			if(ReturnValues['Refresh']=="Yes"){
 							$('#BuyOrders').html("<div style='text-align:center'><br><i class='fa fa-spinner fa-spin fa-2x'></i><br>Updating...<br></div>");
@@ -33,14 +40,14 @@ function GetDetails(ex,counter){
 							$('#YourCompleteOrders').html("<div style='text-align:center'><br><i class='fa fa-spinner fa-spin fa-2x'></i><br>Updating...<br></div>");
 							$('#YourOrders').html("<div style='text-align:center'><br><i class='fa fa-spinner fa-spin fa-2x'></i><br>Updating...<br></div>");
 							
-					$.getJSON('/Updates/Orders/'+ex,
+					$.getJSON(locale+'/Updates/Orders/'+ex,
 						function(Orders){
 							$('#BuySpanTotal').html('Total: '+Orders['BuySpanTotal']);
 							$('#SellSpanTotal').html('Total: '+Orders['SellSpanTotal']);
 							$('#BuyOrders').html(Orders['BuyOrdersHTML']);
 							$('#SellOrders').html(Orders['SellOrdersHTML']);							
 					});
-					$.getJSON('/Updates/YourOrders/'+ex+'/'+user_id,
+					$.getJSON(locale+'/Updates/YourOrders/'+ex+'/'+user_id,
 						function(Orders){
 							$('#YourCompleteOrders').html(Orders['YourCompleteOrdersHTML']);
 							$('#YourOrders').html(Orders['YourOrdersHTML']);							
@@ -64,10 +71,10 @@ function GetDetails(ex,counter){
 		});
 }
 function CheckServer(){
-		$.getJSON('/Updates/CheckServer/',
+		$.getJSON(locale+'/Updates/CheckServer/',
 		function(ReturnValues){
 			if(ReturnValues['Refresh']=="No"){
-				window.location.assign("/login");								
+				window.location.assign(locale+"/login");								
 			}
 		});
 }
@@ -113,7 +120,7 @@ function BuyFormCalculate (){
 	TotalValue = TotalValue.toFixed(8);
 	
 	
-	$.getJSON('/Updates/Commission/',
+	$.getJSON(locale+'/Updates/Commission/',
 		function(ReturnValues){
 			$("#BuyCommission").val(ReturnValues['Commission']);			
 			Commission = $('#BuyCommission').val();
@@ -194,7 +201,7 @@ function SellFormCalculate (){
 	TotalValue = TotalValue.toFixed(8);
 	
 	
-	$.getJSON('/Updates/Commission/',
+	$.getJSON(locale+'/Updates/Commission/',
 		function(ReturnValues){
 			$("#SellCommission").val(ReturnValues['Commission']);			
 			Commission = $('#SellCommission').val();;	
@@ -272,7 +279,7 @@ function ConvertBalance(){
 	
 }
 function SendPassword(){
-	$.getJSON('/Users/SendPassword/'+$("#Username").val(),
+	$.getJSON(locale+'/Users/SendPassword/'+$("#Username").val(),
 		function(ReturnValues){
 			if(ReturnValues['Password']=="Password Not sent"){
 				$("#UserNameIcon").attr("class", "glyphicon glyphicon-remove");
@@ -300,7 +307,7 @@ function SendPassword(){
 
 function SaveTOTP(){
 	if($("#ScannedCode").val()==""){return false;}
-	$.getJSON('/Users/SaveTOTP/',{
+	$.getJSON(locale+'/Users/SaveTOTP/',{
 			  Login:$("#Login").is(':checked'),
 			  Withdrawal:$("#Withdrawal").is(':checked'),			  
 			  Security:$("#Security").is(':checked'),
@@ -308,19 +315,19 @@ function SaveTOTP(){
 			  },
 		function(ReturnValues){
 			if(ReturnValues){
-				window.location.assign("/users/settings");				
+				window.location.assign(locale+"/users/settings");				
 			}			
 		}
 	);
 }
 function CheckTOTP(){
 	if($("#CheckCode").val()==""){return false;}
-	$.getJSON('/Users/CheckTOTP/',{
+	$.getJSON(locale+'/Users/CheckTOTP/',{
 			  CheckCode:$("#CheckCode").val()
 			  },
 		function(ReturnValues){
 			if(ReturnValues){
-				window.location.assign("/users/settings");		
+				window.location.assign(locale+"/users/settings");		
 			}
 		}
 	);
@@ -328,7 +335,7 @@ function CheckTOTP(){
 
 
 function DeleteTOTP(){
-	$.getJSON('/Users/DeleteTOTP/',
+	$.getJSON(locale+'/Users/DeleteTOTP/',
 		function(ReturnValues){}
 	);	
 }
@@ -418,7 +425,7 @@ function CheckCurrencyPayment(currency){
 	$("#Send"+currency+"Total").html(parseFloat(amount)-parseFloat($("#txFee").val()));	
 	$("#TransferAmount").val(parseFloat(amount)-parseFloat($("#txFee").val()));
 
-	$.getJSON('/Updates/CurrencyAddress/'+currency+'/'+address,
+	$.getJSON(locale+'/Updates/CurrencyAddress/'+currency+'/'+address,
 		function(ReturnValues){
 			if(ReturnValues['verify']['isvalid']==true){
 				switch(ReturnValues['currency'])
@@ -502,7 +509,7 @@ function CheckLastName(value){
 }
 function CheckUserName(value){
 	if(value.length>6){
-		$.getJSON('/Users/username/'+value,
+		$.getJSON(locale+'/Users/username/'+value,
 		function(ReturnValues){
 			if(ReturnValues['Available']=='Yes'){
 				$("#UserNameIcon").attr("class", "glyphicon glyphicon-ok");	
@@ -518,7 +525,7 @@ function CheckEmail(email){
 	email = email.toLowerCase();
 	$("#Email").val(email);	
 	if(validateEmail(email)){
-		$.getJSON('/Users/signupemail/'+email,
+		$.getJSON(locale+'/Users/signupemail/'+email,
 			function(ReturnValues){
 			if(ReturnValues['Available']=='Yes'){
 				$("#EmailIcon").attr("class", "glyphicon glyphicon-ok");					
@@ -547,7 +554,7 @@ function CheckPassword(value){
 	}
 
 	function EmailPasswordSecurity(value){
-		$.getJSON('/Users/EmailPasswordSecurity/'+value,
+		$.getJSON(locale+'/Users/EmailPasswordSecurity/'+value,
 		function(ReturnValues){});
 	}
 function validateEmail(email) { 
@@ -556,7 +563,7 @@ function validateEmail(email) {
 } 
 	function checkkyc(){
 		var kyc = $("#KycId").val();
-		$.getJSON('/ex/getKYC/',{
+		$.getJSON(locale+'/ex/getKYC/',{
 			  kyc:kyc
 			  },
 		function(ReturnValues){
@@ -666,7 +673,7 @@ function CallAdmin(){
 	var Reference = $("#Reference").html();
 	var AdminUser = $("#AdminUser").val();
 	if(AdminUser==""){return false;}
-	$.getJSON('/Users/CallAdmin/'+Reference+'/'+AdminUser,
+	$.getJSON(locale+'/Users/CallAdmin/'+Reference+'/'+AdminUser,
 		function(ReturnValues){
 			if(ReturnValues){
 				if(ReturnValues['success']==1){
@@ -689,7 +696,7 @@ function ConfirmAdmin(){
 	var AdminUser = $("#AdminUser").val();
 	var AdminTOTP = $("#AdminTOTP").val();
 	if(AdminUser==""){return false;}
-	$.getJSON('/Users/ConfirmAdmin/'+Reference+'/'+AdminUser+'/'+AdminTOTP,
+	$.getJSON(locale+'/Users/ConfirmAdmin/'+Reference+'/'+AdminUser+'/'+AdminTOTP,
 		function(ReturnValues){
 			if(ReturnValues){
 				if(ReturnValues['success']==1){
@@ -697,7 +704,7 @@ function ConfirmAdmin(){
 					$("#alert-success").html('Confirmed!');
 					$("#alert-success").show();
 					alert("Confirmed!");
-					window.location.assign("/users/confirmUpload/"+Reference);								
+					window.location.assign(locale+"/users/confirmUpload/"+Reference);								
 				}
 				if(ReturnValues['success']==0){
 					$("#alert-danger").show();
@@ -714,7 +721,7 @@ function RejectAdmin(){
 	var AdminUser = $("#AdminUser").val();
 	var AdminTOTP = $("#AdminTOTP").val();
 	if(AdminUser==""){return false;}
-		$.getJSON('/Users/RejectAdmin/'+Reference+'/'+AdminUser+'/'+AdminTOTP,
+		$.getJSON(locale+'/Users/RejectAdmin/'+Reference+'/'+AdminUser+'/'+AdminTOTP,
 		function(ReturnValues){
 			if(ReturnValues){
 				if(ReturnValues['success']==1){
@@ -722,7 +729,7 @@ function RejectAdmin(){
 					$("#alert-success").html('Rejected!');
 					$("#alert-success").show();
 					alert("Rejected!");
-					window.location.assign("/users/confirmUpload/"+Reference);								
+					window.location.assign(locale+"/users/confirmUpload/"+Reference);								
 					
 				}
 				if(ReturnValues['success']==0){
@@ -739,12 +746,12 @@ function SendtoILS(){
 	var Reference = $("#Reference").html();
 	var AdminUser = $("#FinalApprover").html();
 	if(AdminUser==""){return false;}
-	$.getJSON('/Users/SendtoILS/'+Reference+'/'+AdminUser,
+	$.getJSON(locale+'/Users/SendtoILS/'+Reference+'/'+AdminUser,
 		function(ReturnValues){
 			if(ReturnValues){
 				if(ReturnValues['success']==1){
 					alert("Sent to ILS!");
-					window.location.assign("/users/confirmUpload/"+Reference);								
+					window.location.assign(locale+"/users/confirmUpload/"+Reference);								
 				}
 				if(ReturnValues['success']==0){
 				}
@@ -756,12 +763,12 @@ function SendtoUser(){
 	var Reference = $("#Reference").html();
 	var AdminUser = $("#FinalApprover").html();	
 	if(AdminUser==""){return false;}
-	$.getJSON('/Users/SendtoUser/'+Reference+'/'+AdminUser,
+	$.getJSON(locale+'/Users/SendtoUser/'+Reference+'/'+AdminUser,
 		function(ReturnValues){
 			if(ReturnValues){
 				if(ReturnValues['success']==1){
 					alert("Rejection information sent to user!");
-					window.location.assign("/users/confirmUpload/"+Reference);													
+					window.location.assign(locale+"/users/confirmUpload/"+Reference);													
 				}
 				if(ReturnValues['success']==0){
 				}
@@ -773,10 +780,12 @@ function SendtoUser(){
 function ChangeLanguage(local,uri){
 	locale = local;
 	var nexturi = "";
-	if(uri.substr(0,3)=='/de' || uri.substr(0,3)=='/en'){
+
+if(uri.substr(1,2)=='de' || uri.substr(1,2)=='en'|| uri.substr(1,2)=='es'|| uri.substr(1,2)=='hi'){
 			nexturi = '/'+local+(uri.substr(3));
 	}else{
 			nexturi = '/'+local+uri;
 	}
+	
 	window.location.assign(nexturi);
 }

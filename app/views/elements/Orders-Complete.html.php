@@ -1,15 +1,15 @@
 		<div class="col-md-6">
 			<div class="panel panel-success">
 				<div class="panel-heading">
-				<h2 class="panel-title"  style="font-weight:bold" >My completed orders <span class="pull-right">Total: <?=count($YourCompleteOrders)?></span></h2>
+				<h2 class="panel-title"  style="font-weight:bold" ><?=$t('My completed orders')?> <span class="pull-right"><?=$t('Total')?>: <?=count($YourCompleteOrders)?></span></h2>
 				</div>
 				<div id="YourCompleteOrders" style="overflow:auto;">	
 			<table class="table table-condensed table-bordered table-hover" style="font-size:12px">
 				<thead>
 					<tr>
-						<th style="text-align:center ">Exchange</th>
-						<th style="text-align:center ">Price</th>
-						<th style="text-align:center ">Amount</th>
+						<th style="text-align:center "><?=$t('Exchange')?></th>
+						<th style="text-align:center "><?=$t('Price')?></th>
+						<th style="text-align:center "><?=$t('Amount')?></th>
 					</tr>
 				</thead>
 				<tbody>
@@ -24,7 +24,7 @@
 						<td style="text-align:right "><?=number_format($YO['Amount'],8)?></td>
 					</tr>
 				<?php }?>					
-				<tr><td colspan="3"><small>Displaying only last: <?=$i?></small></td></tr>
+				<tr><td colspan="3"><small><?=$t('Displaying only last')?>: <?=$i?></small></td></tr>
 				</tbody>
 				
 			</table>

@@ -19,15 +19,15 @@ if (is_null($BalanceSecond)){$BalanceSecond = 0;}
 <div class="row" >
 	<div class="col-md-12" style="background-color:#eeeeee;padding:9px;padding-left:30px;margin-bottom:10px;border-bottom:double;margin-top:10px">
 	<div class="rates">
-		<a class="tooltip-y" data-placement="bottom" title="Latest low price" href="#">Low:<strong><span id="LowPrice" class="btn-success" style="padding:2px;margin-left:5px;padding-left:5px;padding-right:5px"></span></strong></a>
-		<a class="tooltip-y" data-placement="bottom" title="Latest high price" href="#">High:<strong><span id="HighPrice" class="btn-danger"  style="padding:2px;margin-left:5px;padding-left:5px;padding-right:5px"></span></strong></a>
-		<a class="tooltip-y" data-placement="bottom" title="Latest price" href="#">Last:<strong><span id="LastPrice" class="btn-info"  style="padding:2px;margin-left:5px;padding-left:5px;padding-right:5px"></span></strong></a>
-		<a class="tooltip-y" data-placement="bottom" title="Volume" href="#">Vol:<strong><span id="Volume" class="btn-inverse"  style="padding:2px;margin-left:5px;padding-left:5px;padding-right:5px"></span></strong></a>							
+		<a class="tooltip-y" data-placement="bottom" title="<?=$t('Latest low price')?>" href="#"><?=$t('Low')?>:<strong><span id="LowPrice" class="btn-success" style="padding:2px;margin-left:5px;padding-left:5px;padding-right:5px"></span></strong></a>
+		<a class="tooltip-y" data-placement="bottom" title="<?=$t('Latest high price')?>" href="#"><?=$t('High')?>:<strong><span id="HighPrice" class="btn-danger"  style="padding:2px;margin-left:5px;padding-left:5px;padding-right:5px"></span></strong></a>
+		<a class="tooltip-y" data-placement="bottom" title="<?=$t('Latest price')?>" href="#"><?=$t('Last')?>:<strong><span id="LastPrice" class="btn-info"  style="padding:2px;margin-left:5px;padding-left:5px;padding-right:5px"></span></strong></a>
+		<a class="tooltip-y" data-placement="bottom" title="<?=$t('Volume')?>" href="#"><?=$t('Vol')?>:<strong><span id="Volume" class="btn-inverse"  style="padding:2px;margin-left:5px;padding-left:5px;padding-right:5px"></span></strong></a>							
 		<a class="pull-right "><i class="fa fa-spinner fa-spin"></i> <span id="Timer"></span></a>
 	</div>
 	</div>
 	<div class="col-md-12 alert-danger alert">
-		<a href="#" class="" data-toggle="modal" data-target="#myModal" >Help - Information on how to trade</a>
+		<a href="#" class="" data-toggle="modal" data-target="#myModal" ><?=$t('Help - Information on how to trade')?></a>
 	</div>
 </div>
 	<?php } ?>
@@ -157,34 +157,34 @@ if (is_null($BalanceSecond)){$BalanceSecond = 0;}
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">How to trade</h4>
+        <h4 class="modal-title" id="myModalLabel"><?=$t('How to trade')?></h4>
       </div>
       <div class="modal-body">
-        <h3>Buy <?=$first_curr?> with <?=$second_curr?></h3>
+        <h3><?=$t('Buy')?> <?=$first_curr?> <?=$t('with')?> <?=$second_curr?></h3>
 								<ul>
-									<li>Enter Amount <?=$first_curr?>: The amount you enter should be less than your balance of <?=$$second_curr?> <?=$second_curr?></li>
-									<li>Enter Price per <?=$first_curr?></li>
-									<li>Click Estimate</li>
-									<li>Submit</li>
+									<li><?=$t('Enter Amount')?> <?=$first_curr?>: <?=$t('The amount you enter should be less than your balance of')?> <?=$$second_curr?> <?=$second_curr?></li>
+									<li><?=$t('Enter Price per')?> <?=$first_curr?></li>
+									<li><?=$t('Click Estimate')?></li>
+									<li><?=$t('Submit')?></li>
 								</ul>
-								<h3>Sell <?=$first_curr?> get <?=$second_curr?></h3>
+								<h3><?=$t('Sell')?> <?=$first_curr?> <?=$t('get')?> <?=$second_curr?></h3>
 								<ul>
-									<li>Enter Amount <?=$second_curr?>: The amount you enter should be less than your balance of <?=$$first_curr?> <?=$first_curr?></li>
-									<li>Enter Price per <?=$second_curr?></li>
-									<li>Click Estimate</li>
-									<li>Submit</li>
+									<li><?=$t('Enter Amount')?> <?=$second_curr?>: <?=$t('The amount you enter should be less than your balance of')?> <?=$$first_curr?> <?=$first_curr?></li>
+									<li><?=$t('Enter Price per')?> <?=$second_curr?></li>
+									<li><?=$t('Click Estimate')?></li>
+									<li><?=$t('Submit')?></li>
 								</ul>
-								<h3>Executing Multiple Orders</h3>
+								<h3><?=$t('Executing Multiple Orders')?></h3>
 								<ul>
-									<strong>Buy <?=$first_curr?> with <?=$second_curr?></strong>
-									<li>Select the row from <strong>Orders: Sell <?=$first_curr?> > <?=$second_curr?></strong>, click on it, will fill in <strong>Buy <?=$first_curr?> with <?=$second_curr?></strong> </li>
-									<strong>Sell <?=$first_curr?> get <?=$second_curr?></strong>
-									<li>Select the row from <strong>Orders: Buy <?=$first_curr?> < <?=$second_curr?></strong>, click on it, will fill in <strong>Sell <?=$first_curr?> get <?=$second_curr?></strong> </li>
+									<strong><?=$t('Buy')?> <?=$first_curr?> <?=$t('with')?> <?=$second_curr?></strong>
+									<li><?=$t('Select the row from')?> <strong><?=$t('Orders: Sell')?> <?=$first_curr?> > <?=$second_curr?></strong>, <?=$t('click on it, will fill in')?> <strong><?=$t('Buy')?> <?=$first_curr?> <?=$t('with')?> <?=$second_curr?></strong> </li>
+									<strong><?=$t('Sell')?> <?=$first_curr?> <?=$t('get')?> <?=$second_curr?></strong>
+									<li><?=$t('Select the row from')?> <strong><?=$t('Orders: Buy')?> <?=$first_curr?> < <?=$second_curr?></strong>, <?=$t('click on it, will fill in')?> <strong><?=$t('Sell')?> <?=$first_curr?> <?=$t('get')?> <?=$second_curr?></strong> </li>
 									
 								</ul>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal"><?=$t('Close')?></button>
       </div>
     </div>
   </div>

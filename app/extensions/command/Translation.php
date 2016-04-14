@@ -5,14 +5,14 @@ use lithium\g11n\Catalog;
  
 class Translation extends \lithium\console\Command {
  
-    protected $_languages = array('de','fr');
+    protected $_languages = array('de','es','hi');
  
     /**
      * 1. Extract all translated strings from the codebase
 					*    If you modify any text in the site, please follow Extract, Create and Compile
      */
     public function extract() {
-							$command = 'del "F:\Apache\www\TBG\siicrypto.com\app\resources\tmp\cache\templates\*.*"';
+							$command = 'echo Y|del "F:\Apache\www\TBG\siicrypto.com\app\resources\tmp\cache\templates\*.*"';
 							passthru($command);
         $data = Catalog::read('code', 'messageTemplate', 'root', array(
             'lossy' => false

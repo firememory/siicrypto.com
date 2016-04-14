@@ -30,9 +30,9 @@ foreach($alldocuments as $key=>$val){
 		<div class="panel panel-info" >
 			<div class="panel-heading">
 				<?php if(!$all){?>
-				<h2 class="panel-title"  >Verification incomplete!</h2>
+				<h2 class="panel-title"  ><?=$t('Verification incomplete')?>!</h2>
 				<?php }else{?>
-				<h2 class="panel-title"  ><?=$currency?> Deposits / Withdrawals</h2>
+				<h2 class="panel-title"  ><?=$currency?> <?=$t('Deposits / Withdrawals')?></h2>
 				<?php }?>
 			</div>
 		</div>
@@ -42,11 +42,11 @@ foreach($alldocuments as $key=>$val){
 			<td>
 <!-----Bank Details start----->					
 	<?php if(strlen($details['bank']['verified'])===0){?>
-	<a href="/users/settings/bank" class="tooltip-x" rel="tooltip-x" data-placement="top" title="Compulsary to transact!"><i class="icon-remove icon-black"></i>Address & Bank</a>
+	<a href="/users/settings/bank" class="tooltip-x" rel="tooltip-x" data-placement="top" title="Compulsary to transact!"><i class="icon-remove icon-black"></i><?=$t('Address & Bank')?></a>
 	<?php }elseif($details['bank']['verified']=='No'){?>
-		<a href="#" class="tooltip-x" rel="tooltip-x" data-placement="top" title="Pending verification!"><i class="icon-edit icon-black"></i>Address & Bank</a>
+		<a href="#" class="tooltip-x" rel="tooltip-x" data-placement="top" title="Pending verification!"><i class="icon-edit icon-black"></i><?=$t('Address & Bank')?></a>
 	<?php }else{ ?>
-		<a href="#" class="tooltip-x" rel="tooltip-x" data-placement="top" title="Completed!"><i class="icon-ok icon-black"></i> Address & Bank</a>					
+		<a href="#" class="tooltip-x" rel="tooltip-x" data-placement="top" title="Completed!"><i class="icon-ok icon-black"></i> <?=$t('Address & Bank')?></a>					
 	<?php }	?>
 			</td>
 			</tr>
@@ -58,11 +58,11 @@ foreach($alldocuments as $key=>$val){
 	<?php 
 	if(strlen($details['government.verified'])==0){
 	?>
-		<a href="/users/settings/government" class="label label-warning tooltip-x" rel="tooltip-x" data-placement="top" title="Compulsary to transact!"><i class="icon-remove icon-black"></i> Government Photo ID</a>
+		<a href="/users/settings/government" class="label label-warning tooltip-x" rel="tooltip-x" data-placement="top" title="Compulsary to transact!"><i class="icon-remove icon-black"></i> <?=$t('Government Photo ID')?></a>
 	<?php }elseif($details['government.verified']=='No'){?>
-		<a href="#" class="label label-important tooltip-x" rel="tooltip-x" data-placement="top" title="Pending verification!"><i class="icon-edit icon-black"></i> Government Photo ID</a>
+		<a href="#" class="label label-important tooltip-x" rel="tooltip-x" data-placement="top" title="Pending verification!"><i class="icon-edit icon-black"></i> <?=$t('Government Photo ID')?></a>
 	<?php }else{ ?>
-		<a href="#" class="label label-success tooltip-x" rel="tooltip-x" data-placement="top" title="Completed!"><i class="icon-ok icon-black"></i> Government ID</a>					
+		<a href="#" class="label label-success tooltip-x" rel="tooltip-x" data-placement="top" title="Completed!"><i class="icon-ok icon-black"></i> <?=$t('Government ID')?></a>					
 	<?php }	?>
 			</td>
 			</tr>
@@ -74,11 +74,11 @@ foreach($alldocuments as $key=>$val){
 	<?php 
 	if(strlen($details['utility.verified'])==0){
 	?>
-		<p href="/users/settings/utility" class="label label-warning tooltip-x" rel="tooltip-x" data-placement="top" title="Compulsary to transact!"><i class="icon-remove icon-black"></i> Proof of Address</p>
+		<a href="/users/settings/utility" class="label label-warning tooltip-x" rel="tooltip-x" data-placement="top" title="<?=$t('Compulsary to transact!')?>"><i class="icon-remove icon-black"></i> <?=$t('Proof of Address')?></a>
 	<?php }elseif($details['utility.verified']=='No'){?>
-		<a href="#" class="label label-important tooltip-x" rel="tooltip-x" data-placement="top" title="Pending verification!"><i class="icon-edit icon-black"></i> Utility Bill</a>
+		<a href="#" class="label label-important tooltip-x" rel="tooltip-x" data-placement="top" title="<?=$t('Pending verification!')?>"><i class="icon-edit icon-black"></i> <?=$t('Utility Bill')?></a>
 	<?php }else{ ?>
-		<a href="#" class="label label-success tooltip-x" rel="tooltip-x" data-placement="top" title="Completed!"><i class="icon-ok icon-black"></i> Utility Bill</a>					
+		<a href="#" class="label label-success tooltip-x" rel="tooltip-x" data-placement="top" title="<?=$t('Completed!')?>"><i class="icon-ok icon-black"></i> <?=$t('Utility Bill')?></a>					
 	<?php }	?>
 <!-----Utility Details end----->				
 			</td>
