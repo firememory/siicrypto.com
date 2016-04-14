@@ -1,3 +1,9 @@
+<?php use lithium\core\Environment; 
+if(substr(Environment::get('locale'),0,2)=="en"){$locale = "en";}else{$locale = Environment::get('locale');}
+//if(strlen($locale>2)){$locale='en';}
+// print_r(Environment::get('locale'));
+// print_r($locale);
+?>
 <?php
 use lithium\util\String;
 use app\models\Trades;
@@ -14,7 +20,7 @@ $GLOBALS['cannotRegister'] = "true";  // temporary to disable going to funding p
 ?>
 <div class="panel panel-default">
   <div class="panel-heading">
-    <h3 class="panel-title">Dashboard: <?=$user['firstname']?> <?=$user['lastname']?></h3>
+    <h3 class="panel-title"><?=$t('Dashboard')?>: <?=$user['firstname']?> <?=$user['lastname']?></h3>
   </div>
   <div class="panel-body">
 <table class="table table-condensed table-bordered table-hover">
@@ -101,7 +107,7 @@ $GLOBALS['cannotRegister'] = "true";  // temporary to disable going to funding p
 				</tr>
 			
 				<tr>
-					<th  class="headTable">Currency <br><small></small></th>
+					<th  class="headTable"><?=$t('Currency')?> <br><small></small></th>
 					<?php 
 					$currencies = array();
 					$VirtualCurr = array(); $FiatCurr = array();
@@ -129,7 +135,7 @@ $GLOBALS['cannotRegister'] = "true";  // temporary to disable going to funding p
 					foreach($VirtualCurr as $currency){?>
 					<th class="headTable" style="text-align:center">
 					<?php if($GLOBALS['cannotRegister']=="false"){?>
-					<a href="/users/funding/<?=$currency?>" class="btn btn-success btn-block">
+					<a href="/<?=$locale?>/users/funding/<?=$currency?>" class="btn btn-success btn-block">
 					<?php }else{?>				
 					<a href="#" class="btn btn-success btn-block" data-toggle="modal" data-target="#myModal">
 					<?php }?>			
@@ -142,7 +148,7 @@ $GLOBALS['cannotRegister'] = "true";  // temporary to disable going to funding p
 					foreach($FiatCurr as $currency){?>
 					<th class="headTable" style="text-align:center">
 					<?php if($GLOBALS['cannotRegister']=="false"){?>
-					<a href="/users/funding_fiat/<?=$currency?>" class="btn btn-primary btn-block">
+					<a href="/<?=$locale?>/users/funding_fiat/<?=$currency?>" class="btn btn-primary btn-block">
 					<?php }else{?>				
 					<a href="#" class="btn btn-success btn-block" data-toggle="modal" data-target="#myModal">
 					<?php }?>			
@@ -154,7 +160,7 @@ $GLOBALS['cannotRegister'] = "true";  // temporary to disable going to funding p
 					<?php }?>					
 				</tr>
 				<tr>
-					<th colspan="7" style="text-align:center">(Click on a currency to Deposit or Withdraw )</th>
+					<th colspan="7" style="text-align:center">(<?=$t('Click on a currency to Deposit or Withdraw')?>)</th>
 				</tr>
 			</thead>
 <?php 
@@ -203,7 +209,7 @@ foreach($CompletedCommissions['result'] as $C){
 ?>
 			<tbody>
 				<tr>
-					<td class="rightTable"><strong>Opening Balance</strong></td>
+					<td class="rightTable"><strong><?=$t('Opening Balance')?></strong></td>
 					<?php foreach($currencies as $currency){
 							if(in_array($currency,$virtuals)){
 					?>
@@ -213,8 +219,8 @@ foreach($CompletedCommissions['result'] as $C){
 					<?php }}?>					
 				</tr>
 				<tr>
-					<td class="rightTable"><strong>Current Balance</strong><br>
-					(including pending orders)</td>
+					<td class="rightTable"><strong><?=$t('Current Balance')?></strong><br>
+					(<?=$t('including pending orders')?>)</td>
 					<?php foreach($currencies as $currency){
 						if(in_array($currency,$virtuals)){
 					?>
@@ -224,7 +230,7 @@ foreach($CompletedCommissions['result'] as $C){
 					<?php }}?>					
 				</tr>
 				<tr>
-					<td class="rightTable"><strong>Pending Buy Orders</strong></td>
+					<td class="rightTable"><strong><?=$t('Pending Buy Orders')?></strong></td>
 					<?php foreach($currencies as $currency){
 						if(in_array($currency,$virtuals)){
 						?>
@@ -235,7 +241,7 @@ foreach($CompletedCommissions['result'] as $C){
 					}?>					
 				</tr>
 				<tr>
-					<td class="rightTable"> <strong>Pending Sell Orders</strong></td>
+					<td class="rightTable"> <strong><?=$t('Pending Sell Orders')?></strong></td>
 					<?php foreach($currencies as $currency){
 						if(in_array($currency,$virtuals)){
 						?>
@@ -246,7 +252,7 @@ foreach($CompletedCommissions['result'] as $C){
 					}?>					
 				</tr>
 				<tr>
-					<td class="rightTable"><strong>After Execution</strong></td>
+					<td class="rightTable"><strong><?=$t('After Execution')?></strong></td>
 					<?php foreach($currencies as $currency){
 						$variablename = $currency."Comm";
 						if(in_array($currency,$virtuals)){
@@ -258,7 +264,7 @@ foreach($CompletedCommissions['result'] as $C){
 					}?>					
 				</tr>
 				<tr >
-					<td class="rightTable"><strong>Commissions</strong></td>
+					<td class="rightTable"><strong><?=$t('Commissions')?></strong></td>
 					<?php foreach($currencies as $currency){
 						$variablename = $currency."Comm";
 						if(in_array($currency,$virtuals)){
@@ -269,7 +275,7 @@ foreach($CompletedCommissions['result'] as $C){
 					<?php }}?>					
 				</tr>
 				<tr>
-					<td class="rightTable"><strong>Complete Buy Orders</strong></td>
+					<td class="rightTable"><strong><?=$t('Complete Buy Orders')?></strong></td>
 					<?php foreach($currencies as $currency){
 						if(in_array($currency,$virtuals)){
 						?>
@@ -280,7 +286,7 @@ foreach($CompletedCommissions['result'] as $C){
 					}?>					
 				</tr>
 				<tr>
-					<td class="rightTable"><strong>Complete Sell Orders</strong></td>
+					<td class="rightTable"><strong><?=$t('Complete Sell Orders')?></strong></td>
 					<?php foreach($currencies as $currency){
 						if(in_array($currency,$virtuals)){
 						?>
@@ -291,7 +297,7 @@ foreach($CompletedCommissions['result'] as $C){
 					}?>					
 				</tr>
 				<tr>
-					<td class="rightTable"><strong>Completed Order Commissions</strong></td>
+					<td class="rightTable"><strong><?=$t('Completed Order Commissions')?></strong></td>
 					<?php foreach($currencies as $currency){
 							$variablename = "Completed".$currency."Comm";
 							if(in_array($currency,$virtuals)){
@@ -306,19 +312,19 @@ foreach($CompletedCommissions['result'] as $C){
 <!--		<h3 class="panel-title">Users: <?=$UsersRegistered?> / Online: <?=$OnlineUsers?></h3> -->
 		<table class="table table-condensed table-bordered table-hover">
 				<tr>
-					<th>Status</th>
+					<th><?=$t('Status')?></th>
 					<th></th>
-					<th>Amount</th>					
-					<th>Avg Price</th>										
+					<th><?=$t('Amount')?></th>					
+					<th><?=$t('Avg Price')?></th>										
 				</tr>
 				<tr>
-					<th colspan="4">Pending orders</th>
+					<th colspan="4"><?=$t('Pending orders')?></th>
 				</tr>
 				<?php 
 				if(count($TotalOrders['Buy']['result'])>0){
 					foreach ($TotalOrders['Buy']['result'] as $r){ ?>
 					<tr>
-						<th><a href="/ex/x/<?=$r['_id']['FirstCurrency']?>_<?=$r['_id']['SecondCurrency']?>"><?=$r['_id']['Action']?> <?=$r['_id']['FirstCurrency']?> with <?=$r['_id']['SecondCurrency']?></a></th>
+						<th><a href="/<?=$locale?>/ex/x/<?=$r['_id']['FirstCurrency']?>_<?=$r['_id']['SecondCurrency']?>"><?=$r['_id']['Action']?> <?=$r['_id']['FirstCurrency']?> <?=$t('with')?> <?=$r['_id']['SecondCurrency']?></a></th>
 						<td style="text-align:right "><?=number_format($r['Amount'],8)?></td>
 						<td style="text-align:right "><?=number_format($r['TotalAmount'],8)?></td>						
 						<td style="text-align:right "><?=number_format($r['TotalAmount']/$r['Amount'],8)?></td>												
@@ -329,7 +335,7 @@ foreach($CompletedCommissions['result'] as $C){
 				if(count($TotalOrders['Sell']['result'])>0){
 					foreach ($TotalOrders['Sell']['result'] as $r){ ?>
 					<tr>
-						<th><a href="/ex/x/<?=$r['_id']['FirstCurrency']?>_<?=$r['_id']['SecondCurrency']?>"><?=$r['_id']['Action']?> <?=$r['_id']['FirstCurrency']?> with <?=$r['_id']['SecondCurrency']?></a></th>
+						<th><a href="/<?=$locale?>/ex/x/<?=$r['_id']['FirstCurrency']?>_<?=$r['_id']['SecondCurrency']?>"><?=$r['_id']['Action']?> <?=$r['_id']['FirstCurrency']?> <?=$t('with')?> <?=$r['_id']['SecondCurrency']?></a></th>
 						<td style="text-align:right "><?=number_format($r['Amount'],8)?></td>
 						<td style="text-align:right "><?=number_format($r['TotalAmount'],8)?></td>						
 						<td style="text-align:right "><?=number_format($r['TotalAmount']/$r['Amount'],8)?></td>																		
@@ -337,13 +343,13 @@ foreach($CompletedCommissions['result'] as $C){
 				<?php }
 				}?>
 				<tr>
-					<th colspan="4">Completed orders</th>
+					<th colspan="4"><?=$t('Completed orders')?></th>
 				</tr>
 				<?php 
 				if(count($TotalCompleteOrders['Buy']['result'])>0){
 					foreach ($TotalCompleteOrders['Buy']['result'] as $r){ ?>
 					<tr>
-						<th><a href="/ex/x/<?=$r['_id']['FirstCurrency']?>_<?=$r['_id']['SecondCurrency']?>"><?=$r['_id']['Action']?> <?=$r['_id']['FirstCurrency']?> with <?=$r['_id']['SecondCurrency']?></a></th>
+						<th><a href="/<?=$locale?>/ex/x/<?=$r['_id']['FirstCurrency']?>_<?=$r['_id']['SecondCurrency']?>"><?=$r['_id']['Action']?> <?=$r['_id']['FirstCurrency']?> <?=$t('with')?> <?=$r['_id']['SecondCurrency']?></a></th>
 						<th style="text-align:right "><?=number_format($r['Amount'],8)?></th>
 						<th style="text-align:right "><?=number_format($r['TotalAmount'],8)?></th>						
 						<td style="text-align:right "><?=number_format($r['TotalAmount']/$r['Amount'],8)?></td>																		
@@ -354,7 +360,7 @@ foreach($CompletedCommissions['result'] as $C){
 				if(count($TotalCompleteOrders['Sell']['result'])>0){
 				foreach ($TotalCompleteOrders['Sell']['result'] as $r){ ?>
 					<tr>
-						<th><a href="/ex/x/<?=$r['_id']['FirstCurrency']?>_<?=$r['_id']['SecondCurrency']?>"><?=$r['_id']['Action']?> <?=$r['_id']['FirstCurrency']?> with <?=$r['_id']['SecondCurrency']?></a></th>
+						<th><a href="/<?=$locale?>/ex/x/<?=$r['_id']['FirstCurrency']?>_<?=$r['_id']['SecondCurrency']?>"><?=$r['_id']['Action']?> <?=$r['_id']['FirstCurrency']?> <?=$t('with')?> <?=$r['_id']['SecondCurrency']?></a></th>
 						<th style="text-align:right "><?=number_format($r['Amount'],8)?></th>
 						<th style="text-align:right "><?=number_format($r['TotalAmount'],8)?></th>						
 						<td style="text-align:right "><?=number_format($r['TotalAmount']/$r['Amount'],8)?></td>																		

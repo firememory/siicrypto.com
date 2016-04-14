@@ -1,4 +1,9 @@
-<?php
+<?php use lithium\core\Environment; 
+if(substr(Environment::get('locale'),0,2)=="en"){$locale = "en";}else{$locale = Environment::get('locale');}
+//if(strlen($locale>2)){$locale='en';}
+// print_r(Environment::get('locale'));
+// print_r($locale);
+?><?php
 use app\models\Parameters;
 use app\models\Pages;
 use app\models\Orders;
@@ -80,7 +85,7 @@ $trades = Trades::find('all',array('limit'=>$howmany,'order'=>array('order'=>1))
 					if(substr($tradeVF['trade'],0,3)==$second_currency){
 			?>
 				<div class="col-xs-3 col-sm-3  placeholder">
-						<a href="/ex/x/<?=strtolower(str_replace("/","_",$tradeVF['trade']))?>"><img src="/img/<?=strtolower(str_replace("/","_",$tradeVF['trade']))?>.png" class="img-responsive" alt="Generic placeholder thumbnail">
+						<a href="/<?=$locale?>/ex/x/<?=strtolower(str_replace("/","_",$tradeVF['trade']))?>"><img src="/img/<?=strtolower(str_replace("/","_",$tradeVF['trade']))?>.png" class="img-responsive" alt="Generic placeholder thumbnail">
 						<h4><?=$tradeVF['trade']?></h4>
 						<small><?php
 								foreach($Rates['result'] as $rate){
@@ -98,7 +103,7 @@ $trades = Trades::find('all',array('limit'=>$howmany,'order'=>array('order'=>1))
 				<div class="col-xs-6 col-sm-12  placeholder">
 				</div>
 				<div class="col-xs-6 col-sm-12  placeholder">
-						<a href="/ex/x/<?=strtolower(str_replace("/","_",$tradesV['trade']))?>"><img src="/img/<?=strtolower(str_replace("/","_",$tradesV['trade']))?>.png" class="img-responsive" alt="Generic placeholder thumbnail">
+						<a href="/<?=$locale?>/ex/x/<?=strtolower(str_replace("/","_",$tradesV['trade']))?>"><img src="/img/<?=strtolower(str_replace("/","_",$tradesV['trade']))?>.png" class="img-responsive" alt="Generic placeholder thumbnail">
 						<h4><?=$tradesV['trade']?></h4>
 						<small>
 						<?php
@@ -120,7 +125,7 @@ $trades = Trades::find('all',array('limit'=>$howmany,'order'=>array('order'=>1))
 					if(substr($tradeVF['trade'],0,3)==$first_currency){
 			?>
 				<div class="col-xs-4 col-sm-4  placeholder">
-						<a href="/ex/x/<?=strtolower(str_replace("/","_",$tradeVF['trade']))?>"><img src="/img/<?=strtolower(str_replace("/","_",$tradeVF['trade']))?>.png" class="img-responsive" alt="Generic placeholder thumbnail">
+						<a href="/<?=$locale?>/ex/x/<?=strtolower(str_replace("/","_",$tradeVF['trade']))?>"><img src="/img/<?=strtolower(str_replace("/","_",$tradeVF['trade']))?>.png" class="img-responsive" alt="Generic placeholder thumbnail">
 						<h4><?=$tradeVF['trade']?></h4>
 						<small>
 						<?php

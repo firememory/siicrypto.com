@@ -1326,95 +1326,211 @@ msgstr ""
 msgid "Remove this order"
 msgstr ""
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:94
+#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\Complete.mail.php:8
+msgid "Hi"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\Complete.mail.php:9
+msgid "Your order is complete, processed and fully executed at"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\Complete.mail.php:12
+msgid "OrderDate"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\Complete.mail.php:13
+msgid "Action"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\Complete.mail.php:16
+msgid "Total Amount"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\Complete.mail.php:35
+msgid "Transact Date"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\Complete.mail.php:40
+msgid "To check order please sign in to"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\Complete.mail.php:42
+msgid "Thank you"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\Complete.mail.php:43
+msgid "Support"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:110
+msgid "Currency"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:163
+msgid "Click on a currency to Deposit or Withdraw"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:212
+msgid "Opening Balance"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:222
+msgid "Current Balance"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:223
+msgid "including pending orders"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:233
+msgid "Pending Buy Orders"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:244
+msgid "Pending Sell Orders"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:255
+msgid "After Execution"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:267
+msgid "Commissions"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:278
+msgid "Complete Buy Orders"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:289
+msgid "Complete Sell Orders"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:300
+msgid "Completed Order Commissions"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:315
+msgid "Status"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:318
+msgid "Avg Price"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:321
+msgid "Pending orders"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:346
+msgid "Completed orders"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\OrderRequest.mail.php:9
+msgid "Your order is placed at"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\OrderRequest.mail.php:12
+msgid "Order ID"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\OrderRequest.mail.php:30
+msgid "To view your order please sign in to"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\OrderRequest.mail.php:31
+msgid "If you did not place this order then please contact us at"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:95
 msgid "Trades"
 msgstr ""
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:103
+#: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:104
 msgid "Register & Open an account"
 msgstr ""
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:107
+#: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:108
 msgid "SiiCrypto first time users need to open an online GreenCoinX wallet at"
 msgstr ""
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:109
+#: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:110
 msgid "SiiCrypto clients fiat funds are held by ILS Fiduciaries (Switzerland) Sarl the Swiss branch of ILS World, a global provider of independent fiduciary services."
 msgstr ""
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:110
+#: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:111
 msgid "SiiCrypto clients GreenCoinX and Bitcoin cannot be accessed without client approval."
 msgstr ""
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:111
+#: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:112
 msgid "The promise of crypto currency was always the fast and inexpensive transfer of funds worldwide, while bypassing the banking system.Until GreenCoinX this has been impeded by identity concerns. Now GreenCoinX has made this promise a reality by its KYC capability."
 msgstr ""
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:154
+#: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:155
 msgid "Warning"
 msgstr ""
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:158
+#: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:159
 msgid "TRADING INFORMATION - USA"
 msgstr ""
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:159
+#: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:160
 msgid "We regret to advise you that due to regulatory issues residents of some USA states are unable to trade on SiiCrypto at this time."
 msgstr ""
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:160
+#: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:161
 msgid "Your state requires additional licensing which we intend to complete as soon as possible.<br><br> We will inform you when this licensing issue has been resolved. Thank you for your patience."
 msgstr ""
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:163
+#: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:164
 msgid "TRADING INFORMATION - NON USA"
 msgstr ""
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:164
+#: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:165
 msgid "We regret to advise you that due to regulatory issues residents of some countries are excluded from trading on SiiCrypto at this time."
 msgstr ""
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:165
+#: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:166
 msgid "Your country requires additional licensing which we intend to complete as soon as possible, or it has been excluded for other regulatory reasons."
 msgstr ""
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:166
+#: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:167
 msgid "We will inform you when this issue has been resolved. Thank you for your patience."
 msgstr ""
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\pages\home.html.php:70
+#: F:\Apache\www\TBG\siicrypto.com\app\views\pages\home.html.php:75
 msgid "THE SAFE AND SECURE CRYPTO CURRENCY EXCHANGE WITH"
 msgstr ""
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\pages\home.html.php:70
+#: F:\Apache\www\TBG\siicrypto.com\app\views\pages\home.html.php:75
 msgid "NO COMMISSION CHARGES"
 msgstr ""
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\pages\home.html.php:72
+#: F:\Apache\www\TBG\siicrypto.com\app\views\pages\home.html.php:77
 msgid "BUY/SELL"
 msgstr ""
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\pages\home.html.php:72
+#: F:\Apache\www\TBG\siicrypto.com\app\views\pages\home.html.php:77
 msgid "GREENCOINX"
 msgstr ""
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\pages\home.html.php:72
+#: F:\Apache\www\TBG\siicrypto.com\app\views\pages\home.html.php:77
 msgid "FOR EURO, STERLING, US DOLLAR, CANADIAN DOLLAR OR BITCOIN"
 msgstr ""
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\pages\home.html.php:76
+#: F:\Apache\www\TBG\siicrypto.com\app\views\pages\home.html.php:81
 msgid "SiiCrypto facilitates trading in GreenCoinX the world's first crypto currency that requires user identification"
 msgstr ""
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\pages\home.html.php:88
-#: F:\Apache\www\TBG\siicrypto.com\app\views\pages\home.html.php:108
-#: F:\Apache\www\TBG\siicrypto.com\app\views\pages\home.html.php:129
+#: F:\Apache\www\TBG\siicrypto.com\app\views\pages\home.html.php:93
+#: F:\Apache\www\TBG\siicrypto.com\app\views\pages\home.html.php:113
+#: F:\Apache\www\TBG\siicrypto.com\app\views\pages\home.html.php:134
 msgid "Min"
 msgstr ""
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\pages\home.html.php:88
-#: F:\Apache\www\TBG\siicrypto.com\app\views\pages\home.html.php:108
-#: F:\Apache\www\TBG\siicrypto.com\app\views\pages\home.html.php:129
+#: F:\Apache\www\TBG\siicrypto.com\app\views\pages\home.html.php:93
+#: F:\Apache\www\TBG\siicrypto.com\app\views\pages\home.html.php:113
+#: F:\Apache\www\TBG\siicrypto.com\app\views\pages\home.html.php:134
 msgid "Max"
 msgstr ""
 
@@ -1436,6 +1552,126 @@ msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\print\index.html.php:11
 msgid "Denominations"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:7
+msgid "Registration is FREE!"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:13
+msgid "Please make sure you enter your"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:13
+msgid "not your email"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:13
+msgid "Your username & password are"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:13
+msgid "Case Sensitive"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:41
+msgid "Please check your registered email in 5 seconds. You will receive"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:41
+msgid "Login Email Password"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:41
+msgid "(check your junk folder). Insert code in the box above and then click on Login"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:53
+msgid "Time based One Time Password (TOTP) from your smartphone"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:58
+msgid "Forgot password"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:59
+msgid "Register / Open an account"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:65
+msgid "Sign up"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:66
+msgid "To open an account, first open a GreenCoinX wallet at"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:66
+msgid "obtain your unique KYC identification number and then "
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:67
+msgid "Please read the"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:67
+msgid "terms of service"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:67
+msgid "page before you sign up"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:69
+msgid "We use"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:69
+msgid "Two Factor Authentication"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:69
+msgid "for your account to login to"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:70
+msgid "We also offer you the option of using"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:70
+msgid "Time-based One-time Password Algorithm (TOTP)"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:70
+msgid "for login, withdrawal/deposits and settings. This is an option and not a requirement. If you decide to use Google Authenticator TOTP you will enjoy even stronger security capability."
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:71
+msgid "Optional Google Authenticator can be activated via the TOTP links below."
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:72
+msgid "Customers must password verify XGC or BTC withdrawal."
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:73
+msgid "All XGC or BTC withdrawals are approved by SiiCrypto for extra security."
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:74
+msgid "TOTP Project and downloads"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:76
+msgid "Google Authenticator"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:77
+msgid "TOTP Android App"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:78
+msgid "TOTP iOS App"
 msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\addbank.html.php:10
@@ -1480,10 +1716,6 @@ msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\confirm.mail.php:43
 msgid "Confirm Your Email address"
-msgstr ""
-
-#: F:\Apache\www\TBG\siicrypto.com\app\views\users\confirm.mail.php:47
-msgid "Hi"
 msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\confirm.mail.php:48
@@ -1646,10 +1878,6 @@ msgstr ""
 msgid "SiiCrypto is a REALLY safe crypto currency exchange"
 msgstr ""
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\users\forgotpassword.html.php:9
-msgid "Forgot password"
-msgstr ""
-
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\forgotpassword.html.php:11
 msgid "Your email"
 msgstr ""
@@ -1709,10 +1937,6 @@ msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding.html.php:268
 msgid "Send to"
-msgstr ""
-
-#: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding.html.php:272
-msgid "Total Amount"
 msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding.html.php:276
@@ -2407,12 +2631,6 @@ msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:594
 msgid "Withdrawal Request form, Uploaded. Waiting for Admin to Approve."
-msgstr ""
-
-#: F:\Apache\www\TBG\siicrypto.com\app\views\users\onecode.mail.php:41
-#: F:\Apache\www\TBG\siicrypto.com\app\views\users\onecode.mail.php:45
-#: F:\Apache\www\TBG\siicrypto.com\app\views\users\onecode.mail.php:47
-msgid "Login Email Password"
 msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\onecode.mail.php:45
