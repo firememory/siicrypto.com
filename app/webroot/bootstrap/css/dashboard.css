@@ -5,7 +5,7 @@
 /* Move down content because we have a fixed navbar that is 50px tall */
 body {
   padding-top: 50px;
-		letter-spacing: 0.05em;
+		letter-spacing: 0.03em;
 		font-size:16px;
 }
 
@@ -13,7 +13,7 @@ li {
 font-size:16px;
 }
 .btn{
-letter-spacing: .225em;
+letter-spacing: .125em;
 border: 1px solid gray;
 border-radius: 6px;
 }
