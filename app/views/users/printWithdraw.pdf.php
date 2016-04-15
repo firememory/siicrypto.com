@@ -1,8 +1,11 @@
 <?php
+use lithium\g11n\Message;
+extract(Message::aliases());
 use app\extensions\action\Functions;
 $function = new Functions();
-
 ini_set('memory_limit', '-1');
+use lithium\core\Environment; 
+$locales = Environment::get('locales');
 
 $pdf =& $this->Pdf;
 $this->Pdf->setCustomLayout(array(
@@ -42,7 +45,16 @@ $pdf->SetAutoPageBreak(true);
 				$pdf->writeHTML($html, true, 0, true, 0);
 				$pdf->SetTextColor(0, 0, 0);
 				$pdf->SetXY(20,25,false);
-				$html = "<div style='text-align:center'>Withdrawal wire instructions Form to be signed and submitted by uploading to SiiCrypto for outward wire payment.<br> Reference No: ".$data['Reference']."</div>";
+				if($locale!='en'){
+					$html = "<strong>* Translation in ". strtoupper($locale).": ".$locales[$locale]." language</strong>";
+				}
+
+				$html = $html."<div style='text-align:center'>";
+				$html = $html."Withdrawal wire instructions Form to be signed and submitted by uploading to SiiCrypto for outward wire payment.";
+				if($locale!='en'){
+					$html = $html.'<br><small>* '.$t("Withdrawal wire instructions Form to be signed and submitted by uploading to SiiCrypto for outward wire payment.")."</small>";
+				}
+				$html = $html."<br> Reference No: ".$data['Reference']."</div>";
 				$html = $html . "<div><small>Instructions: Please fully complete and sign this form before uploading. <br></small></div>";
 			
 				$html = $html . '<table border="1" cellspacing="0" cellpadding="2" style="border:1px solid black" >

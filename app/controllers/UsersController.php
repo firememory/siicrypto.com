@@ -1875,10 +1875,11 @@ class UsersController extends \lithium\action\Controller {
 							'layout'   => '{:library}/views/layouts/{:layout}.{:type}.php',
 					)
 				));
-
+			if(substr(Environment::get('locale'),0,2)=="en"){$locale = "en";}else{$locale = Environment::get('locale');}
+			
 			echo $view->render(
 				'all',
-				compact('data'),
+				compact('data','locale'),
 				array(
 				'controller' => 'users',
 				'template'=>'printWithdraw',
