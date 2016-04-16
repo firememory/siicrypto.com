@@ -3356,6 +3356,72 @@ msgstr ""
 msgid "Please sign here"
 msgstr ""
 
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\printWithdraw.pdf.php:55
+msgid ""
+"Withdrawal wire instructions Form to be signed and submitted by uploading to "
+"SiiCrypto for outward wire payment."
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\printWithdraw.pdf.php:61
+#, fuzzy
+msgid ""
+"Instructions: Please fully complete and sign this form before uploading."
+msgstr "Instrudkdlle: Pldldk fukky"
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\printWithdraw.pdf.php:70
+#, fuzzy
+msgid "DETAILS OF YOUR ACCOUNT"
+msgstr "Vantu Bank Full name."
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\printWithdraw.pdf.php:129
+msgid "REFERENCE (Quote this reference number with wire)"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\printWithdraw.pdf.php:140
+msgid "AMOUNT OF YOUR OUTWARD WIRE PAYMENT"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\printWithdraw.pdf.php:159
+msgid "NET AMOUNT TO BE WIRED"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\printWithdraw.pdf.php:193
+msgid "FIDUCIARY COST DEDUCTED"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\printWithdraw.pdf.php:207
+msgid "FULL NAME OF RECEIVING PARTY"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\printWithdraw.pdf.php:218
+msgid "RECEIVING BANK ACCOUNT NUMBER"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\printWithdraw.pdf.php:228
+msgid "RECEIVING BANK NAME"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\printWithdraw.pdf.php:239
+msgid "RECEIVING BANK ADDRESS"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\printWithdraw.pdf.php:269
+msgid ""
+"I/We confirm that the funds requested to be withdrawn from my SiiCrypto "
+"account will only be transmitted to my/our own bank account. I/We understand "
+"that under the requirements of Vanuatu's Anti-Money Laundering & Counter-"
+"Terrorism Financing Act No. 13 of 2014, Regulations made thereunder and "
+"Vantu Bank's and National Bank of Vanuatu's respective AML/CTF Compliance "
+"Manuals as currently in force, your policy may require both banks to be "
+"satisfied as to the source of this payment before accepting any outward wire "
+"transfer and that my/our transfer(s) may be held pending or returned in the "
+"absence of such confirmation."
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\printWithdraw.pdf.php:296
+msgid "Account Holder's Signature"
+msgstr ""
+
 #, fuzzy
 #~ msgid "Vantu Bank - Declaration of Source of Funds (DSF)"
 #~ msgstr "ONLY DSF"

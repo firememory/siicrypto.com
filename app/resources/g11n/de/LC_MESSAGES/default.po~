@@ -2022,27 +2022,27 @@ msgid ""
 "patience."
 msgstr ""
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\pages\home.html.php:70
+#: F:\Apache\www\TBG\siicrypto.com\app\views\pages\home.html.php:75
 msgid "THE SAFE AND SECURE CRYPTO CURRENCY EXCHANGE WITH"
 msgstr "DER SCHÜTZENDE UND SICHERE KRYPTOWÄHRUNGSUMTAUSCH"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\pages\home.html.php:70
+#: F:\Apache\www\TBG\siicrypto.com\app\views\pages\home.html.php:75
 msgid "NO COMMISSION CHARGES"
 msgstr "OHNE KOMMISSION"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\pages\home.html.php:72
+#: F:\Apache\www\TBG\siicrypto.com\app\views\pages\home.html.php:77
 msgid "BUY/SELL"
 msgstr "KAUFEN/VERKAUFEN SIE"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\pages\home.html.php:72
+#: F:\Apache\www\TBG\siicrypto.com\app\views\pages\home.html.php:77
 msgid "GREENCOINX"
 msgstr "GREENCOINX"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\pages\home.html.php:72
+#: F:\Apache\www\TBG\siicrypto.com\app\views\pages\home.html.php:77
 msgid "FOR EURO, STERLING, US DOLLAR, CANADIAN DOLLAR OR BITCOIN"
 msgstr "FÜR EURO, ENGLISCHES PFUND, US DOLLAR, KANADISCHEN DOLLAR ODER BITCOIN"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\pages\home.html.php:76
+#: F:\Apache\www\TBG\siicrypto.com\app\views\pages\home.html.php:81
 msgid ""
 "SiiCrypto facilitates trading in GreenCoinX the world's first crypto "
 "currency that requires user identification"
@@ -2050,15 +2050,15 @@ msgstr ""
 "SiiCrypto bietet den Handel mit GreenCoinX, der ersten Kryptowährung der "
 "Welt die Benutzeridentifikation erfordert."
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\pages\home.html.php:88
-#: F:\Apache\www\TBG\siicrypto.com\app\views\pages\home.html.php:108
-#: F:\Apache\www\TBG\siicrypto.com\app\views\pages\home.html.php:129
+#: F:\Apache\www\TBG\siicrypto.com\app\views\pages\home.html.php:93
+#: F:\Apache\www\TBG\siicrypto.com\app\views\pages\home.html.php:113
+#: F:\Apache\www\TBG\siicrypto.com\app\views\pages\home.html.php:134
 msgid "Min"
 msgstr ""
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\pages\home.html.php:88
-#: F:\Apache\www\TBG\siicrypto.com\app\views\pages\home.html.php:108
-#: F:\Apache\www\TBG\siicrypto.com\app\views\pages\home.html.php:129
+#: F:\Apache\www\TBG\siicrypto.com\app\views\pages\home.html.php:93
+#: F:\Apache\www\TBG\siicrypto.com\app\views\pages\home.html.php:113
+#: F:\Apache\www\TBG\siicrypto.com\app\views\pages\home.html.php:134
 msgid "Max"
 msgstr ""
 
@@ -2082,6 +2082,137 @@ msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\print\index.html.php:11
 msgid "Denominations"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:7
+msgid "Registration is FREE!"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:13
+msgid "Please make sure you enter your"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:13
+msgid "not your email"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:13
+msgid "Your username & password are"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:13
+msgid "Case Sensitive"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:41
+msgid "Please check your registered email in 5 seconds. You will receive"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:41
+msgid "Login Email Password"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:41
+msgid ""
+"(check your junk folder). Insert code in the box above and then click on "
+"Login"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:53
+msgid "Time based One Time Password (TOTP) from your smartphone"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:58
+msgid "Forgot password"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:59
+#, fuzzy
+msgid "Register / Open an account"
+msgstr "Registrierung & Kontoeröffnung"
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:65
+msgid "Sign up"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:66
+#, fuzzy
+msgid "To open an account, first open a GreenCoinX wallet at"
+msgstr ""
+"Erstnutzer von SiiCrypto benötigen ein GreenCoinX “Online-Wallet”. Dieses "
+"kann auf gratis eröffnet werden."
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:66
+msgid "obtain your unique KYC identification number and then "
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:67
+msgid "Please read the"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:67
+msgid "terms of service"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:67
+msgid "page before you sign up"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:69
+msgid "We use"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:69
+msgid "Two Factor Authentication"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:69
+msgid "for your account to login to"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:70
+msgid "We also offer you the option of using"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:70
+msgid "Time-based One-time Password Algorithm (TOTP)"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:70
+msgid ""
+"for login, withdrawal/deposits and settings. This is an option and not a "
+"requirement. If you decide to use Google Authenticator TOTP you will enjoy "
+"even stronger security capability."
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:71
+msgid ""
+"Optional Google Authenticator can be activated via the TOTP links below."
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:72
+msgid "Customers must password verify XGC or BTC withdrawal."
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:73
+msgid ""
+"All XGC or BTC withdrawals are approved by SiiCrypto for extra security."
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:74
+msgid "TOTP Project and downloads"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:76
+msgid "Google Authenticator"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:77
+msgid "TOTP Android App"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:78
+msgid "TOTP iOS App"
 msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\addbank.html.php:10
@@ -2309,10 +2440,6 @@ msgstr ""
 #, fuzzy
 msgid "SiiCrypto is a REALLY safe crypto currency exchange"
 msgstr "Siicrypto ist ein wirklich sicherer Kryptowährungstausch."
-
-#: F:\Apache\www\TBG\siicrypto.com\app\views\users\forgotpassword.html.php:9
-msgid "Forgot password"
-msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\forgotpassword.html.php:11
 msgid "Your email"
@@ -3107,12 +3234,6 @@ msgstr ""
 msgid "Withdrawal Request form, Uploaded. Waiting for Admin to Approve."
 msgstr ""
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\users\onecode.mail.php:41
-#: F:\Apache\www\TBG\siicrypto.com\app\views\users\onecode.mail.php:45
-#: F:\Apache\www\TBG\siicrypto.com\app\views\users\onecode.mail.php:47
-msgid "Login Email Password"
-msgstr ""
-
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\onecode.mail.php:45
 msgid "Use this"
 msgstr ""
@@ -3233,6 +3354,72 @@ msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\printDeposit.pdf.php:497
 msgid "Please sign here"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\printWithdraw.pdf.php:55
+msgid ""
+"Withdrawal wire instructions Form to be signed and submitted by uploading to "
+"SiiCrypto for outward wire payment."
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\printWithdraw.pdf.php:61
+#, fuzzy
+msgid ""
+"Instructions: Please fully complete and sign this form before uploading."
+msgstr "Instrudkdlle: Pldldk fukky"
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\printWithdraw.pdf.php:70
+#, fuzzy
+msgid "DETAILS OF YOUR ACCOUNT"
+msgstr "Vantu Bank Full name."
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\printWithdraw.pdf.php:129
+msgid "REFERENCE (Quote this reference number with wire)"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\printWithdraw.pdf.php:140
+msgid "AMOUNT OF YOUR OUTWARD WIRE PAYMENT"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\printWithdraw.pdf.php:159
+msgid "NET AMOUNT TO BE WIRED"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\printWithdraw.pdf.php:193
+msgid "FIDUCIARY COST DEDUCTED"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\printWithdraw.pdf.php:207
+msgid "FULL NAME OF RECEIVING PARTY"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\printWithdraw.pdf.php:218
+msgid "RECEIVING BANK ACCOUNT NUMBER"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\printWithdraw.pdf.php:228
+msgid "RECEIVING BANK NAME"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\printWithdraw.pdf.php:239
+msgid "RECEIVING BANK ADDRESS"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\printWithdraw.pdf.php:269
+msgid ""
+"I/We confirm that the funds requested to be withdrawn from my SiiCrypto "
+"account will only be transmitted to my/our own bank account. I/We understand "
+"that under the requirements of Vanuatu's Anti-Money Laundering & Counter-"
+"Terrorism Financing Act No. 13 of 2014, Regulations made thereunder and "
+"Vantu Bank’s and National Bank of Vanuatu’s respective AML/CTF Compliance "
+"Manuals as currently in force, your policy may require both banks to be "
+"satisfied as to the source of this payment before accepting any outward wire "
+"transfer and that my/our transfer(s) may be held pending or returned in the "
+"absence of such confirmation."
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\printWithdraw.pdf.php:296
+msgid "Account Holder's Signature"
 msgstr ""
 
 #, fuzzy
