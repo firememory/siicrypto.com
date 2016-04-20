@@ -1,4 +1,13 @@
-<!DOCTYPE html>
+<?php use lithium\core\Environment; 
+if(substr(Environment::get('locale'),0,2)=="en"){$locale = "en";}else{$locale = Environment::get('locale');}
+//if(strlen($locale>2)){$locale='en';}
+// print_r(Environment::get('locale'));
+// print_r($locale);
+?>
+<?php
+use lithium\g11n\Message;
+extract(Message::aliases());
+?><!DOCTYPE html>
 <html>
 <head>
 <title><?=COMPANY_NAME?></title>
@@ -39,34 +48,34 @@ text-decoration: none
 				</th>
 			</tr>
 			<tr>
-				<td><h4>Hi <?=$compact['data']['data']['username']?>,</h4>
-<p>You have requested to withdraw <?=$compact['data']['data']['Amount']?> <?=$compact['data']['data']['Currency']?> from your SiiCrypto.com account <strong><?=$compact['data']['data']['username']?></strong> with Reference No: <strong><?=$compact['data']['data']['Reference']?></strong></p>
-<p>Your SiiCrypto Withdrawal Form is attached to this email. Please print it out, sign it, and scan it. If the browser you used to connect to SiiCrypto is your primary browser then you can upload the document <a href="https://siicrypto.com/users/funding_fiat/<?=$compact['data']['data']['Currency']?>" target="_blank">here</a>.</p>
-<p>If your primary browser is not the browser you used to connect to SiiCrypto, then copy this link https://siicrypto.com/users/funding_fiat/<?=$compact['data']['data']['Currency']?> and paste it into the browser you are using. You do not need to close down your open SiiCrypto webpage before pasting this link into your browser. If your SiiCrypto webpage has been open for longer than twenty minutes you will been auto logged out and you will need to login again.</p>
+				<td><h4><?=$t('Hi')?> <?=$compact['data']['data']['username']?>,</h4>
+<p><?=$t('You have requested to withdraw')?> <?=$compact['data']['data']['Amount']?> <?=$compact['data']['data']['Currency']?> <?=$t('from your SiiCrypto.com account')?> <strong><?=$compact['data']['data']['username']?></strong> <?=$t('with Reference No')?>: <strong><?=$compact['data']['data']['Reference']?></strong></p>
+<p><?=$t('Your SiiCrypto Withdrawal Form is attached to this email. Please print it out, sign it, and scan it. If the browser you used to connect to SiiCrypto is your primary browser then you can upload the document')?> <a href="https://siicrypto.com/<?=$locale?>/users/funding_fiat/<?=$compact['data']['data']['Currency']?>" target="_blank"><?=$t('here')?></a>.</p>
+<p><?=$t('If your primary browser is not the browser you used to connect to SiiCrypto, then copy this link')?>  https://siicrypto.com/<?=$locale?>/users/funding_fiat/<?=$compact['data']['data']['Currency']?> <?=$t('and paste it into the browser you are using. You do not need to close down your open SiiCrypto webpage before pasting this link into your browser. If your SiiCrypto webpage has been open for longer than twenty minutes you will been auto logged out and you will need to login again.')?></p>
 
-<p>Once we receive the signed SiiCrypto Withdrawal Form your instructions will be processed .</p>
+<p><?=$t('Once we receive the signed SiiCrypto Withdrawal Form your instructions will be processed.')?></p>
 				</td>
 			</tr>
 			<tr>
 				<td>IP: <?=$_SERVER['REMOTE_ADDR'];?><br>
 <?=$tor?>
-Date and time: <?=gmdate('Y-m-d H:i:s',time())?>
+<?=$t('Date and time')?>: <?=gmdate('Y-m-d H:i:s',time())?>
 </p></td>
 			</tr>
 			<tr>
 			<td>
-			Thanks,<br><?=NOREPLY?>
+			<?=$t('Thanks')?>,<br><?=NOREPLY?>
 			</td>
 			</tr>
 		</table>
 	</div>
-	<p>SiiCrypto is a REALLY safe crypto currency exchange.</p>
+	<p><?=$t('SiiCrypto is a REALLY safe crypto currency exchange.')?></p>
 	<p><a href="https://greencoinx.com">GreenCoinX.com</a> - <a href="https://xgcwallet.org">XGCWallet.org</a> - <a href="https://KYCGlobal.net">KYCGlobal.net</a></p>
 	<div style="padding:30px;font-size:10px">
-	<p>Please do not reply to this email. </p>
-	<p>This email was sent to you as you tried to register on <?=COMPANY_URL?> with the email address. 
-	If you did not register, then you can delete this email.</p>
-<p>We do not spam. </p>
+	<p><?=$t('Please do not reply to this email.')?> </p>
+	<p><?=$t('This email was sent to you as you tried to register on')?> <?=COMPANY_URL?> <?=$t('with the email address.')?> 
+	<?=$t('If you did not register, then you can delete this email.')?></p>
+<p><?=$t('We do not spam.')?> </p>
 	</div>
 </div>
 </body>

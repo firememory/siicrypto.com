@@ -1,3 +1,16 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: SiiCrypto.com\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: hi\n"
+"X-Generator: Poedit 1.8.7\n"
+
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\aboutus.html.php:1
 msgid "About Us"
 msgstr ""
@@ -3306,7 +3319,7 @@ msgid ""
 "account will only be transmitted to my/our own bank account. I/We understand "
 "that under the requirements of Vanuatu's Anti-Money Laundering & Counter-"
 "Terrorism Financing Act No. 13 of 2014, Regulations made thereunder and "
-"Vantu Banks and National Bank of Vanuatus respective AML/CTF Compliance "
+"Vantu Bank's and National Bank of Vanuatu's respective AML/CTF Compliance "
 "Manuals as currently in force, your policy may require both banks to be "
 "satisfied as to the source of this payment before accepting any outward wire "
 "transfer and that my/our transfer(s) may be held pending or returned in the "
@@ -3315,4 +3328,110 @@ msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\printWithdraw.pdf.php:296
 msgid "Account Holder's Signature"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\sendWithdrawEmailUser.mail.php:41
+msgid "SiiCrypto Outgoing Wire Reference"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\sendWithdrawEmailUser.mail.php:41
+msgid "amount"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\sendWithdrawEmailUser.mail.php:45
+msgid "Attention"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\sendWithdrawEmailUser.mail.php:48
+msgid "Please be advised that a SiiCrypto has REJECTED the wire transfer of"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\signup.html.php:23
+msgid "KYC ID: Know your customer"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\signup.html.php:29
+msgid "Verify KYC Info"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\signup.html.php:33
+msgid "Your KYC is approved"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\signup.html.php:61
+msgid "Only characters and numbers, NO SPACES"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\signup.html.php:91
+msgid "Already have an account."
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\signup.html.php:91
+msgid "Click here to login"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\signup.html.php:97
+msgid "How to Register"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\signup.html.php:100
+msgid ""
+"To Register, first obtain a \"Know Your Client\" or KYC number by opening a "
+"GreenCoinX online wallet. Click on this link to start the process and open a "
+"wallet"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\signup.html.php:101
+msgid ""
+"When your wallet is opened you will receive a KYC unique number.  Insert "
+"that number in the KYC ID box on this page and then click Validate KYC Info. "
+"You will then be validated as having completed the KYC process and can "
+"proceed to open a SiiCrypto account."
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\signup.html.php:103
+msgid ""
+"Insert your name and then a UserName for trading purposes. Your user name "
+"should be only characters and numbers with no spaces. Insert your email "
+"address and create a Password. Then Click the Register button to complete "
+"the SiiCrypto account opening process."
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\signup.html.php:105
+msgid "Any issues please contact us at"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\withdrawDigital.mail.php:45
+msgid "You have requested to withdraw"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\withdrawDigital.mail.php:45
+msgid "from"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\withdrawDigital.mail.php:46
+msgid "Click on the link below to confirm the transfer."
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\withdrawDigital.mail.php:47
+msgid "If you did not authorize this withdrawal to the address"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\withdrawDigital.mail.php:47
+msgid "please"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\withdrawDigital.mail.php:47
+msgid "do not"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\withdrawDigital.mail.php:47
+msgid "click on the link."
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\withdrawDigital.mail.php:50
+msgid ""
+"You will be asked for your main password on the page following the link to "
+"authorize the transfer. This is an added security feature SiiCrypto.com "
+"employs to secure your coins from hackers / spammers."
 msgstr ""

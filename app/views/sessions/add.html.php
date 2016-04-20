@@ -53,7 +53,7 @@ if(substr(Environment::get('locale'),0,2)=="en"){$locale = "en";}else{$locale = 
 				<small><strong><?=$t('Time based One Time Password (TOTP) from your smartphone')?></strong></small>	
 			</div>
 		
-			<?=$this->form->submit('Login' ,array('class'=>'btn btn-primary btn-block','id'=>'LoginButton','disabled'=>'disabled')); ?>
+			<?=$this->form->submit($t('Login') ,array('class'=>'btn btn-primary btn-block','id'=>'LoginButton','disabled'=>'disabled')); ?>
 			<?=$this->form->end(); ?>
 			<a href="/<?=$locale?>/users/forgotpassword"><?=$t('Forgot password')?>?</a><br>
 			<p><br><a href="/<?=$locale?>/users/signup"  class="btn btn-primary btn-block"><?=$t('Register / Open an account')?></a></p>

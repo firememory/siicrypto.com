@@ -63,7 +63,8 @@ msgid ""
 msgstr ""
 "Siicryptos Fiat Kundengelder werden von einem unabhängigen dritten, ILS "
 "Treuhänder Sarl, die Schweizer Filiale von ILS World, einem Globalen "
-"Treuhanddienstleister gehalten."
+"Treuhand-Dienstleister gehalten. Ein Zugriff der Gelder wird nur mit "
+"Unterschrift des Kunden Gewährleistet."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\aboutus.html.php:8
 msgid ""
@@ -71,8 +72,10 @@ msgid ""
 "\"Know Your Client\" (KYC) procedures are required before SiiCrypto accounts "
 "are opened, and (b) full Anti Money Laundering (AML) procedures are utilized."
 msgstr ""
-"Die Kunden Gelder werden von einem unabhängigen Treuhänder sicher verwaltet. "
-"Ein Zugriff der Gelder wird nur mit Unterschrift des Kunden Gewährleistet."
+"Die Regierung und Bankvorschriften werden zufriedengestellt durch a) den "
+"benutzeridentifizierten KYC (Know Your Client) Standart ,vor der Nutzung "
+"eines SiiCrypto Kontos und b)  der Anwendung des kompletten Anti Geldwäsche "
+"(AML Anti-Money-Laundry) Verfahrens."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\aboutus.html.php:9
 msgid ""
@@ -83,15 +86,11 @@ msgid ""
 "can be refunded to clients. SiiCrypto has a built-in compliance protocol to "
 "enable approvals with MultiSig."
 msgstr ""
-"Die Regierung und Bankvorschriften werden zufriedengestellt durch a) den "
-"benutzeridentifizierten KYC (Know Your Client) Standart ,vor der Nutzung "
-"eines SiiCrypto Kontos und b) der Anwendung des kompletten Anti Geldwäsche "
-"(AML Anti-Money-Laundry) Verfahrens. Vor der Ausführung eines Kryptowährung "
-"oder Geldtransfer wird zusätzlich die Unterschrift eines SiiCrypto Befugten "
-"benötigt. Somit wird sichergestellt, dass Nutzerwerte nicht missbraucht "
-"werden können. Gelder sowie Kryptowährungen können ausschliesslich dazu "
-"genutzt warden SiiCrypto Umtausch-Transaktionen und/oder Kunden "
-"Rückerstattungen auszuführen."
+"Vor der Ausführung eines Kryptowährung oder Geldtransfer wird zusätzlich die "
+"Unterschrift eines SiiCrypto Befugten benötigt. Somit wird sichergestellt, "
+"dass Nutzerwerte nicht missbraucht werden können. Gelder sowie "
+"Kryptowährungen können ausschliesslich dazu genutzt werden SiiCrypto "
+"Umtausch-Transaktionen und/oder Kunden Rückerstattungen auszuführen."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\aboutus.html.php:10
 msgid ""
@@ -99,8 +98,7 @@ msgid ""
 "and AML requirements."
 msgstr ""
 "Bitcoin wird als Einzahlungsmittel nicht akzeptiert ohne das der Einzahler "
-"KYC oder AML geprüft\n"
-"und anerkannt wurde."
+"KYC oder AML geprüft und anerkannt wurde. "
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\aboutus.html.php:12
 msgid "What does this mean?"
@@ -163,7 +161,7 @@ msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\aboutus.html.php:24
 msgid "CONTACT US"
-msgstr "Kontakt Uns"
+msgstr "Kontakt"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\aboutus.html.php:26
 msgid "Email Us"
@@ -213,60 +211,60 @@ msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\FAQ.html.php:10
 msgid "FAQ"
-msgstr ""
+msgstr "FAQ"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\FAQ.html.php:12
 msgid "Become a Customer"
-msgstr ""
+msgstr "Werden Sie Kunde"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\FAQ.html.php:14
 msgid "To become an SiiCrypto customer please click"
-msgstr ""
+msgstr "Um eine SiiCrypto Kunde zu werden klicken Sie bitte "
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\FAQ.html.php:14
 msgid "signup"
-msgstr ""
+msgstr "Registrieren"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\FAQ.html.php:14
 msgid "Registration implies you have read and agreed to our"
-msgstr ""
+msgstr "Eine Registration bedeutet, dass Sie unsere"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\FAQ.html.php:14
 msgid "Terms of Service."
-msgstr ""
+msgstr "Benutzerbedingungen"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\FAQ.html.php:16
 msgid "Fees"
-msgstr ""
+msgstr "Gebühren"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\FAQ.html.php:18
 msgid "We charge"
-msgstr ""
+msgstr "Wir berechnen"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\FAQ.html.php:18
 msgid "per transaction."
-msgstr ""
+msgstr "per Transaktion"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\FAQ.html.php:19
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\FAQ.html.php:20
 msgid "If you"
-msgstr ""
+msgstr "Wenn Sie"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\FAQ.html.php:19
 msgid "buy"
-msgstr ""
+msgstr "kaufen"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\FAQ.html.php:19
 msgid "1 Bitcoin our fee is"
-msgstr ""
+msgstr "Unsere Gebühren für ein Bitcoin sind"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\FAQ.html.php:19
 msgid "Bitcoins."
-msgstr ""
+msgstr "Bitcoins."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\FAQ.html.php:20
 msgid "sell"
-msgstr ""
+msgstr "verkaufen"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\FAQ.html.php:20
 msgid "worth of Bitcoins our fee is"
@@ -274,29 +272,32 @@ msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\FAQ.html.php:20
 msgid "cent."
-msgstr ""
+msgstr "cent."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\FAQ.html.php:23
 msgid "Deposits/Withdrawals"
-msgstr ""
+msgstr "Einzahlen/Auszahlen"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\FAQ.html.php:27
 msgid "For"
-msgstr ""
+msgstr "Für"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\FAQ.html.php:27
 msgid "bank wire transfer"
-msgstr ""
+msgstr "Banküberweisung"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\FAQ.html.php:27
 msgid "deposits/withdrawals"
-msgstr ""
+msgstr "Ein/Auszahlungen"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\FAQ.html.php:30
 msgid ""
 "All deposits and withdrawals need to be verified and cleared, please see "
 "relevant sections when you login."
 msgstr ""
+"Alle Einzahlungen sowie Auszahlungen müssen verifiziert werden, bitte "
+"besuchen Sie den relevanten Bereich dies bezüglich sobald Sie sich "
+"angemeldet haben. "
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\FAQ.html.php:31
 msgid ""
@@ -304,6 +305,9 @@ msgid ""
 "your deposit, which you can find when you complete FUNDING on your account "
 "page, so that we can credit your account appropriately."
 msgstr ""
+"SEHR WICHTIG: Um eine reibungslose Kontodeckung zu gewähren, vergessen Sie "
+"bitte nicht die angegebene REFEREZNUMMER  bei Ihrer Einzahlung anzugeben. "
+"Die Referenznummer wird Ihnen nach dem Einzahlungsantrag mitgeteilt. "
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\FAQ.html.php:32
 msgid ""
@@ -321,43 +325,48 @@ msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\FAQ.html.php:34
 msgid "Example Reference"
-msgstr ""
+msgstr "Beispiel Referenz"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\FAQ.html.php:35
 msgid "Account name"
-msgstr ""
+msgstr "Kontoname"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\FAQ.html.php:36
 msgid "Reference number"
-msgstr ""
+msgstr "Referenznummer"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\FAQ.html.php:37
 msgid "Amount"
-msgstr ""
+msgstr "Betrag"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\FAQ.html.php:39
 msgid ""
 "When we receive your funds we verify with your deposit request and credit "
 "your SiiCrypto.com account the amount."
 msgstr ""
+"Wenn wir Ihr Geld erhalten, wird die Summe mit dem Antrag verglichen und "
+"Ihrem Kundenkonto von SiiCrypto.com gutgeschrieben ."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\FAQ.html.php:41
 msgid "Deposits"
-msgstr ""
+msgstr "Einzahlungen"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\FAQ.html.php:42
 msgid ""
 "Once fiat amounts are received your account gets credited the same amount, "
 "just the same as doing a bank transfer, without the bank."
 msgstr ""
+"Sobald Fiat Beträge empfangen werden wird Ihrem Konto der gesendete Betrag "
+"gutgeschrieben, genauso wie bei einer Banküberweisung nur ohne die Bank zu "
+"benutzen."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\FAQ.html.php:44
 msgid "Withdrawals"
-msgstr ""
+msgstr "Auszahlungen"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\funding.html.php:1
 msgid "Funding"
-msgstr "Konto"
+msgstr "Konto-Decken"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\funding.html.php:4
 msgid ""
@@ -366,77 +375,91 @@ msgid ""
 "follow the instructions to wire funds to your account or to withdraw funds "
 "from your account."
 msgstr ""
+"Um Werte zu transferieren besuchen Sie bitte das Dashboard und wählen Sie "
+"Ihre bevorzugte Währung. Sie werden auf die “Kontodeckung-Seite” "
+"weitergeleitet. Bitte folgen Sie den Instruktionen wie Sie Ihr Konto decken "
+"oder Auszahlungen beauftragen. "
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\funding.html.php:5
 msgid "Deposit and Withdrawal fees"
-msgstr ""
+msgstr "Ein/Auszahlungs Gebühren"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\funding.html.php:6
 msgid "Bank charges are as following"
-msgstr ""
+msgstr "Bankgebühren werden wie folgt berechnet:"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\funding.html.php:7
 msgid ""
 "Inbound Wire 25 Euro and Outbound Wire minimum 50 Euro or 0.10% with a "
 "maximum of Euro 500."
 msgstr ""
+"Eingehende Beträge von mindestens 25 Euro und Auszahlungen von min. 50 Euro "
+"oder einem minimum von 0.10% mit einem Maximum von Euro 500."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\howitworks.html.php:6
 msgid "How it works"
 msgstr "Wie funktioniert es?"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\howitworks.html.php:11
-#, fuzzy
 msgid "First time users need to open a GreenCoinX wallet at"
 msgstr ""
 "Erstnutzer von SiiCrypto benötigen ein GreenCoinX “Online-Wallet”. Dieses "
-"kann auf gratis eröffnet werden."
+"kann gratis eröffnet werden auf"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\howitworks.html.php:12
 msgid "Upon receipt of your unique KYC number, open a SiiCrypto account."
 msgstr ""
+"Nach dem Erhalt Ihrer einzigartigen KYC Nummer, eröffnen Sie ein Siicrypto "
+"Konto"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\howitworks.html.php:13
 msgid ""
 "To fund your SiiCrypto exchange wallet go to the REGISTER page and open an "
 "account, with your KYC number."
 msgstr ""
+"Um Ihr SiiCrypto Umtausch Wallet zu decken besuchen Sie bitte die REGISTRIER "
+"Seite und geben Sie dort Ihre KYC Nummer ein um ein Konto zu öffnen. "
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\howitworks.html.php:14
 msgid "Sign in to your account using 2FA (Two Factor Authorization)."
 msgstr ""
+"Um sich in Ihr Konto einzuloggen wird eine 2FA (Two Factor Authorisation) "
+"Autorisation benötigt. "
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\howitworks.html.php:15
 msgid "Fund your SiiCrypto account"
-msgstr ""
+msgstr "Decken Sie Ihr Siicrypto-Konto:"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\howitworks.html.php:17
 msgid ""
 "send GreenCoinX to your account at the master SiiCrypto GreenCoinX wallet "
 "through the page"
 msgstr ""
+"senden Sie GreenCoinX auf das “Master Siicrypto GreenCoinX wallet” durch die "
+"Seite"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\howitworks.html.php:17
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\howitworks.html.php:26
 msgid "Funding/XGC"
-msgstr ""
+msgstr "Konto-Decken/XGC"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\howitworks.html.php:17
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\howitworks.html.php:19
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\howitworks.html.php:26
 msgid "by clicking on XGC on the Dashboard or"
-msgstr ""
+msgstr "indem Sie auf XGC oder das Dashboard klicken oder"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\howitworks.html.php:19
 msgid ""
 "send Bitcoin to your account at the master SiiCrypto Bitcoin wallet through "
 "the page"
 msgstr ""
+"senden Sie Bitcoin an Ihr Master-SiiCrypto-Bitcoin-Konto durch die Seite"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\howitworks.html.php:19
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\howitworks.html.php:28
 msgid "Funding/BTC"
-msgstr ""
+msgstr "Konto-Decken /BTC"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\howitworks.html.php:21
 msgid ""
@@ -444,31 +467,34 @@ msgid ""
 "a bank wire (details of which are given on our funding fiat page for each "
 "currency"
 msgstr ""
+"senden Sie Fiat-Währung an Ihr “Master-SiiCrypto-Bankkonto” per "
+"Banküberweisung. (Details hierzu sind auf der dementsprechenden Seite, Fiat-"
+"Decken zu finden)"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\howitworks.html.php:21
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\howitworks.html.php:24
 msgid "USD"
-msgstr ""
+msgstr "USD"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\howitworks.html.php:21
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\howitworks.html.php:24
 msgid "CAD"
-msgstr ""
+msgstr "CAD"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\howitworks.html.php:21
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\howitworks.html.php:24
 msgid "EUR"
-msgstr ""
+msgstr "EUR"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\howitworks.html.php:21
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\howitworks.html.php:24
 msgid "and"
-msgstr ""
+msgstr "und"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\howitworks.html.php:21
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\howitworks.html.php:24
 msgid "GBP"
-msgstr ""
+msgstr "GBP"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\howitworks.html.php:23
 msgid ""
@@ -476,41 +502,52 @@ msgid ""
 "order you wish to place. When executed your SiiCrypto account will be "
 "updated."
 msgstr ""
+"Um eine Transaktion auszuführen begeben Sie sich bitte zur Dashboard-Seite "
+"und wählen Sie die Art von Transaktion die Sie benötigen. Ihr SiiCrypto "
+"Wallet (Konto) wird aktualisiert sobald der Befehl ausgeführt wurde."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\howitworks.html.php:24
 msgid ""
 "To request a withdrawal of fiat currency go to funding fiat page for each "
 "currency"
 msgstr ""
+"Um einen Antrag auf eine Fiat Auszahlung zu stellen, begeben Sie sich bitte "
+"auf die Seite “Konto-Decken/Fiat” "
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\howitworks.html.php:24
 msgid "by clicking on the currency you require."
-msgstr ""
+msgstr "und wählen Sie die gewünschte Währung."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\howitworks.html.php:26
 msgid "Withdraw from your SiiCrypto account"
-msgstr ""
+msgstr "Auszahlung von Ihrem SiiCrypto Konto"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\howitworks.html.php:26
 msgid ""
 "withdraw GreenCoinX from your account to your GreenCoinX wallet through the "
 "page"
 msgstr ""
+"Entnehmen Sie GreenCoinX von Ihrem Konto und bewegen es auf Ihr GreenCoinX "
+"Wallet durch die Seite"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\howitworks.html.php:28
 msgid ""
 "withdraw Bitcoin from your account to your Bitcoin wallet through the page"
 msgstr ""
+"Entnehmen Sie Bitcoin von Ihrem Konto auf Ihr Bitcoin Wallet durch besuchen "
+"der Seite"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\howitworks.html.php:28
 msgid "by clicking on BTC on the Dashboard or"
-msgstr ""
+msgstr "BTC auf dem Dashboard klicken oder"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\howitworks.html.php:30
 msgid ""
 "withdraw fiat currency from your account by clicking on the currency you "
 "require on the Dashboard."
 msgstr ""
+"Entnehmen Sie Fiat Währung von Ihrem Konto indem Sie auf die benötigte "
+"Währung im Dashboard klicken."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\howitworks.html.php:37
 msgid ""
@@ -520,23 +557,29 @@ msgid ""
 "currency account. Inbound Wire 25 Euro and Outbound Wire minimum 50 Euro or "
 "0.10% with a maximum of Euro 500."
 msgstr ""
+"Anmerkung: Siicrypto berechnet KEINE PROVISION für den Handel. "
+"Verwaltungsgebühren, die Kosten des Treuhänders, liegen bei 0,2% oder 1/5 "
+"von einem Prozent pro Transaktion. Ein oder ausgehende Mindestbeträge in "
+"Fiat-Währung: Eingehende: mindestens 25Euro und ausgehende mindestens 50 "
+"Euro oder 0.10% mit einem Maximum von 500 Euro."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\press.html.php:1
 msgid "Press Releases"
-msgstr ""
+msgstr "Presseberichte"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\press.html.php:4
-#, fuzzy
 msgid "GREENCOINX'S AFFILIATED CRYPTO CURRENCY EXCHANGE SIICRYPTO LAUNCHES"
-msgstr "DER SCHÜTZENDE UND SICHERE KRYPTOWÄHRUNGSUMTAUSCH"
+msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\press.html.php:5
 msgid "SiiCrypto specializing in GreenCoinX is Commission Free and Secure"
 msgstr ""
+"SiiCrypto spezialisiert sich auf GreenCoinX, ist sehr sicher und berechnet "
+"keine Kommissionen"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\press.html.php:6
 msgid "Toronto, Ontario, March 23, 2016"
-msgstr ""
+msgstr "Toronto, Ontario, März 23, 2016"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\press.html.php:6
 msgid ""
@@ -561,7 +604,7 @@ msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\press.html.php:14
 msgid "Read more..."
-msgstr ""
+msgstr "mehr…"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:1
 msgid "Privacy Policy"
@@ -582,7 +625,7 @@ msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:4
 msgid "Personal identification information"
-msgstr ""
+msgstr "Persönliche Identifikationsinformationen"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:5
 msgid ""
@@ -600,7 +643,7 @@ msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:8
 msgid "Non-personal identification information"
-msgstr ""
+msgstr "Nicht persönliche Identifikationsinformationen"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:9
 msgid ""
@@ -614,7 +657,7 @@ msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:12
 msgid "Web browser cookies"
-msgstr ""
+msgstr "Web-Browser Cookies"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:14
 msgid ""
@@ -627,7 +670,7 @@ msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:17
 msgid "How we use collected information"
-msgstr ""
+msgstr "Wie verwenden wir gesammelten Informationen?"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:19
 msgid ""
@@ -637,17 +680,19 @@ msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:20
 msgid "To improve customer service"
-msgstr ""
+msgstr "Um den Kundenservice zu verbessern"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:21
 msgid ""
 "Information you provide helps us respond to your customer service requests "
 "and support needs more efficiently."
 msgstr ""
+"Die Informationen, die Sie uns zur Verfügung stellen helfen uns eine "
+"gerechte Bearbeitung Ihrer Kundenanfrage zu leisten "
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:22
 msgid "To personalize user experience"
-msgstr ""
+msgstr "Personalisierte Benutzererfahrung"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:23
 msgid ""
@@ -657,15 +702,17 @@ msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:24
 msgid "To improve our Site"
-msgstr ""
+msgstr "Um unsere Seite zu verbessern"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:25
 msgid "We may use feedback you provide to improve our products and services."
 msgstr ""
+"Wir verwenden Ihr Feedback um unsere Produkte und Dienstleistungen zu "
+"verbessern."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:26
 msgid "To process payments"
-msgstr ""
+msgstr "Um eine Zahlung ausführen,"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:27
 msgid ""
@@ -677,7 +724,7 @@ msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:28
 msgid "To send periodic emails"
-msgstr ""
+msgstr "Regelmässige E-mails zu versenden"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:29
 msgid ""
@@ -688,7 +735,7 @@ msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:33
 msgid "How we protect your information"
-msgstr ""
+msgstr "Wie schützen wir Ihre Informationen?"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:35
 msgid ""
@@ -704,20 +751,25 @@ msgid ""
 "over a SSL secured communication channel and is encrypted and protected with "
 "digital signatures."
 msgstr ""
+"Der Empfindliche und private Datenaustausch zwischen der Website und deren "
+"Benutzer geschieht über einen gesicherten und verschlüsselten  SSL-"
+"Kommunikationskanal welcher mit einer digitalen Signatur geschützt ist."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:38
 msgid "Sharing your personal information"
-msgstr ""
+msgstr "Teilen Ihrer persönlichen Daten"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:39
 msgid ""
 "We do not sell, trade, or rent Users personal identification information to "
 "others."
 msgstr ""
+"Wir verkaufen, handeln oder vermieten keine persönlichen "
+"Identifikationsdaten an Dritte weiter."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:42
 msgid "Changes to this privacy policy"
-msgstr ""
+msgstr "Änderung dieser Datenschutz-Bestimmungen"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:43
 msgid ""
@@ -732,7 +784,7 @@ msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:46
 msgid "Your acceptance of these terms"
-msgstr ""
+msgstr "Ich stimme diesen Bedingungen zu"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:47
 msgid ""
@@ -744,7 +796,7 @@ msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:50
 msgid "Contacting us"
-msgstr "Kontakt uns"
+msgstr "uns zu Kontaktieren"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:52
 msgid ""
@@ -754,7 +806,7 @@ msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:58
 msgid "Terms of Service"
-msgstr ""
+msgstr "Nutzungsbedingungen"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:60
 msgid ""
@@ -764,40 +816,40 @@ msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:61
 msgid "is a site operated by SiiCrypto"
-msgstr ""
+msgstr "ist eine Seite betrieben von SiiCrypto"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:62
 msgid "These Terms of Service"
-msgstr ""
+msgstr "Diese Nutzungsbedingungen"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:62
 msgid "Terms"
-msgstr ""
+msgstr "Bedingungen"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:62
 msgid "set the conditions by which a customer, as a registered user"
-msgstr ""
+msgstr "setzen die Konditionen wonach ein Kunde , als registrierter Benutzer"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:62
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:85
 msgid "Customer(s)"
-msgstr ""
+msgstr "Kunden"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:62
 msgid "can use our services for the purposes of becoming buyers"
-msgstr ""
+msgstr "können unseren Service benutzen für den Zweck ein Käufer zu werden"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:62
 msgid "Buyers"
-msgstr ""
+msgstr "Käufer"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:62
 msgid "and sellers"
-msgstr ""
+msgstr "und Verkäufer"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:62
 msgid "Sellers"
-msgstr ""
+msgstr "Verkäufer"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:62
 msgid ""
@@ -810,12 +862,16 @@ msgid ""
 "By submitting a request to open an account (&#039;Account&#039;) customers "
 "confirm that they"
 msgstr ""
+"In dem eine Kontoeröffnung beantragt wird (&#039;Account&#039;) bestätigt "
+"der Kunde das er"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:65
 msgid ""
 "have the full capacity to wilfully accept these Terms of Service and enter "
 "into a transaction resulting on the Platform."
 msgstr ""
+"die volle Kapazität hat , mutwillig diese Nutzungsbedingungen zu akzeptieren "
+"und eine Transaktion auf der Plattform auszuführen."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:66
 msgid ""
@@ -825,7 +881,7 @@ msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:67
 msgid "and have accepted these Terms of Service."
-msgstr ""
+msgstr "und akzeptieren die Nutzungsbedingungen"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:70
 msgid ""
@@ -834,6 +890,11 @@ msgid ""
 "the SiiCrypto site. It is Customers responsibility to review any such "
 "amendments."
 msgstr ""
+"SiiCrypto behält sich das Recht vor, die Nutzerbedingungen zu jeder Zeit "
+"anzupassen, hinzuzufügen oder Abschnitte dieser Bedingungen zu entfernen. "
+"Die Kunden werden über eine Pressemitteilung auf dem SiiCrypto Website "
+"benachrichtigt. Es ist die Verantwortung der Kunden solche Änderungen zu "
+"überprüfen."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:71
 msgid ""
@@ -851,62 +912,69 @@ msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:74
 msgid "DEFINITIONS"
-msgstr ""
+msgstr "DEFINITION"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:76
 msgid "Platform"
-msgstr ""
+msgstr "Platform"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:76
 msgid ""
 "means the software, technical and organisational structure managed by "
 "SiiCrypto located at the"
 msgstr ""
+"bedeutet die Software, die technische und organisatorische Struktur geleitet "
+"von SiiCrypto in"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:76
 msgid "address"
-msgstr ""
+msgstr "Adresse"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:77
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:79
 msgid "means the Peer-to-Peer digital transfer value asset (as described at"
 msgstr ""
+"bedeutet der Peer-to-Peer digitale Übertragungswert (wie beschrieben bei"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:79
 msgid "Bitcoin(s)"
-msgstr ""
+msgstr "Bitcoin(s)"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:80
 msgid "Crypto-Currency(s)"
-msgstr ""
+msgstr "Krypto-Währung(en)"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:80
 msgid "means the digital value assets GreenCoinX and Bitcoin."
-msgstr ""
+msgstr "bedeutet der digitale Wert von GreenCoinX und Bitcoin"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:81
 msgid "Seller(s)"
-msgstr ""
+msgstr "Verkäufer"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:81
 msgid ""
 "means Customers(s) that submit an offer to sell Crypto-currency(s) on the "
 "Platform."
 msgstr ""
+"bedeutet Kunden, die ein Verkaufs-Angebot einer Kryptowährung auf der "
+"Plattform einreichen."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:83
 msgid "Buyer(s)"
-msgstr ""
+msgstr "Käufer"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:83
 msgid ""
 "means Customers(s) that submit an offer to buy Crypto-currency(s) on the "
 "Platform."
 msgstr ""
+"bedeutet Kunden, die ein Kauf-Angebot einer Kryptowährung auf der Plattform "
+"einreichen."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:85
 msgid "Any holder of an account."
-msgstr ""
+msgstr "Jeglicher Kontoinhaber"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:86
 msgid "Price"
@@ -921,7 +989,7 @@ msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:87
 msgid "Commission"
-msgstr ""
+msgstr "Komission"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:87
 msgid ""
@@ -933,7 +1001,7 @@ msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:89
 msgid "Transaction Price"
-msgstr ""
+msgstr "Transaktionspreis"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:89
 msgid ""
@@ -943,11 +1011,11 @@ msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:90
 msgid "Transaction"
-msgstr ""
+msgstr "Transaktion"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:90
 msgid "means"
-msgstr ""
+msgstr "bedeutet"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:92
 msgid ""
@@ -961,22 +1029,28 @@ msgid ""
 "The conversion of currencies deposited by Customers on their account (&#039;"
 "Conversion Transaction&#039;)"
 msgstr ""
+"Die Umwandlung der Währungseinzahlung auf ihrem Konto (&#039;Conversion "
+"Transaction&#039;)"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:94
 msgid ""
 "The transfer of crypto-currency among Customers (&#039;Crypto-currency "
 "Transfer Transaction&#039;)"
 msgstr ""
+"Der Transfer von Kryptowährungen unter Benutzern. (&#039;Crypto-currency "
+"Transfer Transaction&#039;)"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:95
 msgid ""
 "The transfer of currencies among Customers (&#039;Currency Transfer "
 "Transaction&#039;)"
 msgstr ""
+"Der Transfer von Währungen unter Benutzern (&#039;Currency Transfer "
+"Transaction&#039;)"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:100
 msgid "CUSTOMER ACCOUNT"
-msgstr ""
+msgstr "KUNDEN-KONTO"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:102
 msgid ""
@@ -986,6 +1060,12 @@ msgid ""
 "their liability of any losses incurred, and that accounts may be frozen "
 "until relevant information is updated suitably."
 msgstr ""
+"Die Kunden verpflichten sich, SiiCrypto mit ihren vollständigen und "
+"korrekten Details zu informieren, die für den Prüfungsprozess erforderlich "
+"sind . Kunden unterliegen der Verantwortung diese Details im Falle einer "
+"Änderung zu aktualisieren und für eventuelle Verluste zu Haften. Ein Konto "
+"kann eingefroren werden bis die relevanten Informationen aktualisiert und "
+"zur verfügung gestellt wurden.  "
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:103
 msgid ""
@@ -1003,6 +1083,9 @@ msgid ""
 "bank accounts must be in their name. And that no business Account will be "
 "linked unless requested via email to"
 msgstr ""
+"Kunden bestätigen, dass alle Accounts persönliche Konten sind, dass alle "
+"verknüpften Bankkonten müssen in ihrem Namen sein. Und dass kein "
+"Geschäftskonto wird, es sei denn per E-Mail angefordert verknüpft werden, um"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:105
 msgid ""
@@ -1023,22 +1106,30 @@ msgid ""
 "verify any of the following, but not limited to: verifying identity, "
 "transactions, random security checks, or any other related activity."
 msgstr ""
+"Kunden stimmen zu, dass ein Telefonanruf von SiiCrypto eingeleitet werden "
+"kann für eine weitere überprüfen von, aber nicht beschränkt auf: Überprüfung "
+"der Identität, Transaktionen, zufällige Sicherheitskontrollen oder jeder "
+"anderen damit zusammenhängende Aktivität."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:107
 msgid ""
 "Accounts may be used strictly for the purposes defined in these Terms of "
 "Service."
 msgstr ""
+"Konten können ausschließlich für die in diesen Allgemeinen "
+"Geschäftsbedingungen festgelegten Zwecke verwendet werden."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:109
 msgid "TRANSACTIONS"
-msgstr ""
+msgstr "TRANSAKTIONEN"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:110
 msgid ""
 "Customers may use the Platform to place orders to buy or sell Crypto-"
 "currency."
 msgstr ""
+"Kunden können die Plattform nutzen um Kryptowährungen zu kaufen oder zu "
+"verkaufen."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:111
 msgid ""
@@ -1054,6 +1145,8 @@ msgid ""
 "Once the order is placed, SiiCrypto automatically completes the transactions "
 "without prior notice to Buyer or Seller."
 msgstr ""
+"Sobald der Auftrag erteilt wird, vervollständigt SiiCrypto automatisch die "
+"Transaktionen ohne vorherige Mitteilung an den Käufer oder Verkäufer."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:113
 msgid ""
@@ -1062,6 +1155,10 @@ msgid ""
 "matched, Customers forfeit the ability to cancel any Crypto-currency "
 "Transaction."
 msgstr ""
+"Die Anpassung der Angebote und Transfer von Geldern ist ein über die "
+"Platform zur Verfügung gestellter Service von SiiCrypto. Sobald ein Käufer "
+"und Verkäufer Angebote abgestimmt wurde, verlieren Kunden die Fähigkeit, "
+"diese Krypto-Währungs-Transaktion abzubrechen."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:114
 msgid ""
@@ -1084,10 +1181,12 @@ msgid ""
 "Customers may at any time transfer any amount of Crypto-currencys to any "
 "other Customer."
 msgstr ""
+"Kunden können jederzeit eine beliebige Anzahl von Krypto-Währungen an andere "
+"Kunden übertragen."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:117
 msgid "Customers can not transfer Fiat."
-msgstr ""
+msgstr "Kunden können keine Fiat werte transferieren"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:118
 msgid ""
@@ -1100,10 +1199,12 @@ msgid ""
 "The responsibility of SiiCrypto is limited to providing the service to "
 "ensure the transference of the Crypto-currencys."
 msgstr ""
+"Die Verantwortung von SiiCrypto beschränkt sich auf den Service der "
+"Bereitstellung der Übertragung der Krypto-Währungen zu gewährleisten."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:121
 msgid "DEPOSITS &amp; WITHDRAWALS"
-msgstr ""
+msgstr "EINZAHLUNGEN &amp; AUSZAHLUNGEN"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:122
 msgid ""
@@ -1111,12 +1212,17 @@ msgid ""
 "their SiiCrypto account. Customers agree to abide by the limits set by "
 "SiiCrypto in deposit."
 msgstr ""
+"Kunden stimmen zu, einen Einzahlungsantrag for dem Transfer von Mittel auf "
+"ihr SiiCrypto-Konto zu stellen.  Die Kunden stimmen die SiiCrypto Grenzwerte "
+"einzuhalten."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:123
 msgid ""
 "Customers agree to submit a withdrawal request and to wait for their "
 "withdrawal request to be confirmed by SiiCrypto."
 msgstr ""
+"Kunden stimmen zu, einen Auszahlungsantrag zu stellen der zunächst von "
+"SiiCrypto bestätigt werden muss."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:126
 msgid "VIRUSES, HACKING AND RELATED OFFENCES"
@@ -1152,7 +1258,7 @@ msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:131
 msgid "LIABILITY"
-msgstr ""
+msgstr "HAFTUNG"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:132
 msgid "Limitation of Warranties"
@@ -1209,7 +1315,7 @@ msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:145
 msgid "Limitation of Liability"
-msgstr ""
+msgstr "Haftungsbeschränkung"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:147
 msgid ""
@@ -1257,7 +1363,7 @@ msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:153
 msgid "Indemnity"
-msgstr ""
+msgstr "Entschädigung"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:154
 msgid ""
@@ -1270,7 +1376,7 @@ msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:157
 msgid "TERMINATION"
-msgstr ""
+msgstr "KÜNDIGUNG"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:158
 msgid ""
@@ -1319,7 +1425,7 @@ msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:164
 msgid "MISCELLANEOUS"
-msgstr ""
+msgstr "SONSTIGES"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:165
 msgid ""
@@ -1341,10 +1447,12 @@ msgid ""
 "If a customer has any questions relating to these Terms of Service contact "
 "us at"
 msgstr ""
+"Wenn ein Kunde Fragen hat im Zusammenhang mit diesen Nutzungsbedingungen "
+"kontaktieren Sie uns bitte unter"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\riskmanagement.html.php:1
 msgid "RISK MANAGEMENT"
-msgstr ""
+msgstr "RISIKOMANAGEMENT"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\riskmanagement.html.php:3
 msgid ""
@@ -1352,31 +1460,36 @@ msgid ""
 "safe environment for you to transact with crypto currency. Our procedures "
 "seek to provide a secure exchange environment to protect the user."
 msgstr ""
+"Unser Ziel ist es ein führendes Beispiel für die beste Ausführung zu sein. "
+"Wir gewähren Ihnen ein sicheres Umfeld mit Kryptowährung zu handeln und "
+"schützen Sie als Benutzer."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\riskmanagement.html.php:4
 msgid ""
 "SiiCrypto Customers can process bank wires fund to their SiiCrypto account."
 msgstr ""
+"SiiCrypto Kunden können Kontoüberweisungen auf ihr SiiCrypto Konto tätigen."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\riskmanagement.html.php:7
 msgid "Deposit or withdraw GreenCoinX (XGC) or Bitcoin (BTC)"
-msgstr ""
+msgstr "Ein oder Auszahlungen von GreenCoinX (XGC) oder Bitcoin (BTC)"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\riskmanagement.html.php:8
 msgid "Deposit or withdraw fiat currencies"
-msgstr ""
+msgstr "Ein oder Auszahlungen von Fiat-Währung"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\riskmanagement.html.php:9
 msgid "All fiat funds are held by third party fiduciary trust company"
-msgstr ""
+msgstr "Alle Fiat-Gelder werden von einem Dritten, einem Treuhänder verwaltet"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\riskmanagement.html.php:10
 msgid "Customers have to approve access to their XGC, BTC or fiat currencies"
 msgstr ""
+"Kunden müssen den Zugang auf Ihre XGC, BTC oder Fiat Währungen bestätigen."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\riskmanagement.html.php:11
 msgid "No account limits"
-msgstr ""
+msgstr "Keine Kontogrenzen"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\riskmanagement.html.php:14
 msgid ""
@@ -1390,10 +1503,23 @@ msgid ""
 "account ensures that client funds can only be accessed for client trading "
 "activities."
 msgstr ""
+"Alle Fiat Kundengelder werden auf einem Escrow Konto gehalten und von einem "
+"Treuhänder verwaltet.  Der Treuhänder ist ILS Sarl, die Schweizer "
+"Niederlassung von ILS World, ein globaler Anbieter von unabhängigen "
+"Treuhanddienstleistungen. ILS Treuhänder (Schweiz) bietet "
+"Treuhanddienstleistungen aus einer der weltweit sichersten und stabilsten "
+"Rechtssysteme. Die ILS-World Filiale in Genf hat ein Team mit hohen Niveau "
+"von Anwälten und Vertrauens Profis aufgebaut und ist das primäre ILS-"
+"Weltkompetenzzentrum für die Erbringung von Dienstleistungen für "
+"Privatkunden. Die Bereitstellung von ILS´s unparteiischen "
+"Treuhanddienstleistungen der SiiCrypto-Kunden,  gewährleistet , dass "
+"Kundengelder nur für Kundenhandel-Aktivitäten genutzt werden können."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\riskmanagement.html.php:17
 msgid "Any concerns can be directed to the Risk Management Officer via"
 msgstr ""
+"Etwaige Bedenken können direkt an das Risiko Management per e-mail schicken "
+"an "
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\security.html.php:1
 msgid "Security"
@@ -1401,77 +1527,94 @@ msgstr "Sicherheit"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\security.html.php:3
 msgid "When it comes to security, we are focused."
-msgstr ""
+msgstr "Wenn es um Sicherheit geht, sind wir Fokussiert"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\security.html.php:4
 msgid ""
 "Every detail is analysed to avoid security holes. We pride ourselves on "
 "being a secure crypto currency exchange."
 msgstr ""
+"Jedes Detail ist analysiert um Sicherheitslücken zu vermeiden. Wir sind "
+"stolz auf eine sichere Kryptowährungwechselstube."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\security.html.php:6
 msgid "Here is why"
-msgstr ""
+msgstr "Hier sind die Gründe warum:"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\security.html.php:7
 msgid "Secure cold wallet to hold crypto currencies"
 msgstr ""
+"Ein sicheres “cold Wallet” (Kalte Brieftasche) um Kryptowährung aufzubewahren"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\security.html.php:8
 msgid ""
 "Your crypto currencies are stored in a cold wallet until they are needed for "
 "a transaction. Our hot wallets are not accessible from the front-end servers"
 msgstr ""
+"Ihre Krypto-Währungen werden in einem “cold wallet” gehalten bis sie für "
+"einen Werttransfer benötigt werden. Unsere “hot wallets” (Heisse- "
+"Brieftasche) sind nicht erreichbar von “front-end Servern” ."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\security.html.php:11
 msgid "Always up-to-date systems to host the platform"
-msgstr ""
+msgstr "Ständig up-to-date-Systeme, die die Plattform hosten."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\security.html.php:12
 msgid ""
 "Our servers network is protected using always up-to-date software and the "
 "best possible practices."
 msgstr ""
+"Unser Server-Netzwerk ist immer up-to-date geschützt mit Software und den "
+"bestmöglichen Praktiken."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\security.html.php:14
 msgid "Advanced account protection"
-msgstr ""
+msgstr "Erweiterter Kontoschutz."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\security.html.php:15
 msgid "We offer two options to secure your account"
-msgstr ""
+msgstr "Wir bieten zwei Möglichkeiten, Ihr Konto zu sichern:"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\security.html.php:16
 msgid ""
 "Two-factor authentication (2FA) token and Email/Voice authentication to "
 "validate your withdrawals."
 msgstr ""
+"Zwei-Faktoren-Authentifizierung (2FA) Token und E-Mail /Sprach-"
+"Authentifizierung um Ihre Abhebungen zu validieren."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\security.html.php:17
 msgid ""
 "We have advanced verification tools to try and detect if your account is "
 "compromised"
 msgstr ""
+"Wir verfügen über fortgeschrittene Verifizierungswerkzeuge um herauszufinden "
+"ob Ihr Konto gefährdet ist."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\security.html.php:21
 msgid "Automatic backup of the database once a day"
-msgstr ""
+msgstr "Automatische Datensicherung einmal pro Tag"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\security.html.php:22
 msgid ""
 "Once a day, the database of the platform is backed up, encrypted and "
 "compressed as an archive. The passwords of users it contains are hashed"
 msgstr ""
+"Einmal täglich wird die Datenbank der Plattform gesichert, verschlüsselt und "
+"als Archiv komprimiert. Die Passwörter der darin enthaltenen Benutzer werden "
+"Verschlüsselt."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\security.html.php:25
 msgid "Duplication of backup data automatically"
-msgstr ""
+msgstr "Automatische Backup Kopie"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\security.html.php:26
 msgid ""
 "As soon as a new backup is ready (database, log files,...), it is sent to "
 "other servers in several physical locations."
 msgstr ""
+"Sobald ein neues Backup bereit ist, (Datenbank, Protokolldateien, etc.) wird "
+"es an mehrere Server in verschiedenen physischen Standorten gesendet."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\security.html.php:45
 msgid ""
@@ -1486,20 +1629,30 @@ msgid ""
 "funds account ensures that client funds can only be accessed for client "
 "trading activities."
 msgstr ""
+"Alle Fiat Kundengelder werden in einem Treuhandkonto gehalten und betreut. "
+"Der Treuhänder ist ILS Sarl, die Schweizer Niederlassung von ILS World, ein "
+"globaler Anbieter von unabhängigen Treuhanddienstleistungen. ILS Treuhänder "
+"(Schweiz) bietet Treuhanddienstleistungen aus einer der weltweit sichersten "
+"und stabilsten Rechtssysteme. Die ILS-World Filiale in Genf hat ein Team mit "
+"hohen Niveau von Anwälten und Vertrauens Profis aufgebaut und ist das "
+"primäre ILS-Weltkompetenzzentrum für die Erbringung von Dienstleistungen für "
+"Privatkunden. Die Bereitstellung von ILS´s unparteiischen "
+"Treuhanddienstleistungen der SiiCrypto-Kunden,  gewährleistet , dass "
+"Kundengelder nur für Kundenhandel-Aktivitäten genutzt werden können."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\verification.html.php:7
 msgid "Verification"
 msgstr "Verifikation"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\verification.html.php:10
-#, fuzzy
 msgid ""
 "To become a SiiCrypto customer and use our platform and services you need to "
 "register. SiiCrypto first time users need to open an online GreenCoinX "
 "wallet at"
 msgstr ""
-"Erstnutzer von SiiCrypto benötigen ein GreenCoinX “Online-Wallet”. Dieses "
-"kann auf gratis eröffnet werden."
+"Um ein SiiCrypto Kunde zu werden und die dementsprechende Platform zu nutzen "
+"benötigt es einer Registrierung. SiiCrypto Erst benutzer müssen ein "
+"GreenCoinX Portemonnaie eröffnen auf"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\verification.html.php:10
 msgid ""
@@ -1515,18 +1668,23 @@ msgid ""
 "customer's identity, and/or to refuse an account if the customer's identity "
 "is not verified to our requirement."
 msgstr ""
+"SiiCrypto.com behält sich das Recht vor, weitere Informationen eines Kunden "
+"einzuholen zur Überprüfung dessen Identität und / oder ein Konto zu "
+"verweigern, wenn die Identität des Kunden nicht unseren Anforderungen "
+"entspricht."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\verification.html.php:12
 msgid "Your information is subject to our"
-msgstr ""
+msgstr "Ihre Daten unterliegen unseren"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\verification.html.php:13
 msgid "To register an account and submit your verification information please"
 msgstr ""
+"Um ein Konto zu registrieren oder Prüfungsinformationen hochzuladen bitte ."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\verification.html.php:13
 msgid "click here"
-msgstr ""
+msgstr "klicken Sie hier"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\Buy.html.php:9
 msgid "Buy"
@@ -1534,39 +1692,39 @@ msgstr "Kaufen"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\Buy.html.php:9
 msgid "with"
-msgstr ""
+msgstr "mit"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\Buy.html.php:9
 msgid "Graph"
-msgstr ""
+msgstr "Diagramm"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\Buy.html.php:23
 msgid "Your balance"
-msgstr ""
+msgstr "Ihr Kontostand"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\Buy.html.php:29
 msgid "Lowest Ask Price"
-msgstr ""
+msgstr "Niedrigster Preis"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\Buy.html.php:38
 msgid "Price per"
-msgstr ""
+msgstr "Preis per"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\Buy.html.php:46
 msgid "Total"
-msgstr ""
+msgstr "Total"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\Buy.html.php:50
 msgid "Fiduciary Fees"
-msgstr ""
+msgstr "Treuhänder Kosten"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\Buy.html.php:54
 msgid "Summary of your order"
-msgstr ""
+msgstr "Zusammenfassung der Aufträge"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:22
 msgid "Latest low price"
-msgstr ""
+msgstr "Letzter Tiefpreis"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:22
 msgid "Low"
@@ -1574,7 +1732,7 @@ msgstr "Niedrig"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:23
 msgid "Latest high price"
-msgstr ""
+msgstr "Letzter Höchstpreis"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:23
 msgid "High"
@@ -1582,7 +1740,7 @@ msgstr "Hoch"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:24
 msgid "Latest price"
-msgstr ""
+msgstr "Letzter Preis"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:24
 msgid "Last"
@@ -1590,86 +1748,86 @@ msgstr "Nachname"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:25
 msgid "Volume"
-msgstr ""
+msgstr "Menge"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:25
 msgid "Vol"
-msgstr ""
+msgstr "Vol"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:30
 msgid "Help - Information on how to trade"
-msgstr ""
+msgstr "Hilfe - Informationen zum Handel"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:160
 msgid "How to trade"
-msgstr "Vie man den Handel"
+msgstr "Wie Handel ich?"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:165
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:172
 msgid "Enter Amount"
-msgstr ""
+msgstr "Geben Sie den Betrag ein"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:165
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:172
 msgid "The amount you enter should be less than your balance of"
-msgstr ""
+msgstr "Der angegebene Bertrag sollte weniger als Ihr Kontostand sein von "
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:166
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:173
 msgid "Enter Price per"
-msgstr ""
+msgstr "Geben Sie den Betrag ein per "
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:167
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:174
 msgid "Click Estimate"
-msgstr ""
+msgstr "Klicken Sie auf das Angebot"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:168
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:175
 msgid "Submit"
-msgstr ""
+msgstr "Abschicken"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:170
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:181
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:182
 msgid "Sell"
-msgstr ""
+msgstr "Verkaufen"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:170
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:181
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:182
 msgid "get"
-msgstr ""
+msgstr "erhalten"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:177
 msgid "Executing Multiple Orders"
-msgstr ""
+msgstr "Ausführung mehrfacher Aufträge"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:180
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:182
 msgid "Select the row from"
-msgstr ""
+msgstr "Wählen Sie eine Zeile von "
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:180
 msgid "Orders: Sell"
-msgstr ""
+msgstr "Auftrag: Verkaufen"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:180
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:182
 msgid "click on it, will fill in"
-msgstr ""
+msgstr "klicken Sie darauf, es wird eingefüllt"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:182
 msgid "Orders: Buy"
-msgstr ""
+msgstr "Auftrag: Kaufen"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:187
 msgid "Close"
-msgstr ""
+msgstr "Schliessen"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\footer.html.php:9
 msgid "Home"
-msgstr ""
+msgstr "Home "
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\footer.html.php:10
 msgid "Contact"
@@ -1677,7 +1835,7 @@ msgstr "Kontakt"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\footer.html.php:11
 msgid "About"
-msgstr "Über"
+msgstr "Über Uns"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\footer.html.php:14
 msgid "Risk Management"
@@ -1685,55 +1843,55 @@ msgstr "Risko"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\footer.html.php:16
 msgid "Privacy"
-msgstr ""
+msgstr "Privatsphäre"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\funding_fiat_header.html.php:33
 msgid "Verification incomplete"
-msgstr ""
+msgstr "Verifikation unvollständig"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\funding_fiat_header.html.php:35
 msgid "Deposits / Withdrawals"
-msgstr ""
+msgstr "Einzahlung/Auszahlung"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\funding_fiat_header.html.php:45
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\funding_fiat_header.html.php:47
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\funding_fiat_header.html.php:49
 msgid "Address & Bank"
-msgstr ""
+msgstr "Adresse & Bank"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\funding_fiat_header.html.php:61
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\funding_fiat_header.html.php:63
 msgid "Government Photo ID"
-msgstr ""
+msgstr "Regierungs-Fotoausweis"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\funding_fiat_header.html.php:65
 msgid "Government ID"
-msgstr ""
+msgstr "Regierungsausweis"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\funding_fiat_header.html.php:77
 msgid "Compulsary to transact!"
-msgstr ""
+msgstr "Umsetzpflicht!"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\funding_fiat_header.html.php:77
 msgid "Proof of Address"
-msgstr ""
+msgstr "Adressenbestätigung"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\funding_fiat_header.html.php:79
 msgid "Pending verification!"
-msgstr ""
+msgstr "Anstehende Verifikation"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\funding_fiat_header.html.php:79
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\funding_fiat_header.html.php:81
 msgid "Utility Bill"
-msgstr ""
+msgstr "Haushaltsrechnung"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\funding_fiat_header.html.php:81
 msgid "Completed!"
-msgstr ""
+msgstr "Fertig!"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\header.html.php:16
 msgid "Toggle navigation"
-msgstr ""
+msgstr "Toggle-Navigation"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\header.html.php:36
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\header.html.php:89
@@ -1743,7 +1901,7 @@ msgstr "Sicherheit & Risiko"
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\header.html.php:38
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\header.html.php:91
 msgid "Privacy & Terms"
-msgstr ""
+msgstr "Privatsphäre und Bedingungen"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\header.html.php:39
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\header.html.php:92
@@ -1760,7 +1918,7 @@ msgstr "Startseite"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\header.html.php:81
 msgid "Logout"
-msgstr ""
+msgstr "Abmelden"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\header.html.php:93
 msgid "Login"
@@ -1772,7 +1930,7 @@ msgstr "Registrierung"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\Orders-Buy.html.php:8
 msgid "All Orders"
-msgstr ""
+msgstr "Alle Aufträge"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\Orders-Buy.html.php:57
 msgid "Displaying only last"
@@ -1780,159 +1938,161 @@ msgstr "Nachname"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\Orders-Buy.html.php:57
 msgid "Self"
-msgstr ""
+msgstr "Selber"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\Orders-Complete.html.php:4
 msgid "My completed orders"
-msgstr ""
+msgstr "Meine ausgeführten Aufträge"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\Orders-Complete.html.php:10
 msgid "Exchange"
-msgstr ""
+msgstr "Umtausch"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\Sell.html.php:29
 msgid "Highest Bid Price"
-msgstr ""
+msgstr "Höchstgebot Preis"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\Verify1.html.php:9
 msgid "No funds in"
-msgstr ""
+msgstr "Keine Mittel in "
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\Verify1.html.php:18
 msgid "You should verify"
-msgstr ""
+msgstr "Sie sollten sicherstellen, "
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\Verify1.html.php:83
 msgid ""
 "If all the above are verified, add Virtual or Fiat currency through the link "
 "below"
 msgstr ""
+"Wenn alle oberen Punkte überprüft wurden, können Sie eine virtuelle oder "
+"Fiat Währungen durch das klicken auf den unteren Link hinzufügen"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\YourOrders.html.php:12
 msgid "My pending orders"
-msgstr ""
+msgstr "Meine ausstehenden Aufträge"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\YourOrders.html.php:30
 msgid "Remove this order"
-msgstr ""
+msgstr "Diesen Auftrag löschen"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\ex\Complete.mail.php:8
 msgid "Hi"
-msgstr ""
+msgstr "Hi"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\ex\Complete.mail.php:9
 msgid "Your order is complete, processed and fully executed at"
-msgstr ""
+msgstr "Ihr Antrag ist gestellt, bearbeitet und ausgeführt am"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\ex\Complete.mail.php:12
 msgid "OrderDate"
-msgstr ""
+msgstr "Bestelldatum"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\ex\Complete.mail.php:13
 msgid "Action"
-msgstr ""
+msgstr "Aktion"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\ex\Complete.mail.php:16
 msgid "Total Amount"
-msgstr ""
+msgstr "Gesamtbetrag"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\ex\Complete.mail.php:35
 msgid "Transact Date"
-msgstr ""
+msgstr "Überweisungsdatum"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\ex\Complete.mail.php:40
 msgid "To check order please sign in to"
-msgstr ""
+msgstr "Bitte melden Sie sich an um Ihren Auftragszustand zu überprüfen"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\ex\Complete.mail.php:42
 msgid "Thank you"
-msgstr ""
+msgstr "Danke"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\ex\Complete.mail.php:43
 msgid "Support"
-msgstr ""
+msgstr "Hilfe"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:110
 msgid "Currency"
-msgstr ""
+msgstr "Währung"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:163
 msgid "Click on a currency to Deposit or Withdraw"
-msgstr ""
+msgstr "Klicken Sie auf eine Währung um Ein oder Auszuzahlen"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:212
 msgid "Opening Balance"
-msgstr ""
+msgstr "Eröffnungs Kontostand "
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:222
 msgid "Current Balance"
-msgstr ""
+msgstr "Aktuelle Kontostand "
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:223
 msgid "including pending orders"
-msgstr ""
+msgstr "einschließlich ausstehender Aufträge"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:233
 msgid "Pending Buy Orders"
-msgstr ""
+msgstr "Ausstehende Kauf-Aufträge"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:244
 msgid "Pending Sell Orders"
-msgstr ""
+msgstr "Ausstehende Verkaufs-Aufträge"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:255
 msgid "After Execution"
-msgstr ""
+msgstr "Nach Ausführung"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:267
 msgid "Commissions"
-msgstr ""
+msgstr "Komission"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:278
 msgid "Complete Buy Orders"
-msgstr ""
+msgstr "Ausgeführte Kauf-Aufträge"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:289
 msgid "Complete Sell Orders"
-msgstr ""
+msgstr "Ausgeführte Verkaufs-Aufträge"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:300
 msgid "Completed Order Commissions"
-msgstr ""
+msgstr "Fertiggestellte Auftragskommission"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:315
 msgid "Status"
-msgstr ""
+msgstr "Status"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:318
-#, fuzzy
 msgid "Avg Price"
-msgstr "Preis"
+msgstr "Arg Preis"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:321
 msgid "Pending orders"
-msgstr ""
+msgstr "Ausstehende Aufträge"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:346
 msgid "Completed orders"
-msgstr ""
+msgstr "Fertiggestellte Aufträge"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\ex\OrderRequest.mail.php:9
 msgid "Your order is placed at"
-msgstr ""
+msgstr "Ihre Bestellung wurde positioniert bei"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\ex\OrderRequest.mail.php:12
 msgid "Order ID"
-msgstr ""
+msgstr "BESTELL ID"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\ex\OrderRequest.mail.php:30
 msgid "To view your order please sign in to"
-msgstr ""
+msgstr "Um Ihre Bestellungen einzusehen, müssen Sie eingeloggt sein. "
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\ex\OrderRequest.mail.php:31
-#, fuzzy
 msgid "If you did not place this order then please contact us at"
-msgstr "ksdasdj as lsdkjsd s"
+msgstr ""
+"Wenn Sie diesen Auftrag nicht beauftragt haben setzen Sie sich bitte mit uns "
+"in kontakt"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:95
 msgid "Trades"
@@ -1946,7 +2106,7 @@ msgstr "Registrierung & Kontoeröffnung"
 msgid "SiiCrypto first time users need to open an online GreenCoinX wallet at"
 msgstr ""
 "Erstnutzer von SiiCrypto benötigen ein GreenCoinX “Online-Wallet”. Dieses "
-"kann auf gratis eröffnet werden."
+"kann gratis eröffnet werden auf"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:110
 msgid ""
@@ -1981,11 +2141,11 @@ msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:155
 msgid "Warning"
-msgstr ""
+msgstr "Achtung:"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:159
 msgid "TRADING INFORMATION - USA"
-msgstr ""
+msgstr "HANDEL INFORMATION - USA"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:160
 msgid ""
@@ -2002,25 +2162,33 @@ msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:164
 msgid "TRADING INFORMATION - NON USA"
-msgstr ""
+msgstr "TRADING INFORMATION - NICHT USA"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:165
 msgid ""
 "We regret to advise you that due to regulatory issues residents of some "
 "countries are excluded from trading on SiiCrypto at this time."
 msgstr ""
+"Wir bedauern es Ihnen mitteilen zu müssen, dass momentan aufgrund "
+"behördlicher Probleme, einige Länder zu diesem Zeitpunkt von einem Handel "
+"auf Sii Crypto ausgeschlossen sind."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:166
 msgid ""
 "Your country requires additional licensing which we intend to complete as "
 "soon as possible, or it has been excluded for other regulatory reasons."
 msgstr ""
+"Ihr Land erfordert eine zusätzliche Lizenzierung welche wir so schnell wie "
+"möglich versuchen abzuschließen, oder es wurde wegen andere regulatorischen "
+"Gründen ausgeschlossen."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:167
 msgid ""
 "We will inform you when this issue has been resolved. Thank you for your "
 "patience."
 msgstr ""
+"Sie werden informiert, sobald das Problem behoben wurde. Danke für Ihre "
+"Geduld."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\pages\home.html.php:75
 msgid "THE SAFE AND SECURE CRYPTO CURRENCY EXCHANGE WITH"
@@ -2048,31 +2216,31 @@ msgid ""
 "currency that requires user identification"
 msgstr ""
 "SiiCrypto bietet den Handel mit GreenCoinX, der ersten Kryptowährung der "
-"Welt die Benutzeridentifikation erfordert."
+"Welt die eine Benutzeridentifikation erfordert."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\pages\home.html.php:93
 #: F:\Apache\www\TBG\siicrypto.com\app\views\pages\home.html.php:113
 #: F:\Apache\www\TBG\siicrypto.com\app\views\pages\home.html.php:134
 msgid "Min"
-msgstr ""
+msgstr "min."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\pages\home.html.php:93
 #: F:\Apache\www\TBG\siicrypto.com\app\views\pages\home.html.php:113
 #: F:\Apache\www\TBG\siicrypto.com\app\views\pages\home.html.php:134
 msgid "Max"
-msgstr ""
+msgstr "max."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\print\cold.html.php:6
 msgid "Print / Cold storage"
-msgstr ""
+msgstr "Drucken / Kühllager"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\print\cold.html.php:12
 msgid "Your Print / Cold storage PDF is ready for download."
-msgstr ""
+msgstr "Ihr Druck / “Kühllager” PDF ist bereit zum download."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\print\index.html.php:1
 msgid "Print / Cold Storage"
-msgstr ""
+msgstr "Drucken / Kühllager"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\print\index.html.php:7
 msgid ""
@@ -2082,101 +2250,102 @@ msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\print\index.html.php:11
 msgid "Denominations"
-msgstr ""
+msgstr "Benennung"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:7
 msgid "Registration is FREE!"
-msgstr ""
+msgstr "KOSTENFREIE Registrierung"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:13
 msgid "Please make sure you enter your"
-msgstr ""
+msgstr "Bitte geben Sie Ihren"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:13
 msgid "not your email"
-msgstr ""
+msgstr "und nicht Ihre E-mail an"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:13
 msgid "Your username & password are"
-msgstr ""
+msgstr "Ihr Benutzername und Passwort sind"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:13
 msgid "Case Sensitive"
-msgstr ""
+msgstr "Gross und Kleinschreibung geschützt"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:41
 msgid "Please check your registered email in 5 seconds. You will receive"
 msgstr ""
+"Bitte überprüfen Sie Ihre registrierte E-mail in 5 Sekunden. Sie werden Ihr"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:41
 msgid "Login Email Password"
-msgstr ""
+msgstr "Passwort zur Anmeldung"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:41
 msgid ""
 "(check your junk folder). Insert code in the box above and then click on "
 "Login"
 msgstr ""
+"(Überprüfen Sie Ihre Junk-Ordner). Fügen Sie den Code in das Feld oben ein "
+"und klicken Sie dann auf Anmelden"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:53
 msgid "Time based One Time Password (TOTP) from your smartphone"
-msgstr ""
+msgstr "Zeitbasiertes One Time Password (TOTP) von Ihrem Smartphone"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:58
 msgid "Forgot password"
-msgstr ""
+msgstr "Passwort vergessen?"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:59
-#, fuzzy
 msgid "Register / Open an account"
 msgstr "Registrierung & Kontoeröffnung"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:65
 msgid "Sign up"
-msgstr ""
+msgstr "Anmelden"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:66
-#, fuzzy
 msgid "To open an account, first open a GreenCoinX wallet at"
 msgstr ""
 "Erstnutzer von SiiCrypto benötigen ein GreenCoinX “Online-Wallet”. Dieses "
-"kann auf gratis eröffnet werden."
+"kann gratis eröffnet werden auf "
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:66
 msgid "obtain your unique KYC identification number and then "
-msgstr ""
+msgstr "erhalten Sie Ihre KYC ID und dann"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:67
 msgid "Please read the"
-msgstr ""
+msgstr "lesen Sie bitte die"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:67
 msgid "terms of service"
-msgstr ""
+msgstr "Benutzerbedingungen"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:67
 msgid "page before you sign up"
-msgstr ""
+msgstr "Seite bevor der Anmeldung"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:69
 msgid "We use"
-msgstr ""
+msgstr "Wir benutzen"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:69
 msgid "Two Factor Authentication"
-msgstr ""
+msgstr "Zwei-Faktoren-Authentifizierung"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:69
 msgid "for your account to login to"
-msgstr ""
+msgstr "für Ihre Kontoanmeldung"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:70
 msgid "We also offer you the option of using"
-msgstr ""
+msgstr "Wir bieten Ihnen auch die Möglichkeit der Verwendung"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:70
 msgid "Time-based One-time Password Algorithm (TOTP)"
-msgstr ""
+msgstr "des zeit basiertem One-Time-Passwort-Verfahren (TOTP)"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:70
 msgid ""
@@ -2184,109 +2353,119 @@ msgid ""
 "requirement. If you decide to use Google Authenticator TOTP you will enjoy "
 "even stronger security capability."
 msgstr ""
+"für die Anmeldung,Auszahlungen oder Einzahlung. Dies ist eine Option und "
+"keine Anforderung. Wenn Sie sich für die Verwendung von “Google "
+"Authenticator” (TOTP) entscheiden geniessen Sie noch eine stärkere "
+"Sicherheit."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:71
 msgid ""
 "Optional Google Authenticator can be activated via the TOTP links below."
 msgstr ""
+"Der “Google Authenticator” kann auch später optional unten über die TOTP "
+"Links aktiviert werden."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:72
 msgid "Customers must password verify XGC or BTC withdrawal."
-msgstr ""
+msgstr "Die Kunden müssen eine XGC oder BTC Auszahlung bestätigen."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:73
 msgid ""
 "All XGC or BTC withdrawals are approved by SiiCrypto for extra security."
 msgstr ""
+"Alle XGC oder BTC Auszahlungen werden ebenfalls von Siicrypto bestätigt für "
+"eine extra Sicherheit."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:74
 msgid "TOTP Project and downloads"
-msgstr ""
+msgstr "TOTP Projekt und Downloads"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:76
 msgid "Google Authenticator"
-msgstr ""
+msgstr "Google Authenticator"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:77
 msgid "TOTP Android App"
-msgstr ""
+msgstr "TOTP Android App"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:78
 msgid "TOTP iOS App"
-msgstr ""
+msgstr "TOTP iOS App"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\addbank.html.php:10
 msgid "Add / Edit Bank"
-msgstr ""
+msgstr "Bank hinzufügen /editieren"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\addbank.html.php:16
 msgid ""
 "This will un-set \"verified\" status, you will have to verify the bank again."
 msgstr ""
+"Verifikationsstatus zurückstellen, Sie werden erneut die Bank bestätigen "
+"müssen"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\addbankBuss.html.php:9
 msgid "Add / Edit Business Bank"
-msgstr ""
+msgstr "Geschäftsbank hinzufügen /editieren"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\addpostal.html.php:8
 msgid "Add/Edit Postal Details"
-msgstr ""
+msgstr "Postadresse hinzufügen /editieren"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\addpostal.html.php:13
 msgid "This address may be used when you withdraw funds."
-msgstr ""
+msgstr "Diese Adresse kann verwendet werden, wenn Sie Geld abheben."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\changepassword.html.php:6
 msgid "Change password"
-msgstr ""
+msgstr "Passwort ändern"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\changepassword.html.php:8
 msgid "Your email address"
-msgstr ""
+msgstr "Ihre E-mail Adresse"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\changepassword.html.php:9
 msgid "New Password"
-msgstr ""
+msgstr "Neues Passwort"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\changepassword.html.php:10
 msgid "Repeat new password"
-msgstr ""
+msgstr "Passwort wiederholen"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\changepassword.html.php:12
 msgid "Change Password"
-msgstr ""
+msgstr "Passwort ändern"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\confirm.mail.php:43
 msgid "Confirm Your Email address"
-msgstr ""
+msgstr "Bestätigen Sie Ihre E-mail Adresse"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\confirm.mail.php:48
 msgid "Please confirm your email address associated at"
-msgstr ""
+msgstr "Bitte bestätigen Sie Ihre E-Mail-Adresse verknüpft an"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\confirm.mail.php:48
 msgid "by clicking the following link"
-msgstr ""
+msgstr "indem Sie auf den folgenden Link klicken"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\confirm.mail.php:51
 msgid "Or use this confirmation code"
-msgstr ""
+msgstr "oder Benutzen Sie den Bestätigungscode"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\confirm.mail.php:51
 msgid "for your email address"
-msgstr ""
+msgstr "für Ihre E-mail Adresse"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\confirm.mail.php:51
 msgid "on the page"
-msgstr ""
+msgstr "auf der Seite"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\confirm.mail.php:58
 msgid "Date and time"
-msgstr ""
+msgstr "Datum und Zeit"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\confirm.mail.php:63
 msgid "Thanks"
-msgstr ""
+msgstr "Danke"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\confirm.mail.php:71
 msgid "Please do not reply to this email."
@@ -2295,104 +2474,124 @@ msgstr "Für Fragen oder sonstiges senden Sie uns bitte eine E-mail an"
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\confirm.mail.php:72
 msgid "This email was sent to you as you tried to register on"
 msgstr ""
+"Sie bekommen diese E-mail weil Sie versucht haben sich zu registrieren auf"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\confirm.mail.php:72
 msgid "with the email address. "
-msgstr ""
+msgstr "mit der E-mail Adresse"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\confirm.mail.php:73
 msgid "If you did not register, then you can delete this email."
-msgstr "ksdasdj as lsdkjsd s"
+msgstr ""
+"Wenn Sie nicht versucht haben sich zu registrieren, löschen Sie bitte diese "
+"Nachricht."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\confirm.mail.php:74
 msgid "We do not spam."
-msgstr ""
+msgstr "Wir verschicken kein spam"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\deposit.html.php:7
 msgid "Deposit"
-msgstr ""
+msgstr "Einzahlen"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\deposit.html.php:8
 msgid "You have requested to deposit"
-msgstr ""
+msgstr "Sie haben einen Antrag für eine Einzahlung gestellt"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\deposit.html.php:8
 msgid "to your SiiCrypto.com account"
-msgstr ""
+msgstr "auf Ihr SiiCrypto.com Konto"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\deposit.html.php:8
 msgid "From this deposit there will be deducted Bank Charges of minimum"
-msgstr ""
+msgstr "Von dieser Einzahlung werden Bankkosten abgezogen von mindestens"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\deposit.html.php:8
 msgid "and a Fiduciary Fee of"
-msgstr ""
+msgstr "und ein Treuhänder Gebühr von "
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\deposit.html.php:10
 msgid "Click here to receive a completed copy of your DSF by email."
 msgstr ""
+"Klicken Sie hier um eine komplette Kopie Ihrer DSF per E-mail zu erhalten."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\deposit.html.php:11
 msgid ""
 "Upon receipt of your DSF, please sign and upload the signed DSF using the "
 "link provided in the email."
 msgstr ""
+"Nach dem Erhalt Ihrer DSF (Mittelherkunft) , melden Sie sich bitte an und "
+"laden Sie die signierte DSF über den in der E-mail zur verfügung gestellten "
+"Link hoch."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\deposit.html.php:12
 msgid "Once you upload"
-msgstr ""
+msgstr "Sobald das Dokument hochgeladen wurde "
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\deposit.html.php:12
 msgid "Declaration of Source of Funds (DSF)"
-msgstr ""
+msgstr "Angaben der Mittelherkunft (DSF-Declaration source of funds)"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\deposit.html.php:12
 msgid ""
 "we will send this document for SiiCrypto Approval. Upon approval, you can "
 "send the funds to the account."
 msgstr ""
+"wir werden dieses Dokument für eine Anerkennung von SiiCrypto weiterleiten. "
+"Nach der Freigabe können Sie die Mittel auf das Konto senden."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\deposit.mail.php:51
 msgid "with Reference No"
-msgstr ""
+msgstr "mit der Referenznummer "
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\deposit.mail.php:51
 msgid "From this deposit there will be deducted Bank Charges of"
-msgstr ""
+msgstr "Von dieser Einzahlung werden folgende gebühren berechnet"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\deposit.mail.php:53
 msgid ""
 "Your Declaration of Source of Funds (\"DSF\") is attached to this email. "
 "Please print it out, sign it, and scan it."
 msgstr ""
+"Ihre Mittelherkunft-Datei (DSF) ist dieser E-mail angehängt. Bitte drucken, "
+"unterschreiben und scannen"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\deposit.mail.php:54
 msgid ""
 "If the browser you used to connect to SiiCrypto is your primary browser then "
 "you can upload the signed DSF to this link"
 msgstr ""
+"Wenn der von Ihnen genutzte Browser für eine Verbindung mit SiiCrypto, Ihr "
+"primärer Browser ist , dann kann dieser Link zum hochladen Ihrer signierten "
+"DSF Datei genutzt werden. "
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\deposit.mail.php:54
 msgid "UPLOAD DSF HERE"
-msgstr ""
+msgstr "DSF HIER HOCHLADEN"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\deposit.mail.php:55
 msgid ""
 "If your primary browser is not the browser you used to connect to SiiCrypto, "
 "then copy this link"
 msgstr ""
+"Wenn Ihr primärer Browser ein anderer ist um sich mit SiiCrypto zu "
+"verbinden, kopieren Sie bitte diesen Link "
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\deposit.mail.php:57
 msgid ""
 "and paste it into the browser you are using.  You do not need to close down "
 "your open SiiCrypto webpage before pasting this link into your browser."
 msgstr ""
+"und kopieren Sie ihn in den von Ihnen primär genutzten Browser.  Die "
+"SiiCrypto Webseite muss nicht vor dem einfügen des Links geschlossen werden. "
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\deposit.mail.php:59
 msgid ""
 "If your SiiCrypto webpage has been open for longer than twenty minutes you "
 "will have been auto logged out and you will need to login again."
 msgstr ""
+"Wenn Ihr SiiCrypto-Konto länger als 20 Minuten geöffnet ist, meldet sich "
+"dieses selber ab und eine neue Anmeldung wird erfordert. "
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\deposit.mail.php:61
 msgid ""
@@ -2401,15 +2600,22 @@ msgid ""
 "then receive another email providing the wire transfer details and you can "
 "then wire transfer the funds using the reference number quoted above."
 msgstr ""
+"Sobald Sie die signierte DSF per link auf die Seite SiiCrypto hochgeladen "
+"haben wird diese an ILS Treuhänder (Schweiz) Sarl und Vantu Bank "
+"weitergeleitet.  Sie werden dann eine weitere E-Mail erhalten mit der "
+"Bereitstellung der Überweisungdaten und Sie können die Mittel übertragen "
+"indem Sie die folgende Referenznummer verwenden."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\deposit.mail.php:63
 msgid ""
 "Please do not wire the funds until you receive an email confirmation from us."
 msgstr ""
+"Bitte überweisen Sie keine Mittel, bis Sie eine Bestätigung von uns erhalten "
+"haben"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\deposit.mail.php:83
 msgid "with the email address."
-msgstr ""
+msgstr "mit der E-mail Adresse "
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\email.html.php:7
 msgid "Email Verification"
@@ -2420,21 +2626,20 @@ msgid "Email"
 msgstr "E-mail"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\email.html.php:11
-#, fuzzy
 msgid "Verification code"
-msgstr "Verifikation"
+msgstr "Verifikations-Code"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\email.html.php:12
 msgid "Verify"
-msgstr ""
+msgstr "Bestätigen"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\email.html.php:14
 msgid "Please check your spam folder too while checking your inbox!"
-msgstr ""
+msgstr "Bitte kontrollieren Sie zusätzlich Ihren Junk-Ordner"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\forgot.mail.php:51
 msgid "Please click on this link to change the password!"
-msgstr ""
+msgstr "Bitte klicken Sie auf den Link um Ihr Passwort zu ändern!"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\forgot.mail.php:68
 #, fuzzy
@@ -2443,126 +2648,136 @@ msgstr "Siicrypto ist ein wirklich sicherer Kryptowährungstausch."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\forgotpassword.html.php:11
 msgid "Your email"
-msgstr ""
+msgstr "Ihre E-mail"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\forgotpassword.html.php:13
 msgid "Send password reset link"
-msgstr ""
+msgstr "Senden eines “Passwort erneuern” Links"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding.html.php:168
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding.html.php:236
 msgid "Address"
-msgstr ""
+msgstr "Adresse"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding.html.php:171
 msgid "To add"
-msgstr ""
+msgstr "hinzufügen"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding.html.php:171
 msgid "please send payment to"
-msgstr ""
+msgstr "bitte senden Sie eine Zahlung an"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding.html.php:181
 msgid "Previous Receiving Addresses"
-msgstr ""
+msgstr "Vorherige Empfängeradressen"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding.html.php:214
 msgid "Withdraw"
-msgstr ""
+msgstr "Auszahlen"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding.html.php:220
 msgid "Enter the amount of XGC you are withdrawing and then click Calculate"
 msgstr ""
+"geben Sie den gewünschten XGC Auszahlungsbetrag an und klicken Sie auf "
+"Kalkulieren"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding.html.php:221
 msgid ""
 "If an X appears next to the XGC Address in the Send To box then the address "
 "you are using is not a valid address"
 msgstr ""
+"Wenn ein X neben der XGC Adresse in der “Versendet” box auftaucht bedeutet "
+"dies, dass sie eine ungültige E-mail Adresse benutzen."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding.html.php:227
 msgid "balance"
-msgstr ""
+msgstr "Kontostand"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding.html.php:242
 msgid "Enter The"
-msgstr ""
+msgstr "Geben Sie an:"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding.html.php:242
 msgid "Address of the Recipient"
-msgstr ""
+msgstr "Adresse des Empfängers"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding.html.php:251
 msgid "Capture"
-msgstr ""
+msgstr "Erfassung"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding.html.php:259
 msgid "Amount incorrect"
-msgstr ""
+msgstr "Falscher Betrag"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding.html.php:268
 msgid "Send to"
-msgstr ""
+msgstr "Senden an"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding.html.php:276
 msgid "Transaction Fees"
-msgstr ""
+msgstr "Überweisungskosten"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding.html.php:277
 msgid "to miners"
-msgstr ""
+msgstr "an Bergleute (Schöpfer)"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding.html.php:281
 msgid "Amount You Receive"
-msgstr ""
+msgstr "Zu erhaltener Betrag"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding.html.php:286
 msgid "Calculate"
-msgstr ""
+msgstr "Berechnen"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding.html.php:287
 msgid "Send"
-msgstr ""
+msgstr "Senden"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding.html.php:296
 msgid "Withdrawal request"
-msgstr ""
+msgstr "AUSZAHLUNG-ANTRAG"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding.html.php:300
 msgid "You have already made a withdrawal request for"
-msgstr ""
+msgstr "Sie haben bereits einen Auszahlungsantrag gestellt für "
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding.html.php:300
 msgid ""
 "Please check your email and complete the request. If you want to cancel the "
 "request, please send an email to"
 msgstr ""
+"Bitte überprüfen Sie Ihren E-Mail und füllen Sie den Auftrag aus. Sollten "
+"Sie den Auftrag löschen wollen senden Sie bitte eine E-mail an"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding.html.php:301
 msgid ""
 "If your want to delete this request yourself, you can click on the link below"
 msgstr ""
+"wenn Sie den Antrag selber löschen möchten, klicken Sie bitte auf den Link "
+"unten"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding.html.php:306
 msgid "REMOVE"
-msgstr ""
+msgstr "LÖSCHEN"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:15
 msgid "Deposit / Withdraw"
-msgstr ""
+msgstr "Einzahlen/ Auszahlen"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:17
 msgid ""
 "Deposits will be coming soon. Thank you for your patience while our bank "
 "resolves this issue"
 msgstr ""
+"Einzahlungen folgen bald. Danke für Ihr Verständnis während unsere Bank "
+"dieses Problem behebt. "
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:35
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:240
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:376
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:504
 msgid "Note"
-msgstr ""
+msgstr "Hinweis"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:35
 msgid ""
@@ -2572,283 +2787,293 @@ msgid ""
 "put on hold. The information you provide must be clear in order to prevent "
 "delays."
 msgstr ""
+"Es kann vorkommen, dass der Vantu Kundenservice sich mit Ihnen in Verbindung "
+"setzt, um Ihre Zahlung zu authentifizieren. Bitte stellen Sie sicher, dass "
+"die von Ihnen unten angegebenen Kontaktinformationen richtig sind. Wenn "
+"Vantu Bank Schwierigkeiten hat Sie innerhalb von 48STD zu erreichen kann es "
+"passieren, das Ihre Gelder erst einmal auf Eis gelegt werden.  Die "
+"Informationen müssen klar sein um eine Verzögerungen zu vermeiden."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:41
 msgid "FULL NAME OF YOUR ACCOUNT AT VANTU BANK"
-msgstr "Vantu Bank Full name"
+msgstr "VOLLER NAME DES KONTOINHABER BEI VANTU BANK"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:45
 msgid "FULL ACCOUNT NUMBER OF YOUR ACCOUNT"
-msgstr ""
+msgstr "VOLLSTÄNDIGE KONTONUMMER IHRES KONTOS"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:61
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:253
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:517
 msgid "YOUR FULL NAME"
-msgstr ""
+msgstr "IHR VOLLER NAME "
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:65
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:257
 msgid "YOUR TELEPHONE NUMBER"
-msgstr ""
+msgstr "IHRE TELEFONNUMMER"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:69
 msgid "YOUR FULL PHYSICAL OR STREET ADDRESS"
-msgstr ""
+msgstr "IHRE VOLLSTÄNDIGE MELDEADRESSE"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:69
 msgid "a PO Box number alone is not accepted"
-msgstr ""
+msgstr "eine Postfach-Adresse alleine wird nicht akzeptiert"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:73
 msgid "YOUR CITY, STATE, ZIP CODE, COUNTRY"
-msgstr ""
+msgstr "IHRE STADT, BUNDESLAND, POSTLEITZAHL, LAND"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:77
 msgid "YOUR EMAIL ADDRESS"
-msgstr ""
+msgstr "IHRE E-MAIL ADRESSE"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:82
 msgid "YOUR TYPE OF OCCUPATION/BUSINESS"
-msgstr ""
+msgstr "IHR BERUF ODER GESCHÄFTSTÄTIGKEIT"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:85
 msgid "-- Select --"
-msgstr ""
+msgstr "-- Bitte Wählen --"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:86
 msgid "Accounting"
-msgstr ""
+msgstr "Buchhaltung"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:87
 msgid "Architecture"
-msgstr ""
+msgstr "Architektur"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:88
 msgid "Community and Social Services"
-msgstr ""
+msgstr "Kommunale Dienstleistungen"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:89
 msgid "Computer and Software"
-msgstr ""
+msgstr "Computer und Software"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:90
 msgid "Designer"
-msgstr ""
+msgstr "Designer"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:91
 msgid "Education"
-msgstr ""
+msgstr "Lehramt"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:92
 msgid "Engineering"
-msgstr ""
+msgstr "Maschinenbau"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:93
 msgid "Entertainment"
-msgstr ""
+msgstr "Unterhaltung"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:94
 msgid "Farming"
-msgstr ""
+msgstr "Landwitschaft"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:95
 msgid "Fishing"
-msgstr ""
+msgstr "Fischerei"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:96
 msgid "Food Industry"
-msgstr ""
+msgstr "Lebensmittel-Industrie"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:97
 msgid "Forestry"
-msgstr ""
+msgstr "Forstwirtschaft"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:98
 msgid "General Management"
-msgstr ""
+msgstr "Geschäftsleitung"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:99
 msgid "Healthcare Services"
-msgstr ""
+msgstr "Gesundheitsdienstleistungen"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:100
 msgid "Installation and Repair"
-msgstr ""
+msgstr "Installation/ Reperaturen"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:101
 msgid "Lawyer"
-msgstr ""
+msgstr "Rechtsanwalt"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:102
 msgid "Manufacturing and Production"
-msgstr ""
+msgstr "Herstellung und Produktion"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:103
 msgid "Media"
-msgstr ""
+msgstr "Medien"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:104
 msgid "Mining and Extraction"
-msgstr ""
+msgstr "Bergbau und Förderung"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:105
 msgid "Office and Administrative Support"
-msgstr ""
+msgstr "Büro- und Verwaltungsunterstützung"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:106
 msgid "Personal Care and Service"
-msgstr ""
+msgstr "Persönliche Betreuung und Service"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:107
 msgid "Physical Scientist"
-msgstr ""
+msgstr "Wissenschaftler"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:108
 msgid "Private Investor"
-msgstr ""
+msgstr "Privatinvestor"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:109
 msgid "Property and Construction"
-msgstr ""
+msgstr "Immobilien und Bau"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:110
 msgid "Property Maintenance"
-msgstr ""
+msgstr "Hausverwaltung"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:111
 msgid "Protective Services"
-msgstr ""
+msgstr "Sicherheit Service"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:112
 msgid "Retired"
-msgstr ""
+msgstr "Pensioniert"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:113
 msgid "Sales and Marketing"
-msgstr ""
+msgstr "Verkauf und Marketing"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:114
 msgid "Scientist"
-msgstr ""
+msgstr "Wissenschaft"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:115
 msgid "Self Employed"
-msgstr ""
+msgstr "Selbstständig"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:116
 msgid "Sports"
-msgstr ""
+msgstr "Sport"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:117
 msgid "Transportation"
-msgstr ""
+msgstr "Transportation"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:124
 msgid "DETAILS OF YOUR INWARD WIRE PAYMENT"
-msgstr ""
+msgstr "DETAILS IHRER INTERNEN ZAHLUNGEN"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:127
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:364
 msgid "REFERENCE"
-msgstr ""
+msgstr "BETREFF"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:127
 msgid "Quote this reference number in your deposit"
-msgstr ""
+msgstr "Zitieren Sie diese Referenznummer in Ihrer Einzahlung"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:134
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:261
 msgid "CURRENCY"
-msgstr ""
+msgstr "WÄHRUNG"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:141
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:265
 msgid "AMOUNT"
-msgstr ""
+msgstr "BETRAG"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:147
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:269
 msgid "ORIGINAL SENDING BANK"
-msgstr ""
+msgstr "AUFTRAGGEBERBANK"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:150
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:272
 msgid "Bank Name"
-msgstr ""
+msgstr "Bank Name"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:154
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:276
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:347
 msgid "Bank Address"
-msgstr ""
+msgstr "Bank Adresse"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:158
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:280
 msgid "SWIFT Code"
-msgstr ""
+msgstr "SWIFT Code"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:162
 msgid "I declare that the source of this payment is one of the following"
-msgstr ""
+msgstr "Ich erkläre, die Quelle der Zahlung ist die folgende:"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:165
 msgid "Employment Income"
-msgstr ""
+msgstr "Angestellten Einkommen"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:166
 msgid "Gift"
-msgstr ""
+msgstr "Geschenk"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:167
 msgid "Grants/Scholarships"
-msgstr ""
+msgstr "Stipendium"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:170
 msgid "Insurance Claim Payments"
-msgstr ""
+msgstr "Versicherungsauszahlung"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:171
 msgid "Investment Income Savings"
-msgstr ""
+msgstr "Anlageerträge"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:172
 msgid "Retirement/Pension Income"
-msgstr ""
+msgstr "Pension/Rente"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:175
 msgid "Sale of Assets"
-msgstr ""
+msgstr "Verkauf von Vermögenswerten"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:176
 msgid "Trust/Inheritance"
-msgstr ""
+msgstr "Treuhand/Erbe"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:177
 msgid "Lottery Winnings"
-msgstr ""
+msgstr "Lotterie Gewinne "
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:180
 msgid "Business"
-msgstr ""
+msgstr "Geschäftlich"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:180
 msgid ""
 "If this box is checked you will need to complete the Details of Business "
 "Payment section below"
 msgstr ""
+"Wenn Sie dieses Kästchen geklickt haben, füllen sie bitte unten zusätzlich "
+"die Details für Unternehmen aus."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:183
 msgid "Other, please be specific"
-msgstr ""
+msgstr "Sonstige, bitte seien Sie spezifisch"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:193
 msgid "DETAILS OF BUSINESS PAYMENT"
-msgstr ""
+msgstr "DETAILS DER UNTERNEHMEN ZAHLUNGEN"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:193
 msgid "Only complete this section if you have checked the Business box above"
 msgstr ""
+"Füllen Sie diesen Bereich nur aus wenn Sie oben auf das Kästchen "
+"“Unternehmen” geklickt haben."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:196
 msgid "WHAT IS THE PRINCIPAL BUSINESS ACTIVITY OF THE ORIGINATING PARTY?"
@@ -2910,7 +3135,7 @@ msgstr ""
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:233
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:497
 msgid "Date"
-msgstr ""
+msgstr "Datum"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:240
 msgid ""
@@ -2920,23 +3145,30 @@ msgid ""
 "put on hold. The purpose for the wire must be made clear in order to prevent "
 "delays."
 msgstr ""
+"Es kann vorkommen, dass sich der Vantu Kundenservice mit Ihnen in Verbindung "
+"setzt, um Ihre Zahlung zu authentifizieren. Bitte stellen Sie sicher, dass "
+"die von Ihnen unten angegebenen Kontaktinformationen richtig sind. Wenn "
+"Vantu Bank Schwierigkeiten hat Sie innerhalb von 48STD zu erreichen kann es "
+"passieren, das Ihre Gelder erst einmal auf Eis gelegt werden.  Die "
+"Informationen müssen klar sein um eine Verzögerungen zu vermeiden."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:242
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:508
 msgid "File not uploaded... Not sent to ILS/Vantu Bank"
 msgstr ""
+"Datei konnte nicht hochgeladen werden…Nicht an ILS/Vantu Bank versendet"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:243
 msgid "Deposit request: (DSF)"
-msgstr ""
+msgstr "Einzahlungs Antrag: (DSF)"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:246
 msgid "File uploaded... Sent to ILS/Vantu Bank"
-msgstr ""
+msgstr "Datei erfolgreich hochgeladen…Gesendet an ILS/Vantu Bank"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:247
 msgid "WIRE TRANSFER INSTRUCTIONS TO BE GIVEN TO YOUR BANK"
-msgstr ""
+msgstr "ÜBERWEISUNGSDATEN FÜR IHRE BANK"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:248
 msgid ""
@@ -2945,105 +3177,118 @@ msgid ""
 "use this information to complete your bank's standard wire instruction form. "
 "These instructions have also been sent to your email address."
 msgstr ""
+"Bitte benutzen Sie die unten stehenden Informationen um eine Überweisung an "
+"SiiCrypto zu tätigen. Sie können dieses Formular ausdrucken und Ihrer Bank "
+"geben oder benutzen Sie diese Informationen für die Vervollständigung Ihres "
+"Bank Überweisungsformulars. Diese Instruktionen wurden ebenfalls an Ihre E-"
+"Mail-Adresse gesendet."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:285
 msgid "UPLOAD YOUR SIGNED DSF HERE"
-msgstr ""
+msgstr "Unterschriebene DSF Datei hochladen"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:285
 msgid ""
 "Only upload a PDF file. Locate your DSF file by clicking Select File. Select "
 "your DSF File. Then click Upload."
 msgstr ""
+"Laden Sie ausschliesslich PDF Dateien hoch. Lokalisieren Sie Ihre DSF "
+"(Mittelformular) indem Sie auf “Datei auswählen” klicken. Sobald Sie Ihre "
+"Datei gefunden haben wählen Sie diese mit einem Klick aus und laden Sie "
+"diese hoch indem Sie auf Hochladen klicken. "
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:286
 msgid "If you want to modify the DSF, please"
-msgstr ""
+msgstr "Wenn Sie Ihre DSF anpassen möchten "
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:286
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:559
 msgid "Delete this request"
-msgstr ""
+msgstr "löschen Sie bitte diesen Antrag"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:286
 msgid ""
 "and create a new DSF. Your request will remain open until your funds have "
 "been wired and received or until you delete your request."
 msgstr ""
+"und erstellen Sie eine neue DSF. Ihr Antrag bleibt geöffnet, bis Sie die "
+"Mittel erhalten oder versendet haben  oder bis der Antrag gelöscht wird. "
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:290
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:563
 msgid "Select file"
-msgstr ""
+msgstr "Datei auswählen"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:291
 msgid "CLICK ON LINK ABOVE TO LOCATE YOUR DSF FILE"
-msgstr ""
+msgstr "KLICKEN SIE AUF DEN OBEREN LINK UM IHRE DSF DATEI ZU LOKALISIEREN"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:296
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:569
 msgid "No file selected"
-msgstr ""
+msgstr "Keine Datei wurde ausgewählt"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:300
 msgid "When you have located and selected your file, click Upload"
 msgstr ""
+"Wenn Sie Ihre Datei lokalisiert und selektiert haben, klicken Sie auf "
+"Hochladen"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:306
 msgid "RECEIVING BANK"
-msgstr ""
+msgstr "EMPFÄNGERBANK"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:309
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:475
 msgid "BANK NAME"
-msgstr ""
+msgstr "BANK NAME"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:313
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:479
 msgid "BANK ADDRESS"
-msgstr ""
+msgstr "BANK ADDRESS"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:317
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:339
 msgid "SWIFT CODE"
-msgstr ""
+msgstr "SWIFT CODE"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:321
 msgid "Intermediary Bank"
-msgstr ""
+msgstr "Zwischenbank"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:325
 msgid "Intermediary Bank SWIFT Code"
-msgstr ""
+msgstr "Zwischenbank SWIFT code"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:331
 msgid "For the Benefit of"
-msgstr ""
+msgstr "Zu Gunsten von"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:335
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:351
 msgid "Account No"
-msgstr ""
+msgstr "Kontonummer"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:343
 msgid "For the Further Benefit of"
-msgstr ""
+msgstr "zu Gunsten von"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:355
 msgid "Vantu Account Name"
-msgstr ""
+msgstr "Vantu Konto Name "
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:359
 msgid "Vantu Account No"
-msgstr ""
+msgstr "Vantu Konto Nr"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:367
 msgid "SiiCrypto Client Name"
-msgstr ""
+msgstr "SiiCrypto Kundenname"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:371
 msgid "SiiCrypto Client Reference No"
-msgstr ""
+msgstr "SiiCrypto Kundenreferenznummer"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:376
 msgid ""
@@ -3053,18 +3298,23 @@ msgid ""
 "not received then you will need to delete the request and the DSF before you "
 "can make a new wire transfer."
 msgstr ""
+"Nachdem Sie die Mittel an Vantu Bank versendet haben, kann es 3 bis 7 "
+"Werktage dauern bis die Gelder auf Ihr SiiCrypto Konto gutgeschrieben "
+"werden. Aufträge bleiben geöffnet bis die Mittel erfolgreich erhalten "
+"wurden. Für den Fall, dass die Mittel nicht empfangen werden, müssen Sie den "
+"Antrag und die DSF löschen , bevor Sie eine neue Überweisung tätigen können."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:378
 msgid "Please"
-msgstr ""
+msgstr "Bitte"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:378
 msgid "delete this request"
-msgstr ""
+msgstr "löschen Sie diesen Antrag"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:378
 msgid "and create a new DSF"
-msgstr ""
+msgstr "und erstellen Sie eine neue DSF"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:394
 msgid ""
@@ -3073,61 +3323,67 @@ msgid ""
 "Wiring to your bank may take a few days depending on your bank routing "
 "instruction."
 msgstr ""
+"Für eine Auszahlung der Mittel wird ein Auszahlungsantrag benötigt. "
+"SiiCrypto wird diesen Antrag bearbeiten und Ihnen eine Bestätigung per e-"
+"mail zukommen lassen. Die Auszahlung auf Ihr Konto kann ein paar Tage "
+"beanspruchen. Dies kommt ganz auf Ihre Bank an. "
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:396
 msgid "Withdrawal Request"
-msgstr ""
+msgstr "Auszahlungs Antrag"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:407
 msgid "BANK ACCOUNT NAME"
-msgstr ""
+msgstr "NAME DES BANK KONTOS"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:411
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:471
 msgid "BANK ACCOUNT NUMBER"
-msgstr ""
+msgstr "BANK-KONTONUMMER"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:427
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:521
 msgid "SIICRYPTO REFERENCE NO"
-msgstr ""
+msgstr "SIICRYPTO REFERENZNUMMER "
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:435
 msgid "YOUR SIICRYPTO ACCOUNT BALANCE"
-msgstr ""
+msgstr "IHR SIICRYPTO KONTOSTAND"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:435
 msgid "Withdrawal Request should not exceed this amount"
-msgstr ""
+msgstr "Der Auszahlungsbetrag sollte nicht höher sein als"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:439
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:525
 msgid "WITHDRAWAL AMOUNT"
-msgstr ""
+msgstr "AUSZAHLUNGSBETRAG"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:448
 msgid "FIDUCIARIES\tCHARGES DEDUCTED 0.2% (Click box to calculate amount)"
 msgstr ""
+"TREUHÄNDER\tGEBÜHREN ABZUG 0.2% (Klicken Sie die Box für eine "
+"Kostenkalkulation)"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:453
 msgid "VANTU BANK CHARGES DEDUCTED"
-msgstr ""
+msgstr "ABZUG DER VANTU BANK KOSTEN"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:458
 msgid "NET AMOUNT TO BE WIRED TO SIICRYPTO CLIENT"
-msgstr ""
+msgstr "GESENDETER NETTOBETRAG AN SIICRYPTOKUNDEN"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:464
 msgid "SIICRYPTO CLIENT'S RECEIVING BANK ACCOUNT DETAILS"
-msgstr ""
+msgstr "SIICRYPTOS KUNDEN-ERHALTERBANK-KONTO DETAILS"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:467
 msgid "SIICRYPTO CLIENT FULL NAME"
-msgstr ""
+msgstr "SIICRYPTO VOLLER KUNDENNAME"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:483
 msgid "BANK SWIFT CODE"
-msgstr ""
+msgstr "BANK SWIFT CODE"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:490
 msgid ""
@@ -3144,135 +3400,152 @@ msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:492
 msgid "Fill all details and then check the above checkbox"
-msgstr ""
+msgstr "Füllen Sie alle Details aus und klicken Sie das Kontrollkästchen an "
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:504
 msgid ""
 "Upon receipt of your withdrawal request, please sign and upload the signed "
 "request using the link provided in the email. Once you upload"
 msgstr ""
+"Wenn Sie das Auszahlungsformular beantragt haben, Unterschreiben und senden "
+"Sie dieses durch den angegebenen Link in Ihrer E-mail zurück. Sobald die "
+"Datei hochgeladen wurde"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:504
 msgid "Withdrawal Request Form"
-msgstr ""
+msgstr "Auszahlungsantrag"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:504
 msgid ""
 "we will send this document for SiiCrypto Approval. Upon approval, we will "
 "forward to the bank for wire transfer."
 msgstr ""
+"werden wir dieses Dokument für eine SiiCrypto Anerkennung weiterleiten. "
+"Sobald anerkannt, wird dieses für einen möglichen Transfer an die Bank "
+"gesendet."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:509
 msgid "Withdrawal Request Form: (WRF)"
-msgstr ""
+msgstr "Auszahlungsformular (WRF)"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:512
 msgid "File uploaded... Sent to Admin for approval"
-msgstr ""
+msgstr "Datei hochgeladen…zur Bestätigung an Admin gesendet"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:529
 msgid "VANTU BANK CHARGES"
-msgstr ""
+msgstr "VANTU BANK GEBÜHREN"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:533
 msgid "ILS FIDUCIARIES CHARGES"
-msgstr ""
+msgstr "ILS TREUHÄNDER GEBÜHREN"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:537
 msgid "NET AMOUNT"
-msgstr ""
+msgstr "NETTO BETRAG"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:541
 msgid "YOUR BANK ACCOUNT NUMBER"
-msgstr ""
+msgstr "IHRE KONTONUMMER"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:545
 msgid "YOUR BANK NAME"
-msgstr ""
+msgstr "IHR BANK NAME"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:549
 msgid "YOUR BANK ADDRESS"
-msgstr ""
+msgstr "IHRE BANK ADRESSE"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:553
 msgid "YOUR BANK SWIFT CODE"
-msgstr ""
+msgstr "IHR BANK SWIFT CODE"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:558
 msgid "UPLOAD YOUR SIGNED WITHDRAWAL REQUEST FORM (WRF) HERE"
-msgstr ""
+msgstr "HOCHLADEN DES AUSZAHLUNGSFORMULAR (WRF)"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:558
 msgid "Only upload a PDF file."
-msgstr ""
+msgstr "Nur PDF Dateien werden akzeptiert"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:559
 msgid "If you want to modify the WRF, please"
-msgstr ""
+msgstr "Wenn Sie Ihren WRF (Auszahlungsantrag) bearbeiten möchten, bitte"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:559
 msgid "and create a new WRF"
-msgstr ""
+msgstr "und kreiren Sie eine neue WRF"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:564
 msgid "CLICK ON LINK ABOVE TO LOCATE YOUR WRF FILE"
-msgstr ""
+msgstr "KLICKEN SIE AUF DEN OBEREN LINK UM IHRE WRF DATEI ZU LOKALISIEREN"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:581
 msgid ""
 "Withdrawal Request form is uploaded, approved by Admin and sent to ILS "
 "Fiduciaries (SRAL) and Vantu bank for wire transfer of funds"
 msgstr ""
+"Das Auszahlungs-Formular wurde erfolgreich hochgeladen, vom Admin genehmigt "
+"und an ILS Treuhänder (SARL) und Vantu Bank für eine Überweisung gesendet."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:588
 msgid ""
 "Withdrawal Request form, we are waiting for you to upload the signed "
 "document."
 msgstr ""
+"Wir warten auf das Hochladen Ihres unterschriebenen Auszahlungsformular. "
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:594
 msgid "Withdrawal Request form, Uploaded. Waiting for Admin to Approve."
 msgstr ""
+"Auszahlungsformular, hochgeladen. Wir warten auf die Bestätigung des "
+"Administrators. "
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\onecode.mail.php:45
 msgid "Use this"
-msgstr ""
+msgstr "Benutzen Sie dies"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\onecode.mail.php:45
 msgid "to sign in to"
-msgstr ""
+msgstr "um sich anzumelden bei"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\password.html.php:1
 msgid "Password change"
-msgstr ""
+msgstr "Passwort ändern"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\paymentadmin.html.php:2
 msgid "Admin has been instructed to release the payment."
-msgstr ""
+msgstr "Der Administrator wurde beauftragt Ihre Zahlung freizugeben. "
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\paymentverify.html.php:2
 msgid ""
 "We have sent an email to your registered email address for verifying your "
 "withdrawal of"
 msgstr ""
+"Wir haben Ihnen eine E-mail auf Ihre mit uns registrierte E-mail Adresse "
+"gesendet. Bitte bestätigen Sie Ihre Auszahlungsauftrag von "
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\paymentverify.html.php:2
 msgid "Please check your email, click on the link in the email to withdraw the"
 msgstr ""
+"Bitte überprüfen Sie Ihre E-Mail, für eine Auszahlung klicken Sie auf den "
+"Link in der E-Mail"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\printDeposit.pdf.php:53
 msgid ""
 "Declaration of Source of Funds (DSF) submitted via email for inward wire "
 "payment."
 msgstr ""
-"Defkgooei of soiidi of Fudnod (DSF) subimfii vie email for inwleo eori "
-"paidud."
+"Finanzquelle/Mittelherkunft (DSF) wurde per E-mail für interne Überweisungen "
+"versendet."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\printDeposit.pdf.php:59
 msgid ""
 "Instructions: Please fully complete and sign this form before wiring your "
 "funds."
-msgstr "Instrudkdlle: Pldldk fukky"
+msgstr ""
+"Instruktionen: Bitte füllen Sie dieses Formular vollständig aus mit "
+"Unterschrift bevor Sie Überweisen."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\printDeposit.pdf.php:65
 msgid ""
@@ -3282,67 +3555,78 @@ msgid ""
 "funds may be put on hold. The purpose for the wire must be made clear in "
 "order to prevent delays."
 msgstr ""
+"Hinweis: Es kann vorkommen, dass sich der Vantu Kundenservice mit Ihnen in "
+"Verbindung setzt, um Ihre Zahlung zu authentifizieren. Bitte stellen Sie "
+"sicher, dass die von Ihnen unten angegebenen Kontaktinformationen richtig "
+"sind. Wenn Vantu Bank Schwierigkeiten hat Sie innerhalb von 48STD zu "
+"erreichen kann es passieren, das Ihre Gelder erst einmal auf Eis gelegt "
+"werden.  Die Informationen müssen klar sein um eine Verzögerungen zu "
+"vermeiden."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\printDeposit.pdf.php:74
 msgid "DETAILS OF YOUR ACCOUNT AT VANTU BANK LTD."
-msgstr "Vantu Bank Full name."
+msgstr "DETAILS IHRES VANTU BANK LTD. KONTOS "
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\printDeposit.pdf.php:155
 msgid "REFERENCE (Quote this reference number in your deposit)"
 msgstr ""
+"BETREFF (Bitte geben Sie die Referenznummer bei einer Konto Deckung an) "
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\printDeposit.pdf.php:196
 msgid "AMOUNT (Words)"
-msgstr ""
+msgstr "ANZAHL (Wörter)"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\printDeposit.pdf.php:215
 msgid "DETAILS OF THE SENDER OF YOUR INWARD WIRE PAYMENT"
-msgstr ""
+msgstr "DETAILS DES SENDERS IHRER INTERNEN ZAHLUNG"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\printDeposit.pdf.php:223
 msgid "FULL NAME OF ORIGINATING PARTY"
-msgstr ""
+msgstr "VOLLSTÄNDIGER NAME DES AUFTRAGGEBERS"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\printDeposit.pdf.php:245
 msgid "YOUR CITY, STATE, ZIP Code, COUNTRY"
-msgstr ""
+msgstr "IHRE STADT, BUNDESLAND, POSTLEITZAHL, LAND"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\printDeposit.pdf.php:256
 msgid "ORIGINAL SENDING BANK NAME"
-msgstr ""
+msgstr "AUFTRAGGEBERBANK"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\printDeposit.pdf.php:267
 msgid "ORIGINAL SENDING BANK ADDRESS"
-msgstr ""
+msgstr "ADRESSE DER AUFTRAGGEBERBANK"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\printDeposit.pdf.php:278
 msgid "ORIGINAL SENDING BANK SWIFT CODE"
-msgstr ""
+msgstr "SWIFT CODE DER AUFTRAGGEBERBANK"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\printDeposit.pdf.php:296
 msgid "I/We declare that the source of this payment is one of the following:"
-msgstr ""
+msgstr "Ich /Wir bestätigen, dass die Finanzquelle eine der folgenden ist: "
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\printDeposit.pdf.php:299
 msgid "For \"Other\", please be specific."
-msgstr ""
+msgstr "Im Falle von “sonstigen”, gehen Sie ins Detail"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\printDeposit.pdf.php:369
 msgid ""
 "Business (If this box is checked you will need to complete the Details of "
 "Business Payment section below)"
-msgstr ""
+msgstr "Unternehmen (Wenn dieses "
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\printDeposit.pdf.php:459
 msgid ""
 "I/We have attached full supporting documentation for this transaction (e.g. "
 "an invoice, a bill, a contract, agreement or similar document)."
 msgstr ""
+"Ich / Wir haben die vollständigen Unterlagen für diese Transaktion (zum "
+"Beispiel eine Rechnung, ein Vertrag, Vereinbarung oder ähnliches Dokument) "
+"zur verfügung gestellt."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\printDeposit.pdf.php:480
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\printDeposit.pdf.php:503
 msgid "Account Holder's Name"
-msgstr ""
+msgstr "Name des Kontoinhabers"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\printDeposit.pdf.php:486
 msgid ""
@@ -3354,7 +3638,7 @@ msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\printDeposit.pdf.php:497
 msgid "Please sign here"
-msgstr ""
+msgstr "Bitte unterschreiben Sie hier"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\printWithdraw.pdf.php:55
 msgid ""
@@ -3366,44 +3650,53 @@ msgstr ""
 #, fuzzy
 msgid ""
 "Instructions: Please fully complete and sign this form before uploading."
-msgstr "Instrudkdlle: Pldldk fukky"
+msgstr ""
+"Instruktionen: Bitte füllen Sie dieses Formular vollständig aus mit "
+"Unterschrift bevor Sie Überweisen."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\printWithdraw.pdf.php:70
 #, fuzzy
 msgid "DETAILS OF YOUR ACCOUNT"
-msgstr "Vantu Bank Full name."
+msgstr "DETAILS IHRES VANTU BANK LTD. KONTOS "
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\printWithdraw.pdf.php:129
 msgid "REFERENCE (Quote this reference number with wire)"
 msgstr ""
+"BETREFF (Bitte geben Sie die Referenznummer bei einer Konto Deckung an) "
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\printWithdraw.pdf.php:140
+#, fuzzy
 msgid "AMOUNT OF YOUR OUTWARD WIRE PAYMENT"
-msgstr ""
+msgstr "DETAILS IHRER INTERNEN ZAHLUNGEN"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\printWithdraw.pdf.php:159
+#, fuzzy
 msgid "NET AMOUNT TO BE WIRED"
-msgstr ""
+msgstr "GESENDETER NETTOBETRAG AN SIICRYPTOKUNDEN"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\printWithdraw.pdf.php:193
 msgid "FIDUCIARY COST DEDUCTED"
 msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\printWithdraw.pdf.php:207
+#, fuzzy
 msgid "FULL NAME OF RECEIVING PARTY"
-msgstr ""
+msgstr "VOLLSTÄNDIGER NAME DES AUFTRAGGEBERS"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\printWithdraw.pdf.php:218
+#, fuzzy
 msgid "RECEIVING BANK ACCOUNT NUMBER"
-msgstr ""
+msgstr "IHRE KONTONUMMER"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\printWithdraw.pdf.php:228
+#, fuzzy
 msgid "RECEIVING BANK NAME"
-msgstr ""
+msgstr "EMPFÄNGERBANK"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\printWithdraw.pdf.php:239
+#, fuzzy
 msgid "RECEIVING BANK ADDRESS"
-msgstr ""
+msgstr "EMPFÄNGERBANK"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\printWithdraw.pdf.php:269
 msgid ""
@@ -3419,7 +3712,160 @@ msgid ""
 msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\printWithdraw.pdf.php:296
+#, fuzzy
 msgid "Account Holder's Signature"
+msgstr "Name des Kontoinhabers"
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\sendWithdrawEmailUser.mail.php:41
+#, fuzzy
+msgid "SiiCrypto Outgoing Wire Reference"
+msgstr "SiiCrypto Kundenreferenznummer"
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\sendWithdrawEmailUser.mail.php:41
+#, fuzzy
+msgid "amount"
+msgstr "Betrag"
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\sendWithdrawEmailUser.mail.php:45
+#, fuzzy
+msgid "Attention"
+msgstr "Aktion"
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\sendWithdrawEmailUser.mail.php:48
+msgid "Please be advised that a SiiCrypto has REJECTED the wire transfer of"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\signup.html.php:23
+msgid "KYC ID: Know your customer"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\signup.html.php:29
+msgid "Verify KYC Info"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\signup.html.php:33
+msgid "Your KYC is approved"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\signup.html.php:61
+msgid "Only characters and numbers, NO SPACES"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\signup.html.php:91
+#, fuzzy
+msgid "Already have an account."
+msgstr "Jeglicher Kontoinhaber"
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\signup.html.php:91
+#, fuzzy
+msgid "Click here to login"
+msgstr "klicken Sie hier"
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\signup.html.php:97
+#, fuzzy
+msgid "How to Register"
+msgstr "Registrierung"
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\signup.html.php:100
+msgid ""
+"To Register, first obtain a \"Know Your Client\" or KYC number by opening a "
+"GreenCoinX online wallet. Click on this link to start the process and open a "
+"wallet"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\signup.html.php:101
+msgid ""
+"When your wallet is opened you will receive a KYC unique number.  Insert "
+"that number in the KYC ID box on this page and then click Validate KYC Info. "
+"You will then be validated as having completed the KYC process and can "
+"proceed to open a SiiCrypto account."
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\signup.html.php:103
+msgid ""
+"Insert your name and then a UserName for trading purposes. Your user name "
+"should be only characters and numbers with no spaces. Insert your email "
+"address and create a Password. Then Click the Register button to complete "
+"the SiiCrypto account opening process."
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\signup.html.php:105
+msgid "Any issues please contact us at"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\withdraw.mail.php:52
+#, fuzzy
+msgid "You have requested to withdraw"
+msgstr "Sie haben einen Antrag für eine Einzahlung gestellt"
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\withdraw.mail.php:52
+#, fuzzy
+msgid "from your SiiCrypto.com account"
+msgstr "auf Ihr SiiCrypto.com Konto"
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\withdraw.mail.php:53
+#, fuzzy
+msgid ""
+"Your SiiCrypto Withdrawal Form is attached to this email. Please print it "
+"out, sign it, and scan it. If the browser you used to connect to SiiCrypto "
+"is your primary browser then you can upload the document"
+msgstr ""
+"Wenn der von Ihnen genutzte Browser für eine Verbindung mit SiiCrypto, Ihr "
+"primärer Browser ist , dann kann dieser Link zum hochladen Ihrer signierten "
+"DSF Datei genutzt werden. "
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\withdraw.mail.php:53
+msgid "here"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\withdraw.mail.php:54
+#, fuzzy
+msgid ""
+"and paste it into the browser you are using. You do not need to close down "
+"your open SiiCrypto webpage before pasting this link into your browser. If "
+"your SiiCrypto webpage has been open for longer than twenty minutes you will "
+"been auto logged out and you will need to login again."
+msgstr ""
+"und kopieren Sie ihn in den von Ihnen primär genutzten Browser.  Die "
+"SiiCrypto Webseite muss nicht vor dem einfügen des Links geschlossen werden. "
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\withdraw.mail.php:56
+msgid ""
+"Once we receive the signed SiiCrypto Withdrawal Form your instructions will "
+"be processed."
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\withdrawDigital.mail.php:45
+msgid "from"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\withdrawDigital.mail.php:46
+msgid "Click on the link below to confirm the transfer."
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\withdrawDigital.mail.php:47
+msgid "If you did not authorize this withdrawal to the address"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\withdrawDigital.mail.php:47
+#, fuzzy
+msgid "please"
+msgstr "Bitte"
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\withdrawDigital.mail.php:47
+msgid "do not"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\withdrawDigital.mail.php:47
+#, fuzzy
+msgid "click on the link."
+msgstr "klicken Sie darauf, es wird eingefüllt"
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\withdrawDigital.mail.php:50
+msgid ""
+"You will be asked for your main password on the page following the link to "
+"authorize the transfer. This is an added security feature SiiCrypto.com "
+"employs to secure your coins from hackers / spammers."
 msgstr ""
 
 #, fuzzy
