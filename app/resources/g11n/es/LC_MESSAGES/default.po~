@@ -3388,8 +3388,37 @@ msgstr ""
 msgid "Any issues please contact us at"
 msgstr ""
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\users\withdrawDigital.mail.php:45
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\withdraw.mail.php:52
 msgid "You have requested to withdraw"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\withdraw.mail.php:52
+msgid "from your SiiCrypto.com account"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\withdraw.mail.php:53
+msgid ""
+"Your SiiCrypto Withdrawal Form is attached to this email. Please print it "
+"out, sign it, and scan it. If the browser you used to connect to SiiCrypto "
+"is your primary browser then you can upload the document"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\withdraw.mail.php:53
+msgid "here"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\withdraw.mail.php:54
+msgid ""
+"and paste it into the browser you are using. You do not need to close down "
+"your open SiiCrypto webpage before pasting this link into your browser. If "
+"your SiiCrypto webpage has been open for longer than twenty minutes you will "
+"been auto logged out and you will need to login again."
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\withdraw.mail.php:56
+msgid ""
+"Once we receive the signed SiiCrypto Withdrawal Form your instructions will "
+"be processed."
 msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\withdrawDigital.mail.php:45

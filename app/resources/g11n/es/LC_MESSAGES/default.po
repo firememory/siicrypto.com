@@ -1485,6 +1485,14 @@ msgstr ""
 msgid "Summary of your order"
 msgstr ""
 
+#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\Buy.html.php:57
+msgid "Estimate"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\Buy.html.php:58
+msgid "Submit"
+msgstr ""
+
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:22
 msgid "Latest low price"
 msgstr ""
@@ -1543,11 +1551,6 @@ msgstr ""
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:167
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:174
 msgid "Click Estimate"
-msgstr ""
-
-#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:168
-#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:175
-msgid "Submit"
 msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:170

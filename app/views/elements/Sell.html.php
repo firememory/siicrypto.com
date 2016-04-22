@@ -32,7 +32,7 @@ if(substr(Environment::get('locale'),0,2)=="en"){$locale = "en";}else{$locale = 
 	</tr>
 	<tr>
 		<td>
-		<?=$this->form->field('SellAmount', array('label'=>'Amount '.$first_curr,'class'=>'form-control col-md-1 numbers', 'value'=>0, 'onBlur'=>'this.value=(this.value).replace(/,/g, "");$("#SellSubmitButton").attr("disabled", "disabled");','min'=>'.25','max'=>'999999','maxlength'=>'10','type'=>'number','step'=>'0.00000001','onChange'=>"$('#SellMultiple').val('N');" )); ?>				
+		<?=$this->form->field('SellAmount', array('label'=>$t('Amount').' '.$first_curr,'class'=>'form-control col-md-1 numbers', 'value'=>0, 'onBlur'=>'this.value=(this.value).replace(/,/g, "");$("#SellSubmitButton").attr("disabled", "disabled");','min'=>'.25','max'=>'999999','maxlength'=>'10','type'=>'number','step'=>'0.00000001','onChange'=>"$('#SellMultiple').val('N');" )); ?>				
 		</td>
 		<td>
 			<label for="SellPriceper"><?=$t('Price per')?> <?=$first_curr?></label>
@@ -54,8 +54,8 @@ if(substr(Environment::get('locale'),0,2)=="en"){$locale = "en";}else{$locale = 
 		<td colspan="2" style="height:50px "><span id="SellSummary"><?=$t('Summary of your order')?></span></td>
 	</tr>
 	<tr>
-		<td><input type="button" onClick="SellFormCalculate()" class="btn btn-coool  btn-block" value="Estimate"></td>
-		<td><input type="submit" id="SellSubmitButton" class="btn btn-primary btn-block" disabled="disabled" value="Submit" onClick='$("#SellSubmitButton").attr("disabled", "disabled");$("#SellForm").submit();'></td>
+		<td><input type="button" onClick="SellFormCalculate()" class="btn btn-coool  btn-block" value="<?=$t('Estimate')?>"></td>
+		<td><input type="submit" id="SellSubmitButton" class="btn btn-primary btn-block" disabled="disabled" value="<?=$t('Submit')?>" onClick='$("#SellSubmitButton").attr("disabled", "disabled");$("#SellForm").submit();'></td>
 	</tr>
 </table>
 <?=$this->form->end(); ?>

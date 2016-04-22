@@ -9,6 +9,7 @@ use app\models\Logins;
 use app\models\Details;
 use lithium\storage\Session;
 use app\extensions\action\Functions;
+use lithium\core\Environment; 
 use app\extensions\action\GoogleAuthenticator;
 
 class SessionsController extends \lithium\action\Controller {
@@ -51,10 +52,11 @@ class SessionsController extends \lithium\action\Controller {
 						'user_id'=>(string)$default['_id']
 						)
 				));
+				if(substr(Environment::get('locale'),0,2)=="en"){$locale = "en";}else{$locale = Environment::get('locale');}
 				if($details['active']=="No"){
 					Auth::clear('member');
 					Session::delete('default');
-					return $this->redirect('/');
+					return $this->redirect('/'.$locale.'/');
 					exit;
 				}
 				
@@ -122,7 +124,7 @@ class SessionsController extends \lithium\action\Controller {
 								);
 								Logins::create()->save($data);
 /////////////////////////////////////////////////////////////////////////////////								
-								return $this->redirect('ex::dashboard');
+								return $this->redirect('/'.$locale.'/ex/dashboard');
 								exit;
 							}else{
 								Auth::clear('member');
@@ -153,7 +155,7 @@ class SessionsController extends \lithium\action\Controller {
 								);
 								Logins::create()->save($data);
 						/////////////////////////////////////////////////////////////////////////////////						
-						return $this->redirect('ex::dashboard');
+						return $this->redirect('/'.$locale.'/ex/dashboard');
 						exit;
 					}
 				}else{
@@ -214,7 +216,7 @@ class SessionsController extends \lithium\action\Controller {
 								);
 								Logins::create()->save($data);
 						/////////////////////////////////////////////////////////////////////////////////						
-						return $this->redirect('ex::dashboard');
+						return $this->redirect('/'.$locale.'/ex/dashboard');
 				
 				
 				}
@@ -235,14 +237,15 @@ class SessionsController extends \lithium\action\Controller {
 		$keywords = $page['keywords'];
 		$description = $page['description'];
 			return compact('noauth','title','keywords','description');
-			return $this->redirect('/');
+			return $this->redirect('/'.$locale.'/');
 			exit;
         // Handle failed authentication attempts
   }
 	 public function delete() {
+	if(substr(Environment::get('locale'),0,2)=="en"){$locale = "en";}else{$locale = Environment::get('locale');}
 		Auth::clear('member');
 		Session::delete('default');
-		return $this->redirect('/');
+		return $this->redirect('/'.$locale.'/');
 		exit;
     }
 }
