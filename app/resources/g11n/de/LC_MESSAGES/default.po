@@ -29,8 +29,8 @@ msgstr ""
 "leistet. Siicrypto wird von einem starken und erfahrenen Management "
 "geleitet. Vorsitzender Präsident Herr Danny Wettreich, erfahrener "
 "Handelsbänker, Geschäftsführerin Frau Sabrina Schmitz, vorherige "
-"Bankkauffrau und Technischer Direktor Herr Nilam Doctor, erfahrener "
-"Kryptowährung Technologe."
+"Bankkauffrau und Technischer Direktor Herr Nilam Doctor, ein erfahrener "
+"Kryptowährung-Technologe."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\aboutus.html.php:3
 msgid ""
@@ -42,13 +42,14 @@ msgid ""
 "GreenCoinX or for Euro (EUR), Sterling (GBP), US Dollar (USD), and Canadian "
 "Dollar (CAD) as well as Bitcoin (XBT)."
 msgstr ""
-"Wir sind Kryptowährung Enthusiasten die einen soliden Krypto/Fiat "
+"Wir sind Kryptowährung Enthusiasten, die einen soliden Krypto/Fiat "
 "Währungsumtausch zur verfügung stellen möchten.\n"
-"Die Inspiration dazu gab uns die Markteinführung von GreenCoinX (XGC), die "
+"Die Inspiration dazu, gab uns die Markteinführung von GreenCoinX (XGC), die "
 "weltweit erste Benutzeridentifizierte Kryptowährung. Wir sind davon "
 "überzeugt, dass GreenCoinX eine weltweite Akzeptanz erzielt. Wir bieten den "
-"Umtausch, Kaufen/Verkaufen, von GreenCoinX für Euro (EUR), Englisches Pfund "
-"(GBP), US Dollar (USD), Kanadischer Dollar (CAD) oder auch Bitcoin (XBT) an."
+"Umtausch sowie das Kaufen und Verkaufen von GreenCoinX für Euro (EUR), "
+"Englisches Pfund (GBP), US Dollar (USD), Kanadischer Dollar (CAD) oder auch "
+"Bitcoin (XBT) an."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\aboutus.html.php:5
 msgid "SiiCrypto is a REALLY safe crypto currency exchange."
@@ -86,10 +87,10 @@ msgid ""
 "can be refunded to clients. SiiCrypto has a built-in compliance protocol to "
 "enable approvals with MultiSig."
 msgstr ""
-"Vor der Ausführung eines Kryptowährung oder Geldtransfer wird zusätzlich die "
-"Unterschrift eines SiiCrypto Befugten benötigt. Somit wird sichergestellt, "
-"dass Nutzerwerte nicht missbraucht werden können. Gelder sowie "
-"Kryptowährungen können ausschliesslich dazu genutzt werden SiiCrypto "
+"Vor der Ausführung eines Kryptowährung oder Geldtransfer, wird zusätzlich "
+"die Unterschrift eines SiiCrypto Befugten benötigt. Somit wird "
+"sichergestellt, dass Nutzerwerte nicht missbraucht werden können. Gelder "
+"sowie Kryptowährungen können ausschliesslich dazu genutzt werden, SiiCrypto "
 "Umtausch-Transaktionen und/oder Kunden Rückerstattungen auszuführen."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\aboutus.html.php:10
@@ -97,8 +98,8 @@ msgid ""
 "No Bitcoin is accepted for deposit without the depositor complying with KYC "
 "and AML requirements."
 msgstr ""
-"Bitcoin wird als Einzahlungsmittel nicht akzeptiert ohne das der Einzahler "
-"KYC oder AML geprüft und anerkannt wurde. "
+"Bitcoin wird nicht als Einzahlungsmittel akzeptiert, ohne das der Einzahler "
+"komplett per KYC oder AML Standart verifiziert wurde. "
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\aboutus.html.php:12
 msgid "What does this mean?"
@@ -111,8 +112,8 @@ msgid ""
 "SiiCrypto."
 msgstr ""
 "Es bedeutet, dass Nutzer sich darüber im klaren sind, dass Ihre Gelder nicht "
-"betroffen sind durch Umstände die sich auf SiiCrypto auswirken könnten da "
-"keine Kundengelder von SiiCrypto gehalten werden."
+"betroffen sind, durch eventuelle Umstände die sich auf SiiCrypto auswirken "
+"könnten, da keine Kundengelder von SiiCrypto verwaltet werden."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\aboutus.html.php:15
 msgid ""
@@ -127,8 +128,8 @@ msgid ""
 "It means that no KYC and AML procedures can be bypassed as funds can only be "
 "used for trading on the SiiCrypto exchange or refunding back to clients."
 msgstr ""
-"Keine KYC oder AML Standards können umgangen werden da Gelder nur zum "
-"Umtausch/Handel oder Rückerstattung dienen."
+"Keine KYC oder AML Standards können umgangen werden, da Gelder nur zum "
+"Umtausch/Handel oder zur Rückerstattung dienen."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\aboutus.html.php:17
 msgid ""
@@ -145,8 +146,7 @@ msgid ""
 "use client assets for its own benefit."
 msgstr ""
 "Es bedeutet, dass im Gegensatz zu anderen Kryptowährungs-Umtauschseiten "
-"SiiCrypto nicht in der Lage ist die Kundengelder zum eigenen Vorteil zu "
-"nutzen"
+"SiiCrypto nicht in der Lage ist, Kundengelder zum eigenen Vorteil zu nutzen"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\aboutus.html.php:21
 msgid ""
@@ -169,7 +169,7 @@ msgstr "Schicken Sie uns eine E-mail"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\aboutus.html.php:27
 msgid "For questions, concerns or comments please email us at"
-msgstr "Für Fragen oder sonstiges senden Sie uns bitte eine E-mail an"
+msgstr "Für Fragen oder sonstiges, senden Sie uns bitte eine E-mail an:"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\aboutus.html.php:29
 msgid "We aim to respond to emails within 48 hours."
@@ -203,11 +203,11 @@ msgstr ""
 "Handelsentscheidungen sollten ausschliesslich vom Nutzer allein getroffen "
 "werden. SiiCrypto ist für die Handelsentscheidungen des Nutzers nicht "
 "verantwortlich. Der Kryptowährungsmarkt ist neu und unbewiesen und wird "
-"eventuell nicht wachsen. Derzeit existiert relativ geringer Einsatz von "
-"Kryptowährungen im Einzelhandel und kommerziellen Markt im Gegensatz zu "
+"eventuell nicht wachsen. Zurzeit existiert ein relativ geringer Einsatz von "
+"Kryptowährungen im Einzelhandel und Kommerziellen-Markt, im Gegensatz zu "
 "einem grossen Anteil von Spekulanten. Ein Nutzer sollte sich über seine "
-"Kompetenzen und Risiken der Kryptowährung im Klaren sein, wenn er damit "
-"handeln möchte und in der Lage sein, Verluste zu verkraften."
+"Kompetenzen und Risiken der Kryptowährung im Klaren sein wenn er damit "
+"handeln möchte, und in der Lage sein, Verluste zu verkraften."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\FAQ.html.php:10
 msgid "FAQ"
@@ -383,10 +383,10 @@ msgid ""
 "follow the instructions to wire funds to your account or to withdraw funds "
 "from your account."
 msgstr ""
-"Um Werte zu transferieren besuchen Sie bitte das Dashboard und wählen Sie "
+"Um Werte zu transferieren, besuchen Sie bitte das Dashboard und wählen Sie "
 "Ihre bevorzugte Währung. Sie werden auf die “Kontodeckung-Seite” "
-"weitergeleitet. Bitte folgen Sie den Instruktionen wie Sie Ihr Konto decken "
-"oder Auszahlungen beauftragen. "
+"weitergeleitet. Bitte folgen Sie den Instruktionen, wie Sie Ihr Konto decken "
+"oder Auszahlungen beantragen. "
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\funding.html.php:5
 msgid "Deposit and Withdrawal fees"
@@ -394,7 +394,7 @@ msgstr "Ein/Auszahlungs Gebühren"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\funding.html.php:6
 msgid "Bank charges are as following"
-msgstr "Bankgebühren werden wie folgt berechnet:"
+msgstr "Bankgebühren werden wie folgt berechnet"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\funding.html.php:7
 msgid ""
@@ -418,15 +418,16 @@ msgstr ""
 msgid "Upon receipt of your unique KYC number, open a SiiCrypto account."
 msgstr ""
 "Nach dem Erhalt Ihrer einzigartigen KYC Nummer, eröffnen Sie ein Siicrypto "
-"Konto"
+"Konto."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\howitworks.html.php:13
 msgid ""
 "To fund your SiiCrypto exchange wallet go to the REGISTER page and open an "
 "account, with your KYC number."
 msgstr ""
-"Um Ihr SiiCrypto Umtausch Wallet zu decken besuchen Sie bitte die REGISTRIER "
-"Seite und geben Sie dort Ihre KYC Nummer ein um ein Konto zu öffnen. "
+"Um Ihr SiiCrypto Umtausch Wallet zu decken, besuchen Sie bitte die "
+"REGISTRIEREN Seite, und geben Sie dort Ihre KYC Nummer ein um ein Konto zu "
+"öffnen. "
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\howitworks.html.php:14
 msgid "Sign in to your account using 2FA (Two Factor Authorization)."
@@ -443,7 +444,7 @@ msgid ""
 "send GreenCoinX to your account at the master SiiCrypto GreenCoinX wallet "
 "through the page"
 msgstr ""
-"senden Sie GreenCoinX auf das “Master Siicrypto GreenCoinX wallet” durch die "
+"Senden Sie GreenCoinX auf das “Master Siicrypto GreenCoinX wallet” durch die "
 "Seite"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\howitworks.html.php:17
@@ -462,7 +463,7 @@ msgid ""
 "send Bitcoin to your account at the master SiiCrypto Bitcoin wallet through "
 "the page"
 msgstr ""
-"senden Sie Bitcoin an Ihr Master-SiiCrypto-Bitcoin-Konto durch die Seite"
+"Senden Sie Bitcoin an Ihr Master-SiiCrypto-Bitcoin-Konto durch die Seite"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\howitworks.html.php:19
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\howitworks.html.php:28
@@ -475,9 +476,9 @@ msgid ""
 "a bank wire (details of which are given on our funding fiat page for each "
 "currency"
 msgstr ""
-"senden Sie Fiat-Währung an Ihr “Master-SiiCrypto-Bankkonto” per "
-"Banküberweisung. (Details hierzu sind auf der dementsprechenden Seite, Fiat-"
-"Decken zu finden)"
+"Senden Sie Fiat-Währung an Ihr “Master-SiiCrypto-Bankkonto” per "
+"Banküberweisung. (Details hierzu sind auf der dementsprechenden Seite, "
+"Decken/Fiat zu finden)"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\howitworks.html.php:21
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\howitworks.html.php:24
@@ -510,8 +511,8 @@ msgid ""
 "order you wish to place. When executed your SiiCrypto account will be "
 "updated."
 msgstr ""
-"Um eine Transaktion auszuführen begeben Sie sich bitte zur Dashboard-Seite "
-"und wählen Sie die Art von Transaktion die Sie benötigen. Ihr SiiCrypto "
+"Um eine Transaktion auszuführen, begeben Sie sich bitte zur Dashboard-Seite "
+"und wählen Sie die Art der Transaktion die Sie benötigen. Ihr SiiCrypto "
 "Wallet (Konto) wird aktualisiert sobald der Befehl ausgeführt wurde."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\howitworks.html.php:24
@@ -519,16 +520,16 @@ msgid ""
 "To request a withdrawal of fiat currency go to funding fiat page for each "
 "currency"
 msgstr ""
-"Um einen Antrag auf eine Fiat Auszahlung zu stellen, begeben Sie sich bitte "
-"auf die Seite “Konto-Decken/Fiat” "
+"Um eine Fiat Auszahlung zu beauftragen, begeben Sie sich bitte auf die Seite "
+"“Decken/Fiat” "
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\howitworks.html.php:24
 msgid "by clicking on the currency you require."
-msgstr "und wählen Sie die gewünschte Währung."
+msgstr "und klicken Sie auf die gewünschte Währung."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\howitworks.html.php:26
 msgid "Withdraw from your SiiCrypto account"
-msgstr "Auszahlung von Ihrem SiiCrypto Konto"
+msgstr "Auszahlung von Ihrem SiiCrypto Konto:"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\howitworks.html.php:26
 msgid ""
@@ -568,8 +569,8 @@ msgstr ""
 "Anmerkung: Siicrypto berechnet KEINE PROVISION für den Handel. "
 "Verwaltungsgebühren, die Kosten des Treuhänders, liegen bei 0,2% oder 1/5 "
 "von einem Prozent pro Transaktion. Ein oder ausgehende Mindestbeträge in "
-"Fiat-Währung: Eingehende: mindestens 25Euro und ausgehende mindestens 50 "
-"Euro oder 0.10% mit einem Maximum von 500 Euro."
+"Fiat-Währung: Eingehende Beträge mindestens 25 Euro und ausgehende Beträge "
+"mindestens 50 Euro oder 0.10% mit einem Höchstbetrag von 500 Euro."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\press.html.php:1
 msgid "Press Releases"
@@ -848,7 +849,7 @@ msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:42
 msgid "Changes to this privacy policy"
-msgstr "Änderung dieser Datenschutz-Bestimmungen"
+msgstr "Änderung dieser Datenschutzbestimmung"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:43
 msgid ""
@@ -1778,8 +1779,8 @@ msgstr ""
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\riskmanagement.html.php:17
 msgid "Any concerns can be directed to the Risk Management Officer via"
 msgstr ""
-"Etwaige Bedenken können direkt an das Risiko Management per e-mail schicken "
-"an "
+"Etwaige Bedenken können Sie direkt an das Risiko Management schicken per e-"
+"mail:"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\security.html.php:1
 msgid "Security"
@@ -1799,20 +1800,21 @@ msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\security.html.php:6
 msgid "Here is why"
-msgstr "Hier sind die Gründe warum:"
+msgstr "Hier sind die Gründe warum"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\security.html.php:7
 msgid "Secure cold wallet to hold crypto currencies"
 msgstr ""
-"Ein sicheres “cold Wallet” (Kalte Brieftasche) um Kryptowährung aufzubewahren"
+"Ein sicheres “cold Wallet” (Kalte Brieftasche) um Kryptowährung "
+"aufzubewahren."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\security.html.php:8
 msgid ""
 "Your crypto currencies are stored in a cold wallet until they are needed for "
 "a transaction. Our hot wallets are not accessible from the front-end servers"
 msgstr ""
-"Ihre Krypto-Währungen werden in einem “cold wallet” gehalten bis sie für "
-"einen Werttransfer benötigt werden. Unsere “hot wallets” (Heisse- "
+"Ihre Kryptowährungen werden in einem sogenannten “cold wallet” gehalten, bis "
+"sie für einen Werttransfer benötigt werden. Unsere “hot wallets” (Heisse- "
 "Brieftasche) sind nicht erreichbar von “front-end Servern” ."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\security.html.php:11
@@ -1833,7 +1835,7 @@ msgstr "Erweiterter Kontoschutz."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\security.html.php:15
 msgid "We offer two options to secure your account"
-msgstr "Wir bieten zwei Möglichkeiten, Ihr Konto zu sichern:"
+msgstr "Wir bieten zwei Möglichkeiten, Ihr Konto zu sichern"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\security.html.php:16
 msgid ""
@@ -1910,17 +1912,17 @@ msgid ""
 "register. SiiCrypto first time users need to open an online GreenCoinX "
 "wallet at"
 msgstr ""
-"Um ein SiiCrypto Kunde zu werden und die dementsprechende Platform zu nutzen "
-"benötigt es einer Registrierung. SiiCrypto Erst benutzer müssen ein "
-"GreenCoinX Portemonnaie eröffnen auf"
+"Um ein SiiCrypto Kunde zu werden, und die dementsprechende Platform nutzen "
+"zu können, benötigt es einer Registrierung. SiiCrypto Erst-Benutzer müssen "
+"ein GreenCoinX Portemonnaie eröffnen auf"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\verification.html.php:10
 msgid ""
 "Users will complete an online \"Know Your Client\" verification process "
 "which only takes a few minutes."
 msgstr ""
-"Benutzer absolvieren einen “Know Your Client” Verifikationsprozess der nur "
-"einige Minuten dauert."
+"Dort absolvieren Benutzer einen “Know Your Client” Verifikationsprozess, der "
+"nur einige Minuten dauert."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\verification.html.php:11
 msgid ""
@@ -1940,7 +1942,7 @@ msgstr "Ihre Daten unterliegen unseren"
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\verification.html.php:13
 msgid "To register an account and submit your verification information please"
 msgstr ""
-"Um ein Konto zu registrieren oder Prüfungsinformationen hochzuladen bitte ."
+"Um ein Konto zu registrieren oder Prüfungsinformationen hochzuladen bitte "
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\verification.html.php:13
 msgid "click here"
@@ -2012,7 +2014,7 @@ msgstr "Letzter Preis"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:24
 msgid "Last"
-msgstr "Nachname"
+msgstr "Zuletzt"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:25
 msgid "Volume"
@@ -2379,15 +2381,15 @@ msgid ""
 msgstr ""
 "Siicryptos Fiat Kundengelder werden von einem unabhängigen dritten, ILS "
 "Treuhänder Sarl, die Schweizer Filiale von ILS World, einem Globalen "
-"Treuhanddienstleister gehalten."
+"Treuhanddienstleister verwaltet."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:111
 msgid ""
 "SiiCrypto clients GreenCoinX and Bitcoin cannot be accessed without client "
 "approval."
 msgstr ""
-"SiiCryptos Kunden-GreencoinX oder Bitcoin können ohne Kundenzustimmung nicht "
-"bewegt werden."
+"SiiCryptos Kunden GreencoinX oder Bitcoin können ohne eine Kundenzustimmung "
+"nicht bewegt werden."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:112
 msgid ""

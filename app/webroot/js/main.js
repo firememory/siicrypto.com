@@ -1,7 +1,7 @@
 // JS Document
 var locale = '';
 var uri = window.location.pathname.substr(1);
-//alert(uri.substr(0,2));
+
 if(uri.substr(0,2)=='de' || uri.substr(0,2)=='en' || uri.substr(0,2)=='es' || uri.substr(0,2)=='hi'){
 		locale = '/'+uri.substr(0,2);
 }else{
@@ -781,11 +781,12 @@ function SendtoUser(){
 function ChangeLanguage(local,uri){
 	locale = local;
 	var nexturi = "";
+	var uri = window.location.pathname.substr(1);
 
 if(uri.substr(0,2)=='de' || uri.substr(0,2)=='en' || uri.substr(0,2)=='es' || uri.substr(0,2)=='hi'){
-			nexturi = '/'+local+(uri.substr(3));
+			nexturi = '/'+local+'/'+(uri.substr(3));
 	}else{
-			nexturi = '/'+local+uri;
+			nexturi = '/'+local+'/'+uri;
 	}
 	
 	window.location.assign(nexturi);
