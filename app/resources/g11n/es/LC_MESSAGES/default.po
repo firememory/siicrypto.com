@@ -1659,38 +1659,38 @@ msgstr ""
 msgid "Toggle navigation"
 msgstr ""
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\header.html.php:36
-#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\header.html.php:89
+#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\header.html.php:40
+#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\header.html.php:97
 msgid "Security & Risk"
 msgstr ""
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\header.html.php:38
-#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\header.html.php:91
+#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\header.html.php:42
+#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\header.html.php:99
 msgid "Privacy & Terms"
 msgstr ""
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\header.html.php:39
-#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\header.html.php:92
+#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\header.html.php:43
+#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\header.html.php:100
 msgid "Press"
 msgstr ""
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\header.html.php:45
+#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\header.html.php:50
 msgid "Your Account"
 msgstr ""
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\header.html.php:46
+#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\header.html.php:51
 msgid "Dashboard"
 msgstr ""
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\header.html.php:81
+#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\header.html.php:86
 msgid "Logout"
 msgstr ""
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\header.html.php:93
+#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\header.html.php:103
 msgid "Login"
 msgstr ""
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\header.html.php:94
+#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\header.html.php:104
 msgid "Register"
 msgstr ""
 
