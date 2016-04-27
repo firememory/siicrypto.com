@@ -29,7 +29,11 @@ if(substr(Environment::get('locale'),0,2)=="en"){$locale = "en";}else{$locale = 
 <?php }?>				
 	<ul class="nav navbar-nav navbar-right">
 		<?php if($user!=""){ ?>
-
+		<li><a href='#' class='dropdown-toggle' data-toggle='dropdown' >
+			Company <i class='glyphicon glyphicon-chevron-down'></i>
+			</a>
+		
+			<ul class="dropdown-menu">
 					<li style="font-size:13px;"><a href="/<?=$locale?>/company/aboutus"><?=$t('About')?></a></li>	
 					<li style="font-size:13px;"><a href="/<?=$locale?>/company/howitworks"><?=$t('How it works')?></a></li>	
 <!--					<li style="font-size:13px;"><a href="/<?=$locale?>/company/funding"><?=$t('Funding')?></a></li>						-->
@@ -37,8 +41,9 @@ if(substr(Environment::get('locale'),0,2)=="en"){$locale = "en";}else{$locale = 
 					<li style="font-size:13px;"><a href="/<?=$locale?>/company/verification"><?=$t('Verification')?></a></li>						
 					<li style="font-size:13px;"><a href="/<?=$locale?>/company/privacy"><?=$t('Privacy & Terms')?></a></li>		
 					<li style="font-size:13px;"><a href="/<?=$locale?>/company/press"><?=$t('Press')?></a></li>		
-
-			<li ><a href='#' class='dropdown-toggle' data-toggle='dropdown' >
+			</ul>
+			</li>
+			<li><a href='#' class='dropdown-toggle' data-toggle='dropdown' >
 			<?=$user['username']?> <i class='glyphicon glyphicon-chevron-down'></i>&nbsp;&nbsp;&nbsp;
 			</a>
 			<ul class="dropdown-menu">
@@ -81,15 +86,20 @@ foreach($trades as $tr){
 				<li><a href="/logout"><i class="fa fa-power-off"></i> <?=$t('Logout')?></a></li>
 			</ul>
 			<?php }else{?>
-
-
+			<li ><a href='#' class='dropdown-toggle' data-toggle='dropdown' >
+			Company <i class='glyphicon glyphicon-chevron-down'></i>
+				</a>
+			
+				<ul class="dropdown-menu">
 					<li style="font-size:13px;"><a href="/<?=$locale?>/company/aboutus"><?=$t('About')?></a></li>	
 					<li style="font-size:13px;"><a href="/<?=$locale?>/company/howitworks"><?=$t('How it works')?></a></li>	
-<!--					<li style="font-size:13px;"><a href="/<?=$locale?>/company/funding"><?=$t('Funding')?></a></li>						-->
+					<li style="font-size:13px;"><a href="/<?=$locale?>/company/funding"><?=$t('Funding')?></a></li>
 					<li style="font-size:13px;"><a href="/<?=$locale?>/company/security"><?=$t('Security & Risk')?></a></li>	
 					<li style="font-size:13px;"><a href="/<?=$locale?>/company/verification"><?=$t('Verification')?></a></li>						
 					<li style="font-size:13px;"><a href="/<?=$locale?>/company/privacy"><?=$t('Privacy & Terms')?></a></li>		
 					<li style="font-size:13px;"><a href="/<?=$locale?>/company/press"><?=$t('Press')?></a></li>		
+				</ul>
+				</li>
 			<li><a href="/<?=$locale?>/login"><?=$t('Login')?></a></li>
 			<li><a href="/<?=$locale?>/users/signup"><?=$t('Register')?>&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
 			<?php }?>				
