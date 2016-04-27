@@ -84,8 +84,17 @@ $ex = Session::read('ex');
 						<ul class="nav nav-sidebar">
 							<li>
 								<div style="padding-bottom:10px;font-size:15px;text-align:center">
-									<a href="#" onclick="ChangeLanguage('en','<?=$_SERVER['REQUEST_URI']?>');" style="border-bottom:double"><small>English</small></a>
-									<a href="#" onclick="ChangeLanguage('de','<?=$_SERVER['REQUEST_URI']?>');" style="border-bottom:double"><small>Deutsch</small></a>
+								<a href="#" onclick="ChangeLanguage('en','<?=$_SERVER['REQUEST_URI']?>');" style="border-bottom:double">
+								<img src="/img/Flags/en.png" width="75"></a>
+								<a href="#" onclick="ChangeLanguage('de','<?=$_SERVER['REQUEST_URI']?>');" style="border-bottom:double">
+								<img src="/img/Flags/de.png" width="75"></a>
+								<br>
+									<a href="#" onclick="ChangeLanguage('en','<?=$_SERVER['REQUEST_URI']?>');" style="border-bottom:double">
+									
+									<small>English</small></a>
+									<a href="#" onclick="ChangeLanguage('de','<?=$_SERVER['REQUEST_URI']?>');" style="border-bottom:double">
+									
+									<small>Deutsch</small></a>
 <!--					<a href="#" onclick="ChangeLanguage('es','<?=$_SERVER['REQUEST_URI']?>');" style="border-bottom:double"><small>Español</small></a>
 									<a href="#" onclick="ChangeLanguage('hi','<?=$_SERVER['REQUEST_URI']?>');" style="border-bottom:double"><small>हिन्दी</small></a>
 -->									
