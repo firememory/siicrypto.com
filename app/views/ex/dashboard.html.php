@@ -91,7 +91,7 @@ foreach($virtualcurrencies as $VC){
 												);
 //												print_r($conditions);
 												$saved = Details::update($data,$conditions);
-//												print_r($data);
+												print_r($data);
 //												print_r($saved);
 											}
 										}

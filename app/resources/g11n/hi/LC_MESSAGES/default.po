@@ -13,7 +13,7 @@ msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\aboutus.html.php:1
 msgid "About Us"
-msgstr ""
+msgstr "हमारे बारे में"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\aboutus.html.php:2
 msgid ""
@@ -24,6 +24,11 @@ msgid ""
 "commercial banker as CEO, and Nilam Doctor, an experienced crypto currency "
 "technologist, as Chief Technical Officer."
 msgstr ""
+"SiiCrypto कि उपयोगकर्ता की पहचान की आवश्यकता है GreenCoinX दुनिया का पहला क्रिप्टो "
+"मुद्रा में एक क्रिप्टो मुद्रा विनिमय की सुविधा कारोबार कर रहा है। यह मजबूत और अनुभवी "
+"प्रबंधन, Danny Wettreich, एक अनुभवी मर्चेंट बैंकर, अध्यक्ष, Sabrina Schmitz, सीईओ के रूप "
+"में एक पूर्व वाणिज्यिक बैंकर, और Nilam Doctor, एक अनुभवी क्रिप्टो मुद्रा टेक्नोलॉजिस्ट के रूप "
+"में, मुख्य तकनीकी अधिकारी के रूप में द्वारा नेतृत्व किया है।"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\aboutus.html.php:3
 msgid ""
@@ -35,10 +40,16 @@ msgid ""
 "GreenCoinX or for Euro (EUR), Sterling (GBP), US Dollar (USD), and Canadian "
 "Dollar (CAD) as well as Bitcoin (XBT)."
 msgstr ""
+"हम क्रिप्टो मुद्रा उत्साही जो एक ठोस क्रिप्टो या फिएट मुद्रा विनिमय साइट प्रदान करने के "
+"लिए की तलाश कर रहे हैं। हम GreenCoinX (XGC) दुनिया की पहली पहचान योग्य क्रिप्टो "
+"मुद्रा है, जो हम क्रिप्टो मुद्रा की दुनिया भर में स्वीकृति के लिए नेतृत्व करेंगे विश्वास है के "
+"शुभारंभ के द्वारा इस सेवा प्रदान करने के लिए प्रेरित किया गया है। हम आदान प्रदान खरीदने "
+"और GreenCoinX या यूरो (EUR), स्टर्लिंग (GBP) के लिए, अमेरिका डॉलर (USD), और कैनेडियन "
+"डॉलर (सीएडी) के साथ-साथ Bitcoin (XBT) को बेचने की सेवाएं प्रदान करते हैं।"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\aboutus.html.php:5
 msgid "SiiCrypto is a REALLY safe crypto currency exchange."
-msgstr ""
+msgstr "SiiScrypto एक सच में सुरक्षित cryptocurrency मुद्रा है।"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\aboutus.html.php:7
 msgid ""
@@ -201,7 +212,7 @@ msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\FAQ.html.php:19
 msgid "1 Bitcoin our fee is"
-msgstr ""
+msgstr "१ बिट कोइन हमरा शुल्क "
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\FAQ.html.php:19
 msgid "Bitcoins."
@@ -1452,153 +1463,153 @@ msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\verification.html.php:12
 msgid "Your information is subject to our"
-msgstr ""
+msgstr "आपकी जानकारी के लिए विषय है हमारे"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\verification.html.php:13
 msgid "To register an account and submit your verification information please"
-msgstr ""
+msgstr "एक खाते रजिस्टर और अपने सत्यापन जानकारी प्रस्तुत करने के लिए कृपया"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\verification.html.php:13
 msgid "click here"
-msgstr ""
+msgstr "यहां क्लिक करे"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\Buy.html.php:9
 msgid "Buy"
-msgstr ""
+msgstr "खरीदें"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\Buy.html.php:9
 msgid "with"
-msgstr ""
+msgstr "से"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\Buy.html.php:9
 msgid "Graph"
-msgstr ""
+msgstr "ग्राफ"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\Buy.html.php:23
 msgid "Your balance"
-msgstr ""
+msgstr "आपकी शेष राशि"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\Buy.html.php:29
 msgid "Lowest Ask Price"
-msgstr ""
+msgstr "निम्नतम मूल्य से पूछो"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\Buy.html.php:38
 msgid "Price per"
-msgstr ""
+msgstr "प्रति कीमत"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\Buy.html.php:46
 msgid "Total"
-msgstr ""
+msgstr "कुल"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\Buy.html.php:50
 msgid "Fiduciary Fees"
-msgstr ""
+msgstr "प्रत्ययी शुल्क"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\Buy.html.php:54
 msgid "Summary of your order"
-msgstr ""
+msgstr "अपने आदेश का सारांश"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\Buy.html.php:57
 msgid "Estimate"
-msgstr ""
+msgstr "आकलन"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\Buy.html.php:58
 msgid "Submit"
-msgstr ""
+msgstr "सबमिट"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:22
 msgid "Latest low price"
-msgstr ""
+msgstr "निम्नतम मूल्य से पूछो"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:22
 msgid "Low"
-msgstr ""
+msgstr "कम"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:23
 msgid "Latest high price"
-msgstr ""
+msgstr "नवीनतम उच्च कीमत"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:23
 msgid "High"
-msgstr ""
+msgstr "उच्च"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:24
 msgid "Latest price"
-msgstr ""
+msgstr "नवीनतम कीमत"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:24
 msgid "Last"
-msgstr ""
+msgstr "आखिर"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:25
 msgid "Volume"
-msgstr ""
+msgstr "विस्तार"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:25
 msgid "Vol"
-msgstr ""
+msgstr "विस्तार"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:30
 msgid "Help - Information on how to trade"
-msgstr ""
+msgstr "सहायता - कैसे व्यापार करने के बारे में जानकारी"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:160
 msgid "How to trade"
-msgstr ""
+msgstr "कैसे व्यापार करना चाहिये"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:165
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:172
 msgid "Enter Amount"
-msgstr ""
+msgstr "राशी डालें"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:165
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:172
 msgid "The amount you enter should be less than your balance of"
-msgstr ""
+msgstr "आप जिस राशि में प्रवेश की अपनी शेष राशि से कम होना चाहिए"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:166
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:173
 msgid "Enter Price per"
-msgstr ""
+msgstr "प्रति मूल्य दर्ज"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:167
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:174
 msgid "Click Estimate"
-msgstr ""
+msgstr "आकलनकर्ता क्लिक करें"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:170
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:181
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:182
 msgid "Sell"
-msgstr ""
+msgstr "बेचो"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:170
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:181
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:182
 msgid "get"
-msgstr ""
+msgstr "पाओ"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:177
 msgid "Executing Multiple Orders"
-msgstr ""
+msgstr "एकाधिक आदेश को क्रियान्वित"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:180
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:182
 msgid "Select the row from"
-msgstr ""
+msgstr "से पंक्ति का चयन करें"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:180
 msgid "Orders: Sell"
-msgstr ""
+msgstr "आदेश: बेचो"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:180
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:182
 msgid "click on it, will fill in"
-msgstr ""
+msgstr "उस पर क्लिक करें, में भरना होगा"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:182
 msgid "Orders: Buy"
-msgstr ""
+msgstr "आदेश: खरीदो"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:187
 msgid "Close"
@@ -1614,7 +1625,7 @@ msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\footer.html.php:11
 msgid "About"
-msgstr ""
+msgstr "हमारे बारे में"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\footer.html.php:14
 msgid "Risk Management"
@@ -1855,7 +1866,7 @@ msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\ex\OrderRequest.mail.php:9
 msgid "Your order is placed at"
-msgstr ""
+msgstr "आपका आदेश पर रखा गया है"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\ex\OrderRequest.mail.php:12
 msgid "Order ID"
@@ -1922,6 +1933,9 @@ msgid ""
 "as possible.<br><br> We will inform you when this licensing issue has been "
 "resolved. Thank you for your patience."
 msgstr ""
+"अपने राज्य के अतिरिक्त लाइसेंस है जो हम जितनी जल्दी हो सके पूरा करने का इरादा आवश्यकता "
+"है। <br> <br> हम आपको सूचित करेंगे जब इस लाइसेंस के मुद्दे को हल किया गया है। आपके धैर्य के "
+"लिए धन्यवाद।"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:164
 msgid "TRADING INFORMATION - NON USA"
@@ -1989,7 +2003,7 @@ msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\print\cold.html.php:12
 msgid "Your Print / Cold storage PDF is ready for download."
-msgstr ""
+msgstr "आपका छापें / शीत भंडारण को PDF डाउनलोड के लिए तैयार है।"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\print\index.html.php:1
 msgid "Print / Cold Storage"
@@ -2019,7 +2033,7 @@ msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:13
 msgid "Your username & password are"
-msgstr ""
+msgstr "आपका उपयोगकर्ता नाम और पासवर्ड हैं"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:13
 msgid "Case Sensitive"
@@ -2505,7 +2519,7 @@ msgstr ""
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:65
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:257
 msgid "YOUR TELEPHONE NUMBER"
-msgstr ""
+msgstr "आपका टेलीफ़ोन नंबर"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:69
 msgid "YOUR FULL PHYSICAL OR STREET ADDRESS"
@@ -2525,11 +2539,11 @@ msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:82
 msgid "YOUR TYPE OF OCCUPATION/BUSINESS"
-msgstr ""
+msgstr "व्यवसाय / आपके व्यवसाय के प्रकार"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:85
 msgid "-- Select --"
-msgstr ""
+msgstr "-- चुनो --"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:86
 msgid "Accounting"
@@ -3009,7 +3023,7 @@ msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:435
 msgid "YOUR SIICRYPTO ACCOUNT BALANCE"
-msgstr ""
+msgstr "अपने SIICRYPTO खाते की शेष राशि "
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:435
 msgid "Withdrawal Request should not exceed this amount"
@@ -3359,7 +3373,7 @@ msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\signup.html.php:33
 msgid "Your KYC is approved"
-msgstr ""
+msgstr "आपका KYC मंजूरी दे दी है"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\signup.html.php:61
 msgid "Only characters and numbers, NO SPACES"
@@ -3418,6 +3432,9 @@ msgid ""
 "out, sign it, and scan it. If the browser you used to connect to SiiCrypto "
 "is your primary browser then you can upload the document"
 msgstr ""
+"आपका SiiCrypto निकासी फार्म इस ईमेल से जुड़ा हुआ है। कृपया इसे प्रिंट आउट, इस पर "
+"हस्ताक्षर, और इसे स्कैन। ब्राउज़र आप SiiCrypto से कनेक्ट करने के लिए इस्तेमाल अपनी प्राथमिक "
+"ब्राउज़र है तो आप दस्तावेज़ अपलोड कर सकते हैं"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\withdraw.mail.php:53
 msgid "here"
