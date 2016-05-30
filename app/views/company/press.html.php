@@ -1,4 +1,11 @@
 <h2><?=$t('Press Releases')?></h2>
+<blockquote>
+<h3><?=$t('Business Rock Stars Interviews GreenCoinX CEO Danny Wettreich About the GreenCoinX Cryptocurrency')?></h3>
+<h5></h5>
+<p>
+<iframe src="https://www.youtube.com/embed/2rGycN-Yz34?rel=0&amp;controls=0" allowfullscreen="" frameborder="0" height="360" width="640"></iframe>
+</p>
+</blockquote>
 
 <blockquote>
 <h3><?=$t('GREENCOINX\'S AFFILIATED CRYPTO CURRENCY EXCHANGE SIICRYPTO LAUNCHES')?></h3>
