@@ -3,4 +3,5 @@ Disallow: /cgi-bin/
 Disallow: /documents/
 Disallow: /qrcode/
 Disallow: /resources/
-Disallow: /files
+Disallow: /files/
+Disallow: /libraries/
