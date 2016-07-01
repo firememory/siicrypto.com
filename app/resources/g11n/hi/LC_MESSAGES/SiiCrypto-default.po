@@ -9,7 +9,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: hi\n"
-"X-Generator: Poedit 1.8.8\n"
+"X-Generator: Poedit 1.8.7\n"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\aboutus.html.php:1
 msgid "About Us"
@@ -17,21 +17,23 @@ msgstr "हमारे बारे में"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\aboutus.html.php:2
 msgid ""
-"SiiCrypto is a crypto currency exchange facilitating trading in GreenCoinX the world's first crypto currency that requires user identification. It has strong and experienced management, headed up by Danny "
-"Wettreich, an experienced merchant banker, as Chairman, Sabrina Schmitz, a former commercial banker as CEO, and Nilam Doctor, an experienced crypto currency technologist, as Chief Technical Officer."
+"SiiCrypto is a crypto currency exchange facilitating trading in GreenCoinX the world's first crypto currency that requires user identification. It has strong and "
+"experienced management, headed up by Danny Wettreich, an experienced merchant banker, as Chairman, Sabrina Schmitz, a former commercial banker as CEO, and Nilam Doctor, an "
+"experienced crypto currency technologist, as Chief Technical Officer."
 msgstr ""
-"SiiCrypto कि उपयोगकर्ता की पहचान की आवश्यकता है GreenCoinX दुनिया का पहला क्रिप्टो मुद्रा में एक क्रिप्टो मुद्रा विनिमय की सुविधा कारोबार कर रहा है। यह मजबूत और अनुभवी प्रबंधन, Danny Wettreich, एक अनुभवी मर्चेंट बैंकर, अध्यक्ष, Sabrina "
-"Schmitz, सीईओ के रूप में एक पूर्व वाणिज्यिक बैंकर, और Nilam Doctor, एक अनुभवी क्रिप्टो मुद्रा टेक्नोलॉजिस्ट के रूप में, मुख्य तकनीकी अधिकारी के रूप में द्वारा नेतृत्व किया है।"
+"SiiCrypto कि उपयोगकर्ता की पहचान की आवश्यकता है GreenCoinX दुनिया का पहला क्रिप्टो मुद्रा में एक क्रिप्टो मुद्रा विनिमय की सुविधा कारोबार कर रहा है। यह मजबूत और अनुभवी प्रबंधन, Danny "
+"Wettreich, एक अनुभवी मर्चेंट बैंकर, अध्यक्ष, Sabrina Schmitz, सीईओ के रूप में एक पूर्व वाणिज्यिक बैंकर, और Nilam Doctor, एक अनुभवी क्रिप्टो मुद्रा टेक्नोलॉजिस्ट के रूप में, मुख्य तकनीकी अधिकारी के रूप में "
+"द्वारा नेतृत्व किया है।"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\aboutus.html.php:3
 msgid ""
-"We are crypto currency enthusiasts who seek to provide a solid crypto or fiat currency exchange site. We have been inspired to provide this service by the launch of GreenCoinX (XGC) the world's first identifiable "
-"crypto currency, which we believe will lead to worldwide acceptance of crypto currency. We provide the services of exchanging, buying and selling GreenCoinX or for Euro (EUR), Sterling (GBP), US Dollar (USD), and "
-"Canadian Dollar (CAD) as well as Bitcoin (XBT)."
+"We are crypto currency enthusiasts who seek to provide a solid crypto or fiat currency exchange site. We have been inspired to provide this service by the launch of "
+"GreenCoinX (XGC) the world's first identifiable crypto currency, which we believe will lead to worldwide acceptance of crypto currency. We provide the services of "
+"exchanging, buying and selling GreenCoinX or for Euro (EUR), Sterling (GBP), US Dollar (USD), and Canadian Dollar (CAD) as well as Bitcoin (XBT)."
 msgstr ""
-"हम क्रिप्टो मुद्रा उत्साही जो एक ठोस क्रिप्टो या फिएट मुद्रा विनिमय साइट प्रदान करने के लिए की तलाश कर रहे हैं। हम GreenCoinX (XGC) दुनिया की पहली पहचान योग्य क्रिप्टो मुद्रा है, जो हम क्रिप्टो मुद्रा की दुनिया भर में स्वीकृति के लिए नेतृत्व करेंगे "
-"विश्वास है के शुभारंभ के द्वारा इस सेवा प्रदान करने के लिए प्रेरित किया गया है। हम आदान प्रदान खरीदने और GreenCoinX या यूरो (EUR), स्टर्लिंग (GBP) के लिए, अमेरिका डॉलर (USD), और कैनेडियन डॉलर (सीएडी) के साथ-साथ Bitcoin (XBT) को बेचने की "
-"सेवाएं प्रदान करते हैं।"
+"हम क्रिप्टो मुद्रा उत्साही जो एक ठोस क्रिप्टो या फिएट मुद्रा विनिमय साइट प्रदान करने के लिए की तलाश कर रहे हैं। हम GreenCoinX (XGC) दुनिया की पहली पहचान योग्य क्रिप्टो मुद्रा है, जो हम क्रिप्टो "
+"मुद्रा की दुनिया भर में स्वीकृति के लिए नेतृत्व करेंगे विश्वास है के शुभारंभ के द्वारा इस सेवा प्रदान करने के लिए प्रेरित किया गया है। हम आदान प्रदान खरीदने और GreenCoinX या यूरो (EUR), स्टर्लिंग (GBP) के "
+"लिए, अमेरिका डॉलर (USD), और कैनेडियन डॉलर (सीएडी) के साथ-साथ Bitcoin (XBT) को बेचने की सेवाएं प्रदान करते हैं।"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\aboutus.html.php:5
 msgid "SiiCrypto is a REALLY safe crypto currency exchange."
@@ -39,24 +41,29 @@ msgstr "SiiScrypto एक सच में सुरक्षित cryptocurren
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\aboutus.html.php:7
 msgid ""
-"Client assets are safe because all client funds are held  by  ILS Fiduciaries (Switzerland) Sarl the Swiss branch of ILS World, a global provider of independent fiduciary services. Client approval is required "
-"before funds are accessed."
+"Client assets are safe because all client funds are held  by  ILS Fiduciaries (Switzerland) Sarl the Swiss branch of ILS World, a global provider of independent fiduciary "
+"services. Client approval is required before funds are accessed."
 msgstr ""
-"ग्राहक परिसंपत्तियों सुरक्षित हैं क्योंकि सभी ग्राहक के फंड आईएलएस Fiduciaries (स्विट्जरलैंड) SARL आईएलएस विश्व के स्विस शाखा, स्वतंत्र प्रत्ययी सेवाओं की एक वैश्विक प्रदाता द्वारा आयोजित कर रहे हैं। पहले निधियों पहुँचा रहे हैं ग्राहकों का अनुमोदन आवश्यक है।"
+"ग्राहक परिसंपत्तियों सुरक्षित हैं क्योंकि सभी ग्राहक के फंड आईएलएस Fiduciaries (स्विट्जरलैंड) SARL आईएलएस विश्व के स्विस शाखा, स्वतंत्र प्रत्ययी सेवाओं की एक वैश्विक प्रदाता द्वारा आयोजित कर रहे हैं। पहले "
+"निधियों पहुँचा रहे हैं ग्राहकों का अनुमोदन आवश्यक है।"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\aboutus.html.php:8
 msgid ""
-"Governments and banks compliance requirements are satisfied because (a) full \"Know Your Client\" (KYC) procedures are required before SiiCrypto accounts are opened, and (b) full Anti Money Laundering (AML) "
-"procedures are utilized."
-msgstr "सरकारों और बैंकों के अनुपालन आवश्यकताओं को संतुष्ट हैं SiiCrypto खाते खोले जाते हैं इससे पहले कि क्योंकि (क) पूर्ण \"अपने ग्राहक को जानिए '(केवाईसी) प्रक्रियाओं के लिए आवश्यक हैं, और (ख) पूर्ण एंटी मनी लॉन्ड्रिंग (AML) प्रक्रियाओं का उपयोग कर रहे हैं।"
+"Governments and banks compliance requirements are satisfied because (a) full \"Know Your Client\" (KYC) procedures are required before SiiCrypto accounts are opened, and "
+"(b) full Anti Money Laundering (AML) procedures are utilized."
+msgstr ""
+"सरकारों और बैंकों के अनुपालन आवश्यकताओं को संतुष्ट हैं SiiCrypto खाते खोले जाते हैं इससे पहले कि क्योंकि (क) पूर्ण \"अपने ग्राहक को जानिए '(केवाईसी) प्रक्रियाओं के लिए आवश्यक हैं, और (ख) पूर्ण एंटी मनी लॉन्ड्रिंग "
+"(AML) प्रक्रियाओं का उपयोग कर रहे हैं।"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\aboutus.html.php:9
 msgid ""
-"A SiiCrypto compliance officer must also sign off before funds or crypto currency can be sent by the exchange, which ensures that no transfers to external third parties can be completed by clients. Funds and "
-"crypto currency can only be used to complete SiiCrypto exchange transactions and/or can be refunded to clients. SiiCrypto has a built-in compliance protocol to enable approvals with MultiSig."
+"A SiiCrypto compliance officer must also sign off before funds or crypto currency can be sent by the exchange, which ensures that no transfers to external third parties can "
+"be completed by clients. Funds and crypto currency can only be used to complete SiiCrypto exchange transactions and/or can be refunded to clients. SiiCrypto has a built-in "
+"compliance protocol to enable approvals with MultiSig."
 msgstr ""
-" क्रिप्टो मुद्रा एक्सचेंज या कोई भी और मुद्रा के एक्सचेंज से पहेले SiiCrypto के अधिकारी को साइन इन करना होगा , जिससे  बाहरी तीसरे पक्ष के लिए कोई भी ट्रान्सफर ग्राहकों द्वारा नहीं किया जा सकेगा,जो कि सुनिश्चित करता है की धन और क्रिप्टो मुद्रा केवल "
-"SiiCrypto विनिमय लेन-देन को पूरा करने के लिए उपयोग किया जा कर सकते हैं और ग्राहकों को वापस किया जा सकता। SiiCrypto MultiSig के साथ अनुमोदन सक्षम करने के लिए एक अंतर्निहित अनुपालन प्रोटोकॉल है।"
+" क्रिप्टो मुद्रा एक्सचेंज या कोई भी और मुद्रा के एक्सचेंज से पहेले SiiCrypto के अधिकारी को साइन इन करना होगा , जिससे  बाहरी तीसरे पक्ष के लिए कोई भी ट्रान्सफर ग्राहकों द्वारा नहीं किया जा सकेगा,जो कि "
+"सुनिश्चित करता है की धन और क्रिप्टो मुद्रा केवल SiiCrypto विनिमय लेन-देन को पूरा करने के लिए उपयोग किया जा कर सकते हैं और ग्राहकों को वापस किया जा सकता। SiiCrypto MultiSig के साथ अनुमोदन सक्षम "
+"करने के लिए एक अंतर्निहित अनुपालन प्रोटोकॉल है।"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\aboutus.html.php:10
 msgid "No Bitcoin is accepted for deposit without the depositor complying with KYC and AML requirements."
@@ -80,15 +87,21 @@ msgstr "इसका मतलब है कि जब  धन केवल SiiC
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\aboutus.html.php:17
 msgid "It means that governments and banks should have no concerns that \"bad actors\" can hide their activities if they use the SiiCrypto exchange for transactions."
-msgstr "इसका मतलब यह है कि सरकारों और बैंकों में कोई चिंता की बात नहीं होनी चाहिए है क्योंकि कि अगर वे लेनदेन के लिए  SiiCrypto मुद्रा का उपयोग \"बुरा अभिनेता\" उनकी गतिविधियों को छुपा सकते हैं करना चाहिए था।"
+msgstr ""
+"इसका मतलब यह है कि सरकारों और बैंकों में कोई चिंता की बात नहीं होनी चाहिए है क्योंकि कि अगर वे लेनदेन के लिए  SiiCrypto मुद्रा का उपयोग \"बुरा अभिनेता\" उनकी गतिविधियों को छुपा सकते हैं करना चाहिए "
+"था।"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\aboutus.html.php:18
 msgid "It means that, unlike many other crypto currency exchanges, SiiCrypto cannot use client assets for its own benefit."
 msgstr "इसका मतलब है कि, कई अन्य क्रिप्टो मुद्रा बाजारों के विपरीत, SiiCrypto अपने स्वयं के लाभ के लिए ग्राहक परिसंपत्तियों का उपयोग नहीं कर सकते हैं।"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\aboutus.html.php:21
-msgid "The transformative nature of cryptocurrency and its underlying technology has now entered a new phase with the advent of GreenCoinX the identifiable crypto currency. We invite you to trade with us."
-msgstr "Cryptocurrency और उसके अंतर्निहित प्रौद्योगिकी का परिवर्तनकारी प्रकृति अब GreenCoinX के आगमन से पहचाने जाने cryptocurrency के साथ एक नए चरण में प्रवेश किया है। हम आपको हमारे साथ व्यापार करने के लिए आमंत्रित करते हैं।"
+msgid ""
+"The transformative nature of cryptocurrency and its underlying technology has now entered a new phase with the advent of GreenCoinX the identifiable crypto currency. We "
+"invite you to trade with us."
+msgstr ""
+"Cryptocurrency और उसके अंतर्निहित प्रौद्योगिकी का परिवर्तनकारी प्रकृति अब GreenCoinX के आगमन से पहचाने जाने cryptocurrency के साथ एक नए चरण में प्रवेश किया है। हम आपको हमारे साथ व्यापार करने के "
+"लिए आमंत्रित करते हैं।"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\aboutus.html.php:24
 msgid "CONTACT US"
@@ -116,16 +129,12 @@ msgstr "प्रेस और मीडिया के लिए, कृपय
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\aboutus.html.php:34
 msgid ""
-"Notice: Crypto currency trading can be considered a high-risk activity, where prices are volatile, and can swing significantly from day to day. All trading decisions should be made independently by the user. "
-"SiiCrypto is not responsible for the trading decisions of users. The crypto currency market is new and unproven and may not grow. Currently, there is relatively small use of crypto currency in the retail and "
-"commercial marketplace in comparison to relatively large use by speculators.  In order to participate in the trading of crypto currency, users should be capable of evaluating the merits and risks of crypto "
-"currency trading and be able to bear the economic risk of potential losses. No material at this site should be considered as an offer by SiiCrypto to sell or a solicitation by SiiCrypto of any offer to buy crypto "
-"currencies."
+"Notice: Crypto currency trading can be considered a high-risk activity, where prices are volatile, and can swing significantly from day to day. All trading decisions should "
+"be made independently by the user. SiiCrypto is not responsible for the trading decisions of users. The crypto currency market is new and unproven and may not grow. "
+"Currently, there is relatively small use of crypto currency in the retail and commercial marketplace in comparison to relatively large use by speculators.  In order to "
+"participate in the trading of crypto currency, users should be capable of evaluating the merits and risks of crypto currency trading and be able to bear the economic risk "
+"of potential losses. No material at this site should be considered as an offer by SiiCrypto to sell or a solicitation by SiiCrypto of any offer to buy crypto currencies."
 msgstr ""
-"सूचना: क्रिप्टो मुद्रा व्यापार एक उच्च जोखिम गतिविधि, जहां कीमतें अस्थिर कर रहे हैं पर विचार किया जा सकता है, और दिन से दिन में काफी स्विंग कर सकते हैं। सभी व्यापारिक निर्णय उपयोगकर्ता द्वारा स्वतंत्र रूप से किया जाना चाहिए। SiiCrypto "
-"उपयोगकर्ताओं के व्यापार निर्णयों के लिए जिम्मेदार नहीं है। क्रिप्टो मुद्रा बाजार में नए और अप्रमाणित है और विकास नहीं हो सकता। वर्तमान में, वहाँ सटोरियों की अपेक्षाकृत बड़ी उपयोग करने के लिए की तुलना में खुदरा और वाणिज्यिक बाजार में क्रिप्टो मुद्रा के "
-"अपेक्षाकृत छोटे इस्तेमाल होता है। आदेश क्रिप्टो मुद्रा के व्यापार में भाग लेने के लिए, उन खूबियों और क्रिप्टो मुद्रा व्यापार के जोखिम का मूल्यांकन करने में सक्षम हो सकता है और संभावित नुकसान की आर्थिक जोखिम सहन करने में सक्षम होना चाहिए। इस साइट पर कोई "
-"सामग्री SiiCrypto द्वारा एक प्रस्ताव किसी भी प्रस्ताव के बेचने के लिए या एक याचना SiiCrypto द्वारा क्रिप्टो मुद्राओं खरीदने के रूप में माना जाना चाहिए।"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\FAQ.html.php:10
 msgid "FAQ"
@@ -157,7 +166,7 @@ msgstr "प्रत्ययी शुल्क"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\FAQ.html.php:18
 msgid "We charge"
-msgstr "हम चार्ज करते हैं"
+msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\FAQ.html.php:18
 msgid "per transaction."
@@ -165,7 +174,7 @@ msgstr "प्रति मूल्य दर्ज"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\FAQ.html.php:19 F:\Apache\www\TBG\siicrypto.com\app\views\company\FAQ.html.php:20
 msgid "If you"
-msgstr "अगर आप"
+msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\FAQ.html.php:19
 msgid "buy"
@@ -189,7 +198,7 @@ msgstr "हमारे शुल्क  Bitcoins के लायक है |"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\FAQ.html.php:20
 msgid "cent."
-msgstr "सेंट."
+msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\FAQ.html.php:23
 msgid "Deposits/Withdrawals"
@@ -197,7 +206,7 @@ msgstr "जमा / निकासी"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\FAQ.html.php:27
 msgid "For"
-msgstr "के लिये"
+msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\FAQ.html.php:27
 msgid "bank wire transfer"
@@ -212,167 +221,173 @@ msgid "All deposits and withdrawals need to be verified and cleared, please see 
 msgstr " जब आप लॉगिन करें प्रासंगिक (रिलेवेंट) अनुभाग देखें क्योंकि सभी जमा और निकासी सत्यापित (वेरिफ़िएद) )और स्पष्ट किये  जाने की जरूरत है |"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\FAQ.html.php:31
-msgid "VERY IMPORTANT: Please make sure to INCLUDE your CUSTOMER REFERENCE with your deposit, which you can find when you complete FUNDING on your account page, so that we can credit your account appropriately."
-msgstr "बहुत महत्वपूर्ण: कृपया गौर करें | जब आप खाते में राशी जमा करे दे की आप अपने कस्टमर रिफरेन्स को शामिल करे  जो की आपको  अपने खाते के पन्ने पर funding पूर्ण करने के पश्च्यात मिलेगी, ताकि हम आपके एकाउंटेंट में इस के मुताबिक क्रेडिट कर शके | "
+msgid ""
+"VERY IMPORTANT: Please make sure to INCLUDE your CUSTOMER REFERENCE with your deposit, which you can find when you complete FUNDING on your account page, so that we can "
+"credit your account appropriately."
+msgstr ""
+"बहुत महत्वपूर्ण: कृपया गौर करें | जब आप खाते में राशी जमा करे दे की आप अपने कस्टमर रिफरेन्स को शामिल करे  जो की आपको  अपने खाते के पन्ने पर funding पूर्ण करने के पश्च्यात मिलेगी, ताकि हम आपके एकाउंटेंट में "
+"इस के मुताबिक क्रेडिट कर शके | "
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\FAQ.html.php:32
 msgid ""
-"We cannot be held liable if you send us money with no reference and have not completed a deposit request via your account (though with recorded delivery we can attempt to return any such fiat or solve such "
-"matters)."
+"We cannot be held liable if you send us money with no reference and have not completed a deposit request via your account (though with recorded delivery we can attempt to "
+"return any such fiat or solve such matters)."
 msgstr ""
-"हम जिम्मेदार नहीं ठहराया जा सकता है, तो आप हमें कोई संदर्भ के साथ पैसा भेजने और अपने खाते के माध्यम से एक जमा अनुरोध पूरा नहीं किया है (हालांकि दर्ज वितरण के साथ हम किसी भी ऐसे फिएट वापसी या इस तरह के मामलों को हल करने का प्रयास कर सकते हैं)।"
+"हम जिम्मेदार नहीं ठहराया जा सकता है, तो आप हमें कोई संदर्भ के साथ पैसा भेजने और अपने खाते के माध्यम से एक जमा अनुरोध पूरा नहीं किया है (हालांकि दर्ज वितरण के साथ हम किसी भी ऐसे फिएट वापसी या इस तरह "
+"के मामलों को हल करने का प्रयास कर सकते हैं)।"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\FAQ.html.php:33
-msgid "We cannot be held liable if you send us fiat with no reference, no deposit request, and no recorded delivery, and will treat such activity as suspicious and report it to the relevant authorities."
-msgstr "हम जिम्मेदार नहीं ठहराया जा सकता है, तो आप हमें कोई संदर्भ, नहीं जमा अनुरोध है, और कोई दर्ज की डिलीवरी के साथ फिएट भेजने के लिए, और इस तरह की गतिविधि के रूप में संदिग्ध इलाज के लिए और संबंधित अधिकारियों को यह रिपोर्ट करेंगे।"
+msgid ""
+"We cannot be held liable if you send us fiat with no reference, no deposit request, and no recorded delivery, and will treat such activity as suspicious and report it to "
+"the relevant authorities."
+msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\FAQ.html.php:34
 msgid "Example Reference"
-msgstr "उदाहरण संदर्भ"
+msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\FAQ.html.php:35
 msgid "Account name"
-msgstr "खाते का नाम"
+msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\FAQ.html.php:36
 msgid "Reference number"
-msgstr "संदर्भ संख्या"
+msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\FAQ.html.php:37
 msgid "Amount"
-msgstr "रकम"
+msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\FAQ.html.php:39
 msgid "When we receive your funds we verify with your deposit request and credit your SiiCrypto.com account the amount."
-msgstr "हम अपने धन प्राप्त जब हम अपने जमा अनुरोध के साथ सत्यापित करने और खाते में राशि आपके क्रेडिट SiiCrypto.com।"
+msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\FAQ.html.php:41
 msgid "Deposits"
-msgstr "जमाओं"
+msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\FAQ.html.php:42
 msgid "Once fiat amounts are received your account gets credited the same amount, just the same as doing a bank transfer, without the bank."
-msgstr "एक बार जब फिएट मात्रा में प्राप्त कर रहे हैं आपका खाता बैंक बिना ही राशि, बैंक हस्तांतरण कर के रूप में सिर्फ एक ही है, श्रेय दिया जाता है।"
+msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\FAQ.html.php:44
 msgid "Withdrawals"
-msgstr "निकासी"
+msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\funding.html.php:1
 msgid "Funding"
-msgstr "अनुदान"
+msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\funding.html.php:4
 msgid ""
-"To wire funds or to withdraw funds, access your Dashboard page and click on the Currency you require. You will then access the Funding page. Please follow the instructions to wire funds to your account or to "
-"withdraw funds from your account."
+"To wire funds or to withdraw funds, access your Dashboard page and click on the Currency you require. You will then access the Funding page. Please follow the instructions "
+"to wire funds to your account or to withdraw funds from your account."
 msgstr ""
-"धन का तार करने के लिए या पैसे निकालने के लिए, अपने डैशबोर्ड पृष्ठ का उपयोग और मुद्रा की आवश्यकता पर क्लिक करें। फिर आप अनुदान पेज का उपयोग करेंगे। अपने खाते में तार धन के लिए दिए गए निर्देशों का पालन करें या अपने खाते से पैसे निकालने के लिए कृपया।"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\funding.html.php:5
 msgid "Deposit and Withdrawal fees"
-msgstr "जमा और निकासी की फीस"
+msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\funding.html.php:6
 msgid "Bank charges are as following"
-msgstr "बैंक प्रभार के रूप में निम्नलिखित हैं"
+msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\funding.html.php:7
 msgid "Inbound Wire 25 Euro and Outbound Wire minimum 50 Euro or 0.10% with a maximum of Euro 500."
-msgstr "भीतर का तार 25 यूरो और आउटबाउंड तार कम से कम 50 यूरो या यूरो 500 की एक अधिकतम के साथ 0.10%।"
+msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\howitworks.html.php:6
 msgid "How it works"
-msgstr "यह काम किस प्रकार करता है"
+msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\howitworks.html.php:11
 msgid "First time users need to open a GreenCoinX wallet at"
-msgstr "पहली बार उन पर एक GreenCoinX बटुए को खोलने की जरूरत"
+msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\howitworks.html.php:12
 msgid "Upon receipt of your unique KYC number, open a SiiCrypto account."
-msgstr "अपने अद्वितीय केवाईसी नंबर प्राप्त होने पर, एक SiiCrypto खाता खोलने के।"
+msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\howitworks.html.php:13
 msgid "To fund your SiiCrypto exchange wallet go to the REGISTER page and open an account, with your KYC number."
-msgstr "निधि के लिए अपनी साइट क्रिप्टो विनिमय बटुए रजिस्टर पृष्ठ पर जाने के लिए और अपने केवाईसी संख्या के साथ एक खाता खोलने।"
+msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\howitworks.html.php:14
 msgid "Sign in to your account using 2FA (Two Factor Authorization)."
-msgstr "आपके अकाउंट 2FA का उपयोग कर (दो फैक्टर प्राधिकरण) में प्रवेश करें।"
+msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\howitworks.html.php:15
 msgid "Fund your SiiCrypto account"
-msgstr "SiiCrypto खाते में अपने धनराशि जमा करे"
+msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\howitworks.html.php:17
 msgid "send GreenCoinX to your account at the master SiiCrypto GreenCoinX wallet through the page"
-msgstr "पेज के माध्यम से मुख्य SiiCrypto GreenCoinX बटुए पर अपने खाते GreenCoinX भेजने के लिए"
+msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\howitworks.html.php:17 F:\Apache\www\TBG\siicrypto.com\app\views\company\howitworks.html.php:26
 msgid "Funding/XGC"
-msgstr "अनुदान / XGC"
+msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\howitworks.html.php:17 F:\Apache\www\TBG\siicrypto.com\app\views\company\howitworks.html.php:19
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\howitworks.html.php:26
 msgid "by clicking on XGC on the Dashboard or"
-msgstr "डैशबोर्ड पर XGC पर क्लिक करके या"
+msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\howitworks.html.php:19
 msgid "send Bitcoin to your account at the master SiiCrypto Bitcoin wallet through the page"
-msgstr "पेज के माध्यम से मुख्य SiiCrypto Bitcoin बटुए पर अपने खाते Bitcoin भेजने के लिए"
+msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\howitworks.html.php:19 F:\Apache\www\TBG\siicrypto.com\app\views\company\howitworks.html.php:28
 msgid "Funding/BTC"
-msgstr "अनुदान / BTC"
+msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\howitworks.html.php:21
 msgid "send fiat currency to your account at the master SiiCrypto bank account via  a bank wire (details of which are given on our funding fiat page for each currency"
-msgstr "एक बैंक तार के माध्यम से मास्टर SiiCrypto बैंक खाते पर अपने खाते फिएट मुद्रा भेजने (विवरण जिनमें से प्रत्येक मुद्रा के लिए हमारे वित्त पोषण फिएट पेज पर दिए गए हैं"
+msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\howitworks.html.php:21 F:\Apache\www\TBG\siicrypto.com\app\views\company\howitworks.html.php:24
 msgid "USD"
-msgstr "USD"
+msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\howitworks.html.php:21 F:\Apache\www\TBG\siicrypto.com\app\views\company\howitworks.html.php:24
 msgid "CAD"
-msgstr "CAD"
+msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\howitworks.html.php:21 F:\Apache\www\TBG\siicrypto.com\app\views\company\howitworks.html.php:24
 msgid "EUR"
-msgstr "EUR"
+msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\howitworks.html.php:21 F:\Apache\www\TBG\siicrypto.com\app\views\company\howitworks.html.php:24
 msgid "and"
-msgstr "और"
+msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\howitworks.html.php:21 F:\Apache\www\TBG\siicrypto.com\app\views\company\howitworks.html.php:24
 msgid "GBP"
-msgstr "GBP"
+msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\howitworks.html.php:23
 msgid "To execute a transaction go to the Dashboard page and choose the type of order you wish to place. When executed your SiiCrypto account will be updated."
-msgstr "निष्पादित करने के लिए एक सौदे के डैशबोर्ड पृष्ठ पर जाने के लिए और आदेश जगह करना चाहते हैं के प्रकार का चयन करें। जब निष्पादित अपने SiiCrypto अकाउंट को अपडेट किया जाएगा।"
+msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\howitworks.html.php:24
 msgid "To request a withdrawal of fiat currency go to funding fiat page for each currency"
-msgstr "फिएट मुद्रा की वापसी का अनुरोध करने के लिए प्रत्येक मुद्रा के लिए धन फिएट पृष्ठ पर जाने"
+msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\howitworks.html.php:24
 msgid "by clicking on the currency you require."
-msgstr "मुद्रा आप की आवश्यकता पर क्लिक करके।"
+msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\howitworks.html.php:26
 msgid "Withdraw from your SiiCrypto account"
-msgstr "अपने SiiCrypto खाते से वापस ले लें"
+msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\howitworks.html.php:26
 msgid "withdraw GreenCoinX from your account to your GreenCoinX wallet through the page"
-msgstr "पेज के माध्यम से अपने GreenCoinX बटुए को अपने GreenCoinX खाते से वापस लेने "
+msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\howitworks.html.php:28
 msgid "withdraw Bitcoin from your account to your Bitcoin wallet through the page"
-msgstr "पेज के माध्यम से अपने Bitcoin बटुए को अपने Bitcoin खाते से वापस लेने "
+msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\howitworks.html.php:28
 msgid "by clicking on BTC on the Dashboard or"
@@ -384,8 +399,8 @@ msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\howitworks.html.php:37
 msgid ""
-"Note: WE CHARGE NO COMMISSION FOR TRADES. Administration fees, to cover the cost of the fiduciary trust where client funds are held, are 0.2% or 1/5th of one percent per transaction. Wire transfers in or out of "
-"your fiat currency account. Inbound Wire 25 Euro and Outbound Wire minimum 50 Euro or 0.10% with a maximum of Euro 500."
+"Note: WE CHARGE NO COMMISSION FOR TRADES. Administration fees, to cover the cost of the fiduciary trust where client funds are held, are 0.2% or 1/5th of one percent per "
+"transaction. Wire transfers in or out of your fiat currency account. Inbound Wire 25 Euro and Outbound Wire minimum 50 Euro or 0.10% with a maximum of Euro 500."
 msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\press.html.php:1
@@ -426,7 +441,9 @@ msgid "Privacy Policy"
 msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:2
-msgid "This Privacy Policy governs the manner in which SiiCrypto. (operating as SiiCrypto) collects, uses, maintains and discloses information collected from users (each, a &#039;User&#039;) of the"
+msgid ""
+"This Privacy Policy governs the manner in which SiiCrypto. (operating as SiiCrypto) collects, uses, maintains and discloses information collected from users (each, a &#039;"
+"User&#039;) of the"
 msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:2
@@ -439,10 +456,11 @@ msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:5
 msgid ""
-"We may collect personal identification information from Users in a variety of ways, including, but not limited to, when Users visit our site, register on the site, and in connection with other activities, "
-"services, features or resources we make available on our Site. Users may be asked for, as appropriate, name, email address, proof of address, government photo issued ID, and contact phone number. We will collect "
-"personal identification information from Users only if they voluntarily submit such information to us. Users can always refuse to supply personally identification information, except that it may prevent them from "
-"registering as a customer and engaging in certain Site related activities."
+"We may collect personal identification information from Users in a variety of ways, including, but not limited to, when Users visit our site, register on the site, and in "
+"connection with other activities, services, features or resources we make available on our Site. Users may be asked for, as appropriate, name, email address, proof of "
+"address, government photo issued ID, and contact phone number. We will collect personal identification information from Users only if they voluntarily submit such "
+"information to us. Users can always refuse to supply personally identification information, except that it may prevent them from registering as a customer and engaging in "
+"certain Site related activities."
 msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:8
@@ -452,8 +470,8 @@ msgstr ""
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:9
 msgid ""
 "We may collect non-personal identification information about Users whenever they interact with our Site. \n"
-"Non-personal identification information may include the browser name, the type of computer and technical information about Users, means of connection to our Site, such as the operating system and the Internet "
-"service providers utilized and other similar information."
+"Non-personal identification information may include the browser name, the type of computer and technical information about Users, means of connection to our Site, such as "
+"the operating system and the Internet service providers utilized and other similar information."
 msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:12
@@ -462,8 +480,9 @@ msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:14
 msgid ""
-"Our Site may use &#039;cookies&#039; to enhance User experience. User&#039;s web browser places cookies on their hard drive for record-keeping purposes and sometimes to track information about them. User may "
-"choose to set their web browser to refuse cookies, or to alert you when cookies are being sent. If they do so, note that some parts of the Site may not function properly."
+"Our Site may use &#039;cookies&#039; to enhance User experience. User&#039;s web browser places cookies on their hard drive for record-keeping purposes and sometimes to "
+"track information about them. User may choose to set their web browser to refuse cookies, or to alert you when cookies are being sent. If they do so, note that some parts "
+"of the Site may not function properly."
 msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:17
@@ -504,8 +523,8 @@ msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:27
 msgid ""
-"We may use the information Users provide about themselves when placing an order only to provide service to that order. We do not share this information with outside parties except to the extent necessary to "
-"provide the service."
+"We may use the information Users provide about themselves when placing an order only to provide service to that order. We do not share this information with outside parties "
+"except to the extent necessary to provide the service."
 msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:28
@@ -513,7 +532,9 @@ msgid "To send periodic emails"
 msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:29
-msgid "We may use the email address to send User information and updates pertaining to their order. It may also be used to respond to their inquiries, questions, and/or other requests."
+msgid ""
+"We may use the email address to send User information and updates pertaining to their order. It may also be used to respond to their inquiries, questions, and/or other "
+"requests."
 msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:33
@@ -522,12 +543,13 @@ msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:35
 msgid ""
-"We adopt appropriate data collection, storage and processing practices and security measures to protect against unauthorized access, alteration, disclosure or destruction of your personal information, username, "
-"password, transaction information and data stored on our Site."
+"We adopt appropriate data collection, storage and processing practices and security measures to protect against unauthorized access, alteration, disclosure or destruction "
+"of your personal information, username, password, transaction information and data stored on our Site."
 msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:36
-msgid "Sensitive and private data exchange between the Site and its Users happens over a SSL secured communication channel and is encrypted and protected with digital signatures."
+msgid ""
+"Sensitive and private data exchange between the Site and its Users happens over a SSL secured communication channel and is encrypted and protected with digital signatures."
 msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:38
@@ -544,9 +566,9 @@ msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:43
 msgid ""
-"SiiCrypto (SiiCrypto.com) has the discretion to update this privacy policy at any time. When we do, we will post a notification on the main page of our Site, and revise the updated date at the bottom of this "
-"page. We encourage Users to frequently check this page for any changes to stay informed about how we are helping to protect the personal information we collect. You acknowledge and agree that it is your "
-"responsibility to review this privacy policy periodically and become aware of modifications."
+"SiiCrypto (SiiCrypto.com) has the discretion to update this privacy policy at any time. When we do, we will post a notification on the main page of our Site, and revise the "
+"updated date at the bottom of this page. We encourage Users to frequently check this page for any changes to stay informed about how we are helping to protect the personal "
+"information we collect. You acknowledge and agree that it is your responsibility to review this privacy policy periodically and become aware of modifications."
 msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:46
@@ -555,8 +577,8 @@ msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:47
 msgid ""
-"By using this Site, you signify your acceptance of this policy and terms of service. If you do not agree to this policy, please do not use our Site. Your continued use of the Site following the posting of changes "
-"to this policy will be deemed your acceptance of those changes."
+"By using this Site, you signify your acceptance of this policy and terms of service. If you do not agree to this policy, please do not use our Site. Your continued use of "
+"the Site following the posting of changes to this policy will be deemed your acceptance of those changes."
 msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:50
@@ -633,12 +655,14 @@ msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:70
 msgid ""
-"SiiCrypto reserves the right to amend, change, add or remove sections of these Terms at any time. Customers will be notified via a News Release on the SiiCrypto site. It is Customers responsibility to review any "
-"such amendments."
+"SiiCrypto reserves the right to amend, change, add or remove sections of these Terms at any time. Customers will be notified via a News Release on the SiiCrypto site. It is "
+"Customers responsibility to review any such amendments."
 msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:71
-msgid "Customers agree that continued use of our Site signifies that they accept and agree to the changes and that all relations with us are subject to these Terms of Service and any amendments."
+msgid ""
+"Customers agree that continued use of our Site signifies that they accept and agree to the changes and that all relations with us are subject to these Terms of Service and "
+"any amendments."
 msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:72
@@ -711,8 +735,8 @@ msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:87
 msgid ""
-"refers to the fee which is payable to SiiCrypto on each Transaction. Fee&#039;s at this time are 0.2% per transaction. For Purchases and Sales Transactions, commission is charged to each customer per transaction "
-"in the received denomination."
+"refers to the fee which is payable to SiiCrypto on each Transaction. Fee&#039;s at this time are 0.2% per transaction. For Purchases and Sales Transactions, commission is "
+"charged to each customer per transaction in the received denomination."
 msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:89
@@ -732,7 +756,9 @@ msgid "means"
 msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:92
-msgid "The agreement between the Buyer and the Seller to exchange Crypto-currency on the Platform for currencies at a commonly agreed rate (&#039;Crypto-currency Purchase Transaction&#039;)"
+msgid ""
+"The agreement between the Buyer and the Seller to exchange Crypto-currency on the Platform for currencies at a commonly agreed rate (&#039;Crypto-currency Purchase "
+"Transaction&#039;)"
 msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:93
@@ -753,30 +779,36 @@ msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:102
 msgid ""
-"Customers agree to provide SiiCrypto with complete and accurate information about themselves as required by the verification process. Customers accept it is their responsibility to update any relevant information "
-"and that it is their liability of any losses incurred, and that accounts may be frozen until relevant information is updated suitably."
+"Customers agree to provide SiiCrypto with complete and accurate information about themselves as required by the verification process. Customers accept it is their "
+"responsibility to update any relevant information and that it is their liability of any losses incurred, and that accounts may be frozen until relevant information is "
+"updated suitably."
 msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:103
 msgid ""
-"Customers are responsible for the security and confidentiality of their Account information, including but not limited to their password, transactions and other related matters. Customers accept it is their "
-"responsibility to contact SiiCrypto immediately if they suspect any unauthorized use of their Account, or any other breach of security by email addressed to"
+"Customers are responsible for the security and confidentiality of their Account information, including but not limited to their password, transactions and other related "
+"matters. Customers accept it is their responsibility to contact SiiCrypto immediately if they suspect any unauthorized use of their Account, or any other breach of security "
+"by email addressed to"
 msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:104
-msgid "Customers agree that all Accounts are personal Accounts, in that any linked bank accounts must be in their name. And that no business Account will be linked unless requested via email to"
+msgid ""
+"Customers agree that all Accounts are personal Accounts, in that any linked bank accounts must be in their name. And that no business Account will be linked unless "
+"requested via email to"
 msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:105
 msgid ""
-"SiiCrypto may request identification information (such as invoices, Government issued photographic identification, utility bill, recognised e-bills, residential certificate, banking information, or similar) "
-"depending on the amounts deposited on the Accounts or the presence of suspicious activity. Identification of the bank account from which funds are transferred to the Account may also be requested. In certain "
-"cases extra confirmation of certain documents may be requested from third parties. Transactions may be frozen until the identity check has been considered satisfactory by SiiCrypto."
+"SiiCrypto may request identification information (such as invoices, Government issued photographic identification, utility bill, recognised e-bills, residential "
+"certificate, banking information, or similar) depending on the amounts deposited on the Accounts or the presence of suspicious activity. Identification of the bank account "
+"from which funds are transferred to the Account may also be requested. In certain cases extra confirmation of certain documents may be requested from third parties. "
+"Transactions may be frozen until the identity check has been considered satisfactory by SiiCrypto."
 msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:106
 msgid ""
-"Customers accept that a telephone call may be initiated by SiiCrypto to verify any of the following, but not limited to: verifying identity, transactions, random security checks, or any other related activity."
+"Customers accept that a telephone call may be initiated by SiiCrypto to verify any of the following, but not limited to: verifying identity, transactions, random security "
+"checks, or any other related activity."
 msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:107
@@ -793,8 +825,9 @@ msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:111
 msgid ""
-"Customers accept that once they submit offers to buy or sell Crypto-currency they enter into an Agreement with another Customer to transfer fiat for Crypto-currency or vice versa as soon as their offer matches "
-"the Price set in an offer submitted by another Customer. Buyer and Seller agree that once their offers match that their offers are binding and may not be reversed."
+"Customers accept that once they submit offers to buy or sell Crypto-currency they enter into an Agreement with another Customer to transfer fiat for Crypto-currency or vice "
+"versa as soon as their offer matches the Price set in an offer submitted by another Customer. Buyer and Seller agree that once their offers match that their offers are "
+"binding and may not be reversed."
 msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:112
@@ -803,20 +836,20 @@ msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:113
 msgid ""
-"The matching of offers and transfer of funds is a service provided by SiiCrypto via the Platform. Once Buyers and Sellers offers have been matched, Customers forfeit the ability to cancel any Crypto-currency "
-"Transaction."
+"The matching of offers and transfer of funds is a service provided by SiiCrypto via the Platform. Once Buyers and Sellers offers have been matched, Customers forfeit the "
+"ability to cancel any Crypto-currency Transaction."
 msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:114
 msgid ""
-"Customers accept that transferring Crypto-currencys to their SiiCrypto account or to other addresses is reliant upon the protocol and any &#039;miner&#039; fee they choose to pay and that SiiCrypto has no "
-"influence in this."
+"Customers accept that transferring Crypto-currencys to their SiiCrypto account or to other addresses is reliant upon the protocol and any &#039;miner&#039; fee they choose "
+"to pay and that SiiCrypto has no influence in this."
 msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:115
 msgid ""
-"Upon matching of the offers of Buyer and Seller, SiiCrypto has the sole authority to permit the transfer of the amount corresponding to the Transaction Price minus the Commission from the Buyer&#039;s Account to "
-"the Seller."
+"Upon matching of the offers of Buyer and Seller, SiiCrypto has the sole authority to permit the transfer of the amount corresponding to the Transaction Price minus the "
+"Commission from the Buyer&#039;s Account to the Seller."
 msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:116
@@ -840,7 +873,8 @@ msgid "DEPOSITS &amp; WITHDRAWALS"
 msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:122
-msgid "Customers agree to submit a deposit request before transferring any funds to their SiiCrypto account. Customers agree to abide by the limits set by SiiCrypto in deposit."
+msgid ""
+"Customers agree to submit a deposit request before transferring any funds to their SiiCrypto account. Customers agree to abide by the limits set by SiiCrypto in deposit."
 msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:123
@@ -853,20 +887,22 @@ msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:127
 msgid ""
-"You must not misuse our site by knowingly introducing viruses, trojans, worms, logic bombs or other material which is malicious or technologically harmful. You must not attempt to gain unauthorised access to our "
-"site, the server on which our site is stored or any server, computer or database connected to our site. You must not attack our site via a denial-of-service attack or a distributed denial-of service attack."
+"You must not misuse our site by knowingly introducing viruses, trojans, worms, logic bombs or other material which is malicious or technologically harmful. You must not "
+"attempt to gain unauthorised access to our site, the server on which our site is stored or any server, computer or database connected to our site. You must not attack our "
+"site via a denial-of-service attack or a distributed denial-of service attack."
 msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:128
 msgid ""
-"By breaching this provision, you would commit a criminal offence and SiiCrypto will report any such breach to the relevant law enforcement authorities and we will co-operate with those authorities by disclosing "
-"your identity to them. In the event of such a breach, your right to use our site will cease immediately."
+"By breaching this provision, you would commit a criminal offence and SiiCrypto will report any such breach to the relevant law enforcement authorities and we will co-"
+"operate with those authorities by disclosing your identity to them. In the event of such a breach, your right to use our site will cease immediately."
 msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:129
 msgid ""
-"SiiCrypto will not be liable for any loss or damage caused by a distributed denial-of-service attack, viruses or other technologically harmful material that may infect your computer equipment, computer programs, "
-"data or other proprietary material due to your use of our site or to your downloading of any material posted on it, or on any website linked to it."
+"SiiCrypto will not be liable for any loss or damage caused by a distributed denial-of-service attack, viruses or other technologically harmful material that may infect your "
+"computer equipment, computer programs, data or other proprietary material due to your use of our site or to your downloading of any material posted on it, or on any website "
+"linked to it."
 msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:131
@@ -878,7 +914,9 @@ msgid "Limitation of Warranties"
 msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:134
-msgid "By using our website, you understand and agree that all Resources SiiCrypto provides are &#039;as is&#039; and &#039;as available&#039;. This means that SiiCrypto do not represent or warrant to you that:"
+msgid ""
+"By using our website, you understand and agree that all Resources SiiCrypto provides are &#039;as is&#039; and &#039;as available&#039;. This means that SiiCrypto do not "
+"represent or warrant to you that:"
 msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:135
@@ -903,14 +941,14 @@ msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:141
 msgid ""
-"any content downloaded or otherwise obtained through the use of our Resources is done at your own discretion and risk, and that you are solely responsible for any damage to your computer or other devices for any "
-"loss of data that may result from the download of such content."
+"any content downloaded or otherwise obtained through the use of our Resources is done at your own discretion and risk, and that you are solely responsible for any damage to "
+"your computer or other devices for any loss of data that may result from the download of such content."
 msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:142
 msgid ""
-"no information or advice, whether expressed, implied, oral or written, obtained by you from SiiCrypto or through any Resources SiiCrypto provides shall create any warranty, guarantee, or conditions of any kind, "
-"except for those expressly outlined in this User Agreement."
+"no information or advice, whether expressed, implied, oral or written, obtained by you from SiiCrypto or through any Resources SiiCrypto provides shall create any warranty, "
+"guarantee, or conditions of any kind, except for those expressly outlined in this User Agreement."
 msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:145
@@ -919,9 +957,10 @@ msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:147
 msgid ""
-"In conjunction with the Limitation of Warranties as explained above, you expressly understand and agree that any claim against us shall be limited to the amount you paid, if any, for use of products and/or "
-"services. SiiCrypto will not be liable for any direct, indirect, incidental, consequential or exemplary loss or damages which may be incurred by you as a result of using our Resources, or as a result of any "
-"changes, data loss or corruption, cancellation, loss of access, or downtime to the full extent that applicable limitation of liability laws apply"
+"In conjunction with the Limitation of Warranties as explained above, you expressly understand and agree that any claim against us shall be limited to the amount you paid, "
+"if any, for use of products and/or services. SiiCrypto will not be liable for any direct, indirect, incidental, consequential or exemplary loss or damages which may be "
+"incurred by you as a result of using our Resources, or as a result of any changes, data loss or corruption, cancellation, loss of access, or downtime to the full extent "
+"that applicable limitation of liability laws apply"
 msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:148
@@ -929,20 +968,22 @@ msgid "Customers will be held solely liable for losses incurred by SiiCrypto or 
 msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:149
-msgid "Customers affirm and warrant that they are the legitimate owners of represented funds of any denomination used in relation to the Platform and the Services provided by SiiCrypto."
+msgid ""
+"Customers affirm and warrant that they are the legitimate owners of represented funds of any denomination used in relation to the Platform and the Services provided by "
+"SiiCrypto."
 msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:150
 msgid ""
-"Nothing in these terms excludes or limits the liability of either party for fraud, death or personal injury caused by its negligence, breach of terms implied by operation of law, or any other liability which may "
-"not by law be limited or excluded."
+"Nothing in these terms excludes or limits the liability of either party for fraud, death or personal injury caused by its negligence, breach of terms implied by operation "
+"of law, or any other liability which may not by law be limited or excluded."
 msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:151
 msgid ""
-"Subject to the foregoing, SiiCrypto&#039;s aggregate liability in respect of claims based on events arising out of or in connection with a Customer&#039;s use of the Site, Platform and/or Services, whether in "
-"contract or tort (including negligence) or otherwise, shall in no circumstances exceed the total amount held on Account for the Member making a claim less any amount of Commission that may be due and payable in "
-"respect of such Account."
+"Subject to the foregoing, SiiCrypto&#039;s aggregate liability in respect of claims based on events arising out of or in connection with a Customer&#039;s use of the Site, "
+"Platform and/or Services, whether in contract or tort (including negligence) or otherwise, shall in no circumstances exceed the total amount held on Account for the Member "
+"making a claim less any amount of Commission that may be due and payable in respect of such Account."
 msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:153
@@ -951,8 +992,9 @@ msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:154
 msgid ""
-"To the fullest extent permitted by applicable law,  customer hereby agree to indemnify SiiCrypto and its affiliates against any action, liability, cost, claim, loss, damage, proceeding or expense suffered or "
-"incurred if direct or not directly arising from customers use of SiiCrypto&#039;s Site, Platform, Services or from customers violation of these Terms of Service."
+"To the fullest extent permitted by applicable law,  customer hereby agree to indemnify SiiCrypto and its affiliates against any action, liability, cost, claim, loss, "
+"damage, proceeding or expense suffered or incurred if direct or not directly arising from customers use of SiiCrypto&#039;s Site, Platform, Services or from customers "
+"violation of these Terms of Service."
 msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:157
@@ -961,10 +1003,10 @@ msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:158
 msgid ""
-"Customers agrees that SiiCrypto may, at our sole discretion, suspend or terminate a customers access to all or part of our website and Resources with or without notice and for any reason, including, without "
-"limitation, breach of this User Agreement. Any suspected illegal, fraudulent or abusive activity may be grounds for terminating customers relationship and may be referred to appropriate law enforcement "
-"authorities. Upon suspension or termination, customers right to use the Resources SiiCrypto provides will immediately cease, and SiiCrypto reserve the right to remove or delete any information that a customer may "
-"have on file with us, including any account or login information."
+"Customers agrees that SiiCrypto may, at our sole discretion, suspend or terminate a customers access to all or part of our website and Resources with or without notice and "
+"for any reason, including, without limitation, breach of this User Agreement. Any suspected illegal, fraudulent or abusive activity may be grounds for terminating customers "
+"relationship and may be referred to appropriate law enforcement authorities. Upon suspension or termination, customers right to use the Resources SiiCrypto provides will "
+"immediately cease, and SiiCrypto reserve the right to remove or delete any information that a customer may have on file with us, including any account or login information."
 msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:159
@@ -973,18 +1015,20 @@ msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:160
 msgid ""
-"SiiCrypto also reserve the right to cancel unconfirmed Accounts or Accounts that have been inactive for a period of 4 months or more, or to modify or discontinue our Site or Platform. Customers agree that "
-"SiiCrypto will not be liable to them or to any third party for termination of their Account or access to the Site."
+"SiiCrypto also reserve the right to cancel unconfirmed Accounts or Accounts that have been inactive for a period of 4 months or more, or to modify or discontinue our Site "
+"or Platform. Customers agree that SiiCrypto will not be liable to them or to any third party for termination of their Account or access to the Site."
 msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:161
 msgid ""
-"Customers agree and acknowledge that SiiCrypto can suspend their Account at will until the relevant Customer provides SiiCrypto with documents evidencing their identity and/or any other information SiiCrypto "
-"deems as necessary to secure the Account, Transactions, Platform, or services SiiCrypto provides."
+"Customers agree and acknowledge that SiiCrypto can suspend their Account at will until the relevant Customer provides SiiCrypto with documents evidencing their identity and/"
+"or any other information SiiCrypto deems as necessary to secure the Account, Transactions, Platform, or services SiiCrypto provides."
 msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:162
-msgid "SiiCrypto reserve the right to refuse an Account and relevant services to any applicant or current Customer for, but not limited to, suspected fraud, criminal activity or abusive behaviour."
+msgid ""
+"SiiCrypto reserve the right to refuse an Account and relevant services to any applicant or current Customer for, but not limited to, suspected fraud, criminal activity or "
+"abusive behaviour."
 msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:164
@@ -997,8 +1041,8 @@ msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:166
 msgid ""
-"If a competent judicial authority deems any provision of the Terms unenforceable, that provision will be enforced to the maximum extent permissible, and all remaining provisions will remain in full force and "
-"effect."
+"If a competent judicial authority deems any provision of the Terms unenforceable, that provision will be enforced to the maximum extent permissible, and all remaining "
+"provisions will remain in full force and effect."
 msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:170
@@ -1011,8 +1055,8 @@ msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\riskmanagement.html.php:3
 msgid ""
-"We aim to be a leading example of best practices and provide a secure and safe environment for you to transact with crypto currency. Our procedures seek to provide a secure exchange environment to protect the "
-"user."
+"We aim to be a leading example of best practices and provide a secure and safe environment for you to transact with crypto currency. Our procedures seek to provide a secure "
+"exchange environment to protect the user."
 msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\riskmanagement.html.php:4
@@ -1041,9 +1085,10 @@ msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\riskmanagement.html.php:14
 msgid ""
-"All client fiat funds are held in an escrow account supervised by ILS World via their Swiss subsidiary ILS Switzerland. ILS Switzerland offers fiduciary services from one of the world's safest and most stable "
-"jurisdictions. The ILS World office in Geneva has built up a high level team of lawyers and trust professionals and is the primary ILS World centre of expertise for the provision of services to private clients. "
-"The provision by ILS of its independent impartial fiduciary services to the SiiCrypto client funds account ensures that client funds can only be accessed for client trading activities."
+"All client fiat funds are held in an escrow account supervised by ILS World via their Swiss subsidiary ILS Switzerland. ILS Switzerland offers fiduciary services from one "
+"of the world's safest and most stable jurisdictions. The ILS World office in Geneva has built up a high level team of lawyers and trust professionals and is the primary ILS "
+"World centre of expertise for the provision of services to private clients. The provision by ILS of its independent impartial fiduciary services to the SiiCrypto client "
+"funds account ensures that client funds can only be accessed for client trading activities."
 msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\riskmanagement.html.php:17
@@ -1116,10 +1161,11 @@ msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\security.html.php:45
 msgid ""
-"All client fiat funds are held in an escrow account supervised by ILS Fiduciaries (Switzerland) Sarl  the Swiss branch of ILS World, a global provider of independent fiduciary services. ILS Fiduciaries "
-"(Switzerland) offers fiduciary services from one of the world's safest and most stable jurisdictions. The ILS World office in Geneva has built up a high level team of lawyers and trust professionals and is the "
-"primary ILS World centre of expertise for the provision of services to private clients. The provision by ILS of its independent impartial fiduciary services to the SiiCrypto client funds account ensures that "
-"client funds can only be accessed for client trading activities."
+"All client fiat funds are held in an escrow account supervised by ILS Fiduciaries (Switzerland) Sarl  the Swiss branch of ILS World, a global provider of independent "
+"fiduciary services. ILS Fiduciaries (Switzerland) offers fiduciary services from one of the world's safest and most stable jurisdictions. The ILS World office in Geneva has "
+"built up a high level team of lawyers and trust professionals and is the primary ILS World centre of expertise for the provision of services to private clients. The "
+"provision by ILS of its independent impartial fiduciary services to the SiiCrypto client funds account ensures that client funds can only be accessed for client trading "
+"activities."
 msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\verification.html.php:7
@@ -1135,7 +1181,9 @@ msgid "Users will complete an online \"Know Your Client\" verification process w
 msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\verification.html.php:11
-msgid "SiiCrypto.com reserve the right to seek more information to verify a customer's identity, and/or to refuse an account if the customer's identity is not verified to our requirement."
+msgid ""
+"SiiCrypto.com reserve the right to seek more information to verify a customer's identity, and/or to refuse an account if the customer's identity is not verified to our "
+"requirement."
 msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\verification.html.php:12
@@ -1563,8 +1611,8 @@ msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:112
 msgid ""
-"The promise of crypto currency was always the fast and inexpensive transfer of funds worldwide, while bypassing the banking system.Until GreenCoinX this has been impeded by identity concerns. Now GreenCoinX has "
-"made this promise a reality by its KYC capability."
+"The promise of crypto currency was always the fast and inexpensive transfer of funds worldwide, while bypassing the banking system.Until GreenCoinX this has been impeded by "
+"identity concerns. Now GreenCoinX has made this promise a reality by its KYC capability."
 msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:155
@@ -1580,7 +1628,9 @@ msgid "We regret to advise you that due to regulatory issues residents of some U
 msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:161
-msgid "Your state requires additional licensing which we intend to complete as soon as possible.<br><br> We will inform you when this licensing issue has been resolved. Thank you for your patience."
+msgid ""
+"Your state requires additional licensing which we intend to complete as soon as possible.<br><br> We will inform you when this licensing issue has been resolved. Thank you "
+"for your patience."
 msgstr "अपने राज्य के अतिरिक्त लाइसेंस है जो हम जितनी जल्दी हो सके पूरा करने का इरादा आवश्यकता है। <br> <br> हम आपको सूचित करेंगे जब इस लाइसेंस के मुद्दे को हल किया गया है। आपके धैर्य के लिए धन्यवाद।"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:164
@@ -1623,11 +1673,13 @@ msgstr ""
 msgid "SiiCrypto facilitates trading in GreenCoinX the world's first crypto currency that requires user identification"
 msgstr ""
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\pages\home.html.php:93 F:\Apache\www\TBG\siicrypto.com\app\views\pages\home.html.php:113 F:\Apache\www\TBG\siicrypto.com\app\views\pages\home.html.php:134
+#: F:\Apache\www\TBG\siicrypto.com\app\views\pages\home.html.php:93 F:\Apache\www\TBG\siicrypto.com\app\views\pages\home.html.php:113
+#: F:\Apache\www\TBG\siicrypto.com\app\views\pages\home.html.php:134
 msgid "Min"
 msgstr ""
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\pages\home.html.php:93 F:\Apache\www\TBG\siicrypto.com\app\views\pages\home.html.php:113 F:\Apache\www\TBG\siicrypto.com\app\views\pages\home.html.php:134
+#: F:\Apache\www\TBG\siicrypto.com\app\views\pages\home.html.php:93 F:\Apache\www\TBG\siicrypto.com\app\views\pages\home.html.php:113
+#: F:\Apache\www\TBG\siicrypto.com\app\views\pages\home.html.php:134
 msgid "Max"
 msgstr ""
 
@@ -1740,7 +1792,9 @@ msgid "Time-based One-time Password Algorithm (TOTP)"
 msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:70
-msgid "for login, withdrawal/deposits and settings. This is an option and not a requirement. If you decide to use Google Authenticator TOTP you will enjoy even stronger security capability."
+msgid ""
+"for login, withdrawal/deposits and settings. This is an option and not a requirement. If you decide to use Google Authenticator TOTP you will enjoy even stronger security "
+"capability."
 msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\sessions\add.html.php:71
@@ -1937,8 +1991,8 @@ msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\deposit.mail.php:61
 msgid ""
-"Once you have uploaded the signed DSF to SiiCrypto using the above links, it will be sent to ILS Fiduciaries (Switzerland) Sarl and Vantu Bank. You will then receive another email providing the wire transfer "
-"details and you can then wire transfer the funds using the reference number quoted above."
+"Once you have uploaded the signed DSF to SiiCrypto using the above links, it will be sent to ILS Fiduciaries (Switzerland) Sarl and Vantu Bank. You will then receive "
+"another email providing the wire transfer details and you can then wire transfer the funds using the reference number quoted above."
 msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\deposit.mail.php:63
@@ -2092,8 +2146,8 @@ msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:35
 msgid ""
-"Vantu Bank's customer service may contact you to authenticate your expected payment. Please make sure the contact details below are valid. If Vantu Bank needs to reach you and is unable to do so within 48 hours "
-"your funds may be put on hold. The information you provide must be clear in order to prevent delays."
+"Vantu Bank's customer service may contact you to authenticate your expected payment. Please make sure the contact details below are valid. If Vantu Bank needs to reach you "
+"and is unable to do so within 48 hours your funds may be put on hold. The information you provide must be clear in order to prevent delays."
 msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:41
@@ -2383,7 +2437,9 @@ msgid "WHAT ARE YOUR EXPECTED MONTHLY PAYMENTS FROM THE ORIGINATING PARTY (numbe
 msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:216
-msgid "If the Details of Business Payment section has been completed then we have attached full supporting documentation for this transaction (e.g. an invoice, a bill, a contract, agreement or similar document)."
+msgid ""
+"If the Details of Business Payment section has been completed then we have attached full supporting documentation for this transaction (e.g. an invoice, a bill, a contract, "
+"agreement or similar document)."
 msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:225
@@ -2392,9 +2448,10 @@ msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:226
 msgid ""
-"I/We understand that under the requirements of Vanuatu's Anti-Money Laundering & Counter-Terrorism Financing Act No. 13 of 2014, Regulations made thereunder and Vantu Bank's and National Bank of Vanuatu's "
-"respective AML/CTF Compliance Manuals as currently in force, your policy may require both banks to be satisfied as to the source of this payment before accepting any inward wire transfer and that my/our "
-"transfer(s) may be held pending or returned in the absence of such confirmation. This payment does not originate from any sanctioned or prohibited country or related sanctioned program."
+"I/We understand that under the requirements of Vanuatu's Anti-Money Laundering & Counter-Terrorism Financing Act No. 13 of 2014, Regulations made thereunder and Vantu "
+"Bank's and National Bank of Vanuatu's respective AML/CTF Compliance Manuals as currently in force, your policy may require both banks to be satisfied as to the source of "
+"this payment before accepting any inward wire transfer and that my/our transfer(s) may be held pending or returned in the absence of such confirmation. This payment does "
+"not originate from any sanctioned or prohibited country or related sanctioned program."
 msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:227
@@ -2411,8 +2468,8 @@ msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:240
 msgid ""
-"Vantu Bank's customer service may contact you to authenticate your expected payment. Please make sure the contact details below are valid. If Vantu Bank needs to reach you and is unable to do so within 48 hours "
-"your funds may be put on hold. The purpose for the wire must be made clear in order to prevent delays."
+"Vantu Bank's customer service may contact you to authenticate your expected payment. Please make sure the contact details below are valid. If Vantu Bank needs to reach you "
+"and is unable to do so within 48 hours your funds may be put on hold. The purpose for the wire must be made clear in order to prevent delays."
 msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:242 F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:508
@@ -2433,8 +2490,8 @@ msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:248
 msgid ""
-"Please use the information below to send a wire transfer to fund your SiiCrypto account. You can print out this form and give it to your bank, or use this information to complete your bank's standard wire "
-"instruction form. These instructions have also been sent to your email address."
+"Please use the information below to send a wire transfer to fund your SiiCrypto account. You can print out this form and give it to your bank, or use this information to "
+"complete your bank's standard wire instruction form. These instructions have also been sent to your email address."
 msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:285
@@ -2527,11 +2584,11 @@ msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:376
 msgid ""
-"After you send the funds to Vantu Bank, wait for 3 to 7 working days for the funds to be credited to your SiiCrypto Account. This wire request will remain open until your funds have been received. In the event "
-"that funds are not received then you will need to delete the request and the DSF before you can make a new wire transfer."
+"After you send the funds to Vantu Bank, wait for 3 to 7 working days for the funds to be credited to your SiiCrypto Account. This wire request will remain open until your "
+"funds have been received. In the event that funds are not received then you will need to delete the request and the DSF before you can make a new wire transfer."
 msgstr ""
-"तुम्हारे जाने के बाद Vantu बैंक के लिए धन भेजने के लिए, 3 से 7 दिनों के काम के लिए इंतजार करे, धन राशी  अपने SiiCrypto खाते में जमा की जाएगी । जब तक आप धन प्राप्त नहीं कर लेते ये तार अनुरोध खुलें रहेंगे । घटना में है कि धन तो प्राप्त नहीं कर रहे हैं इससे "
-"पहले कि आप एक नया तार हस्तांतरण कर सकते हैं अनुरोध और DSF को नष्ट करने की आवश्यकता होगी।"
+"तुम्हारे जाने के बाद Vantu बैंक के लिए धन भेजने के लिए, 3 से 7 दिनों के काम के लिए इंतजार करे, धन राशी  अपने SiiCrypto खाते में जमा की जाएगी । जब तक आप धन प्राप्त नहीं कर लेते ये तार अनुरोध खुलें रहेंगे । "
+"घटना में है कि धन तो प्राप्त नहीं कर रहे हैं इससे पहले कि आप एक नया तार हस्तांतरण कर सकते हैं अनुरोध और DSF को नष्ट करने की आवश्यकता होगी।"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:378
 msgid "Please"
@@ -2547,8 +2604,8 @@ msgstr " एक नया DSF बनाये |"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:394
 msgid ""
-"To withdraw funds for your account, please complete the below Withdrawal Request. SiiCrypto will process your request and email you a confirmation. Wiring to your bank may take a few days depending on your bank "
-"routing instruction."
+"To withdraw funds for your account, please complete the below Withdrawal Request. SiiCrypto will process your request and email you a confirmation. Wiring to your bank may "
+"take a few days depending on your bank routing instruction."
 msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:396
@@ -2605,9 +2662,10 @@ msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:490
 msgid ""
-"I/We confirm that the funds requested to be withdrawn from my SiiCrypto account  will only be transmitted to my/our own bank account. I/We understand that under the requirements of Vanuatu's Anti-Money Laundering "
-"& Counter-Terrorism Financing Act No. 13 of 2014, Regulations made thereunder and Vantu Bank's and National Bank of Vanuatu's respective AML/CTF Compliance Manuals as currently in force, your policy may require "
-"both banks to be satisfied as to the source of this payment before accepting any outward wire transfer and that my/our transfer(s) may be held pending or returned in the absence of such confirmation."
+"I/We confirm that the funds requested to be withdrawn from my SiiCrypto account  will only be transmitted to my/our own bank account. I/We understand that under the "
+"requirements of Vanuatu's Anti-Money Laundering & Counter-Terrorism Financing Act No. 13 of 2014, Regulations made thereunder and Vantu Bank's and National Bank of "
+"Vanuatu's respective AML/CTF Compliance Manuals as currently in force, your policy may require both banks to be satisfied as to the source of this payment before accepting "
+"any outward wire transfer and that my/our transfer(s) may be held pending or returned in the absence of such confirmation."
 msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding_fiat.html.php:492
@@ -2728,8 +2786,8 @@ msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\printDeposit.pdf.php:65
 msgid ""
-"Note: Vantu Bank's customer service may contact you to authenticate your expected payment. Please make sure the contact details below are valid. If Vantu Bank needs to reach you and is unable to do so within 48 "
-"hours your funds may be put on hold. The purpose for the wire must be made clear in order to prevent delays."
+"Note: Vantu Bank's customer service may contact you to authenticate your expected payment. Please make sure the contact details below are valid. If Vantu Bank needs to "
+"reach you and is unable to do so within 48 hours your funds may be put on hold. The purpose for the wire must be made clear in order to prevent delays."
 msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\printDeposit.pdf.php:74
@@ -2790,8 +2848,8 @@ msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\printDeposit.pdf.php:486
 msgid ""
-"By signing below you agree that this signature confirms that you have adopted the contents of this message and that the person(s) who have completed this Declaration of Source of Funds form is/are the person(s) "
-"who wrote it and that the sender of the form is the person(s) described herein."
+"By signing below you agree that this signature confirms that you have adopted the contents of this message and that the person(s) who have completed this Declaration of "
+"Source of Funds form is/are the person(s) who wrote it and that the sender of the form is the person(s) described herein."
 msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\printDeposit.pdf.php:497
@@ -2844,9 +2902,10 @@ msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\printWithdraw.pdf.php:269
 msgid ""
-"I/We confirm that the funds requested to be withdrawn from my SiiCrypto account will only be transmitted to my/our own bank account. I/We understand that under the requirements of Vanuatu's Anti-Money Laundering "
-"& Counter-Terrorism Financing Act No. 13 of 2014, Regulations made thereunder and Vantu Bank's and National Bank of Vanuatu's respective AML/CTF Compliance Manuals as currently in force, your policy may require "
-"both banks to be satisfied as to the source of this payment before accepting any outward wire transfer and that my/our transfer(s) may be held pending or returned in the absence of such confirmation."
+"I/We confirm that the funds requested to be withdrawn from my SiiCrypto account will only be transmitted to my/our own bank account. I/We understand that under the "
+"requirements of Vanuatu's Anti-Money Laundering & Counter-Terrorism Financing Act No. 13 of 2014, Regulations made thereunder and Vantu Bank's and National Bank of "
+"Vanuatu's respective AML/CTF Compliance Manuals as currently in force, your policy may require both banks to be satisfied as to the source of this payment before accepting "
+"any outward wire transfer and that my/our transfer(s) may be held pending or returned in the absence of such confirmation."
 msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\printWithdraw.pdf.php:296
@@ -2903,14 +2962,14 @@ msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\signup.html.php:101
 msgid ""
-"When your wallet is opened you will receive a KYC unique number.  Insert that number in the KYC ID box on this page and then click Validate KYC Info. You will then be validated as having completed the KYC process "
-"and can proceed to open a SiiCrypto account."
+"When your wallet is opened you will receive a KYC unique number.  Insert that number in the KYC ID box on this page and then click Validate KYC Info. You will then be "
+"validated as having completed the KYC process and can proceed to open a SiiCrypto account."
 msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\signup.html.php:103
 msgid ""
-"Insert your name and then a UserName for trading purposes. Your user name should be only characters and numbers with no spaces. Insert your email address and create a Password. Then Click the Register button to "
-"complete the SiiCrypto account opening process."
+"Insert your name and then a UserName for trading purposes. Your user name should be only characters and numbers with no spaces. Insert your email address and create a "
+"Password. Then Click the Register button to complete the SiiCrypto account opening process."
 msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\signup.html.php:105
@@ -2926,8 +2985,12 @@ msgid "from your SiiCrypto.com account"
 msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\withdraw.mail.php:53
-msgid "Your SiiCrypto Withdrawal Form is attached to this email. Please print it out, sign it, and scan it. If the browser you used to connect to SiiCrypto is your primary browser then you can upload the document"
-msgstr "आपका SiiCrypto निकासी फार्म इस ईमेल से जुड़ा हुआ है। कृपया इसे प्रिंट आउट, इस पर हस्ताक्षर, और इसे स्कैन। ब्राउज़र आप SiiCrypto से कनेक्ट करने के लिए इस्तेमाल अपनी प्राथमिक ब्राउज़र है तो आप दस्तावेज़ अपलोड कर सकते हैं"
+msgid ""
+"Your SiiCrypto Withdrawal Form is attached to this email. Please print it out, sign it, and scan it. If the browser you used to connect to SiiCrypto is your primary browser "
+"then you can upload the document"
+msgstr ""
+"आपका SiiCrypto निकासी फार्म इस ईमेल से जुड़ा हुआ है। कृपया इसे प्रिंट आउट, इस पर हस्ताक्षर, और इसे स्कैन। ब्राउज़र आप SiiCrypto से कनेक्ट करने के लिए इस्तेमाल अपनी प्राथमिक ब्राउज़र है तो आप दस्तावेज़ "
+"अपलोड कर सकते हैं"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\withdraw.mail.php:53
 msgid "here"
@@ -2935,11 +2998,11 @@ msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\withdraw.mail.php:54
 msgid ""
-"and paste it into the browser you are using. You do not need to close down your open SiiCrypto webpage before pasting this link into your browser. If your SiiCrypto webpage has been open for longer than twenty "
-"minutes you will been auto logged out and you will need to login again."
+"and paste it into the browser you are using. You do not need to close down your open SiiCrypto webpage before pasting this link into your browser. If your SiiCrypto webpage "
+"has been open for longer than twenty minutes you will been auto logged out and you will need to login again."
 msgstr ""
-"और यह ब्राउज़र का उपयोग कर रहे हैं में पेस्ट करें। आप अपने ब्राउज़र में इस लिंक चिपकाने से पहले अपने खुले SiiCrypto वेबपेज बंद करने की जरूरत नहीं है। अपने SiiCrypto वेबपेज अब से बीस मिनट के लिए खुला कर दिया गया है, तो आप ऑटो लॉग आउट कर दिया जाएगा और "
-"आप फिर से प्रवेश करने की आवश्यकता होगी।"
+"और यह ब्राउज़र का उपयोग कर रहे हैं में पेस्ट करें। आप अपने ब्राउज़र में इस लिंक चिपकाने से पहले अपने खुले SiiCrypto वेबपेज बंद करने की जरूरत नहीं है। अपने SiiCrypto वेबपेज अब से बीस मिनट के लिए खुला कर दिया "
+"गया है, तो आप ऑटो लॉग आउट कर दिया जाएगा और आप फिर से प्रवेश करने की आवश्यकता होगी।"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\withdraw.mail.php:56
 msgid "Once we receive the signed SiiCrypto Withdrawal Form your instructions will be processed."
@@ -2970,5 +3033,8 @@ msgid "click on the link."
 msgstr "आकलनकर्ता क्लिक करें"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\withdrawDigital.mail.php:50
-msgid "You will be asked for your main password on the page following the link to authorize the transfer. This is an added security feature SiiCrypto.com employs to secure your coins from hackers / spammers."
-msgstr "आप हस्तांतरण अधिकृत करने के लिए लिंक का पालन पेज पर आपका मुख्य पासवर्ड के लिए कहा जाएगा। यह एक अतिरिक्त सुरक्षा फीचर SiiCrypto.com हैकर्स / स्पैमर्स से अपने सिक्के सुरक्षित करने के लिए कार्यरत है।"
+msgid ""
+"You will be asked for your main password on the page following the link to authorize the transfer. This is an added security feature SiiCrypto.com employs to secure your "
+"coins from hackers / spammers."
+msgstr ""
+"आप हस्तांतरण अधिकृत करने के लिए लिंक का पालन पेज पर आपका मुख्य पासवर्ड के लिए कहा जाएगा। यह एक अतिरिक्त सुरक्षा फीचर SiiCrypto.com हैकर्स / स्पैमर्स से अपने सिक्के सुरक्षित करने के लिए कार्यरत है।"
