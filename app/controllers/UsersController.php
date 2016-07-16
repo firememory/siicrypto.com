@@ -708,14 +708,15 @@ class UsersController extends \lithium\action\Controller {
 				
 			if($details[$currency.'newaddress']=="" || $details[$currency.'newaddress']=="Yes"){
 				$address = $bitcoin->getnewaddress("SiiCrypto-".$user['username']);
-					if(is_array($address['error'])){
+				
+					if(!is_null($address['error'])){
 						$address = $bitcoin->getnewaddress("SiiCrypto-".$user['username']);
 					}
 			}else{
 				if($details['bitcoinaddress'][0]==""){
 					
 					$address = $bitcoin->getnewaddress("SiiCrypto-".$user['username']);
-					if(is_array($address['error'])){
+					if(!is_null($address['error'])){
 						$address = $bitcoin->getnewaddress("SiiCrypto-".$user['username']);
 					}
 				}else{
