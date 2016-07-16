@@ -1,5 +1,7 @@
 <?php
 use lithium\util\String;
+use lithium\core\Environment; 
+if(substr(Environment::get('locale'),0,2)=="en"){$locale = "en";}else{$locale = Environment::get('locale');}
 
 $sel_curr = $this->_request->params['args'][0];
 
@@ -28,6 +30,18 @@ if (is_null($BalanceSecond)){$BalanceSecond = 0;}
 	</div>
 	<div class="col-md-12 alert-danger alert">
 		<a href="#" class="" data-toggle="modal" data-target="#myModal" ><?=$t('Help - Information on how to trade')?></a>
+	</div>
+	<div class="col-md-12 alert-success alert">
+		<div class="row">
+			<div class="col-md-6"><h4 style="text-align:center"><?=$t('BTC withdrawal address')?><br><code><?php if($details['AutoBTC']['address']==""){?>
+			<a href="/<?=$locale?>/ex/dashboard"><?=$t('Enter Auto Withdrawal Address')?></a>
+			<?php }?><span id="AutoBTC"><?=$details['AutoBTC']['address']?></span></code> <br><?=$t('Verified')?>: <span id="AutoBTCVerified"><?=$details['AutoBTC']['verified']?></span></h4>
+			</div>
+			<div class="col-md-6"><h4 style="text-align:center"><?=$t('XGC withdrawal address')?><br><code><?php if($details['AutoXGC']['address']==""){?>
+			<a href="/<?=$locale?>/ex/dashboard"><?=$t('Enter Auto Withdrawal Address')?></a>
+			<?php }?><span id="AutoXGC"><?=$details['AutoXGC']['address']?></span></code> <br><?=$t('Verified')?>: <span id="AutoXGCVerified"><?=$details['AutoXGC']['verified']?></span></h4>
+			</div>
+		</div>
 	</div>
 </div>
 	<?php } ?>

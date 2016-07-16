@@ -490,6 +490,106 @@ $YourOrdersHTML = $YourOrdersHTML .'				</tbody>
 		));
 		return $TotalSellOrders;
 	}
+	public function AutoBTC($AutoBTC = null){
+		$user = Session::read('member');
+		$id = $user['_id'];
+		if($id==""){
+					return $this->render(array('json' => array(
+				'Updated'=> 'No',
+			)));
+		}
+		$data = array(
+			"AutoBTC.address" => $AutoBTC,
+			"AutoBTC.verified" => 'No'
+		);
+		$conditions = array(
+			'user_id'=>$id
+		);
+		Details::update($data,$conditions);
+			return $this->render(array('json' => array(
+				'Updated'=> 'Yes',
+				)));
+	}
 	
+	public function AutoXGC($AutoXGC = null){
+		$user = Session::read('member');
+		$id = $user['_id'];
+		if($id==""){
+					return $this->render(array('json' => array(
+				'Updated'=> 'No',
+			)));
+		}
+		$data = array(
+			"AutoXGC.address" => $AutoXGC,
+			"AutoXGC.verified" => 'No'
+		);
+		$conditions = array(
+			'user_id'=>$id
+		);
+		Details::update($data,$conditions);
+			return $this->render(array('json' => array(
+				'Updated'=> 'Yes',
+				)));		
+	}
+	
+		public function VerifyBTC($AutoBTC = null){
+		$user = Session::read('member');
+		$id = $user['_id'];
+		if($id==""){
+					return $this->render(array('json' => array(
+				'Updated'=> 'No',
+			)));
+		}
+		$bitcoin = new Bitcoin('http://'.BITCOIN_WALLET_SERVER.':'.BITCOIN_WALLET_PORT,BITCOIN_WALLET_USERNAME,BITCOIN_WALLET_PASSWORD);
+			$verify = $bitcoin->validateaddress($AutoBTC);
+
+			if($verify['isvalid']==true){
+		$data = array(
+			"AutoBTC.verified" => 'Yes'
+		);
+		$conditions = array(
+			'user_id'=>$id
+		);
+		Details::update($data,$conditions);
+				
+				return $this->render(array('json' => array(
+						'Updated'=> 'Yes',
+				)));
+			}else{
+				return $this->render(array('json' => array(
+				'Updated'=> 'No',
+				)));
+			}
+	}
+	
+		public function VerifyXGC($AutoXGC = null){
+		$user = Session::read('member');
+		$id = $user['_id'];
+		if($id==""){
+					return $this->render(array('json' => array(
+				'Updated'=> 'No',
+			)));
+		}
+		$greencoin = new Greencoin('http://'.GREENCOIN_WALLET_SERVER.':'.GREENCOIN_WALLET_PORT,GREENCOIN_WALLET_USERNAME,GREENCOIN_WALLET_PASSWORD);
+			$verify = $greencoin->validateaddress($AutoXGC);
+//			print_r($verify);
+			if($verify['isvalid']==true){
+		$data = array(
+			"AutoXGC.verified" => 'Yes'
+		);
+		$conditions = array(
+			'user_id'=>$id
+		);
+		Details::update($data,$conditions);
+				
+				return $this->render(array('json' => array(
+						'Updated'=> 'Yes',
+				)));
+			}else{
+				return $this->render(array('json' => array(
+				'Updated'=> 'No',
+				)));
+			}
+	}
 }
 ?>

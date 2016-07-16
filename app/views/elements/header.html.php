@@ -30,7 +30,7 @@ if(substr(Environment::get('locale'),0,2)=="en"){$locale = "en";}else{$locale = 
 	<ul class="nav navbar-nav navbar-right">
 		<?php if($user!=""){ ?>
 		<li><a href='#' class='dropdown-toggle' data-toggle='dropdown' >
-			Company <i class='glyphicon glyphicon-chevron-down'></i>
+			<?=$t('Company')?> <i class='glyphicon glyphicon-chevron-down'></i>
 			</a>
 		
 			<ul class="dropdown-menu">
@@ -87,7 +87,7 @@ foreach($trades as $tr){
 			</ul>
 			<?php }else{?>
 			<li ><a href='#' class='dropdown-toggle' data-toggle='dropdown' >
-			Company <i class='glyphicon glyphicon-chevron-down'></i>
+			<?=$t('Company')?> <i class='glyphicon glyphicon-chevron-down'></i>
 				</a>
 			
 				<ul class="dropdown-menu">

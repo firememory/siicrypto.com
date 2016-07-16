@@ -44,8 +44,9 @@ body {
 }
 </style>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800italic' rel='stylesheet' type='text/css'>
-	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
+<!--		<script src="/bootstrap/js/jquery.js"></script> -->
 	<script src="/bootstrap/js/bootstrap-datepicker.js"></script>	
 	<?php
 	$this->scripts('<script src="/js/main.js?v='.rand(1,100000000).'"></script>'); 	
@@ -84,20 +85,15 @@ $ex = Session::read('ex');
 						<ul class="nav nav-sidebar">
 							<li>
 								<div style="padding-bottom:10px;font-size:15px;text-align:center">
-								<a href="#" onclick="ChangeLanguage('en','<?=$_SERVER['REQUEST_URI']?>');" style="border-bottom:double">
-								<img src="/img/Flags/en.png" width="75"></a>
+<!--								<a href="#" onclick="ChangeLanguage('en','<?=$_SERVER['REQUEST_URI']?>');" style="border-bottom:double">
+								<img src="/img/Flags/en.png" width="75"></a> 
 								<a href="#" onclick="ChangeLanguage('de','<?=$_SERVER['REQUEST_URI']?>');" style="border-bottom:double">
 								<img src="/img/Flags/de.png" width="75"></a>
-								<br>
-									<a href="#" onclick="ChangeLanguage('en','<?=$_SERVER['REQUEST_URI']?>');" style="border-bottom:double">
-									
-									<small>English</small></a>
-									<a href="#" onclick="ChangeLanguage('de','<?=$_SERVER['REQUEST_URI']?>');" style="border-bottom:double">
-									
-									<small>Deutsch</small></a>
-<!--					<a href="#" onclick="ChangeLanguage('es','<?=$_SERVER['REQUEST_URI']?>');" style="border-bottom:double"><small>Español</small></a>
+-->								
+									<a href="#" onclick="ChangeLanguage('en','<?=$_SERVER['REQUEST_URI']?>');" style="border-bottom:double"><small>English</small></a>
+									<a href="#" onclick="ChangeLanguage('de','<?=$_SERVER['REQUEST_URI']?>');" style="border-bottom:double"><small>Deutsch</small></a>
+									<a href="#" onclick="ChangeLanguage('es','<?=$_SERVER['REQUEST_URI']?>');" style="border-bottom:double"><small>Español</small></a>
 									<a href="#" onclick="ChangeLanguage('hi','<?=$_SERVER['REQUEST_URI']?>');" style="border-bottom:double"><small>हिन्दी</small></a>
--->									
 								</div>
 							</li>
 							

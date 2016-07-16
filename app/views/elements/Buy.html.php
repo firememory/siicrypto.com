@@ -51,7 +51,7 @@ if(substr(Environment::get('locale'),0,2)=="en"){$locale = "en";}else{$locale = 
 		<td> <span class="label label-success"><span id="BuyFee">0</span> <?=$first_curr?></span></td>
 	</tr>
 	<tr>
-		<td colspan="2" style="height:50px "><span id="BuySummary"><?=$t('Summary of your order')?></span></td>
+		<td colspan="2" style="height:50px "><span id="BuySummary" style="color:maroon;font-weight:bold"><?=$t('Summary of your order')?></span></td>
 	</tr>
 	<tr>
 		<td><input type="button" onClick="BuyFormCalculate()" class="btn btn-coool btn-block" value="<?=$t('Estimate')?>"></td>

@@ -9,7 +9,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: de\n"
-"X-Generator: Poedit 1.8.7\n"
+"X-Generator: Poedit 1.8.8\n"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\aboutus.html.php:1
 msgid "About Us"
@@ -384,7 +384,7 @@ msgid ""
 "from your account."
 msgstr ""
 "Um Werte zu transferieren, besuchen Sie bitte das Dashboard und wählen Sie "
-"Ihre bevorzugte Währung. Sie werden auf die “Kontodeckung-Seite” "
+"Ihre bevorzugte Währung. Sie werden auf die 'Kontodeckung-Seite' "
 "weitergeleitet. Bitte folgen Sie den Instruktionen, wie Sie Ihr Konto decken "
 "oder Auszahlungen beantragen. "
 
@@ -576,23 +576,29 @@ msgstr ""
 msgid "Press Releases"
 msgstr "Presseberichte"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\press.html.php:4
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\press.html.php:3
+msgid ""
+"Business Rock Stars Interviews GreenCoinX CEO Danny Wettreich About the "
+"GreenCoinX Cryptocurrency"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\press.html.php:11
 msgid "GREENCOINX'S AFFILIATED CRYPTO CURRENCY EXCHANGE SIICRYPTO LAUNCHES"
 msgstr ""
 "NEU AUF DEM MARKT, DIE AN GREENCOINX ANGEKNÜPFTE KRYPTOWÄHRUNGS-"
 "UMTAUSCHBÖRSE SIICRYPTO "
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\press.html.php:5
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\press.html.php:12
 msgid "SiiCrypto specializing in GreenCoinX is Commission Free and Secure"
 msgstr ""
 "SiiCrypto spezialisiert sich auf GreenCoinX, ist sehr sicher und berechnet "
 "keine Kommissionen"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\press.html.php:6
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\press.html.php:13
 msgid "Toronto, Ontario, March 23, 2016"
 msgstr "Toronto, Ontario, März 23, 2016"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\press.html.php:6
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\press.html.php:13
 msgid ""
 "GreenCoinX Inc, a subsidiary of GreenBank Capital Inc a Canadian\n"
 "public company (CSE: GBC and OTCMKTS: GRNBF) (\"GreenCoinX\") announces the "
@@ -632,7 +638,7 @@ msgstr ""
 "Jeder Nutzer von SiiCrypto  wird mit dem gleichen \"Know Your Customer"
 "\" (\"KYC\") Standard identifiziert, wie es im Bankensystem existiert."
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\press.html.php:14
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\press.html.php:21
 msgid "Read more..."
 msgstr "mehr…"
 
@@ -1992,101 +1998,122 @@ msgstr "Kostenvoranschlag"
 msgid "Submit"
 msgstr "Abschicken"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:22
+#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:24
 msgid "Latest low price"
 msgstr "Letzter Tiefpreis"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:22
+#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:24
 msgid "Low"
 msgstr "Niedrig"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:23
+#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:25
 msgid "Latest high price"
 msgstr "Letzter Höchstpreis"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:23
+#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:25
 msgid "High"
 msgstr "Hoch"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:24
+#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:26
 msgid "Latest price"
 msgstr "Letzter Preis"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:24
+#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:26
 msgid "Last"
 msgstr "Zuletzt"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:25
+#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:27
 msgid "Volume"
 msgstr "Menge"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:25
+#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:27
 msgid "Vol"
 msgstr "Vol"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:30
+#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:32
 msgid "Help - Information on how to trade"
 msgstr "Hilfe - Informationen zum Handel"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:160
+#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:36
+#, fuzzy
+msgid "BTC withdrawal address"
+msgstr "AUSZAHLUNG-ANTRAG"
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:37
+#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:41
+msgid "Enter Auto Withdrawal Address"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:38
+#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:42
+#, fuzzy
+msgid "Verified"
+msgstr "Bestätigen"
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:40
+#, fuzzy
+msgid "XGC withdrawal address"
+msgstr "AUSZAHLUNG-ANTRAG"
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:174
 msgid "How to trade"
 msgstr "Wie Handel ich?"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:165
-#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:172
+#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:179
+#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:186
 msgid "Enter Amount"
 msgstr "Geben Sie den Betrag ein"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:165
-#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:172
+#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:179
+#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:186
 msgid "The amount you enter should be less than your balance of"
 msgstr "Der angegebene Bertrag sollte weniger als Ihr Kontostand sein von "
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:166
-#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:173
+#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:180
+#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:187
 msgid "Enter Price per"
 msgstr "Geben Sie den Betrag ein per "
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:167
-#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:174
+#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:181
+#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:188
 msgid "Click Estimate"
 msgstr "Klicken Sie auf das Angebot"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:170
-#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:181
-#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:182
+#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:184
+#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:195
+#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:196
 msgid "Sell"
 msgstr "Verkaufen"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:170
-#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:181
-#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:182
+#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:184
+#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:195
+#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:196
 msgid "get"
 msgstr "erhalten"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:177
+#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:191
 msgid "Executing Multiple Orders"
 msgstr "Ausführung mehrfacher Aufträge"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:180
-#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:182
+#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:194
+#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:196
 msgid "Select the row from"
 msgstr "Wählen Sie eine Zeile von "
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:180
+#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:194
 msgid "Orders: Sell"
 msgstr "Auftrag: Verkaufen"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:180
-#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:182
+#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:194
+#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:196
 msgid "click on it, will fill in"
 msgstr "klicken Sie darauf, es wird eingefüllt"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:182
+#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:196
 msgid "Orders: Buy"
 msgstr "Auftrag: Kaufen"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:187
+#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\buysell.html.php:201
 msgid "Close"
 msgstr "Schliessen"
 
@@ -2157,6 +2184,10 @@ msgstr "Fertig!"
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\header.html.php:16
 msgid "Toggle navigation"
 msgstr "Toggle-Navigation"
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\header.html.php:33
+msgid "Company"
+msgstr ""
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\header.html.php:40
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\header.html.php:97
@@ -2278,66 +2309,101 @@ msgid "Support"
 msgstr "Hilfe"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:110
+msgid "Auto withdrawal BTC Address"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:115
+#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:135
+msgid "Auto Withdraw Address on buying "
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:118
+msgid ""
+"Please make sure this address is correct, if not, the BTC you purchase will "
+"be lost. It cannot be blank too."
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:122
+#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:142
+msgid "Save"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:123
+#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:143
+msgid "Verify"
+msgstr "Bestätigen"
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:129
+msgid "Auto withdrawal XGC Address"
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:139
+msgid ""
+"Please make sure this address is correct, if not, the XGC you purchase will "
+"be lost. It cannot be blank too."
+msgstr ""
+
+#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:148
 msgid "Currency"
 msgstr "Währung"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:163
+#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:201
 msgid "Click on a currency to Deposit or Withdraw"
 msgstr "Klicken Sie auf eine Währung um Ein oder Auszuzahlen"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:212
+#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:250
 msgid "Opening Balance"
 msgstr "Eröffnungs Kontostand "
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:222
+#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:260
 msgid "Current Balance"
 msgstr "Aktuelle Kontostand "
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:223
+#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:261
 msgid "including pending orders"
 msgstr "einschließlich ausstehender Aufträge"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:233
+#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:271
 msgid "Pending Buy Orders"
 msgstr "Ausstehende Kauf-Aufträge"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:244
+#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:282
 msgid "Pending Sell Orders"
 msgstr "Ausstehende Verkaufs-Aufträge"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:255
+#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:293
 msgid "After Execution"
 msgstr "Nach Ausführung"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:267
+#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:305
 msgid "Commissions"
 msgstr "Komission"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:278
+#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:316
 msgid "Complete Buy Orders"
 msgstr "Ausgeführte Kauf-Aufträge"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:289
+#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:327
 msgid "Complete Sell Orders"
 msgstr "Ausgeführte Verkaufs-Aufträge"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:300
+#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:338
 msgid "Completed Order Commissions"
 msgstr "Fertiggestellte Auftragskommission"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:315
+#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:353
 msgid "Status"
 msgstr "Status"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:318
+#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:356
 msgid "Avg Price"
 msgstr "Arg Preis"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:321
+#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:359
 msgid "Pending orders"
 msgstr "Ausstehende Aufträge"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:346
+#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:384
 msgid "Completed orders"
 msgstr "Fertiggestellte Aufträge"
 
@@ -2359,21 +2425,21 @@ msgstr ""
 "Wenn Sie diesen Auftrag nicht beauftragt haben setzen Sie sich bitte mit uns "
 "in kontakt"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:95
+#: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:100
 msgid "Trades"
 msgstr "Handel"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:104
+#: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:109
 msgid "Register & Open an account"
 msgstr "Registrierung & Kontoeröffnung"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:108
+#: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:113
 msgid "SiiCrypto first time users need to open an online GreenCoinX wallet at"
 msgstr ""
 "Erstnutzer von SiiCrypto benötigen ein GreenCoinX “Online-Wallet”. Dieses "
 "kann gratis eröffnet werden auf"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:110
+#: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:115
 msgid ""
 "SiiCrypto clients fiat funds are held by ILS Fiduciaries (Switzerland) Sarl "
 "the Swiss branch of ILS World, a global provider of independent fiduciary "
@@ -2383,7 +2449,7 @@ msgstr ""
 "Treuhänder Sarl, die Schweizer Filiale von ILS World, einem Globalen "
 "Treuhanddienstleister verwaltet."
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:111
+#: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:116
 msgid ""
 "SiiCrypto clients GreenCoinX and Bitcoin cannot be accessed without client "
 "approval."
@@ -2391,7 +2457,7 @@ msgstr ""
 "SiiCryptos Kunden GreencoinX oder Bitcoin können ohne eine Kundenzustimmung "
 "nicht bewegt werden."
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:112
+#: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:117
 msgid ""
 "The promise of crypto currency was always the fast and inexpensive transfer "
 "of funds worldwide, while bypassing the banking system.Until GreenCoinX this "
@@ -2404,15 +2470,15 @@ msgstr ""
 "macht dieses Versprechen nun zur Realität durch ihre angepasste “KYC” "
 "Fähigkeit."
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:155
+#: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:160
 msgid "Warning"
 msgstr "Achtung:"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:159
+#: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:164
 msgid "TRADING INFORMATION - USA"
 msgstr "HANDEL INFORMATION - USA"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:160
+#: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:165
 msgid ""
 "We regret to advise you that due to regulatory issues residents of some USA "
 "states are unable to trade on SiiCrypto at this time."
@@ -2421,7 +2487,7 @@ msgstr ""
 "gewisse US-Staaten Bewohner zu diesem Zeitpunkt nicht in der Lage sind, auf "
 "Sii Crypto zu handeln."
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:161
+#: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:166
 msgid ""
 "Your state requires additional licensing which we intend to complete as soon "
 "as possible.<br><br> We will inform you when this licensing issue has been "
@@ -2432,11 +2498,11 @@ msgstr ""
 "sobald dieses Lizenzierungsproblem behoben wurde . Vielen Dank für Ihre "
 "Geduld."
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:164
+#: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:169
 msgid "TRADING INFORMATION - NON USA"
 msgstr "TRADING INFORMATION - NICHT USA"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:165
+#: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:170
 msgid ""
 "We regret to advise you that due to regulatory issues residents of some "
 "countries are excluded from trading on SiiCrypto at this time."
@@ -2445,7 +2511,7 @@ msgstr ""
 "behördlicher Probleme, einige Länder zu diesem Zeitpunkt von einem Handel "
 "auf Sii Crypto ausgeschlossen sind."
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:166
+#: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:171
 msgid ""
 "Your country requires additional licensing which we intend to complete as "
 "soon as possible, or it has been excluded for other regulatory reasons."
@@ -2454,7 +2520,7 @@ msgstr ""
 "möglich versuchen abzuschließen, oder es wurde wegen andere regulatorischen "
 "Gründen ausgeschlossen."
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:167
+#: F:\Apache\www\TBG\siicrypto.com\app\views\layouts\default.html.php:172
 msgid ""
 "We will inform you when this issue has been resolved. Thank you for your "
 "patience."
@@ -2902,10 +2968,6 @@ msgstr "E-mail"
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\email.html.php:11
 msgid "Verification code"
 msgstr "Verifikations-Code"
-
-#: F:\Apache\www\TBG\siicrypto.com\app\views\users\email.html.php:12
-msgid "Verify"
-msgstr "Bestätigen"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\email.html.php:14
 msgid "Please check your spam folder too while checking your inbox!"
@@ -4074,11 +4136,11 @@ msgstr "Wie funktioniert eine Registrierung?"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\signup.html.php:100
 msgid ""
-"To Register, first obtain a 'Know Your Client' or KYC number by opening a "
+"To Register, first obtain a \"Know Your Client\" or KYC number by opening a "
 "GreenCoinX online wallet. Click on this link to start the process and open a "
 "wallet"
 msgstr ""
-"Für die Registrierung wird zunächst eine 'Know Your Client' oder KYC-"
+"Für die Registrierung wird zunächst eine \"Know Your Client\" oder KYC-"
 "Nummer benötigt. Diese erhalten Sie bei der Eröffnung eines GreenCoinX "
 "Online Wallet. Klicken Sie auf den Link um den Prozess einer Kontoeröffnung "
 "zu beginnen."
@@ -4092,7 +4154,7 @@ msgid ""
 msgstr ""
 "Sobald Ihr Wallet eröffnet wurde erhalten Sie eine KYC ID. Diese ist "
 "einzigartig. Geben Sie diese KYC ID in die dafür vorgesehene Box ein und "
-"klicken Sie auf “Bestätigen KYC Info.”  Daraufhin werden Sie identifiziert "
+"klicken Sie auf 'Bestätigen KYC Info.'  Daraufhin werden Sie identifiziert "
 "den KYC Prozess absolviert zu haben und können mit einer Kontoeröffnung auf "
 "SiiCrypto fortfahren. "
 
@@ -4106,7 +4168,7 @@ msgstr ""
 "Für Handelszwecke geben Sie bitte Ihren Namen und dann den Benutzernamen "
 "an . Ihr Benutzernamen sollte nur aus Charakteren und Nummern bestehen, "
 "keinen Leerzeichen. Geben Sie Ihre E-mail Adresse an und erstellen Sie ein "
-"Passwort. Danach klicken Sie auf “Registrieren” um die SiiCrypto "
+"Passwort. Danach klicken Sie auf 'Registrieren' um die SiiCrypto "
 "Kontoeröffnung abzuschliessen."
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\signup.html.php:105

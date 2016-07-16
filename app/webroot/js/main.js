@@ -150,6 +150,44 @@ function BuyFormCalculate (){
 		$("#BuySubmitButton").attr("disabled", "disabled");
 		$("#BuySubmitButton").attr("class", "btn btn-warning btn-block");
 	}else{
+		if($("#AutoXGC").html() == "" || $("#AutoBTC").html() == ""){
+			BuySummary = "Auto withdrawal address not given!";
+			$("#BuySummary").html(BuySummary);
+			$("#BuySubmitButton").attr("disabled", "disabled");
+			$("#BuySubmitButton").attr("class", "btn btn-warning btn-block");
+				return false;
+		}else{
+			if($("#BuyFirstCurrency").val()=='BTC'){
+				if($("#AutoBTCVerified").html()=="" || $("#AutoBTCVerified").html()=="No"){
+					BuySummary = "Auto withdrawal BTC address not given!";
+					$("#BuySummary").html(BuySummary);
+					$("#BuySubmitButton").attr("disabled", "disabled");
+					$("#BuySubmitButton").attr("class", "btn btn-warning btn-block");
+						return false;
+				}
+			}
+			
+			if($("#BuyFirstCurrency").val()=='XGC'){
+				if($("#AutoXGCVerified").html()=="" || $("#AutoXGCVerified").html()=="No"){
+					BuySummary = "Auto withdrawal XGC address not given!";
+					$("#BuySummary").html(BuySummary);
+					$("#BuySubmitButton").attr("disabled", "disabled");
+					$("#BuySubmitButton").attr("class", "btn btn-warning btn-block");
+						return false;
+				}
+			}
+			
+			if($("#BuySecondCurrency").val()=='XGC'){
+				if($("#AutoXGCVerified").html()=="" || $("#AutoXGCVerified").html()=="No"){
+					BuySummary = "Auto withdrawal XGC address not given!";
+					$("#BuySummary").html(BuySummary);
+					$("#BuySubmitButton").attr("disabled", "disabled");
+					$("#BuySubmitButton").attr("class", "btn btn-warning btn-block");
+						return false;
+				}
+			}
+			
+		}
 		BuySummary = "The transaction amount " + GrandTotal  + " " + SecondCurrency;
 		$("#BuySummary").html(BuySummary);
 		$("#BuySubmitButton").removeAttr('disabled');
@@ -229,6 +267,44 @@ function SellFormCalculate (){
 		$("#SellSubmitButton").attr("disabled", "disabled");
 		$("#SellSubmitButton").attr("class", "btn btn-warning btn-block");				
 	}else{
+		if($("#AutoXGC").html() == "" || $("#AutoBTC").html() == ""){
+			SellSummary = "Auto withdrawal address not given!";
+			$("#SellSummary").html(SellSummary);
+			$("#SellSubmitButton").attr("disabled", "disabled");
+			$("#SellSubmitButton").attr("class", "btn btn-warning btn-block");
+				return false;
+		}else{
+			if($("#SellFirstCurrency").val()=="BTC"){
+				if($("#AutoBTCVerified").html()=="" || $("#AutoBTCVerified").html()=="No"){
+					SellSummary = "Auto withdrawal BTC address not given!";
+					$("#SellSummary").html(SellSummary);
+					$("#SellSubmitButton").attr("disabled", "disabled");
+					$("#SellSubmitButton").attr("class", "btn btn-warning btn-block");
+						return false;
+				}					
+			}
+			if($("#SellFirstCurrency").val()=="XGC"){
+				if($("#AutoXGCVerified").html()=="" || $("#AutoXGCVerified").html()=="No"){
+					SellSummary = "Auto withdrawal XGC address not given!";
+					$("#SellSummary").html(SellSummary);
+					$("#SellSubmitButton").attr("disabled", "disabled");
+					$("#SellSubmitButton").attr("class", "btn btn-warning btn-block");
+						return false;
+				}					
+			}
+			if($("#SellSecondCurrency").val()=="XGC"){
+				if($("#AutoXGCVerified").html()=="" || $("#AutoXGCVerified").html()=="No"){
+					SellSummary = "Auto withdrawal XGC address not given!";
+					$("#SellSummary").html(SellSummary);
+					$("#SellSubmitButton").attr("disabled", "disabled");
+					$("#SellSubmitButton").attr("class", "btn btn-warning btn-block");
+						return false;
+				}					
+			}			
+			
+			
+		}
+
 		SellSummary = "The transaction amount " + GrandTotal  + " " + FirstCurrency;
 		$("#SellSummary").html(SellSummary);
 		$("#SellSubmitButton").removeAttr('disabled');
@@ -790,4 +866,51 @@ if(uri.substr(0,2)=='de' || uri.substr(0,2)=='en' || uri.substr(0,2)=='es' || ur
 	}
 	
 	window.location.assign(nexturi);
+}
+function AutoBTC(){
+	var AutoBTC = $("#AutoBTC").val();
+		$.getJSON(locale+'/Updates/AutoBTC/'+AutoBTC,
+		function(ReturnValues){
+			if(ReturnValues['Updated']=="Yes"){
+				alert("Updated BTC address: "+ AutoBTC)
+			}
+		}
+		);
+}
+function AutoXGC(){
+	var AutoXGC = $("#AutoXGC").val();
+			$.getJSON(locale+'/Updates/AutoXGC/'+AutoXGC,
+			function(ReturnValues){
+			if(ReturnValues['Updated']=="Yes"){
+				alert("Updated XGC address: "+ AutoXGC)
+			}
+			}
+		);
+}
+function VerifyBTC(){
+	var AutoBTC = $("#AutoBTC").val();
+		$.getJSON(locale+'/Updates/VerifyBTC/'+AutoBTC,
+		function(ReturnValues){
+			if(ReturnValues['Updated']=="Yes"){
+				alert("Verified BTC address: "+ AutoBTC);
+				window.location.assign(locale+"/ex/dashboard");								
+			}else{
+				alert("Incorrect BTC address: "+ AutoBTC);
+			}
+		}
+		);
+}
+function VerifyXGC(){
+	var AutoXGC = $("#AutoXGC").val();
+			$.getJSON(locale+'/Updates/VerifyXGC/'+AutoXGC,
+			function(ReturnValues){
+			if(ReturnValues['Updated']=="Yes"){
+				alert("Verified XGC address: "+ AutoXGC);
+				window.location.assign(locale+"/ex/dashboard");								
+			}else
+			{
+				alert("Incorrect XGC address: "+ AutoXGC);
+			}
+			}
+		);
 }

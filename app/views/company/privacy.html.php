@@ -6,8 +6,7 @@
 </p>
 
 <p><strong><?=$t('Non-personal identification information')?></strong><br>
-<blockquote><?=$t('We may collect non-personal identification information about Users whenever they interact with our Site. 
-Non-personal identification information may include the browser name, the type of computer and technical information about Users, means of connection to our Site, such as the operating system and the Internet service providers utilized and other similar information.')?></blockquote></p>
+<blockquote><?=$t('We may collect non-personal identification information about Users whenever they interact with our Site. Non-personal identification information may include the browser name, the type of computer and technical information about Users, means of connection to our Site, such as the operating system and the Internet service providers utilized and other similar information.')?></blockquote></p>
 
 <p><strong><?=$t('Web browser cookies')?></strong>
 

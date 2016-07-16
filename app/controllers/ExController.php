@@ -28,6 +28,7 @@ use app\extensions\action\MultiSig;
 use app\extensions\action\Functions;
 use app\extensions\action\OrderFunctions;
 use app\controllers\UpdatesController;
+use lithium\core\Environment; 
 use \lithium\template\View;
 use \Swift_MailTransport;
 use \Swift_Mailer;
@@ -555,13 +556,14 @@ class ExController extends \lithium\action\Controller {
 	}
 	
 	public function dashboard() {
+		if(substr(Environment::get('locale'),0,2)=="en"){$locale = "en";}else{$locale = Environment::get('locale');}
 	if($this->request->query['json']==true){
 		$this->_render['type'] = 'json';		
 	}
 	
 		$user = Session::read('member');
 		$id = $user['_id'];
-		if ($user==""){		return $this->redirect('/login');exit;}
+		if ($user==""){		return $this->redirect('/'.$locale.'/login');exit;}
 		$details = Details::find('first',
 			array('conditions'=>array('user_id'=>$id))
 		);
@@ -872,6 +874,7 @@ class ExController extends \lithium\action\Controller {
 			print_r("DetailsBalance".$details[$balance]."<br>");
 			print_r("CommissionAmount".$CommissionAmount."<br>");
  */
+	
 			$data = array(
 				$balance => (float)$details[$balance] - (float)$CommissionAmount,
 			);
@@ -890,11 +893,12 @@ class ExController extends \lithium\action\Controller {
 						'user_id'=>(string)$Orders['user_id'], 
 						)
 				));
-/* 			print_r("Buy------------<br>");
+/* 
+			print_r("Buy------------<br>");
 			print_r("Balance".$balance."<br>");
 			print_r("DetailsBalance".$details[$balance]."<br>");
 			print_r("Amount".$Amount."<br>");
- */				
+*/				
 				$data = array(
 					$balance => (float)$details[$balance] + (float)$Amount,
 				);
@@ -934,7 +938,9 @@ class ExController extends \lithium\action\Controller {
 			$multiSig = new MultiSig();
 			$multiSig->transferMultiSig($id);
  	}
-	public function RequestFriend($id){
+
+
+		public function RequestFriend($id){
 	$mongodb = Connections::get('default')->connection;
 		$RequestFriend = Orders::connection()->connection->command(array(
 			'aggregate' => 'orders',

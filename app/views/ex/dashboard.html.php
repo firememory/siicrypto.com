@@ -105,7 +105,45 @@ foreach($virtualcurrencies as $VC){
 				</div>
 				</td>
 				</tr>
-			
+				<?php if($details['AutoBTC']['address']!="" && $details['AutoBTC']['verified']=='Yes'){?>
+				<tr>
+					<th colspan="7"><?=$t('Auto withdrawal BTC Address')?>: <?=$details['AutoBTC']['address']?>, <?=$t('Verified')?>: <?=$details['AutoBTC']['verified']?>
+					</th>
+				</tr>
+				<?php }else{?>
+				<tr>
+					<th  class="headTable"><?=$t('Auto Withdraw Address on buying ')?> BTC (Bitcoin)<br><small></th>
+					<td colspan="5">
+						<input class="form-control" value="<?=$details['AutoBTC']['address']?>" name="AutoBTC" id="AutoBTC"><br>
+					<font style="color:red"><?=$t('Please make sure this address is correct, if not, the BTC you purchase will be lost. It cannot be blank too.')?></font>
+					</small>
+					</td>
+					<td>
+						<button onclick="AutoBTC()" class="btn btn-primary"><?=$t('Save')?></button><br><br>
+						<button onclick="VerifyBTC()" class="btn btn-primary"><?=$t('Verify')?></button>
+					</td>
+				</tr>
+				<?php }?>
+				<?php if($details['AutoXGC']['address']!="" && $details['AutoXGC']['verified']=='Yes'){?>
+				<tr>
+					<th colspan="7"><?=$t('Auto withdrawal XGC Address')?>: <?=$details['AutoXGC']['address']?>, <?=$t('Verified')?>: <?=$details['AutoXGC']['verified']?>
+					</th>
+				</tr>
+				
+				<?php }else{?>
+				<tr>
+					<th  class="headTable"><?=$t('Auto Withdraw Address on buying ')?> XGC (GreenCoinX)<br><small></th>
+					<td colspan="5">
+						<input class="form-control" value="<?=$details['AutoXGC']['address']?>" name="AutoXGC" id="AutoXGC">
+						<br>
+					<font style="color:red"><?=$t('Please make sure this address is correct, if not, the XGC you purchase will be lost. It cannot be blank too.')?></font></small>
+					</td>
+					<td>
+						<button onclick="AutoXGC()" class="btn btn-primary"><?=$t('Save')?></button><br><br>
+						<button onclick="VerifyXGC()" class="btn btn-primary"><?=$t('Verify')?></button>
+					</td>
+				</tr>
+				<?php }?>				
 				<tr>
 					<th  class="headTable"><?=$t('Currency')?> <br><small></small></th>
 					<?php 
