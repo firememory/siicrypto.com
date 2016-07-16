@@ -677,7 +677,7 @@ class UsersController extends \lithium\action\Controller {
 		$userid = $details['user_id'];
 		///////////////////// Change of code required when Virtual Currency added
 		// find the last address and check balance is 0 && NO Transactions
-		
+/*		
 		$k = 0;
 		foreach($details['addresses'][$currency] as $addresses){
 			if($addresses['balance']==0 && $addresses['transactions']=="N"){
@@ -696,6 +696,7 @@ class UsersController extends \lithium\action\Controller {
 			$multisig = new MultiSig();
 			$address = $multisig->createNew($id,$currency);
 		}
+		*/
 		// End of /////////////////// Change of code required when Virtual Currency added		
 		// create a simple process for restore coins to wallets. 
 		// BTC = blockchain.info/
