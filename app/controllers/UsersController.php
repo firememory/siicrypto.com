@@ -63,20 +63,21 @@ class UsersController extends \lithium\action\Controller {
 			// coin for creating new multisig address
 			$coin = new Greencoin('http://'.GREENCOIN_WALLET_SERVER.':'.GREENCOIN_WALLET_PORT,GREENCOIN_WALLET_USERNAME,GREENCOIN_WALLET_PASSWORD);
 			
-			$coinX0 = CoinAddress::bitcoin();  
+/*			$coinX0 = CoinAddress::bitcoin();  
 			$coinX1 = CoinAddress::bitcoin();  
 			$coinX2 = CoinAddress::bitcoin();  
 
 			$coinB0 = CoinAddress::bitcoin();  
 			$coinB1 = CoinAddress::bitcoin();  
 			$coinB2 = CoinAddress::bitcoin();  
-
+*/
 			
 //				print 'public (base58): ' . $coin['public'] . "\n";
 //				print 'public (Hex)   : ' . $coin['public_hex'] . "\n";
 //				print 'private (WIF)  : ' . $coin['private'] . "\n";
 //				print 'private (Hex)  : ' . $coin['private_hex'] . "\n"; 
-		$publickeys = array(
+
+/*		$publickeys = array(
 			$coinX0['public_hex'],
 			$coinX1['public_hex'],
 			$coinX2['public_hex'],
@@ -89,6 +90,7 @@ class UsersController extends \lithium\action\Controller {
 			$coinB2['public_hex'],
 		);		
 		$createMultiSigBTC	= $coin->createmultisig($security,$publickeys);		
+*/		
 			$data = array(
 				'user_id'=>(string)$Users->_id,
 				'username'=>(string)$Users->username,
@@ -107,6 +109,7 @@ class UsersController extends \lithium\action\Controller {
 				'balance.CAD' => (float)0,				
 				'balance.GBP' => (float)0,
 				'walletid'=>$uuid->v4(),
+/*				
 				'coin.XGC.0.public' => $coinX0['public'],
 				'coin.XGC.1.public' => $coinX1['public'],
 				'coin.XGC.2.public' => $coinX2['public'],
@@ -141,6 +144,7 @@ class UsersController extends \lithium\action\Controller {
 				'addresses.BTC.0.balance'=>0,
 				'addresses.BTC.0.transactions'=>'N',
 				'addresses.BTC.0.numbers'=>array(0,1,2),
+*/				
 			);
 			Details::create()->save($data);
 
