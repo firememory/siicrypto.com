@@ -28,6 +28,16 @@ if(substr(Environment::get('locale'),0,2)=="en"){$locale = "en";}else{$locale = 
 	
 <?php }?>				
 	<ul class="nav navbar-nav navbar-right">
+		<li><a href='#' class='dropdown-toggle' data-toggle='dropdown' >Lang: <?=$locale?>
+		 <i class='glyphicon glyphicon-chevron-down'></i>
+		</a>
+			<ul  class="dropdown-menu">
+			<li style="font-size:13px;"><a href="#" onclick="ChangeLanguage('en','<?=$_SERVER['REQUEST_URI']?>');"><small>English</small></a></li>	
+			<li style="font-size:13px;"><a href="#" onclick="ChangeLanguage('de','<?=$_SERVER['REQUEST_URI']?>');"><small>Deutsch</small></a></li>
+			<li style="font-size:13px;"><a href="#" onclick="ChangeLanguage('es','<?=$_SERVER['REQUEST_URI']?>');"><small>Español</small></a></li>
+			<li style="font-size:13px;"><a href="#" onclick="ChangeLanguage('hi','<?=$_SERVER['REQUEST_URI']?>');"><small>हिन्दी</small></a></li>
+			</ul>
+		</li>
 		<?php if($user!=""){ ?>
 		<li><a href='#' class='dropdown-toggle' data-toggle='dropdown' >
 			<?=$t('Company')?> <i class='glyphicon glyphicon-chevron-down'></i>
