@@ -97,7 +97,7 @@ class Walletbtcnotify extends \lithium\console\Command {
 // email send function	
 
 						$details = Details::find('first',
-							array('conditions'=>array('username'=> (string) $username))
+							array('conditions'=>array('username'=> (string) $userName))
 						);
 
 									
