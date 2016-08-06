@@ -177,7 +177,8 @@ function initCanvas(ww,hh)
 									</td>
 								</tr>
 							</table>
- 							<table class="table table-condensed table-bordered table-hover">
+<!--
+							<table class="table table-condensed table-bordered table-hover">
 								<tr style="background-color:#CFFDB9"><td><?=$t('Previous Receiving Addresses')?></td></tr>
 								<?php 
 						if($currency=="XGC"){
@@ -203,7 +204,7 @@ function initCanvas(ww,hh)
 						}
 								?>
 								</table>
-
+-->
       </div>
     </div>
   </div>
