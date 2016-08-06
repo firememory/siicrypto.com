@@ -25,7 +25,8 @@ foreach($virtualcurrencies as $VC){
   <div class="panel-body">
 <table class="table table-condensed table-bordered table-hover">
 			<thead>
-				<tr>
+<!--
+			<tr>
 				<td colspan=7><div class="alert alert-success">
 				<?php 
 				$k=0;$i = count($details['incoming']['BTC'])-1;
@@ -104,7 +105,9 @@ foreach($virtualcurrencies as $VC){
 				?>
 				</div>
 				</td>
+			
 				</tr>
+-->					
 				<?php if($details['AutoBTC']['address']!="" && $details['AutoBTC']['verified']=='Yes'){?>
 				<tr>
 					<th colspan="7"><?=$t('Auto withdrawal BTC Address')?>: <?=$details['AutoBTC']['address']?>, <?=$t('Verified')?>: <?=$details['AutoBTC']['verified']?>
