@@ -97,12 +97,16 @@ class Walletxgcnotify extends \lithium\console\Command {
 //					/////////////////////////////////Email//////////////////////////////////////////////////				
 // email send function	
 
-							$dataDetails = array(
-								'incoming.XGC.'.$incoming.'.Amount' => $Amount,
-								'incoming.XGC.'.$incoming.'.tx'=> $s,
-								'incoming.XGC.'.$incoming.'.Address'=>$address,
+						$details = Details::find('first',
+							array('conditions'=>array('username'=> (string) $username))
+						);
+
+									
+						$dataDetails = array(
+								'balance.XGC' => (float)((float)$details['balance.XGC'] + (float)$Amount),
 								'XGCnewaddress'=>'Yes'						
 							);
+
 							
 							$data = array(
 							'DateTime' => new \MongoDate(),

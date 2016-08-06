@@ -96,12 +96,16 @@ class Walletbtcnotify extends \lithium\console\Command {
 //					/////////////////////////////////Email//////////////////////////////////////////////////				
 // email send function	
 
-							$dataDetails = array(
-								'incoming.BTC.'.$incoming.'.Amount' => $Amount,
-								'incoming.BTC.'.$incoming.'.tx'=> $s,
-								'incoming.BTC.'.$incoming.'.Address'=>$address,
+						$details = Details::find('first',
+							array('conditions'=>array('username'=> (string) $username))
+						);
+
+									
+						$dataDetails = array(
+								'balance.BTC' => (float)((float)$details['balance.BTC'] + (float)$Amount),
 								'BTCnewaddress'=>'Yes'						
 							);
+
 							
 							$data = array(
 							'DateTime' => new \MongoDate(),
