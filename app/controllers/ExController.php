@@ -13,6 +13,8 @@ use app\models\Orders;
 use app\models\Trades;
 use app\models\Pages;
 use app\models\Parameters;
+use app\models\Transactions;
+use app\models\Moves;
 use lithium\data\Connections;
 use MongoID;
 use \Graph;
@@ -296,7 +298,9 @@ class ExController extends \lithium\action\Controller {
 						$this->updateBalance($order_id);
 						$this->updateBalance($PO['_id']);
 						$this->SendOrderCompleteEmails($order_id,$user['_id']);
-						$this->SendOrderCompleteEmails($PO['_id'],$PO['user_id']);						
+						$this->SendAutoWithdraw($order_id,$user['_id']);
+						$this->SendOrderCompleteEmails($PO['_id'],$PO['user_id']);
+						$this->SendAutoWithdraw($PO['_id'],$PO['user_id']);
 					}
 				}
 		
@@ -350,7 +354,10 @@ class ExController extends \lithium\action\Controller {
 						$this->updateBalance($order_id);
 						$this->updateBalance($PO['_id']);
 						$this->SendOrderCompleteEmails($order_id,$user['_id']);
-						$this->SendOrderCompleteEmails($PO['_id'],$PO['user_id']);						
+						$this->SendAutoWithdraw($order_id,$user['_id']);
+						$this->SendOrderCompleteEmails($PO['_id'],$PO['user_id']);
+						$this->SendAutoWithdraw($PO['_id'],$PO['user_id']);
+
 						break;
 					}
 					
@@ -431,7 +438,9 @@ class ExController extends \lithium\action\Controller {
 						$this->updateBalance($order_id);
 						$this->updateBalance($PO['_id']);
 						$this->SendOrderCompleteEmails($order_id,$user['_id']);
-						$this->SendOrderCompleteEmails($PO['_id'],$PO['user_id']);						
+						$this->SendAutoWithdraw($order_id,$user['_id']);
+						$this->SendOrderCompleteEmails($PO['_id'],$PO['user_id']);
+						$this->SendAutoWithdraw($PO['_id'],$PO['user_id']);
 						break;
 					}
 					if((float)$PO['Amount']<(float)($Amount)){
@@ -518,7 +527,9 @@ class ExController extends \lithium\action\Controller {
 						$this->updateBalance($order_id);
 						$this->updateBalance($PO['_id']);
 						$this->SendOrderCompleteEmails($order_id,$user['_id']);
-						$this->SendOrderCompleteEmails($PO['_id'],$PO['user_id']);						
+						$this->SendAutoWithdraw($order_id,$user['_id']);
+						$this->SendOrderCompleteEmails($PO['_id'],$PO['user_id']);
+						$this->SendAutoWithdraw($PO['_id'],$PO['user_id']);
 						break;
 					}
 			}
@@ -820,7 +831,7 @@ class ExController extends \lithium\action\Controller {
 				$balanceFirst = 'balance.'.$Orders['FirstCurrency'];
 				$balanceSecond = 'balance.'.$Orders['SecondCurrency'];
 				$data = array(
-					$balanceSecond => (float)($details[$balanceSecond] + $Orders['PerPrice']*$Orders['Amount'])
+					$balanceSecond => (float)(round($details[$balanceSecond] + $Orders['PerPrice']*$Orders['Amount'],8))
 				);
 
 				$details = Details::find('all', array(
@@ -833,7 +844,7 @@ class ExController extends \lithium\action\Controller {
 				$balanceFirst = 'balance.'.$Orders['FirstCurrency'];
 				$balanceSecond = 'balance.'.$Orders['SecondCurrency'];
 				$data = array(
-					$balanceFirst => (float)($details[$balanceFirst] + (float)$Orders['Amount'])
+					$balanceFirst => (float)(round($details[$balanceFirst] + (float)$Orders['Amount'],8))
 				);
 		
 				$details = Details::find('all', array(
@@ -1554,6 +1565,135 @@ $graph->legend->SetFrameWeight(1);
 		);	
 		return $this->render(array('layout' => false));
 	}
+public function SendAutoWithdraw($order_id,$user_id){
+	
+		$order = Orders::find('first', array(
+			'conditions'=>array('_id'=>new MongoID($order_id))
+		));
+		$user = Users::find('first', array(
+			'conditions'=>array('_id'=>new MongoID($user_id))
+		));
+		$detail = Details::find('first', array(
+			'conditions'=>array('user_id'=>(string)($user_id))
+		));		
+		$parameter = Parameters::find('first');
+		
+		if($order['Action']=='Sell'){
+			$data = array(
+				'email'=>$user['email'],
+				'DateTime' => new \MongoDate(),
+				'Action'=>'Sell',
+				'Currency'=>$order['SecondCurrency'],
+				'Amount'=>$order['Amount'],
+				'PerPrice'=>$order['PerPrice'],
+				'Commission.Amount'=>round($order['Commission']['Amount'],8),
+				'Commission.Currency'=>$order['Commission']['Currency'],
+				'username'=>$order['username'],
+				'user_id'=>$order['user_id'],
+				'FinalAmount'=>round($order['Amount']*$order['PerPrice']-$order['Commission']['Amount'],8),
+				'Auto'.$order['SecondCurrency']=>$detail['Auto'.$order['SecondCurrency']],
+				'balance.'.$order['SecondCurrency']=>$detail['balance.'.$order['SecondCurrency']],
+				'Complete'=>'No'
+			);
+			$currency = $order['SecondCurrency'];
+			$email=$user['email'];
+			$moves = Moves::create();			
+			$moves->save($data);
+			if($order['SecondCurrency']=='XGC'){
+				$txfee = $parameter['payxgctxfee'];
+			}else{
+				$txfee = $parameter['paytxfee'];
+			}
+			$dataTransaction = array(
+					'DateTime' => new \MongoDate(),
+					'username' => $order['username'],
+					'address'=>$detail['Auto'.$order['SecondCurrency']],
+					'verify.payment' => sha1(openssl_random_pseudo_bytes(4,$cstrong)),
+					'Paid' => 'No',
+					'Amount'=> (float) - round($order['Amount']*$order['PerPrice']-$order['Commission']['Amount'],8),
+					'Currency'=> $order['SecondCurrency'],
+					'txFee' => (float) -$txfee,
+					'Added'=>false,
+			);
+		}
+		if($order['Action']=='Buy'){
+				$data = array(
+				'email'=>$user['email'],
+				'DateTime' => new \MongoDate(),
+				'Action'=>'Buy',
+				'Currency'=>$order['FirstCurrency'],
+				'Amount'=>$order['Amount'],
+				'Commission.Amount'=>round($order['Commission']['Amount'],8),
+				'Commission.Currency'=>$order['Commission']['Currency'],
+				'PerPrice'=>$order['PerPrice'],
+				'username'=>$order['username'],
+				'user_id'=>$order['user_id'],
+				'FinalAmount'=>round($order['Amount']-$order['Commission']['Amount'],8),
+				'Auto'.$order['FirstCurrency']=>$detail['Auto'.$order['FirstCurrency']],
+				'balance.'.$order['FirstCurrency']=>$detail['balance.'.$order['FirstCurrency']],
+				'Complete'=>'No'
+			);
+			$currency = $order['FirstCurrency'];
+			$email=$user['email'];
+			$moves = Moves::create();			
+			$moves->save($data);
+				$dataTransaction = array(
+					'DateTime' => new \MongoDate(),
+					'username' => $order['username'],
+					'address'=>$detail['Auto'.$order['FirstCurrency']],
+					'verify.payment' => sha1(openssl_random_pseudo_bytes(4,$cstrong)),
+					'Paid' => 'No',
+					'Amount'=> (float) - round($order['Amount']-$order['Commission']['Amount'],8),
+					'Currency'=> $order['FirstCurrency'],
+					'txFee' => (float) -$txfee,
+					'Added'=>false,
+			);
+		}
+		$tx = Transactions::create();
+		$tx->save($dataTransaction);	
+		$view  = new View(array(
+				'loader' => 'File',
+				'renderer' => 'File',
+				'paths' => array(
+					'template' => '{:library}/views/{:controller}/{:template}.{:type}.php'
+				)
+			));
+			
+			$tx = Transactions::find('first',array(
+				'conditions'=>array('_id'=>$tx->_id)
+			));
+			$data = array(
+				'username'=>$tx['username'],
+				'verify'=>$tx['verify']['payment'],
+				'Currency'=>$tx['Currency'],
+				'address'=>$tx['address'],
+				'Amount'=>$tx['Amount'],
+			);
+			$body = $view->render(
+				'template',
+				compact('data','details','tx','currency'),
+				array(
+					'controller' => 'users',
+					'template'=>'withdrawadmin',
+					'type' => 'mail',
+					'layout' => false
+				)
+			);
 
+			$transport = Swift_MailTransport::newInstance();
+			$mailer = Swift_Mailer::newInstance($transport);
+	
+			$message = Swift_Message::newInstance();
+			$message->setSubject($currency." Withdrawal Approval from Trade".COMPANY_URL);
+			$message->setFrom(array(NOREPLY => $currency.' Withdrawal Approval email Trade '.COMPANY_URL));
+			$message->setTo($email);
+			$message->addBcc(MAIL_1);
+			$message->addBcc(MAIL_2);			
+			$message->addBcc(MAIL_3);		
+
+			$message->setBody($body,'text/html');
+			
+			$mailer->send($message);
+	}
 }
 ?>

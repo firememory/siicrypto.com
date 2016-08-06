@@ -32,7 +32,7 @@ if(substr(Environment::get('locale'),0,2)=="en"){$locale = "en";}else{$locale = 
 	</tr>
 	<tr>
 		<td>
-		<?=$this->form->field('BuyAmount', array('label'=>$t('Amount').' '.$first_curr,'class'=>'col-md-1 form-control numbers', 'value'=>0, 'onBlur'=>'this.value=(this.value).replace(/,/g, "");$("#BuySubmitButton").attr("disabled", "disabled");','min'=>'.25','max'=>'999999','maxlength'=>'10','type'=>'number','step'=>"0.00000001","onChange"=>"$('#BuyMultiple').val('N');" )); ?>				
+		<?=$this->form->field('BuyAmount', array('label'=>$t('Amount').' '.$first_curr,'class'=>'col-md-1 form-control numbers', 'value'=>0, 'onBlur'=>'this.value=(this.value).replace(/,/g, "");$("#BuySubmitButton").attr("disabled", "disabled");','min'=>'.01','max'=>'999999','maxlength'=>'10','type'=>'number','step'=>"0.00000001","onChange"=>"$('#BuyMultiple').val('N');" )); ?>				
 		</td>
 		<td>
 			<label for="BuyPriceper"><?=$t('Price per')?> <?=$first_curr?></label>

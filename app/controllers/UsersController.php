@@ -1155,11 +1155,11 @@ class UsersController extends \lithium\action\Controller {
 				$data = array(
 					'DateTime' => new \MongoDate(),
 					'username' => $details['username'],
-					'address'=>$address,							
+					'address'=>$address,
 					'verify.payment' => sha1(openssl_random_pseudo_bytes(4,$cstrong)),
 					'Paid' => 'No',
 					'Amount'=> (float) -$amount,
-					'Currency'=> $currency,					
+					'Currency'=> $currency,
 					'txFee' => (float) -$fee,
 					'Added'=>false,
 				);							
