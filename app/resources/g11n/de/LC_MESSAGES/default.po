@@ -2185,43 +2185,43 @@ msgstr "Fertig!"
 msgid "Toggle navigation"
 msgstr "Toggle-Navigation"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\header.html.php:33
-#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\header.html.php:90
+#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\header.html.php:43
+#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\header.html.php:100
 msgid "Company"
 msgstr ""
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\header.html.php:40
-#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\header.html.php:97
+#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\header.html.php:50
+#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\header.html.php:107
 msgid "Security & Risk"
 msgstr "Sicherheit & Risiko"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\header.html.php:42
-#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\header.html.php:99
+#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\header.html.php:52
+#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\header.html.php:109
 msgid "Privacy & Terms"
 msgstr "Privatsphäre und Bedingungen"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\header.html.php:43
-#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\header.html.php:100
+#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\header.html.php:53
+#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\header.html.php:110
 msgid "Press"
 msgstr "Presse"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\header.html.php:50
+#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\header.html.php:60
 msgid "Your Account"
 msgstr "Dein Benutzerkonto"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\header.html.php:51
+#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\header.html.php:61
 msgid "Dashboard"
 msgstr "Startseite"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\header.html.php:86
+#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\header.html.php:96
 msgid "Logout"
 msgstr "Abmelden"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\header.html.php:103
+#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\header.html.php:113
 msgid "Login"
 msgstr "Anmelden"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\header.html.php:104
+#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\header.html.php:114
 msgid "Register"
 msgstr "Registrierung"
 
@@ -2309,102 +2309,102 @@ msgstr "Danke"
 msgid "Support"
 msgstr "Hilfe"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:110
+#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:113
 msgid "Auto withdrawal BTC Address"
 msgstr ""
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:115
-#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:135
+#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:118
+#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:138
 msgid "Auto Withdraw Address on buying "
 msgstr ""
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:118
+#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:121
 msgid ""
 "Please make sure this address is correct, if not, the BTC you purchase will "
 "be lost. It cannot be blank too."
 msgstr ""
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:122
-#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:142
+#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:125
+#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:145
 msgid "Save"
 msgstr ""
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:123
-#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:143
+#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:126
+#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:146
 msgid "Verify"
 msgstr "Bestätigen"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:129
+#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:132
 msgid "Auto withdrawal XGC Address"
 msgstr ""
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:139
+#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:142
 msgid ""
 "Please make sure this address is correct, if not, the XGC you purchase will "
 "be lost. It cannot be blank too."
 msgstr ""
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:148
+#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:151
 msgid "Currency"
 msgstr "Währung"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:201
+#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:204
 msgid "Click on a currency to Deposit or Withdraw"
 msgstr "Klicken Sie auf eine Währung um Ein oder Auszuzahlen"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:250
+#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:253
 msgid "Opening Balance"
 msgstr "Eröffnungs Kontostand "
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:260
+#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:263
 msgid "Current Balance"
 msgstr "Aktuelle Kontostand "
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:261
+#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:264
 msgid "including pending orders"
 msgstr "einschließlich ausstehender Aufträge"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:271
+#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:274
 msgid "Pending Buy Orders"
 msgstr "Ausstehende Kauf-Aufträge"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:282
+#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:285
 msgid "Pending Sell Orders"
 msgstr "Ausstehende Verkaufs-Aufträge"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:293
+#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:296
 msgid "After Execution"
 msgstr "Nach Ausführung"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:305
+#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:308
 msgid "Commissions"
 msgstr "Komission"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:316
+#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:319
 msgid "Complete Buy Orders"
 msgstr "Ausgeführte Kauf-Aufträge"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:327
+#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:330
 msgid "Complete Sell Orders"
 msgstr "Ausgeführte Verkaufs-Aufträge"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:338
+#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:341
 msgid "Completed Order Commissions"
 msgstr "Fertiggestellte Auftragskommission"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:353
+#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:356
 msgid "Status"
 msgstr "Status"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:356
+#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:359
 msgid "Avg Price"
 msgstr "Arg Preis"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:359
+#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:362
 msgid "Pending orders"
 msgstr "Ausstehende Aufträge"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:384
+#: F:\Apache\www\TBG\siicrypto.com\app\views\ex\dashboard.html.php:387
 msgid "Completed orders"
 msgstr "Fertiggestellte Aufträge"
 
@@ -2991,7 +2991,7 @@ msgid "Send password reset link"
 msgstr "Senden eines “Passwort erneuern” Links"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding.html.php:168
-#: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding.html.php:236
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding.html.php:237
 msgid "Address"
 msgstr "Adresse"
 
@@ -3003,21 +3003,21 @@ msgstr "hinzufügen"
 msgid "please send payment to"
 msgstr "bitte senden Sie eine Zahlung an"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding.html.php:181
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding.html.php:182
 msgid "Previous Receiving Addresses"
 msgstr "Vorherige Empfängeradressen"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding.html.php:214
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding.html.php:215
 msgid "Withdraw"
 msgstr "Auszahlen"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding.html.php:220
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding.html.php:221
 msgid "Enter the amount of XGC you are withdrawing and then click Calculate"
 msgstr ""
 "geben Sie den gewünschten XGC Auszahlungsbetrag an und klicken Sie auf "
 "Kalkulieren"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding.html.php:221
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding.html.php:222
 msgid ""
 "If an X appears next to the XGC Address in the Send To box then the address "
 "you are using is not a valid address"
@@ -3025,59 +3025,59 @@ msgstr ""
 "Wenn ein X neben der XGC Adresse in der “Versendet” box auftaucht bedeutet "
 "dies, dass sie eine ungültige E-mail Adresse benutzen."
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding.html.php:227
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding.html.php:228
 msgid "balance"
 msgstr "Kontostand"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding.html.php:242
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding.html.php:243
 msgid "Enter The"
 msgstr "Geben Sie an:"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding.html.php:242
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding.html.php:243
 msgid "Address of the Recipient"
 msgstr "Adresse des Empfängers"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding.html.php:251
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding.html.php:252
 msgid "Capture"
 msgstr "Erfassung"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding.html.php:259
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding.html.php:260
 msgid "Amount incorrect"
 msgstr "Falscher Betrag"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding.html.php:268
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding.html.php:269
 msgid "Send to"
 msgstr "Senden an"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding.html.php:276
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding.html.php:277
 msgid "Transaction Fees"
 msgstr "Überweisungskosten"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding.html.php:277
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding.html.php:278
 msgid "to miners"
 msgstr "an Bergleute (Schöpfer)"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding.html.php:281
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding.html.php:282
 msgid "Amount You Receive"
 msgstr "Zu erhaltener Betrag"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding.html.php:286
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding.html.php:287
 msgid "Calculate"
 msgstr "Berechnen"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding.html.php:287
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding.html.php:288
 msgid "Send"
 msgstr "Senden"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding.html.php:296
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding.html.php:297
 msgid "Withdrawal request"
 msgstr "AUSZAHLUNG-ANTRAG"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding.html.php:300
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding.html.php:301
 msgid "You have already made a withdrawal request for"
 msgstr "Sie haben bereits einen Auszahlungsantrag gestellt für "
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding.html.php:300
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding.html.php:301
 msgid ""
 "Please check your email and complete the request. If you want to cancel the "
 "request, please send an email to"
@@ -3085,14 +3085,14 @@ msgstr ""
 "Bitte überprüfen Sie Ihren E-Mail und füllen Sie den Auftrag aus. Sollten "
 "Sie den Auftrag löschen wollen senden Sie bitte eine E-mail an"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding.html.php:301
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding.html.php:302
 msgid ""
 "If your want to delete this request yourself, you can click on the link below"
 msgstr ""
 "wenn Sie den Antrag selber löschen möchten, klicken Sie bitte auf den Link "
 "unten"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding.html.php:306
+#: F:\Apache\www\TBG\siicrypto.com\app\views\users\funding.html.php:307
 msgid "REMOVE"
 msgstr "LÖSCHEN"
 

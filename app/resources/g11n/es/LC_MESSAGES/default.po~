@@ -703,13 +703,13 @@ msgid "Non-personal identification information"
 msgstr "Información identificada no personal"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:9
+#, fuzzy
 msgid ""
 "We may collect non-personal identification information about Users whenever "
-"they interact with our Site. \n"
-"Non-personal identification information may include the browser name, the "
-"type of computer and technical information about Users, means of connection "
-"to our Site, such as the operating system and the Internet service providers "
-"utilized and other similar information."
+"they interact with our Site. Non-personal identification information may "
+"include the browser name, the type of computer and technical information "
+"about Users, means of connection to our Site, such as the operating system "
+"and the Internet service providers utilized and other similar information."
 msgstr ""
 "Podemos recopilar información de identificación no personal sobre los "
 "usuarios cuando interactúan con nuestro sitio. \\ n\n"
@@ -718,11 +718,11 @@ msgstr ""
 "medios de conexión a nuestro Sitio,: tales como el sistema operativo y los "
 "proveedores de servicios de Internet utilizados y otra información similar."
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:12
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:11
 msgid "Web browser cookies"
 msgstr "Cookies del Navegador Web"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:14
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:13
 msgid ""
 "Our Site may use &#039;cookies&#039; to enhance User experience. User&#039;s "
 "web browser places cookies on their hard drive for record-keeping purposes "
@@ -738,11 +738,11 @@ msgstr ""
 "hace, tenga en cuenta que algunas partes del sitio pueden podrán no "
 "funcionar correctamente."
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:17
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:16
 msgid "How we use collected information"
 msgstr "¿Cómo usamos la información recopilada?"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:19
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:18
 msgid ""
 "SiiCrypto (SiiCrypto.com) may collect and use Users personal information for "
 "the following purposes"
@@ -750,11 +750,11 @@ msgstr ""
 "SiiCrypto (SiiCrypto.com) puede recopilar y utilizar  la  información "
 "personal de los usuarios  para los siguientes propósitos:"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:20
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:19
 msgid "To improve customer service"
 msgstr "Para mejorar el servicio de clientes"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:21
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:20
 msgid ""
 "Information you provide helps us respond to your customer service requests "
 "and support needs more efficiently."
@@ -762,11 +762,11 @@ msgstr ""
 "Información que nos proporcione, nos ayuda a responder a sus solicitudes de "
 "servicio al cliente y las necesidades de apoyo de manera más eficiente."
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:22
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:21
 msgid "To personalize user experience"
 msgstr "Para personalizar la experiencia del usuario"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:23
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:22
 msgid ""
 "We may use information in the aggregate to understand how our Users as a "
 "group use the services and resources provided on our Site."
@@ -775,21 +775,21 @@ msgstr ""
 "usuarios, en grupo, utilizan los servicios y recursos ofrecidos en nuestro "
 "pagina."
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:24
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:23
 msgid "To improve our Site"
 msgstr "Para mejorar nuestra pagina"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:25
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:24
 msgid "We may use feedback you provide to improve our products and services."
 msgstr ""
 "Podemos utilizar su retroalimentación que usted proporciona para mejorar "
 "nuestros productos y servicios."
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:26
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:25
 msgid "To process payments"
 msgstr "Para procesar los pagos"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:27
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:26
 msgid ""
 "We may use the information Users provide about themselves when placing an "
 "order only to provide service to that order. We do not share this "
@@ -801,11 +801,11 @@ msgstr ""
 "compartimos esta información con terceros, salvo en la medida necesaria para "
 "prestar el servicio."
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:28
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:27
 msgid "To send periodic emails"
 msgstr "Para enviar correos electrónicos periódicos"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:29
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:28
 msgid ""
 "We may use the email address to send User information and updates pertaining "
 "to their order. It may also be used to respond to their inquiries, "
@@ -815,11 +815,11 @@ msgstr ""
 "de usuario y actualizaciones correspondientes a su orden. También se puede "
 "utilizar, para responder a sus consultas, preguntas, y / u otras solicitudes."
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:33
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:32
 msgid "How we protect your information"
 msgstr "¿Cómo protegemos su información?"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:35
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:34
 msgid ""
 "We adopt appropriate data collection, storage and processing practices and "
 "security measures to protect against unauthorized access, alteration, "
@@ -832,7 +832,7 @@ msgstr ""
 "usuario, contraseña, información de transacciones y los datos almacenados en "
 "nuestro Sitioweb."
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:36
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:35
 msgid ""
 "Sensitive and private data exchange between the Site and its Users happens "
 "over a SSL secured communication channel and is encrypted and protected with "
@@ -842,11 +842,11 @@ msgstr ""
 "Pasa por un canal de comunicación SSL segura, cifrada y protegida con firmas "
 "digitales."
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:38
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:37
 msgid "Sharing your personal information"
 msgstr "Compartir su información personal"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:39
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:38
 msgid ""
 "We do not sell, trade, or rent Users personal identification information to "
 "others."
@@ -854,11 +854,11 @@ msgstr ""
 "Nosotros no vendemos, comercializamos ni alquilamos los datos personales de "
 "usuarios a terceros."
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:42
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:41
 msgid "Changes to this privacy policy"
 msgstr "Cambios en esta política de privacidad"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:43
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:42
 msgid ""
 "SiiCrypto (SiiCrypto.com) has the discretion to update this privacy policy "
 "at any time. When we do, we will post a notification on the main page of our "
@@ -878,11 +878,11 @@ msgstr ""
 "responsabilidad propia, revisar esta política de privacidad periódicamente y "
 "tomar conciencia de las modificaciones."
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:46
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:45
 msgid "Your acceptance of these terms"
 msgstr "Su aceptación de estos términos"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:47
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:46
 msgid ""
 "By using this Site, you signify your acceptance of this policy and terms of "
 "service. If you do not agree to this policy, please do not use our Site. "
@@ -895,11 +895,11 @@ msgstr ""
 "publicación de cambios a esta política, será considerado como su aceptación "
 "de dichos cambios."
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:50
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:49
 msgid "Contacting us"
 msgstr "Contáctenos"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:52
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:51
 msgid ""
 "If you have any questions about this Privacy Policy, the practices of this "
 "site, or your dealings with this site, please contact us at"
@@ -908,11 +908,11 @@ msgstr ""
 "prácticas de este sitio web, o sus relaciones con este sitio, por favor, "
 "póngase en contacto con nosotros en"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:58
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:57
 msgid "Terms of Service"
 msgstr "Términos de servicio"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:60
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:59
 msgid ""
 "Please read these Terms carefully and do not use the Site or the Platform "
 "unless you accept them."
@@ -920,46 +920,46 @@ msgstr ""
 "Por favor, lea atentamente estas Condiciones y no utilice el Sitio web o la "
 "plataforma a menos que los acepta."
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:61
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:60
 msgid "is a site operated by SiiCrypto"
 msgstr "es una pagina web operada por SiiCrypto"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:62
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:61
 msgid "These Terms of Service"
 msgstr "Estas Condiciones del servicio"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:62
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:61
 msgid "Terms"
 msgstr "Condiciones"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:62
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:61
 msgid "set the conditions by which a customer, as a registered user"
 msgstr ""
 "establecer las condiciones por las cuales un cliente, como usuario registrado"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:62
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:85
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:61
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:84
 msgid "Customer(s)"
 msgstr "Cliente(s)"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:62
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:61
 msgid "can use our services for the purposes of becoming buyers"
 msgstr ""
 "pueden usar nuestros servicios a los efectos que se convierten a compradores"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:62
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:61
 msgid "Buyers"
 msgstr "Compradores"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:62
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:61
 msgid "and sellers"
 msgstr "y vendedores"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:62
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:61
 msgid "Sellers"
 msgstr "Vendedores "
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:62
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:61
 msgid ""
 "transferring the digital value asset known as &#039;GreenCoinX(s)&#039; and "
 "&#039;Bitcoin(s)&#039;"
@@ -967,7 +967,7 @@ msgstr ""
 "que transfiere el activo valor digital conocido como &#039;GreenCoinX(s)"
 "&#039; y &#039;Bitcoin(s)&#039;"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:64
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:63
 msgid ""
 "By submitting a request to open an account (&#039;Account&#039;) customers "
 "confirm that they"
@@ -975,7 +975,7 @@ msgstr ""
 "Al enviar una solicitud para abrir una cuenta (&#039;Cuenta&#039;) confirma "
 "el cliente que"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:65
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:64
 msgid ""
 "have the full capacity to wilfully accept these Terms of Service and enter "
 "into a transaction resulting on the Platform."
@@ -983,7 +983,7 @@ msgstr ""
 "tener la plena capacidad de aceptar voluntariamente estas Condiciones de "
 "servicio y entrar en una transacción resultando en la plataforma."
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:66
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:65
 msgid ""
 "have submitted a true representation of documents to verify their identity "
 "if required for higher customer status and all that it entails."
@@ -992,11 +992,11 @@ msgstr ""
 "identidad y si requerido una mayor categoría de cliente y todo lo que ello "
 "conlleva."
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:67
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:66
 msgid "and have accepted these Terms of Service."
 msgstr "y han aceptado estas Condiciones de servicio."
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:70
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:69
 msgid ""
 "SiiCrypto reserves the right to amend, change, add or remove sections of "
 "these Terms at any time. Customers will be notified via a News Release on "
@@ -1009,7 +1009,7 @@ msgstr ""
 "Es la responsabilidad de los clientes de revisar cualquiera de dichas "
 "modificaciones."
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:71
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:70
 msgid ""
 "Customers agree that continued use of our Site signifies that they accept "
 "and agree to the changes and that all relations with us are subject to these "
@@ -1020,7 +1020,7 @@ msgstr ""
 "relaciones con nosotros están sujetos a estas Condiciones de servicio y "
 "cualquier enmienda."
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:72
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:71
 msgid ""
 "SiiCrypto grants its Customers non-exclusive, personal, non-transferable, "
 "non-sub licensable and limited right to enter and use the SiiCrypto site and "
@@ -1030,15 +1030,15 @@ msgstr ""
 "derecha, personal, sub- licencia y se limita a introducir y utilizar el "
 "sitio y los servicios de SiiCrypto."
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:74
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:73
 msgid "DEFINITIONS"
 msgstr "DEFINICIÓN"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:76
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:75
 msgid "Platform"
 msgstr "Plataforma"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:76
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:75
 msgid ""
 "means the software, technical and organisational structure managed by "
 "SiiCrypto located at the"
@@ -1046,34 +1046,34 @@ msgstr ""
 "significa el software, estructura técnica y organización administrada por "
 "SiiCrypto situado en la"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:76
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:75
 msgid "address"
 msgstr "dirección"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:77
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:79
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:76
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:78
 msgid "means the Peer-to-Peer digital transfer value asset (as described at"
 msgstr ""
 "significa el valor de la transferencia de activos digitales Peer-to-Peer "
 "(como se describe en"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:79
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:78
 msgid "Bitcoin(s)"
 msgstr "Bitcoin(s)"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:80
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:79
 msgid "Crypto-Currency(s)"
 msgstr "Cripto Divisa(s)"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:80
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:79
 msgid "means the digital value assets GreenCoinX and Bitcoin."
 msgstr "significan los activos digitales de valor GreenCoinX y Bitcoin."
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:81
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:80
 msgid "Seller(s)"
 msgstr "Vendedor(es)"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:81
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:80
 msgid ""
 "means Customers(s) that submit an offer to sell Crypto-currency(s) on the "
 "Platform."
@@ -1081,11 +1081,11 @@ msgstr ""
 "significa los clientes que presenten una oferta de venta cripto moneda(s) en "
 "la plataforma."
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:83
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:82
 msgid "Buyer(s)"
 msgstr "Comprador(es)"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:83
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:82
 msgid ""
 "means Customers(s) that submit an offer to buy Crypto-currency(s) on the "
 "Platform."
@@ -1093,15 +1093,15 @@ msgstr ""
 "significa los clientes que presenten una oferta de compra de cripto moneda"
 "(s) en la plataforma."
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:85
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:84
 msgid "Any holder of an account."
 msgstr "Cualquier titular de una cuenta."
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:86
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:85
 msgid "Price"
 msgstr "Precio"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:86
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:85
 msgid ""
 "means &#039;price per coin&#039; for which Customers are willing to purchase "
 "or sell Crypto-currency, using the Platform in a Crypto-currency Purchase "
@@ -1111,11 +1111,11 @@ msgstr ""
 "dispuestos a comprar o vender cripto moneda, usando la plataforma en una "
 "transacción de compra de cripto divisas."
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:87
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:86
 msgid "Commission"
 msgstr "Comisiones "
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:87
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:86
 msgid ""
 "refers to the fee which is payable to SiiCrypto on each Transaction. "
 "Fee&#039;s at this time are 0.2% per transaction. For Purchases and Sales "
@@ -1127,11 +1127,11 @@ msgstr ""
 "transacciones comerciales, la comisión se cobra a cada cliente por "
 "transacción en la denominación recibido."
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:89
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:88
 msgid "Transaction Price"
 msgstr "Precio Transacción "
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:89
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:88
 msgid ""
 "means the total price paid by the Buyer in respect of each Transaction "
 "performed on the Platform."
@@ -1139,15 +1139,15 @@ msgstr ""
 "significa el precio total pagado por el comprador con respecto a cada "
 "transacción realizada en la plataforma."
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:90
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:89
 msgid "Transaction"
 msgstr "Transacción "
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:90
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:89
 msgid "means"
 msgstr "significa"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:92
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:91
 msgid ""
 "The agreement between the Buyer and the Seller to exchange Crypto-currency "
 "on the Platform for currencies at a commonly agreed rate (&#039;Crypto-"
@@ -1157,7 +1157,7 @@ msgstr ""
 "en la Plataforma de divisas a una tasa establecida en común (&#039;Cripto "
 "divisa transacción de compra&#039;)"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:93
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:92
 msgid ""
 "The conversion of currencies deposited by Customers on their account (&#039;"
 "Conversion Transaction&#039;)"
@@ -1165,7 +1165,7 @@ msgstr ""
 "La conversión de las monedas depositadas por los clientes en su cuenta "
 "(&#039;Conversión de transacciones&#039;)"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:94
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:93
 msgid ""
 "The transfer of crypto-currency among Customers (&#039;Crypto-currency "
 "Transfer Transaction&#039;)"
@@ -1173,7 +1173,7 @@ msgstr ""
 "La transferencia de cripto moneda entre los clientes (&#039;Crypto Divisa "
 "transacción de transferencia&#039;)"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:95
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:94
 msgid ""
 "The transfer of currencies among Customers (&#039;Currency Transfer "
 "Transaction&#039;)"
@@ -1181,11 +1181,11 @@ msgstr ""
 "La transferencia de divisas entre clientes (&#039;Transferencia de "
 "Transacciones Divisas&#039;)   "
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:100
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:99
 msgid "CUSTOMER ACCOUNT"
 msgstr "CUENTA DE CLIENTE"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:102
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:101
 msgid ""
 "Customers agree to provide SiiCrypto with complete and accurate information "
 "about themselves as required by the verification process. Customers accept "
@@ -1200,7 +1200,7 @@ msgstr ""
 "sufridas, y que las cuentas se pueden congelar hasta que la información "
 "relevante se actualiza de forma adecuada."
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:103
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:102
 msgid ""
 "Customers are responsible for the security and confidentiality of their "
 "Account information, including but not limited to their password, "
@@ -1216,7 +1216,7 @@ msgstr ""
 "sospechan cualquier uso no autorizado de su cuenta o cualquier otra "
 "violación de seguridad, via correo electrónico dirigido a"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:104
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:103
 msgid ""
 "Customers agree that all Accounts are personal Accounts, in that any linked "
 "bank accounts must be in their name. And that no business Account will be "
@@ -1227,7 +1227,7 @@ msgstr ""
 "que no cuenta empresarial estará vinculado menos que sea solicitado por "
 "correo electrónico a"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:105
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:104
 msgid ""
 "SiiCrypto may request identification information (such as invoices, "
 "Government issued photographic identification, utility bill, recognised e-"
@@ -1250,7 +1250,7 @@ msgstr ""
 "transacciones pueden ser congelados hasta que el control de identidad se ha "
 "considerado satisfactorio por SiiCrypto."
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:106
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:105
 msgid ""
 "Customers accept that a telephone call may be initiated by SiiCrypto to "
 "verify any of the following, but not limited to: verifying identity, "
@@ -1261,7 +1261,7 @@ msgstr ""
 "la verificación de identidad, las transacciones, los controles de seguridad "
 "aleatorios, o cualquier otra actividad relacionada."
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:107
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:106
 msgid ""
 "Accounts may be used strictly for the purposes defined in these Terms of "
 "Service."
@@ -1269,11 +1269,11 @@ msgstr ""
 "Las cuentas pueden ser utilizados estrictamente para los fines establecidos "
 "en estas Condiciones de servicio."
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:109
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:108
 msgid "TRANSACTIONS"
 msgstr "ORDENES"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:110
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:109
 msgid ""
 "Customers may use the Platform to place orders to buy or sell Crypto-"
 "currency."
@@ -1281,7 +1281,7 @@ msgstr ""
 "Los clientes pueden utilizar la plataforma para colocar órdenes de compra o "
 "venta de criptomonedas."
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:111
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:110
 msgid ""
 "Customers accept that once they submit offers to buy or sell Crypto-currency "
 "they enter into an Agreement with another Customer to transfer fiat for "
@@ -1296,7 +1296,7 @@ msgstr ""
 "y el vendedor están de acuerdo en que una vez que sus ordenes coinciden que "
 "los ordenes son vinculantes y no pueden ser invertidas."
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:112
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:111
 msgid ""
 "Once the order is placed, SiiCrypto automatically completes the transactions "
 "without prior notice to Buyer or Seller."
@@ -1304,7 +1304,7 @@ msgstr ""
 "Una vez realizado el pedido, SiiCrypto completa automáticamente la "
 "transaccion sin previo aviso al comprador o vendedor."
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:113
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:112
 msgid ""
 "The matching of offers and transfer of funds is a service provided by "
 "SiiCrypto via the Platform. Once Buyers and Sellers offers have been "
@@ -1316,7 +1316,7 @@ msgstr ""
 "ordenes de compradores y vendedores  se han emparejado, los clientes pierden "
 "la capacidad de cancelar cualquier transacción cripto moneda."
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:114
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:113
 msgid ""
 "Customers accept that transferring Crypto-currencys to their SiiCrypto "
 "account or to other addresses is reliant upon the protocol and any &#039;"
@@ -1328,7 +1328,7 @@ msgstr ""
 "honorarios de &#039;mineros&#039; que usted deciden pagar y que SiiCrypto no "
 "tiene ninguna influencia en estos honorarios.."
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:115
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:114
 msgid ""
 "Upon matching of the offers of Buyer and Seller, SiiCrypto has the sole "
 "authority to permit the transfer of the amount corresponding to the "
@@ -1340,7 +1340,7 @@ msgstr ""
 "correspondiente al precio de transacción menos la Comisión de la cuenta del "
 "comprador&#039;es al vendedor."
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:116
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:115
 msgid ""
 "Customers may at any time transfer any amount of Crypto-currencys to any "
 "other Customer."
@@ -1348,11 +1348,11 @@ msgstr ""
 "Los clientes podrán en cualquier momento transferir cualquier cantidad de "
 "cripto-monedas a cualquier otro cliente."
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:117
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:116
 msgid "Customers can not transfer Fiat."
 msgstr "Los clientes no pueden transferir Fiat."
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:118
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:117
 msgid ""
 "Customers are solely responsible for ensuring that any Receiver of their "
 "Crypto-currencys shall be a valid and legal transaction."
@@ -1360,7 +1360,7 @@ msgstr ""
 "Los clientes son los únicos responsables de asegurarse de que cualquier "
 "“receptor” de su Crypto moneda será una transacción válida y legal."
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:119
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:118
 msgid ""
 "The responsibility of SiiCrypto is limited to providing the service to "
 "ensure the transference of the Crypto-currencys."
@@ -1368,11 +1368,11 @@ msgstr ""
 "La responsabilidad de SiiCrypto se limita a la prestación del servicio para "
 "asegurar la transferencia de cripto-monedas."
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:121
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:120
 msgid "DEPOSITS &amp; WITHDRAWALS"
 msgstr "DEPOSITOS &amp; REINTEGROS"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:122
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:121
 msgid ""
 "Customers agree to submit a deposit request before transferring any funds to "
 "their SiiCrypto account. Customers agree to abide by the limits set by "
@@ -1382,7 +1382,7 @@ msgstr ""
 "de transferir los fondos a su cuenta SiiCrypto. Los clientes se comprometen "
 "a respetar los límites establecidos por SiiCrypto en el depósito."
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:123
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:122
 msgid ""
 "Customers agree to submit a withdrawal request and to wait for their "
 "withdrawal request to be confirmed by SiiCrypto."
@@ -1390,11 +1390,11 @@ msgstr ""
 "Los clientes se comprometen a enviar una solicitud de retiro y esperar a que "
 "ser confirmada por SiiCrypto."
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:126
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:125
 msgid "VIRUSES, HACKING AND RELATED OFFENCES"
 msgstr "VIRUS, PIRATERÍA Y DELITOS RELACIONADOS"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:127
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:126
 msgid ""
 "You must not misuse our site by knowingly introducing viruses, trojans, "
 "worms, logic bombs or other material which is malicious or technologically "
@@ -1411,7 +1411,7 @@ msgstr ""
 "No debe atacar nuestro sitio mediante un ataque de denegación de servicio o "
 "de denegación de servicio distribuida ataque."
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:128
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:127
 msgid ""
 "By breaching this provision, you would commit a criminal offence and "
 "SiiCrypto will report any such breach to the relevant law enforcement "
@@ -1425,7 +1425,7 @@ msgstr ""
 "identidad. En caso de incumplimiento, su derecho a utilizar nuestro sitio "
 "cesará inmediatamente."
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:129
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:128
 msgid ""
 "SiiCrypto will not be liable for any loss or damage caused by a distributed "
 "denial-of-service attack, viruses or other technologically harmful material "
@@ -1440,15 +1440,15 @@ msgstr ""
 "sitio o para la descarga de cualquier material publicado en él, o en "
 "cualquier sitio web vinculado a él."
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:131
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:130
 msgid "LIABILITY"
 msgstr "RESPONSABILIDAD"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:132
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:131
 msgid "Limitation of Warranties"
 msgstr "Limitación de garantías"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:134
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:133
 msgid ""
 "By using our website, you understand and agree that all Resources SiiCrypto "
 "provides are &#039;as is&#039; and &#039;as available&#039;. This means that "
@@ -1459,11 +1459,11 @@ msgstr ""
 "esté disponible&#039; . Esto significa que SiiCrypto no representa ni "
 "garantiza a usted que:"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:135
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:134
 msgid "the use of our Resources will meet your needs or requirements."
 msgstr "el uso de nuestros recursos se adapte a sus necesidades o requisitos."
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:136
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:135
 msgid ""
 "the use of our Resources will be uninterrupted, timely, secure or free from "
 "errors."
@@ -1471,7 +1471,7 @@ msgstr ""
 "el uso de nuestros recursos será ininterrumpido, puntual, seguro o libre de "
 "errores."
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:137
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:136
 msgid ""
 "the information obtained by using our Resources will be accurate or "
 "reliable, and"
@@ -1479,7 +1479,7 @@ msgstr ""
 "la información obtenida mediante el uso de nuestros recursos será precisa o "
 "fiable, y"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:138
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:137
 msgid ""
 "any defects in the operation or functionality of any Resources SiiCrypto "
 "provides will be repaired or corrected."
@@ -1487,11 +1487,11 @@ msgstr ""
 "cualquier defecto en el funcionamiento o funcionalidad de cualquier recurso "
 "proporcionado por SiiCrypto serán reparadas o corregidas."
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:140
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:139
 msgid "Furthermore, you understand and agree that:"
 msgstr "Además, usted entiende y acepta que:"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:141
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:140
 msgid ""
 "any content downloaded or otherwise obtained through the use of our "
 "Resources is done at your own discretion and risk, and that you are solely "
@@ -1504,7 +1504,7 @@ msgstr ""
 "cualquier pérdida de datos que pueda resultar de la descarga de dicho "
 "contenido ."
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:142
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:141
 msgid ""
 "no information or advice, whether expressed, implied, oral or written, "
 "obtained by you from SiiCrypto or through any Resources SiiCrypto provides "
@@ -1517,11 +1517,11 @@ msgstr ""
 "de ningún tipo, a excepción de aquellas que expresamente se indica en este "
 "Acuerdo de Usuario."
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:145
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:144
 msgid "Limitation of Liability"
 msgstr "Limitación de responsabilidad"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:147
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:146
 msgid ""
 "In conjunction with the Limitation of Warranties as explained above, you "
 "expressly understand and agree that any claim against us shall be limited to "
@@ -1542,7 +1542,7 @@ msgstr ""
 "cancelación, pérdida de el acceso, o el tiempo de inactividad con todo el "
 "rigor que la limitación aplicable de las leyes de responsabilidad."
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:148
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:147
 msgid ""
 "Customers will be held solely liable for losses incurred by SiiCrypto or any "
 "other user of the Site due to someone else using their password or user "
@@ -1552,7 +1552,7 @@ msgstr ""
 "cualquier otro uso del sitio web, debido a que otra persona utilice su "
 "contraseña o cuenta de usuario."
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:149
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:148
 msgid ""
 "Customers affirm and warrant that they are the legitimate owners of "
 "represented funds of any denomination used in relation to the Platform and "
@@ -1562,7 +1562,7 @@ msgstr ""
 "fondos representados de cualquier denominación utilizada en relación con la "
 "plataforma y los servicios prestados por SIICRYPTO."
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:150
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:149
 msgid ""
 "Nothing in these terms excludes or limits the liability of either party for "
 "fraud, death or personal injury caused by its negligence, breach of terms "
@@ -1575,7 +1575,7 @@ msgstr ""
 "la ley, o cualquier otra responsabilidad que no puede por ley ser limitada o "
 "excluida."
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:151
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:150
 msgid ""
 "Subject to the foregoing, SiiCrypto&#039;s aggregate liability in respect of "
 "claims based on events arising out of or in connection with a Customer&#039;"
@@ -1592,11 +1592,11 @@ msgstr ""
 "presente una reclamación, menos la cantidad de Comisión que puede ser debido "
 "y pagadero con respecto a dicha cuenta."
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:153
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:152
 msgid "Indemnity"
 msgstr "Indemnidad"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:154
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:153
 msgid ""
 "To the fullest extent permitted by applicable law,  customer hereby agree to "
 "indemnify SiiCrypto and its affiliates against any action, liability, cost, "
@@ -1611,11 +1611,11 @@ msgstr ""
 "Plataforma, Servicios o de la  violación de clientes de estas Condiciones de "
 "servicio."
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:157
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:156
 msgid "TERMINATION"
 msgstr "TERMINACIÓN"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:158
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:157
 msgid ""
 "Customers agrees that SiiCrypto may, at our sole discretion, suspend or "
 "terminate a customers access to all or part of our website and Resources "
@@ -1640,7 +1640,7 @@ msgstr ""
 "puede tener en nuestros archivos, incluyendo cualquier cuenta o la "
 "información de acceso."
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:159
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:158
 msgid ""
 "Should they wish to terminate their agreement with SiiCrypto, Customers may "
 "close his/her Account at any time."
@@ -1648,7 +1648,7 @@ msgstr ""
 "En caso de que deseen interrumpir su acuerdo con SiiCrypto, los clientes "
 "pueden perder su / su cuenta en cualquier momento."
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:160
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:159
 msgid ""
 "SiiCrypto also reserve the right to cancel unconfirmed Accounts or Accounts "
 "that have been inactive for a period of 4 months or more, or to modify or "
@@ -1662,7 +1662,7 @@ msgstr ""
 "clientes están de acuerdo en que SiiCrypto no será responsable a ellos o a "
 "cualquier tercero por la terminación de su cuenta o acceso al sitio."
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:161
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:160
 msgid ""
 "Customers agree and acknowledge that SiiCrypto can suspend their Account at "
 "will until the relevant Customer provides SiiCrypto with documents "
@@ -1676,7 +1676,7 @@ msgstr ""
 "SiiCrypto considere si es necesario para asegurar la cuenta, transacciones, "
 "plataforma o servicios que proporciona SiiCrypto."
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:162
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:161
 msgid ""
 "SiiCrypto reserve the right to refuse an Account and relevant services to "
 "any applicant or current Customer for, but not limited to, suspected fraud, "
@@ -1686,11 +1686,11 @@ msgstr ""
 "cualquier solicitante o cliente corriente para, pero no limitado a, "
 "cualquier sospecha de fraude, actividad delictiva o conducta abusiva."
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:164
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:163
 msgid "MISCELLANEOUS"
 msgstr "DIVERSO"
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:165
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:164
 msgid ""
 "In case of a force majeure event as defined by applicable law, the "
 "liabilities of the affected party to these Terms will be suspended pending "
@@ -1700,7 +1700,7 @@ msgstr ""
 "las obligaciones de la parte afectada con estos Términos serán suspendidos "
 "hasta la resolución de dicho evento."
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:166
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:165
 msgid ""
 "If a competent judicial authority deems any provision of the Terms "
 "unenforceable, that provision will be enforced to the maximum extent "
@@ -1711,7 +1711,7 @@ msgstr ""
 "Términos , dicha disposición se aplicará en la medida máxima permitida, y "
 "todas las disposiciones restantes permanecerán en pleno vigor y efecto."
 
-#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:170
+#: F:\Apache\www\TBG\siicrypto.com\app\views\company\privacy.html.php:169
 msgid ""
 "If a customer has any questions relating to these Terms of Service contact "
 "us at"
@@ -2186,6 +2186,7 @@ msgid "Toggle navigation"
 msgstr "Toggle navigation"
 
 #: F:\Apache\www\TBG\siicrypto.com\app\views\elements\header.html.php:33
+#: F:\Apache\www\TBG\siicrypto.com\app\views\elements\header.html.php:90
 msgid "Company"
 msgstr ""
 
